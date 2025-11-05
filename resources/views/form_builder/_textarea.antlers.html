@@ -1,0 +1,14 @@
+<div>
+{{#     <label for="field-{{ handle }}" class="mb-4 block font-heading text-xl font-medium text-blackish"> #}}
+{{#         <span>{{ display }}</span> #}}
+{{#         {{ if error }} #}}
+{{#             <span class="block font-sans font-normal">{{ error }}</span> #}}
+{{#         {{ /if }} #}}
+{{#     </label> #}}
+
+    <div class="mt-1">
+        <textarea type="{{ input_type }}" name="{{ handle }}" id="field-{{ handle }}"
+            class="grey-bg py-[15px] px-[20px] h-[190px] {{ error ?= 'border-red-300 bg-red-100 text-red-900 placeholder-red-300 focus:border-red-500 focus:outline-none focus:ring-red-500' }}"
+            placeholder="{{ placeholder }}" cols="30" rows="10">{{ old }}</textarea>
+    </div>
+</div>

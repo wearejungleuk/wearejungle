@@ -1,0 +1,62 @@
+<div
+        x-data="{ open: false, scrolled: false }"
+        x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 100 })"
+        x-cloak
+        name="header-mobile"
+        class="header__mobile block lg:hidden relative"
+>
+    <div class="w-full top-0 left-0 flex items-center justify-between z-[999]">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <!-- Logo (swap on scroll) -->
+                <div>
+                    <a href="/">
+                        {{ if brand:white_logo }}
+                            <template x-if="!scrolled">
+                                {{ brand:white_logo }}
+                                <img
+                                        src="{{ url }}"
+                                        alt="{{ alt }}"
+                                        class="w-full max-w-[150px] xl:max-w-[200px] 3xl:max-w-[250px]"
+                                        loading="lazy"
+                                >
+                                {{ /brand:white_logo }}
+                            </template>
+                        {{ /if }}
+                        {{ if brand:logo }}
+                            <template x-if="scrolled">
+                                {{ brand:logo }}
+                                <img
+                                        src="{{ url }}"
+                                        alt="{{ alt }}"
+                                        class="w-full max-w-[150px] xl:max-w-[200px] 3xl:max-w-[250px]"
+                                        loading="lazy"
+                                >
+                                {{ /brand:logo }}
+                            </template>
+                        {{ /if }}
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-end gap-4">
+                        <a href="{{ brand:calendly_link }}" target="_blank" class="details-button group flex items-center overflow-hidden rounded-full bg-brand-secondary">
+                            <span class="body-b4 inline-flex max-w-0 translate-x-[10px] overflow-hidden whitespace-nowrap font-heading group-hover:max-w-[90px] group-hover:pr-4 text-brand-primary">Let's Talk</span>
+                            {{ partial:components/icons.wave }}
+                        </a>
+                        <button
+                                @click="open = !open"
+                                :class="{ 'active': open }"
+                                class=""
+                        >
+                            <div class="hamburger w-6 h-6">
+                                <span></span>
+                            </div>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slideover partial (shares same Alpine state) -->
+    {{ partial:layout/header-mobile-slideover }}
+</div>

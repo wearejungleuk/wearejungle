@@ -1,0 +1,90 @@
+title: 'Page Builder'
+fields:
+  -
+    handle: page_builder
+    field:
+      type: replicator
+      display: 'Page Builder'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            home_hero:
+              display: 'Home Hero'
+              fields:
+                -
+                  handle: image_left
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Image Left'
+                -
+                  handle: image_right
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Image Right'
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+            logos_carousel:
+              display: 'Logos Carousel'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: images
+                  field:
+                    container: assets
+                    type: assets
+                    display: Images
+            text_carousel:
+              display: 'Text Carousel'
+              fields:
+                -
+                  handle: carousel
+                  field:
+                    type: replicator
+                    display: Carousel
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            fields:
+                              -
+                                handle: title
+                                field:
+                                  type: text
+                                  display: Title
+                              -
+                                handle: icon
+                                field:
+                                  max_files: 1
+                                  container: assets
+                                  type: assets
+                                  display: Icon

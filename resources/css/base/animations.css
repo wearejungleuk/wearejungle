@@ -1,0 +1,46 @@
+.js-fade-in {
+  opacity: 0;
+  transition: all ease 900ms;
+
+&.is-intersecting {
+   opacity: 1;
+ }
+}
+
+.js-fade-up {
+  opacity: 0;
+  transition: all ease 900ms;
+  transform: translateY(30px);
+
+&.is-intersecting {
+   opacity: 1;
+   transform: translateY(0px);
+ }
+}
+
+.is-faded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.svg-wrap {
+  position: relative;
+display: inline-block;
+  svg {
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+  }
+  .circle-draw {
+    top: -15%;
+    height: 120%;
+    width:120%;
+    left: -10%
+  }
+.line-draw {
+  bottom: -15%;
+  width:120%;
+  left: -10%
+}
+}

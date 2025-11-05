@@ -1,0 +1,11 @@
+<header class="fixed bg-brand-primary top-0 left-0 w-full max-w-[100vw] z-[9999999] transition-all duration-700">
+    <nav
+        id="header"
+        class="py-4 lg:py-6 3xl:py-8">
+        {{# Mobile #}}
+        {{ partial:layout/header-mobile }}
+
+        {{# Desktop #}}
+        {{ partial:layout/header-desktop }}
+    </nav>
+</header>

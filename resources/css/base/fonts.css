@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Fivo Sans Modern ExtBlk';
+  src: url('/resources/fonts/FivoSansModern-ExtraBlack.eot');
+  src: url('/resources/fonts/FivoSansModern-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+  url('/resources/fonts/FivoSansModern-ExtraBlack.woff2') format('woff2'),
+  url('/resources/fonts/FivoSansModern-ExtraBlack.woff') format('woff'),
+  url('/resources/fonts/FivoSansModern-ExtraBlack.ttf') format('truetype'),
+  url('/resources/fonts/FivoSansModern-ExtraBlack.svg#FivoSansModern-ExtraBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/resources/fonts/Lexend-Regular.eot');
+  src: url('/resources/fonts/Lexend-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/resources/fonts/Lexend-Regular.woff2') format('woff2'),
+  url('/resources/fonts/Lexend-Regular.woff') format('woff'),
+  url('/resources/fonts/Lexend-Regular.ttf') format('truetype'),
+  url('/resources/fonts/Lexend-Regular.svg#Lexend-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Bold';
+  src: url('/resources/fonts/Lexend-Bold.eot');
+  src: url('/resources/fonts/Lexend-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/resources/fonts/Lexend-Bold.woff2') format('woff2'),
+  url('/resources/fonts/Lexend-Bold.woff') format('woff'),
+  url('/resources/fonts/Lexend-Bold.ttf') format('truetype'),
+  url('/resources/fonts/Lexend-Bold.svg#Lexend-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ewangi';
+  src: url('/resources/fonts/Ewangi-Regular.eot');
+  src: url('/resources/fonts/Ewangi-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/resources/fonts/Ewangi-Regular.woff2') format('woff2'),
+  url('/resources/fonts/Ewangi-Regular.woff') format('woff'),
+  url('/resources/fonts/Ewangi-Regular.ttf') format('truetype'),
+  url('/resources/fonts/Ewangi-Regular.svg#Ewangi-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

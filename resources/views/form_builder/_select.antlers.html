@@ -1,0 +1,29 @@
+<div>
+    <div class="mt-1">
+        <div class="select-wrap relative">
+            {{ partial:components/icons.down-arrow-blue }}
+            <select
+                    name="{{ handle }}"
+                    id="field-{{ handle }}"
+                    class="grey-bg py-[15px] px-[20px] w-full
+                {{ error ?= 'border-red-300 bg-red-100 text-red-900 focus:border-red-500 focus:outline-none focus:ring-red-500' }}"
+            >
+                {{ if placeholder }}
+                    <option value="" disabled
+                            {{ if ! old }}selected{{ /if }}>{{ placeholder }}</option>
+                {{ /if }}
+
+                {{ options }}
+                <option value="{{ key }}"
+                        {{ if old == key }}selected{{ /if }}>
+                    {{ value }}
+                </option>
+                {{ /options }}
+            </select>
+
+            {{ if error }}
+                <p class="text-red-500 text-xs mt-1">{{ error }}</p>
+            {{ /if }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+.details-button span {
+  transition: max-width .5s,padding-right .45s
+}
+
+.wave {
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-name: wave-animation;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0)
+  }
+
+  10% {
+    transform: rotate(15deg)
+  }
+
+  15% {
+    transform: rotate(-15deg)
+  }
+
+  20% {
+    transform: rotate(14deg)
+  }
+
+  25% {
+    transform: rotate(-15deg)
+  }
+
+  30% {
+    transform: rotate(0)
+  }
+
+  to {
+    transform: rotate(0)
+  }
+}
+
+.hamburger {
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in-out 0.4s;
+  height: 100%;
+  width: 100%;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+span {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+span, span:before, span:after {
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  height: 2px;
+  width: 24px;
+  background: rgba(var(--color-white));
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+}
+span {
+&:before {
+   top: 7px;
+ }
+&:after {
+   bottom: 7px;
+ }
+}
+.active & {
+span {
+  background-color: transparent;
+&:before, &:after {
+             top: 0;
+           }
+&:before {
+   transform: rotate(45deg);
+ }
+&:after {
+   transform: rotate(-45deg);
+ }
+}
+}
+}

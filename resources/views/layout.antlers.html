@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ site:short_locale }}" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#F38B00">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        :root {
+            --color-brand-primary: {{ (branding:primary_color ?? '#004af7') | hex_to_rgb }};
+            --color-brand-dark-blue: {{ (branding:dark_blue) ?? '#090c9b' | hex_to_rgb }};
+            --color-brand-secondary: {{ (branding:secondary_color ?? '#efc0d4') | hex_to_rgb }};
+            --color-brand-text: {{ (branding:brand_text_color ?? '#fbf8ef') | hex_to_rgb }};
+            --color-brand-light-blue: {{ (branding:brand_light_blue ?? '#a8d2fd') | hex_to_rgb }};
+            --color-dark-grey: {{ (branding:dark_grey ?? '#313131') | hex_to_rgb }};
+            --color-filter-grey: {{ branding:filter_grey ?? '#EBEBEB' | hex_to_rgb }};
+            --color-black: {{ (branding:black ?? '#232323') | hex_to_rgb }};
+            --color-white: {{ (branding:grey ?? '#fbf8ef') | hex_to_rgb }};
+        }
+    </style>
+    {{ aardvark-seo:head }}
+    <link rel="stylesheet" href="https://use.typekit.net/jvu1tvl.css">
+    <script src="https://kit.fontawesome.com/7f308f2602.js" crossorigin="anonymous"></script>
+    {{ vite src="resources/js/site.js|resources/css/site.css" }}
+    <script src="/vendor/statamic/frontend/js/helpers.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/hox0uhf.css">
+    {{ scripts:head_scripts }}
+{{#     {{ cookie_notice:scripts }} #}}
+    {{ captcha:head }}
+</head>
+<body data-site-handle="{{ site:handle }}"
+      class="{{ if environment == 'local'}}debug-screens{{ /if }} bg-brand-primary"
+>
+
+{{ aardvark-seo:body }}
+{{ scripts:body_scripts }}
+
+{{ partial:layout/header }}
+
+<main>
+    {{ template_content }}
+    {{ partial:layout/footer }}
+</main>
+
+{{ aardvark-seo:footer }}
+
+{{ scripts:footer_scripts }}
+{{# {{ cookie_notice:widget }} #}}
+</body>
+</html>

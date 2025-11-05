@@ -1,0 +1,35 @@
+<section class="pt-[200px] home-hero">
+    <div class="container">
+        <div class="text-center text-white">
+            {{ if title }}
+                <h1 class="home-hero__title font-heading uppercase text-[45px] sm:text-[50px] md:text-[55px] lg:text-[65px] xl:text-[85px] 2xl:text-[85px] 3xl:text-[100px]">{{ title | highlight_brackets }}</h1>
+            {{ /if }}
+        </div>
+    </div>
+    <div class="text-center">
+        <div class="grid grid-cols-2 md:flex gap-8 text-white">
+            {{ image_left }}
+            <div class="col-span-1 md:flex-1 md:order-1 order-2">
+                <img src="{{ url }}" alt="{{ alt }}" class="w-full max-h-[40vw] md:max-h-[22vw] home-hero__image-left">
+            </div>
+            {{ /image_left }}
+            {{ if text || cta }}
+                <div class="col-span-2 mt-4 md:max-w-[50%] w-full 3xl:max-w-[880px] mx-auto md:order-2 order-1">
+                    <div class="text-[18px] lg:text-[20px] xl:text-[22px] 3xl:text-[25px] home-hero__text">
+                        {{ text }}
+                    </div>
+                    {{ if cta }}
+                        <div class="mt-8 home-hero__cta">
+                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" }}
+                        </div>
+                    {{ /if }}
+                </div>
+            {{ /if }}
+            {{ image_right }}
+            <div class="col-span-1 md:flex-1 md:order-3 order-3">
+                <img src="{{ url }}" alt="{{ alt }}" class="w-full max-h-[40vw] md:max-h-[22vw] home-hero__image-right">
+            </div>
+            {{ /image_right }}
+        </div>
+    </div>
+</section>

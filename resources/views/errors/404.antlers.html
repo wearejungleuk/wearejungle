@@ -1,0 +1,9 @@
+{{#
+    @name Default
+    @desc Default page builder layout
+#}}
+{{ collection:errors slug="404" }}
+    {{ page_builder }}
+    {{ partial src="page_builder/{type}" }}
+{{ /page_builder }}
+{{ /collection:errors }}

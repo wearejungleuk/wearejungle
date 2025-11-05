@@ -1,0 +1,32 @@
+<!-- Start of Cookie Notice Widget -->
+<div id="cookie-notice" class="relative z-[999]">
+    <div class="fixed bottom-4 right-4 bg-brand-secondary shadow-md p-6 sm:mx-auto lg:min-w-[50%] w-[calc(100%-2rem)] sm:max-w-[10rem] p-8">
+        <h2 class="text-xl uppercase font-heading mb-4 lg:mb-6">This site uses cookies</h2>
+        <ul>
+            {{ consent_groups }}
+            <li>
+                <label for="group-{{ handle }}">
+                    <input type="checkbox" id="group-{{ handle }}" name="group-{{ handle }}" class="w-4 h-4">
+                    {{ name }}
+                    {{ if description }}
+                        <span>{{ description }}</span>
+                    {{ /if }}
+                </label>
+            </li>
+            {{ /consent_groups }}
+        </ul>
+        <button
+            data-save-preferences
+            class="mt-8 border border-solid border-brand-primary leading-none button py-3 px-4 lg:px-8 relative overflow-hidden inline-block bg-transparent text-center text-reg transition-all duration-300 ease-in-out group font-heading">
+                        <span class="block h-full flex items-center justify-center transform transition-transform duration-300 ease-in-out translate-y-0 group-hover:-translate-y-[50px]">
+                            Save Preferences
+                        </span>
+            <span class="block absolute inset-0 h-full flex items-center justify-center transform transition-transform duration-300 ease-in-out translate-y-full group-hover:translate-y-0">
+                            Save Preferences
+                        </span>
+        </button>
+    </div>
+</div>
+
+
+<!-- End of Cookie Notice Widget -->

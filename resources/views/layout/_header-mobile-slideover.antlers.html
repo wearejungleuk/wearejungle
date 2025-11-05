@@ -1,0 +1,79 @@
+<!-- header-mobile-slideover Partial (clean version) -->
+<div
+        x-show="open"
+        x-transition:enter="transition ease-out duration-500"
+        x-transition:enter-start="-translate-y-full"
+        x-transition:enter-end="translate-y-0"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="translate-y-0"
+        x-transition:leave-end="-translate-y-full"
+        class="bg-brand-primary text-white z-[99] fixed flex flex-col justify-center w-full h-[100vh] top-0 left-0 pt-[120px] pb-[55px] px-[30px] text-center"
+        x-cloak
+>
+    <ul class="text-[20px]">
+        {{ nav:main_menu select="id|title|url|children" }}
+            <li
+                    x-data="{ activeMenu: null }"
+                    class="block mb-[13px]
+                        {{ if children }}has-children{{ /if }}"
+                    data-menu-id="{{ id }}"
+            >
+                <a
+                        href="{{ url }}"
+                        class="font-heading uppercase tracking-wide block relative"
+                    {{ if children }}
+                        @click.prevent="activeMenu = activeMenu === '{{ id }}' ? null : '{{ id }}'"
+                    {{ else }}
+                        @click="open = false"
+                    {{ /if }}
+                        style="outline: none;"
+                >
+                    {{ title }}
+                    {{ if children }}
+                        <div class="absolute top-1/2 -translate-y-1/2 right-0">
+                        {{ partial:components/icons.arrow-right-blue }}
+                        </div>
+                    {{ /if }}
+                </a>
+
+                {{ if children }}
+                    <ul
+                            x-show="activeMenu === '{{ id }}'"
+                            x-transition:enter="transition ease-out duration-300 transform"
+                            x-transition:enter-start="translate-x-full opacity-0"
+                            x-transition:enter-end="translate-x-0 opacity-100"
+                            x-transition:leave="transition ease-in duration-200 transform"
+                            x-transition:leave-start="translate-x-0 opacity-100"
+                            x-transition:leave-end="translate-x-full opacity-0"
+                            class="absolute top-0 h-full pt-[150px] left-0 w-[100vw] bg-white text-black py-[8px] text-center transition-all transform z-10"
+                            x-cloak
+                    >
+                        <li class="mb-[39px]">
+
+                            <button
+                                    @click="activeMenu = null"
+                                    class="text-[20px] gap-4 uppercase tracking-wide relative flex items-center justify-center w-full border-b pb-[15px]"
+                            >
+                                {{ partial:components/icons.arrow-left-blue }}
+                                <span>{{ title }}</span>
+                            </button>
+                        </li>
+
+                        {{ children }}
+                        <li class="block mb-[13px] last:mb-0">
+                            <a
+                                    href="{{ url }}"
+                                    class="font-heading uppercase tracking-wide text-[20px]"
+                                    style="outline: none;"
+                                    @click="open = false"
+                            >
+                                {{ title }}
+                            </a>
+                        </li>
+                        {{ /children }}
+                    </ul>
+                {{ /if }}
+            </li>
+        {{ /nav:main_menu }}
+    </ul>
+</div>

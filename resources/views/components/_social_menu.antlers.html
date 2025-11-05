@@ -1,0 +1,21 @@
+<ul class="social-menu mt-5">
+    {{ nav:social select="id|title|url" }}
+        <li class="inline-block mr-5 last:mr-0">
+            <a href="{{ url }}" target="_blank" rel="noopener" class="text-brand-text">
+                {{ if title | lower == "linkedin" }}
+                {{ partial:components/icons.linkedin }}
+                {{ elseif title | lower == "facebook" }}
+                {{ partial:components/icons.facebook }}
+                {{ elseif title | lower == "instagram" }}
+                    {{ partial:components/icons.instagram }}
+                {{ elseif title | lower == "pinterest" }}
+                    {{ partial:components/icons.pinterest }}
+                {{ elseif title | lower == "youtube" }}
+                    {{ partial:components/icons.youtube }}
+                {{ else }}
+                    {{ title }} <!-- Fallback to title if no match -->
+                {{ /if }}
+            </a>
+        </li>
+    {{ /nav:social }}
+</ul>

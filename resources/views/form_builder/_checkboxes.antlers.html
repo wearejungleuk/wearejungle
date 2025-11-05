@@ -1,0 +1,10 @@
+<div class="space-y-2">
+    <div v-for="(option, value) in field.config.options" :key="value">
+        <input type="checkbox" :name="field.handle" :value="value" :id="`field-${field.handle}`"
+            class="mr-3 border-2 p-2.5 text-blackish focus:border-blackish focus:ring-blackish"
+            :required="rules.includes('required')" />
+        <label :for="`field-${field.handle}`" class="text-blackish">
+            <span>{{ option }}</span>
+        </label>
+    </div>
+</div>

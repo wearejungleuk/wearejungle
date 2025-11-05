@@ -1,0 +1,44 @@
+title: Work
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: seo_title
+            field:
+              type: text
+              display: 'SEO Title'
+          -
+            handle: preview_text
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Preview Text'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

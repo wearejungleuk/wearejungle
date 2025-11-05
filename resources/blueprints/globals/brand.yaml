@@ -1,0 +1,35 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: logo
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Logo
+          -
+            handle: white_logo
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'White Logo'
+          -
+            handle: number
+            field:
+              type: text
+              display: Number
+          -
+            handle: email
+            field:
+              type: text
+              display: Email
+          -
+            handle: calendly_link
+            field:
+              type: text
+              display: 'Calendly Link'

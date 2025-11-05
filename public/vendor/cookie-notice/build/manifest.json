@@ -1,0 +1,13 @@
+{
+  "resources/css/cookie-notice.css": {
+    "file": "assets/cookie-notice-Di5AFAa4.css",
+    "src": "resources/css/cookie-notice.css",
+    "isEntry": true
+  },
+  "resources/js/cookie-notice.js": {
+    "file": "assets/cookie-notice-BoqDwT27.js",
+    "name": "cookie-notice",
+    "src": "resources/js/cookie-notice.js",
+    "isEntry": true
+  }
+}

@@ -1,0 +1,48 @@
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  span {
+    padding: 15px 30px;
+    background-color: rgb(var(--color-brand-secondary));
+    color: rgb(var(--color-brand-primary));
+    text-align: center;
+    border: 2px solid rgb(var(--color-black));
+    cursor: pointer;
+    display: inline-block;
+    @apply font-heading;
+    text-transform: uppercase;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  @screen lg {
+    padding: 30px 40px;
+  }
+  }
+  &:before {
+  content:'';
+     border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background-color: rgb(var(--color-black));
+  z-index: -1;
+  display: block;
+     transition: all 0.3s ease-in-out;
+   }
+   &:hover {
+  span {
+    transform: translateY(2px);
+  }
+  &:before {
+     transform: translateY(0);
+     transform: translateX(-2px);
+   }
+    }
+}
