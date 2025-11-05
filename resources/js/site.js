@@ -28,6 +28,7 @@ import './functions/fadeInOnScroll';
 import './functions/smoothScroll';
 import './functions/svg-draw';
 import './functions/hero-animation';
+import './functions/sticky';
 
 // Call Alpine.
 window.Alpine = Alpine;

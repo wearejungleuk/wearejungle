@@ -33,6 +33,73 @@ page_builder:
     type: logos_carousel
     enabled: true
   -
+    id: mhmi0pm0
+    title: 'Everything you need, nothing you don’t'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'We design seamless websites, develop with precision, and support your growth with reliable hosting and e-commerce solutions.'
+    services:
+      -
+        id: mhmi1do2
+        title: 'Web Design'
+        text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Creative-led, conversion-focused design that brings your brand to life and makes users take action - no templates, no fluff.'
+        type: new_set
+        enabled: true
+        image: 'web-design-wearejunglebrandshoot-iggy&lime-40.jpg'
+      -
+        id: mhmi1s3r
+        title: 'Web development'
+        text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Fast, flexible builds using WordPress, Statamic, or Shopify. Custom themes, clean code, and no waiting six months for a landing page.'
+        type: new_set
+        enabled: true
+        image: webdev-wearejungle-45.jpg
+      -
+        id: mhmi25cb
+        title: 'Support & Hosting'
+        text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Reliable hosting, ongoing updates, fixes, and peace of mind - we don’t disappear once the site goes live.'
+        type: new_set
+        enabled: true
+        image: support-wearejungle-7.jpg
+      -
+        id: mhmi2m0l
+        title: 'Shopify partner Agency'
+        text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'From theme builds to full custom stores - we help Shopify brands grow fast with optimised, scalable storefronts.'
+        type: new_set
+        enabled: true
+        image: 'e-com-wearejunglebrandshoot-iggy&lime-23.jpg'
+    type: services_blocks
+    enabled: true
+    cta: '#contact'
+    cta_title: "Let's Get Started"
+  -
     id: mhmgs12r
     carousel:
       -
@@ -69,7 +136,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762375991
+updated_at: 1762381598
 ---
 ## Welcome to your brand new Statamic site!
 

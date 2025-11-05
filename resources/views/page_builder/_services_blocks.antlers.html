@@ -1,0 +1,44 @@
+<section class="sticky-left-section">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div class="col-span-1 lg:col-span-4">
+                <div class="sticky-left">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
+                        {{ if title }}
+                            <div class="col-span-1">
+                                <h2 class="font-heading uppercase text-[35px] lg:text-[45px]">{{ title }}</h2>
+                            </div>
+                        {{ /if }}
+                        <div class="col-span-1">
+                            {{ if text }}
+                                <div class="mb-4">{{ text }}</div>
+                            {{ /if }}
+                            {{ if cta }}
+                                <div class="mt-8">
+                                    {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" }}
+                                </div>
+                            {{ /if }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1 lg:col-span-8 flex">
+                <div class="grid-cols-1 grid md:grid-cols-2 gap-8 lg:grid-cols-1 w-full lg:max-w-[600px] ml-auto">
+                    {{ services }}
+                    <div class="col-span-1 rounded-[20px] border border-white p-8">
+                        <span class="mb-12 block font-heading text-[18px]">{{ count }}</span>
+                        <h3 class="font-heading text-[30px] lg:text-[35px] mb-4">{{ title }}</h3>
+                        <div class="mb-6">{{ text }}</div>
+                        {{ image }}
+                        <div class="rounded-[20px] overflow-hidden">
+                            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-full object-center object-cover">
+                        </div>
+                        {{ /image }}
+                    </div>
+                    {{ /services }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
