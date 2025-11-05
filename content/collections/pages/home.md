@@ -55,7 +55,7 @@ page_builder:
                 text: 'Creative-led, conversion-focused design that brings your brand to life and makes users take action - no templates, no fluff.'
         type: new_set
         enabled: true
-        image: 'web-design-wearejunglebrandshoot-iggy&lime-40.jpg'
+        image: 'wearejunglebrandshoot-iggy&lime-40-webdesign.jpg'
       -
         id: mhmi1s3r
         title: 'Web development'
@@ -68,7 +68,7 @@ page_builder:
                 text: 'Fast, flexible builds using WordPress, Statamic, or Shopify. Custom themes, clean code, and no waiting six months for a landing page.'
         type: new_set
         enabled: true
-        image: webdev-wearejungle-45.jpg
+        image: wearejungle-45-webdev.jpg
       -
         id: mhmi25cb
         title: 'Support & Hosting'
@@ -81,7 +81,7 @@ page_builder:
                 text: 'Reliable hosting, ongoing updates, fixes, and peace of mind - we don’t disappear once the site goes live.'
         type: new_set
         enabled: true
-        image: support-wearejungle-7.jpg
+        image: wearejungle-7-support.jpg
       -
         id: mhmi2m0l
         title: 'Shopify partner Agency'
@@ -94,7 +94,7 @@ page_builder:
                 text: 'From theme builds to full custom stores - we help Shopify brands grow fast with optimised, scalable storefronts.'
         type: new_set
         enabled: true
-        image: 'e-com-wearejunglebrandshoot-iggy&lime-23.jpg'
+        image: 'shopify-wearejunglebrandshoot-iggy&lime-23-1762382871.jpg'
     type: services_blocks
     enabled: true
     cta: '#contact'
@@ -136,7 +136,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762381598
+updated_at: 1762382877
 ---
 ## Welcome to your brand new Statamic site!
 
