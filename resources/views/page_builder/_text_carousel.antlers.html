@@ -1,0 +1,27 @@
+{{ if carousel }}
+    <section class="overflow-x-hidden relative js-fade-up py-4 md:py-6 bg-brand-secondary text-carousel text-brand-primary">
+        <div class="w-full relative flex">
+            <div class="animate-marqueeQuick flex whitespace-nowrap gap-8 lg:gap-16">
+                {{ carousel }}
+                <div class="flex items-center mx-4 lg:mx-8 gap-4">
+                    <span class="font-heading uppercase text-[25px] md:text-[30px] lg:text-[40px] xl:text-[50px] 3xl:text-[60px]">{{ title }}</span>
+                    {{ icon }}
+                    <img src="{{ url }}" alt="{{ alt }}" class="w-full max-h-[60px] lg:max-h-[80px]">
+                    {{ /icon }}
+                </div>
+                {{ /carousel }}
+            </div>
+            <div class="absolute top-0 animate-marqueeQuick2 whitespace-nowrap flex gap-8 lg:gap-16">
+                {{ carousel }}
+                <div class="flex items-center mx-4 lg:mx-8 gap-4">
+                    <span class="font-heading uppercase text-[25px] md:text-[30px] lg:text-[40px] xl:text-[50px] 3xl:text-[60px]">{{ title }}</span>
+                    {{ icon }}
+                    <img src="{{ url }}" alt="{{ alt }}" class="w-full max-h-[60px] lg:max-h-[80px]">
+                    {{ /icon }}
+                </div>
+                {{ /carousel }}
+            </div>
+        </div>
+
+    </section>
+{{ /if }}

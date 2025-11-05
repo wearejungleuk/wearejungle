@@ -32,6 +32,35 @@ page_builder:
       - watford-smiles-logo.svg
     type: logos_carousel
     enabled: true
+  -
+    id: mhmgs12r
+    carousel:
+      -
+        id: mhmgs294
+        title: 'Clean Code'
+        type: new_set
+        enabled: true
+        icon: horns.svg
+      -
+        id: mhmgsigj
+        title: 'Shopify Pros'
+        type: new_set
+        enabled: true
+        icon: peace.svg
+      -
+        id: mhmgsq9i
+        title: Reliable
+        type: new_set
+        enabled: true
+        icon: thumbs.svg
+      -
+        id: mhmh5kxo
+        title: 'Award Winning'
+        icon: point.svg
+        type: new_set
+        enabled: true
+    type: text_carousel
+    enabled: true
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -40,7 +69,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762370053
+updated_at: 1762375991
 ---
 ## Welcome to your brand new Statamic site!
 
