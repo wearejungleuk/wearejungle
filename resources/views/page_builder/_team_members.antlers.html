@@ -1,0 +1,99 @@
+{{ if staff }}
+    <section
+            x-data
+            x-init="
+const swiper = new Swiper($refs.slider, {
+  slidesPerView: 1.5,
+  spaceBetween: 30,
+  loop: false,
+  speed: 600,
+  navigation: {
+    nextEl: $refs.next,
+    prevEl: $refs.prev,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1920: {
+      slidesPerView: 3.5,
+      spaceBetween: 30,
+    },
+  },
+  on: {
+    init() { updateButtons(this) },
+    slideChange() { updateButtons(this) }
+  }
+});
+
+
+    function updateButtons(sw) {
+      const prev = $refs.prev;
+      const next = $refs.next;
+
+      prev.disabled = sw.isBeginning;
+      next.disabled = sw.isEnd;
+
+      prev.classList.toggle('opacity-50', sw.isBeginning);
+      next.classList.toggle('opacity-50', sw.isEnd);
+      prev.classList.toggle('cursor-not-allowed', sw.isBeginning);
+      next.classList.toggle('cursor-not-allowed', sw.isEnd);
+    }
+  "
+            class="py-12 md:py-20 lg:py-24" id="{{ block_id }}"
+    >
+        <div class="container">
+            <div class="mb-8 lg:mb-12 js-fade-up">
+                {{ if title || text }}
+                    <div class="w-full max-w-[780px] 3xl:max-w-[880px] mx-auto text-center">
+                        <h2 class="uppercase font-heading text-[38px] sm:text-[45px] md:text-[50px] lg:text-[65px] xl:text-[80px] 2xl:text-[85px] 3xl:text-[90px]">{{ title }}</h2>
+                        <div class="mt-4 text-[18px] lg:text-[20px]">
+                            {{ text }}
+                        </div>
+                    </div>
+                {{ /if }}
+            </div>
+
+            <div class="swiper !overflow-visible" x-ref="slider">
+                <div class="swiper-wrapper">
+                    {{ staff }}
+                    <div class="swiper-slide !h-auto js-fade-up rounded-[20px] group">
+                        {{ image }}
+                        <div class="overflow-hidden rounded-[20px] mb-4 relative">
+                            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full transition-all duration-1500 h-full object group-hover:scale-[1.03]">
+                            {{ if linkedin }}
+                                <a href="{{ linkedin }}" target="_blank" class="w-10 h-10 flex items-center justify-center absolute right-6 top-6 z-[3] rounded-full bg-brand-primary text-brand-secondary"><i class="fa-brands fa-linkedin-in"></i></a>
+                                {{ /if }}
+                        </div>
+                        {{ /image }}
+                        <h3 class="font-heading uppercase text-[22px] md:text-[28px] lg:text-[30px] mb-2">{{ name }}</h3>
+                        <div class="lg:text-[18px]">{{ role }}</div>
+                    </div>
+                    {{ /staff }}
+                </div>
+
+            </div>
+            <div class="flex mt-8 js-fade-up">
+                <div class="arrows flex items-center gap-2 ml-auto">
+                    <button
+                            x-ref="prev"
+                            class="arrow-prev w-[61px] h-[61px] text-black bg-brand-secondary border-[2px] border-black rounded-[15px]"
+                    >
+                        <i class="fa-sharp fa-regular fa-chevron-left"></i>
+                    </button>
+                    <button
+                            x-ref="next"
+                            class="arrow-next w-[61px] h-[61px] text-black bg-brand-secondary border-[2px] border-black rounded-[15px]"
+                    >
+                        <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ /if }}

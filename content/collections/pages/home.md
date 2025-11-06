@@ -219,6 +219,57 @@ page_builder:
     type: work_blocks
     enabled: true
     block_id: work
+  -
+    id: mhnqvljn
+    title: 'Meet the Crew'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Meet the people who’ll actually design, build, and deliver your website - no pass-the-parcel agency setup here.'
+    staff:
+      -
+        id: mhnqw13w
+        image: 'brad-wearejunglebrandshoot-iggy&lime-169.jpg'
+        name: Brad
+        role: 'Dad joke extrordinaire'
+        type: new_set
+        enabled: true
+        linkedin: 'https://uk.linkedin.com/in/brad-goddard-821376188'
+      -
+        id: mhnqx5y0
+        image: 'kay-wearejunglebrandshoot-iggy&lime-177.jpg'
+        name: Kay
+        role: "Runs the schedule like it's the Navy"
+        type: new_set
+        enabled: true
+        linkedin: 'https://uk.linkedin.com/in/kay-goddard-659a6a299'
+      -
+        id: mhnqxkwp
+        image: 'erin-wearejunglebrandshoot-iggy&lime-57.jpg'
+        name: Erin
+        role: 'Content Jedi'
+        type: new_set
+        enabled: true
+        linkedin: 'https://uk.linkedin.com/in/erin-goddard-b713a137b'
+      -
+        id: mhns60vj
+        image: julius-we-are-jungle.svg
+        name: Julius
+        role: 'Director of monkey business'
+        linkedin: 'https://www.linkedin.com/company/we-are-jungle/?originalSubdomain=uk'
+        type: new_set
+        enabled: true
+    type: team_members
+    enabled: true
+    block_id: about
+  -
+    id: mhnsxw7k
+    quote: 'BIG-AGENCY QUALITY. SMALL-TEAM RELIABILITY. NO EGO. NO EXCUSES.'
+    type: quote
+    enabled: true
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -227,7 +278,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762451370
+updated_at: 1762456248
 ---
 ## Welcome to your brand new Statamic site!
 

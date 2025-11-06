@@ -236,3 +236,64 @@ fields:
                 -
                   handle: ctas
                   field: ctas.ctas
+            team_members:
+              display: 'Team Members'
+              fields:
+                -
+                  handle: block_id
+                  field:
+                    type: text
+                    display: 'Block ID'
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: staff
+                  field:
+                    type: replicator
+                    display: Staff
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            fields:
+                              -
+                                handle: image
+                                field:
+                                  max_files: 1
+                                  container: assets
+                                  type: assets
+                                  display: Image
+                              -
+                                handle: name
+                                field:
+                                  type: text
+                                  display: Name
+                              -
+                                handle: role
+                                field:
+                                  type: text
+                                  display: Role
+                              -
+                                handle: linkedin
+                                field:
+                                  type: link
+                                  display: LinkedIn
+            quote:
+              display: Quote
+              fields:
+                -
+                  handle: quote
+                  field:
+                    type: text
+                    display: Quote
