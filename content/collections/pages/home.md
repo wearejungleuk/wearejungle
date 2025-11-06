@@ -99,6 +99,7 @@ page_builder:
     enabled: true
     cta: '#contact'
     cta_title: "Let's Get Started"
+    block_id: services
   -
     id: mhmgs12r
     carousel:
@@ -186,6 +187,38 @@ page_builder:
         enabled: true
     type: text_and_icon_carousel
     enabled: true
+  -
+    id: mhndf9dy
+    title: 'BIG-AGENCY (QUALITY). SMALL-TEAM RELIABILITY. NO EGO. NO EXCUSES.'
+    blocks:
+      -
+        id: mhndgasm
+        client:
+          - cadac8f9-c8f3-4c56-924b-962c6de66f0b
+          - 3cc5e19b-088a-4bb7-8b30-95b37925125e
+          - 90869023-2933-4b72-831b-4641b8c9b446
+          - c6598d61-88d6-4d30-8dc7-41f8dd354acd
+          - 15f3fbef-6f91-4f99-8fb6-39b83e8b3def
+        type: new_set
+        enabled: true
+    block_title: 'SEEN ENOUGH? LET’S DO THIS'
+    block_text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Let’s build something that doesn’t just look the part, but delivers real results too. You in?'
+    ctas:
+      -
+        id: mhndg1a2
+        cta: '#contact'
+        cta_title: "Let's Talk"
+        type: new_set
+        enabled: true
+    type: work_blocks
+    enabled: true
+    block_id: work
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -194,7 +227,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762426757
+updated_at: 1762451370
 ---
 ## Welcome to your brand new Statamic site!
 

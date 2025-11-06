@@ -23,6 +23,25 @@ tabs:
               remove_empty_nodes: false
               type: bard
               display: 'Preview Text'
+          -
+            handle: preview_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Preview Image'
+          -
+            handle: preview_background_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Preview Background Image'
+          -
+            handle: background_video
+            field:
+              type: video
+              display: 'Background Video'
   sidebar:
     display: Sidebar
     sections:

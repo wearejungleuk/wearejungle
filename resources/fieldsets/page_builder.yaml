@@ -92,6 +92,11 @@ fields:
               display: 'Services Blocks'
               fields:
                 -
+                  handle: block_id
+                  field:
+                    type: text
+                    display: 'Block ID'
+                -
                   handle: title
                   field:
                     type: text
@@ -146,6 +151,11 @@ fields:
               display: 'Text and Icon Carousel'
               fields:
                 -
+                  handle: block_id
+                  field:
+                    type: text
+                    display: 'Block ID'
+                -
                   handle: title
                   field:
                     type: text
@@ -180,3 +190,49 @@ fields:
                                   container: assets
                                   type: assets
                                   display: Icon
+            work_blocks:
+              display: 'Work Blocks'
+              fields:
+                -
+                  handle: block_id
+                  field:
+                    type: text
+                    display: 'Block ID'
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: blocks
+                  field:
+                    type: replicator
+                    display: Blocks
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            fields:
+                              -
+                                handle: client
+                                field:
+                                  collections:
+                                    - work
+                                  type: entries
+                                  display: Client
+                -
+                  handle: block_title
+                  field:
+                    type: text
+                    display: 'Block Title'
+                -
+                  handle: block_text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Block Text'
+                -
+                  handle: ctas
+                  field: ctas.ctas

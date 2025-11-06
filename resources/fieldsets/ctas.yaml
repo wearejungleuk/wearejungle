@@ -1,0 +1,24 @@
+title: CTAs
+fields:
+  -
+    handle: ctas
+    field:
+      type: replicator
+      display: CTAs
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'

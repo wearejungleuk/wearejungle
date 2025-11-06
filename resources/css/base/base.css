@@ -23,3 +23,8 @@ body {
   max-width: 100%;
  }
 }
+
+main {
+  position: relative;
+  overflow-x: hidden;
+}
