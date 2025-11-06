@@ -297,3 +297,34 @@ fields:
                   field:
                     type: text
                     display: Quote
+            about:
+              display: About
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+                -
+                  handle: images
+                  field:
+                    max_files: 5
+                    container: assets
+                    type: assets
+                    display: Images

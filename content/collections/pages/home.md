@@ -270,6 +270,26 @@ page_builder:
     quote: 'BIG-AGENCY QUALITY. SMALL-TEAM RELIABILITY. NO EGO. NO EXCUSES.'
     type: quote
     enabled: true
+  -
+    id: mhnubrmv
+    title: 'We don’t believe in faceless agencies'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'We’re real people, and we actually enjoy meeting our clients. Zoom, Teams, or a pint — your call.'
+    cta: '#contact'
+    cta_title: 'Start a Project'
+    images:
+      - 'kay-and-bradwearejunglebrandshoot-iggy&lime-127.jpg'
+      - 'brad-wearejunglebrandshoot-iggy&lime-159.jpg'
+      - 'wearejunglebrandshoot-iggy&lime-166.jpg'
+      - 'erin-wearejunglebrandshoot-iggy&lime-151.jpg'
+      - 'burger-wearejunglebrandshoot-iggy&lime-89.jpg'
+    type: about
+    enabled: true
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -278,7 +298,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762456248
+updated_at: 1762459715
 ---
 ## Welcome to your brand new Statamic site!
 
