@@ -128,6 +128,64 @@ page_builder:
         enabled: true
     type: text_carousel
     enabled: true
+  -
+    id: mhnb5t8b
+    title: 'THE DIFFERENCE WE MAKE.'
+    carousel:
+      -
+        id: mhnb6561
+        title: 'Websites That Actually Work'
+        text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Not just pretty pixels, we build sites that drive sales, leads, and lasting impact.'
+        icon: asset-128.svg
+        type: new_set
+        enabled: true
+      -
+        id: mhnbaiav
+        title: 'Support That Sticks Around'
+        text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'We don’t vanish after launch. Expect ongoing care, updates, and real partnership.'
+        icon: asset-126.svg
+        type: new_set
+        enabled: true
+      -
+        id: mhnbb815
+        title: 'Fast, Scalable, Reliable'
+        text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Sites that load in a blink, grow with your business, and never crack under pressure.'
+        icon: asset-129.svg
+        type: new_set
+        enabled: true
+      -
+        id: mhnbbmly
+        title: 'Custom, Not Cookie-Cutter'
+        text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'No templates, no shortcuts - just tailored solutions that fit your brand like a glove.'
+        icon: asset-117.svg
+        type: new_set
+        enabled: true
+    type: text_and_icon_carousel
+    enabled: true
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -136,7 +194,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762382877
+updated_at: 1762426757
 ---
 ## Welcome to your brand new Statamic site!
 

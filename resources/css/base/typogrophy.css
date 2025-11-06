@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgb(var(--color-brand-secondary));
     color: rgb(var(--color-brand-primary));
     text-align: center;
-    border: 2px solid rgb(var(--color-black));
+    border: 3px solid rgb(var(--color-black));
     cursor: pointer;
     display: inline-block;
     @apply font-heading;
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 3px;
   background-color: rgb(var(--color-black));
   z-index: -1;
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
    }
    &:hover {
   span {
-    transform: translateY(2px);
+    transform: translateY(4px);
   }
   &:before {
      transform: translateY(0);

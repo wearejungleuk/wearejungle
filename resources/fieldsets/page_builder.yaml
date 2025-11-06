@@ -142,3 +142,41 @@ fields:
                                   container: assets
                                   type: assets
                                   display: Image
+            text_and_icon_carousel:
+              display: 'Text and Icon Carousel'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: carousel
+                  field:
+                    type: replicator
+                    display: Carousel
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            fields:
+                              -
+                                handle: title
+                                field:
+                                  type: text
+                                  display: Title
+                              -
+                                handle: text
+                                field:
+                                  remove_empty_nodes: false
+                                  type: bard
+                                  display: Text
+                              -
+                                handle: icon
+                                field:
+                                  max_files: 1
+                                  container: assets
+                                  type: assets
+                                  display: Icon

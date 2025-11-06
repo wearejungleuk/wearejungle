@@ -16,6 +16,7 @@ module.exports = {
         "brand-primary": "rgba(var(--color-brand-primary), <alpha-value>)",
         "brand-light-blue": "rgba(var(--color-brand-light-blue), <alpha-value>)",
         "brand-dark-blue": "rgba(var(--color-brand-dark-blue), <alpha-value>)",
+        "brand-dark-blue-two": "rgba(var(--color-brand-dark-blue-two), <alpha-value>)",
         "brand-secondary": "rgba(var(--color-brand-secondary), <alpha-value>)",
         "brand-text": "rgba(var(--color-brand-text), <alpha-value>)",
         "black": "rgba(var(--color-black), <alpha-value>)",

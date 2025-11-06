@@ -1,0 +1,102 @@
+{{ if carousel }}
+    <section
+            x-data
+            x-init="
+const swiper = new Swiper($refs.slider, {
+  slidesPerView: 1.5,
+  spaceBetween: 30,
+  loop: false,
+  speed: 600,
+  navigation: {
+    nextEl: $refs.next,
+    prevEl: $refs.prev,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1920: {
+      slidesPerView: 3.5,
+      spaceBetween: 30,
+    },
+  },
+  on: {
+    init() { updateButtons(this) },
+    slideChange() { updateButtons(this) }
+  }
+});
+
+
+    function updateButtons(sw) {
+      const prev = $refs.prev;
+      const next = $refs.next;
+
+      prev.disabled = sw.isBeginning;
+      next.disabled = sw.isEnd;
+
+      prev.classList.toggle('opacity-50', sw.isBeginning);
+      next.classList.toggle('opacity-50', sw.isEnd);
+      prev.classList.toggle('cursor-not-allowed', sw.isBeginning);
+      next.classList.toggle('cursor-not-allowed', sw.isEnd);
+    }
+  "
+            class="section"
+    >
+        <div class="container">
+            <div class="flex flex-col md:flex-row gap-8 mb-8 lg:mb-10">
+                <div class="flex-1 js-fade-up">
+                    {{ if title }}
+                        <div class="w-full max-w-[780px] 3xl:max-w-[880px]">
+                            <h2 class="font-heading text-[38px] sm:text-[45px] md:text-[50px] lg:text-[65px] xl:text-[80px] 2xl:text-[85px] 3xl:text-[90px]">{{ title }}</h2>
+                        </div>
+                    {{ /if }}
+                </div>
+
+                <div class="flex-none md:flex md:items-end md:justify-end js-fade-up">
+                    <div class="flex gap-2">
+                        <div class="arrows flex items-center gap-2">
+                            <button
+                                    x-ref="prev"
+                                    class="arrow-prev w-[61px] h-[61px] text-black bg-brand-secondary border-[2px] border-black rounded-[15px]"
+                            >
+                                <i class="fa-sharp fa-regular fa-chevron-left"></i>
+                            </button>
+                            <button
+                                    x-ref="next"
+                                    class="arrow-next w-[61px] h-[61px] text-black bg-brand-secondary border-[2px] border-black rounded-[15px]"
+                            >
+                                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        {{ if cta }}
+                            {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" classes="button__white" }}
+                        {{ /if }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper !overflow-visible" x-ref="slider">
+                <div class="swiper-wrapper">
+                    {{ carousel }}
+                    <div class="swiper-slide !h-auto js-fade-up rounded-[20px] p-8 bg-brand-light-blue text-black border-black border-[2px]">
+                        <div class="w-full">
+                            <h3 class="font-heading uppercase text-[22px] md:text-[28px] lg:text-[30px] mb-4">{{ title }}</h3>
+                            <div class="lg:text-[18px]">{{ text }}</div>
+                            <div class="flex justify-end">
+                                {{ icon }}
+                                <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="max-h-[100px] mt-8 opacity-50">
+                                {{ /icon }}
+                            </div>
+                        </div>
+                    </div>
+                    {{ /carousel }}
+                </div>
+            </div>
+        </div>
+    </section>
+{{ /if }}
