@@ -64,12 +64,12 @@
 
             <!-- Captcha Section -->
             <div class="mt-8">
-                {{ captcha }}
-                {{ if error:captcha }}
-                    <div class="px-4 py-2 mt-8 bg-red-500 text-white border border-red-700 rounded">
-                        {{ error:captcha }}
-                    </div>
-                {{ /if }}
+{{#                 {{ captcha }} #}}
+{{#                 {{ if error:captcha }} #}}
+{{#                     <div class="px-4 py-2 mt-8 bg-red-500 text-white border border-red-700 rounded"> #}}
+{{#                         {{ error:captcha }} #}}
+{{#                     </div> #}}
+{{#                 {{ /if }} #}}
             </div>
             <div class="">
                 <p>By submitting this form, you agree to the
