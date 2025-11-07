@@ -12,12 +12,12 @@ preview_text:
 preview_image: mash-gang-website.jpg
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
-no_index_page: false
+no_index_page: true
 no_follow_links: false
 sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762445719
+updated_at: 1762526083
 preview_background_image: mashgang.jpg
 ---

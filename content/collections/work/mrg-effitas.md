@@ -13,11 +13,11 @@ preview_image: mrg-effitas-website.jpg
 preview_background_image: mrg-effitas.jpg
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
-no_index_page: false
+no_index_page: true
 no_follow_links: false
 sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762429247
+updated_at: 1762526096
 ---

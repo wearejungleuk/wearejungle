@@ -409,7 +409,9 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762517792
+updated_at: 1762526060
+meta_title: 'Web Design Agency Portsmouth | Statamic, Shopify & WordPress Experts'
+meta_description: 'We Are Jungle is a small, sharp web design agency in Portsmouth specialising in Statamic, Shopify, WordPress. Clean design, solid code, no nonsense.'
 ---
 ## Welcome to your brand new Statamic site!
 
