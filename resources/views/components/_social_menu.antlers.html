@@ -1,6 +1,6 @@
 <ul class="social-menu mt-5 flex gap-3 flex-wrap">
     {{ nav:social select="id|title|url" }}
-        <li class="inline-block">
+        <li class="">
             <a href="{{ url }}" target="_blank" rel="noopener" class="text-brand-text w-10 h-10 min-w-12 bg-brand-secondary min-h-10 flex items-center justify-center rounded-[30px]">
                 {{ if title | lower == "linkedin" }}
                 {{ partial:components/icons.linkedin }}
