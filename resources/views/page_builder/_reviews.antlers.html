@@ -86,7 +86,7 @@ const swiper = new Swiper($refs.slider, {
                             {{ quote }}
                         </div>
                         {{ if website }}
-                            <a href="{{ website }}" target="_blank" class="text-[18px] break-words">
+                            <a href="{{ website }}" target="_blank" class="text-[18px] break-words underline font-bodybold duration-300 transition-all hover:text-brand-secondary">
                                 {{ website remove_left="https://" remove_left="http://" trim="()" }}
                             </a>
                         {{ /if }}

@@ -1,5 +1,40 @@
-<footer class="footer pb-8 pt-10 lg:pt-18 2xl:pt-24 solid-bg bg-brand-primary text-white" id="footer">
-    <div class="container">
-
+<footer class="footer lg:pt-18 2xl:pt-24 pt-10 lg:pt-20 solid-bg bg-white text-black rounded-tr-[50px] rounded-tl-[50px]" id="footer">
+    <div class="container container_full">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="cols-span-1">
+                <h4 class="inline-block relative uppercase font-heading text-[32px] sm:text-[35px] md:text-[40px] lg:text-[45px] xl:text-[50px]">
+                    <span class="relative z-[2]">Let's Work<br>Together</span>
+                    <div class="max-w-14 w-full absolute top-0 -right-10 z-[3]">
+                        {{ partial:components/icons.julius-head }}
+                    </div>
+                </h4>
+                <div class="mt-8">
+                    {{ partial:components/button url="#contact" title="Start Your Project" target="" }}
+                </div>
+            </div>
+            <div class="cols-span-1">
+                <div class="grid gap-8 grid-cols-2 gap-8">
+                    <div class="col-span-1">
+                        <h4 class="uppercase font-heading mb-4 lg:mb-6 text-[20px] uppercase">Services</h4>
+                        <ul class="flex gap-2 flex-col">
+                            <li>Web Design</li>
+                            <li>Web Development</li>
+                            <li>Web Development</li>
+                            <li>Shopify Partner</li>
+                            <li>Statamic Agency</li>
+                            <li>WordPress</li>
+                            <li>Hosting & Support</li>
+                        </ul>
+                    </div>
+                    <div class="col-span-1">
+                        <h4 class="uppercase font-heading mb-4 lg:mb-6 text-[20px] uppercase">Contact</h4>
+                        {{ partial:components/social_menu }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 border-t mt-10">
+            <p>&copy; {{ now format="Y" }} We Are Jungle Ltd | Company number 16357238</p>
+        </div>
     </div>
 </footer>

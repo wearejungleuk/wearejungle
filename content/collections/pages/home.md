@@ -24,12 +24,13 @@ page_builder:
     id: mhmct9a7
     title: "We Are Jungle's Friends"
     images:
-      - elevate-logo.svg
-      - jd-dental-logo.svg
+      - group-131.svg
+      - watford-smiles-logo.svg
       - mashgang_logo_1.svg
+      - jd-dental-logo.svg
       - mrg-effitas-logo.svg
       - my-streets-logo.svg
-      - watford-smiles-logo.svg
+      - elevate-logo.svg
     type: logos_carousel
     enabled: true
   -
@@ -221,7 +222,7 @@ page_builder:
     block_id: work
   -
     id: mhnqvljn
-    title: 'Meet the Crew'
+    title: "Meet the Junglist's"
     text:
       -
         type: paragraph
@@ -339,6 +340,28 @@ page_builder:
         type: new_set
         enabled: true
       -
+        id: mhosyzwh
+        name: 'Jo Hilder'
+        role: 'MRG Effitas'
+        quote:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Working with We Are Jungle on the MRG Effitas website was a great experience. From briefing to completion the team was friendly, creative and efficient.'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Their consultative approach meant we ended up with a well structured, well optimised website that encourages conversion. As leaders in cybersecurity testing, our site also had to be highly secure.'
+        image:
+          - 1729850693593.jpeg
+        website: 'http://mrg-effitas.com'
+        type: new_set
+        enabled: true
+      -
         id: mhopxv2j
         name: 'Cameron Brew'
         role: 'South Coast Rx Physiotherapy'
@@ -386,7 +409,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762512549
+updated_at: 1762517792
 ---
 ## Welcome to your brand new Statamic site!
 
