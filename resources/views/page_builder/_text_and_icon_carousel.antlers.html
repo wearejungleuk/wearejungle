@@ -3,8 +3,8 @@
             x-data
             x-init="
 const swiper = new Swiper($refs.slider, {
-  slidesPerView: 1.5,
-  spaceBetween: 30,
+  slidesPerView: 2,
+  spaceBetween: 20,
   loop: false,
   speed: 600,
   navigation: {
@@ -83,7 +83,7 @@ const swiper = new Swiper($refs.slider, {
             <div class="swiper !overflow-visible" x-ref="slider">
                 <div class="swiper-wrapper">
                     {{ carousel }}
-                    <div class="swiper-slide !h-auto js-fade-up rounded-[20px] p-8 bg-brand-light-blue text-black border-black border-[2px]">
+                    <div class="swiper-slide !h-auto js-fade-up rounded-[20px] p-4 md:p-8 bg-brand-light-blue text-black border-black border-[2px]">
                         <div class="w-full">
                             <h3 class="font-heading uppercase text-[22px] md:text-[28px] lg:text-[30px] mb-4">{{ title }}</h3>
                             <div class="lg:text-[18px]">{{ text }}</div>

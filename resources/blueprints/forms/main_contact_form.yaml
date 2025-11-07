@@ -1,0 +1,58 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: budget
+            field:
+              options:
+                -
+                  key: 2000-5000
+                  value: '£2,000 to £5,000'
+                -
+                  key: 5000-10000
+                  value: '£5,000 to £10,000'
+                -
+                  key: 10000-25000
+                  value: '£10,000 to £25,000'
+                -
+                  key: 25000-50000
+                  value: '£25,000 to £50,000'
+                -
+                  key: 50+
+                  value: '£50,000+'
+              type: select
+              display: Budget
+          -
+            handle: name
+            field:
+              type: text
+              display: Name
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              input_type: email
+              placeholder: 'Your Email'
+              type: text
+              display: Email
+              validate:
+                - required
+          -
+            handle: phone
+            field:
+              input_type: tel
+              placeholder: 'Your Number'
+              type: text
+              display: Phone
+              validate:
+                - required
+          -
+            handle: message
+            field:
+              placeholder: 'Your Message'
+              type: textarea
+              display: Message

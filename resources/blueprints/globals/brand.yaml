@@ -33,3 +33,9 @@ tabs:
             field:
               type: text
               display: 'Calendly Link'
+          -
+            handle: address
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Address

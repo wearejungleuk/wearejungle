@@ -1,0 +1,26 @@
+<section class="pb-12 md:pb-20 lg:pb-24">
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="col-span-1 js-fade-up">
+                <h2 class="js-fade-up uppercase font-heading text-[38px] sm:text-[48px] md:text-[55px] lg:text-[65px] xl:text-[70px]">{{ title }}</h2>
+                <div class="js-fade-up mt-4 lg:mt-6 text-[18px] lg:text-[20px] mb-8">
+                    {{ text }}
+                </div>
+                {{ if cta }}
+                    <div class="mt-8 js-fade-up">
+                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" }}
+                    </div>
+                {{ /if }}
+            </div>
+            <div class="col-span-1 js-fade-up overflow-hidden rounded-[20px] bg-[#fff] border-[3px] border-black">
+                <iframe
+                        src="https://calendly.com/wearejungle/introduction-meeting?embed_domain=wearejungle.co.uk&embed_type=Inline&hide_event_type_details=1&hide_gdpr_banner=1&primary_color=#004af7"
+                        width="100%"
+                        height="500"
+                        frameborder="0"
+                        scrolling="no">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>

@@ -5,3 +5,25 @@ data:
   number: '023 9200 3967'
   email: hello@wearejungle.co.uk
   calendly_link: 'https://calendly.com/wearejungle/introduction-meeting'
+  address:
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Gatcombe House,'
+        -
+          type: hardBreak
+        -
+          type: text
+          text: 'Copnor Rd, Hilsea,'
+        -
+          type: hardBreak
+        -
+          type: text
+          text: 'Portsmouth,'
+        -
+          type: hardBreak
+        -
+          type: text
+          text: 'PO3 5EJ'

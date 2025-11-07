@@ -9,5 +9,6 @@
 @import "base/typogrophy.css";
 
 @import "layout/header.css";
+@import "layout/inputs.css";
 
 @import "modules/text-carousel.css";

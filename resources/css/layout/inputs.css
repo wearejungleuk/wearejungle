@@ -1,0 +1,19 @@
+input[type=text], input[type=number], input[type=email], textarea, input[type=tel], input[type=search], select {
+  resize: none;
+  @apply bg-transparent w-full px-5 py-3 outline-none rounded-[0] border-black border-[2px] placeholder-black;
+}
+
+.select-wrap, .custom-select {
+select {
+  appearance: none;
+  position: relative;
+  z-index: 1;
+}
+  svg {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+  }
+}

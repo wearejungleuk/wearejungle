@@ -290,6 +290,94 @@ page_builder:
       - 'burger-wearejunglebrandshoot-iggy&lime-89.jpg'
     type: about
     enabled: true
+  -
+    id: mhnvylfi
+    title: 'LET’S HAVE A PROPER CHAT'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Pick a time that suits you. We’ll talk through your project, answer your questions, and see if we’re a good fit.'
+    type: calendly
+    enabled: true
+    cta: '#contact'
+    cta_title: 'Or Contact Us'
+  -
+    id: mhoppwih
+    title: 'The proof is in the praise'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Don’t just take our word for it. See how our work impacts the people who matter most.'
+    reviews:
+      -
+        id: mhopql84
+        name: 'Jodie Goodchild'
+        role: 'Known For'
+        quote:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'I was referred to We Are Jungle by someone I trust, and from the moment we met, I knew they were the real deal. '
+              -
+                type: hardBreak
+              -
+                type: hardBreak
+              -
+                type: text
+                text: 'I had a website before, but We Are Jungle turned it into something I’m truly proud of. The process felt effortless, and their expertise and approach made everything so easy.'
+        image:
+          - image-3.png
+        website: 'https://knownfor.co.uk'
+        type: new_set
+        enabled: true
+      -
+        id: mhopxv2j
+        name: 'Cameron Brew'
+        role: 'South Coast Rx Physiotherapy'
+        quote:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Both Brad and Kay went above and beyond in their support for us and ensured that the final version of the website represented exactly the feel we were going for. Thank you so much to both of you for all of your hard work. We could not recommend We are Jungle highly enough!'
+        image:
+          - screenshot-2025-01-22-at-11.46.21-520x650.jpg
+        website: 'https://southcoastrxphysiotherapy.co.uk'
+        type: new_set
+        enabled: true
+      -
+        id: mhoq0axx
+        name: 'Laura O’Leary'
+        role: 'My Learning Cloud'
+        quote:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'We recently worked with We Are Jungle to re-build and refine our website, and the entire experience has been fantastic. From the start, We Are Jungle offered a competitive quote and maintained excellent communication throughout the project.'
+        image:
+          - 1621333113157.jpeg
+        website: 'https://mylearningcloud.org.uk'
+        type: new_set
+        enabled: true
+    type: reviews
+    enabled: true
+  -
+    id: mhoo4ytd
+    title: 'Get in touch'
+    form_field: main_contact_form
+    type: contact
+    enabled: true
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -298,7 +386,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762459715
+updated_at: 1762512549
 ---
 ## Welcome to your brand new Statamic site!
 

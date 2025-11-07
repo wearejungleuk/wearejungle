@@ -28,3 +28,7 @@ main {
   position: relative;
   overflow-x: hidden;
 }
+
+.simplebar-wrapper {
+  display: none!important;
+}

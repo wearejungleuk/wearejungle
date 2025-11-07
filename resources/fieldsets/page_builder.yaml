@@ -328,3 +328,94 @@ fields:
                     container: assets
                     type: assets
                     display: Images
+            calendly:
+              display: Calendly
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+            contact:
+              display: Contact
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: form_field
+                  field:
+                    max_items: 1
+                    type: form
+                    display: 'Form Field'
+            reviews:
+              display: Reviews
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: reviews
+                  field:
+                    type: replicator
+                    display: Reviews
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            fields:
+                              -
+                                handle: name
+                                field:
+                                  type: text
+                                  display: Name
+                              -
+                                handle: role
+                                field:
+                                  type: text
+                                  display: Role
+                              -
+                                handle: quote
+                                field:
+                                  remove_empty_nodes: false
+                                  type: bard
+                                  display: Quote
+                              -
+                                handle: image
+                                field:
+                                  container: assets
+                                  type: assets
+                                  display: Image
+                              -
+                                handle: website
+                                field:
+                                  type: text
+                                  display: Website
