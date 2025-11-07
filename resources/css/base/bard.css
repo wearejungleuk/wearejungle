@@ -1,0 +1,67 @@
+.bard {
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+  font-weight: 700;
+}
+ul {
+  list-style-type: disc;
+li {
+  list-style-position: inside;
+&::marker {
+   color: rgb(var(--color-brand-secondary));
+ }
+}
+}
+p {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+a:not(.button) {
+  text-decoration: underline;
+  font-weight: 700;
+}
+ul, ol {
+li {
+  margin-bottom: 5px;
+  font-size: 16px;
+@screen lg {
+  font-size: 18px;
+}
+&::marker {
+   color: rgb(var(--color-brand-secondary));
+ }
+}
+}
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 20px;
+}
+ol {
+  margin-bottom: 20px;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+img {
+  width: 100%;
+  margin: rem-calc(30px 0);
+}
+}

@@ -22,15 +22,15 @@
                             <div
                                     class="col-span-1
                                     {{ switch(
-                                        ((type == 'text' || type == 'email')) => 'md:col-span-6',
-                                        (width == '25') => 'md:col-span-3',
-                                        (width == '33') => 'md:col-span-4',
-                                        (width == '50') => 'md:col-span-6',
-                                        (width == '66') => 'md:col-span-8',
-                                        (width == '75') => 'md:col-span-9',
-                                        (width == '100') => 'md:col-span-12',
-                                        () => 'md:col-span-12'
-                                        ) }}"
+                                    ((type == 'text' || type == 'email')) => 'md:col-span-6',
+                                    (width == '25') => 'md:col-span-3',
+                                    (width == '33') => 'md:col-span-4',
+                                    (width == '50') => 'md:col-span-6',
+                                    (width == '66') => 'md:col-span-8',
+                                    (width == '75') => 'md:col-span-9',
+                                    (width == '100') => 'md:col-span-12',
+                                    () => 'md:col-span-12'
+                                    ) }}"
                                 {{ type == 'text' && input_type == 'hidden' ?= 'hidden' }}
                             >
                                 {{ if ! hide_display }}
@@ -71,7 +71,11 @@
                     </div>
                 {{ /if }}
             </div>
-
+            <div class="">
+                <p>By submitting this form, you agree to the
+                    <a href="/privacy-policy" class="underline duration-300 transition-all hover:text-brand-secondary">Privacy Policy</a>.
+                </p>
+            </div>
             <!-- Honeypot & Submit Button for Other Forms -->
             <div class="mt-8">
                 <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}"/>

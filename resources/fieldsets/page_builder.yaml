@@ -419,3 +419,11 @@ fields:
                                 field:
                                   type: text
                                   display: Website
+            basic_content:
+              display: 'Basic Content'
+              fields:
+                -
+                  handle: content
+                  field:
+                    type: textarea
+                    display: Content

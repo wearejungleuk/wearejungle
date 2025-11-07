@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/hox0uhf.css">
     {{ scripts:head_scripts }}
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-{{#     {{ cookie_notice:scripts }} #}}
+     {{ cookie_notice:scripts }}
     {{ captcha:head }}
 </head>
 <body data-site-handle="{{ site:handle }}"
@@ -51,7 +51,7 @@
 </main>
 
 {{ aardvark-seo:footer }}
-
+{{ cookie_notice:widget }}
 {{ scripts:footer_scripts }}
 {{# {{ cookie_notice:widget }} #}}
 </body>
