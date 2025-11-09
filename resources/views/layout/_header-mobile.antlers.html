@@ -12,28 +12,9 @@
                 <div>
                     <a href="/">
                         {{ if brand:white_logo }}
-                            <template x-if="!scrolled">
-                                {{ brand:white_logo }}
-                                <img
-                                        src="{{ url }}"
-                                        alt="{{ alt }}"
-                                        class="w-full max-w-[150px] xl:max-w-[200px] 3xl:max-w-[250px]"
-                                        loading="lazy"
-                                >
-                                {{ /brand:white_logo }}
-                            </template>
-                        {{ /if }}
-                        {{ if brand:logo }}
-                            <template x-if="scrolled">
-                                {{ brand:logo }}
-                                <img
-                                        src="{{ url }}"
-                                        alt="{{ alt }}"
-                                        class="w-full max-w-[150px] xl:max-w-[200px] 3xl:max-w-[250px]"
-                                        loading="lazy"
-                                >
-                                {{ /brand:logo }}
-                            </template>
+                            {{ brand:white_logo }}
+                            <img src="{{ url }}" alt="{{ alt }}" class="w-full max-w-[150px] xl:max-w-[200px] 3xl:max-w-[250px]" loading="lazy">
+                            {{ /brand:white_logo }}
                         {{ /if }}
                     </a>
                 </div>
