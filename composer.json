@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "aryehraber/statamic-captcha": "^1.14",
+        "anakadote/statamic-recaptcha": "^2.0",
         "duncanmcclean/cookie-notice": "^9.2",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",

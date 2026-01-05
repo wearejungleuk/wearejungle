@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2166a3f6e5820bc5e3b2b8efcbd3072",
+    "content-hash": "8ce1b7c2febbe999eabae82cc29fd01b",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -70,39 +70,34 @@
             "time": "2024-05-11T08:05:58+00:00"
         },
         {
-            "name": "aryehraber/statamic-captcha",
-            "version": "v1.14.0",
+            "name": "anakadote/statamic-recaptcha",
+            "version": "2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/aryehraber/statamic-captcha.git",
-                "reference": "2614948c62f9f7e573962b05b017bfffbe3f3e45"
+                "url": "https://github.com/anakadote/statamic-recaptcha.git",
+                "reference": "c6635d597c3f51481df8211a391a0b69ddf61ad2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aryehraber/statamic-captcha/zipball/2614948c62f9f7e573962b05b017bfffbe3f3e45",
-                "reference": "2614948c62f9f7e573962b05b017bfffbe3f3e45",
+                "url": "https://api.github.com/repos/anakadote/statamic-recaptcha/zipball/c6635d597c3f51481df8211a391a0b69ddf61ad2",
+                "reference": "c6635d597c3f51481df8211a391a0b69ddf61ad2",
                 "shasum": ""
             },
-            "require": {
-                "statamic/cms": "^3.0 || ^4.0 || ^5.0"
-            },
-            "type": "statamic-addon",
+            "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "AryehRaber\\Captcha\\CaptchaServiceProvider"
+                        "Anakadote\\StatamicRecaptcha\\ServiceProvider"
                     ]
                 },
                 "statamic": {
-                    "name": "Captcha",
-                    "slug": "captcha",
-                    "version": "1.10.0",
-                    "description": "Protect your Statamic forms using a Captcha service"
+                    "name": "Statamic reCAPTCHA (v3 and v2)",
+                    "description": "A Google reCAPTCHA v3 and v2 addon."
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "AryehRaber\\Captcha\\": "src"
+                    "Anakadote\\StatamicRecaptcha\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -111,32 +106,15 @@
             ],
             "authors": [
                 {
-                    "name": "Aryeh Raber",
-                    "email": "aryeh.raber@gmail.com",
-                    "homepage": "https://aryeh.dev",
-                    "role": "Developer"
+                    "name": "Taylor Collins",
+                    "homepage": "https://endif.io"
                 }
-            ],
-            "description": "Protect your Statamic forms using a Captcha service",
-            "homepage": "https://github.com/aryehraber/statamic-captcha",
-            "keywords": [
-                "Forms",
-                "captcha",
-                "hcaptcha",
-                "recaptcha",
-                "statamic"
             ],
             "support": {
-                "issues": "https://github.com/aryehraber/statamic-captcha/issues",
-                "source": "https://github.com/aryehraber/statamic-captcha/tree/v1.14.0"
+                "issues": "https://github.com/anakadote/statamic-recaptcha/issues",
+                "source": "https://github.com/anakadote/statamic-recaptcha/tree/2.0"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/aryehraber",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-11-29T10:23:10+00:00"
+            "time": "2025-06-27T19:16:37+00:00"
         },
         {
             "name": "aws/aws-crt-php",
