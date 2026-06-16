@@ -1,0 +1,72 @@
+<section class="bg-brand-primary py-16 md:py-24 lg:py-36 relative overflow-hidden">
+    <div class="container">
+
+        <div class="text-center mb-12 lg:mb-16">
+            {{ if above_title }}
+                <div class="flex justify-center js-fade-up">
+                    {{ partial:components/above-title title="{ above_title }" }}
+                </div>
+            {{ /if }}
+            {{ if title }}
+                <h2 class="font-heading uppercase text-[42px] sm:text-[52px] lg:text-[72px] xl:text-[80px] leading-none text-white mb-6 max-w-[800px] xl:max-w-[960px] mx-auto js-fade-up">{{ title }}</h2>
+            {{ /if }}
+            {{ if text }}
+                <div class="text-white text-[16px] lg:text-[18px] max-w-[680px] mx-auto js-fade-up">{{ text }}</div>
+            {{ /if }}
+        </div>
+
+        {{ if plans }}
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-start">
+                {{ plans }}
+                    <div class="relative rounded-[20px] border-[3px] p-7 lg:p-8 js-fade-up flex flex-col {{ if featured }}bg-brand-dark-blue-two border-brand-secondary{{ else }}bg-brand-dark-blue border-brand-light-blue{{ /if }}">
+
+                        {{ if featured }}
+                            <div class="absolute -top-5 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                                {{ partial:components/above-title title="Most Popular" }}
+                            </div>
+                        {{ /if }}
+
+                        <h3 class="font-heading uppercase text-[18px] lg:text-[20px] text-white mb-3">{{ name }}</h3>
+
+                        <div class="flex items-end gap-1 mb-1 leading-none">
+                            <span class="font-heading text-[52px] lg:text-[62px] leading-none text-white">£{{ price }}</span>
+                            <span class="text-white text-[18px] relative bottom-[16px]">/mo</span>
+                        </div>
+
+                        {{ if vat_note }}
+                            <p class="text-white text-[16px] mb-5">{{ vat_note }}</p>
+                        {{ /if }}
+
+                        {{ if description }}
+                            <p class="text-white text-[16px] mb-6 pb-6 border-b border-white/20">{{ description }}</p>
+                        {{ /if }}
+
+                        {{ if features }}
+                            <ul class="flex flex-col gap-3">
+                                {{ features }}
+                                    <li class="flex items-start gap-3 text-[16px]">
+                                        {{ if included }}
+                                            <i class="fa-sharp fa-regular fa-check text-brand-secondary mt-[3px] w-4 flex-shrink-0"></i>
+                                            <span class="text-white">{{ label }}</span>
+                                        {{ else }}
+                                            <i class="fa-sharp fa-regular fa-xmark text-red-400 mt-[3px] w-4 flex-shrink-0"></i>
+                                            <span class="text-white/40 line-through">{{ label }}</span>
+                                        {{ /if }}
+                                    </li>
+                                {{ /features }}
+                            </ul>
+                        {{ /if }}
+
+                    </div>
+                {{ /plans }}
+            </div>
+        {{ /if }}
+
+        {{ if footnote }}
+            <div class="text-center text-white text-[16px] mt-10 lg:mt-14 max-w-[900px] mx-auto js-fade-up leading-relaxed">
+                {{ footnote | nl2br }}
+            </div>
+        {{ /if }}
+
+    </div>
+</section>

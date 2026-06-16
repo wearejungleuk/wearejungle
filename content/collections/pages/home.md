@@ -34,73 +34,20 @@ page_builder:
     type: logos_carousel
     enabled: true
   -
-    id: mhmi0pm0
-    title: 'Everything you need, nothing you don’t'
+    id: f182cf72
+    above_title: Services
+    title: 'Websites built properly, from start to finish'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'We design seamless websites, develop with precision, and support your growth with reliable hosting and e-commerce solutions.'
-    services:
-      -
-        id: mhmi1do2
-        title: 'Web Design'
-        text:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Creative-led, conversion-focused design that brings your brand to life and makes users take action - no templates, no fluff.'
-        type: new_set
-        enabled: true
-        image: 'wearejunglebrandshoot-iggy&lime-40-webdesign.jpg'
-      -
-        id: mhmi1s3r
-        title: 'Web development'
-        text:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Fast, flexible builds using WordPress, Statamic, or Shopify. Custom themes, clean code, and no waiting six months for a landing page.'
-        type: new_set
-        enabled: true
-        image: wearejungle-45-webdev.jpg
-      -
-        id: mhmi25cb
-        title: 'Support & Hosting'
-        text:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Reliable hosting, ongoing updates, fixes, and peace of mind - we don’t disappear once the site goes live.'
-        type: new_set
-        enabled: true
-        image: wearejungle-7-support.jpg
-      -
-        id: mhmi2m0l
-        title: 'Shopify partner Agency'
-        text:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'From theme builds to full custom stores - we help Shopify brands grow fast with optimised, scalable storefronts.'
-        type: new_set
-        enabled: true
-        image: 'shopify-wearejunglebrandshoot-iggy&lime-23-1762382871.jpg'
-    type: services_blocks
-    enabled: true
+            text: "We design and build websites that look sharp, run fast, and actually do what they're supposed to. No templates, no overcomplication — just solid work that helps your business grow."
     cta: '#contact'
-    cta_title: "Let's Get Started"
-    block_id: services
+    cta_title: 'Get a Quote'
+    type: services_with_icons
+    enabled: true
   -
     id: mhmgs12r
     carousel:
@@ -267,6 +214,179 @@ page_builder:
     enabled: true
     block_id: about
   -
+    id: pricing_01
+    above_title: Support
+    title: 'Support that actually supports'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "We don't disappear after launch. From monthly updates and monitoring to ongoing development support, our plans are built to keep your website secure, fast, and moving forward. Whether you need peace of mind or a dedicated digital partner, we've got a plan that fits."
+    plans:
+      -
+        id: plan_ess
+        name: Essentials
+        price: '190'
+        vat_note: '+ VAT · 2 hrs support at £95/hr'
+        description: 'Peace of mind for smaller sites that just need to stay secure and online.'
+        featured: false
+        features:
+          -
+            id: feat_e1
+            label: '2 hours of support per month'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_e2
+            label: 'Plugin & theme updates'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_e3
+            label: 'Uptime monitoring (24/7)'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_e4
+            label: 'Monthly status report'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_e5
+            label: 'Minor theme tweaks'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_e6
+            label: 'Priority response'
+            included: false
+            type: new_set
+            enabled: true
+          -
+            id: feat_e7
+            label: 'Performance & SEO check'
+            included: false
+            type: new_set
+            enabled: true
+        type: new_set
+        enabled: true
+      -
+        id: plan_gro
+        name: Growth
+        price: '360'
+        vat_note: '+ VAT · 4 hrs support at £90/hr'
+        description: 'Peace of mind for smaller sites that just need to stay secure and online.'
+        featured: true
+        features:
+          -
+            id: feat_g1
+            label: '4 hours of support per month'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_g2
+            label: 'Plugin & theme updates'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_g3
+            label: 'Uptime monitoring (24/7)'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_g4
+            label: 'Monthly status report'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_g5
+            label: 'Minor theme tweaks'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_g6
+            label: 'Priority response (next business day)'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_g7
+            label: 'Quarterly performance & SEO check'
+            included: true
+            type: new_set
+            enabled: true
+        type: new_set
+        enabled: true
+      -
+        id: plan_pri
+        name: Priority
+        price: '640'
+        vat_note: '+ VAT · 8 hrs support at £80/hr'
+        description: 'Peace of mind for smaller sites that just need to stay secure and online.'
+        featured: false
+        features:
+          -
+            id: feat_p1
+            label: '8 hours of support per month'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_p2
+            label: 'Plugin & theme updates'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_p3
+            label: 'Uptime monitoring (24/7)'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_p4
+            label: 'Monthly status report'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_p5
+            label: 'Theme tweaks & dev tasks'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_p6
+            label: 'Priority response (same day)'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: feat_p7
+            label: 'Monthly performance & SEO check'
+            included: true
+            type: new_set
+            enabled: true
+        type: new_set
+        enabled: true
+    footnote: |-
+      All plans cover WordPress, Shopify, and Statamic. Hours do not roll over. Additional hours billed at £95/hr + VAT.
+      No long-term contracts; all support plans are on a 30-day rolling basis with 30 days' notice to cancel.
+    type: pricing
+    enabled: true
+  -
     id: mhnsxw7k
     quote: 'BIG-AGENCY QUALITY. SMALL-TEAM RELIABILITY. NO EGO. NO EXCUSES.'
     type: quote
@@ -409,7 +529,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762526060
+updated_at: 1781634688
 meta_title: 'Web Design Agency Portsmouth | Statamic, Shopify & WordPress Experts'
 meta_description: 'We Are Jungle is a small, sharp web design agency in Portsmouth specialising in Statamic, Shopify, WordPress. Clean design, solid code, no nonsense.'
 ---

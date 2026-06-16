@@ -427,3 +427,115 @@ fields:
                   field:
                     type: textarea
                     display: Content
+            pricing:
+              display: Pricing
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: plans
+                  field:
+                    type: replicator
+                    display: Plans
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Plan
+                            fields:
+                              -
+                                handle: name
+                                field:
+                                  type: text
+                                  display: 'Plan Name'
+                              -
+                                handle: price
+                                field:
+                                  type: text
+                                  display: Price
+                              -
+                                handle: vat_note
+                                field:
+                                  type: text
+                                  display: 'VAT Note'
+                              -
+                                handle: description
+                                field:
+                                  type: text
+                                  display: Description
+                              -
+                                handle: featured
+                                field:
+                                  type: toggle
+                                  display: 'Most Popular'
+                              -
+                                handle: features
+                                field:
+                                  type: replicator
+                                  display: Features
+                                  sets:
+                                    new_set_group:
+                                      display: 'New Set Group'
+                                      sets:
+                                        new_set:
+                                          display: Feature
+                                          fields:
+                                            -
+                                              handle: label
+                                              field:
+                                                type: text
+                                                display: Label
+                                            -
+                                              handle: included
+                                              field:
+                                                type: toggle
+                                                display: Included
+                -
+                  handle: footnote
+                  field:
+                    type: textarea
+                    display: Footnote
+            services_with_icons:
+              display: 'Services with Icons'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
