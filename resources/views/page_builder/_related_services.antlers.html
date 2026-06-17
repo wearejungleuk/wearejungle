@@ -1,0 +1,55 @@
+<section class="bg-black rounded-[60px] lg:rounded-[100px] py-16 lg:py-24">
+    <div class="container">
+
+        <div class="text-center mb-12 lg:mb-16 js-fade-up">
+            {{ if title }}
+                <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[52px] xl:text-[58px] leading-none text-white">{{ title }}</h2>
+            {{ else }}
+                <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[52px] xl:text-[58px] leading-none text-white">Explore our {{ related_service_1 }}{{ title }}{{ /related_service_1 }} and {{ related_service_2 }}{{ title }}{{ /related_service_2 }} services</h2>
+            {{ /if }}
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+
+            {{ related_service_1 }}
+            <a href="{{ url }}" class="block bg-brand-dark-blue overflow-hidden relative js-fade-up group" style="border-radius: 24px">
+                {{ if card_image }}
+                    {{ glide:card_image width="800" height="400" fit="crop_focal" }}
+                    <div class="aspect-[2/1] overflow-hidden">
+                        <img src="{{ url }}" alt="{{ title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    {{ /glide:card_image }}
+                {{ /if }}
+                <div class="p-8 lg:p-10 relative">
+                    {{ partial:components/arrow-circle classes="absolute top-6 right-6 w-[42px] h-[42px] bg-brand-secondary text-black text-[16px]" }}
+                    <h3 class="font-heading uppercase text-[28px] lg:text-[34px] leading-tight text-white mb-4 pr-16">{{ title }}</h3>
+                    {{ if card_text }}
+                        <p class="text-white text-[15px] lg:text-[16px] leading-relaxed" style="opacity: 0.7">{{ card_text }}</p>
+                    {{ /if }}
+                </div>
+            </a>
+            {{ /related_service_1 }}
+
+            {{ related_service_2 }}
+            <a href="{{ url }}" class="block bg-brand-dark-blue overflow-hidden relative js-fade-up group" style="border-radius: 24px">
+                {{ if card_image }}
+                    {{ glide:card_image width="800" height="400" fit="crop_focal" }}
+                    <div class="aspect-[2/1] overflow-hidden">
+                        <img src="{{ url }}" alt="{{ title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    {{ /glide:card_image }}
+                {{ /if }}
+                <div class="p-8 lg:p-10 relative">
+                    {{ partial:components/arrow-circle classes="absolute top-6 right-6 w-[42px] h-[42px] bg-brand-secondary text-black text-[16px]" }}
+                    <h3 class="font-heading uppercase text-[28px] lg:text-[34px] leading-tight text-white mb-4 pr-16">{{ title }}</h3>
+                    {{ if card_text }}
+                        <p class="text-white text-[15px] lg:text-[16px] leading-relaxed" style="opacity: 0.7">{{ card_text }}</p>
+                    {{ /if }}
+                </div>
+            </a>
+            {{ /related_service_2 }}
+
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,43 @@
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+        <div class="bg-brand-secondary border-[3px] border-black rounded-[40px] lg:rounded-[60px] overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+
+                <div class="p-8 md:p-12 lg:p-16">
+                    {{ if above_title }}
+                        <div class="relative z-[10] js-fade-up">
+                            {{ partial:components/above-title title="{ above_title }" classes="above-title--light-blue" }}
+                        </div>
+                    {{ /if }}
+                    {{ if title }}
+                        <h2 class="font-heading uppercase text-[38px] sm:text-[42px] lg:text-[48px] xl:text-[52px] leading-none text-black mb-5 js-fade-up">{{ title }}</h2>
+                    {{ /if }}
+                    {{ if text }}
+                        <div class="bard text-black text-[16px] lg:text-[17px] mb-8 js-fade-up">{{ text }}</div>
+                    {{ /if }}
+                    <div class="flex flex-wrap gap-4 js-fade-up">
+                        {{ if cta || book_appointment }}
+                            {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="button--primary" }}
+                        {{ /if }}
+                        {{ if cta_2 || book_appointment_2 }}
+                            {{ partial:components/button url="{ cta_2:url }" title="{ cta_2_title }" target="{ cta_2:target }" book_appointment="{ book_appointment_2 }" classes="button--light-blue" }}
+                        {{ /if }}
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex items-end justify-center h-full py-12">
+                    <div class="w-[65%] max-w-[360px]">
+                        {{ if illustration }}
+                            {{ illustration }}
+                            <img src="{{ url }}" alt="{{ alt }}" class="w-full h-auto">
+                            {{ /illustration }}
+                        {{ else }}
+                            {{ partial:components/icons/julius-wave }}
+                        {{ /if }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -20,19 +20,15 @@
                 </div>
 
                 <div class="flex items-center justify-end gap-4">
-                        <a href="{{ brand:calendly_link }}" target="_blank" class="details-button group flex items-center overflow-hidden rounded-full bg-brand-secondary">
-                            <span class="body-b4 inline-flex max-w-0 translate-x-[10px] overflow-hidden whitespace-nowrap font-heading group-hover:max-w-[90px] group-hover:pr-4 text-brand-primary">Let's Talk</span>
-                            {{ partial:components/icons.wave }}
-                        </a>
-                        <button
-                                @click="open = !open"
-                                :class="{ 'active': open }"
-                                class="w-5 h-5"
-                        >
-                            <div class="hamburger w-6 h-6">
-                                <span></span>
-                            </div>
-                        </button>
+                    <button
+                        @click="open = !open"
+                        class="flex flex-col gap-[5px] w-7 py-1"
+                        aria-label="Open menu"
+                    >
+                        <span class="block h-[2px] w-full bg-white transition-all duration-300" :class="open ? 'rotate-45 translate-y-[7px]' : ''"></span>
+                        <span class="block h-[2px] w-full bg-white transition-all duration-300" :class="open ? 'opacity-0' : ''"></span>
+                        <span class="block h-[2px] w-full bg-white transition-all duration-300" :class="open ? '-rotate-45 -translate-y-[7px]' : ''"></span>
+                    </button>
                 </div>
             </div>
         </div>

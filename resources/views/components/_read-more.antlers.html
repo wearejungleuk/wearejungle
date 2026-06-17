@@ -2,13 +2,6 @@
    {{ if target }}target="{{ target }}"{{ /if }}>
     <div class="flex gap-4 text-center items-center">
         {{ title }}
-        <span class="read-more__arrow overflow-hidden">
-            <div class="read-more__arrow--one absolute transition-all duration-300 ease-in-out group-hover:translate-x-[150%] group-hover:-translate-y-[150%] group-hover:opacity-0">
-                <i class="fa-regular fa-arrow-up-right"></i>
-            </div>
-            <div class="read-more__arrow--two absolute transition-all duration-300 ease-in-out translate-x-[-150%] translate-y-[150%] opacity-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100">
-                <i class="fa-regular fa-arrow-up-right"></i>
-            </div>
-        </span>
+        {{ partial:components/arrow-circle classes="w-[32px] h-[32px] border border-current text-[12px]" }}
     </div>
 </a>

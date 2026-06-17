@@ -3,12 +3,12 @@
 
         <div class="text-center mb-12 lg:mb-16">
             {{ if above_title }}
-                <div class="flex justify-center js-fade-up">
+                <div class="flex justify-center js-fade-up relative z-[10]">
                     {{ partial:components/above-title title="{ above_title }" }}
                 </div>
             {{ /if }}
             {{ if title }}
-                <h2 class="font-heading uppercase text-[42px] sm:text-[52px] lg:text-[72px] xl:text-[80px] leading-none text-white mb-6 max-w-[800px] xl:max-w-[960px] mx-auto js-fade-up">{{ title }}</h2>
+                <h2 class="font-heading uppercase text-[42px] sm:text-[52px] lg:text-[58px] xl:text-[64px] leading-none text-white mb-6 max-w-[800px] xl:max-w-[960px] mx-auto js-fade-up">{{ title }}</h2>
             {{ /if }}
             {{ if text }}
                 <div class="text-white text-[16px] lg:text-[18px] max-w-[680px] mx-auto js-fade-up">{{ text }}</div>
@@ -21,7 +21,7 @@
                     <div class="relative rounded-[20px] border-[3px] p-7 lg:p-8 js-fade-up flex flex-col {{ if featured }}bg-brand-dark-blue-two border-brand-secondary{{ else }}bg-brand-dark-blue border-brand-light-blue{{ /if }}">
 
                         {{ if featured }}
-                            <div class="absolute -top-5 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                            <div class="absolute -top-5 left-1/2 -translate-x-1/2 whitespace-nowrap z-[10]">
                                 {{ partial:components/above-title title="Most Popular" }}
                             </div>
                         {{ /if }}

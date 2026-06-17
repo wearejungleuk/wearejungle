@@ -1,4 +1,12 @@
+{{ if book_appointment }}
+<a href="javascript:void(0)"
+   onclick="Calendly.initPopupWidget({url:'{{ brand:calendly_link }}'});return false;"
+   class="button group z-[1] {{ classes }}">
+    <span>{{ title }}</span>
+</a>
+{{ else }}
 <a href="{{ url }}" class="button group z-[1] {{ classes }}"
    {{ if target }}target="{{ target }}"{{ /if }}>
-       <span> {{ title }}</span>
+    <span>{{ title }}</span>
 </a>
+{{ /if }}

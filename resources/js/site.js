@@ -1,5 +1,6 @@
 import Alpine from "alpinejs";
 import collapse from "@alpinejs/collapse";
+import intersect from "@alpinejs/intersect";
 import morph from "@alpinejs/morph";
 import persist from "@alpinejs/persist";
 import focus from "@alpinejs/focus";
@@ -33,7 +34,7 @@ import './functions/sticky';
 // Call Alpine.
 window.Alpine = Alpine;
 
-Alpine.plugin([collapse, focus, morph, persist, ui]);
+Alpine.plugin([collapse, focus, intersect, morph, persist, ui]);
 Alpine.plugin(masonry);
 
 Alpine.start(); // Start Alpine

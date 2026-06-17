@@ -1,0 +1,148 @@
+<style>
+.pc-swiper .swiper-slide { opacity: 0.5; transition: opacity 0.4s ease; }
+.pc-swiper .swiper-slide-active { opacity: 1; }
+</style>
+
+<section class="py-16 lg:py-24"
+    x-data="{ active: 1 }"
+    x-init="$nextTick(() => {
+        let pcSwiper = new Swiper($refs.processCarousel, {
+            slidesPerView: 1.05,
+            spaceBetween: 20,
+            centeredSlides: true,
+            speed: 600,
+            loop: false,
+            breakpoints: {
+                768: { slidesPerView: 1.08, spaceBetween: 28 },
+                1280: { slidesPerView: 1.1, spaceBetween: 32 },
+            },
+            on: {
+                init(s) { updatePcButtons(s) },
+                slideChange(s) {
+                    active = s.activeIndex + 1;
+                    updatePcButtons(s);
+                }
+            }
+        });
+        function updatePcButtons(s) {
+            [$refs.pcPrev, $refs.pcPrevMobile].forEach(btn => {
+                btn.disabled = s.isBeginning;
+                btn.classList.toggle('opacity-50', s.isBeginning);
+                btn.classList.toggle('cursor-not-allowed', s.isBeginning);
+            });
+            [$refs.pcNext, $refs.pcNextMobile].forEach(btn => {
+                btn.disabled = s.isEnd;
+                btn.classList.toggle('opacity-50', s.isEnd);
+                btn.classList.toggle('cursor-not-allowed', s.isEnd);
+            });
+        }
+        $refs.pcPrev.addEventListener('click', () => pcSwiper.slidePrev());
+        $refs.pcNext.addEventListener('click', () => pcSwiper.slideNext());
+        $refs.pcPrevMobile.addEventListener('click', () => pcSwiper.slidePrev());
+        $refs.pcNextMobile.addEventListener('click', () => pcSwiper.slideNext());
+    })">
+
+    <div class="container">
+
+        {{# Header #}}
+        <div class="text-center mb-10 lg:mb-14">
+            {{ if above_title }}
+                <div class="flex justify-center js-fade-up">
+                    {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
+                </div>
+            {{ /if }}
+            {{ if title }}
+                <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[52px] xl:text-[58px] leading-none text-white mb-4 js-fade-up">{{ title }}</h2>
+            {{ /if }}
+            {{ if intro_text }}
+                <p class="text-white text-[16px] lg:text-[18px] js-fade-up">{{ intro_text }}</p>
+            {{ /if }}
+        </div>
+
+        {{# Tab buttons #}}
+        {{ if steps }}
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-10 lg:mb-14 js-fade-up">
+                {{ steps }}
+                {{ if count > 1 }}
+                    <span class="hidden sm:inline-block px-1 text-white" style="letter-spacing: 3px; opacity: 0.3">···</span>
+                {{ /if }}
+                <button
+                    @click="active = {{ count }}; $refs.processCarousel.swiper.slideTo({{ count }} - 1)"
+                    :class="active === {{ count }} ? 'bg-brand-secondary text-black border-brand-secondary' : 'text-white border-white'"
+                    class="font-heading uppercase text-[12px] lg:text-[13px] px-4 py-2 border-[2px] transition-all duration-300"
+                    style="border-radius: 50px"
+                >
+                    {{ tab_label }}
+                </button>
+                {{ /steps }}
+            </div>
+        {{ /if }}
+
+    </div>
+
+    {{# Carousel — 1000px centred, arrows just outside the slide on desktop #}}
+    <div class="relative">
+        <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 z-10" style="left: max(1rem, calc(50% - 500px - 66px))">
+            <button x-ref="pcPrev" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
+                <i class="fa-sharp fa-regular fa-chevron-left"></i>
+            </button>
+        </div>
+        <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 z-10" style="right: max(1rem, calc(50% - 500px - 66px))">
+            <button x-ref="pcNext" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
+                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="max-w-[1000px] mx-auto">
+            <div class="swiper !overflow-visible pc-swiper" x-ref="processCarousel">
+                <div class="swiper-wrapper">
+                    {{ steps }}
+                    <div class="swiper-slide !h-auto">
+                        <div class="bg-brand-dark-blue p-8 md:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12" style="border-radius: 24px">
+                            <div>
+                                {{ if heading }}
+                                    <h3 class="font-heading uppercase text-[26px] sm:text-[32px] lg:text-[38px] leading-tight text-white mb-6">{{ heading }}</h3>
+                                {{ /if }}
+                                {{ if step_text }}
+                                    <div class="bard text-white text-[15px] lg:text-[16px] leading-relaxed">{{ step_text }}</div>
+                                {{ /if }}
+                            </div>
+                            <div>
+                                {{ if feature_list }}
+                                    <div class="flex flex-col gap-5">
+                                        {{ feature_list }}
+                                        <div class="flex items-center gap-4">
+                                            {{ if icon }}
+                                                {{ icon }}
+                                                <div class="w-[52px] h-[52px] flex-shrink-0 bg-brand-dark-blue-two flex items-center justify-center" style="border-radius: 10px">
+                                                    <img src="{{ url }}" alt="{{ alt }}" class="w-[30px] h-[30px] object-contain">
+                                                </div>
+                                                {{ /icon }}
+                                            {{ /if }}
+                                            {{ if label }}
+                                                <span class="text-white text-[15px] lg:text-[16px]">{{ label }}</span>
+                                            {{ /if }}
+                                        </div>
+                                        {{ /feature_list }}
+                                    </div>
+                                {{ /if }}
+                            </div>
+                        </div>
+                    </div>
+                    {{ /steps }}
+                </div>
+            </div>
+        </div>
+
+        {{# Mobile arrows — below carousel, right-aligned #}}
+        <div class="flex lg:hidden justify-end gap-8 mt-8 max-w-[1000px] mx-auto px-4">
+            <button x-ref="pcPrevMobile" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
+                <i class="fa-sharp fa-regular fa-chevron-left"></i>
+            </button>
+            <button x-ref="pcNextMobile" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
+                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+</section>

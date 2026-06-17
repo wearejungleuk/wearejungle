@@ -168,6 +168,218 @@ page_builder:
     enabled: true
     block_id: work
   -
+    id: comp_table_01
+    above_title: 'Why Us?'
+    title: 'Not all websites are built the same'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "From DIY builders to bloated agencies, there's a lot that can go wrong. We keep things simple, honest, and built properly from day one."
+    columns:
+      -
+        id: col_pb
+        heading: 'Page Builders'
+        highlight: false
+        items:
+          -
+            id: pb_1
+            label: "Templates that look like everyone else's"
+            type: new_set
+            enabled: true
+          -
+            id: pb_2
+            label: 'Drag, drop… and hope for the best'
+            type: new_set
+            enabled: true
+          -
+            id: pb_3
+            label: 'No strategy, just guessing'
+            type: new_set
+            enabled: true
+          -
+            id: pb_4
+            label: "You're on your own when it breaks"
+            type: new_set
+            enabled: true
+          -
+            id: pb_5
+            label: 'Cheap upfront, expensive long-term'
+            type: new_set
+            enabled: true
+        type: new_set
+        enabled: true
+      -
+        id: col_oa
+        heading: 'Other Agencies'
+        highlight: false
+        items:
+          -
+            id: oa_1
+            label: 'Overcomplicated proposals & slow timelines'
+            type: new_set
+            enabled: true
+          -
+            id: oa_2
+            label: 'No in-house or UK based developers'
+            type: new_set
+            enabled: true
+          -
+            id: oa_3
+            label: '"That''ll cost extra" for everything'
+            type: new_set
+            enabled: true
+          -
+            id: oa_4
+            label: 'Locked into clunky systems'
+            type: new_set
+            enabled: true
+          -
+            id: oa_5
+            label: 'Passed between account managers'
+            type: new_set
+            enabled: true
+          -
+            id: oa_6
+            label: 'Disappear once the site goes live'
+            type: new_set
+            enabled: true
+        type: new_set
+        enabled: true
+      -
+        id: col_waj
+        heading: 'We Are Jungle'
+        highlight: true
+        items:
+          -
+            id: waj_1
+            label: 'Custom websites built around your business'
+            type: new_set
+            enabled: true
+          -
+            id: waj_2
+            label: 'Clear pricing from the start'
+            type: new_set
+            enabled: true
+          -
+            id: waj_3
+            label: 'You own everything — no lock-ins'
+            type: new_set
+            enabled: true
+          -
+            id: waj_4
+            label: 'Direct access to the people doing the work'
+            type: new_set
+            enabled: true
+          -
+            id: waj_5
+            label: 'Ongoing support that actually supports'
+            type: new_set
+            enabled: true
+          -
+            id: waj_6
+            label: 'Built properly, so it lasts'
+            type: new_set
+            enabled: true
+        type: new_set
+        enabled: true
+    type: comparison_table
+    enabled: true
+  -
+    id: stats_story_01
+    above_title: 'Our Story'
+    title: 'Not our first rodeo — and it shows'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "We've built over 100 websites, hosted dozens more, and spent years refining how we do things. We've learned what slows projects down, what causes issues later, and what actually makes a difference. The result? A smoother process and better outcomes for you."
+    cta: /about
+    cta_title: 'About Us'
+    stats:
+      -
+        id: stat_1
+        number: '100+'
+        label: 'Websites launched (and still going strong)'
+        type: new_set
+        enabled: true
+      -
+        id: stat_2
+        number: '100%'
+        label: 'UK Based Team'
+        type: new_set
+        enabled: true
+      -
+        id: stat_3
+        number: '12+'
+        label: 'Years in the game — still care about the details'
+        type: new_set
+        enabled: true
+      -
+        id: stat_4
+        number: '50+'
+        label: 'Sites we keep running smoothly behind the scenes'
+        type: new_set
+        enabled: true
+    type: stats_story
+    enabled: true
+  -
+    id: feature_cards_01
+    above_title: 'What We Do'
+    title: 'Everything you need to grow online'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "Strategy, design, development and support — all under one roof, all done properly."
+    cta: /services
+    cta_title: 'See All Services'
+    cards:
+      -
+        id: card_01
+        heading: 'Strategy & Discovery'
+        card_text: 'We take the time to understand your business, your audience and your goals before we write a single line of code.'
+        type: new_set
+        enabled: true
+      -
+        id: card_02
+        heading: 'UX & Design'
+        card_text: 'Clean, considered design that puts your users first and reflects your brand at its best.'
+        type: new_set
+        enabled: true
+      -
+        id: card_03
+        heading: 'Web Development'
+        card_text: 'Fast, secure and scalable builds on Statamic — no bloated page builders, no hidden complexity.'
+        type: new_set
+        enabled: true
+      -
+        id: card_04
+        heading: 'SEO & Performance'
+        card_text: 'Built with performance baked in from day one. Core Web Vitals, structured data, the lot.'
+        type: new_set
+        enabled: true
+      -
+        id: card_05
+        heading: 'Ongoing Support'
+        card_text: "We don't disappear after launch. Retainer plans keep your site updated, secure and running smoothly."
+        type: new_set
+        enabled: true
+      -
+        id: card_06
+        heading: 'Hosting & Care'
+        card_text: 'Managed hosting with monitoring, backups and fast response times — so you can focus on your business.'
+        type: new_set
+        enabled: true
+    type: feature_cards
+    enabled: true
+  -
     id: mhnqvljn
     title: "Meet the Junglist's"
     text:

@@ -9,6 +9,122 @@ fields:
         new_set_group:
           display: 'New Set Group'
           sets:
+            about_story:
+              display: 'About Story'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
+                -
+                  handle: image_1
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Image 1 (top left)'
+                -
+                  handle: image_2
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Image 2 (top right)'
+                -
+                  handle: image_3
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Image 3 (bottom centre)'
+            about_hero:
+              display: 'About Hero'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: intro_text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Intro Text'
+                -
+                  handle: image_left
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Image Left'
+                -
+                  handle: image_right
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Image Right'
+                -
+                  handle: body_text_lead
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Body Text (Lead)'
+                -
+                  handle: body_text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Body Text'
             home_hero:
               display: 'Home Hero'
               fields:
@@ -47,6 +163,22 @@ fields:
                   field:
                     type: text
                     display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
             logos_carousel:
               display: 'Logos Carousel'
               fields:
@@ -117,6 +249,22 @@ fields:
                   field:
                     type: text
                     display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
                 -
                   handle: services
                   field:
@@ -322,6 +470,22 @@ fields:
                     type: text
                     display: 'CTA Title'
                 -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
+                -
                   handle: images
                   field:
                     max_files: 5
@@ -352,6 +516,22 @@ fields:
                   field:
                     type: text
                     display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
             contact:
               display: Contact
               fields:
@@ -519,6 +699,16 @@ fields:
                     type: text
                     display: 'Above Title'
                 -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
                   handle: title
                   field:
                     type: text
@@ -539,3 +729,919 @@ fields:
                   field:
                     type: text
                     display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
+            comparison_table:
+              display: 'Comparison Table'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
+                -
+                  handle: columns
+                  field:
+                    type: replicator
+                    display: Columns
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Column
+                            fields:
+                              -
+                                handle: heading
+                                field:
+                                  type: text
+                                  display: Heading
+                              -
+                                handle: highlight
+                                field:
+                                  type: toggle
+                                  display: 'Highlight Column'
+                              -
+                                handle: items
+                                field:
+                                  type: replicator
+                                  display: Items
+                                  sets:
+                                    new_set_group:
+                                      display: 'New Set Group'
+                                      sets:
+                                        new_set:
+                                          display: Item
+                                          fields:
+                                            -
+                                              handle: label
+                                              field:
+                                                type: text
+                                                display: Label
+            stats_story:
+              display: 'Stats Story'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: stats
+                  field:
+                    type: replicator
+                    display: Stats
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Stat
+                            fields:
+                              -
+                                handle: number
+                                field:
+                                  type: text
+                                  display: Number
+                              -
+                                handle: label
+                                field:
+                                  type: text
+                                  display: Label
+            feature_cards:
+              display: 'Feature Cards'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
+                -
+                  handle: cards
+                  field:
+                    type: replicator
+                    display: Cards
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Card
+                            fields:
+                              -
+                                handle: icon
+                                field:
+                                  max_files: 1
+                                  container: assets
+                                  type: assets
+                                  display: Icon
+                              -
+                                handle: heading
+                                field:
+                                  type: text
+                                  display: Heading
+                              -
+                                handle: card_text
+                                field:
+                                  type: text
+                                  display: 'Card Text'
+            process_steps:
+              display: 'Process Steps'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
+                -
+                  handle: steps
+                  field:
+                    type: replicator
+                    display: Steps
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Step
+                            fields:
+                              -
+                                handle: heading
+                                field:
+                                  type: text
+                                  display: Heading
+                              -
+                                handle: step_text
+                                field:
+                                  type: text
+                                  display: 'Step Text'
+            stats_grid:
+              display: 'Stats Grid'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: stats
+                  field:
+                    type: replicator
+                    display: Stats
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Stat
+                            fields:
+                              -
+                                handle: number
+                                field:
+                                  type: text
+                                  display: Number
+                              -
+                                handle: label
+                                field:
+                                  type: text
+                                  display: Label
+            work_carousel:
+              display: 'Work Carousel'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
+                -
+                  handle: work
+                  field:
+                    collections:
+                      - work
+                    type: entries
+                    display: 'Work Entries'
+            cta_block:
+              display: 'CTA Block'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: 'CTA (Primary)'
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title (Primary)'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Primary: Book a Call (uses Calendly)'
+                -
+                  handle: cta_2
+                  field:
+                    type: link
+                    display: 'CTA (Secondary)'
+                -
+                  handle: cta_2_title
+                  field:
+                    type: text
+                    display: 'CTA Title (Secondary)'
+                -
+                  handle: book_appointment_2
+                  field:
+                    type: toggle
+                    display: 'Secondary: Book a Call (uses Calendly)'
+                -
+                  handle: illustration
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Illustration (right side)'
+            work_grid:
+              display: 'Work Grid'
+              fields: []
+            services_hero:
+              display: 'Services Hero'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
+                -
+                  handle: mockup_image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Browser Mockup Image'
+            text_hero:
+              display: 'Text Hero'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+            split_stats:
+              display: 'Split Stats'
+              fields:
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: stats
+                  field:
+                    type: replicator
+                    display: Stats
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Stat
+                            fields:
+                              -
+                                handle: number
+                                field:
+                                  type: text
+                                  display: Number
+                              -
+                                handle: label
+                                field:
+                                  type: text
+                                  display: Label
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
+            faq_accordion:
+              display: 'FAQ Accordion'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: items
+                  field:
+                    type: replicator
+                    display: Items
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: 'FAQ Item'
+                            fields:
+                              -
+                                handle: question
+                                field:
+                                  type: text
+                                  display: Question
+                              -
+                                handle: answer
+                                field:
+                                  type: bard
+                                  display: Answer
+                                  buttons:
+                                    - bold
+                                    - italic
+                                    - link
+            tech_carousel:
+              display: 'Tech Carousel'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                    instructions: 'Defaults to "Technologies We Use" if left blank.'
+                -
+                  handle: intro_text
+                  field:
+                    type: text
+                    display: 'Intro Text'
+                -
+                  handle: technologies
+                  field:
+                    type: replicator
+                    display: Technologies
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Technology
+                            fields:
+                              -
+                                handle: name
+                                field:
+                                  type: text
+                                  display: Name
+                              -
+                                handle: icon
+                                field:
+                                  type: assets
+                                  max_files: 1
+                                  container: assets
+                                  display: Icon
+                              -
+                                handle: description
+                                field:
+                                  type: textarea
+                                  display: Description
+            features_grid:
+              display: 'Features Grid'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: intro_text
+                  field:
+                    type: text
+                    display: 'Intro Text'
+                -
+                  handle: items
+                  field:
+                    type: replicator
+                    display: Items
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Item
+                            fields:
+                              -
+                                handle: title
+                                field:
+                                  type: text
+                                  display: Title
+                              -
+                                handle: text
+                                field:
+                                  type: textarea
+                                  display: Text
+                              -
+                                handle: image
+                                field:
+                                  type: assets
+                                  max_files: 1
+                                  container: assets
+                                  display: Image
+            related_services:
+              display: 'Related Services'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: 'Heading (optional)'
+                    instructions: 'Leave blank to auto-generate from the selected services.'
+                -
+                  handle: related_service_1
+                  field:
+                    type: entries
+                    collections:
+                      - services
+                    max_items: 1
+                    display: 'Related Service 1'
+                -
+                  handle: related_service_2
+                  field:
+                    type: entries
+                    collections:
+                      - services
+                    max_items: 1
+                    display: 'Related Service 2'
+            process_carousel:
+              display: 'Process Carousel'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: intro_text
+                  field:
+                    type: text
+                    display: 'Intro Text'
+                -
+                  handle: steps
+                  field:
+                    type: replicator
+                    display: Steps
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Step
+                            fields:
+                              -
+                                handle: tab_label
+                                field:
+                                  type: text
+                                  display: 'Tab Label'
+                              -
+                                handle: heading
+                                field:
+                                  type: text
+                                  display: Heading
+                              -
+                                handle: step_text
+                                field:
+                                  remove_empty_nodes: false
+                                  type: bard
+                                  display: Text
+                              -
+                                handle: feature_list
+                                field:
+                                  type: replicator
+                                  display: 'Feature List'
+                                  sets:
+                                    new_set_group:
+                                      display: 'New Set Group'
+                                      sets:
+                                        new_set:
+                                          display: 'Feature Item'
+                                          fields:
+                                            -
+                                              handle: icon
+                                              field:
+                                                max_files: 1
+                                                container: assets
+                                                type: assets
+                                                display: Icon
+                                            -
+                                              handle: label
+                                              field:
+                                                type: text
+                                                display: Label

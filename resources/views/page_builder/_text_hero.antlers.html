@@ -1,0 +1,17 @@
+<section class="bg-brand-primary pt-[140px] md:pt-[160px] lg:pt-[200px] pb-16 lg:pb-24">
+    <div class="container">
+        <div class="text-center max-w-[860px] mx-auto">
+            {{ if above_title }}
+                <div class="relative z-[10] js-fade-up flex justify-center">
+                    {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
+                </div>
+            {{ /if }}
+            {{ if title }}
+                <h1 class="font-heading uppercase text-[52px] sm:text-[70px] lg:text-[80px] xl:text-[86px] leading-none text-white js-fade-up mb-8">{{ title }}</h1>
+            {{ /if }}
+            {{ if text }}
+                <div class="bard text-white text-[16px] lg:text-[18px] leading-relaxed js-fade-up">{{ text }}</div>
+            {{ /if }}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,65 @@
+<section class="bg-brand-text rounded-[60px] lg:rounded-[100px] py-16 lg:py-24">
+    <div class="container">
+        <div class="{{ if image }}grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center{{ else }}max-w-[680px]{{ /if }}">
+
+            {{ if image }}
+            <div class="js-fade-up">
+                {{ image }}
+                <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-auto" style="border-radius: 20px">
+                {{ /image }}
+            </div>
+            {{ /if }}
+
+            <div>
+                {{ if title }}
+                    <h2 class="font-heading uppercase text-[38px] sm:text-[46px] lg:text-[48px] xl:text-[52px] leading-none text-black mb-6 js-fade-up">{{ title }}</h2>
+                {{ /if }}
+                {{ if text }}
+                    <div class="bard text-black text-[16px] lg:text-[17px] leading-relaxed mb-8 js-fade-up">{{ text }}</div>
+                {{ /if }}
+
+                {{ if stats }}
+                    <div class="grid grid-cols-3 gap-6 mb-10 js-fade-up">
+                        {{ stats }}
+                        <div
+                            x-data="{
+                                display: '0',
+                                animate() {
+                                    const raw = '{{ number }}';
+                                    const num = parseInt(raw);
+                                    const suffix = raw.replace(/[0-9]/g, '');
+                                    let frame = 0;
+                                    const total = 60;
+                                    const duration = 1200;
+                                    const timer = setInterval(() => {
+                                        frame++;
+                                        const eased = 1 - Math.pow(1 - frame / total, 3);
+                                        this.display = Math.round(eased * num) + suffix;
+                                        if (frame >= total) {
+                                            clearInterval(timer);
+                                            this.display = raw;
+                                        }
+                                    }, duration / total);
+                                }
+                            }"
+                            x-intersect.once="animate()"
+                        >
+                            <div class="font-heading uppercase text-[42px] lg:text-[52px] leading-none text-black mb-1" x-text="display"></div>
+                            {{ if label }}
+                                <p class="text-[14px] lg:text-[15px] text-black leading-snug">{{ label }}</p>
+                            {{ /if }}
+                        </div>
+                        {{ /stats }}
+                    </div>
+                {{ /if }}
+
+                {{ if cta || book_appointment }}
+                    <div class="js-fade-up">
+                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="{ cta_classes }" }}
+                    </div>
+                {{ /if }}
+            </div>
+
+        </div>
+    </div>
+</section>

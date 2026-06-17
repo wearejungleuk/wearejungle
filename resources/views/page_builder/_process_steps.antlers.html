@@ -1,0 +1,104 @@
+<section class="bg-black rounded-[60px] lg:rounded-[100px] py-16 lg:py-24"
+         x-data
+         x-init="$nextTick(() => {
+             const sw = new Swiper($refs.processSwiper, {
+                 slidesPerView: 1.2,
+                 spaceBetween: 16,
+                 loop: false,
+                 speed: 600,
+                 navigation: {
+                     nextEl: $refs.psNext,
+                     prevEl: $refs.psPrev,
+                 },
+                 breakpoints: {
+                     568: {
+                         slidesPerView: 1.6,
+                         spaceBetween: 20,
+                     },
+                     768: {
+                         slidesPerView: 2.5,
+                         spaceBetween: 24,
+                     },
+                     1024: {
+                         slidesPerView: 3,
+                         spaceBetween: 28,
+                     },
+                     1280: {
+                         slidesPerView: 3.2,
+                         spaceBetween: 28,
+                     },
+                 },
+                 on: {
+                     init(s) { updatePsButtons(s) },
+                     slideChange(s) { updatePsButtons(s) }
+                 }
+             });
+             function updatePsButtons(s) {
+                 const prev = $refs.psPrev;
+                 const next = $refs.psNext;
+                 prev.disabled = s.isBeginning;
+                 next.disabled = s.isEnd;
+                 prev.classList.toggle('opacity-50', s.isBeginning);
+                 next.classList.toggle('opacity-50', s.isEnd);
+                 prev.classList.toggle('cursor-not-allowed', s.isBeginning);
+                 next.classList.toggle('cursor-not-allowed', s.isEnd);
+             }
+         })">
+    <div class="container">
+
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 lg:mb-14">
+            <div class="flex-1 max-w-[600px]">
+                {{ if above_title }}
+                    <div class="relative z-[10] js-fade-up">
+                        {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
+                    </div>
+                {{ /if }}
+                {{ if title }}
+                    <h2 class="font-heading uppercase text-[42px] sm:text-[52px] lg:text-[52px] xl:text-[58px] leading-none text-white mb-4 js-fade-up">{{ title }}</h2>
+                {{ /if }}
+                {{ if text }}
+                    <div class="bard text-white text-[16px] lg:text-[17px] js-fade-up">{{ text }}</div>
+                {{ /if }}
+            </div>
+            <div class="flex-shrink-0 js-fade-up">
+                <div class="arrows flex items-center gap-2">
+                    <button x-ref="psPrev" class="arrow-prev w-[61px] h-[61px] text-black bg-brand-secondary border-[2px] border-black" style="border-radius: 15px">
+                        <i class="fa-sharp fa-regular fa-chevron-left"></i>
+                    </button>
+                    <button x-ref="psNext" class="arrow-next w-[61px] h-[61px] text-black bg-brand-secondary border-[2px] border-black" style="border-radius: 15px">
+                        <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        {{ if steps }}
+            <div class="swiper !overflow-visible js-fade-up" x-ref="processSwiper">
+                <div class="swiper-wrapper">
+                    {{ steps }}
+                    <div class="swiper-slide !h-auto">
+                        <div class="bg-brand-charcoal p-6 lg:p-8 h-full flex flex-col gap-5" style="border-radius: 20px">
+                            <div class="w-[44px] h-[44px] bg-brand-secondary flex items-center justify-center flex-shrink-0" style="border-radius: 10px">
+                                <span class="font-heading text-[20px] leading-none text-black">{{ count }}</span>
+                            </div>
+                            {{ if heading }}
+                                <h3 class="font-heading uppercase text-[22px] lg:text-[24px] leading-tight text-white">{{ heading }}</h3>
+                            {{ /if }}
+                            {{ if step_text }}
+                                <p class="text-[15px] lg:text-[16px] text-white leading-relaxed">{{ step_text }}</p>
+                            {{ /if }}
+                        </div>
+                    </div>
+                    {{ /steps }}
+                </div>
+            </div>
+        {{ /if }}
+
+        {{ if cta }}
+            <div class="mt-10 lg:mt-14 flex justify-center js-fade-up">
+                {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="{ cta_classes }" }}
+            </div>
+        {{ /if }}
+
+    </div>
+</section>

@@ -1,0 +1,95 @@
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+            {{ collection:work sort="order:asc" }}
+
+            {{ if count % 5 == 3 }}
+
+            {{# LARGE CARD — spans 2 columns #}}
+            <a href="{{ url }}" class="group block bg-brand-dark-blue p-6 lg:p-8 md:col-span-2 js-fade-up" style="border-radius: 20px">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+
+                    <div>
+                        <div class="flex items-start justify-between mb-5">
+                            <h3 class="font-heading uppercase text-[18px] lg:text-[20px] text-white">{{ title }}</h3>
+                            {{ partial:components/arrow-circle classes="ml-4 w-[36px] h-[36px] border border-white text-white text-[14px]" }}
+                        </div>
+                        {{ if intro_card_text || preview_text }}
+                            <div class="text-white text-[22px] sm:text-[26px] lg:text-[30px] leading-snug mb-6">{{ intro_card_text ?? preview_text }}</div>
+                        {{ /if }}
+                        {{ if card_text_2 }}
+                            <div class="bard text-white text-[15px] lg:text-[16px] leading-relaxed mb-8">{{ card_text_2 }}</div>
+                        {{ /if }}
+                        {{ if feature_list }}
+                            <div class="flex flex-col gap-5">
+                                {{ feature_list }}
+                                <div class="flex items-center gap-4">
+                                    {{ if icon }}
+                                        {{ icon }}
+                                        <div class="w-[60px] h-[60px] flex-shrink-0 bg-brand-dark-blue-two flex items-center justify-center" style="border-radius: 12px">
+                                            <img src="{{ url }}" alt="{{ alt }}" class="w-[36px] h-[36px] object-contain">
+                                        </div>
+                                        {{ /icon }}
+                                    {{ /if }}
+                                    {{ if label }}
+                                        <span class="text-white text-[15px] lg:text-[17px]">{{ label }}</span>
+                                    {{ /if }}
+                                </div>
+                                {{ /feature_list }}
+                            </div>
+                        {{ /if }}
+                    </div>
+
+                    <div>
+                        {{ if card_image_2 }}
+                            {{ glide:card_image_2 }}
+                            <div class="overflow-hidden" style="border-radius: 12px; aspect-ratio: 700/560">
+                                <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
+                            </div>
+                            {{ /glide:card_image_2 }}
+                        {{ elseif preview_image }}
+                            {{ glide:preview_image }}
+                            <div class="overflow-hidden" style="border-radius: 12px; aspect-ratio: 700/560">
+                                <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
+                            </div>
+                            {{ /glide:preview_image }}
+                        {{ /if }}
+                    </div>
+
+                </div>
+            </a>
+
+            {{ else }}
+
+            {{# SMALL CARD #}}
+            <a href="{{ url }}" class="group flex flex-col bg-brand-dark-blue p-6 js-fade-up" style="border-radius: 20px">
+                <div class="flex items-start justify-between mb-4">
+                    <h3 class="font-heading uppercase text-[16px] lg:text-[18px] text-white">{{ title }}</h3>
+                    {{ partial:components/arrow-circle classes="ml-4 w-[34px] h-[34px] border border-white text-white text-[13px]" }}
+                </div>
+                {{ if card_text_2 || preview_text }}
+                    <div class="bard text-white text-[18px] lg:text-[20px] leading-snug mb-6">{{ card_text_2 ?? preview_text }}</div>
+                {{ /if }}
+                <div class="mt-auto pt-6">
+                    {{ if card_image_2 }}
+                        {{ glide:card_image_2 }}
+                        <div>
+                            <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
+                        </div>
+                        {{ /glide:card_image_2 }}
+                    {{ elseif preview_image }}
+                        {{ glide:preview_image}}
+                        <div>
+                            <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
+                        </div>
+                        {{ /glide:preview_image }}
+                    {{ /if }}
+                </div>
+            </a>
+
+            {{ /if }}
+
+            {{ /collection:work }}
+        </div>
+    </div>
+</section>

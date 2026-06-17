@@ -1,0 +1,56 @@
+<section class="bg-brand-text rounded-[60px] lg:rounded-[100px] py-16 lg:py-24">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+            <div>
+                {{ if above_title }}
+                    <div class="relative z-[10] js-fade-up">
+                        {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
+                    </div>
+                {{ /if }}
+                {{ if title }}
+                    <h2 class="font-heading uppercase text-[42px] sm:text-[52px] lg:text-[52px] xl:text-[58px] leading-none text-black mb-6 js-fade-up">{{ title }}</h2>
+                {{ /if }}
+                {{ if text }}
+                    <div class="bard text-black text-[16px] lg:text-[17px] leading-relaxed mb-8 js-fade-up">{{ text }}</div>
+                {{ /if }}
+                {{ if cta }}
+                    <div class="js-fade-up">
+                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="{ cta_classes }" }}
+                    </div>
+                {{ /if }}
+            </div>
+
+            <div class="relative min-h-[400px] md:min-h-[520px] lg:min-h-[580px] js-fade-up">
+                {{ if image_1 }}
+                    <div class="absolute top-0 left-0 w-[57%] z-[1]">
+                        {{ glide:image_1 width="480" height="380" fit="crop_focal" }}
+                        <div class="rounded-[20px] border-[3px] border-black overflow-hidden" style="aspect-ratio: 480/380">
+                            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-full object-cover object-center">
+                        </div>
+                        {{ /glide:image_1 }}
+                    </div>
+                {{ /if }}
+                {{ if image_2 }}
+                    <div class="absolute top-[10%] right-0 w-[57%] z-[2]">
+                        {{ glide:image_2 width="480" height="450" fit="crop_focal" }}
+                        <div class="rounded-[20px] border-[3px] border-black overflow-hidden" style="aspect-ratio: 480/450">
+                            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-full object-cover object-center">
+                        </div>
+                        {{ /glide:image_2 }}
+                    </div>
+                {{ /if }}
+                {{ if image_3 }}
+                    <div class="absolute bottom-0 left-[21%] w-[57%] z-[3]">
+                        {{ glide:image_3 width="480" height="380" fit="crop_focal" }}
+                        <div class="rounded-[20px] border-[3px] border-black overflow-hidden" style="aspect-ratio: 480/380">
+                            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-full object-cover object-center">
+                        </div>
+                        {{ /glide:image_3 }}
+                    </div>
+                {{ /if }}
+            </div>
+
+        </div>
+    </div>
+</section>

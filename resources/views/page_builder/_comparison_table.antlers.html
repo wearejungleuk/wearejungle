@@ -1,0 +1,48 @@
+<section class="bg-black rounded-[60px] lg:rounded-[100px] py-16 lg:py-24">
+    <div class="container">
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 lg:mb-14">
+            <div class="w-full">
+                {{ if above_title }}
+                    <div class="relative z-[10] js-fade-up">
+                        {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
+                    </div>
+                {{ /if }}
+                {{ if title }}
+                    <h2 class="font-heading uppercase text-[42px] sm:text-[52px] lg:text-[52px] xl:text-[58px] leading-none text-white mb-6 js-fade-up max-w-[700px]">{{ title }}</h2>
+                {{ /if }}
+                {{ if text }}
+                    <div class="bard text-white text-[16px] lg:text-[17px] js-fade-up max-w-[600px]">{{ text }}</div>
+                {{ /if }}
+            </div>
+            {{ if cta }}
+                <div class="flex-shrink-0 js-fade-up">
+                    {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="{ cta_classes }" }}
+                </div>
+            {{ /if }}
+        </div>
+
+        {{ if columns }}
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+                {{ columns }}
+                    <div class="p-6 lg:p-8 rounded-[20px] js-fade-up {{ if highlight }}bg-brand-secondary{{ else }}bg-brand-text{{ /if }}">
+                        <h3 class="font-heading uppercase text-[20px] lg:text-[24px] text-black mb-6">{{ heading }}</h3>
+                        {{ if items }}
+                            <ul class="flex flex-col gap-4">
+                                {{ items }}
+                                    <li class="flex items-start gap-3 text-[15px] lg:text-[16px] text-black">
+                                        {{ if highlight }}
+                                            <i class="fa-sharp fa-solid fa-circle-check text-green-600 mt-[2px] flex-shrink-0 text-[18px]"></i>
+                                        {{ else }}
+                                            <i class="fa-sharp fa-solid fa-circle-xmark text-red-500 mt-[2px] flex-shrink-0 text-[18px]"></i>
+                                        {{ /if }}
+                                        <span>{{ label }}</span>
+                                    </li>
+                                {{ /items }}
+                            </ul>
+                        {{ /if }}
+                    </div>
+                {{ /columns }}
+            </div>
+        {{ /if }}
+    </div>
+</section>

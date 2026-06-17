@@ -4,17 +4,19 @@
 
             <div class="lg:sticky lg:top-[120px]">
                 {{ if above_title }}
-                    {{ partial:components/above-title title="{ above_title }" }}
+                    <div class="relative z-[10]">
+                        {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
+                    </div>
                 {{ /if }}
                 {{ if title }}
-                    <h2 class="font-heading uppercase text-[42px] sm:text-[50px] lg:text-[58px] xl:text-[60px] leading-none text-black mb-6 js-fade-up">{{ title }}</h2>
+                    <h2 class="font-heading uppercase text-[42px] sm:text-[50px] lg:text-[46px] xl:text-[48px] leading-none text-black mb-6 js-fade-up">{{ title }}</h2>
                 {{ /if }}
                 {{ if text }}
                     <div class="text-black/70 text-[16px] lg:text-[17px] mb-8 js-fade-up">{{ text }}</div>
                 {{ /if }}
                 {{ if cta }}
                     <div class="js-fade-up">
-                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" }}
+                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="{ cta_classes }" }}
                     </div>
                 {{ /if }}
             </div>

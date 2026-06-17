@@ -19,6 +19,15 @@ tabs:
               display: 'Card Text'
               instructions: 'Short description shown on the homepage services section.'
           -
+            handle: card_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Card Image'
+              instructions: 'Image shown on related service cards.'
+              restrict: false
+          -
             handle: icon
             field:
               max_files: 1
@@ -26,6 +35,12 @@ tabs:
               type: assets
               display: Icon
               instructions: 'White icon on transparent background. Displayed on a black rounded square.'
+      -
+        display: 'Page Builder'
+        fields:
+          -
+            handle: page_builder
+            field: page_builder.page_builder
   sidebar:
     display: Sidebar
     sections:

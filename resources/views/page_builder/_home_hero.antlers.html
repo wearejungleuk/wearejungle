@@ -2,7 +2,7 @@
     <div class="container">
         <div class="text-center text-white">
             {{ if title }}
-                <h1 class="home-hero__title font-heading uppercase text-[45px] sm:text-[50px] md:text-[55px] lg:text-[65px] xl:text-[85px] 2xl:text-[85px] 3xl:text-[100px]">{{ title | highlight_brackets }}</h1>
+                <h1 class="home-hero__title font-heading uppercase text-[45px] sm:text-[50px] md:text-[55px] lg:text-[65px] xl:text-[85px] 2xl:text-[85px] 3xl:text-[86px]">{{ title | highlight_brackets }}</h1>
             {{ /if }}
         </div>
     </div>
@@ -20,7 +20,7 @@
                     </div>
                     {{ if cta }}
                         <div class="mt-8 home-hero__cta">
-                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" }}
+                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="{ cta_classes }" }}
                         </div>
                     {{ /if }}
                 </div>

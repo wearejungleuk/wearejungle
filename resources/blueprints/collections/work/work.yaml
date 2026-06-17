@@ -42,6 +42,48 @@ tabs:
             field:
               type: video
               display: 'Background Video'
+          -
+            handle: intro_card_text
+            field:
+              type: text
+              display: 'Intro Card Text (large card strapline)'
+          -
+            handle: card_text_2
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Card Text 2'
+          -
+            handle: card_image_2
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Card Image 2'
+          -
+            handle: feature_list
+            field:
+              type: replicator
+              display: 'Feature List'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'Feature Item'
+                      fields:
+                        -
+                          handle: icon
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: Icon
+                        -
+                          handle: label
+                          field:
+                            type: text
+                            display: Label
   sidebar:
     display: Sidebar
     sections:

@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 10px;
   border-radius: 8px;
   font-size: 16px;
-  transform: rotate(-3deg);
+  transform: rotate(-2deg) translateY(0);
   @screen lg {
     font-size: 18px;
   }
@@ -60,4 +60,67 @@ h1, h2, h3, h4, h5, h6 {
      transform: translateX(-2px);
    }
     }
+}
+
+.button--primary {
+  span {
+    background-color: rgb(var(--color-brand-primary));
+    color: rgb(var(--color-white));
+  }
+}
+
+.button--dark-blue {
+  span {
+    background-color: rgb(var(--color-brand-dark-blue));
+    color: rgb(var(--color-white));
+  }
+}
+
+.button--light-blue {
+  span {
+    background-color: rgb(var(--color-brand-light-blue));
+    color: rgb(var(--color-brand-primary));
+  }
+}
+
+.button--black {
+  span {
+    background-color: rgb(var(--color-black));
+    color: rgb(var(--color-white));
+  }
+  &:before {
+    background-color: rgb(var(--color-brand-dark-blue));
+  }
+}
+
+.button--white {
+  span {
+    background-color: rgb(var(--color-white));
+    color: rgb(var(--color-black));
+  }
+}
+
+.above-title--light-blue {
+  background-color: rgb(var(--color-brand-light-blue));
+  color: rgb(var(--color-black));
+}
+
+.above-title--blue {
+  background-color: rgb(var(--color-brand-primary));
+  color: rgb(var(--color-white));
+}
+
+.above-title--black {
+  background-color: rgb(var(--color-black));
+  color: rgb(var(--color-white));
+}
+
+.above-title--white {
+  background-color: rgb(var(--color-white));
+  color: rgb(var(--color-black));
+}
+
+.above-title--secondary {
+  background-color: rgb(var(--color-brand-secondary));
+  color: rgb(var(--color-black));
 }

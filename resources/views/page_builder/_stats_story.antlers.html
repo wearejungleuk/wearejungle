@@ -1,0 +1,70 @@
+<section class="py-16 lg:py-24">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+
+            <div>
+                {{ if above_title }}
+                    <div class="relative z-[10]">
+                        {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
+                    </div>
+                {{ /if }}
+                {{ if title }}
+                    <h2 class="font-heading uppercase text-[42px] sm:text-[52px] lg:text-[52px] xl:text-[58px] leading-none text-white mb-6 js-fade-up">{{ title }}</h2>
+                {{ /if }}
+                {{ if text }}
+                    <div class="bard text-white text-[16px] lg:text-[17px] mb-8 js-fade-up">{{ text }}</div>
+                {{ /if }}
+                {{ if cta }}
+                    <div class="js-fade-up">
+                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="{ cta_classes }" }}
+                    </div>
+                {{ /if }}
+            </div>
+
+            <div>
+                {{ if image }}
+                    {{ image }}
+                    <div class="overflow-hidden mb-8 js-fade-up">
+                        <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-auto object-cover object-center">
+                    </div>
+                    {{ /image }}
+                {{ /if }}
+
+                {{ if stats }}
+                    <div class="js-fade-up">
+                        {{ stats }}
+                        <div
+                            class="py-5 border-b border-white {{ if index == 1 }}border-t{{ /if }}"
+                            x-data="{
+                                display: '0',
+                                animate() {
+                                    const raw = '{{ number }}';
+                                    const num = parseInt(raw);
+                                    const suffix = raw.replace(/[0-9]/g, '');
+                                    let frame = 0;
+                                    const total = 60;
+                                    const duration = 1200;
+                                    const timer = setInterval(() => {
+                                        frame++;
+                                        const eased = 1 - Math.pow(1 - frame / total, 3);
+                                        this.display = Math.round(eased * num) + suffix;
+                                        if (frame >= total) {
+                                            clearInterval(timer);
+                                            this.display = raw;
+                                        }
+                                    }, duration / total);
+                                }
+                            }"
+                            x-intersect.once="animate()"
+                        >
+                            <div class="font-heading uppercase text-[42px] lg:text-[52px] leading-none text-white" x-text="display"></div>
+                            <div class="text-[16px] text-white mt-1">{{ label }}</div>
+                        </div>
+                        {{ /stats }}
+                    </div>
+                {{ /if }}
+            </div>
+
+        </div>
+    </div>
+</section>

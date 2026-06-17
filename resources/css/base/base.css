@@ -13,7 +13,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1260px;
+  max-width: 1460px;
   padding: 0 20px;
   margin: 0 auto;
   @screen md {
@@ -35,4 +35,16 @@ main {
 
 .grecaptcha-badge {
     display: none!important;
+}
+
+.bBg9CNOlW2mi0kNJPd0J.LRfZWHdFOSsK7qEmmwSo.VerwvcewP1qsYqUKWcbA, .bBg9CNOlW2mi0kNJPd0J, .LRfZWHdFOSsK7qEmmwSo, .VerwvcewP1qsYqUKWcbA {
+    margin-top: 0!important;
+}
+
+.bBg9CNOlW2mi0kNJPd0J.VerwvcewP1qsYqUKWcbA {
+    margin-top: 0!important;
+}
+
+.DBKEjqt4IKCsNgnjbfTn.rc3MbSIPzTjjHS6aAm5W {
+    width: 100%!important;
 }

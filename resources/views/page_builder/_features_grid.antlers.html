@@ -1,0 +1,46 @@
+<section class="bg-black rounded-[60px] lg:rounded-[100px] py-16 lg:py-24">
+    <div class="container">
+
+        <div class="text-center max-w-[720px] mx-auto mb-12 lg:mb-16">
+            {{ if title }}
+                <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[52px] xl:text-[58px] leading-none text-white mb-4 js-fade-up">{{ title }}</h2>
+            {{ /if }}
+            {{ if intro_text }}
+                <p class="text-white text-[16px] lg:text-[18px] js-fade-up">{{ intro_text }}</p>
+            {{ /if }}
+        </div>
+
+        {{ if items }}
+            <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-6">
+                {{ items }}
+                {{ if first }}
+                <div class="bg-brand-dark-blue p-8 lg:p-10 flex flex-col js-fade-up lg:row-span-2" style="border-radius: 24px">
+                    <h3 class="font-heading uppercase text-[22px] lg:text-[28px] leading-tight text-white mb-4">{{ title }}</h3>
+                    <p class="text-white text-[15px] lg:text-[16px] leading-relaxed" style="opacity: 0.75">{{ text }}</p>
+                    {{ if image }}
+                        <div class="mt-auto pt-8 overflow-hidden" style="border-radius: 12px">
+                            {{ image }}
+                            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-auto block">
+                            {{ /image }}
+                        </div>
+                    {{ /if }}
+                </div>
+                {{ else }}
+                <div class="bg-brand-dark-blue p-8 lg:p-10 flex flex-col js-fade-up" style="border-radius: 24px">
+                    <h3 class="font-heading uppercase text-[22px] lg:text-[28px] leading-tight text-white mb-4">{{ title }}</h3>
+                    <p class="text-white text-[15px] lg:text-[16px] leading-relaxed" style="opacity: 0.75">{{ text }}</p>
+                    {{ if image }}
+                        <div class="mt-auto pt-8 overflow-hidden" style="border-radius: 12px">
+                            {{ image }}
+                            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-auto block">
+                            {{ /image }}
+                        </div>
+                    {{ /if }}
+                </div>
+                {{ /if }}
+                {{ /items }}
+            </div>
+        {{ /if }}
+
+    </div>
+</section>

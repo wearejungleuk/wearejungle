@@ -19,6 +19,7 @@ module.exports = {
         "brand-dark-blue-two": "rgba(var(--color-brand-dark-blue-two), <alpha-value>)",
         "brand-secondary": "rgba(var(--color-brand-secondary), <alpha-value>)",
         "brand-text": "rgba(var(--color-brand-text), <alpha-value>)",
+        "brand-charcoal": "rgba(var(--color-brand-charcoal), <alpha-value>)",
         "black": "rgba(var(--color-black), <alpha-value>)",
         "white": "rgba(var(--color-white), <alpha-value>)",
       },
@@ -33,6 +34,8 @@ module.exports = {
         marquee2: 'marquee2 55s linear infinite',
         marqueeQuick: 'marquee 25s linear infinite',
         marqueeQuick2: 'marquee2 25s linear infinite',
+        marqueeLoop: 'marqueeLoop 25s linear infinite',
+        marqueeLoopSlow: 'marqueeLoop 55s linear infinite',
       },
       keyframes: {
         marquee: {
@@ -50,6 +53,10 @@ module.exports = {
         marqueeQuick2: {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
+        },
+        marqueeLoop: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
     },

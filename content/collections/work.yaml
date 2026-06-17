@@ -1,5 +1,11 @@
 title: Work
+structure:
+  max_depth: 1
+template: default
+layout: layout
 revisions: false
-date_behavior:
-  past: public
-  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

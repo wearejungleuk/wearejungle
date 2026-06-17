@@ -1,0 +1,56 @@
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+
+        {{# Header #}}
+        {{ if above_title or title }}
+            <div class="text-center max-w-[720px] mx-auto mb-12 lg:mb-16">
+                {{ if above_title }}
+                    <div class="flex justify-center js-fade-up">
+                        {{ partial:components/above-title title="{ above_title }" classes="above-title--secondary" }}
+                    </div>
+                {{ /if }}
+                {{ if title }}
+                    <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[52px] xl:text-[58px] leading-none text-white js-fade-up">{{ title }}</h2>
+                {{ /if }}
+            </div>
+        {{ /if }}
+
+        {{# Accordion items #}}
+        {{ if items }}
+            <div class="max-w-[860px] mx-auto">
+                {{ items }}
+                <div x-data="{ open: false }" class="js-fade-up">
+                    <div style="border-top: 1px solid rgba(255,255,255,0.2)">
+                        <button
+                            @click="open = !open"
+                            class="w-full flex items-center justify-between gap-6 py-6 text-left"
+                        >
+                            <span class="font-heading uppercase text-[17px] lg:text-[20px] leading-snug text-white">{{ question }}</span>
+                            <span
+                                class="flex-shrink-0 w-[36px] h-[36px] flex items-center justify-center bg-brand-secondary text-black transition-transform duration-300"
+                                style="border-radius: 8px"
+                                :class="open ? 'rotate-45' : ''"
+                            >
+                                <i class="fa-sharp fa-regular fa-plus text-[13px]"></i>
+                            </span>
+                        </button>
+                        <div
+                            x-show="open"
+                            x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 -translate-y-1"
+                            x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-in duration-150"
+                            x-transition:leave-start="opacity-100 translate-y-0"
+                            x-transition:leave-end="opacity-0 -translate-y-1"
+                        >
+                            <div class="bard text-white text-[16px] lg:text-[17px] leading-relaxed pb-6">{{ answer }}</div>
+                        </div>
+                    </div>
+                </div>
+                {{ /items }}
+                <div style="border-top: 1px solid rgba(255,255,255,0.2)"></div>
+            </div>
+        {{ /if }}
+
+    </div>
+</section>

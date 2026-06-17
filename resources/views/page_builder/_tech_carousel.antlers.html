@@ -1,0 +1,93 @@
+<style>
+.tc-swiper .swiper-wrapper { align-items: stretch; }
+.tc-swiper .swiper-slide { opacity: 0.4; transition: opacity 0.4s ease; display: flex; flex-direction: column; height: auto !important; }
+.tc-swiper .swiper-slide-visible { opacity: 1; }
+</style>
+
+<section class="py-16 lg:py-24"
+    x-data="{}"
+    x-init="$nextTick(() => {
+        new Swiper($refs.techCarousel, {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            watchSlidesProgress: true,
+            speed: 600,
+            loop: false,
+            navigation: {
+                nextEl: $refs.tcNext,
+                prevEl: $refs.tcPrev,
+            },
+            breakpoints: {
+                640: { slidesPerView: 2.3, spaceBetween: 24 },
+                1024: { slidesPerView: 3, spaceBetween: 28 },
+            },
+            on: {
+                init(s) { updateTcButtons(s) },
+                slideChange(s) { updateTcButtons(s) }
+            }
+        });
+        function updateTcButtons(s) {
+            const prev = $refs.tcPrev;
+            const next = $refs.tcNext;
+            prev.disabled = s.isBeginning;
+            next.disabled = s.isEnd;
+            prev.classList.toggle('opacity-50', s.isBeginning);
+            next.classList.toggle('opacity-50', s.isEnd);
+            prev.classList.toggle('cursor-not-allowed', s.isBeginning);
+            next.classList.toggle('cursor-not-allowed', s.isEnd);
+        }
+    })">
+
+    <div class="container">
+        <div class="text-center max-w-[720px] mx-auto mb-12 lg:mb-16">
+            <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[52px] xl:text-[58px] leading-none text-white mb-4 js-fade-up">{{ title ?? 'Technologies We Use' }}</h2>
+            {{ if intro_text }}
+                <p class="text-white text-[16px] lg:text-[18px] js-fade-up">{{ intro_text }}</p>
+            {{ /if }}
+        </div>
+    </div>
+
+    <div class="relative">
+        <div class="absolute top-1/2 -translate-y-1/2 z-10" style="left: max(1rem, calc(50% - 500px - 66px))">
+            <button x-ref="tcPrev" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
+                <i class="fa-sharp fa-regular fa-chevron-left"></i>
+            </button>
+        </div>
+        <div class="absolute top-1/2 -translate-y-1/2 z-10" style="right: max(1rem, calc(50% - 500px - 66px))">
+            <button x-ref="tcNext" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
+                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="max-w-[1000px] mx-auto">
+            <div class="swiper !overflow-visible tc-swiper" x-ref="techCarousel">
+                <div class="swiper-wrapper">
+                    {{ technologies }}
+                    <div class="swiper-slide !h-auto">
+                        <div class="bg-brand-dark-blue p-8 lg:p-10 flex flex-col items-center text-center flex-1" style="border-radius: 24px">
+                            {{ if icon }}
+                                {{ icon }}
+                                <div class="w-[72px] h-[72px] flex items-center justify-center bg-brand-dark-blue-two mb-6 flex-shrink-0" style="border-radius: 16px">
+                                    <img src="{{ url }}" alt="{{ name }}" class="w-[44px] h-[44px] object-contain">
+                                </div>
+                                {{ /icon }}
+                            {{ else }}
+                                <div class="w-[72px] h-[72px] flex items-center justify-center bg-brand-secondary mb-6 flex-shrink-0" style="border-radius: 16px">
+                                    <span class="font-heading uppercase text-black text-[26px] leading-none">{{ name | substr:0:1 }}</span>
+                                </div>
+                            {{ /if }}
+                            {{ if name }}
+                                <h3 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-white mb-3">{{ name }}</h3>
+                            {{ /if }}
+                            {{ if description }}
+                                <p class="text-white text-[14px] lg:text-[15px] leading-relaxed" style="opacity: 0.7">{{ description }}</p>
+                            {{ /if }}
+                        </div>
+                    </div>
+                    {{ /technologies }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

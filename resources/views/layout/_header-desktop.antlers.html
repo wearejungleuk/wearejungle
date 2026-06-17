@@ -13,78 +13,14 @@
             <div class="col-span-4 flex justify-center items-center">
                 <ul class="flex gap-6 3xl:gap-8 text-white justify-center items-center">
                     {{ nav:main_menu select="id|title|url|children" }}
-                        <li class="list-none group
-
-
-                            {{ if children && children:0:children }} {{ else }} relative {{ /if }}
-                            {{ if children }}has-children{{ /if }}" data-menu-id="{{ id }}">
-                            <a href="{{ url }}" class="lg:text-[16px] 3xl:text-[18px] font-heading uppercase pb-16 duration-300 transition-all hover:text-brand-secondary">
-                                {{ title }}
-                            </a>
-
+                    <li class="list-none {{ if children }}group{{ else }}relative{{ /if }}" data-menu-id="{{ id }}">
+                        <a href="{{ url }}" class="lg:text-[16px] 3xl:text-[18px] font-heading uppercase pb-3 duration-300 transition-all hover:text-brand-secondary flex items-center gap-2">
+                            {{ title }}
                             {{ if children }}
-                                {{ if children:0:children }}
-                                    <!-- Mega Menu -->
-                                    <div class="mega-menu absolute left-0 top-20 bg-white shadow-md p-8 pt-16 rounded-[15px] opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-12 duration-300 transition-all w-full z-[-1]">
-                                        <div class="grid grid-cols-2 gap-4">
-                                            <div class="col-span-1">
-                                                <div class="grid grid-cols-2 gap-4">
-
-                                                    {{ children }}
-                                                <div class="cols-span-1 overflow-hidden">
-                                                    <a href="{{ url }}" class="font-semibold text-brand-primary block mb-3 hover:text-brand-secondary duration-300">{{ title }}</a>
-                                                    {{ if children }}
-                                                        <ul>
-                                                            {{ children }}
-                                                            <li>
-                                                                <a href="{{ url }}" class="block py-1 hover:text-brand-secondary duration-300 transition-all">{{ title }}</a>
-                                                            </li>
-                                                            {{ /children }}
-                                                        </ul>
-                                                    </div>
-                                                    {{ /if }}
-                                                </div>
-                                                {{ /children }}
-                                            </div>
-                                            <div class="col-span-1">
-                                                <div class="grid grid-cols-2 gap-4">
-                                                    <div class="cols-span-1 overflow-hidden rounded-[20px] relative">
-                                                        <a href="{{ navigation:ad_link_left }}">
-                                                            {{ navigation:ad_image_left }}
-                                                            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-full object-center object-cover">
-                                                            {{ /navigation:ad_image_left }}
-                                                            <p class="absolute font-heading bottom-4 left-4 text-white z-[3]">{{ navigation:ad_left_title }}</p>
-                                                            <div class="absolute w-full h-1/2 bottom-0 left-0 z-[2] bg-gradient-to-t from-black to-transparent opacity-80"></div>
-
-                                                        </a>
-                                                    </div>
-                                                    <div class="cols-span-1 overflow-hidden rounded-[20px] relative">
-                                                        <a href="{{ navigation:ad_link_right }}">
-                                                            {{ navigation:ad_image_right }}
-                                                            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-full object-center object-cover">
-                                                            {{ /navigation:ad_image_right }}
-                                                            <p class="absolute font-heading bottom-4 left-4 text-white z-[3]">{{ navigation:ad_right_title }}</p>
-                                                            <div class="absolute w-full h-1/2 bottom-0 left-0 z-[2] bg-gradient-to-t from-black to-transparent opacity-80"></div>
-
-                                                        </a>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                {{ else }}
-                                    <!-- Basic Submenu -->
-                                    <ul class="submenu min-w-[200px] bg-white rounded-[15px] p-4 shadow-md invisible top-20 left-0 absolute opacity-0 duration-300 transition-all group-hover:visible group-hover:opacity-100 group-hover:top-8">
-                                        {{ children }}
-                                        <li class="block">
-                                            <a href="{{ url }}" class="block py-1 hover:text-brand-secondary duration-300 transition-all">{{ title }}</a>
-                                        </li>
-                                        {{ /children }}
-                                    </ul>
-                                {{ /if }}
+                                <i class="fa-sharp fa-regular fa-chevron-down text-[12px] transition-transform duration-300 group-hover:rotate-180"></i>
                             {{ /if }}
-                        </li>
+                        </a>
+                    </li>
                     {{ /nav:main_menu }}
                 </ul>
             </div>
@@ -99,3 +35,86 @@
         </div>
     </div>
 </div>
+
+{{# Full-width services mega menu — positioned absolute to the fixed header #}}
+{{ nav:main_menu select="id|title|url|children" }}
+{{ if children }}
+<div class="services-mega-menu hidden lg:block group/mega" id="mega-{{ id }}">
+    <div
+        class="fixed left-0 right-0 top-0 bg-brand-dark-blue z-[9999998] pointer-events-none transition-transform duration-300 ease-out -translate-y-full"
+        id="mega-panel-{{ id }}"
+    >
+        <div class="container" id="mega-panel-inner-{{ id }}" style="padding-bottom: 48px">
+            <div class="grid grid-cols-12 gap-8 items-start">
+
+                {{# Service links — left #}}
+                <div class="col-span-8">
+                    <ul class="flex flex-col">
+                        {{ children }}
+                        <li class="group/item">
+                            <a href="{{ url }}" class="flex items-center justify-between py-3 xl:py-4 transition-colors duration-200 group-hover/item:text-brand-secondary">
+                                <span class="font-heading uppercase text-white text-[32px] xl:text-[40px] 2xl:text-[48px] leading-none group-hover/item:text-brand-secondary transition-colors duration-200">{{ title }}</span>
+                                <i class="fa-sharp fa-regular fa-arrow-up-right text-white text-[20px] opacity-0 group-hover/item:opacity-100 transition-all duration-200 translate-x-[-4px] group-hover/item:translate-x-0"></i>
+                            </a>
+                        </li>
+                        {{ /children }}
+                    </ul>
+                </div>
+
+                {{# Featured panel — right #}}
+                <div class="col-span-4 pt-2">
+                    <p class="font-heading uppercase text-white/40 text-[12px] tracking-widest mb-6">Our Services</p>
+                    <h3 class="font-heading uppercase text-white text-[28px] xl:text-[34px] leading-tight mb-4">Web design &amp; development that performs</h3>
+                    <p class="text-white text-[15px] leading-relaxed mb-8" style="opacity: 0.7">From bespoke WordPress builds to Statamic and Shopify — we design and build websites that look sharp and actually convert.</p>
+                    <a href="{{ url }}" class="group/cta inline-flex items-center gap-3 font-heading uppercase text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200">
+                        View all services
+                        <i class="fa-sharp fa-regular fa-arrow-up-right text-[12px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{{ /if }}
+{{ /nav:main_menu }}
+
+<script>
+(function () {
+    const header = document.getElementById('header');
+    const triggers = document.querySelectorAll('[data-menu-id]');
+
+    function syncPadding() {
+        triggers.forEach(function (li) {
+            const id = li.dataset.menuId;
+            const inner = document.getElementById('mega-panel-inner-' + id);
+            if (inner && header) inner.style.paddingTop = header.offsetHeight + 'px';
+        });
+    }
+    syncPadding();
+    if (header) new ResizeObserver(syncPadding).observe(header);
+
+    triggers.forEach(function (li) {
+        const id = li.dataset.menuId;
+        const panel = document.getElementById('mega-panel-' + id);
+        if (!panel) return;
+
+        function openPanel() {
+            panel.classList.remove('-translate-y-full', 'pointer-events-none');
+            panel.classList.add('translate-y-0');
+        }
+        function closePanel() {
+            panel.classList.add('-translate-y-full', 'pointer-events-none');
+            panel.classList.remove('translate-y-0');
+        }
+
+        li.addEventListener('mouseenter', openPanel);
+        li.addEventListener('mouseleave', function (e) {
+            if (!panel.contains(e.relatedTarget)) closePanel();
+        });
+        panel.addEventListener('mouseleave', function (e) {
+            if (!li.contains(e.relatedTarget)) closePanel();
+        });
+    });
+})();
+</script>

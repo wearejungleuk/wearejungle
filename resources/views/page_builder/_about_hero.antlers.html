@@ -1,0 +1,47 @@
+<section class="pt-[140px] md:pt-[160px] lg:pt-[200px] pb-16 lg:pb-24">
+    <div class="container">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-12 lg:mb-16 items-start">
+            <div>
+                {{ if title }}
+                    <h1 class="font-heading uppercase text-[45px] sm:text-[60px] lg:text-[65px] xl:text-[70px] leading-none text-white js-fade-up">
+                        {{ title }}<span class="inline-block w-[50px] lg:w-[55px] xl:w-[60px] align-middle ml-2">{{ partial:components/icons/julius-shades }}</span>
+                    </h1>
+                {{ /if }}
+            </div>
+            <div>
+                {{ if intro_text }}
+                    <div class="bard text-white text-[16px] lg:text-[18px] leading-relaxed js-fade-up">{{ intro_text }}</div>
+                {{ /if }}
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+            <div>
+                {{ if image_left }}
+                    {{ glide:image_left width="620" height="780" fit="crop_focal" }}
+                    <div class="overflow-hidden rounded-[20px] border-[3px] border-black js-fade-up" style="aspect-ratio: 620/780">
+                        <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-full object-cover object-center">
+                    </div>
+                    {{ /glide:image_left }}
+                {{ /if }}
+            </div>
+            <div>
+                {{ if image_right }}
+                    {{ glide:image_right width="620" height="420" fit="crop_focal" }}
+                    <div class="overflow-hidden rounded-[20px] border-[3px] border-black mb-8 js-fade-up" style="aspect-ratio: 620/420">
+                        <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-full object-cover object-center">
+                    </div>
+                    {{ /glide:image_right }}
+                {{ /if }}
+                {{ if body_text_lead }}
+                    <div class="bard text-white text-[20px] lg:text-[24px] leading-relaxed mb-6 js-fade-up">{{ body_text_lead }}</div>
+                {{ /if }}
+                {{ if body_text }}
+                    <div class="bard text-white text-[16px] lg:text-[17px] leading-relaxed js-fade-up">{{ body_text }}</div>
+                {{ /if }}
+            </div>
+        </div>
+
+    </div>
+</section>
