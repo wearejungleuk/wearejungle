@@ -23,7 +23,7 @@ page_builder:
     enabled: true
   -
     id: split_stats_wd_01
-    title: 'Design With Strategy Behind It'
+    title: 'Web Design With Strategy Behind It'
     text:
       -
         type: paragraph
@@ -75,42 +75,49 @@ page_builder:
         id: tech_wd_03
         name: Tailwind CSS
         description: "Utility-first CSS that lets us build completely custom designs at speed. No overriding defaults, no bloated stylesheets."
+        icon: tailwind-css.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_04
         name: Alpine.js
         description: "Lightweight JavaScript for all front-end interactivity. Small footprint, powerful enough for everything we need."
+        icon: alpine.js.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_05
         name: Statamic
         description: "Our recommended CMS for most new builds. Flat-file, fast, and genuinely easy to manage — our preferred platform."
+        icon: statamic.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_06
         name: WordPress
         description: "We build in WordPress when clients need it — familiar, widely supported, and powerful when set up and configured correctly."
+        icon: wordpress.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_07
         name: HTML5
         description: "Semantic, accessible markup that forms the backbone of every site we build — structured for performance, SEO, and screen readers."
+        icon: html5.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_08
         name: CSS3
         description: "Modern CSS for layouts, animations, and visual polish. We write clean, maintainable styles that work across every browser and device."
+        icon: css3.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_09
         name: JavaScript
         description: "Progressive JavaScript for interactive elements and dynamic behaviour — only loaded where it's needed, never as unnecessary overhead."
+        icon: javascript.svg
         type: new_set
         enabled: true
       -
@@ -485,16 +492,17 @@ page_builder:
   -
     id: cta_block_wd_01
     above_title: 'Web Design'
-    title: "Ready for a Website Worth Being Proud Of?"
+    title: "Don't Settle for a Website That Just Looks Pretty"
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Tell us about your business and what you need your website to do — we'll put together a proposal that's right for you."
+            text: "Good web design isn't decoration — it's strategy. If your site isn't converting visitors, it's costing you. Let's fix that."
     cta_title: 'Book a Call'
     book_appointment: true
+    illustration: julius-ipad.svg
     type: cta_block
     enabled: true
 use_meta_keywords: false

@@ -73,7 +73,7 @@ page_builder:
           -
             type: text
             text: "We have grown steadily by partnering with ambitious businesses who care about quality and alignment as much as we do. Our in-house team blends strategic thinking, sharp design and solid development to deliver websites that are considered, commercial and built to last. The recognition has followed, including being named Portsmouth's Best Web Design Agency in 2025 and 2026, and winning a Shaping Portsmouth Business Award in 2026. But for us, the real measure of success is trust and repeat partnerships."
-    cta: '#contact'
+    cta: /contact
     cta_title: 'Book a Call'
     type: about_story
     enabled: true
@@ -92,7 +92,7 @@ page_builder:
           -
             type: text
             text: "No overcomplication. No drawn-out timelines. Just a small team that knows what they're doing and builds websites that actually work."
-    cta: '#contact'
+    cta: /contact
     cta_title: "Let's build something better"
     cards:
       -
@@ -120,6 +120,7 @@ page_builder:
         id: fc_about_04
         heading: 'Design That Converts'
         card_text: "It's not just about looking good. Every decision is made to help your site guide users and drive action."
+        icon: page_quality.svg
         type: new_set
         enabled: true
       -
@@ -150,7 +151,7 @@ page_builder:
           -
             type: text
             text: "Before we start, we keep things clear so you know exactly what's happening and what to expect."
-    cta: '#contact'
+    cta: /contact
     cta_title: "Let's Build Something Better"
     steps:
       -
@@ -245,8 +246,8 @@ page_builder:
           -
             type: text
             text: "If your current site isn't pulling its weight, let's fix that. Book a call and let's get to work."
-    cta: /work
-    cta_title: 'Work With Us'
+    cta: /contact
+    cta_title: 'Get in Touch'
     cta_classes: button--primary
     book_appointment: false
     cta_2_title: 'Book a Call'
@@ -263,5 +264,5 @@ sitemap_priority: '0.5'
 sitemap_changefreq: monthly
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1781644491
+updated_at: 1781723584
 ---

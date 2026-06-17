@@ -13,3 +13,5 @@ tree:
     entry: services
   -
     entry: contact
+  -
+    entry: support

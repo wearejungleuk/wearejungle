@@ -1,6 +1,5 @@
 {{ if book_appointment }}
-<a href="javascript:void(0)"
-   onclick="Calendly.initPopupWidget({url:'{{ brand:calendly_link }}'});return false;"
+<a href="{{ brand:calendly_link }}" target="_blank"
    class="button group z-[1] {{ classes }}">
     <span>{{ title }}</span>
 </a>

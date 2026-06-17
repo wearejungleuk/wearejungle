@@ -1,4 +1,4 @@
-<div class="header__desktop hidden lg:block" x-data="{ scrolled: false }" x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 100 })">
+<div class="header__desktop hidden lg:block relative z-[2]" x-data="{ scrolled: false }" x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 100 })">
     <div class="container container__full">
         <div class="grid grid-cols-6 gap-8">
             <div class="col-span-1">
@@ -13,13 +13,19 @@
             <div class="col-span-4 flex justify-center items-center">
                 <ul class="flex gap-6 3xl:gap-8 text-white justify-center items-center">
                     {{ nav:main_menu select="id|title|url|children" }}
-                    <li class="list-none {{ if children }}group{{ else }}relative{{ /if }}" data-menu-id="{{ id }}">
+                    <li class="list-none {{ if children }}group{{ else }}relative{{ /if }}" {{ if children }}data-menu-id="{{ id }}"{{ else }}data-no-sub{{ /if }}>
+                        {{ if url | contains('calendly') }}
+                        <a href="{{ brand:calendly_link }}" target="_blank" class="lg:text-[16px] 3xl:text-[18px] font-heading uppercase pb-3 duration-300 transition-all hover:text-brand-secondary flex items-center gap-2">
+                            {{ title }}
+                        </a>
+                        {{ else }}
                         <a href="{{ url }}" class="lg:text-[16px] 3xl:text-[18px] font-heading uppercase pb-3 duration-300 transition-all hover:text-brand-secondary flex items-center gap-2">
                             {{ title }}
                             {{ if children }}
                                 <i class="fa-sharp fa-regular fa-chevron-down text-[12px] transition-transform duration-300 group-hover:rotate-180"></i>
                             {{ /if }}
                         </a>
+                        {{ /if }}
                     </li>
                     {{ /nav:main_menu }}
                 </ul>
@@ -41,7 +47,7 @@
 {{ if children }}
 <div class="services-mega-menu hidden lg:block group/mega" id="mega-{{ id }}">
     <div
-        class="fixed left-0 right-0 top-0 bg-brand-dark-blue z-[9999998] pointer-events-none transition-transform duration-300 ease-out -translate-y-full"
+        class="fixed left-0 right-0 top-0 bg-brand-dark-blue z-[1] pointer-events-none transition-transform duration-300 ease-out -translate-y-full"
         id="mega-panel-{{ id }}"
     >
         <div class="container" id="mega-panel-inner-{{ id }}" style="padding-bottom: 48px">
@@ -63,7 +69,7 @@
 
                 {{# Featured panel — right #}}
                 <div class="col-span-4 pt-2">
-                    <p class="font-heading uppercase text-white/40 text-[12px] tracking-widest mb-6">Our Services</p>
+                    <div class="mb-6">{{ partial:components/above-title title="Our Services" }}</div>
                     <h3 class="font-heading uppercase text-white text-[28px] xl:text-[34px] leading-tight mb-4">Web design &amp; development that performs</h3>
                     <p class="text-white text-[15px] leading-relaxed mb-8" style="opacity: 0.7">From bespoke WordPress builds to Statamic and Shopify — we design and build websites that look sharp and actually convert.</p>
                     <a href="{{ url }}" class="group/cta inline-flex items-center gap-3 font-heading uppercase text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200">
@@ -83,6 +89,7 @@
 (function () {
     const header = document.getElementById('header');
     const triggers = document.querySelectorAll('[data-menu-id]');
+    const noSubItems = document.querySelectorAll('[data-no-sub]');
 
     function syncPadding() {
         triggers.forEach(function (li) {
@@ -99,21 +106,31 @@
         const panel = document.getElementById('mega-panel-' + id);
         if (!panel) return;
 
+        var closeTimeout;
+
         function openPanel() {
+            clearTimeout(closeTimeout);
             panel.classList.remove('-translate-y-full', 'pointer-events-none');
             panel.classList.add('translate-y-0');
         }
-        function closePanel() {
-            panel.classList.add('-translate-y-full', 'pointer-events-none');
-            panel.classList.remove('translate-y-0');
+        function scheduleClose() {
+            closeTimeout = setTimeout(function () {
+                panel.classList.add('-translate-y-full', 'pointer-events-none');
+                panel.classList.remove('translate-y-0');
+            }, 80);
         }
 
         li.addEventListener('mouseenter', openPanel);
-        li.addEventListener('mouseleave', function (e) {
-            if (!panel.contains(e.relatedTarget)) closePanel();
-        });
-        panel.addEventListener('mouseleave', function (e) {
-            if (!li.contains(e.relatedTarget)) closePanel();
+        li.addEventListener('mouseleave', scheduleClose);
+        panel.addEventListener('mouseenter', function () { clearTimeout(closeTimeout); });
+        panel.addEventListener('mouseleave', scheduleClose);
+
+        noSubItems.forEach(function (other) {
+            other.addEventListener('mouseenter', function () {
+                clearTimeout(closeTimeout);
+                panel.classList.add('-translate-y-full', 'pointer-events-none');
+                panel.classList.remove('translate-y-0');
+            });
         });
     });
 })();

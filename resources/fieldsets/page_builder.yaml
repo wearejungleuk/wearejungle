@@ -1565,6 +1565,29 @@ fields:
                       - services
                     max_items: 1
                     display: 'Related Service 2'
+            services_list:
+              display: 'Services List'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: 'Title (optional)'
             process_carousel:
               display: 'Process Carousel'
               fields:

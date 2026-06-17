@@ -16,7 +16,7 @@ page_builder:
           -
             type: text
             text: 'Looks attract. Performance converts. We help growing businesses get both - without the drama or inflated agency fees.'
-    cta: '#contact'
+    cta: /contact
     cta_title: 'Start Your Project'
     type: home_hero
     enabled: true
@@ -44,7 +44,7 @@ page_builder:
           -
             type: text
             text: "We design and build websites that look sharp, run fast, and actually do what they're supposed to. No templates, no overcomplication — just solid work that helps your business grow."
-    cta: '#contact'
+    cta: /contact
     cta_title: 'Get a Quote'
     type: services_with_icons
     enabled: true
@@ -160,7 +160,7 @@ page_builder:
     ctas:
       -
         id: mhndg1a2
-        cta: '#contact'
+        cta: /contact
         cta_title: "Let's Talk"
         type: new_set
         enabled: true
@@ -426,179 +426,6 @@ page_builder:
     enabled: true
     block_id: about
   -
-    id: pricing_01
-    above_title: Support
-    title: 'Support that actually supports'
-    text:
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "We don't disappear after launch. From monthly updates and monitoring to ongoing development support, our plans are built to keep your website secure, fast, and moving forward. Whether you need peace of mind or a dedicated digital partner, we've got a plan that fits."
-    plans:
-      -
-        id: plan_ess
-        name: Essentials
-        price: '190'
-        vat_note: '+ VAT · 2 hrs support at £95/hr'
-        description: 'Peace of mind for smaller sites that just need to stay secure and online.'
-        featured: false
-        features:
-          -
-            id: feat_e1
-            label: '2 hours of support per month'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_e2
-            label: 'Plugin & theme updates'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_e3
-            label: 'Uptime monitoring (24/7)'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_e4
-            label: 'Monthly status report'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_e5
-            label: 'Minor theme tweaks'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_e6
-            label: 'Priority response'
-            included: false
-            type: new_set
-            enabled: true
-          -
-            id: feat_e7
-            label: 'Performance & SEO check'
-            included: false
-            type: new_set
-            enabled: true
-        type: new_set
-        enabled: true
-      -
-        id: plan_gro
-        name: Growth
-        price: '360'
-        vat_note: '+ VAT · 4 hrs support at £90/hr'
-        description: 'Peace of mind for smaller sites that just need to stay secure and online.'
-        featured: true
-        features:
-          -
-            id: feat_g1
-            label: '4 hours of support per month'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_g2
-            label: 'Plugin & theme updates'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_g3
-            label: 'Uptime monitoring (24/7)'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_g4
-            label: 'Monthly status report'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_g5
-            label: 'Minor theme tweaks'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_g6
-            label: 'Priority response (next business day)'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_g7
-            label: 'Quarterly performance & SEO check'
-            included: true
-            type: new_set
-            enabled: true
-        type: new_set
-        enabled: true
-      -
-        id: plan_pri
-        name: Priority
-        price: '640'
-        vat_note: '+ VAT · 8 hrs support at £80/hr'
-        description: 'Peace of mind for smaller sites that just need to stay secure and online.'
-        featured: false
-        features:
-          -
-            id: feat_p1
-            label: '8 hours of support per month'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p2
-            label: 'Plugin & theme updates'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p3
-            label: 'Uptime monitoring (24/7)'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p4
-            label: 'Monthly status report'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p5
-            label: 'Theme tweaks & dev tasks'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p6
-            label: 'Priority response (same day)'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p7
-            label: 'Monthly performance & SEO check'
-            included: true
-            type: new_set
-            enabled: true
-        type: new_set
-        enabled: true
-    footnote: |-
-      All plans cover WordPress, Shopify, and Statamic. Hours do not roll over. Additional hours billed at £95/hr + VAT.
-      No long-term contracts; all support plans are on a 30-day rolling basis with 30 days' notice to cancel.
-    type: pricing
-    enabled: true
-  -
     id: mhnsxw7k
     quote: 'BIG-AGENCY QUALITY. SMALL-TEAM RELIABILITY. NO EGO. NO EXCUSES.'
     type: quote
@@ -613,7 +440,7 @@ page_builder:
           -
             type: text
             text: 'We’re real people, and we actually enjoy meeting our clients. Zoom, Teams, or a pint — your call.'
-    cta: '#contact'
+    cta: /contact
     cta_title: 'Start a Project'
     images:
       - 'kay-and-bradwearejunglebrandshoot-iggy&lime-127.jpg'
@@ -635,7 +462,7 @@ page_builder:
             text: 'Pick a time that suits you. We’ll talk through your project, answer your questions, and see if we’re a good fit.'
     type: calendly
     enabled: true
-    cta: '#contact'
+    cta: /contact
     cta_title: 'Or Contact Us'
   -
     id: mhoppwih

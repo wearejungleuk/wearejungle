@@ -45,7 +45,7 @@
     <div class="container">
 
         {{# Header #}}
-        <div class="text-center mb-10 lg:mb-14">
+        <div class="text-center mb-10 lg:mb-14 mx-auto w-full max-w-[1000px]">
             {{ if above_title }}
                 <div class="flex justify-center js-fade-up">
                     {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
@@ -98,7 +98,7 @@
                 <div class="swiper-wrapper">
                     {{ steps }}
                     <div class="swiper-slide !h-auto">
-                        <div class="bg-brand-dark-blue p-8 md:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12" style="border-radius: 24px">
+                        <div class="bg-brand-dark-blue h-full p-8 md:p-10 lg:p-12 {{ if feature_list }}grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12{{ /if }}" style="border-radius: 24px">
                             <div>
                                 {{ if heading }}
                                     <h3 class="font-heading uppercase text-[26px] sm:text-[32px] lg:text-[38px] leading-tight text-white mb-6">{{ heading }}</h3>
@@ -107,26 +107,26 @@
                                     <div class="bard text-white text-[15px] lg:text-[16px] leading-relaxed">{{ step_text }}</div>
                                 {{ /if }}
                             </div>
+                            {{ if feature_list }}
                             <div>
-                                {{ if feature_list }}
-                                    <div class="flex flex-col gap-5">
-                                        {{ feature_list }}
-                                        <div class="flex items-center gap-4">
-                                            {{ if icon }}
-                                                {{ icon }}
-                                                <div class="w-[52px] h-[52px] flex-shrink-0 bg-brand-dark-blue-two flex items-center justify-center" style="border-radius: 10px">
-                                                    <img src="{{ url }}" alt="{{ alt }}" class="w-[30px] h-[30px] object-contain">
-                                                </div>
-                                                {{ /icon }}
-                                            {{ /if }}
-                                            {{ if label }}
-                                                <span class="text-white text-[15px] lg:text-[16px]">{{ label }}</span>
-                                            {{ /if }}
-                                        </div>
-                                        {{ /feature_list }}
+                                <div class="flex flex-col gap-5">
+                                    {{ feature_list }}
+                                    <div class="flex items-center gap-4">
+                                        {{ if icon }}
+                                            {{ icon }}
+                                            <div class="w-[52px] h-[52px] flex-shrink-0 bg-brand-dark-blue-two flex items-center justify-center" style="border-radius: 10px">
+                                                <img src="{{ url }}" alt="{{ alt }}" class="w-[30px] h-[30px] object-contain">
+                                            </div>
+                                            {{ /icon }}
+                                        {{ /if }}
+                                        {{ if label }}
+                                            <span class="text-white text-[15px] lg:text-[16px]">{{ label }}</span>
+                                        {{ /if }}
                                     </div>
-                                {{ /if }}
+                                    {{ /feature_list }}
+                                </div>
                             </div>
+                            {{ /if }}
                         </div>
                     </div>
                     {{ /steps }}

@@ -23,7 +23,7 @@ page_builder:
     enabled: true
   -
     id: split_stats_wdev_01
-    title: 'Development Done Right, First Time'
+    title: 'Web Development Done Right, First Time'
     text:
       -
         type: paragraph
@@ -491,16 +491,17 @@ page_builder:
   -
     id: cta_block_wdev_01
     above_title: 'Web Development'
-    title: "Let's Build Something That Performs"
+    title: "Stop Patching a Website That's Holding You Back"
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Tell us what you need — we'll scope it properly and give you a fixed price before we start."
+            text: "Slow, buggy, or held together with legacy code — if your site's technical debt is slowing you down, let's build it properly."
     cta_title: 'Book a Call'
     book_appointment: true
+    illustration: julius-ipad.svg
     type: cta_block
     enabled: true
 use_meta_keywords: false

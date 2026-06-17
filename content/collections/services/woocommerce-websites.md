@@ -467,16 +467,17 @@ page_builder:
   -
     id: cta_block_woo_01
     above_title: 'WooCommerce Websites'
-    title: "Ready to Launch Your WooCommerce Store?"
+    title: "Don't Build a WooCommerce Store You'll Have to Rebuild"
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Tell us about your products and your customers — we'll scope the right WooCommerce build for your business."
+            text: "A badly built store costs more in the long run. Let's do it right the first time — fast, clean, and built to sell."
     cta_title: 'Book a Call'
     book_appointment: true
+    illustration: julius-ipad.svg
     type: cta_block
     enabled: true
 use_meta_keywords: false

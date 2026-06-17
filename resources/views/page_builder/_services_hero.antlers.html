@@ -1,7 +1,7 @@
 <section class="bg-brand-primary pt-[140px] md:pt-[160px] lg:pt-[200px] pb-16 lg:pb-0">
     <div class="container">
 
-        <div class="text-center max-w-[820px] mx-auto mb-12 lg:mb-16">
+        <div class="text-center max-w-[1020px] mx-auto mb-12 lg:mb-16">
             {{ if above_title }}
                 <div class="relative z-[10] js-fade-up flex justify-center">
                     {{ partial:components/above-title title="{ above_title }" classes="above-title--secondary" }}
@@ -11,7 +11,7 @@
                 <h1 class="font-heading uppercase text-[48px] sm:text-[62px] lg:text-[78px] xl:text-[86px] leading-none text-white js-fade-up mb-8">{{ title }}</h1>
             {{ /if }}
             {{ if text }}
-                <div class="bard text-white text-[16px] lg:text-[18px] leading-relaxed mb-10 js-fade-up">{{ text }}</div>
+                <div class="bard max-w-[820px] mx-auto text-white text-[16px] lg:text-[18px] leading-relaxed mb-10 js-fade-up">{{ text }}</div>
             {{ /if }}
             {{ if cta || book_appointment }}
                 <div class="js-fade-up">

@@ -23,7 +23,7 @@ page_builder:
     enabled: true
   -
     id: split_stats_ec_01
-    title: 'Selling Online, Done Properly'
+    title: 'eCommerce That Sells, Done Properly'
     text:
       -
         type: paragraph
@@ -479,16 +479,17 @@ page_builder:
   -
     id: cta_block_ec_01
     above_title: 'eCommerce'
-    title: "Ready to Build a Store That Actually Sells?"
+    title: "Stop Leaving Revenue on the Table"
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Tell us about your products, your customers, and your goals — we'll recommend the right platform and scope the right build."
+            text: "If your store isn't converting, it's costing you money every day. Let's build something that actually sells."
     cta_title: 'Book a Call'
     book_appointment: true
+    illustration: julius-ipad.svg
     type: cta_block
     enabled: true
 use_meta_keywords: false

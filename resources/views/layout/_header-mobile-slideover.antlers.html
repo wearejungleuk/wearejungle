@@ -50,10 +50,17 @@
                     {{ /children }}
                 </ul>
                 {{ else }}
+                {{ if url | contains('calendly') }}
+                <a href="{{ brand:calendly_link }}" target="_blank" class="flex items-center justify-between py-3 group">
+                    <span class="font-heading uppercase text-white text-[38px] sm:text-[48px] leading-none transition-colors duration-200 group-hover:text-brand-secondary">{{ title }}</span>
+                    <i class="fa-sharp fa-regular fa-arrow-up-right text-white text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"></i>
+                </a>
+                {{ else }}
                 <a href="{{ url }}" @click="open = false" class="flex items-center justify-between py-3 group">
                     <span class="font-heading uppercase text-white text-[38px] sm:text-[48px] leading-none transition-colors duration-200 group-hover:text-brand-secondary">{{ title }}</span>
                     <i class="fa-sharp fa-regular fa-arrow-up-right text-white text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"></i>
                 </a>
+                {{ /if }}
                 {{ /if }}
             </li>
             {{ /nav:main_menu }}

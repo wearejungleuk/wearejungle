@@ -510,16 +510,17 @@ page_builder:
   -
     id: cta_block_wp_01
     above_title: 'WordPress Websites'
-    title: "Let's Build Your WordPress Website"
+    title: "Don't Let a Poorly Built WordPress Site Hold You Back"
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'A sharp, fast WordPress website built around your goals. Fixed price, clear timeline, no surprises.'
+            text: "A slow, patchy WordPress site is costing you. Let's build one that actually performs, converts, and grows with your business."
     cta_title: 'Book a Call'
     book_appointment: true
+    illustration: julius-ipad.svg
     type: cta_block
     enabled: true
     book_appointment_2: false

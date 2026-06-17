@@ -473,16 +473,17 @@ page_builder:
   -
     id: cta_block_stat_01
     above_title: 'Statamic Websites'
-    title: "Ready to Experience Statamic?"
+    title: "Stop Wrestling With Your CMS"
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Fast, secure, and a joy to manage. Tell us about your project and we'll show you what Statamic can do for your business."
+            text: "Managing your website shouldn't feel like a chore. Statamic changes that — fast, clean, and genuinely easy to use. Let's talk."
     cta_title: 'Book a Call'
     book_appointment: true
+    illustration: julius-ipad.svg
     type: cta_block
     enabled: true
 use_meta_keywords: false

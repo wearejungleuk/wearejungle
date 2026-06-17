@@ -467,16 +467,17 @@ page_builder:
   -
     id: cta_block_shop_01
     above_title: 'Shopify Websites'
-    title: "Ready to Launch Your Shopify Store?"
+    title: "Don't Launch a Shopify Store That Blends In"
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Tell us about your products and your customers — we'll design and build a Shopify store that does them justice."
+            text: "A generic theme won't cut it for a serious brand. Let's build a Shopify store that's sharp, fast, and built to convert."
     cta_title: 'Book a Call'
     book_appointment: true
+    illustration: julius-ipad.svg
     type: cta_block
     enabled: true
 use_meta_keywords: false

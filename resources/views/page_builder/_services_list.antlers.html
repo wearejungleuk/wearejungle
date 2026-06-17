@@ -1,0 +1,50 @@
+<section class="pb-16 lg:pb-24">
+    <div class="container">
+        {{ if above_title }}
+            <div class="mb-10 lg:mb-14 js-fade-up">
+                {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
+            </div>
+        {{ /if }}
+        {{ if title }}
+            <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[56px] leading-none mb-10 lg:mb-14 js-fade-up">{{ title }}</h2>
+        {{ /if }}
+        <div class="flex flex-col gap-4 lg:gap-6">
+            {{ collection:services }}
+            <a href="{{ url }}" class="group block border-[2px] border-black p-8 lg:p-10 js-fade-up bg-white hover:bg-brand-secondary hover:border-brand-secondary transition-all duration-300" style="border-radius: 20px">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-12">
+                    <div class="flex-1">
+                        {{ if icon }}
+                            <div class="w-[48px] h-[48px] bg-black flex items-center justify-center mb-5" style="border-radius: 10px">
+                                {{ icon }}
+                                <img src="{{ url }}" alt="{{ title }}" class="w-[28px] h-[28px] object-contain">
+                                {{ /icon }}
+                            </div>
+                        {{ /if }}
+                        <h3 class="font-heading uppercase text-[28px] sm:text-[34px] lg:text-[40px] leading-none mb-4">
+                            {{ title }}<span class="text-brand-secondary group-hover:text-black transition-colors duration-300">.</span>
+                        </h3>
+                        {{ if card_text }}
+                            <p class="text-[16px] lg:text-[17px] leading-relaxed max-w-[560px]">{{ card_text }}</p>
+                        {{ /if }}
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="inline-flex items-center gap-3 font-heading uppercase text-[15px] tracking-wide transition-colors duration-300">
+                            Explore the service
+                            <span class="w-[34px] h-[34px] flex-shrink-0 bg-black text-white flex items-center justify-center overflow-hidden" style="border-radius: 50%">
+                                <span class="relative w-full h-full flex items-center justify-center">
+                                    <span class="absolute transition-all duration-300 ease-in-out group-hover:translate-x-[150%] group-hover:-translate-y-[150%]">
+                                        <i class="fa-sharp fa-regular fa-arrow-up-right text-[13px]"></i>
+                                    </span>
+                                    <span class="absolute transition-all duration-300 ease-in-out -translate-x-[150%] translate-y-[150%] group-hover:translate-x-0 group-hover:translate-y-0">
+                                        <i class="fa-sharp fa-regular fa-arrow-up-right text-[13px]"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            {{ /collection:services }}
+        </div>
+    </div>
+</section>
