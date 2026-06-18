@@ -1,1 +1,3 @@
 title: 'Blog Categories'
+route: /blog/category/{slug}
+template: blog_categories/show

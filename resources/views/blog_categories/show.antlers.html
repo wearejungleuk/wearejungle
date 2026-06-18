@@ -1,16 +1,16 @@
-<section class="py-16 lg:py-24 bg-white">
+<section class="pt-[150px] lg:pt-[200px] pb-4">
     <div class="container">
         <div class="text-center mb-12 lg:mb-16 js-fade-up">
-            {{ if above_title }}
-            {{ partial:components/above-title :title="above_title" classes="above-title--secondary" }}
-            {{ /if }}
-            {{ if title }}
-            <h2 class="font-heading uppercase text-[42px] sm:text-[52px] lg:text-[68px] xl:text-[80px] leading-none text-brand-primary mt-4">{{ title | highlight_brackets }}</h2>
-            {{ /if }}
+            {{ partial:components/above-title title="Blog" classes="above-title--secondary" }}
+            <h1 class="font-heading uppercase text-[48px] sm:text-[56px] lg:text-[72px] leading-none text-brand-white mt-4">{{ title }}</h1>
         </div>
+    </div>
+</section>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 mb-12 lg:mb-16">
-            {{ collection:blog sort="date:desc" limit="3" }}
+<section class="pb-16 lg:pb-24">
+    <div class="container">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+            {{ collection:blog :taxonomy:blog_categories="slug" sort="date:desc" }}
             <article class="flex flex-col js-fade-up">
                 {{ if featured_image }}
                 <a href="{{ url }}" class="block overflow-hidden mb-5" style="border-radius: 10px">
@@ -19,11 +19,11 @@
                     {{ /glide:featured_image }}
                 </a>
                 {{ /if }}
-                <h3 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-brand-primary mb-3">
+                <h2 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-brand-white mb-3">
                     <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title }}</a>
-                </h3>
+                </h2>
                 {{ if excerpt }}
-                <p class="text-[15px] lg:text-[16px] text-brand-primary leading-relaxed mb-4 opacity-[0.65]">{{ excerpt }}</p>
+                <p class="text-[15px] lg:text-[16px] text-brand-white leading-relaxed mb-4 opacity-[0.65]">{{ excerpt }}</p>
                 {{ /if }}
                 <a href="{{ url }}" class="inline-flex items-center gap-3 font-heading uppercase text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200 mt-auto">
                     Read Blog
@@ -32,9 +32,11 @@
             </article>
             {{ /collection:blog }}
         </div>
-
-        <div class="text-center js-fade-up">
-            {{ partial:components/_button url="/blog" title="See All Blogs" classes="" }}
-        </div>
     </div>
 </section>
+
+{{ if page_builder }}
+{{ page_builder }}
+{{ partial src="page_builder/{type}" }}
+{{ /page_builder }}
+{{ /if }}

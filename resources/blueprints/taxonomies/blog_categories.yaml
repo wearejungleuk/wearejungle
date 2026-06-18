@@ -12,3 +12,10 @@ tabs:
               required: true
               validate:
                 - required
+  content:
+    display: Content
+    sections:
+      -
+        fields:
+          -
+            import: page_builder

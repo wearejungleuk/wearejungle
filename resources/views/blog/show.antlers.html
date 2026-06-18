@@ -17,7 +17,7 @@
             {{ /if }}
             <h1 class="font-heading uppercase text-[36px] sm:text-[48px] lg:text-[60px] xl:text-[68px] leading-none mb-6">{{ title }}</h1>
             {{ if excerpt }}
-            <p class="text-[17px] lg:text-[18px] leading-relaxed mb-8" style="opacity: 0.65">{{ excerpt }}</p>
+            <p class="text-[17px] lg:text-[18px] leading-relaxed mb-8 opacity-[0.65]">{{ excerpt }}</p>
             {{ /if }}
             {{# Author row #}}
             <div class="inline-flex items-center gap-3 justify-center flex-wrap">
@@ -25,11 +25,11 @@
                 <span class="font-regular text-[14px] font-medium">{{ author_name }}</span>
                 {{ /if }}
                 {{ if author_role }}
-                <span class="text-brand-primary" style="opacity: 0.4">·</span>
-                <span class="font-regular text-[14px]" style="opacity: 0.55">{{ author_role }}</span>
+                <span class="text-brand-primary opacity-40">·</span>
+                <span class="font-regular text-[14px] opacity-[0.55]">{{ author_role }}</span>
                 {{ /if }}
-                <span class="text-brand-primary" style="opacity: 0.4">·</span>
-                <span class="font-regular text-[14px]" style="opacity: 0.55">{{ date format="j F Y" }}</span>
+                <span class="text-brand-primary opacity-40">·</span>
+                <span class="font-regular text-[14px] opacity-[0.55]">{{ date format="j F Y" }}</span>
             </div>
         </div>
     </div>
@@ -43,7 +43,7 @@
             {{# Left: share sidebar #}}
             <div class="hidden lg:flex flex-col items-center gap-4 pt-2">
                 <div class="lg:sticky" style="top: 120px">
-                    <span class="font-regular text-[11px] uppercase tracking-widest block text-center mb-4" style="opacity: 0.5">Share</span>
+                    <span class="font-regular text-[11px] uppercase tracking-widest block text-center mb-4 opacity-50">Share</span>
                     <div class="flex flex-col items-center gap-4">
                         <a href="https://www.facebook.com/sharer/sharer.php?u={{ permalink }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-white hover:bg-brand-secondary hover:hover:text-brand-primary transition-all duration-200 rounded-full" aria-label="Share on Facebook">
                             <i class="fa-brands fa-facebook-f text-[14px]"></i>
@@ -67,7 +67,7 @@
                     <img src="{{ url }}" alt="{{ title }}" class="w-full aspect-[16/9] object-cover" loading="eager">
                     {{ /glide:featured_image }}
                     {{ if featured_image_caption }}
-                    <p class="text-[13px] mt-3 text-center" style="opacity: 0.5">{{ featured_image_caption }}</p>
+                    <p class="text-[13px] mt-3 text-center opacity-50">{{ featured_image_caption }}</p>
                     {{ /if }}
                 </div>
                 {{ /if }}
@@ -81,7 +81,7 @@
 
                 {{# Mobile share row #}}
                 <div class="flex items-center gap-4 mt-10 pt-8 border-t border-white lg:hidden" style="border-color: rgba(0,0,0,0.1)">
-                    <span class="font-regular text-[12px] uppercase tracking-widest" style="opacity: 0.5">Share</span>
+                    <span class="font-regular text-[12px] uppercase tracking-widest opacity-50">Share</span>
                     <a href="https://www.facebook.com/sharer/sharer.php?u={{ permalink }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 flex items-center justify-center border border-white hover:bg-brand-secondary hover:hover:text-brand-primary transition-all duration-200 rounded-full" aria-label="Share on Facebook">
                         <i class="fa-brands fa-facebook-f text-[13px]"></i>
                     </a>
@@ -122,7 +122,7 @@
                     <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title }}</a>
                 </h3>
                 {{ if excerpt }}
-                <p class="text-[15px] text-white leading-relaxed mb-4" style="opacity: 0.65">{{ excerpt }}</p>
+                <p class="text-[15px] text-white leading-relaxed mb-4 opacity-[0.65]">{{ excerpt }}</p>
                 {{ /if }}
                 <a href="{{ url }}" class="inline-flex items-center gap-3 font-heading uppercase text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200 mt-auto">
                     Read Blog

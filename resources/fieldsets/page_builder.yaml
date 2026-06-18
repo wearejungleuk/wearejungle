@@ -612,6 +612,19 @@ fields:
                   field:
                     type: text
                     display: Title
+            blog_listing:
+              display: 'Blog Listing'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
             basic_content:
               display: 'Basic Content'
               fields:
