@@ -4,6 +4,7 @@ blueprint: service
 title: 'Statamic Websites'
 slug: statamic-websites
 card_text: 'Flexible, fast, and easy to manage. Statamic sites built for businesses that want control without the usual CMS headaches.'
+page_text: 'Statamic is the CMS we reach for when a project needs to be fast, flexible, and genuinely easy to manage. Built on Laravel with a flat-file architecture, it means no database overhead, exceptional performance out of the box, and a control panel your team will actually want to use. It is our CMS of choice — and once you use it, you will understand why.'
 icon: statamic.svg
 page_builder:
   -

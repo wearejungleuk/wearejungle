@@ -4,6 +4,7 @@ blueprint: service
 title: 'Web Development'
 slug: web-development
 card_text: 'Clean, scalable builds using modern tools and frameworks. Fast, flexible, and built to last — not patched together.'
+page_text: 'Every site we build starts from a blank canvas and is coded by hand. No bloated themes, no page builders, no shortcuts that cause problems later. We use modern frameworks and clean, maintainable code — which means your site loads fast, scales easily, and can be updated or extended without starting from scratch. Built properly the first time, so you are not paying to fix it twice.'
 icon: web-development.svg
 page_builder:
   -

@@ -4,6 +4,7 @@ blueprint: service
 title: 'Support & Hosting'
 slug: support-hosting
 card_text: 'Website care plans, secure hosting, and ongoing development support. We keep your site fast, secure, and running — so you can focus on your business.'
+page_text: 'Most agencies build your site and then disappear. We do not. Our support plans keep your website in the best possible shape long after launch — routine updates, security monitoring, performance checks, and ongoing development hours when you need them. We treat your site as if it were our own, because our reputation depends on it staying that way.'
 icon: web_monitoring.svg
 page_builder:
   -

@@ -4,6 +4,7 @@ blueprint: service
 title: 'Shopify Websites'
 slug: shopify-websites
 card_text: 'Shopify stores built for growth. Custom themes, better UX, and a smoother buying experience from start to finish.'
+page_text: 'Shopify is one of the most capable eCommerce platforms available — but most Shopify stores look and feel exactly the same. We build fully custom Shopify themes from scratch, designed around your brand and your customers. No theme restrictions, no template limitations. A store that looks and performs like it was built specifically for you — because it was.'
 icon: shopify.svg
 page_builder:
   -

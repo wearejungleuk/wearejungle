@@ -19,6 +19,12 @@
                         <img src="{{ url }}" alt="{{ title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                     </div>
                     {{ /glide:card_image }}
+                {{ elseif icon }}
+                    {{ icon }}
+                    <div class="aspect-[2/1] flex items-center justify-center bg-brand-dark-blue-two">
+                        <img src="{{ url }}" alt="" class="w-[72px] h-[72px] object-contain" style="opacity: 0.5">
+                    </div>
+                    {{ /icon }}
                 {{ /if }}
                 <div class="p-8 lg:p-10 relative">
                     {{ partial:components/arrow-circle classes="absolute top-6 right-6 w-[42px] h-[42px] bg-brand-secondary text-black text-[16px]" }}
@@ -38,6 +44,12 @@
                         <img src="{{ url }}" alt="{{ title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                     </div>
                     {{ /glide:card_image }}
+                {{ elseif icon }}
+                    {{ icon }}
+                    <div class="aspect-[2/1] flex items-center justify-center bg-brand-dark-blue-two">
+                        <img src="{{ url }}" alt="" class="w-[72px] h-[72px] object-contain" style="opacity: 0.5">
+                    </div>
+                    {{ /icon }}
                 {{ /if }}
                 <div class="p-8 lg:p-10 relative">
                     {{ partial:components/arrow-circle classes="absolute top-6 right-6 w-[42px] h-[42px] bg-brand-secondary text-black text-[16px]" }}

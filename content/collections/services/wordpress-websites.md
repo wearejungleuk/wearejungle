@@ -4,6 +4,7 @@ blueprint: service
 title: 'WordPress Websites'
 slug: wordpress-websites
 card_text: 'Custom WordPress builds without the bloat. Easy to update, fast to load, and built around how your business actually works.'
+page_text: 'WordPress powers a huge chunk of the web, and it is easy to see why — but most WordPress sites are built on bloated themes with too many plugins and not enough care. We build WordPress sites from scratch: custom themes, minimal plugins, and clean code that loads fast and stays secure. A site that does exactly what your business needs and nothing it does not.'
 icon: wordpress.svg
 page_builder:
   -

@@ -16,8 +16,14 @@ tabs:
             handle: card_text
             field:
               type: textarea
-              display: 'Card Text'
+              display: 'Card Text (Homepage)'
               instructions: 'Short description shown on the homepage services section.'
+          -
+            handle: page_text
+            field:
+              type: textarea
+              display: 'Page Text (Services Page)'
+              instructions: 'Longer paragraph description shown on the services listing page.'
           -
             handle: card_image
             field:
