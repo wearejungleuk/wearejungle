@@ -13,7 +13,7 @@ page_builder:
         content:
           -
             type: text
-            text: "From small business sites to growing eCommerce brands, this is a selection of projects we've delivered — all built with performance, usability, and longevity in mind."
+            text: "From small business sites to growing eCommerce brands, this is a selection of projects we've delivered - all built with performance, usability, and longevity in mind."
     type: text_hero
     enabled: true
   -
@@ -49,7 +49,7 @@ page_builder:
       -
         id: step_w03
         heading: 'We Design & Build'
-        step_text: "This is where it comes together. Clean design, solid development, and a site that's built to perform — not just look good."
+        step_text: "This is where it comes together. Clean design, solid development, and a site that's built to perform - not just look good."
         type: new_set
         enabled: true
       -

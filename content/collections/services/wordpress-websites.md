@@ -4,11 +4,11 @@ blueprint: service
 title: 'WordPress Websites'
 slug: wordpress-websites
 card_text: 'Custom WordPress builds without the bloat. Easy to update, fast to load, and built around how your business actually works.'
-page_text: 'WordPress powers a huge chunk of the web, and it is easy to see why — but most WordPress sites are built on bloated themes with too many plugins and not enough care. We build WordPress sites from scratch: custom themes, minimal plugins, and clean code that loads fast and stays secure. A site that does exactly what your business needs and nothing it does not.'
+page_text: 'WordPress powers a huge chunk of the web, and it is easy to see why - but most WordPress sites are built on bloated themes with too many plugins and not enough care. We build WordPress sites from scratch: custom themes, minimal plugins, and clean code that loads fast and stays secure. A site that does exactly what your business needs and nothing it does not.'
 key_points:
   -
     id: kp_wp_01
-    label: 'Custom theme development — no off-the-shelf templates'
+    label: 'Custom theme development - no off-the-shelf templates'
     type: new_set
     enabled: true
   -
@@ -38,7 +38,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'We design and build sharp, commercial WordPress websites that load fast, convert visitors, and are built to last. No bloated builds, no unnecessary plugins — just clean WordPress web design that does the job properly.'
+            text: 'We design and build sharp, commercial WordPress websites that load fast, convert visitors, and are built to last. No bloated builds, no unnecessary plugins - just clean WordPress web design that does the job properly.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -52,7 +52,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'We design and build WordPress websites for ambitious businesses who want results, not just a pretty page. A small, dedicated team means you deal directly with the people doing the work — no layers, no handovers, just results.'
+            text: 'We design and build WordPress websites for ambitious businesses who want results, not just a pretty page. A small, dedicated team means you deal directly with the people doing the work - no layers, no handovers, just results.'
     stats:
       -
         id: stat_wp_01
@@ -84,7 +84,7 @@ page_builder:
       -
         id: tech_wp_01
         name: WordPress
-        description: "The world's most widely used CMS — and when built correctly, one of the most powerful. We build WordPress sites that are fast, clean, and easy to manage."
+        description: "The world's most widely used CMS - and when built correctly, one of the most powerful. We build WordPress sites that are fast, clean, and easy to manage."
         type: new_set
         enabled: true
         icon: wordpress.svg
@@ -112,7 +112,7 @@ page_builder:
       -
         id: tech_wp_05
         name: HTML5
-        description: 'Semantic, accessible markup at the core of every WordPress build — structured correctly for SEO, performance, and screen readers.'
+        description: 'Semantic, accessible markup at the core of every WordPress build - structured correctly for SEO, performance, and screen readers.'
         type: new_set
         enabled: true
         icon: html5.svg
@@ -133,7 +133,7 @@ page_builder:
       -
         id: tech_wp_08
         name: JavaScript
-        description: 'Progressive JavaScript for interactive WordPress functionality — applied precisely where it adds value without adding bloat.'
+        description: 'Progressive JavaScript for interactive WordPress functionality - applied precisely where it adds value without adding bloat.'
         type: new_set
         enabled: true
         icon: javascript.svg
@@ -160,7 +160,7 @@ page_builder:
       -
         id: fg_wp_02
         title: 'SEO-Ready from Day One'
-        text: 'Clean markup, proper heading structure, schema markup, and fast load times — every WordPress site we build is technically solid for search engines from the moment it goes live.'
+        text: 'Clean markup, proper heading structure, schema markup, and fast load times - every WordPress site we build is technically solid for search engines from the moment it goes live.'
         type: new_set
         enabled: true
       -
@@ -188,7 +188,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We kick things off with strategy and style. We get to know your business, your goals, and what's not working right now. Then we map out exactly what your WordPress site needs to do — and start designing it properly."
+                text: "We kick things off with strategy and style. We get to know your business, your goals, and what's not working right now. Then we map out exactly what your WordPress site needs to do - and start designing it properly."
         type: new_set
         enabled: true
       -
@@ -201,7 +201,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'This is where it all comes together. Clean WordPress code, solid development, and a site built for performance — not just aesthetics. Every template is tested across browsers and devices before we move on.'
+                text: 'This is where it all comes together. Clean WordPress code, solid development, and a site built for performance - not just aesthetics. Every template is tested across browsers and devices before we move on.'
         type: new_set
         enabled: true
       -
@@ -391,7 +391,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "No pressure — just an honest conversation about what's right for your business"
+                text: "No pressure - just an honest conversation about what's right for your business"
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
@@ -416,7 +416,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'Our standard WordPress brochure sites take 10–12 weeks. More complex builds — ecommerce, bespoke functionality, larger page counts — will take longer. We scope everything upfront so you have a clear timeline before we start.'
+                text: 'Our standard WordPress brochure sites take 10–12 weeks. More complex builds - ecommerce, bespoke functionality, larger page counts - will take longer. We scope everything upfront so you have a clear timeline before we start.'
         type: new_set
         enabled: true
       -
@@ -428,7 +428,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. WordPress is built for non-technical teams. We'll make sure you're set up properly and comfortable managing your own content — no need to come back to us for every small change."
+                text: "Yes. WordPress is built for non-technical teams. We'll make sure you're set up properly and comfortable managing your own content - no need to come back to us for every small change."
         type: new_set
         enabled: true
       -
@@ -440,7 +440,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "All WordPress websites we build come with a 72-day warranty as standard. After that, our support plans cover updates, security monitoring, and ongoing maintenance. We don't vanish after handover — that's not how we work."
+                text: "All WordPress websites we build come with a 72-day warranty as standard. After that, our support plans cover updates, security monitoring, and ongoing maintenance. We don't vanish after handover - that's not how we work."
         type: new_set
         enabled: true
       -
@@ -452,7 +452,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. CRMs, email platforms, booking systems, payment gateways — if there's an integration worth having, we can build it in cleanly."
+                text: "Yes. CRMs, email platforms, booking systems, payment gateways - if there's an integration worth having, we can build it in cleanly."
         type: new_set
         enabled: true
       -
@@ -464,7 +464,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "With the right build, yes. We harden every WordPress site from the ground up — sensible configuration, quality plugins only, and ongoing updates on our support plans. Security isn't an afterthought."
+                text: "With the right build, yes. We harden every WordPress site from the ground up - sensible configuration, quality plugins only, and ongoing updates on our support plans. Security isn't an afterthought."
         type: new_set
         enabled: true
       -
@@ -476,7 +476,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Every WordPress site we build is technically solid from an SEO standpoint — clean code, fast load times, correct heading structure, and schema markup where it matters. We'll also make sure you have the tools to manage on-page SEO yourself."
+                text: "Every WordPress site we build is technically solid from an SEO standpoint - clean code, fast load times, correct heading structure, and schema markup where it matters. We'll also make sure you have the tools to manage on-page SEO yourself."
         type: new_set
         enabled: true
       -
@@ -488,7 +488,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. We've built WooCommerce stores of all sizes — from simple product listings to full multi-currency setups. The checkout experience gets the same attention to detail as the rest of the site."
+                text: "Yes. We've built WooCommerce stores of all sizes - from simple product listings to full multi-currency setups. The checkout experience gets the same attention to detail as the rest of the site."
         type: new_set
         enabled: true
       -
@@ -500,7 +500,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "A template was designed for someone else's business. A bespoke WordPress build is designed specifically for yours — your brand, your goals, your users. We only build bespoke."
+                text: "A template was designed for someone else's business. A bespoke WordPress build is designed specifically for yours - your brand, your goals, your users. We only build bespoke."
         type: new_set
         enabled: true
       -
@@ -512,7 +512,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Every WordPress site we build is fully responsive and tested across devices and browsers. Mobile isn't bolted on at the end — it's considered from the first wireframe."
+                text: "Every WordPress site we build is fully responsive and tested across devices and browsers. Mobile isn't bolted on at the end - it's considered from the first wireframe."
         type: new_set
         enabled: true
       -
@@ -524,7 +524,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'Yes. Whether it needs a full design overhaul or just needs modernising, we can work with your existing WordPress setup or start fresh with a clean new build — whichever makes more sense.'
+                text: 'Yes. Whether it needs a full design overhaul or just needs modernising, we can work with your existing WordPress setup or start fresh with a clean new build - whichever makes more sense.'
         type: new_set
         enabled: true
     type: faq_accordion

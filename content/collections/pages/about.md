@@ -32,7 +32,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Too many agencies overcomplicate things, overcharge, or disappear once the job's done. We wanted to build something different — a small, reliable team that delivers solid work, communicates clearly, and actually cares about the outcome."
+            text: "Too many agencies overcomplicate things, overcharge, or disappear once the job's done. We wanted to build something different - a small, reliable team that delivers solid work, communicates clearly, and actually cares about the outcome."
     body_text:
       -
         type: paragraph
@@ -51,7 +51,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Today, we combine strategy, design and development to create websites that are sharp, commercial, and built to last. And while the work's picked up recognition along the way, what matters most to us is simple — trust, repeat clients, and results that speak for themselves."
+            text: "Today, we combine strategy, design and development to create websites that are sharp, commercial, and built to last. And while the work's picked up recognition along the way, what matters most to us is simple - trust, repeat clients, and results that speak for themselves."
     type: about_hero
     enabled: true
     image_left: '2wearejunglebrandshoot-iggy&lime-127.jpg'
@@ -66,7 +66,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Founded in 2021 and taken full time in 2023, We Are Jungle was built with a clear intention — create a customer-first agency that values honesty, long-term relationships and work delivered properly. No inflated retainers. No unnecessary services. Just clear advice and digital platforms built to perform.'
+            text: 'Founded in 2021 and taken full time in 2023, We Are Jungle was built with a clear intention - create a customer-first agency that values honesty, long-term relationships and work delivered properly. No inflated retainers. No unnecessary services. Just clear advice and digital platforms built to perform.'
       -
         type: paragraph
         content:
@@ -169,7 +169,7 @@ page_builder:
       -
         id: step_03
         heading: 'We Design & Build'
-        step_text: "This is where it comes together. Clean design, solid development, and a site that's built to perform — not just look good."
+        step_text: "This is where it comes together. Clean design, solid development, and a site that's built to perform - not just look good."
         type: new_set
         enabled: true
       -
@@ -191,7 +191,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Years of experience, projects delivered, and sites we still support — this is what it looks like when things are done properly.'
+            text: 'Years of experience, projects delivered, and sites we still support - this is what it looks like when things are done properly.'
     stats:
       -
         id: sg_stat_01
@@ -202,7 +202,7 @@ page_builder:
       -
         id: sg_stat_02
         number: 12+
-        label: 'Years in the game — still care about the details'
+        label: 'Years in the game - still care about the details'
         type: new_set
         enabled: true
       -
@@ -223,7 +223,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'A mix of brands, industries, and challenges — all solved with smart design and proper development.'
+            text: 'A mix of brands, industries, and challenges - all solved with smart design and proper development.'
     cta: /work
     cta_title: 'See All Work'
     work:
