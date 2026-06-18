@@ -45,13 +45,13 @@
                 <div class="lg:sticky" style="top: 120px">
                     <span class="font-regular text-[11px] uppercase tracking-widest text-brand-primary block text-center mb-4" style="opacity: 0.5">Share</span>
                     <div class="flex flex-col items-center gap-4">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ permalink | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on Facebook">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ permalink }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on Facebook">
                             <i class="fa-brands fa-facebook-f text-[14px]"></i>
                         </a>
-                        <a href="https://twitter.com/intent/tweet?url={{ permalink | url_encode }}&text={{ title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on X">
+                        <a href="https://twitter.com/intent/tweet?url={{ permalink }}&text={{ title }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on X">
                             <i class="fa-brands fa-x-twitter text-[14px]"></i>
                         </a>
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ permalink | url_encode }}&title={{ title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on LinkedIn">
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ permalink }}&title={{ title }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on LinkedIn">
                             <i class="fa-brands fa-linkedin-in text-[14px]"></i>
                         </a>
                     </div>
@@ -82,13 +82,13 @@
                 {{# Mobile share row #}}
                 <div class="flex items-center gap-4 mt-10 pt-8 border-t border-brand-primary lg:hidden" style="border-color: rgba(0,0,0,0.1)">
                     <span class="font-regular text-[12px] uppercase tracking-widest text-brand-primary" style="opacity: 0.5">Share</span>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ permalink | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on Facebook">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ permalink }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on Facebook">
                         <i class="fa-brands fa-facebook-f text-[13px]"></i>
                     </a>
-                    <a href="https://twitter.com/intent/tweet?url={{ permalink | url_encode }}&text={{ title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on X">
+                    <a href="https://twitter.com/intent/tweet?url={{ permalink }}&text={{ title }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on X">
                         <i class="fa-brands fa-x-twitter text-[13px]"></i>
                     </a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ permalink | url_encode }}&title={{ title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on LinkedIn">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ permalink }}&title={{ title }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on LinkedIn">
                         <i class="fa-brands fa-linkedin-in text-[13px]"></i>
                     </a>
                 </div>
