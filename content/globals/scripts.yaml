@@ -1,1 +1,13 @@
 title: Scripts
+data:
+  footer_scripts: |-
+    <!-- Trakd Chat Widget -->
+    <script>
+      window.TrakdChatConfig = {
+        token: 'MGMCN4tZpx1zD5TS2gIwIz3mUcnpcZvr',
+        server: 'https://trakd.site'
+      };
+    </script>
+    <script src="https://trakd.site/chat-widget/widget.js" async defer></script>
+
+    <script src="https://trakd.site/trakd-track.js" data-site="HRcNVqWIXtCLB2Gv7QlUwU8i" async defer></script>

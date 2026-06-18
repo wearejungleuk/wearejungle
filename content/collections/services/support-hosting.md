@@ -26,7 +26,7 @@ key_points:
     label: 'Development hours included for ongoing improvements'
     type: new_set
     enabled: true
-icon: web_monitoring.svg
+icon: support.svg
 page_builder:
   -
     id: services_hero_sh_01
@@ -52,7 +52,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Most agencies build the site and walk away. We stick around. Our support plans are designed for businesses that need their website to stay online, stay secure, and keep improving — without having to manage it themselves."
+            text: 'Most agencies build the site and walk away. We stick around. Our support plans are designed for businesses that need their website to stay online, stay secure, and keep improving — without having to manage it themselves.'
     stats:
       -
         id: stat_sh_01
@@ -136,7 +136,7 @@ page_builder:
     book_appointment: false
   -
     id: pricing_sh_01
-    above_title: Support Plans
+    above_title: 'Support Plans'
     title: 'Support That Suits Your Business'
     text:
       -
@@ -144,7 +144,7 @@ page_builder:
         content:
           -
             type: text
-            text: "From essential maintenance to a full digital partner — choose the plan that fits. All plans are on a 30-day rolling basis with no long-term contracts."
+            text: 'From essential maintenance to a full digital partner — choose the plan that fits. All plans are on a 30-day rolling basis with no long-term contracts.'
     plans:
       -
         id: plan_sh_ess
@@ -431,7 +431,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "No pressure — just an honest conversation about what your site needs"
+                text: 'No pressure — just an honest conversation about what your site needs'
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
@@ -516,7 +516,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. We can host your site on fast, reliable managed hosting as part of your support arrangement. If you already have hosting, we can work alongside your existing provider."
+                text: 'Yes. We can host your site on fast, reliable managed hosting as part of your support arrangement. If you already have hosting, we can work alongside your existing provider.'
         type: new_set
         enabled: true
       -
@@ -561,6 +561,7 @@ page_builder:
     illustration: julius-ipad.svg
     type: cta_block
     enabled: true
+    book_appointment_2: false
 use_meta_keywords: false
 no_index_page: false
 no_follow_links: false
@@ -568,5 +569,5 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1750360800
+updated_at: 1781812146
 ---
