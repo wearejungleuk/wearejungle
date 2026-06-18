@@ -1,0 +1,40 @@
+<section class="py-16 lg:py-24 bg-white">
+    <div class="container">
+        <div class="text-center mb-12 lg:mb-16 js-fade-up">
+            {{ if above_title }}
+            {{ partial:components/above-title :title="above_title" classes="above-title--secondary" }}
+            {{ /if }}
+            {{ if title }}
+            <h2 class="font-heading uppercase text-[42px] sm:text-[52px] lg:text-[68px] xl:text-[80px] leading-none text-brand-primary mt-4">{{ title | highlight_brackets }}</h2>
+            {{ /if }}
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 mb-12 lg:mb-16">
+            {{ collection:blog sort="date:desc" limit="3" }}
+            <article class="flex flex-col js-fade-up">
+                {{ if featured_image }}
+                <a href="{{ url }}" class="block overflow-hidden mb-5" style="border-radius: 10px">
+                    {{ glide:featured_image width="700" height="470" fit="crop_focal" }}
+                    <img src="{{ url }}" alt="{{ title }}" class="w-full aspect-[3/2] object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                    {{ /glide:featured_image }}
+                </a>
+                {{ /if }}
+                <h3 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-brand-primary mb-3">
+                    <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title }}</a>
+                </h3>
+                {{ if excerpt }}
+                <p class="text-[15px] lg:text-[16px] text-brand-primary leading-relaxed mb-4" style="opacity: 0.65">{{ excerpt }}</p>
+                {{ /if }}
+                <a href="{{ url }}" class="group inline-flex items-center gap-2 font-heading uppercase text-brand-primary text-[13px] tracking-wide hover:gap-4 transition-all duration-300 mt-auto">
+                    Read Blog
+                    {{ partial:components/icons/cta_arrow }}
+                </a>
+            </article>
+            {{ /collection:blog }}
+        </div>
+
+        <div class="text-center js-fade-up">
+            {{ partial:components/_button url="/blog" title="See All Blogs" classes="" }}
+        </div>
+    </div>
+</section>

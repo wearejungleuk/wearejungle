@@ -555,6 +555,12 @@ page_builder:
     type: reviews
     enabled: true
   -
+    id: latest_blogs_home_01
+    above_title: Blogs
+    title: 'Ideas, Tips, and the Odd Opinion'
+    type: latest_blogs
+    enabled: true
+  -
     id: mhoo4ytd
     title: 'Get in touch'
     form_field: main_contact_form
