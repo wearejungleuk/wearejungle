@@ -25,8 +25,8 @@ page_builder:
     type: text_hero
     enabled: true
   -
-    id: pricing_tiers_01
-    above_title: 'Project Types'
+    id: pricing_tabs_01
+    above_title: 'Pricing'
     title: 'What Does a Website Cost?'
     text:
       -
@@ -34,202 +34,376 @@ page_builder:
         content:
           -
             type: text
-            text: "Every project is scoped individually — but here's where most of our work lands. If you're not sure which fits your brief, a short call will sort it."
-    plans:
+            text: "Every project is scoped individually — but here's where most of our work lands. Switch between website projects and ongoing support plans below."
+    tabs:
       -
-        id: plan_brochure
-        name: 'Brochure Website'
-        price_label: 'From £4,500'
-        vat_note: '+ VAT'
-        description: 'A clean, custom-designed site for businesses that need to look sharp and convert visitors.'
-        featured: false
-        features:
+        id: tab_website
+        tab_label: 'Website Projects'
+        plans:
           -
-            id: feat_b1
-            label: 'Custom design from scratch'
-            included: true
+            id: plan_brochure
+            name: 'Brochure Website'
+            price_label: 'From £4,500'
+            vat_note: '+ VAT'
+            description: 'A clean, custom-designed site for businesses that need to look sharp and convert visitors.'
+            featured: false
+            features:
+              -
+                id: feat_b1
+                label: 'Custom design from scratch'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_b2
+                label: '8 template designs'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_b2b
+                label: 'Unlimited pages & posts'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_b3
+                label: 'Mobile-first development'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_b4
+                label: 'SEO foundations included'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_b5
+                label: 'CMS for self-management'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_b6
+                label: '72-day warranty'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_b7
+                label: 'eCommerce functionality'
+                included: false
+                type: new_set
+                enabled: true
+              -
+                id: feat_b8
+                label: 'Bespoke integrations'
+                included: false
+                type: new_set
+                enabled: true
             type: new_set
             enabled: true
           -
-            id: feat_b2
-            label: '8 template designs'
-            included: true
+            id: plan_ecommerce
+            name: 'eCommerce Store'
+            price_label: 'From £8,500'
+            vat_note: '+ VAT'
+            description: 'A custom-built Shopify or WooCommerce store designed to sell — from product pages to checkout.'
+            featured: true
+            features:
+              -
+                id: feat_e1
+                label: 'Custom design from scratch'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_e2
+                label: 'Product pages & catalogue'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_e2b
+                label: 'Unlimited pages & posts'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_e3
+                label: 'Mobile-first development'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_e4
+                label: 'SEO foundations included'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_e5
+                label: 'CMS for self-management'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_e6
+                label: '72-day warranty'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_e7
+                label: 'eCommerce functionality'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_e8
+                label: 'Bespoke integrations'
+                included: false
+                type: new_set
+                enabled: true
             type: new_set
             enabled: true
           -
-            id: feat_b2b
-            label: 'Unlimited pages & posts'
-            included: true
+            id: plan_bespoke
+            name: 'Bespoke Build'
+            price_label: 'Talk to Us'
+            vat_note: 'Every bespoke project is scoped individually'
+            description: 'Complex builds, custom functionality, and multi-platform integrations — done properly.'
+            featured: false
+            features:
+              -
+                id: feat_p1
+                label: 'Custom design from scratch'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_p2
+                label: 'Unlimited scope & page count'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_p2b
+                label: 'Unlimited pages & posts'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_p3
+                label: 'Mobile-first development'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_p4
+                label: 'SEO foundations included'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_p5
+                label: 'CMS for self-management'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_p6
+                label: '72-day warranty'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_p7
+                label: 'eCommerce (if required)'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_p8
+                label: 'Bespoke integrations & functionality'
+                included: true
+                type: new_set
+                enabled: true
             type: new_set
             enabled: true
-          -
-            id: feat_b3
-            label: 'Mobile-first development'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_b4
-            label: 'SEO foundations included'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_b5
-            label: 'CMS for self-management'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_b6
-            label: '72-day warranty'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_b7
-            label: 'eCommerce functionality'
-            included: false
-            type: new_set
-            enabled: true
-          -
-            id: feat_b8
-            label: 'Bespoke integrations'
-            included: false
-            type: new_set
-            enabled: true
+        footnote: 'All projects include discovery, design, development, testing, and a 72-day warranty. Final cost depends on scope, page count, and complexity — we quote fixed prices before we start.'
         type: new_set
         enabled: true
       -
-        id: plan_ecommerce
-        name: 'eCommerce Store'
-        price_label: 'From £8,500'
-        vat_note: '+ VAT'
-        description: 'A custom-built Shopify or WooCommerce store designed to sell — from product pages to checkout.'
-        featured: true
-        features:
+        id: tab_support
+        tab_label: 'Support & Hosting'
+        plans:
           -
-            id: feat_e1
-            label: 'Custom design from scratch'
-            included: true
+            id: plan_p_ess
+            name: Essentials
+            price: '190'
+            price_period: /mo
+            vat_note: '+ VAT · 2 hrs support at £95/hr'
+            description: 'Peace of mind for smaller sites that just need to stay secure and online.'
+            featured: false
+            features:
+              -
+                id: feat_ps_e1
+                label: '2 hours of support per month'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_e2
+                label: 'Plugin & theme updates'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_e3
+                label: 'Uptime monitoring (24/7)'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_e4
+                label: 'Monthly status report'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_e5
+                label: 'Minor theme tweaks'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_e6
+                label: 'Priority response'
+                included: false
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_e7
+                label: 'Performance & SEO check'
+                included: false
+                type: new_set
+                enabled: true
             type: new_set
             enabled: true
           -
-            id: feat_e2
-            label: 'Product pages & catalogue'
-            included: true
+            id: plan_p_gro
+            name: Growth
+            price: '360'
+            price_period: /mo
+            vat_note: '+ VAT · 4 hrs support at £90/hr'
+            description: 'Ideal for growing businesses that need reliable support and regular improvements.'
+            featured: true
+            features:
+              -
+                id: feat_ps_g1
+                label: '4 hours of support per month'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_g2
+                label: 'Plugin & theme updates'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_g3
+                label: 'Uptime monitoring (24/7)'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_g4
+                label: 'Monthly status report'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_g5
+                label: 'Minor theme tweaks'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_g6
+                label: 'Priority response (next business day)'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_g7
+                label: 'Quarterly performance & SEO check'
+                included: true
+                type: new_set
+                enabled: true
             type: new_set
             enabled: true
           -
-            id: feat_e2b
-            label: 'Unlimited pages & posts'
-            included: true
+            id: plan_p_pri
+            name: Priority
+            price: '640'
+            price_period: /mo
+            vat_note: '+ VAT · 8 hrs support at £80/hr'
+            description: 'A dedicated digital partner for businesses that need maximum support and fast turnaround.'
+            featured: false
+            features:
+              -
+                id: feat_ps_p1
+                label: '8 hours of support per month'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_p2
+                label: 'Plugin & theme updates'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_p3
+                label: 'Uptime monitoring (24/7)'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_p4
+                label: 'Monthly status report'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_p5
+                label: 'Theme tweaks & dev tasks'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_p6
+                label: 'Priority response (same day)'
+                included: true
+                type: new_set
+                enabled: true
+              -
+                id: feat_ps_p7
+                label: 'Monthly performance & SEO check'
+                included: true
+                type: new_set
+                enabled: true
             type: new_set
             enabled: true
-          -
-            id: feat_e3
-            label: 'Mobile-first development'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_e4
-            label: 'SEO foundations included'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_e5
-            label: 'CMS for self-management'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_e6
-            label: '72-day warranty'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_e7
-            label: 'eCommerce functionality'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_e8
-            label: 'Bespoke integrations'
-            included: false
-            type: new_set
-            enabled: true
+        footnote: |-
+          All plans cover WordPress, Shopify, and Statamic. Hours do not roll over. Additional hours billed at £95/hr + VAT.
+          No long-term contracts — 30-day rolling basis with 30 days' notice to cancel.
         type: new_set
         enabled: true
-      -
-        id: plan_bespoke
-        name: 'Bespoke Build'
-        price_label: 'Talk to Us'
-        vat_note: 'Every bespoke project is scoped individually'
-        description: 'Complex builds, custom functionality, and multi-platform integrations — done properly.'
-        featured: false
-        features:
-          -
-            id: feat_p1
-            label: 'Custom design from scratch'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p2
-            label: 'Unlimited scope & page count'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p2b
-            label: 'Unlimited pages & posts'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p3
-            label: 'Mobile-first development'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p4
-            label: 'SEO foundations included'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p5
-            label: 'CMS for self-management'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p6
-            label: '72-day warranty'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p7
-            label: 'eCommerce (if required)'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_p8
-            label: 'Bespoke integrations & functionality'
-            included: true
-            type: new_set
-            enabled: true
-        type: new_set
-        enabled: true
-    footnote: 'All projects include discovery, design, development, testing, and a 72-day warranty. Final cost depends on scope, page count, and complexity — we quote fixed prices before we start.'
-    type: pricing
+    type: pricing_tabs
     enabled: true
   -
     id: feature_cards_pricing_why
@@ -249,42 +423,36 @@ page_builder:
         card_text: "You get a fixed quote before we start. No hourly billing, no scope creep surprises — just a clear price for a defined scope, agreed upfront."
         type: new_set
         enabled: true
-        icon: page_quality.svg
       -
         id: fc_pw_02
         heading: 'Built From Scratch'
         card_text: "Every site is designed and developed specifically for your business. No templates. No themes with your logo dropped in. A blank canvas every time."
         type: new_set
         enabled: true
-        icon: web_monitoring.svg
       -
         id: fc_pw_03
         heading: 'Full Ownership'
         card_text: "You own everything — the design, the code, and the content. No licensing fees, no platform lock-in, no strings attached when the project is done."
         type: new_set
         enabled: true
-        icon: big-impact.svg
       -
         id: fc_pw_04
         heading: '72-Day Warranty'
         card_text: "Every build comes with a 72-day warranty as standard. If something breaks that's our fault, we fix it fast, at no extra cost. No quibbling."
         type: new_set
         enabled: true
-        icon: seo_monitoring.svg
       -
         id: fc_pw_05
         heading: 'Monthly Payments'
         card_text: "We split your project cost equally across the months of your build. Simple, predictable monthly payments — no large lump sums, no deposit structure."
         type: new_set
         enabled: true
-        icon: campaign.svg
       -
         id: fc_pw_06
         heading: 'We Stick Around'
         card_text: "We don't disappear after launch. Support plans keep your site secure, updated, and moving forward. We're still here when you need us."
         type: new_set
         enabled: true
-        icon: select_product.svg
     type: feature_cards
     enabled: true
     book_appointment: false
@@ -329,182 +497,6 @@ page_builder:
     type: process_steps
     enabled: true
     book_appointment: false
-  -
-    id: pricing_support_01
-    above_title: 'Ongoing Support'
-    title: "Keep Your Site Running After Launch"
-    text:
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "All sites come with a 72-day warranty. After that, our rolling support plans keep your website secure, updated, and in good hands — with no long-term contracts."
-    plans:
-      -
-        id: plan_p_ess
-        name: Essentials
-        price: '190'
-        price_period: /mo
-        vat_note: '+ VAT · 2 hrs support at £95/hr'
-        description: 'Peace of mind for smaller sites that just need to stay secure and online.'
-        featured: false
-        features:
-          -
-            id: feat_ps_e1
-            label: '2 hours of support per month'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_e2
-            label: 'Plugin & theme updates'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_e3
-            label: 'Uptime monitoring (24/7)'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_e4
-            label: 'Monthly status report'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_e5
-            label: 'Minor theme tweaks'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_e6
-            label: 'Priority response'
-            included: false
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_e7
-            label: 'Performance & SEO check'
-            included: false
-            type: new_set
-            enabled: true
-        type: new_set
-        enabled: true
-      -
-        id: plan_p_gro
-        name: Growth
-        price: '360'
-        price_period: /mo
-        vat_note: '+ VAT · 4 hrs support at £90/hr'
-        description: 'Ideal for growing businesses that need reliable support and regular improvements.'
-        featured: true
-        features:
-          -
-            id: feat_ps_g1
-            label: '4 hours of support per month'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_g2
-            label: 'Plugin & theme updates'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_g3
-            label: 'Uptime monitoring (24/7)'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_g4
-            label: 'Monthly status report'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_g5
-            label: 'Minor theme tweaks'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_g6
-            label: 'Priority response (next business day)'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_g7
-            label: 'Quarterly performance & SEO check'
-            included: true
-            type: new_set
-            enabled: true
-        type: new_set
-        enabled: true
-      -
-        id: plan_p_pri
-        name: Priority
-        price: '640'
-        price_period: /mo
-        vat_note: '+ VAT · 8 hrs support at £80/hr'
-        description: 'A dedicated digital partner for businesses that need maximum support and fast turnaround.'
-        featured: false
-        features:
-          -
-            id: feat_ps_p1
-            label: '8 hours of support per month'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_p2
-            label: 'Plugin & theme updates'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_p3
-            label: 'Uptime monitoring (24/7)'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_p4
-            label: 'Monthly status report'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_p5
-            label: 'Theme tweaks & dev tasks'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_p6
-            label: 'Priority response (same day)'
-            included: true
-            type: new_set
-            enabled: true
-          -
-            id: feat_ps_p7
-            label: 'Monthly performance & SEO check'
-            included: true
-            type: new_set
-            enabled: true
-        type: new_set
-        enabled: true
-    footnote: |-
-      All plans cover WordPress, Shopify, and Statamic. Hours do not roll over. Additional hours billed at £95/hr + VAT.
-      No long-term contracts — 30-day rolling basis with 30 days' notice to cancel.
-    type: pricing
-    enabled: true
   -
     id: faq_accordion_pricing_01
     above_title: 'Common Questions'
