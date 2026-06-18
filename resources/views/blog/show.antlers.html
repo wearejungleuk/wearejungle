@@ -1,0 +1,149 @@
+{{# Back link + header #}}
+<section class="pt-12 pb-10 lg:pt-16 lg:pb-12">
+    <div class="container">
+        <div class="mb-8">
+            <a href="/blog" class="inline-flex items-center gap-2 font-regular text-[13px] uppercase tracking-widest text-brand-primary hover:text-brand-secondary transition-colors duration-200">
+                <i class="fa-sharp fa-regular fa-arrow-left text-[11px]"></i>
+                All Blogs
+            </a>
+        </div>
+        <div class="text-center" style="max-width: 800px; margin: 0 auto">
+            {{ if categories }}
+            <div class="mb-5">
+                {{ categories }}
+                {{ partial:components/above-title :title="title" classes="above-title--secondary" }}
+                {{ /categories }}
+            </div>
+            {{ /if }}
+            <h1 class="font-heading uppercase text-[36px] sm:text-[48px] lg:text-[60px] xl:text-[68px] leading-none text-brand-primary mb-6">{{ title }}</h1>
+            {{ if excerpt }}
+            <p class="text-[17px] lg:text-[18px] text-brand-primary leading-relaxed mb-8" style="opacity: 0.65">{{ excerpt }}</p>
+            {{ /if }}
+            {{# Author row #}}
+            <div class="inline-flex items-center gap-4 justify-center">
+                {{ if author_avatar }}
+                {{ author_avatar }}
+                <img src="{{ url }}" alt="{{ author_name }}" class="w-10 h-10 object-cover flex-shrink-0" style="border-radius: 50%">
+                {{ /author_avatar }}
+                {{ /if }}
+                {{ if author_name }}
+                <span class="font-regular text-[14px] text-brand-primary font-medium">{{ author_name }}</span>
+                {{ /if }}
+                {{ if author_name and author_role }}
+                <span class="text-brand-primary" style="opacity: 0.4">·</span>
+                {{ /if }}
+                {{ if author_role }}
+                <span class="font-regular text-[14px] text-brand-primary" style="opacity: 0.55">{{ author_role }}</span>
+                {{ /if }}
+                <span class="text-brand-primary" style="opacity: 0.4">·</span>
+                <span class="font-regular text-[14px] text-brand-primary" style="opacity: 0.55">{{ date format="j F Y" }}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{# Content area with share sidebar #}}
+<section class="pb-16 lg:pb-24">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-[80px_1fr] gap-10 lg:gap-16" style="max-width: 900px; margin: 0 auto">
+
+            {{# Left: share sidebar #}}
+            <div class="hidden lg:flex flex-col items-center gap-4 pt-2">
+                <div class="lg:sticky" style="top: 120px">
+                    <span class="font-regular text-[11px] uppercase tracking-widest text-brand-primary block text-center mb-4" style="opacity: 0.5">Share</span>
+                    <div class="flex flex-col items-center gap-4">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ config:app.url }}{{ url }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on Facebook">
+                            <i class="fa-brands fa-facebook-f text-[14px]"></i>
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?url={{ config:app.url }}{{ url }}&text={{ title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on X">
+                            <i class="fa-brands fa-x-twitter text-[14px]"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ config:app.url }}{{ url }}&title={{ title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on LinkedIn">
+                            <i class="fa-brands fa-linkedin-in text-[14px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            {{# Right: content column #}}
+            <div>
+                {{# Featured image #}}
+                {{ if featured_image }}
+                <div class="mb-10 overflow-hidden" style="border-radius: 12px">
+                    {{ glide:featured_image width="900" height="510" fit="crop_focal" }}
+                    <img src="{{ url }}" alt="{{ title }}" class="w-full aspect-[16/9] object-cover" loading="eager">
+                    {{ /glide:featured_image }}
+                    {{ if featured_image_caption }}
+                    <p class="text-[13px] text-brand-primary mt-3 text-center" style="opacity: 0.5">{{ featured_image_caption }}</p>
+                    {{ /if }}
+                </div>
+                {{ /if }}
+
+                {{# Bard content #}}
+                {{ if content }}
+                <div class="bard">
+                    {{ content }}
+                </div>
+                {{ /if }}
+
+                {{# Mobile share row #}}
+                <div class="flex items-center gap-4 mt-10 pt-8 border-t border-brand-primary lg:hidden" style="border-color: rgba(0,0,0,0.1)">
+                    <span class="font-regular text-[12px] uppercase tracking-widest text-brand-primary" style="opacity: 0.5">Share</span>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ config:app.url }}{{ url }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on Facebook">
+                        <i class="fa-brands fa-facebook-f text-[13px]"></i>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?url={{ config:app.url }}{{ url }}&text={{ title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on X">
+                        <i class="fa-brands fa-x-twitter text-[13px]"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ config:app.url }}{{ url }}&title={{ title | url_encode }}" target="_blank" rel="noopener noreferrer" class="w-9 h-9 flex items-center justify-center border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-200" style="border-radius: 50%" aria-label="Share on LinkedIn">
+                        <i class="fa-brands fa-linkedin-in text-[13px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{{# Read Next section #}}
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+        <div class="mb-10 lg:mb-14 js-fade-up">
+            <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[56px] leading-none text-white">Read Next</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10" data-current-url="{{ url }}">
+            {{ collection:blog sort="date:desc" limit="4" }}
+            <article
+                class="flex flex-col js-fade-up"
+                x-data
+                x-show="'{{ url }}' !== $el.closest('[data-current-url]').dataset.currentUrl"
+            >
+                {{ if featured_image }}
+                <a href="{{ url }}" class="block overflow-hidden mb-5" style="border-radius: 12px">
+                    {{ glide:featured_image width="700" height="470" fit="crop_focal" }}
+                    <img src="{{ url }}" alt="{{ title }}" class="w-full aspect-[3/2] object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                    {{ /glide:featured_image }}
+                </a>
+                {{ /if }}
+                {{ if categories }}
+                <div class="mb-3">
+                    {{ categories }}
+                    <span class="font-regular text-[12px] uppercase tracking-widest text-brand-secondary">{{ title }}</span>
+                    {{ /categories }}
+                </div>
+                {{ /if }}
+                <h3 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-white mb-3">
+                    <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title }}</a>
+                </h3>
+                {{ if excerpt }}
+                <p class="text-[15px] text-white leading-relaxed mb-4" style="opacity: 0.65">{{ excerpt }}</p>
+                {{ /if }}
+                <a href="{{ url }}" class="group inline-flex items-center gap-3 font-heading uppercase text-white text-[13px] tracking-wide hover:text-brand-secondary hover:gap-5 transition-all duration-300 mt-auto">
+                    Read More
+                    <i class="fa-sharp fa-regular fa-arrow-up-right text-[11px]"></i>
+                </a>
+            </article>
+            {{ /collection:blog }}
+        </div>
+    </div>
+</section>

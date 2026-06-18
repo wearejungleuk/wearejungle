@@ -1,0 +1,128 @@
+title: Post
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: excerpt
+            field:
+              type: textarea
+              display: Excerpt
+              instructions: 'A short summary shown on listing pages and in the post header.'
+          -
+            handle: featured_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Featured Image'
+          -
+            handle: featured_image_caption
+            field:
+              type: text
+              display: 'Featured Image Caption'
+          -
+            handle: categories
+            field:
+              type: terms
+              taxonomies:
+                - blog_categories
+              display: Categories
+              mode: select
+          -
+            handle: author_name
+            field:
+              type: text
+              display: 'Author Name'
+          -
+            handle: author_role
+            field:
+              type: text
+              display: 'Author Role'
+          -
+            handle: author_avatar
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Author Avatar'
+          -
+            handle: content
+            field:
+              type: bard
+              display: Content
+              remove_empty_nodes: false
+  seo:
+    display: SEO
+    sections:
+      -
+        fields:
+          -
+            handle: meta_title
+            field:
+              type: text
+              display: 'Meta Title'
+          -
+            handle: meta_description
+            field:
+              type: textarea
+              display: 'Meta Description'
+          -
+            handle: use_meta_keywords
+            field:
+              type: toggle
+              display: 'Use Meta Keywords'
+          -
+            handle: no_index_page
+            field:
+              type: toggle
+              display: 'No Index'
+          -
+            handle: no_follow_links
+            field:
+              type: toggle
+              display: 'No Follow Links'
+          -
+            handle: sitemap_priority
+            field:
+              type: select
+              display: 'Sitemap Priority'
+              options:
+                '0.0': '0.0'
+                '0.1': '0.1'
+                '0.2': '0.2'
+                '0.3': '0.3'
+                '0.4': '0.4'
+                '0.5': '0.5'
+                '0.6': '0.6'
+                '0.7': '0.7'
+                '0.8': '0.8'
+                '0.9': '0.9'
+                '1.0': '1.0'
+          -
+            handle: sitemap_changefreq
+            field:
+              type: select
+              display: 'Sitemap Change Frequency'
+              options:
+                always: Always
+                hourly: Hourly
+                daily: Daily
+                weekly: Weekly
+                monthly: Monthly
+                yearly: Yearly
+                never: Never
+          -
+            handle: override_twitter_settings
+            field:
+              type: toggle
+              display: 'Override Twitter Settings'

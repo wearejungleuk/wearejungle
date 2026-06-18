@@ -1,0 +1,69 @@
+<section class="pt-16 lg:pt-24 pb-4">
+    <div class="container">
+        <div class="text-center mb-12 lg:mb-16 js-fade-up">
+            <h1 class="font-heading uppercase text-[48px] sm:text-[56px] lg:text-[72px] leading-none text-brand-primary mb-6">The Blog</h1>
+            <p class="text-[17px] lg:text-[18px] text-brand-primary leading-relaxed" style="opacity: 0.65; max-width: 560px; margin: 0 auto;">Thoughts, advice, and insights from the We Are Jungle team.</p>
+        </div>
+    </div>
+</section>
+
+<section class="pb-16 lg:pb-24" x-data="{ activeCategory: 'all' }">
+    <div class="container">
+
+        {{# Category filter pills #}}
+        <div class="flex flex-wrap gap-3 mb-10 lg:mb-14 js-fade-up">
+            <button
+                @click="activeCategory = 'all'"
+                :class="activeCategory === 'all' ? 'bg-brand-primary text-white' : 'bg-transparent text-brand-primary border border-brand-primary'"
+                class="font-regular text-[13px] uppercase tracking-widest px-5 py-2 transition-all duration-200"
+                style="border-radius: 50px"
+            >All Blogs</button>
+            {{ taxonomy:blog_categories }}
+            <button
+                @click="activeCategory = '{{ slug }}'"
+                :class="activeCategory === '{{ slug }}' ? 'bg-brand-primary text-white' : 'bg-transparent text-brand-primary border border-brand-primary'"
+                class="font-regular text-[13px] uppercase tracking-widest px-5 py-2 transition-all duration-200"
+                style="border-radius: 50px"
+            >{{ title }}</button>
+            {{ /taxonomy:blog_categories }}
+        </div>
+
+        {{# Blog cards grid #}}
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+            {{ collection:blog sort="date:desc" }}
+            <article
+                data-cats="all {{ categories }}{{ slug }} {{ /categories }}"
+                x-show="activeCategory === 'all' || $el.dataset.cats.split(' ').includes(activeCategory)"
+                x-transition
+                class="flex flex-col js-fade-up"
+            >
+                {{ if featured_image }}
+                <a href="{{ url }}" class="block overflow-hidden mb-5" style="border-radius: 12px">
+                    {{ glide:featured_image width="700" height="470" fit="crop_focal" }}
+                    <img src="{{ url }}" alt="{{ title }}" class="w-full aspect-[3/2] object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                    {{ /glide:featured_image }}
+                </a>
+                {{ /if }}
+                {{ if categories }}
+                <div class="mb-3">
+                    {{ categories }}
+                    <span class="font-regular text-[12px] uppercase tracking-widest text-brand-secondary">{{ title }}</span>
+                    {{ /categories }}
+                </div>
+                {{ /if }}
+                <h2 class="font-heading uppercase text-[22px] lg:text-[26px] leading-tight text-brand-primary mb-3">
+                    <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title }}</a>
+                </h2>
+                {{ if excerpt }}
+                <p class="text-[15px] lg:text-[16px] text-brand-primary leading-relaxed mb-4" style="opacity: 0.65">{{ excerpt }}</p>
+                {{ /if }}
+                <a href="{{ url }}" class="group inline-flex items-center gap-3 font-heading uppercase text-brand-primary text-[13px] tracking-wide hover:text-brand-secondary hover:gap-5 transition-all duration-300 mt-auto">
+                    Read More
+                    <i class="fa-sharp fa-regular fa-arrow-up-right text-[11px]"></i>
+                </a>
+            </article>
+            {{ /collection:blog }}
+        </div>
+
+    </div>
+</section>

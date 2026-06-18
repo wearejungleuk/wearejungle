@@ -1,0 +1,16 @@
+title: Blog
+route: /blog/{slug}
+template: blog/show
+layout: layout
+date_behavior: public
+dated: true
+taxonomies:
+  - blog_categories
+blueprints:
+  - blog/post
+revisions: false
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

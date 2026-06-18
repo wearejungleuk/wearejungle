@@ -16,4 +16,6 @@ tree:
   -
     entry: support
   -
+    entry: blog
+  -
     entry: pricing

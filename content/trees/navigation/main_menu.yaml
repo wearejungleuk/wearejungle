@@ -23,6 +23,8 @@ tree:
   -
     entry: work
   -
+    entry: blog
+  -
     entry: pricing
   -
     entry: contact
