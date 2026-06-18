@@ -18,8 +18,12 @@ tree:
         entry: 55cdee73-0000-0000-0000-000000000004
       -
         entry: 5c9c9bc6-0000-0000-0000-000000000003
+      -
+        entry: c8d9e0f1-0000-0000-0000-000000000008
   -
     entry: work
+  -
+    entry: pricing
   -
     entry: contact
   -

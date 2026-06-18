@@ -29,8 +29,14 @@
                         <h3 class="font-heading uppercase text-[18px] lg:text-[20px] text-white mb-3">{{ name }}</h3>
 
                         <div class="flex items-end gap-1 mb-1 leading-none">
-                            <span class="font-heading text-[52px] lg:text-[62px] leading-none text-white">£{{ price }}</span>
-                            <span class="text-white text-[18px] relative bottom-[16px]">/mo</span>
+                            {{ if price_label }}
+                                <span class="font-heading text-[38px] lg:text-[48px] leading-none text-white">{{ price_label }}</span>
+                            {{ else }}
+                                <span class="font-heading text-[52px] lg:text-[62px] leading-none text-white">£{{ price }}</span>
+                                {{ if price_period }}
+                                    <span class="text-white text-[18px] relative bottom-[16px]">{{ price_period }}</span>
+                                {{ /if }}
+                            {{ /if }}
                         </div>
 
                         {{ if vat_note }}

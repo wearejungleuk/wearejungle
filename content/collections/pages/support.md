@@ -34,6 +34,7 @@ page_builder:
         id: plan_ess
         name: Essentials
         price: '190'
+        price_period: /mo
         vat_note: '+ VAT · 2 hrs support at £95/hr'
         description: 'Peace of mind for smaller sites that just need to stay secure and online.'
         featured: false
@@ -86,6 +87,7 @@ page_builder:
         id: plan_gro
         name: Growth
         price: '360'
+        price_period: /mo
         vat_note: '+ VAT · 4 hrs support at £90/hr'
         description: 'Peace of mind for smaller sites that just need to stay secure and online.'
         featured: true
@@ -138,6 +140,7 @@ page_builder:
         id: plan_pri
         name: Priority
         price: '640'
+        price_period: /mo
         vat_note: '+ VAT · 8 hrs support at £80/hr'
         description: 'Peace of mind for smaller sites that just need to stay secure and online.'
         featured: false

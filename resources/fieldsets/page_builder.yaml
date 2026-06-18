@@ -1565,6 +1565,116 @@ fields:
                       - services
                     max_items: 1
                     display: 'Related Service 2'
+            pricing_tabs:
+              display: 'Pricing Tabs'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: tabs
+                  field:
+                    type: replicator
+                    display: Tabs
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Tab
+                            fields:
+                              -
+                                handle: tab_label
+                                field:
+                                  type: text
+                                  display: 'Tab Label'
+                              -
+                                handle: plans
+                                field:
+                                  type: replicator
+                                  display: Plans
+                                  sets:
+                                    new_set_group:
+                                      display: 'New Set Group'
+                                      sets:
+                                        new_set:
+                                          display: Plan
+                                          fields:
+                                            -
+                                              handle: name
+                                              field:
+                                                type: text
+                                                display: 'Plan Name'
+                                            -
+                                              handle: price
+                                              field:
+                                                type: text
+                                                display: Price
+                                            -
+                                              handle: price_label
+                                              field:
+                                                type: text
+                                                display: 'Price Label (overrides price field)'
+                                            -
+                                              handle: price_period
+                                              field:
+                                                type: text
+                                                display: 'Price Period (e.g. /mo)'
+                                            -
+                                              handle: vat_note
+                                              field:
+                                                type: text
+                                                display: 'VAT Note'
+                                            -
+                                              handle: description
+                                              field:
+                                                type: text
+                                                display: Description
+                                            -
+                                              handle: featured
+                                              field:
+                                                type: toggle
+                                                display: 'Most Popular'
+                                            -
+                                              handle: features
+                                              field:
+                                                type: replicator
+                                                display: Features
+                                                sets:
+                                                  new_set_group:
+                                                    display: 'New Set Group'
+                                                    sets:
+                                                      new_set:
+                                                        display: Feature
+                                                        fields:
+                                                          -
+                                                            handle: label
+                                                            field:
+                                                              type: text
+                                                              display: Label
+                                                          -
+                                                            handle: included
+                                                            field:
+                                                              type: toggle
+                                                              display: Included
+                              -
+                                handle: footnote
+                                field:
+                                  type: textarea
+                                  display: Footnote
             services_list:
               display: 'Services List'
               fields:

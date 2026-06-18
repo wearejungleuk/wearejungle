@@ -1,0 +1,106 @@
+<style>[x-cloak] { display: none !important; }</style>
+
+<section class="bg-brand-primary py-16 md:py-24 lg:py-36 relative overflow-hidden"
+    x-data="{ active: 1 }">
+    <div class="container">
+
+        <div class="text-center mb-12 lg:mb-16">
+            {{ if above_title }}
+                <div class="flex justify-center js-fade-up relative z-[10]">
+                    {{ partial:components/above-title title="{ above_title }" }}
+                </div>
+            {{ /if }}
+            {{ if title }}
+                <h2 class="font-heading uppercase text-[42px] sm:text-[52px] lg:text-[58px] xl:text-[64px] leading-none text-white mb-6 max-w-[800px] xl:max-w-[960px] mx-auto js-fade-up">{{ title }}</h2>
+            {{ /if }}
+            {{ if text }}
+                <div class="text-white text-[16px] lg:text-[18px] max-w-[680px] mx-auto js-fade-up">{{ text }}</div>
+            {{ /if }}
+        </div>
+
+        {{ if tabs }}
+
+            {{# Tab buttons #}}
+            <div class="flex justify-center mb-10 lg:mb-14 js-fade-up">
+                <div class="flex gap-1 bg-brand-dark-blue p-1.5" style="border-radius: 12px">
+                    {{ tabs }}
+                        <button
+                            @click="active = {{ count }}"
+                            :class="active === {{ count }} ? 'bg-brand-secondary text-black' : 'text-white'"
+                            class="font-heading uppercase text-[13px] lg:text-[14px] px-5 py-2.5 transition-all duration-300"
+                            style="border-radius: 8px"
+                        >
+                            {{ tab_label }}
+                        </button>
+                    {{ /tabs }}
+                </div>
+            </div>
+
+            {{# Tab panels #}}
+            {{ tabs }}
+                <div x-show="active === {{ count }}" x-cloak>
+                    {{ if plans }}
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-start">
+                            {{ plans }}
+                                <div class="relative border-[3px] p-7 lg:p-8 flex flex-col {{ if featured }}bg-brand-dark-blue-two border-brand-secondary{{ else }}bg-brand-dark-blue border-brand-light-blue{{ /if }}" style="border-radius: 20px">
+
+                                    {{ if featured }}
+                                        <div class="absolute -top-5 left-1/2 -translate-x-1/2 whitespace-nowrap z-[10]">
+                                            {{ partial:components/above-title title="Most Popular" }}
+                                        </div>
+                                    {{ /if }}
+
+                                    <h3 class="font-heading uppercase text-[18px] lg:text-[20px] text-white mb-3">{{ name }}</h3>
+
+                                    <div class="flex items-end gap-1 mb-1 leading-none">
+                                        {{ if price_label }}
+                                            <span class="font-heading text-[38px] lg:text-[48px] leading-none text-white">{{ price_label }}</span>
+                                        {{ else }}
+                                            <span class="font-heading text-[52px] lg:text-[62px] leading-none text-white">£{{ price }}</span>
+                                            {{ if price_period }}
+                                                <span class="text-white text-[18px] relative bottom-[16px]">{{ price_period }}</span>
+                                            {{ /if }}
+                                        {{ /if }}
+                                    </div>
+
+                                    {{ if vat_note }}
+                                        <p class="text-white text-[16px] mb-5">{{ vat_note }}</p>
+                                    {{ /if }}
+
+                                    {{ if description }}
+                                        <p class="text-white text-[16px] mb-6 pb-6 border-b border-white/20">{{ description }}</p>
+                                    {{ /if }}
+
+                                    {{ if features }}
+                                        <ul class="flex flex-col gap-3">
+                                            {{ features }}
+                                                <li class="flex items-start gap-3 text-[16px]">
+                                                    {{ if included }}
+                                                        <i class="fa-sharp fa-regular fa-check text-brand-secondary mt-[3px] w-4 flex-shrink-0"></i>
+                                                        <span class="text-white">{{ label }}</span>
+                                                    {{ else }}
+                                                        <i class="fa-sharp fa-regular fa-xmark text-red-400 mt-[3px] w-4 flex-shrink-0"></i>
+                                                        <span class="text-white/40 line-through">{{ label }}</span>
+                                                    {{ /if }}
+                                                </li>
+                                            {{ /features }}
+                                        </ul>
+                                    {{ /if }}
+
+                                </div>
+                            {{ /plans }}
+                        </div>
+                    {{ /if }}
+
+                    {{ if footnote }}
+                        <div class="text-center text-white text-[16px] mt-10 lg:mt-14 max-w-[900px] mx-auto leading-relaxed">
+                            {{ footnote | nl2br }}
+                        </div>
+                    {{ /if }}
+                </div>
+            {{ /tabs }}
+
+        {{ /if }}
+
+    </div>
+</section>
