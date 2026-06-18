@@ -43,7 +43,7 @@ page_builder:
           -
             id: plan_brochure
             name: 'Brochure Website'
-            price_label: 'From £4,500'
+            price_label: 'From £5,500'
             vat_note: '+ VAT'
             description: 'A clean, custom-designed site for businesses that need to look sharp and convert visitors.'
             featured: false
@@ -404,6 +404,182 @@ page_builder:
         type: new_set
         enabled: true
     type: pricing_tabs
+    enabled: true
+  -
+    id: pricing_support_01
+    above_title: Support Plans
+    title: 'Support & Hosting'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "We don't disappear after launch. Monthly support plans keep your site secure, updated, and moving forward."
+    plans:
+      -
+        id: plan_sup_ess
+        name: Essentials
+        price: '190'
+        price_period: /mo
+        vat_note: '+ VAT · 2 hrs support at £95/hr'
+        description: 'Peace of mind for smaller sites that just need to stay secure and online.'
+        featured: false
+        features:
+          -
+            id: sup_feat_e1
+            label: '2 hours of support per month'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_e2
+            label: 'Plugin & theme updates'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_e3
+            label: 'Uptime monitoring (24/7)'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_e4
+            label: 'Monthly status report'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_e5
+            label: 'Minor theme tweaks'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_e6
+            label: 'Priority response'
+            included: false
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_e7
+            label: 'Performance & SEO check'
+            included: false
+            type: new_set
+            enabled: true
+        type: new_set
+        enabled: true
+      -
+        id: plan_sup_gro
+        name: Growth
+        price: '360'
+        price_period: /mo
+        vat_note: '+ VAT · 4 hrs support at £90/hr'
+        description: 'Ideal for growing businesses that need reliable support and regular improvements.'
+        featured: true
+        features:
+          -
+            id: sup_feat_g1
+            label: '4 hours of support per month'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_g2
+            label: 'Plugin & theme updates'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_g3
+            label: 'Uptime monitoring (24/7)'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_g4
+            label: 'Monthly status report'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_g5
+            label: 'Minor theme tweaks'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_g6
+            label: 'Priority response (next business day)'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_g7
+            label: 'Quarterly performance & SEO check'
+            included: true
+            type: new_set
+            enabled: true
+        type: new_set
+        enabled: true
+      -
+        id: plan_sup_pri
+        name: Priority
+        price: '640'
+        price_period: /mo
+        vat_note: '+ VAT · 8 hrs support at £80/hr'
+        description: 'A dedicated digital partner for businesses that need maximum support and fast turnaround.'
+        featured: false
+        features:
+          -
+            id: sup_feat_p1
+            label: '8 hours of support per month'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_p2
+            label: 'Plugin & theme updates'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_p3
+            label: 'Uptime monitoring (24/7)'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_p4
+            label: 'Monthly status report'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_p5
+            label: 'Theme tweaks & dev tasks'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_p6
+            label: 'Priority response (same day)'
+            included: true
+            type: new_set
+            enabled: true
+          -
+            id: sup_feat_p7
+            label: 'Monthly performance & SEO check'
+            included: true
+            type: new_set
+            enabled: true
+        type: new_set
+        enabled: true
+    footnote: |-
+      All plans cover WordPress, Shopify, and Statamic. Hours do not roll over. Additional hours billed at £95/hr + VAT.
+      No long-term contracts - 30-day rolling basis with 30 days' notice to cancel.
+    type: pricing
     enabled: true
   -
     id: feature_cards_pricing_why

@@ -11,19 +11,30 @@
     </div>
 </section>
 
-<section class="pb-16 lg:pb-24" x-data="{ activeCategory: 'all' }">
+<section class="pb-16 lg:pb-24" x-data="{
+    activeCategory: 'all',
+    fading: false,
+    setCategory(cat) {
+        if (cat === this.activeCategory) return;
+        this.fading = true;
+        setTimeout(() => {
+            this.activeCategory = cat;
+            this.$nextTick(() => { this.fading = false; });
+        }, 200);
+    }
+}">
     <div class="container">
 
         <div class="flex flex-wrap gap-3 mb-10 lg:mb-14 js-fade-up">
             <button
-                @click="activeCategory = 'all'"
+                @click="setCategory('all')"
                 :class="activeCategory === 'all' ? 'bg-brand-secondary text-brand-primary' : 'bg-transparent text-brand-white border border-brand-secondary'"
                 class="font-regular text-[13px] uppercase tracking-widest px-5 py-2 transition-all duration-200"
                 style="border-radius: 50px"
             >All Blogs</button>
             {{ taxonomy:blog_categories collection="blog" }}
             <button
-                @click="activeCategory = '{{ slug }}'"
+                @click="setCategory('{{ slug }}')"
                 :class="activeCategory === '{{ slug }}' ? 'bg-brand-secondary text-white' : 'bg-transparent text-brand-white border border-brand-secondary'"
                 class="font-regular text-[13px] uppercase tracking-widest px-5 py-2 transition-all duration-200"
                 style="border-radius: 50px"
@@ -31,12 +42,14 @@
             {{ /taxonomy:blog_categories }}
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+        <div
+            :class="fading ? 'opacity-0' : 'opacity-100'"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 transition-opacity duration-200"
+        >
             {{ collection:blog sort="date:desc" }}
             <article
                 data-cats="all {{ blog_categories }}{{ slug }} {{ /blog_categories }}"
                 x-show="activeCategory === 'all' || $el.dataset.cats.split(' ').includes(activeCategory)"
-                x-transition
                 class="flex flex-col js-fade-up"
             >
                 {{ if featured_image }}
