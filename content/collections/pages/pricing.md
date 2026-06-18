@@ -110,7 +110,7 @@ page_builder:
             price_label: 'From £8,500'
             vat_note: '+ VAT'
             description: 'A custom-built Shopify or WooCommerce store designed to sell — from product pages to checkout.'
-            featured: true
+            featured: false
             features:
               -
                 id: feat_e1
