@@ -32,7 +32,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {{ collection:blog sort="date:desc" }}
             <article
-                data-cats="all {{ categories }}{{ slug }} {{ /categories }}"
+                data-cats="all {{ blog_categories }}{{ slug }} {{ /blog_categories }}"
                 x-show="activeCategory === 'all' || $el.dataset.cats.split(' ').includes(activeCategory)"
                 x-transition
                 class="flex flex-col js-fade-up"

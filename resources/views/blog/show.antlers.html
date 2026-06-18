@@ -8,11 +8,11 @@
             </a>
         </div>
         <div class="text-center" style="max-width: 800px; margin: 0 auto">
-            {{ if categories }}
+            {{ if blog_categories }}
             <div class="mb-5">
-                {{ categories limit="1" }}
+                {{ blog_categories limit="1" }}
                 {{ partial:components/above-title :title="title" classes="above-title--secondary" }}
-                {{ /categories }}
+                {{ /blog_categories }}
             </div>
             {{ /if }}
             <h1 class="font-heading uppercase text-[36px] sm:text-[48px] lg:text-[60px] xl:text-[68px] leading-none text-brand-primary mb-6">{{ title }}</h1>

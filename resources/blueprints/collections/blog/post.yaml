@@ -31,7 +31,7 @@ tabs:
               type: text
               display: 'Featured Image Caption'
           -
-            handle: categories
+            handle: blog_categories
             field:
               type: terms
               taxonomies:
