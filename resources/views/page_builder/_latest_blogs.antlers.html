@@ -25,9 +25,9 @@
                 {{ if excerpt }}
                 <p class="text-[15px] lg:text-[16px] text-brand-primary leading-relaxed mb-4" style="opacity: 0.65">{{ excerpt }}</p>
                 {{ /if }}
-                <a href="{{ url }}" class="group inline-flex items-center gap-2 font-heading uppercase text-brand-primary text-[13px] tracking-wide hover:gap-4 transition-all duration-300 mt-auto">
+                <a href="{{ url }}" class="inline-flex items-center gap-3 font-heading uppercase text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200 mt-auto">
                     Read Blog
-                    {{ partial:components/icons/arrow-top-right }}
+                    <i class="fa-sharp fa-regular fa-arrow-up-right text-[12px]"></i>
                 </a>
             </article>
             {{ /collection:blog }}

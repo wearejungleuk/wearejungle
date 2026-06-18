@@ -1,27 +1,27 @@
-<section class="pt-16 lg:pt-24 pb-4 bg-white">
+<section class="pt-[150px] lg:pt-[200px] pb-4">
     <div class="container">
         <div class="text-center mb-12 lg:mb-16 js-fade-up">
             {{ partial:components/above-title title="Blog" classes="above-title--secondary" }}
-            <h1 class="font-heading uppercase text-[48px] sm:text-[56px] lg:text-[72px] leading-none text-brand-primary mt-4">Ideas, Tips,<br>& The Odd Opinion</h1>
+            <h1 class="font-heading uppercase text-[48px] sm:text-[56px] lg:text-[72px] leading-none text-brand-white mt-4">Ideas, Tips,<br>& The Odd Opinion</h1>
         </div>
     </div>
 </section>
 
-<section class="pb-16 lg:pb-24 bg-white" x-data="{ activeCategory: 'all' }">
+<section class="pb-16 lg:pb-24" x-data="{ activeCategory: 'all' }">
     <div class="container">
 
         {{# Category filter pills #}}
         <div class="flex flex-wrap gap-3 mb-10 lg:mb-14 js-fade-up">
             <button
                 @click="activeCategory = 'all'"
-                :class="activeCategory === 'all' ? 'bg-brand-primary text-white' : 'bg-transparent text-brand-primary border border-brand-primary'"
+                :class="activeCategory === 'all' ? 'bg-brand-secondary text-white' : 'bg-transparent text-brand-white border border-brand-secondary'"
                 class="font-regular text-[13px] uppercase tracking-widest px-5 py-2 transition-all duration-200"
                 style="border-radius: 50px"
             >All Blogs</button>
             {{ taxonomy:blog_categories }}
             <button
                 @click="activeCategory = '{{ slug }}'"
-                :class="activeCategory === '{{ slug }}' ? 'bg-brand-primary text-white' : 'bg-transparent text-brand-primary border border-brand-primary'"
+                :class="activeCategory === '{{ slug }}' ? 'bg-brand-secondary text-white' : 'bg-transparent text-brand-white border border-brand-secondary'"
                 class="font-regular text-[13px] uppercase tracking-widest px-5 py-2 transition-all duration-200"
                 style="border-radius: 50px"
             >{{ title }}</button>
@@ -44,15 +44,15 @@
                     {{ /glide:featured_image }}
                 </a>
                 {{ /if }}
-                <h2 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-brand-primary mb-3">
+                <h2 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-brand-white mb-3">
                     <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title }}</a>
                 </h2>
                 {{ if excerpt }}
-                <p class="text-[15px] lg:text-[16px] text-brand-primary leading-relaxed mb-4" style="opacity: 0.65">{{ excerpt }}</p>
+                <p class="text-[15px] lg:text-[16px] text-brand-white leading-relaxed mb-4" style="opacity: 0.65">{{ excerpt }}</p>
                 {{ /if }}
-                <a href="{{ url }}" class="group inline-flex items-center gap-2 font-heading uppercase text-brand-primary text-[13px] tracking-wide hover:gap-4 transition-all duration-300 mt-auto">
+                <a href="{{ url }}" class="inline-flex items-center gap-3 font-heading uppercase text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200 mt-auto">
                     Read Blog
-                    {{ partial:components/icons/arrow-top-right }}
+                    <i class="fa-sharp fa-regular fa-arrow-up-right text-[12px]"></i>
                 </a>
             </article>
             {{ /collection:blog }}
