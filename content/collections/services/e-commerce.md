@@ -5,6 +5,27 @@ title: E-Commerce
 slug: e-commerce
 card_text: 'Online stores designed to sell. From product pages to checkout, everything is built to make buying simple.'
 page_text: 'Whether you are selling a handful of products or a full catalogue, we build online stores that make buying feel effortless. From product pages and filtering through to checkout and beyond, every step of the journey is designed to reduce friction and increase conversions. We know what separates a store that sells from one that just sits there.'
+key_points:
+  -
+    id: kp_ecom_01
+    label: 'Custom product pages and catalogue structures'
+    type: new_set
+    enabled: true
+  -
+    id: kp_ecom_02
+    label: 'Streamlined checkout to reduce drop-off'
+    type: new_set
+    enabled: true
+  -
+    id: kp_ecom_03
+    label: 'Payment, fulfilment, and CRM integrations'
+    type: new_set
+    enabled: true
+  -
+    id: kp_ecom_04
+    label: 'Designed to convert browsers into buyers'
+    type: new_set
+    enabled: true
 icon: e-commerce.svg
 page_builder:
   -

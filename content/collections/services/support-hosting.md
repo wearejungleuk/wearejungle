@@ -5,6 +5,27 @@ title: 'Support & Hosting'
 slug: support-hosting
 card_text: 'Website care plans, secure hosting, and ongoing development support. We keep your site fast, secure, and running — so you can focus on your business.'
 page_text: 'Most agencies build your site and then disappear. We do not. Our support plans keep your website in the best possible shape long after launch — routine updates, security monitoring, performance checks, and ongoing development hours when you need them. We treat your site as if it were our own, because our reputation depends on it staying that way.'
+key_points:
+  -
+    id: kp_supp_01
+    label: 'Monthly updates applied and tested before going live'
+    type: new_set
+    enabled: true
+  -
+    id: kp_supp_02
+    label: '24/7 uptime monitoring with immediate response'
+    type: new_set
+    enabled: true
+  -
+    id: kp_supp_03
+    label: 'Daily backups and ongoing security scanning'
+    type: new_set
+    enabled: true
+  -
+    id: kp_supp_04
+    label: 'Development hours included for ongoing improvements'
+    type: new_set
+    enabled: true
 icon: web_monitoring.svg
 page_builder:
   -

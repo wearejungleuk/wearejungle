@@ -5,6 +5,27 @@ title: 'WordPress Websites'
 slug: wordpress-websites
 card_text: 'Custom WordPress builds without the bloat. Easy to update, fast to load, and built around how your business actually works.'
 page_text: 'WordPress powers a huge chunk of the web, and it is easy to see why — but most WordPress sites are built on bloated themes with too many plugins and not enough care. We build WordPress sites from scratch: custom themes, minimal plugins, and clean code that loads fast and stays secure. A site that does exactly what your business needs and nothing it does not.'
+key_points:
+  -
+    id: kp_wp_01
+    label: 'Custom theme development — no off-the-shelf templates'
+    type: new_set
+    enabled: true
+  -
+    id: kp_wp_02
+    label: 'Minimal plugins for speed and long-term security'
+    type: new_set
+    enabled: true
+  -
+    id: kp_wp_03
+    label: 'Easy CMS your team can actually manage'
+    type: new_set
+    enabled: true
+  -
+    id: kp_wp_04
+    label: 'Optimised for search engines from day one'
+    type: new_set
+    enabled: true
 icon: wordpress.svg
 page_builder:
   -

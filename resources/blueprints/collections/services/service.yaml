@@ -25,6 +25,24 @@ tabs:
               display: 'Page Text (Services Page)'
               instructions: 'Longer paragraph description shown on the services listing page.'
           -
+            handle: key_points
+            field:
+              type: replicator
+              display: 'Key Points (Services Page)'
+              instructions: 'Bullet points shown on the services listing page (aim for 4).'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'Key Point'
+                      fields:
+                        -
+                          handle: label
+                          field:
+                            type: text
+                            display: Label
+          -
             handle: card_image
             field:
               max_files: 1

@@ -5,6 +5,27 @@ title: 'Statamic Websites'
 slug: statamic-websites
 card_text: 'Flexible, fast, and easy to manage. Statamic sites built for businesses that want control without the usual CMS headaches.'
 page_text: 'Statamic is the CMS we reach for when a project needs to be fast, flexible, and genuinely easy to manage. Built on Laravel with a flat-file architecture, it means no database overhead, exceptional performance out of the box, and a control panel your team will actually want to use. It is our CMS of choice — and once you use it, you will understand why.'
+key_points:
+  -
+    id: kp_stat_01
+    label: 'Flat-file architecture for exceptional performance'
+    type: new_set
+    enabled: true
+  -
+    id: kp_stat_02
+    label: 'Intuitive control panel your team will want to use'
+    type: new_set
+    enabled: true
+  -
+    id: kp_stat_03
+    label: 'Fully custom content structure per project'
+    type: new_set
+    enabled: true
+  -
+    id: kp_stat_04
+    label: 'Built on Laravel for flexibility and reliability'
+    type: new_set
+    enabled: true
 icon: statamic.svg
 page_builder:
   -

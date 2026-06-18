@@ -5,6 +5,27 @@ title: 'Web Design'
 slug: web-design
 card_text: 'Design that looks the part and works hard behind the scenes — built to guide users, build trust, and drive action.'
 page_text: 'Good design is more than how a site looks — it is about how it works. We create websites that guide users naturally, build trust quickly, and make it easy for people to take the next step. Every layout, typeface, and colour choice is made with purpose. No trends for the sake of it. Just clear, considered design built around your brand and your customers.'
+key_points:
+  -
+    id: kp_wdes_01
+    label: 'Custom design from scratch, tailored to your brand'
+    type: new_set
+    enabled: true
+  -
+    id: kp_wdes_02
+    label: 'UX focused on guiding users towards conversion'
+    type: new_set
+    enabled: true
+  -
+    id: kp_wdes_03
+    label: 'Mobile-first and responsive across all devices'
+    type: new_set
+    enabled: true
+  -
+    id: kp_wdes_04
+    label: 'Design system and brand consistency throughout'
+    type: new_set
+    enabled: true
 icon: web_design.svg
 page_builder:
   -

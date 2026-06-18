@@ -5,6 +5,27 @@ title: 'Web Development'
 slug: web-development
 card_text: 'Clean, scalable builds using modern tools and frameworks. Fast, flexible, and built to last — not patched together.'
 page_text: 'Every site we build starts from a blank canvas and is coded by hand. No bloated themes, no page builders, no shortcuts that cause problems later. We use modern frameworks and clean, maintainable code — which means your site loads fast, scales easily, and can be updated or extended without starting from scratch. Built properly the first time, so you are not paying to fix it twice.'
+key_points:
+  -
+    id: kp_wdev_01
+    label: 'Hand-coded builds — no page builders or bloated themes'
+    type: new_set
+    enabled: true
+  -
+    id: kp_wdev_02
+    label: 'Fast load times and optimised core web vitals'
+    type: new_set
+    enabled: true
+  -
+    id: kp_wdev_03
+    label: 'Scalable codebase ready for future growth'
+    type: new_set
+    enabled: true
+  -
+    id: kp_wdev_04
+    label: 'Clean, maintainable code you actually own'
+    type: new_set
+    enabled: true
 icon: web-development.svg
 page_builder:
   -

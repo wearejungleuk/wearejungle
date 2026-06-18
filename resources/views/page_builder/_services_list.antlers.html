@@ -1,49 +1,46 @@
-<section class="pb-16 lg:pb-24">
+<section class="bg-brand-primary py-16 lg:py-24">
     <div class="container">
-        {{ if above_title }}
-            <div class="mb-10 lg:mb-14 js-fade-up">
-                {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
-            </div>
-        {{ /if }}
         {{ if title }}
-            <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[56px] leading-none mb-10 lg:mb-14 js-fade-up">{{ title }}</h2>
+            <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[56px] leading-none text-white mb-10 lg:mb-14 js-fade-up">{{ title }}</h2>
         {{ /if }}
-        <div class="flex flex-col gap-4 lg:gap-6">
+        <div class="flex flex-col gap-5 lg:gap-6">
             {{ collection:services }}
-            <a href="{{ url }}" class="group block border-[2px] border-black p-8 lg:p-10 js-fade-up bg-white hover:bg-brand-secondary hover:border-brand-secondary transition-all duration-300" style="border-radius: 20px">
-                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-12">
-                    <div class="flex-1">
-                        {{ if icon }}
-                            <div class="w-[48px] h-[48px] bg-black flex items-center justify-center mb-5" style="border-radius: 10px">
+            <div class="bg-brand-dark-blue p-8 lg:p-10 xl:p-12 js-fade-up" style="border-radius: 20px">
+                <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 lg:gap-12 items-start">
+
+                    {{# Left: icon, title, paragraph, link #}}
+                    <div>
+                        <div class="flex items-center gap-5 mb-6">
+                            {{ if icon }}
                                 {{ icon }}
-                                <img src="{{ url }}" alt="{{ title }}" class="w-[28px] h-[28px] object-contain">
+                                <img src="{{ url }}" alt="" class="w-[64px] h-[64px] lg:w-[80px] lg:h-[80px] object-contain flex-shrink-0">
                                 {{ /icon }}
-                            </div>
+                            {{ /if }}
+                            <h3 class="font-heading uppercase text-[30px] lg:text-[38px] xl:text-[44px] leading-none text-white">{{ title }}</h3>
+                        </div>
+                        {{ if page_text }}
+                            <p class="text-white text-[16px] lg:text-[17px] leading-relaxed mb-8" style="opacity: 0.75">{{ page_text }}</p>
                         {{ /if }}
-                        <h3 class="font-heading uppercase text-[28px] sm:text-[34px] lg:text-[40px] leading-none mb-4">
-                            {{ title }}<span class="text-brand-secondary group-hover:text-black transition-colors duration-300">.</span>
-                        </h3>
-                        {{ if card_text }}
-                            <p class="text-[16px] lg:text-[17px] leading-relaxed max-w-[560px]">{{ card_text }}</p>
-                        {{ /if }}
+                        <a href="{{ url }}" class="group inline-flex items-center gap-3 font-heading uppercase text-white text-[14px] lg:text-[15px] tracking-wide hover:text-brand-secondary hover:gap-5 transition-all duration-300">
+                            View {{ title }} Services
+                            <i class="fa-sharp fa-regular fa-arrow-up-right text-[12px]"></i>
+                        </a>
                     </div>
-                    <div class="flex-shrink-0">
-                        <span class="inline-flex items-center gap-3 font-heading uppercase text-[15px] tracking-wide transition-colors duration-300">
-                            Explore the service
-                            <span class="w-[34px] h-[34px] flex-shrink-0 bg-black text-white flex items-center justify-center overflow-hidden" style="border-radius: 50%">
-                                <span class="relative w-full h-full flex items-center justify-center">
-                                    <span class="absolute transition-all duration-300 ease-in-out group-hover:translate-x-[150%] group-hover:-translate-y-[150%]">
-                                        <i class="fa-sharp fa-regular fa-arrow-up-right text-[13px]"></i>
-                                    </span>
-                                    <span class="absolute transition-all duration-300 ease-in-out -translate-x-[150%] translate-y-[150%] group-hover:translate-x-0 group-hover:translate-y-0">
-                                        <i class="fa-sharp fa-regular fa-arrow-up-right text-[13px]"></i>
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
+
+                    {{# Right: key points #}}
+                    {{ if key_points }}
+                    <div class="flex flex-col gap-4 lg:pt-2">
+                        {{ key_points }}
+                        <div class="flex items-start gap-4">
+                            <div class="w-[7px] h-[7px] bg-brand-secondary flex-shrink-0 mt-[8px]" style="border-radius: 50%"></div>
+                            <span class="text-white text-[15px] lg:text-[16px] leading-relaxed">{{ label }}</span>
+                        </div>
+                        {{ /key_points }}
                     </div>
+                    {{ /if }}
+
                 </div>
-            </a>
+            </div>
             {{ /collection:services }}
         </div>
     </div>

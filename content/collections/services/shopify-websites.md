@@ -5,6 +5,27 @@ title: 'Shopify Websites'
 slug: shopify-websites
 card_text: 'Shopify stores built for growth. Custom themes, better UX, and a smoother buying experience from start to finish.'
 page_text: 'Shopify is one of the most capable eCommerce platforms available — but most Shopify stores look and feel exactly the same. We build fully custom Shopify themes from scratch, designed around your brand and your customers. No theme restrictions, no template limitations. A store that looks and performs like it was built specifically for you — because it was.'
+key_points:
+  -
+    id: kp_shop_01
+    label: 'Fully custom Shopify themes built from scratch'
+    type: new_set
+    enabled: true
+  -
+    id: kp_shop_02
+    label: 'Optimised for speed and mobile shopping'
+    type: new_set
+    enabled: true
+  -
+    id: kp_shop_03
+    label: 'App integrations and checkout customisation'
+    type: new_set
+    enabled: true
+  -
+    id: kp_shop_04
+    label: 'Designed to reflect your brand, not a template'
+    type: new_set
+    enabled: true
 icon: shopify.svg
 page_builder:
   -

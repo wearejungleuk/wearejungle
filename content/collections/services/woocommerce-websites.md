@@ -5,6 +5,27 @@ title: 'WooCommerce Websites'
 slug: woocommerce-websites
 card_text: 'Powerful eCommerce on WordPress. Flexible, scalable, and tailored to how you sell — without the usual limitations.'
 page_text: 'WooCommerce gives you the full power of WordPress with flexible eCommerce on top. We build WooCommerce stores tailored to how you sell — whether that is simple product listings, complex variable products, subscriptions, or custom checkout flows. Scalable, easy to manage, and designed to convert from day one.'
+key_points:
+  -
+    id: kp_woo_01
+    label: 'Custom WooCommerce setup tailored to your products'
+    type: new_set
+    enabled: true
+  -
+    id: kp_woo_02
+    label: 'Variations, bundles, and complex pricing supported'
+    type: new_set
+    enabled: true
+  -
+    id: kp_woo_03
+    label: 'Payment gateway and shipping integrations included'
+    type: new_set
+    enabled: true
+  -
+    id: kp_woo_04
+    label: 'Fast, secure, and fully manageable post-launch'
+    type: new_set
+    enabled: true
 icon: woocommerce-favicon-white.svg
 page_builder:
   -
