@@ -3,8 +3,8 @@ id: f8142c54-0000-0000-0000-000000000001
 blueprint: service
 title: 'Web Design'
 slug: web-design
-card_text: 'Design that looks the part and works hard behind the scenes — built to guide users, build trust, and drive action.'
-page_text: 'Good design is more than how a site looks — it is about how it works. We create websites that guide users naturally, build trust quickly, and make it easy for people to take the next step. Every layout, typeface, and colour choice is made with purpose. No trends for the sake of it. Just clear, considered design built around your brand and your customers.'
+card_text: 'Design that looks the part and works hard behind the scenes - built to guide users, build trust, and drive action.'
+page_text: 'Good design is more than how a site looks - it is about how it works. We create websites that guide users naturally, build trust quickly, and make it easy for people to take the next step. Every layout, typeface, and colour choice is made with purpose. No trends for the sake of it. Just clear, considered design built around your brand and your customers.'
 key_points:
   -
     id: kp_wdes_01
@@ -38,7 +38,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We design websites for ambitious businesses. Purposeful layouts, sharp visuals, and a user experience that guides people toward the action you want them to take — not just a site that looks nice."
+            text: "We design websites for ambitious businesses. Purposeful layouts, sharp visuals, and a user experience that guides people toward the action you want them to take - not just a site that looks nice."
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -52,7 +52,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Every visual decision we make has a reason. Great web design isn't about aesthetics alone — it's about converting visitors, communicating your value clearly, and giving people a reason to trust you."
+            text: "Every visual decision we make has a reason. Great web design isn't about aesthetics alone - it's about converting visitors, communicating your value clearly, and giving people a reason to trust you."
     stats:
       -
         id: stat_wd_01
@@ -79,7 +79,7 @@ page_builder:
     enabled: true
   -
     id: tech_carousel_wd_01
-    intro_text: 'We work with a carefully chosen set of design and build tools — picked to deliver the best results for every project.'
+    intro_text: 'We work with a carefully chosen set of design and build tools - picked to deliver the best results for every project.'
     technologies:
       -
         id: tech_wd_01
@@ -110,21 +110,21 @@ page_builder:
       -
         id: tech_wd_05
         name: Statamic
-        description: "Our recommended CMS for most new builds. Flat-file, fast, and genuinely easy to manage — our preferred platform."
+        description: "Our recommended CMS for most new builds. Flat-file, fast, and genuinely easy to manage - our preferred platform."
         icon: statamic.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_06
         name: WordPress
-        description: "We build in WordPress when clients need it — familiar, widely supported, and powerful when set up and configured correctly."
+        description: "We build in WordPress when clients need it - familiar, widely supported, and powerful when set up and configured correctly."
         icon: wordpress.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_07
         name: HTML5
-        description: "Semantic, accessible markup that forms the backbone of every site we build — structured for performance, SEO, and screen readers."
+        description: "Semantic, accessible markup that forms the backbone of every site we build - structured for performance, SEO, and screen readers."
         icon: html5.svg
         type: new_set
         enabled: true
@@ -138,7 +138,7 @@ page_builder:
       -
         id: tech_wd_09
         name: JavaScript
-        description: "Progressive JavaScript for interactive elements and dynamic behaviour — only loaded where it's needed, never as unnecessary overhead."
+        description: "Progressive JavaScript for interactive elements and dynamic behaviour - only loaded where it's needed, never as unnecessary overhead."
         icon: javascript.svg
         type: new_set
         enabled: true
@@ -158,19 +158,19 @@ page_builder:
       -
         id: fg_wd_01
         title: 'Conversion-Focused Design'
-        text: "Every layout decision is made with your business goals in mind. We design for outcomes, not just aesthetics — and every element on the page is there for a reason."
+        text: "Every layout decision is made with your business goals in mind. We design for outcomes, not just aesthetics - and every element on the page is there for a reason."
         type: new_set
         enabled: true
       -
         id: fg_wd_02
         title: 'Mobile-First, Always'
-        text: "Every design is built for mobile from the first wireframe. Not adapted after the fact — considered from the very start."
+        text: "Every design is built for mobile from the first wireframe. Not adapted after the fact - considered from the very start."
         type: new_set
         enabled: true
       -
         id: fg_wd_03
         title: 'Brand Consistency'
-        text: "Your design system should be coherent across every page and every touchpoint. We build it to be consistent and scalable — no ad-hoc decisions as the project grows."
+        text: "Your design system should be coherent across every page and every touchpoint. We build it to be consistent and scalable - no ad-hoc decisions as the project grows."
         type: new_set
         enabled: true
     type: features_grid
@@ -192,7 +192,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We start by understanding your business, your users, and what you need the website to do. Sitemap, user journeys, content structure — all planned before design begins."
+                text: "We start by understanding your business, your users, and what you need the website to do. Sitemap, user journeys, content structure - all planned before design begins."
         type: new_set
         enabled: true
       -
@@ -205,7 +205,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We design key pages in high fidelity — exactly how they'll look in the browser. You see and sign off the design before a single line of code is written."
+                text: "We design key pages in high fidelity - exactly how they'll look in the browser. You see and sign off the design before a single line of code is written."
         type: new_set
         enabled: true
       -
@@ -231,7 +231,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Approved designs go to development for a pixel-perfect build. Full cross-browser and device testing before we go live — then a 72-day warranty period as standard."
+                text: "Approved designs go to development for a pixel-perfect build. Full cross-browser and device testing before we go live - then a 72-day warranty period as standard."
         type: new_set
         enabled: true
     type: process_carousel
@@ -395,7 +395,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "No pressure — just an honest conversation about what's right for you"
+                text: "No pressure - just an honest conversation about what's right for you"
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
@@ -422,7 +422,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Every project goes through a full design phase before development begins. You sign off the designs before any code is written — no building on assumptions."
+                text: "Yes. Every project goes through a full design phase before development begins. You sign off the designs before any code is written - no building on assumptions."
         type: new_set
         enabled: true
       -
@@ -446,7 +446,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Ideally your brand guidelines, any existing assets, and a clear brief on who your customers are. We can work with less — but the more context we have, the better the result."
+                text: "Ideally your brand guidelines, any existing assets, and a clear brief on who your customers are. We can work with less - but the more context we have, the better the result."
         type: new_set
         enabled: true
       -
@@ -470,7 +470,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. We don't use templates. Every design is created specifically for your business, your brand, and your users — from a blank canvas."
+                text: "Yes. We don't use templates. Every design is created specifically for your business, your brand, and your users - from a blank canvas."
         type: new_set
         enabled: true
       -
@@ -482,7 +482,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. We design across breakpoints from the start — desktop and mobile are considered together, never as an afterthought."
+                text: "Yes. We design across breakpoints from the start - desktop and mobile are considered together, never as an afterthought."
         type: new_set
         enabled: true
       -
@@ -521,7 +521,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Good web design isn't decoration — it's strategy. If your site isn't converting visitors, it's costing you. Let's fix that."
+            text: "Good web design isn't decoration - it's strategy. If your site isn't converting visitors, it's costing you. Let's fix that."
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg

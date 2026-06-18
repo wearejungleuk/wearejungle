@@ -3,12 +3,12 @@ id: 15b87cff-0000-0000-0000-000000000002
 blueprint: service
 title: 'Web Development'
 slug: web-development
-card_text: 'Clean, scalable builds using modern tools and frameworks. Fast, flexible, and built to last — not patched together.'
-page_text: 'Every site we build starts from a blank canvas and is coded by hand. No bloated themes, no page builders, no shortcuts that cause problems later. We use modern frameworks and clean, maintainable code — which means your site loads fast, scales easily, and can be updated or extended without starting from scratch. Built properly the first time, so you are not paying to fix it twice.'
+card_text: 'Clean, scalable builds using modern tools and frameworks. Fast, flexible, and built to last - not patched together.'
+page_text: 'Every site we build starts from a blank canvas and is coded by hand. No bloated themes, no page builders, no shortcuts that cause problems later. We use modern frameworks and clean, maintainable code - which means your site loads fast, scales easily, and can be updated or extended without starting from scratch. Built properly the first time, so you are not paying to fix it twice.'
 key_points:
   -
     id: kp_wdev_01
-    label: 'Hand-coded builds — no page builders or bloated themes'
+    label: 'Hand-coded builds - no page builders or bloated themes'
     type: new_set
     enabled: true
   -
@@ -38,7 +38,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Clean code, modern tooling, and a development approach that prioritises performance. We build things properly — no cobbled-together plugins, no shortcuts that create headaches down the line."
+            text: "Clean code, modern tooling, and a development approach that prioritises performance. We build things properly - no cobbled-together plugins, no shortcuts that create headaches down the line."
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -79,18 +79,18 @@ page_builder:
     enabled: true
   -
     id: tech_carousel_wdev_01
-    intro_text: 'We work with a carefully chosen set of tools — picked for performance, longevity, and the best outcomes for your project.'
+    intro_text: 'We work with a carefully chosen set of tools - picked for performance, longevity, and the best outcomes for your project.'
     technologies:
       -
         id: tech_wdev_01
         name: Statamic
-        description: "Our recommended CMS for most new builds. Flat-file, fast, and secure — without the database overhead or plugin bloat that other platforms carry."
+        description: "Our recommended CMS for most new builds. Flat-file, fast, and secure - without the database overhead or plugin bloat that other platforms carry."
         type: new_set
         enabled: true
       -
         id: tech_wdev_02
         name: WordPress
-        description: "When clients need WordPress, we build it properly — clean code, minimal plugins, and security hardened from the ground up."
+        description: "When clients need WordPress, we build it properly - clean code, minimal plugins, and security hardened from the ground up."
         type: new_set
         enabled: true
       -
@@ -120,13 +120,13 @@ page_builder:
       -
         id: tech_wdev_07
         name: HTML5
-        description: "Semantic, accessible markup at the foundation of every build — structured correctly for performance, SEO, and assistive technologies."
+        description: "Semantic, accessible markup at the foundation of every build - structured correctly for performance, SEO, and assistive technologies."
         type: new_set
         enabled: true
       -
         id: tech_wdev_08
         name: CSS3
-        description: "Modern CSS for layouts, transitions, and visual behaviour. Clean and maintainable — not fighting against framework defaults."
+        description: "Modern CSS for layouts, transitions, and visual behaviour. Clean and maintainable - not fighting against framework defaults."
         type: new_set
         enabled: true
       -
@@ -138,7 +138,7 @@ page_builder:
       -
         id: tech_wdev_10
         name: JavaScript
-        description: "Progressive JavaScript for interactivity and dynamic behaviour — applied where it adds real value, never as unnecessary bloat."
+        description: "Progressive JavaScript for interactivity and dynamic behaviour - applied where it adds real value, never as unnecessary bloat."
         type: new_set
         enabled: true
       -
@@ -157,19 +157,19 @@ page_builder:
       -
         id: fg_wdev_01
         title: 'Performance First'
-        text: "Every site we build targets strong Core Web Vitals and fast load times. Performance is built into every architectural decision — not optimised in at the end when there's a problem."
+        text: "Every site we build targets strong Core Web Vitals and fast load times. Performance is built into every architectural decision - not optimised in at the end when there's a problem."
         type: new_set
         enabled: true
       -
         id: fg_wdev_02
         title: 'Clean, Maintainable Code'
-        text: "No shortcuts, no bloat. Code that's easy to extend, update, and hand over. We write it as if we'll be maintaining it forever — because often, we will."
+        text: "No shortcuts, no bloat. Code that's easy to extend, update, and hand over. We write it as if we'll be maintaining it forever - because often, we will."
         type: new_set
         enabled: true
       -
         id: fg_wdev_03
         title: 'Security Throughout'
-        text: "Security is considered from day one — server configuration, input handling, dependency management. Not patched in afterwards when there's already a problem."
+        text: "Security is considered from day one - server configuration, input handling, dependency management. Not patched in afterwards when there's already a problem."
         type: new_set
         enabled: true
     type: features_grid
@@ -191,7 +191,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We scope the technical requirements in detail before writing a line of code. Architecture decisions made now save significant time and money later — we take this stage seriously."
+                text: "We scope the technical requirements in detail before writing a line of code. Architecture decisions made now save significant time and money later - we take this stage seriously."
         type: new_set
         enabled: true
       -
@@ -204,7 +204,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Clean, well-structured code built on a platform that fits your needs. We work in sprints with regular check-ins — you're never left wondering what's happening."
+                text: "Clean, well-structured code built on a platform that fits your needs. We work in sprints with regular check-ins - you're never left wondering what's happening."
         type: new_set
         enabled: true
       -
@@ -217,7 +217,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Thorough testing across browsers, devices, and screen sizes. Edge cases, accessibility checks, and performance benchmarks — all covered before we talk about going live."
+                text: "Thorough testing across browsers, devices, and screen sizes. Edge cases, accessibility checks, and performance benchmarks - all covered before we talk about going live."
         type: new_set
         enabled: true
       -
@@ -394,7 +394,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "No commitment required — just a clear next step if it feels right"
+                text: "No commitment required - just a clear next step if it feels right"
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
@@ -421,7 +421,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Primarily PHP, Laravel, WordPress, and Statamic — with Alpine.js and Tailwind CSS on the front end. We choose tools based on what fits your project, not what we happen to be comfortable with."
+                text: "Primarily PHP, Laravel, WordPress, and Statamic - with Alpine.js and Tailwind CSS on the front end. We choose tools based on what fits your project, not what we happen to be comfortable with."
         type: new_set
         enabled: true
       -
@@ -433,7 +433,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Performance is baked into every build — not optimised as an afterthought. We target strong Core Web Vitals scores and test load speed across real devices before launch."
+                text: "Performance is baked into every build - not optimised as an afterthought. We target strong Core Web Vitals scores and test load speed across real devices before launch."
         type: new_set
         enabled: true
       -
@@ -457,7 +457,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Booking systems, calculators, configurators, member areas, API integrations — if you can describe it clearly, we can scope and build it."
+                text: "Yes. Booking systems, calculators, configurators, member areas, API integrations - if you can describe it clearly, we can scope and build it."
         type: new_set
         enabled: true
       -
@@ -469,7 +469,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Security is considered throughout every build — from server configuration to input validation. We don't cut corners, and we stay on top of updates as part of our support plans."
+                text: "Security is considered throughout every build - from server configuration to input validation. We don't cut corners, and we stay on top of updates as part of our support plans."
         type: new_set
         enabled: true
       -
@@ -493,7 +493,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. CRMs, ERPs, booking platforms, marketing tools, payment gateways — if it has an API, we can integrate it. We'll flag any limitations during scoping."
+                text: "Yes. CRMs, ERPs, booking platforms, marketing tools, payment gateways - if it has an API, we can integrate it. We'll flag any limitations during scoping."
         type: new_set
         enabled: true
       -
@@ -505,7 +505,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "A standard brochure site takes 10–12 weeks end-to-end. More complex builds depend entirely on scope — we'll give you a fixed timeline before work begins."
+                text: "A standard brochure site takes 10–12 weeks end-to-end. More complex builds depend entirely on scope - we'll give you a fixed timeline before work begins."
         type: new_set
         enabled: true
     type: faq_accordion
@@ -520,7 +520,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Slow, buggy, or held together with legacy code — if your site's technical debt is slowing you down, let's build it properly."
+            text: "Slow, buggy, or held together with legacy code - if your site's technical debt is slowing you down, let's build it properly."
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg

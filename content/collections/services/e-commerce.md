@@ -38,7 +38,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We design and build online stores that sell. Whether you need Shopify, WooCommerce, or a bespoke solution — your store should work as hard as you do. Sharp design, smooth checkout, built for your customers."
+            text: "We design and build online stores that sell. Whether you need Shopify, WooCommerce, or a bespoke solution - your store should work as hard as you do. Sharp design, smooth checkout, built for your customers."
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -84,13 +84,13 @@ page_builder:
       -
         id: tech_ec_01
         name: Shopify
-        description: "Our recommended choice for consumer brands — easy to manage, backed by a solid ecosystem, and built for growth."
+        description: "Our recommended choice for consumer brands - easy to manage, backed by a solid ecosystem, and built for growth."
         type: new_set
         enabled: true
       -
         id: tech_ec_02
         name: WooCommerce
-        description: "For clients who want eCommerce on WordPress — fully owned, highly configurable, and no monthly platform fees."
+        description: "For clients who want eCommerce on WordPress - fully owned, highly configurable, and no monthly platform fees."
         type: new_set
         enabled: true
       -
@@ -102,7 +102,7 @@ page_builder:
       -
         id: tech_ec_04
         name: Alpine.js
-        description: "Lightweight JavaScript for interactive store elements — quick-view modals, live filters, and smooth cart interactions."
+        description: "Lightweight JavaScript for interactive store elements - quick-view modals, live filters, and smooth cart interactions."
         type: new_set
         enabled: true
       -
@@ -114,13 +114,13 @@ page_builder:
       -
         id: tech_ec_06
         name: HTML5
-        description: "Semantic, accessible markup at the foundation of every store we build — structured for SEO, performance, and screen readers."
+        description: "Semantic, accessible markup at the foundation of every store we build - structured for SEO, performance, and screen readers."
         type: new_set
         enabled: true
       -
         id: tech_ec_07
         name: CSS3
-        description: "Modern CSS for layouts, animations, and visual polish across every eCommerce build — clean and purposeful."
+        description: "Modern CSS for layouts, animations, and visual polish across every eCommerce build - clean and purposeful."
         type: new_set
         enabled: true
       -
@@ -145,7 +145,7 @@ page_builder:
       -
         id: fg_ec_01
         title: 'Platform-Agnostic Strategy'
-        text: "We recommend the right platform for your business — not the easiest one for us to build on. Your goals drive the decision, not our tool preferences."
+        text: "We recommend the right platform for your business - not the easiest one for us to build on. Your goals drive the decision, not our tool preferences."
         type: new_set
         enabled: true
       -
@@ -179,7 +179,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We help you choose the right platform — Shopify, WooCommerce, or bespoke — based on your product type, team capabilities, and growth plans. Then we map the full customer journey before we build anything."
+                text: "We help you choose the right platform - Shopify, WooCommerce, or bespoke - based on your product type, team capabilities, and growth plans. Then we map the full customer journey before we build anything."
         type: new_set
         enabled: true
       -
@@ -192,7 +192,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Product pages, category layouts, filters, the cart, the checkout — every screen is designed to reduce friction and move customers toward buying. Conversion is built in, not added later."
+                text: "Product pages, category layouts, filters, the cart, the checkout - every screen is designed to reduce friction and move customers toward buying. Conversion is built in, not added later."
         type: new_set
         enabled: true
       -
@@ -205,7 +205,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Clean development with the integrations you actually need — payment gateways, shipping platforms, inventory tools, CRMs, and email marketing. Nothing unnecessary, nothing missing."
+                text: "Clean development with the integrations you actually need - payment gateways, shipping platforms, inventory tools, CRMs, and email marketing. Nothing unnecessary, nothing missing."
         type: new_set
         enabled: true
       -
@@ -322,7 +322,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Not sure which eCommerce platform is right for you? This short call is the best place to start — we will help you choose the right platform and scope the right build."
+            text: "Not sure which eCommerce platform is right for you? This short call is the best place to start - we will help you choose the right platform and scope the right build."
       -
         type: paragraph
         content:
@@ -346,7 +346,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'An honest platform comparison — Shopify vs WooCommerce and when each makes sense'
+                text: 'An honest platform comparison - Shopify vs WooCommerce and when each makes sense'
           -
             type: listItem
             content:
@@ -382,7 +382,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "No pressure — just the information you need to make the right call"
+                text: "No pressure - just the information you need to make the right call"
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
@@ -481,7 +481,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Subscription products, configurators, tiered pricing, trade portals, custom fulfilment logic — if you can describe it clearly, we can scope and build it."
+                text: "Yes. Subscription products, configurators, tiered pricing, trade portals, custom fulfilment logic - if you can describe it clearly, we can scope and build it."
         type: new_set
         enabled: true
       -
@@ -493,7 +493,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. We build with growth in mind — clean architecture, sensible integrations, and platforms that scale. We've migrated clients who outgrew their first platform, and we plan to avoid that wherever possible."
+                text: "Yes. We build with growth in mind - clean architecture, sensible integrations, and platforms that scale. We've migrated clients who outgrew their first platform, and we plan to avoid that wherever possible."
         type: new_set
         enabled: true
     type: faq_accordion

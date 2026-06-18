@@ -15,7 +15,7 @@ page_builder:
         content:
           -
             type: text
-            text: "From bespoke WordPress builds to Statamic, Shopify, and WooCommerce — we design and build websites that look sharp and actually convert."
+            text: "From bespoke WordPress builds to Statamic, Shopify, and WooCommerce - we design and build websites that look sharp and actually convert."
     type: text_hero
     enabled: true
   -

@@ -4,7 +4,7 @@ blueprint: service
 title: 'Shopify Websites'
 slug: shopify-websites
 card_text: 'Shopify stores built for growth. Custom themes, better UX, and a smoother buying experience from start to finish.'
-page_text: 'Shopify is one of the most capable eCommerce platforms available — but most Shopify stores look and feel exactly the same. We build fully custom Shopify themes from scratch, designed around your brand and your customers. No theme restrictions, no template limitations. A store that looks and performs like it was built specifically for you — because it was.'
+page_text: 'Shopify is one of the most capable eCommerce platforms available - but most Shopify stores look and feel exactly the same. We build fully custom Shopify themes from scratch, designed around your brand and your customers. No theme restrictions, no template limitations. A store that looks and performs like it was built specifically for you - because it was.'
 key_points:
   -
     id: kp_shop_01
@@ -38,7 +38,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We design and build custom Shopify stores — not generic themes with a logo dropped in. A properly built Shopify store that reflects your brand, converts your visitors, and makes managing your inventory actually straightforward."
+            text: "We design and build custom Shopify stores - not generic themes with a logo dropped in. A properly built Shopify store that reflects your brand, converts your visitors, and makes managing your inventory actually straightforward."
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -52,7 +52,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We've built Shopify stores across fashion, food, lifestyle, and specialist retail. Every store is designed around your products and your customers — not around what was easiest to build or what came with the theme."
+            text: "We've built Shopify stores across fashion, food, lifestyle, and specialist retail. Every store is designed around your products and your customers - not around what was easiest to build or what came with the theme."
     stats:
       -
         id: stat_shop_01
@@ -84,7 +84,7 @@ page_builder:
       -
         id: tech_shop_01
         name: Shopify
-        description: "The platform itself — our recommended choice for consumer brands who want a reliable, managed eCommerce solution with a proven ecosystem."
+        description: "The platform itself - our recommended choice for consumer brands who want a reliable, managed eCommerce solution with a proven ecosystem."
         type: new_set
         enabled: true
       -
@@ -96,7 +96,7 @@ page_builder:
       -
         id: tech_shop_03
         name: Alpine.js
-        description: "Lightweight JavaScript for interactive UI elements — quick-view modals, filters, and other front-end interactions that make stores feel polished."
+        description: "Lightweight JavaScript for interactive UI elements - quick-view modals, filters, and other front-end interactions that make stores feel polished."
         type: new_set
         enabled: true
       -
@@ -108,13 +108,13 @@ page_builder:
       -
         id: tech_shop_05
         name: HTML5
-        description: "Semantic, accessible markup underpinning every Shopify theme we build — correct structure for SEO, performance, and accessibility."
+        description: "Semantic, accessible markup underpinning every Shopify theme we build - correct structure for SEO, performance, and accessibility."
         type: new_set
         enabled: true
       -
         id: tech_shop_06
         name: CSS3
-        description: "Modern CSS for transitions, layouts, and visual detail — clean and purposeful alongside Tailwind for fast custom builds."
+        description: "Modern CSS for transitions, layouts, and visual detail - clean and purposeful alongside Tailwind for fast custom builds."
         type: new_set
         enabled: true
       -
@@ -133,7 +133,7 @@ page_builder:
       -
         id: fg_shop_01
         title: 'Built to Convert'
-        text: "Every element of your Shopify store — product pages, collections, cart, checkout — is designed to reduce friction and increase the likelihood of a purchase."
+        text: "Every element of your Shopify store - product pages, collections, cart, checkout - is designed to reduce friction and increase the likelihood of a purchase."
         type: new_set
         enabled: true
       -
@@ -145,7 +145,7 @@ page_builder:
       -
         id: fg_shop_03
         title: 'Performance That Sells'
-        text: "A slow store loses customers. We build Shopify stores that load fast on any device — because speed has a direct, measurable impact on your conversion rate."
+        text: "A slow store loses customers. We build Shopify stores that load fast on any device - because speed has a direct, measurable impact on your conversion rate."
         type: new_set
         enabled: true
     type: features_grid
@@ -180,7 +180,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Product pages, collection pages, the cart, the checkout — every screen is designed from scratch around your brand. You sign off the designs before development begins."
+                text: "Product pages, collection pages, the cart, the checkout - every screen is designed from scratch around your brand. You sign off the designs before development begins."
         type: new_set
         enabled: true
       -
@@ -193,7 +193,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Custom Liquid theme development, payment gateway setup, shipping configuration, and integrations with your other tools — all built to Shopify best practices."
+                text: "Custom Liquid theme development, payment gateway setup, shipping configuration, and integrations with your other tools - all built to Shopify best practices."
         type: new_set
         enabled: true
       -
@@ -370,7 +370,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "No pressure — just a clear next step if it feels like the right fit"
+                text: "No pressure - just a clear next step if it feels like the right fit"
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
@@ -421,7 +421,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We'll advise on the right Shopify plan for your business during scoping. Most clients start on Shopify Basic or Standard — you can upgrade as you grow."
+                text: "We'll advise on the right Shopify plan for your business during scoping. Most clients start on Shopify Basic or Standard - you can upgrade as you grow."
         type: new_set
         enabled: true
       -
@@ -433,7 +433,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Klaviyo, Mailchimp, HubSpot, Xero, fulfilment platforms — Shopify has a broad app ecosystem and we can build custom integrations where needed."
+                text: "Yes. Klaviyo, Mailchimp, HubSpot, Xero, fulfilment platforms - Shopify has a broad app ecosystem and we can build custom integrations where needed."
         type: new_set
         enabled: true
       -

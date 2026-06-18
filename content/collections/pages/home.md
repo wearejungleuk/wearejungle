@@ -43,7 +43,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We design and build websites that look sharp, run fast, and actually do what they're supposed to. No templates, no overcomplication — just solid work that helps your business grow."
+            text: "We design and build websites that look sharp, run fast, and actually do what they're supposed to. No templates, no overcomplication - just solid work that helps your business grow."
     cta: /contact
     cta_title: 'Get a Quote'
     type: services_with_icons
@@ -265,7 +265,7 @@ page_builder:
             enabled: true
           -
             id: waj_3
-            label: 'You own everything — no lock-ins'
+            label: 'You own everything - no lock-ins'
             type: new_set
             enabled: true
           -
@@ -290,7 +290,7 @@ page_builder:
   -
     id: stats_story_01
     above_title: 'Our Story'
-    title: 'Not our first rodeo — and it shows'
+    title: 'Not our first rodeo - and it shows'
     text:
       -
         type: paragraph
@@ -316,7 +316,7 @@ page_builder:
       -
         id: stat_3
         number: '12+'
-        label: 'Years in the game — still care about the details'
+        label: 'Years in the game - still care about the details'
         type: new_set
         enabled: true
       -
@@ -337,7 +337,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Strategy, design, development and support — all under one roof, all done properly."
+            text: "Strategy, design, development and support - all under one roof, all done properly."
     cta: /services
     cta_title: 'See All Services'
     cards:
@@ -356,7 +356,7 @@ page_builder:
       -
         id: card_03
         heading: 'Web Development'
-        card_text: 'Fast, secure and scalable builds on Statamic — no bloated page builders, no hidden complexity.'
+        card_text: 'Fast, secure and scalable builds on Statamic - no bloated page builders, no hidden complexity.'
         type: new_set
         enabled: true
       -
@@ -374,7 +374,7 @@ page_builder:
       -
         id: card_06
         heading: 'Hosting & Care'
-        card_text: 'Managed hosting with monitoring, backups and fast response times — so you can focus on your business.'
+        card_text: 'Managed hosting with monitoring, backups and fast response times - so you can focus on your business.'
         type: new_set
         enabled: true
     type: feature_cards
@@ -439,7 +439,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'We’re real people, and we actually enjoy meeting our clients. Zoom, Teams, or a pint — your call.'
+            text: 'We’re real people, and we actually enjoy meeting our clients. Zoom, Teams, or a pint - your call.'
     cta: /contact
     cta_title: 'Start a Project'
     images:

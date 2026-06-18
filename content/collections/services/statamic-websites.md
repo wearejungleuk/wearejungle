@@ -4,7 +4,7 @@ blueprint: service
 title: 'Statamic Websites'
 slug: statamic-websites
 card_text: 'Flexible, fast, and easy to manage. Statamic sites built for businesses that want control without the usual CMS headaches.'
-page_text: 'Statamic is the CMS we reach for when a project needs to be fast, flexible, and genuinely easy to manage. Built on Laravel with a flat-file architecture, it means no database overhead, exceptional performance out of the box, and a control panel your team will actually want to use. It is our CMS of choice — and once you use it, you will understand why.'
+page_text: 'Statamic is the CMS we reach for when a project needs to be fast, flexible, and genuinely easy to manage. Built on Laravel with a flat-file architecture, it means no database overhead, exceptional performance out of the box, and a control panel your team will actually want to use. It is our CMS of choice - and once you use it, you will understand why.'
 key_points:
   -
     id: kp_stat_01
@@ -31,14 +31,14 @@ page_builder:
   -
     id: services_hero_stat_01
     above_title: 'What We Do'
-    title: 'Statamic Websites — Fast, Secure, and Built to Last'
+    title: 'Statamic Websites - Fast, Secure, and Built to Last'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "We're one of the UK's most experienced Statamic agencies. Flat-file, lightning-fast, and genuinely easy for your team to manage — without the overhead, update anxiety, or security vulnerabilities that come with database-driven CMS platforms."
+            text: "We're one of the UK's most experienced Statamic agencies. Flat-file, lightning-fast, and genuinely easy for your team to manage - without the overhead, update anxiety, or security vulnerabilities that come with database-driven CMS platforms."
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -69,7 +69,7 @@ page_builder:
       -
         id: stat_stat_03
         number: '100%'
-        label: 'Flat-File — No Database'
+        label: 'Flat-File - No Database'
         type: new_set
         enabled: true
     cta_title: 'Book a Call'
@@ -79,12 +79,12 @@ page_builder:
     enabled: true
   -
     id: tech_carousel_stat_01
-    intro_text: 'The Statamic stack — lean, fast, and built for serious websites.'
+    intro_text: 'The Statamic stack - lean, fast, and built for serious websites.'
     technologies:
       -
         id: tech_stat_01
         name: Statamic
-        description: "The heart of every build. A flat-file CMS built on Laravel — fast, secure, and genuinely easy for your team to use."
+        description: "The heart of every build. A flat-file CMS built on Laravel - fast, secure, and genuinely easy for your team to use."
         type: new_set
         enabled: true
       -
@@ -102,7 +102,7 @@ page_builder:
       -
         id: tech_stat_04
         name: Laravel
-        description: "The PHP framework powering Statamic. Robust, well-tested, and backed by a large community — the solid foundation beneath every Statamic site."
+        description: "The PHP framework powering Statamic. Robust, well-tested, and backed by a large community - the solid foundation beneath every Statamic site."
         type: new_set
         enabled: true
       -
@@ -114,19 +114,19 @@ page_builder:
       -
         id: tech_stat_06
         name: HTML5
-        description: "Semantic, accessible markup that forms the foundation of every Statamic build — correct structure from the first template."
+        description: "Semantic, accessible markup that forms the foundation of every Statamic build - correct structure from the first template."
         type: new_set
         enabled: true
       -
         id: tech_stat_07
         name: CSS3
-        description: "Modern CSS for layouts, animations, and visual polish — written cleanly alongside Tailwind for maintainable, scalable stylesheets."
+        description: "Modern CSS for layouts, animations, and visual polish - written cleanly alongside Tailwind for maintainable, scalable stylesheets."
         type: new_set
         enabled: true
       -
         id: tech_stat_08
         name: JavaScript
-        description: "Progressive JavaScript for interactive behaviour — used precisely where it adds value, working alongside Alpine.js for a lightweight result."
+        description: "Progressive JavaScript for interactive behaviour - used precisely where it adds value, working alongside Alpine.js for a lightweight result."
         type: new_set
         enabled: true
     type: tech_carousel
@@ -139,7 +139,7 @@ page_builder:
       -
         id: fg_stat_01
         title: 'Speed Without Compromise'
-        text: "Flat-file architecture means no database queries and no unnecessary overhead. Statamic sites are fast by design — and the performance scores reflect it."
+        text: "Flat-file architecture means no database queries and no unnecessary overhead. Statamic sites are fast by design - and the performance scores reflect it."
         type: new_set
         enabled: true
       -
@@ -151,7 +151,7 @@ page_builder:
       -
         id: fg_stat_03
         title: 'Built for Your Team'
-        text: "The Statamic control panel is built for humans. Your team can manage content confidently from day one — no developer required for everyday updates."
+        text: "The Statamic control panel is built for humans. Your team can manage content confidently from day one - no developer required for everyday updates."
         type: new_set
         enabled: true
     type: features_grid
@@ -186,7 +186,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Bespoke visual design built around your brand. Every page is designed before development begins — you see and sign off the site before a line of code is written."
+                text: "Bespoke visual design built around your brand. Every page is designed before development begins - you see and sign off the site before a line of code is written."
         type: new_set
         enabled: true
       -
@@ -212,7 +212,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We go live, run final checks, and walk your team through the CMS. Statamic's control panel is intuitive — most clients are comfortable managing their content within minutes. 72-day warranty included."
+                text: "We go live, run final checks, and walk your team through the CMS. Statamic's control panel is intuitive - most clients are comfortable managing their content within minutes. 72-day warranty included."
         type: new_set
         enabled: true
     type: process_carousel
@@ -376,7 +376,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "No pressure — just the information you need to make the right decision"
+                text: "No pressure - just the information you need to make the right decision"
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
@@ -403,7 +403,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Statamic is a flat-file CMS built on Laravel. It stores content as files rather than in a database — which makes it faster, more secure, and easier to version-control than database-driven platforms like WordPress."
+                text: "Statamic is a flat-file CMS built on Laravel. It stores content as files rather than in a database - which makes it faster, more secure, and easier to version-control than database-driven platforms like WordPress."
         type: new_set
         enabled: true
       -
@@ -427,7 +427,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. The Statamic control panel is clean and intuitive. We structure the CMS around your content — most clients are managing their own site comfortably within the first week."
+                text: "Yes. The Statamic control panel is clean and intuitive. We structure the CMS around your content - most clients are managing their own site comfortably within the first week."
         type: new_set
         enabled: true
       -
@@ -463,7 +463,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. We've migrated a number of WordPress sites to Statamic. Content migration is handled as part of the project — we make the transition as smooth as possible."
+                text: "Yes. We've migrated a number of WordPress sites to Statamic. Content migration is handled as part of the project - we make the transition as smooth as possible."
         type: new_set
         enabled: true
       -
@@ -475,7 +475,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Our standard Statamic brochure sites take 10–12 weeks. Larger or more complex builds take longer — we'll give you a clear timeline before we start."
+                text: "Our standard Statamic brochure sites take 10–12 weeks. Larger or more complex builds take longer - we'll give you a clear timeline before we start."
         type: new_set
         enabled: true
       -
@@ -502,7 +502,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Managing your website shouldn't feel like a chore. Statamic changes that — fast, clean, and genuinely easy to use. Let's talk."
+            text: "Managing your website shouldn't feel like a chore. Statamic changes that - fast, clean, and genuinely easy to use. Let's talk."
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg

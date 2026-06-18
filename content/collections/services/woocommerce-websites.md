@@ -3,8 +3,8 @@ id: 63fa56e7-0000-0000-0000-000000000007
 blueprint: service
 title: 'WooCommerce Websites'
 slug: woocommerce-websites
-card_text: 'Powerful eCommerce on WordPress. Flexible, scalable, and tailored to how you sell — without the usual limitations.'
-page_text: 'WooCommerce gives you the full power of WordPress with flexible eCommerce on top. We build WooCommerce stores tailored to how you sell — whether that is simple product listings, complex variable products, subscriptions, or custom checkout flows. Scalable, easy to manage, and designed to convert from day one.'
+card_text: 'Powerful eCommerce on WordPress. Flexible, scalable, and tailored to how you sell - without the usual limitations.'
+page_text: 'WooCommerce gives you the full power of WordPress with flexible eCommerce on top. We build WooCommerce stores tailored to how you sell - whether that is simple product listings, complex variable products, subscriptions, or custom checkout flows. Scalable, easy to manage, and designed to convert from day one.'
 key_points:
   -
     id: kp_woo_01
@@ -38,7 +38,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We design and build WooCommerce stores that convert. The flexibility of WordPress combined with the power of WooCommerce — custom-built for your products, your customers, and the way you sell."
+            text: "We design and build WooCommerce stores that convert. The flexibility of WordPress combined with the power of WooCommerce - custom-built for your products, your customers, and the way you sell."
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -52,7 +52,7 @@ page_builder:
         content:
           -
             type: text
-            text: "WooCommerce powers over 25% of online stores worldwide — and with the right build, it's one of the most powerful and flexible eCommerce platforms available. We build WooCommerce stores that are fast, clean, and built to grow with your business."
+            text: "WooCommerce powers over 25% of online stores worldwide - and with the right build, it's one of the most powerful and flexible eCommerce platforms available. We build WooCommerce stores that are fast, clean, and built to grow with your business."
     stats:
       -
         id: stat_woo_01
@@ -84,7 +84,7 @@ page_builder:
       -
         id: tech_woo_01
         name: WooCommerce
-        description: "The eCommerce engine itself — powerful, flexible, and fully owned. No monthly platform fees and no restrictions on how your store is built."
+        description: "The eCommerce engine itself - powerful, flexible, and fully owned. No monthly platform fees and no restrictions on how your store is built."
         type: new_set
         enabled: true
       -
@@ -96,7 +96,7 @@ page_builder:
       -
         id: tech_woo_03
         name: Alpine.js
-        description: "Lightweight JavaScript for smooth store interactions — quick-view modals, live filters, and polished cart experiences."
+        description: "Lightweight JavaScript for smooth store interactions - quick-view modals, live filters, and polished cart experiences."
         type: new_set
         enabled: true
       -
@@ -108,13 +108,13 @@ page_builder:
       -
         id: tech_woo_05
         name: HTML5
-        description: "Semantic, accessible markup forming the backbone of every WooCommerce build — built correctly for SEO, performance, and accessibility."
+        description: "Semantic, accessible markup forming the backbone of every WooCommerce build - built correctly for SEO, performance, and accessibility."
         type: new_set
         enabled: true
       -
         id: tech_woo_06
         name: CSS3
-        description: "Modern CSS for layouts, transitions, and visual polish across every WooCommerce theme — clean and maintainable."
+        description: "Modern CSS for layouts, transitions, and visual polish across every WooCommerce theme - clean and maintainable."
         type: new_set
         enabled: true
       -
@@ -145,7 +145,7 @@ page_builder:
       -
         id: fg_woo_01
         title: 'Conversion From the Ground Up'
-        text: "Product pages, filters, cart and checkout — every WooCommerce element is designed to move customers toward buying. Conversion is built in, not bolted on afterwards."
+        text: "Product pages, filters, cart and checkout - every WooCommerce element is designed to move customers toward buying. Conversion is built in, not bolted on afterwards."
         type: new_set
         enabled: true
       -
@@ -157,7 +157,7 @@ page_builder:
       -
         id: fg_woo_03
         title: 'Performance Under Pressure'
-        text: "Busy stores need fast sites. We optimise every WooCommerce build for speed — even with large product catalogues and high traffic volumes."
+        text: "Busy stores need fast sites. We optimise every WooCommerce build for speed - even with large product catalogues and high traffic volumes."
         type: new_set
         enabled: true
     type: features_grid
@@ -179,7 +179,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We map out your product structure, payment options, shipping setup, and integrations before we touch a line of code. WooCommerce is flexible — planning upfront means we configure it the right way for your business."
+                text: "We map out your product structure, payment options, shipping setup, and integrations before we touch a line of code. WooCommerce is flexible - planning upfront means we configure it the right way for your business."
         type: new_set
         enabled: true
       -
@@ -192,7 +192,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Product pages, category layouts, filters, cart, checkout — every screen is designed to reduce friction and move customers toward buying. You sign off the designs before development begins."
+                text: "Product pages, category layouts, filters, cart, checkout - every screen is designed to reduce friction and move customers toward buying. You sign off the designs before development begins."
         type: new_set
         enabled: true
       -
@@ -205,7 +205,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Clean WooCommerce development with the integrations you actually need — payment gateways, shipping platforms, CRMs, email tools. No bloat, no unnecessary plugins eating into your performance."
+                text: "Clean WooCommerce development with the integrations you actually need - payment gateways, shipping platforms, CRMs, email tools. No bloat, no unnecessary plugins eating into your performance."
         type: new_set
         enabled: true
       -
@@ -382,7 +382,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "No pressure — just a clear next step if it's the right fit"
+                text: "No pressure - just a clear next step if it's the right fit"
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
@@ -481,7 +481,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Subscription products, trade pricing tiers, custom checkout flows, bespoke shipping rules — WooCommerce is highly extensible and we can build custom functionality where the standard features fall short."
+                text: "Yes. Subscription products, trade pricing tiers, custom checkout flows, bespoke shipping rules - WooCommerce is highly extensible and we can build custom functionality where the standard features fall short."
         type: new_set
         enabled: true
     type: faq_accordion
@@ -496,7 +496,7 @@ page_builder:
         content:
           -
             type: text
-            text: "A badly built store costs more in the long run. Let's do it right the first time — fast, clean, and built to sell."
+            text: "A badly built store costs more in the long run. Let's do it right the first time - fast, clean, and built to sell."
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg
