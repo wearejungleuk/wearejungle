@@ -1,0 +1,21 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: head_scripts
+            field:
+              type: textarea
+              display: 'Head Scripts'
+          -
+            handle: body_scripts
+            field:
+              type: textarea
+              display: 'Body Scripts'
+          -
+            handle: footer_scripts
+            field:
+              type: textarea
+              display: 'Footer Scripts'
