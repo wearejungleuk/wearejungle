@@ -1,4 +1,35 @@
-<section class="py-16 lg:py-24 bg-white rounded-[60px] lg:rounded-[100px] mb-16 lg:mb-24">
+<section class="py-16 lg:py-24 bg-white rounded-[60px] lg:rounded-[100px] mb-16 lg:mb-24"
+         x-data
+         x-init="$nextTick(() => {
+             const sw = new Swiper($refs.blogSlider, {
+                 slidesPerView: 1.1,
+                 spaceBetween: 16,
+                 loop: false,
+                 speed: 600,
+                 navigation: {
+                     nextEl: $refs.blogNext,
+                     prevEl: $refs.blogPrev,
+                 },
+                 breakpoints: {
+                     640: { slidesPerView: 2, spaceBetween: 24 },
+                     1024: { slidesPerView: 3, spaceBetween: 40 },
+                 },
+                 on: {
+                     init(s) { updateBlogNav(s) },
+                     slideChange(s) { updateBlogNav(s) }
+                 }
+             });
+             function updateBlogNav(s) {
+                 const prev = $refs.blogPrev;
+                 const next = $refs.blogNext;
+                 prev.disabled = s.isBeginning;
+                 next.disabled = s.isEnd;
+                 prev.classList.toggle('opacity-50', s.isBeginning);
+                 next.classList.toggle('opacity-50', s.isEnd);
+                 prev.classList.toggle('cursor-not-allowed', s.isBeginning);
+                 next.classList.toggle('cursor-not-allowed', s.isEnd);
+             }
+         })">
     <div class="container">
         <div class="text-center mb-12 lg:mb-16 js-fade-up">
             {{ if above_title }}
@@ -9,28 +40,39 @@
             {{ /if }}
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 mb-12 lg:mb-16">
-            {{ collection:blog sort="date:desc" limit="3" }}
-            <article class="flex flex-col js-fade-up">
-                {{ if featured_image }}
-                <a href="{{ url }}" class="block overflow-hidden mb-5" style="border-radius: 10px">
-                    {{ glide:featured_image width="700" height="470" fit="crop_focal" }}
-                    <img src="{{ url }}" alt="{{ title }}" class="w-full aspect-[3/2] object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
-                    {{ /glide:featured_image }}
-                </a>
-                {{ /if }}
-                <h3 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-brand-primary mb-3">
-                    <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title }}</a>
-                </h3>
-                {{ if excerpt }}
-                <p class="text-[15px] lg:text-[16px] text-brand-primary leading-relaxed mb-4">{{ excerpt }}</p>
-                {{ /if }}
-                <a href="{{ url }}" class="inline-flex items-center gap-3 font-heading uppercase text-brand-primary hover:text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200 mt-auto">
-                    Read Blog
-                    <i class="fa-sharp fa-regular fa-arrow-up-right text-[12px]"></i>
-                </a>
-            </article>
-            {{ /collection:blog }}
+        <div class="swiper js-fade-up mb-6 lg:mb-16" x-ref="blogSlider">
+            <div class="swiper-wrapper">
+                {{ collection:blog sort="date:desc" limit="3" }}
+                <article class="swiper-slide !h-auto flex flex-col">
+                    {{ if featured_image }}
+                    <a href="{{ url }}" class="block overflow-hidden mb-5" style="border-radius: 10px">
+                        {{ glide:featured_image width="700" height="470" fit="crop_focal" }}
+                        <img src="{{ url }}" alt="{{ title }}" class="w-full aspect-[3/2] object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                        {{ /glide:featured_image }}
+                    </a>
+                    {{ /if }}
+                    <h3 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-brand-primary mb-3">
+                        <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title }}</a>
+                    </h3>
+                    {{ if excerpt }}
+                    <p class="text-[15px] lg:text-[16px] text-brand-primary leading-relaxed mb-4">{{ excerpt }}</p>
+                    {{ /if }}
+                    <a href="{{ url }}" class="inline-flex items-center gap-3 font-heading uppercase text-brand-primary hover:text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200 mt-auto">
+                        Read Blog
+                        <i class="fa-sharp fa-regular fa-arrow-up-right text-[12px]"></i>
+                    </a>
+                </article>
+                {{ /collection:blog }}
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-2 mb-10 lg:hidden js-fade-up">
+            <button x-ref="blogPrev" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black" style="border-radius: 12px">
+                <i class="fa-sharp fa-regular fa-chevron-left"></i>
+            </button>
+            <button x-ref="blogNext" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black" style="border-radius: 12px">
+                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+            </button>
         </div>
 
         <div class="text-center js-fade-up">

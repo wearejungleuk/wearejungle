@@ -6,7 +6,126 @@
             {{ /if }}
         </div>
         {{ blocks }}
-        <div class="flex flex-col gap-12 md:gap-0 md:flex-row md:flex-wrap md:-mx-4 js-fade-up">
+
+        {{# Mobile slider — hidden on md+ #}}
+        <div class="md:hidden mb-12"
+             x-data
+             x-init="$nextTick(() => {
+                 const swEl = $el.querySelector('.swiper');
+                 const prevBtn = $el.querySelector('.wb-prev');
+                 const nextBtn = $el.querySelector('.wb-next');
+                 const sw = new Swiper(swEl, {
+                     slidesPerView: 1.1,
+                     spaceBetween: 16,
+                     loop: false,
+                     speed: 600,
+                     navigation: { nextEl: nextBtn, prevEl: prevBtn },
+                     on: {
+                         init(s) { updateWbNav(s) },
+                         slideChange(s) { updateWbNav(s) }
+                     }
+                 });
+                 function updateWbNav(s) {
+                     prevBtn.disabled = s.isBeginning;
+                     nextBtn.disabled = s.isEnd;
+                     prevBtn.classList.toggle('opacity-50', s.isBeginning);
+                     nextBtn.classList.toggle('opacity-50', s.isEnd);
+                     prevBtn.classList.toggle('cursor-not-allowed', s.isBeginning);
+                     nextBtn.classList.toggle('cursor-not-allowed', s.isEnd);
+                 }
+             })">
+            <div class="flex items-center justify-end gap-2 mb-4">
+                <button class="wb-prev w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black" style="border-radius: 12px">
+                    <i class="fa-sharp fa-regular fa-chevron-left"></i>
+                </button>
+                <button class="wb-next w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black" style="border-radius: 12px">
+                    <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    {{ client }}
+                    <div class="swiper-slide !h-auto">
+                        <div class="relative overflow-hidden rounded-[20px] h-[65vw] min-h-[220px] mb-4">
+                            {{ preview_background_image }}
+                            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="absolute w-full top-0 left-0 h-full object-cover object-center">
+                            {{ /preview_background_image }}
+                            {{ if background_video }}
+                                {{ if background_video | contains:".mp4" }}
+                                    <video playsinline autoplay muted loop class="w-full h-full absolute object-center object-cover top-0 left-0">
+                                        <source src="{{ background_video }}" type="video/mp4">
+                                    </video>
+                                {{ elseif background_video | contains:".webm" }}
+                                    <video playsinline autoplay muted loop class="w-full h-full absolute object-center object-cover top-0 left-0">
+                                        <source src="{{ background_video }}" type="video/webm">
+                                    </video>
+                                {{ elseif background_video | contains:"youtube.com" }}
+                                    <iframe
+                                        src="https://www.youtube.com/embed/{{ background_video | replace:'https://www.youtube.com/watch?v=','' }}?autoplay=1&mute=1&loop=1&playlist={{ video | replace:'https://www.youtube.com/watch?v=','' }}"
+                                        frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture"
+                                        class="w-full h-full absolute object-cover top-0 left-0">
+                                    </iframe>
+                                {{ elseif background_video | contains:"youtu.be" }}
+                                    <iframe
+                                        src="https://www.youtube.com/embed/{{ background_video | replace:'https://youtu.be/','' }}?autoplay=1&mute=1&loop=1&playlist={{ video | replace:'https://youtu.be/','' }}"
+                                        frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture"
+                                        class="w-full h-full absolute object-cover top-0 left-0">
+                                    </iframe>
+                                {{ elseif background_video | contains:"vimeo.com" }}
+                                    <iframe
+                                        src="https://player.vimeo.com/video/{{ background_video | explode:'/' | last }}?autoplay=1&muted=1&loop=1&background=1"
+                                        frameborder="0"
+                                        allow="autoplay; fullscreen; picture-in-picture"
+                                        class="absolute top-0 left-0 w-full h-full min-h-full min-w-full"
+                                        style="transform: translate(-50%, -50%); top: 50%; left: 50%;">
+                                    </iframe>
+                                {{ /if }}
+                            {{ /if }}
+                            <div class="absolute bg-black opacity-60 top-0 left-0 w-full h-full"></div>
+                            {{ preview_image }}
+                            <div class="overflow-hidden absolute w-[90%] h-[70%] top-[15%] rounded-[10px] left-[5%] z-[3]">
+                                <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="object-cover object-top w-[101%] h-full !max-w-[101%]">
+                            </div>
+                            {{ /preview_image }}
+                        </div>
+                        <h3 class="font-heading uppercase text-[22px] text-white">{{ title }}</h3>
+                        <div class="mt-2 text-white text-[15px]">{{ preview_text }}</div>
+                    </div>
+                    {{ /client }}
+                </div>
+            </div>
+            <div class="mt-6 rounded-[20px] bg-[#1B5DF8] p-8">
+                <div class="flex gap-4">
+                    <h3 class="font-heading uppercase text-[25px] flex text-white">
+                        <span class="flex-1">{{ block_title }}</span>
+                        <div class="w-16 h-16">
+                            {{ partial:components/icons.thumb }}
+                        </div>
+                    </h3>
+                </div>
+                <div class="text-[18px] text-white">
+                    {{ block_text }}
+                </div>
+                {{ if ctas }}
+                    <div class="flex gap-8 mt-4 flex-wrap">
+                        {{ ctas }}
+                        {{ if cta }}
+                            {{ btn_classes = "" }}
+                            {{ if index == 1 }}
+                                {{ btn_classes = "button__secondary" }}
+                            {{ /if }}
+                            {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" classes="{ btn_classes }" }}
+                        {{ /if }}
+                        {{ /ctas }}
+                    </div>
+                {{ /if }}
+            </div>
+        </div>
+
+        {{# Desktop layout — hidden on mobile #}}
+        <div class="hidden md:flex md:flex-row md:flex-wrap md:-mx-4 js-fade-up">
             {{ client }}
             <div class="w-full md:w-1/2 md:px-8 relative md:mb-[50px] {{ switch between='|md:translate-y-[100px]' }}">
                 <div class="relative overflow-hidden rounded-[20px] min-h-[400px] h-[50vh] lg:h-[80vh] mb-6 lg:mb-8">
