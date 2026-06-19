@@ -54,8 +54,8 @@ page_builder:
             text: "Today, we combine strategy, design and development to create websites that are sharp, commercial, and built to last. And while the work's picked up recognition along the way, what matters most to us is simple - trust, repeat clients, and results that speak for themselves."
     type: about_hero
     enabled: true
-    image_left: '2wearejunglebrandshoot-iggy&lime-127.jpg'
-    image_right: '2burger-wearejunglebrandshoot-iggy&lime-89.jpg'
+    image_left: 'wearejunglebrandshoot-iggy&lime-201.jpg'
+    image_right: we-are-julius.jpg
   -
     id: about_story_01
     above_title: 'About Us'
@@ -77,9 +77,9 @@ page_builder:
     cta_title: 'Book a Call'
     type: about_story
     enabled: true
-    image_1: '3wearejunglebrandshoot-iggy&lime-127.jpg'
-    image_2: '2brad-wearejunglebrandshoot-iggy&lime-169.jpg'
-    image_3: '2kay-wearejunglebrandshoot-iggy&lime-177.jpg'
+    image_1: 'wearejunglebrandshoot-iggy&lime-23.jpg'
+    image_2: 'wearejunglebrandshoot-iggy&lime-91.jpg'
+    image_3: 'wearejunglebrandshoot-iggy&lime-119.jpg'
     book_appointment: false
   -
     id: feature_cards_about_01
@@ -264,5 +264,5 @@ sitemap_priority: '0.5'
 sitemap_changefreq: monthly
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1781723584
+updated_at: 1781849538
 ---

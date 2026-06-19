@@ -9,6 +9,18 @@ blog_categories:
   - advice
 author_name: 'Brad Goddard'
 author_role: 'Founder, We Are Jungle'
+meta_title: 'The Benefits of a Shopify Website | We Are Jungle'
+meta_description: "Thinking about selling online? Shopify has become the go-to eCommerce platform for good reason. Here's an honest look at what makes it such a strong choice - and what to watch out for."
+use_meta_keywords: false
+no_index_page: false
+no_follow_links: false
+sitemap_priority: '0.8'
+sitemap_changefreq: monthly
+override_twitter_settings: false
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1781850694
+featured_image: lhwatchtrade-website.jpg
+author_avatar: '2brad-wearejunglebrandshoot-iggy&lime-169.jpg'
 content:
   -
     type: paragraph
@@ -35,7 +47,7 @@ content:
     content:
       -
         type: text
-        text: "That said, if you want a Shopify store that looks unique, converts well, and stands apart from the thousands of other Shopify stores using the same theme, you will want custom design and development. That is where we come in - but even with a custom build, Shopify moves faster than most alternatives."
+        text: 'That said, if you want a Shopify store that looks unique, converts well, and stands apart from the thousands of other Shopify stores using the same theme, you will want custom design and development. That is where we come in - but even with a custom build, Shopify moves faster than most alternatives.'
   -
     type: heading
     attrs:
@@ -49,13 +61,13 @@ content:
     content:
       -
         type: text
-        text: "Accepting payments online used to mean setting up a merchant account, choosing a payment gateway, and navigating PCI compliance on your own. Shopify Payments (powered by Stripe) handles all of this natively. You can accept cards, Apple Pay, Google Pay, and a growing list of buy-now-pay-later options without any additional setup."
+        text: 'Accepting payments online used to mean setting up a merchant account, choosing a payment gateway, and navigating PCI compliance on your own. Shopify Payments (powered by Stripe) handles all of this natively. You can accept cards, Apple Pay, Google Pay, and a growing list of buy-now-pay-later options without any additional setup.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "If you prefer a different payment provider, Shopify integrates with most major gateways - though you will pay a small transaction fee for each sale if you use a third-party payment provider instead of Shopify Payments. Worth factoring into your decision."
+        text: 'If you prefer a different payment provider, Shopify integrates with most major gateways - though you will pay a small transaction fee for each sale if you use a third-party payment provider instead of Shopify Payments. Worth factoring into your decision.'
   -
     type: heading
     attrs:
@@ -89,13 +101,13 @@ content:
     content:
       -
         type: text
-        text: "The Shopify App Store has thousands of apps covering everything from email marketing and loyalty programmes to inventory management, reviews, and advanced reporting. Most of the tools your business already uses - Klaviyo, Mailchimp, Google Analytics, Meta Ads, Xero - have native Shopify integrations."
+        text: 'The Shopify App Store has thousands of apps covering everything from email marketing and loyalty programmes to inventory management, reviews, and advanced reporting. Most of the tools your business already uses - Klaviyo, Mailchimp, Google Analytics, Meta Ads, Xero - have native Shopify integrations.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "The flip side is that relying heavily on apps adds cost and can introduce performance issues. A well-built Shopify store uses apps selectively - native functionality first, apps only where genuinely needed."
+        text: 'The flip side is that relying heavily on apps adds cost and can introduce performance issues. A well-built Shopify store uses apps selectively - native functionality first, apps only where genuinely needed.'
   -
     type: heading
     attrs:
@@ -115,7 +127,7 @@ content:
     content:
       -
         type: text
-        text: "This matters more than people realise at the point of choosing a platform. The platform you choose is the one your team will use every day for years. A good admin experience has a real impact on how efficiently your business operates."
+        text: 'This matters more than people realise at the point of choosing a platform. The platform you choose is the one your team will use every day for years. A good admin experience has a real impact on how efficiently your business operates.'
   -
     type: heading
     attrs:
@@ -129,7 +141,7 @@ content:
     content:
       -
         type: text
-        text: "Shopify gives you the basics of SEO out of the box - editable page titles and meta descriptions, canonical URLs, auto-generated sitemaps, and clean URL structures. It is not perfect (some legacy URL patterns can be frustrating), but it provides a solid foundation."
+        text: 'Shopify gives you the basics of SEO out of the box - editable page titles and meta descriptions, canonical URLs, auto-generated sitemaps, and clean URL structures. It is not perfect (some legacy URL patterns can be frustrating), but it provides a solid foundation.'
   -
     type: paragraph
     content:
@@ -149,13 +161,13 @@ content:
     content:
       -
         type: text
-        text: "Shopify works for a business selling ten products and for businesses doing tens of millions in revenue. Shopify Plus - the enterprise tier - powers some of the biggest direct-to-consumer brands in the world. You are not going to outgrow the platform."
+        text: 'Shopify works for a business selling ten products and for businesses doing tens of millions in revenue. Shopify Plus - the enterprise tier - powers some of the biggest direct-to-consumer brands in the world. You are not going to outgrow the platform.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "The monthly cost increases as you grow (Shopify Plus starts from $2,500/month), but for most small and medium businesses, the standard plans (Basic through Advanced) are more than sufficient."
+        text: 'The monthly cost increases as you grow (Shopify Plus starts from $2,500/month), but for most small and medium businesses, the standard plans (Basic through Advanced) are more than sufficient.'
   -
     type: heading
     attrs:
@@ -169,7 +181,7 @@ content:
     content:
       -
         type: text
-        text: "Shopify is not for everyone. If your products are highly complex - extensive variations, bespoke pricing tiers, complicated bundles - WooCommerce or a bespoke build may give you more control. If you need tight integration with a specific business system (an ERP, a bespoke CRM, a legacy stock system), a headless or custom approach might be better."
+        text: 'Shopify is not for everyone. If your products are highly complex - extensive variations, bespoke pricing tiers, complicated bundles - WooCommerce or a bespoke build may give you more control. If you need tight integration with a specific business system (an ERP, a bespoke CRM, a legacy stock system), a headless or custom approach might be better.'
   -
     type: paragraph
     content:
@@ -189,13 +201,13 @@ content:
     content:
       -
         type: text
-        text: "For most product-based businesses - especially those without a large internal technical team - Shopify is an excellent choice. It is stable, secure, and built for selling. When we recommend it to clients, it is because we genuinely believe it is the right platform for how they sell."
+        text: 'For most product-based businesses - especially those without a large internal technical team - Shopify is an excellent choice. It is stable, secure, and built for selling. When we recommend it to clients, it is because we genuinely believe it is the right platform for how they sell.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "If you are weighing up Shopify against WooCommerce or another platform, "
+        text: 'If you are weighing up Shopify against WooCommerce or another platform, '
       -
         type: text
         marks:
@@ -203,18 +215,8 @@ content:
             type: link
             attrs:
               href: 'https://calendly.com/wearejungle/introduction-meeting'
-        text: "book a free call with us"
+        text: 'book a free call with us'
       -
         type: text
-        text: ". We have built on both and will give you an honest steer based on your specific business."
-meta_title: 'The Benefits of a Shopify Website | We Are Jungle'
-meta_description: "Thinking about selling online? Shopify has become the go-to eCommerce platform for good reason. Here's an honest look at what makes it such a strong choice - and what to watch out for."
-use_meta_keywords: false
-no_index_page: false
-no_follow_links: false
-sitemap_priority: '0.8'
-sitemap_changefreq: monthly
-override_twitter_settings: false
-updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1750240000
+        text: '. We have built on both and will give you an honest steer based on your specific business.'
 ---

@@ -9,6 +9,18 @@ blog_categories:
   - advice
 author_name: 'Brad Goddard'
 author_role: 'Founder, We Are Jungle'
+meta_title: 'Meet We Are Jungle - Web Design Agency Portsmouth | We Are Jungle'
+meta_description: "We are a small, sharp web design agency based in Portsmouth. Here's who we are, what we do, and why we do things the way we do."
+use_meta_keywords: false
+no_index_page: false
+no_follow_links: false
+sitemap_priority: '0.8'
+sitemap_changefreq: monthly
+override_twitter_settings: false
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1781850005
+featured_image: 'wearejunglebrandshoot-iggy&lime-205.jpg'
+author_avatar: '2brad-wearejunglebrandshoot-iggy&lime-169.jpg'
 content:
   -
     type: paragraph
@@ -21,7 +33,7 @@ content:
     content:
       -
         type: text
-        text: "We have been doing this for over twelve years. In that time, we have built everything from simple brochure sites to complex eCommerce platforms, worked with startups and established brands, and launched hundreds of projects. Here is a proper introduction."
+        text: 'We have been doing this for over twelve years. In that time, we have built everything from simple brochure sites to complex eCommerce platforms, worked with startups and established brands, and launched hundreds of projects. Here is a proper introduction.'
   -
     type: heading
     attrs:
@@ -35,13 +47,13 @@ content:
     content:
       -
         type: text
-        text: "We Are Jungle was founded by Brad Goddard. What started as a freelance web design operation has grown into a focused agency with a small, experienced team - designers, developers, and strategists who have all been doing this for a long time."
+        text: 'We Are Jungle was founded by Brad Goddard. What started as a freelance web design operation has grown into a focused agency with a small, experienced team - designers, developers, and strategists who have all been doing this for a long time.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "We are small by choice. A small team means you get our best people on your project every time, not a junior handed your work after the sales process is done. The people you meet at the start are the people who build your site."
+        text: 'We are small by choice. A small team means you get our best people on your project every time, not a junior handed your work after the sales process is done. The people you meet at the start are the people who build your site.'
   -
     type: heading
     attrs:
@@ -55,7 +67,7 @@ content:
     content:
       -
         type: text
-        text: "We design and build websites. That is the core of it. Specifically:"
+        text: 'We design and build websites. That is the core of it. Specifically:'
   -
     type: bulletList
     content:
@@ -162,13 +174,13 @@ content:
     content:
       -
         type: text
-        text: "We work on fixed-price projects with a defined scope, a clear timeline, and no surprises. Every project starts with a discovery call, followed by a detailed proposal. You sign off the design before development begins. You know what it costs and when it lands before we write a line of code."
+        text: 'We work on fixed-price projects with a defined scope, a clear timeline, and no surprises. Every project starts with a discovery call, followed by a detailed proposal. You sign off the design before development begins. You know what it costs and when it lands before we write a line of code.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "We are direct. If something is a bad idea, we will say so. If a cheaper solution exists that does the same job, we will tell you. Our business runs on repeat clients and referrals - we cannot afford to give anything other than straight advice."
+        text: 'We are direct. If something is a bad idea, we will say so. If a cheaper solution exists that does the same job, we will tell you. Our business runs on repeat clients and referrals - we cannot afford to give anything other than straight advice.'
   -
     type: heading
     attrs:
@@ -182,13 +194,13 @@ content:
     content:
       -
         type: text
-        text: "Portsmouth is our home. We work with clients across the UK - from London to Edinburgh - but our roots are on the south coast. Portsmouth is a city that punches above its weight: a strong creative community, excellent universities, and a growing tech and digital sector."
+        text: 'Portsmouth is our home. We work with clients across the UK - from London to Edinburgh - but our roots are on the south coast. Portsmouth is a city that punches above its weight: a strong creative community, excellent universities, and a growing tech and digital sector.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "Being based here means we are easy to reach if you want a face-to-face meeting, and we understand the local business landscape. But the nature of web work means geography rarely matters - most of our projects are run remotely, and many of our longest-standing clients have never been in the same room as us."
+        text: 'Being based here means we are easy to reach if you want a face-to-face meeting, and we understand the local business landscape. But the nature of web work means geography rarely matters - most of our projects are run remotely, and many of our longest-standing clients have never been in the same room as us.'
   -
     type: heading
     attrs:
@@ -202,19 +214,19 @@ content:
     content:
       -
         type: text
-        text: "We are honest about what we are. We are not the cheapest agency you will find - and we are fine with that. We are the agency you choose when you want the work done properly, the first time."
+        text: 'We are honest about what we are. We are not the cheapest agency you will find - and we are fine with that. We are the agency you choose when you want the work done properly, the first time.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "We do not use page builders. We do not rely on third-party themes. We write clean code, optimise for performance, and build sites that are easy for your team to manage without needing a developer for every small change."
+        text: 'We do not use page builders. We do not rely on third-party themes. We write clean code, optimise for performance, and build sites that are easy for your team to manage without needing a developer for every small change.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "And we stay involved after launch. Our support plans mean your site continues to improve, stays secure, and has a team behind it when something goes wrong."
+        text: 'And we stay involved after launch. Our support plans mean your site continues to improve, stays secure, and has a team behind it when something goes wrong.'
   -
     type: heading
     attrs:
@@ -228,7 +240,7 @@ content:
     content:
       -
         type: text
-        text: "If you are thinking about a new website - or not happy with your current one - we would love to hear from you. No sales pitch, just an honest conversation about what you need and whether we are the right fit."
+        text: 'If you are thinking about a new website - or not happy with your current one - we would love to hear from you. No sales pitch, just an honest conversation about what you need and whether we are the right fit.'
   -
     type: paragraph
     content:
@@ -239,18 +251,8 @@ content:
             type: link
             attrs:
               href: 'https://calendly.com/wearejungle/introduction-meeting'
-        text: "Book a free intro call"
+        text: 'Book a free intro call'
       -
         type: text
         text: ' and let us show you what we can do.'
-meta_title: 'Meet We Are Jungle - Web Design Agency Portsmouth | We Are Jungle'
-meta_description: "We are a small, sharp web design agency based in Portsmouth. Here's who we are, what we do, and why we do things the way we do."
-use_meta_keywords: false
-no_index_page: false
-no_follow_links: false
-sitemap_priority: '0.8'
-sitemap_changefreq: monthly
-override_twitter_settings: false
-updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1750240000
 ---

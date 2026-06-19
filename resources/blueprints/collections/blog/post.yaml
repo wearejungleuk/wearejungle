@@ -25,6 +25,7 @@ tabs:
               container: assets
               type: assets
               display: 'Featured Image'
+              instructions: '900 x 510'
           -
             handle: featured_image_caption
             field:
@@ -126,3 +127,14 @@ tabs:
             field:
               type: toggle
               display: 'Override Twitter Settings'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

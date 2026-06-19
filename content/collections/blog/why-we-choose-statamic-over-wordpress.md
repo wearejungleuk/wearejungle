@@ -9,6 +9,18 @@ blog_categories:
   - advice
 author_name: 'Brad Goddard'
 author_role: 'Founder, We Are Jungle'
+meta_title: 'Why We Choose Statamic Over WordPress | We Are Jungle'
+meta_description: "We've built on both platforms. Here's an honest look at why Statamic has become our default CMS for most new projects - and why it might be the right choice for your business too."
+use_meta_keywords: false
+no_index_page: false
+no_follow_links: false
+sitemap_priority: '0.8'
+sitemap_changefreq: monthly
+override_twitter_settings: false
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1781849989
+featured_image: statamic-websites.jpg
+author_avatar: '2brad-wearejunglebrandshoot-iggy&lime-169.jpg'
 content:
   -
     type: paragraph
@@ -49,13 +61,13 @@ content:
     content:
       -
         type: text
-        text: "WordPress loads a page by querying a database, pulling in plugin code, and assembling the result on every request. With enough caching you can get this fast - but it requires work, and that work can unravel with a plugin update."
+        text: 'WordPress loads a page by querying a database, pulling in plugin code, and assembling the result on every request. With enough caching you can get this fast - but it requires work, and that work can unravel with a plugin update.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "Statamic has no database. It reads files directly, which is faster by architecture. Combined with Tailwind CSS (which ships only the styles you use) and no plugin bloat, a Statamic site is almost always lighter and faster out of the box. This matters for SEO, conversion rates, and just how the site feels to use."
+        text: 'Statamic has no database. It reads files directly, which is faster by architecture. Combined with Tailwind CSS (which ships only the styles you use) and no plugin bloat, a Statamic site is almost always lighter and faster out of the box. This matters for SEO, conversion rates, and just how the site feels to use.'
   -
     type: heading
     attrs:
@@ -75,13 +87,13 @@ content:
     content:
       -
         type: text
-        text: "SQL injection - one of the most common attack vectors - requires a database. Statamic has no database, so that entire category of attack simply does not apply. Combined with a far smaller attack surface and a plugin ecosystem that is orders of magnitude smaller and better curated, Statamic sites are significantly more secure by default."
+        text: 'SQL injection - one of the most common attack vectors - requires a database. Statamic has no database, so that entire category of attack simply does not apply. Combined with a far smaller attack surface and a plugin ecosystem that is orders of magnitude smaller and better curated, Statamic sites are significantly more secure by default.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "This is not theoretical. We have seen WordPress sites compromised through plugins that were fully up to date at the time. We have never had a Statamic site compromised."
+        text: 'This is not theoretical. We have seen WordPress sites compromised through plugins that were fully up to date at the time. We have never had a Statamic site compromised.'
   -
     type: heading
     attrs:
@@ -141,7 +153,7 @@ content:
     content:
       -
         type: text
-        text: "Statamic is built on Laravel - a modern, well-tested framework with a clean API, a rich ecosystem, and conventions that make complex things manageable. When a project needs custom logic, API integrations, or bespoke functionality, building it on Laravel is a pleasure compared to the alternative."
+        text: 'Statamic is built on Laravel - a modern, well-tested framework with a clean API, a rich ecosystem, and conventions that make complex things manageable. When a project needs custom logic, API integrations, or bespoke functionality, building it on Laravel is a pleasure compared to the alternative.'
   -
     type: heading
     attrs:
@@ -155,13 +167,13 @@ content:
     content:
       -
         type: text
-        text: "Statamic is not the right choice for every project. If a client needs WooCommerce specifically, WordPress is the platform. If a project requires a very specific plugin that only exists for WordPress, we use WordPress. If a client already has a team managing a WordPress site and wants to keep the investment they have made, we work with what they have."
+        text: 'Statamic is not the right choice for every project. If a client needs WooCommerce specifically, WordPress is the platform. If a project requires a very specific plugin that only exists for WordPress, we use WordPress. If a client already has a team managing a WordPress site and wants to keep the investment they have made, we work with what they have.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "We also still build and maintain plenty of WordPress sites - and when we do, we build them properly: custom themes rather than page builders, as few plugins as possible, and solid hosting with automated updates. WordPress can be done well. It just requires more effort to keep it that way."
+        text: 'We also still build and maintain plenty of WordPress sites - and when we do, we build them properly: custom themes rather than page builders, as few plugins as possible, and solid hosting with automated updates. WordPress can be done well. It just requires more effort to keep it that way.'
   -
     type: heading
     attrs:
@@ -175,13 +187,13 @@ content:
     content:
       -
         type: text
-        text: "Statamic gives us a platform that is faster to build on, easier for clients to manage, and significantly more secure - all without the maintenance overhead that comes with a database-driven CMS and a large plugin ecosystem."
+        text: 'Statamic gives us a platform that is faster to build on, easier for clients to manage, and significantly more secure - all without the maintenance overhead that comes with a database-driven CMS and a large plugin ecosystem.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "For most of the website projects we take on, Statamic is simply the better tool. If you are considering a new website and want to understand whether Statamic might be the right fit for your project, "
+        text: 'For most of the website projects we take on, Statamic is simply the better tool. If you are considering a new website and want to understand whether Statamic might be the right fit for your project, '
       -
         type: text
         marks:
@@ -189,18 +201,8 @@ content:
             type: link
             attrs:
               href: 'https://calendly.com/wearejungle/introduction-meeting'
-        text: "book a free intro call with us"
+        text: 'book a free intro call with us'
       -
         type: text
         text: '. We are happy to walk you through the platform and give you an honest answer.'
-meta_title: 'Why We Choose Statamic Over WordPress | We Are Jungle'
-meta_description: "We've built on both platforms. Here's an honest look at why Statamic has become our default CMS for most new projects - and why it might be the right choice for your business too."
-use_meta_keywords: false
-no_index_page: false
-no_follow_links: false
-sitemap_priority: '0.8'
-sitemap_changefreq: monthly
-override_twitter_settings: false
-updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1750240000
 ---
