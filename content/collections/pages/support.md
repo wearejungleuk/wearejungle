@@ -8,7 +8,7 @@ page_builder:
     id: support_hero_01
     above_title: Support Plans
     above_title_variant: above-title--secondary
-    title: 'Support that actually supports'
+    title: 'Your Website. Looked After.'
     text:
       -
         type: paragraph
@@ -19,9 +19,43 @@ page_builder:
     type: text_hero
     enabled: true
   -
+    id: support_split_stats_01
+    title: 'Proactive Support, Not Just Reactive Fixes'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "We monitor your site around the clock so issues are caught before they affect your visitors. From plugin updates and security patches to content tweaks and performance checks - we handle it all."
+    stats:
+      -
+        id: stat_sup_01
+        number: 24/7
+        label: 'Uptime monitoring'
+        type: new_set
+        enabled: true
+      -
+        id: stat_sup_02
+        number: '72'
+        label: 'Day post-launch warranty'
+        type: new_set
+        enabled: true
+      -
+        id: stat_sup_03
+        number: '30'
+        label: 'Day rolling contracts'
+        type: new_set
+        enabled: true
+    cta_title: 'Book a Call'
+    book_appointment: true
+    cta_classes: button--primary
+    type: split_stats
+    enabled: true
+  -
     id: pricing_01
     above_title: Support
-    title: 'Support that actually supports'
+    title: 'Choose Your Support Plan'
     text:
       -
         type: paragraph
