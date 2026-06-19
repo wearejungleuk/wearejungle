@@ -85,54 +85,63 @@ page_builder:
         id: tech_ec_01
         name: Shopify
         description: "Our recommended choice for consumer brands - easy to manage, backed by a solid ecosystem, and built for growth."
+        icon: shopify.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_02
         name: WooCommerce
         description: "For clients who want eCommerce on WordPress - fully owned, highly configurable, and no monthly platform fees."
+        icon: woocommerce-favicon-white.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_03
         name: WordPress
         description: "The CMS powering WooCommerce stores. Familiar, flexible, and easy for your team to manage products and content."
+        icon: wordpress.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_04
         name: Alpine.js
         description: "Lightweight JavaScript for interactive store elements - quick-view modals, live filters, and smooth cart interactions."
+        icon: alpine.js.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_05
         name: Tailwind CSS
         description: "Utility-first CSS for fast, completely custom store designs. No theme constraints, no overriding someone else's styles."
+        icon: tailwind-css.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_06
         name: HTML5
         description: "Semantic, accessible markup at the foundation of every store we build - structured for SEO, performance, and screen readers."
+        icon: html5.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_07
         name: CSS3
         description: "Modern CSS for layouts, animations, and visual polish across every eCommerce build - clean and purposeful."
+        icon: css3.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_08
         name: JavaScript
         description: "Progressive JavaScript for cart interactions, live filters, and dynamic store behaviour that makes buying feel effortless."
+        icon: javascript.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_09
         name: PHP
         description: "The server-side language behind WooCommerce and WordPress-based stores. We write clean, modern PHP built for performance and security."
+        icon: php.svg
         type: new_set
         enabled: true
     type: tech_carousel

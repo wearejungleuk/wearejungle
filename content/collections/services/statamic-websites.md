@@ -85,18 +85,21 @@ page_builder:
         id: tech_stat_01
         name: Statamic
         description: "The heart of every build. A flat-file CMS built on Laravel - fast, secure, and genuinely easy for your team to use."
+        icon: statamic.svg
         type: new_set
         enabled: true
       -
         id: tech_stat_02
         name: Alpine.js
         description: "Lightweight JavaScript for all front-end interactivity. Works beautifully alongside Antlers without the overhead of a full framework."
+        icon: alpine.js.svg
         type: new_set
         enabled: true
       -
         id: tech_stat_03
         name: Tailwind CSS
         description: "Utility-first CSS that lets us build completely custom, pixel-perfect designs at speed."
+        icon: tailwind-css.svg
         type: new_set
         enabled: true
       -
@@ -109,24 +112,28 @@ page_builder:
         id: tech_stat_05
         name: PHP
         description: "The server-side language Statamic and Laravel are built on. Modern, fast, and the right choice for serious web applications."
+        icon: php.svg
         type: new_set
         enabled: true
       -
         id: tech_stat_06
         name: HTML5
         description: "Semantic, accessible markup that forms the foundation of every Statamic build - correct structure from the first template."
+        icon: html5.svg
         type: new_set
         enabled: true
       -
         id: tech_stat_07
         name: CSS3
         description: "Modern CSS for layouts, animations, and visual polish - written cleanly alongside Tailwind for maintainable, scalable stylesheets."
+        icon: css3.svg
         type: new_set
         enabled: true
       -
         id: tech_stat_08
         name: JavaScript
         description: "Progressive JavaScript for interactive behaviour - used precisely where it adds value, working alongside Alpine.js for a lightweight result."
+        icon: javascript.svg
         type: new_set
         enabled: true
     type: tech_carousel

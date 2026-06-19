@@ -85,6 +85,7 @@ page_builder:
         id: tech_shop_01
         name: Shopify
         description: "The platform itself - our recommended choice for consumer brands who want a reliable, managed eCommerce solution with a proven ecosystem."
+        icon: shopify.svg
         type: new_set
         enabled: true
       -
@@ -97,30 +98,35 @@ page_builder:
         id: tech_shop_03
         name: Alpine.js
         description: "Lightweight JavaScript for interactive UI elements - quick-view modals, filters, and other front-end interactions that make stores feel polished."
+        icon: alpine.js.svg
         type: new_set
         enabled: true
       -
         id: tech_shop_04
         name: Tailwind CSS
         description: "Utility-first CSS for fast, custom front-end builds. We use it to bring bespoke Shopify designs to life without bloated theme stylesheets."
+        icon: tailwind-css.svg
         type: new_set
         enabled: true
       -
         id: tech_shop_05
         name: HTML5
         description: "Semantic, accessible markup underpinning every Shopify theme we build - correct structure for SEO, performance, and accessibility."
+        icon: html5.svg
         type: new_set
         enabled: true
       -
         id: tech_shop_06
         name: CSS3
         description: "Modern CSS for transitions, layouts, and visual detail - clean and purposeful alongside Tailwind for fast custom builds."
+        icon: css3.svg
         type: new_set
         enabled: true
       -
         id: tech_shop_07
         name: JavaScript
         description: "Progressive JavaScript for cart interactions, quick-view modals, and other store behaviours that make the buying experience feel polished."
+        icon: javascript.svg
         type: new_set
         enabled: true
     type: tech_carousel

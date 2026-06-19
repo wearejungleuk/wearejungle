@@ -85,66 +85,77 @@ page_builder:
         id: tech_wdev_01
         name: Statamic
         description: "Our recommended CMS for most new builds. Flat-file, fast, and secure - without the database overhead or plugin bloat that other platforms carry."
+        icon: statamic.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_02
         name: WordPress
         description: "When clients need WordPress, we build it properly - clean code, minimal plugins, and security hardened from the ground up."
+        icon: wordpress.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_03
         name: Alpine.js
         description: "Lightweight JavaScript for all front-end interactivity. Small footprint, no build step required, powerful enough for everything we need."
+        icon: alpine.js.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_04
         name: Tailwind CSS
         description: "Utility-first CSS that lets us build completely custom designs at speed. No overriding default styles, no bloated stylesheets."
+        icon: tailwind-css.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_05
         name: Shopify
         description: "Our eCommerce platform of choice for consumer brands. Easy to manage, well-supported, and extensible through a solid app ecosystem."
+        icon: shopify.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_06
         name: WooCommerce
         description: "For clients who prefer eCommerce on WordPress. Fully owned, highly configurable, and no monthly platform fees."
+        icon: woocommerce-favicon-white.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_07
         name: HTML5
         description: "Semantic, accessible markup at the foundation of every build - structured correctly for performance, SEO, and assistive technologies."
+        icon: html5.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_08
         name: CSS3
         description: "Modern CSS for layouts, transitions, and visual behaviour. Clean and maintainable - not fighting against framework defaults."
+        icon: css3.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_09
         name: PHP
         description: "The server-side language powering WordPress, WooCommerce, Laravel, and Statamic. We write modern, clean PHP built for longevity."
+        icon: php.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_10
         name: JavaScript
         description: "Progressive JavaScript for interactivity and dynamic behaviour - applied where it adds real value, never as unnecessary bloat."
+        icon: javascript.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_11
         name: MySQL
         description: "The relational database behind WordPress and WooCommerce. We configure and optimise it properly from day one."
+        icon: mysql.svg
         type: new_set
         enabled: true
     type: tech_carousel

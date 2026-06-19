@@ -85,54 +85,63 @@ page_builder:
         id: tech_woo_01
         name: WooCommerce
         description: "The eCommerce engine itself - powerful, flexible, and fully owned. No monthly platform fees and no restrictions on how your store is built."
+        icon: woocommerce-favicon-white.svg
         type: new_set
         enabled: true
       -
         id: tech_woo_02
         name: WordPress
         description: "The CMS powering every WooCommerce store. Familiar, widely supported, and easy for your team to manage day to day."
+        icon: wordpress.svg
         type: new_set
         enabled: true
       -
         id: tech_woo_03
         name: Alpine.js
         description: "Lightweight JavaScript for smooth store interactions - quick-view modals, live filters, and polished cart experiences."
+        icon: alpine.js.svg
         type: new_set
         enabled: true
       -
         id: tech_woo_04
         name: Tailwind CSS
         description: "Utility-first CSS for completely custom WooCommerce themes. No pre-built template constraints, no inherited styles to fight against."
+        icon: tailwind-css.svg
         type: new_set
         enabled: true
       -
         id: tech_woo_05
         name: HTML5
         description: "Semantic, accessible markup forming the backbone of every WooCommerce build - built correctly for SEO, performance, and accessibility."
+        icon: html5.svg
         type: new_set
         enabled: true
       -
         id: tech_woo_06
         name: CSS3
         description: "Modern CSS for layouts, transitions, and visual polish across every WooCommerce theme - clean and maintainable."
+        icon: css3.svg
         type: new_set
         enabled: true
       -
         id: tech_woo_07
         name: PHP
         description: "The server-side language WordPress and WooCommerce are built on. We write clean, modern PHP for custom themes, plugins, and integrations."
+        icon: php.svg
         type: new_set
         enabled: true
       -
         id: tech_woo_08
         name: JavaScript
         description: "Progressive JavaScript for cart interactions, live product filters, and dynamic checkout behaviour that makes buying seamless."
+        icon: javascript.svg
         type: new_set
         enabled: true
       -
         id: tech_woo_09
         name: MySQL
         description: "The database powering every WooCommerce store. We configure and optimise it for the demands of product catalogues and order management."
+        icon: mysql.svg
         type: new_set
         enabled: true
     type: tech_carousel
