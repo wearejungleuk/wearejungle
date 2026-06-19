@@ -176,6 +176,10 @@ content:
                 marks:
                   -
                     type: bold
+                  -
+                    type: link
+                    attrs:
+                      href: /services/web-design
                 text: 'Web Design'
               -
                 type: text
@@ -191,6 +195,10 @@ content:
                 marks:
                   -
                     type: bold
+                  -
+                    type: link
+                    attrs:
+                      href: /services/statamic-websites
                 text: 'Statamic Websites'
               -
                 type: text
@@ -206,6 +214,10 @@ content:
                 marks:
                   -
                     type: bold
+                  -
+                    type: link
+                    attrs:
+                      href: /services/wordpress-websites
                 text: 'WordPress Websites'
               -
                 type: text
@@ -221,6 +233,10 @@ content:
                 marks:
                   -
                     type: bold
+                  -
+                    type: link
+                    attrs:
+                      href: /services/shopify-websites
                 text: 'Shopify Websites'
               -
                 type: text
@@ -236,6 +252,10 @@ content:
                 marks:
                   -
                     type: bold
+                  -
+                    type: link
+                    attrs:
+                      href: /services/woocommerce-websites
                 text: 'WooCommerce Websites'
               -
                 type: text
@@ -251,6 +271,10 @@ content:
                 marks:
                   -
                     type: bold
+                  -
+                    type: link
+                    attrs:
+                      href: /support
                 text: 'Support & Hosting'
               -
                 type: text
@@ -274,7 +298,7 @@ content:
     content:
       -
         type: text
-        text: "Being based here means we're easy to get to if you want to sit down and meet in person - and we know the local business landscape well. That said, most of our work is done remotely, and plenty of our longest-standing clients have never actually been in the same room as us."
+        text: "Being based here means meeting face to face is always an option - and we love it when that happens. There is something genuinely useful about sitting down together, getting to know you and your business properly. That said, we work remotely with clients all over the UK and it works brilliantly - so wherever you are, we can make it work."
   -
     type: heading
     attrs:

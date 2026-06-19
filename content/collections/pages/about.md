@@ -82,6 +82,26 @@ page_builder:
     image_3: 'wearejunglebrandshoot-iggy&lime-119.jpg'
     book_appointment: false
   -
+    id: team_grid_about_01
+    above_title: 'The Team'
+    title: 'The People Behind the Work'
+    members:
+      -
+        id: member_brad
+        image: 'brad-wearejunglebrandshoot-iggy&lime-159.jpg'
+        name: 'Brad Goddard'
+        role: 'Founder & Creative Director'
+        type: new_set
+        enabled: true
+      -
+        id: member_kay
+        name: 'Kay Goddard'
+        role: 'Client Director'
+        type: new_set
+        enabled: true
+    type: team_grid
+    enabled: true
+  -
     id: feature_cards_about_01
     above_title: 'Why Us?'
     title: 'What makes us different?'

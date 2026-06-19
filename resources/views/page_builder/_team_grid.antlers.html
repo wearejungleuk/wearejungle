@@ -1,0 +1,108 @@
+<section class="py-16 lg:py-24 bg-brand-primary">
+    <div class="container">
+
+        {{ if above_title or title }}
+        <div class="text-center mb-12 lg:mb-16 js-fade-up">
+            {{ if above_title }}
+            {{ partial:components/above-title :title="above_title" classes="above-title--secondary" }}
+            {{ /if }}
+            {{ if title }}
+            <h2 class="font-heading uppercase text-[42px] sm:text-[52px] lg:text-[68px] xl:text-[80px] leading-none text-white mt-4">{{ title }}</h2>
+            {{ /if }}
+        </div>
+        {{ /if }}
+
+        {{ if members }}
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-16 max-w-[900px] mx-auto">
+            {{ members }}
+            <div x-data="{ open: false }" class="js-fade-up">
+
+                {{ if image }}
+                <div class="overflow-hidden mb-6 relative group" style="border-radius: 12px">
+                    {{ image }}
+                    <img src="{{ url }}" alt="{{ name }}" class="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                    {{ /image }}
+                    {{ if linkedin }}
+                    <a href="{{ linkedin }}" target="_blank" rel="noopener noreferrer" class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-brand-secondary text-brand-primary rounded-full hover:scale-110 transition-transform duration-200" aria-label="View on LinkedIn">
+                        <i class="fa-brands fa-linkedin-in text-[14px]"></i>
+                    </a>
+                    {{ /if }}
+                </div>
+                {{ /if }}
+
+                <h3 class="font-heading uppercase text-[26px] lg:text-[32px] leading-tight text-white mb-1">{{ name }}</h3>
+                <p class="text-[13px] font-regular text-brand-secondary uppercase tracking-widest {{ if bio }}mb-5{{ else }}mb-0{{ /if }}">{{ role }}</p>
+
+                {{ if bio }}
+                <button
+                    @click="open = true"
+                    class="inline-flex items-center gap-2 font-regular text-[13px] uppercase tracking-widest text-white hover:text-brand-secondary transition-colors duration-200"
+                >
+                    Read Bio
+                    <i class="fa-sharp fa-regular fa-arrow-up-right text-[11px]"></i>
+                </button>
+
+                {{# Bio popup modal #}}
+                <div
+                    x-show="open"
+                    x-cloak
+                    x-transition
+                    class="fixed inset-0 z-[200] flex items-center justify-center p-4 lg:p-8"
+                >
+                    <div class="absolute inset-0 bg-black opacity-75" @click="open = false"></div>
+                    <div
+                        class="relative bg-brand-dark-blue max-w-[620px] w-full p-8 lg:p-12 max-h-[85vh] overflow-y-auto"
+                        style="border-radius: 20px"
+                        @click.stop
+                    >
+                        <button
+                            @click="open = false"
+                            class="absolute top-5 right-5 w-9 h-9 flex items-center justify-center text-white hover:text-brand-secondary transition-colors duration-200"
+                            aria-label="Close"
+                        >
+                            <i class="fa-sharp fa-regular fa-xmark text-[18px]"></i>
+                        </button>
+
+                        {{ if image }}
+                        <div class="flex items-center gap-5 mb-6">
+                            <div class="w-[72px] h-[72px] overflow-hidden flex-shrink-0 rounded-full">
+                                {{ image }}
+                                <img src="{{ url }}" alt="{{ name }}" class="w-full h-full object-cover">
+                                {{ /image }}
+                            </div>
+                            <div>
+                                <h3 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-white">{{ name }}</h3>
+                                <p class="text-[13px] font-regular text-brand-secondary uppercase tracking-widest">{{ role }}</p>
+                            </div>
+                        </div>
+                        {{ else }}
+                        <div class="mb-6 pr-10">
+                            <h3 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-white">{{ name }}</h3>
+                            <p class="text-[13px] font-regular text-brand-secondary uppercase tracking-widest">{{ role }}</p>
+                        </div>
+                        {{ /if }}
+
+                        <div class="text-white text-[15px] lg:text-[16px] leading-relaxed bard">{{ bio }}</div>
+
+                        {{ if linkedin }}
+                        <a
+                            href="{{ linkedin }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-3 font-regular text-[13px] uppercase tracking-widest text-brand-secondary hover:text-white transition-colors duration-200 mt-8"
+                        >
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            Connect on LinkedIn
+                        </a>
+                        {{ /if }}
+                    </div>
+                </div>
+                {{ /if }}
+
+            </div>
+            {{ /members }}
+        </div>
+        {{ /if }}
+
+    </div>
+</section>

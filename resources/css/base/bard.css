@@ -36,9 +36,6 @@
         li {
             margin-bottom: 5px;
             font-size: 16px;
-            @screen lg {
-                font-size: 18px;
-            }
 
             &::marker {
                 color: rgb(var(--color-brand-secondary));

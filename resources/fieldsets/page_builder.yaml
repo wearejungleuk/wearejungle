@@ -630,6 +630,59 @@ fields:
                   field:
                     type: text
                     display: Title
+            team_grid:
+              display: 'Team Grid'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: members
+                  field:
+                    type: replicator
+                    display: Members
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Member
+                            fields:
+                              -
+                                handle: image
+                                field:
+                                  type: assets
+                                  display: Image
+                                  container: assets
+                                  max_files: 1
+                              -
+                                handle: name
+                                field:
+                                  type: text
+                                  display: Name
+                              -
+                                handle: role
+                                field:
+                                  type: text
+                                  display: Role
+                              -
+                                handle: linkedin
+                                field:
+                                  type: link
+                                  display: LinkedIn
+                              -
+                                handle: bio
+                                field:
+                                  type: bard
+                                  display: Bio
+                                  remove_empty_nodes: false
             basic_content:
               display: 'Basic Content'
               fields:
