@@ -15,7 +15,7 @@
                     {{ nav:main_menu select="id|title|url|children" }}
                     <li class="list-none {{ if children }}group{{ else }}relative{{ /if }}" {{ if children }}data-menu-id="{{ id }}"{{ else }}data-no-sub{{ /if }}>
                         {{ if url | contains('calendly') }}
-                        <a href="{{ brand:calendly_link }}" target="_blank" class="text-[14px] xl:text-[16px] 3xl:text-[18px] font-heading uppercase pb-3 duration-300 transition-all hover:text-brand-secondary flex items-center gap-2">
+                        <a href="{{ brand:calendly_link }}" target="_blank" class="text-[13px] 2xl:text-[16px] 3xl:text-[18px] font-heading uppercase pb-3 duration-300 transition-all hover:text-brand-secondary flex items-center gap-2">
                             {{ title }}
                         </a>
                         {{ else }}
