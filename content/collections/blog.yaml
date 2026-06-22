@@ -2,8 +2,10 @@ title: Blog
 route: /blog/{slug}
 template: blog/show
 layout: layout
-date_behavior: public
-dated: true
+date: true
+date_behavior:
+  past: public
+  future: public
 taxonomies:
   - blog_categories
 blueprints:
