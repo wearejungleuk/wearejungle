@@ -2,6 +2,8 @@
 id: work
 blueprint: page
 title: Work
+meta_title: 'Our Work | Web Design Projects | We Are Jungle Portsmouth'
+meta_description: 'A selection of websites we have designed and built for clients across Portsmouth and beyond. From eCommerce to brochure sites, all built to perform.'
 template: default
 page_builder:
   -

@@ -2,6 +2,8 @@
 id: 54093c13-dde5-4a7a-899e-6ac5064c061f
 blueprint: page
 title: Terms
+meta_title: 'Terms & Conditions | We Are Jungle'
+meta_description: 'Read the terms and conditions for We Are Jungle web design agency. Clear and straightforward, so you know exactly how we work together.'
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false

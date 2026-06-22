@@ -2,6 +2,8 @@
 id: services
 blueprint: page
 title: Services
+meta_title: 'Web Design Services Portsmouth | Statamic, Shopify, WordPress | We Are Jungle'
+meta_description: 'From bespoke web design to Shopify, Statamic, WordPress, and WooCommerce - We Are Jungle builds websites that look sharp and actually convert. Based in Portsmouth.'
 template: default
 page_builder:
   -

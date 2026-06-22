@@ -2,6 +2,8 @@
 id: f8142c54-0000-0000-0000-000000000001
 blueprint: service
 title: 'Web Design'
+meta_title: 'Web Design Portsmouth | Custom Website Design | We Are Jungle'
+meta_description: 'Custom web design in Portsmouth built around your brand. No templates, no trends for the sake of it. Considered design that guides users and drives results.'
 slug: web-design
 card_text: 'Design that looks the part and works hard behind the scenes - built to guide users, build trust, and drive action.'
 page_text: 'Good design is more than how a site looks - it is about how it works. We create websites that guide users naturally, build trust quickly, and make it easy for people to take the next step. Every layout, typeface, and colour choice is made with purpose. No trends for the sake of it. Just clear, considered design built around your brand and your customers.'

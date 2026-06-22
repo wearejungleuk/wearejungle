@@ -2,6 +2,8 @@
 id: support
 blueprint: page
 title: Support
+meta_title: 'Website Support & Hosting Plans Portsmouth | We Are Jungle'
+meta_description: 'Monthly website support and maintenance from We Are Jungle. 24/7 uptime monitoring, security updates, and development hours included. No long-term contracts.'
 template: default
 page_builder:
   -

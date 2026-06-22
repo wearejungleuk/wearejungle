@@ -2,6 +2,8 @@
 id: 3cc5e19b-088a-4bb7-8b30-95b37925125e
 blueprint: work
 title: 'Mash Gang'
+meta_title: 'Mash Gang - Shopify Rebuild | We Are Jungle'
+meta_description: 'A bold Shopify rebuild for Mash Gang, the UK cult non-alcoholic beer brand. Faster, weirder, and easier to shop.'
 preview_text:
   -
     type: paragraph

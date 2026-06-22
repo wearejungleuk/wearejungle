@@ -2,6 +2,8 @@
 id: contact
 blueprint: page
 title: Contact
+meta_title: 'Contact We Are Jungle | Web Design Agency Portsmouth'
+meta_description: 'Get in touch with We Are Jungle. Tell us about your project and we will come back to you quickly. Based in Portsmouth, working with clients across the UK.'
 template: default
 page_builder:
   -

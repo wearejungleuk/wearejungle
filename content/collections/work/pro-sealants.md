@@ -2,6 +2,8 @@
 id: 15f3fbef-6f91-4f99-8fb6-39b83e8b3def
 blueprint: work
 title: 'Pro Sealants'
+meta_title: 'Pro Sealants - Shopify Store | We Are Jungle'
+meta_description: 'A fast, conversion-focused Shopify store for Pro Sealants, the UK go-to sealant supplier. Built for speed, clarity, and sales.'
 preview_text:
   -
     type: paragraph

@@ -2,6 +2,8 @@
 id: 3946e8cd-c664-4ab1-8b9b-a3cd773e0635
 blueprint: page
 title: 'Privacy Policy'
+meta_title: 'Privacy Policy | We Are Jungle'
+meta_description: 'Read the We Are Jungle privacy policy. We take data protection seriously and are committed to handling your information responsibly.'
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false

@@ -2,6 +2,8 @@
 id: a5b93da6-adbd-4c3b-aced-454771058875
 blueprint: page
 title: 'Thank You'
+meta_title: 'Thank You | We Are Jungle'
+meta_description: 'Thank you for getting in touch with We Are Jungle. We will be back to you shortly.'
 page_builder:
   -
     id: mhowyt8a

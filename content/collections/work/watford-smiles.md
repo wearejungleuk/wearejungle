@@ -2,6 +2,8 @@
 id: cadac8f9-c8f3-4c56-924b-962c6de66f0b
 blueprint: work
 title: 'Watford Smiles'
+meta_title: 'Watford Smiles - Dental Practice Website | We Are Jungle'
+meta_description: 'A high-end, elegant website for Watford Smiles dental practice. Built to look as professional as the care they deliver.'
 preview_text:
   -
     type: paragraph

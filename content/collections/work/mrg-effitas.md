@@ -2,6 +2,8 @@
 id: 90869023-2933-4b72-831b-4641b8c9b446
 blueprint: work
 title: 'MRG Effitas'
+meta_title: 'MRG Effitas - Website Design & Development | We Are Jungle'
+meta_description: 'Website design and development for MRG Effitas, one of the UK leading cybersecurity testing companies. Built for speed, clarity, and credibility.'
 preview_text:
   -
     type: paragraph

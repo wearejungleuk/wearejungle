@@ -7,7 +7,7 @@
         </div>
         {{ blocks }}
 
-        {{# Mobile slider — hidden on md+ #}}
+        {{# Mobile slider - hidden on md+ #}}
         <div class="md:hidden mb-12"
              x-data
              x-init="$nextTick(() => {
@@ -124,7 +124,7 @@
             </div>
         </div>
 
-        {{# Desktop layout — hidden on mobile #}}
+        {{# Desktop layout - hidden on mobile #}}
         <div class="hidden md:flex md:flex-row md:flex-wrap md:-mx-4 js-fade-up">
             {{ client }}
             <div class="w-full md:w-1/2 md:px-8 relative md:mb-[50px] {{ switch between='|md:translate-y-[100px]' }}">

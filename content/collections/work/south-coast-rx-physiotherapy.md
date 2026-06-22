@@ -2,6 +2,8 @@
 id: c6598d61-88d6-4d30-8dc7-41f8dd354acd
 blueprint: work
 title: 'South Coast Rx Physiotherapy'
+meta_title: 'South Coast Rx Physiotherapy - Website | We Are Jungle Portsmouth'
+meta_description: 'A clean, confident website for South Coast Rx Physiotherapy in Portsmouth. Built to showcase expertise and drive new patient bookings.'
 preview_text:
   -
     type: paragraph

@@ -2,6 +2,8 @@
 id: about
 blueprint: page
 title: About
+meta_title: 'About We Are Jungle | Web Design Agency Portsmouth'
+meta_description: 'We Are Jungle is a small, sharp web design agency in Portsmouth. Learn about who we are, how we work, and why we build websites the way we do.'
 template: default
 page_builder:
   -

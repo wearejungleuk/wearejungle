@@ -2,6 +2,8 @@
 id: 55cdee73-0000-0000-0000-000000000004
 blueprint: service
 title: 'Shopify Websites'
+meta_title: 'Shopify Website Design Portsmouth | Custom Shopify Themes | We Are Jungle'
+meta_description: 'Fully custom Shopify themes built from scratch. Not a template in sight. We build Shopify stores designed for your brand and optimised to sell.'
 slug: shopify-websites
 card_text: 'Shopify stores built for growth. Custom themes, better UX, and a smoother buying experience from start to finish.'
 page_text: 'Shopify is one of the most capable eCommerce platforms available - but most Shopify stores look and feel exactly the same. We build fully custom Shopify themes from scratch, designed around your brand and your customers. No theme restrictions, no template limitations. A store that looks and performs like it was built specifically for you - because it was.'
