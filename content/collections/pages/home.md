@@ -20,6 +20,7 @@ page_builder:
     cta_title: 'Start Your Project'
     type: home_hero
     enabled: true
+    book_appointment: false
   -
     id: mhmct9a7
     title: "We Are Jungle's Friends"
@@ -48,6 +49,7 @@ page_builder:
     cta_title: 'Get a Quote'
     type: services_with_icons
     enabled: true
+    book_appointment: false
   -
     id: mhmgs12r
     carousel:
@@ -287,6 +289,7 @@ page_builder:
         enabled: true
     type: comparison_table
     enabled: true
+    book_appointment: false
   -
     id: stats_story_01
     above_title: 'Our Story'
@@ -303,30 +306,31 @@ page_builder:
     stats:
       -
         id: stat_1
-        number: '100+'
+        number: 100+
         label: 'Websites launched (and still going strong)'
         type: new_set
         enabled: true
       -
         id: stat_2
-        number: '100%'
+        number: 100%
         label: 'UK Based Team'
         type: new_set
         enabled: true
       -
         id: stat_3
-        number: '12+'
+        number: 12+
         label: 'Years in the game - still care about the details'
         type: new_set
         enabled: true
       -
         id: stat_4
-        number: '50+'
+        number: 50+
         label: 'Sites we keep running smoothly behind the scenes'
         type: new_set
         enabled: true
     type: stats_story
     enabled: true
+    book_appointment: false
   -
     id: feature_cards_01
     above_title: 'What We Do'
@@ -337,7 +341,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Strategy, design, development and support - all under one roof, all done properly."
+            text: 'Strategy, design, development and support - all under one roof, all done properly.'
     cta: /services
     cta_title: 'See All Services'
     cards:
@@ -379,6 +383,7 @@ page_builder:
         enabled: true
     type: feature_cards
     enabled: true
+    book_appointment: false
   -
     id: mhnqvljn
     title: "Meet the Junglist's"
@@ -426,11 +431,6 @@ page_builder:
     enabled: true
     block_id: about
   -
-    id: mhnsxw7k
-    quote: 'BIG-AGENCY QUALITY. SMALL-TEAM RELIABILITY. NO EGO. NO EXCUSES.'
-    type: quote
-    enabled: true
-  -
     id: mhnubrmv
     title: 'We don’t believe in faceless agencies'
     text:
@@ -450,6 +450,7 @@ page_builder:
       - 'burger-wearejunglebrandshoot-iggy&lime-89.jpg'
     type: about
     enabled: true
+    book_appointment: false
   -
     id: mhnvylfi
     title: 'LET’S HAVE A PROPER CHAT'
@@ -464,6 +465,7 @@ page_builder:
     enabled: true
     cta: /contact
     cta_title: 'Or Contact Us'
+    book_appointment: false
   -
     id: mhoppwih
     title: 'The proof is in the praise'
@@ -574,7 +576,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1781634688
+updated_at: 1781857943
 meta_title: 'Web Design Agency Portsmouth | Statamic, Shopify & WordPress Experts'
 meta_description: 'We Are Jungle is a small, sharp web design agency in Portsmouth specialising in Statamic, Shopify, WordPress. Clean design, solid code, no nonsense.'
 ---

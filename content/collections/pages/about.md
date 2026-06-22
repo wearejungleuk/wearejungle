@@ -93,12 +93,53 @@ page_builder:
         role: 'Founder & Creative Director'
         type: new_set
         enabled: true
+        linkedin: 'https://www.linkedin.com/in/brad-goddard-821376188/'
+        bio:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: "If there's one thing Brad enjoys almost as much as building websites, it's convincing himself that this weekend's BBQ brisket will be better than the last one. A self-confessed music lover, you'll usually find him at a gig, planning the next one, or arguing that his favourite band was better before everyone else discovered them."
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: "When he's not behind a screen, Brad spends his time cooking, experimenting with smoking meat on his BBQ, and making memories with his family. Whether it's a day out with the kids, a weekend adventure, or simply enjoying good food with good company, family time is what matters most."
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: "Professionally, Brad has spent years helping businesses create websites that don't just look impressive but actually work. His passion for combining creativity, technology and commercial thinking is what led him to start We Are Jungle, where he helps businesses grow through better digital experiences."
       -
         id: member_kay
         name: 'Kay Goddard'
         role: 'Client Director'
         type: new_set
         enabled: true
+        image: 'wearejunglebrandshoot-iggy&lime-153-kay.jpg'
+        linkedin: 'https://www.linkedin.com/in/kay-goddard-659a6a299/'
+        bio:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: "If Kay isn't planning the next family weekend away, there's a good chance she's halfway through a DIY project she found on Instagram and confidently declared, \"That looks easy enough.\" Whether it's decorating, upcycling, organising, or completely changing a room's purpose, she's always got a new project on the go."
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: "When she's not transforming parts of the house, Kay loves getting lost in a good book, spending quality time with her family, and making the most of weekends exploring somewhere new. She's the planner of the family, the keeper of the calendars, and the person most likely to have a colour-coded spreadsheet for absolutely everything."
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: "At We Are Jungle, Kay is the friendly face that keeps projects moving. She works closely with clients throughout their website journey, making sure everything stays organised, on track, and stress-free. Her attention to detail and genuine care for clients mean she's often the person keeping everyone calm when deadlines start approaching."
     type: team_grid
     enabled: true
   -
@@ -284,5 +325,5 @@ sitemap_priority: '0.5'
 sitemap_changefreq: monthly
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1781849538
+updated_at: 1782130578
 ---
