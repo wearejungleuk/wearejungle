@@ -21,6 +21,11 @@
             {{ /if }}
             {{# Author row #}}
             <div class="inline-flex items-center gap-3 justify-center flex-wrap">
+                {{ if author_avatar }}
+                {{ glide:author_avatar width="48" height="48" fit="crop_focal" }}
+                <img src="{{ url }}" alt="{{ author_name }}" class="w-[48px] h-[48px] object-cover flex-shrink-0" style="border-radius: 50%">
+                {{ /glide:author_avatar }}
+                {{ /if }}
                 {{ if author_name }}
                 <span class="font-regular text-[14px] font-medium">{{ author_name }}</span>
                 {{ /if }}
@@ -99,7 +104,7 @@
 </section>
 
 {{# Read Next section #}}
-<section class="bg-brand-primary py-16 lg:py-24">
+<section class="bg-black py-16 lg:py-24 rounded-[60px] lg:rounded-[100px] mb-16 lg:mb-24">
     <div class="container">
         <div class="mb-10 lg:mb-14 js-fade-up">
             <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[56px] leading-none text-white">Read Next</h2>
