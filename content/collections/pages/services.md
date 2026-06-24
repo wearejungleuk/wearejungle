@@ -10,14 +10,14 @@ page_builder:
     id: services_text_hero_01
     above_title: 'What We Do'
     above_title_variant: above-title--secondary
-    title: 'Digital that delivers'
+    title: 'Web Design & Development That Converts'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "From bespoke WordPress builds to Statamic, Shopify, and WooCommerce - we design and build websites that look sharp and actually convert."
+            text: "From bespoke WordPress builds to Statamic, Shopify, and WooCommerce - our web design and development converts visitors into customers with sites that look sharp and perform."
     type: text_hero
     enabled: true
   -

@@ -15,7 +15,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'We build websites that strengthen brands, convert users and drive real growth. No jargon. No ego. No bloated builds. Just smart thinking and clean execution.'
+            text: 'We build websites that strengthen brands, convert users and drive real growth. No jargon. No ego. No monkey business. No bloated builds. Just smart thinking and clean execution.'
       -
         type: paragraph
         content:

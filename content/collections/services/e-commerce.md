@@ -33,7 +33,7 @@ page_builder:
   -
     id: services_hero_ec_01
     above_title: 'What We Do'
-    title: 'eCommerce That Converts Visitors Into Customers'
+    title: 'eCommerce Built to Convert Visitors Into Customers'
     text:
       -
         type: paragraph

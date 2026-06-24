@@ -20,5 +20,5 @@ page_builder:
     id: blog-listing-hero
     type: blog_listing
     above_title: Blog
-    title: 'Ideas, Tips, & The Odd Opinion'
+    title: 'Web Design Tips, Ideas & Opinions'
 ---

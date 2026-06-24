@@ -23,7 +23,7 @@ page_builder:
         content:
           -
             type: text
-            text: "No templates. No day rates. No surprise invoices. Just a fixed price agreed before we start."
+            text: "No templates. No day rates. No hidden costs. No surprise invoices. Just a fixed price agreed before we start."
     type: text_hero
     enabled: true
   -

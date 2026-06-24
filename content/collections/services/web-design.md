@@ -33,7 +33,7 @@ page_builder:
   -
     id: services_hero_wd_01
     above_title: 'What We Do'
-    title: 'Web Design That Puts Your Business First'
+    title: 'Web Design That Works for Your Business'
     text:
       -
         type: paragraph

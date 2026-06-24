@@ -17,7 +17,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We don't disappear after launch. From monthly updates and monitoring to ongoing development support, our plans are built to keep your website secure, fast, and moving forward."
+            text: "We don't disappear after launch. From monthly updates and monitoring to ongoing development support, our plans keep your website looked after - secure, fast, and moving forward."
     type: text_hero
     enabled: true
   -
