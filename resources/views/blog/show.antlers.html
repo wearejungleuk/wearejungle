@@ -109,13 +109,9 @@
         <div class="mb-10 lg:mb-14 js-fade-up">
             <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[56px] leading-none text-white">Read Next</h2>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10" data-current-url="{{ permalink }}">
-            {{ collection:blog sort="date:desc" limit="4" }}
-            <article
-                class="flex flex-col js-fade-up"
-                x-data="{}"
-                x-show="'{{ permalink }}' !== $el.closest('[data-current-url]').dataset.currentUrl"
-            >
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+            {{ collection:blog sort="date:desc" limit="3" id:isnt="{id}" }}
+            <article class="flex flex-col js-fade-up">
                 {{ if featured_image }}
                 <a href="{{ url }}" class="block overflow-hidden mb-5" style="border-radius: 10px">
                     {{ glide:featured_image width="700" height="470" fit="crop_focal" }}

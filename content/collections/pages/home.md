@@ -359,7 +359,7 @@ page_builder:
         enabled: true
       -
         id: card_03
-        heading: 'Web Development'
+        heading: 'Code & Builds'
         card_text: 'Fast, secure and scalable builds on Statamic - no bloated page builders, no hidden complexity.'
         type: new_set
         enabled: true
