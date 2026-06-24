@@ -2,7 +2,7 @@
 id: pricing
 blueprint: page
 title: Pricing
-meta_title: 'Website Pricing | Honest, Fixed-Price Quotes | We Are Jungle Portsmouth'
+meta_title: 'Website Pricing Portsmouth | We Are Jungle'
 meta_description: 'Clear, fixed-price website costs from We Are Jungle. No surprises, no hidden fees. Custom websites scoped and priced before we start. Based in Portsmouth.'
 template: default
 page_builder:

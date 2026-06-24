@@ -2,7 +2,7 @@
 id: 5c9c9bc6-0000-0000-0000-000000000003
 blueprint: service
 title: 'Statamic Websites'
-meta_title: 'Statamic Website Design Portsmouth | Statamic CMS Experts | We Are Jungle'
+meta_title: 'Statamic Web Design Portsmouth | We Are Jungle'
 meta_description: 'Statamic CMS websites built by experts. Fast, flexible, and genuinely easy to manage. Built on Laravel with a flat-file architecture for exceptional performance.'
 slug: statamic-websites
 card_text: 'Flexible, fast, and easy to manage. Statamic sites built for businesses that want control without the usual CMS headaches.'

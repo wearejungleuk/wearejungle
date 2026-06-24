@@ -9,29 +9,42 @@
 
 <section class="pb-16 lg:pb-24">
     <div class="container">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            {{ collection:blog :taxonomy:blog_categories="slug" sort="date:desc" }}
-            <article class="flex flex-col js-fade-up">
-                {{ if featured_image }}
-                <a href="{{ url }}" class="block overflow-hidden mb-5" style="border-radius: 10px">
-                    {{ glide:featured_image width="700" height="470" fit="crop_focal" }}
-                    <img src="{{ url }}" alt="{{ title }}" class="w-full aspect-[3/2] object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
-                    {{ /glide:featured_image }}
-                </a>
-                {{ /if }}
-                <h2 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-brand-white mb-3">
-                    <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title }}</a>
-                </h2>
-                {{ if excerpt }}
-                <p class="text-[15px] lg:text-[16px] text-brand-white leading-relaxed mb-4">{{ excerpt }}</p>
-                {{ /if }}
-                <a href="{{ url }}" class="inline-flex items-center gap-3 font-heading uppercase text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200 mt-auto">
-                    Read Blog
+        {{ collection:blog :taxonomy:blog_categories="slug" sort="date:desc" as="posts" }}
+            {{ if no_results }}
+            <div class="text-center max-w-[640px] mx-auto py-8 lg:py-12 js-fade-up">
+                <h2 class="font-heading uppercase text-[24px] lg:text-[32px] leading-tight text-brand-white mb-4">Nothing here just yet</h2>
+                <p class="text-[16px] lg:text-[18px] text-brand-white leading-relaxed mb-8">We haven't written anything in this category yet - but we're always cooking up something new. In the meantime, take a look at the rest of the blog.</p>
+                <a href="/blog" class="inline-flex items-center gap-3 font-heading uppercase text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200">
+                    Back to all blogs
                     <i class="fa-sharp fa-regular fa-arrow-up-right text-[12px]"></i>
                 </a>
-            </article>
-            {{ /collection:blog }}
-        </div>
+            </div>
+            {{ else }}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+                {{ posts }}
+                <article class="flex flex-col js-fade-up">
+                    {{ if featured_image }}
+                    <a href="{{ url }}" class="block overflow-hidden mb-5" style="border-radius: 10px">
+                        {{ glide:featured_image width="700" height="470" fit="crop_focal" }}
+                        <img src="{{ url }}" alt="{{ title }}" class="w-full aspect-[3/2] object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                        {{ /glide:featured_image }}
+                    </a>
+                    {{ /if }}
+                    <h2 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-brand-white mb-3">
+                        <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title }}</a>
+                    </h2>
+                    {{ if excerpt }}
+                    <p class="text-[15px] lg:text-[16px] text-brand-white leading-relaxed mb-4">{{ excerpt }}</p>
+                    {{ /if }}
+                    <a href="{{ url }}" class="inline-flex items-center gap-3 font-heading uppercase text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200 mt-auto">
+                        Read Blog
+                        <i class="fa-sharp fa-regular fa-arrow-up-right text-[12px]"></i>
+                    </a>
+                </article>
+                {{ /posts }}
+            </div>
+            {{ /if }}
+        {{ /collection:blog }}
     </div>
 </section>
 

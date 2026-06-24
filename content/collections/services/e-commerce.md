@@ -2,7 +2,7 @@
 id: d297896c-0000-0000-0000-000000000005
 blueprint: service
 title: E-Commerce
-meta_title: 'eCommerce Web Design Portsmouth | Online Store Design | We Are Jungle'
+meta_title: 'eCommerce Web Design Portsmouth | We Are Jungle'
 meta_description: 'Online stores designed to convert. From product pages to checkout, we build eCommerce experiences that make buying feel effortless and drive more sales.'
 slug: e-commerce
 card_text: 'Online stores designed to sell. From product pages to checkout, everything is built to make buying simple.'

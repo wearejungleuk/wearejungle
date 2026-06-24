@@ -2,7 +2,7 @@
 id: c8d9e0f1-0000-0000-0000-000000000008
 blueprint: service
 title: 'Support & Hosting'
-meta_title: 'Website Support & Maintenance Plans Portsmouth | We Are Jungle'
+meta_title: 'Website Support & Hosting Portsmouth | We Are Jungle'
 meta_description: 'Monthly website support and hosting from We Are Jungle. 24/7 uptime monitoring, updates, security, and development hours. No long-term contracts.'
 slug: support-hosting
 card_text: 'Website care plans, secure hosting, and ongoing development support. We keep your site fast, secure, and running - so you can focus on your business.'

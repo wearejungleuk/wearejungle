@@ -2,7 +2,7 @@
 id: f8142c54-0000-0000-0000-000000000001
 blueprint: service
 title: 'Web Design'
-meta_title: 'Web Design Portsmouth | Custom Website Design | We Are Jungle'
+meta_title: 'Custom Web Design Portsmouth | We Are Jungle'
 meta_description: 'Custom web design in Portsmouth built around your brand. No templates, no trends for the sake of it. Considered design that guides users and drives results.'
 slug: web-design
 card_text: 'Design that looks the part and works hard behind the scenes - built to guide users, build trust, and drive action.'

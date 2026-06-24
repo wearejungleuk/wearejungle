@@ -2,7 +2,7 @@
 id: f3e3dbee-0000-0000-0000-000000000006
 blueprint: service
 title: 'WordPress Websites'
-meta_title: 'WordPress Website Design Portsmouth | Custom WordPress Builds | We Are Jungle'
+meta_title: 'WordPress Web Design Portsmouth | We Are Jungle'
 meta_description: 'Custom WordPress websites without the bloat. Hand-coded themes, minimal plugins, and clean code that loads fast and stays secure. Built in Portsmouth.'
 slug: wordpress-websites
 card_text: 'Custom WordPress builds without the bloat. Easy to update, fast to load, and built around how your business actually works.'
