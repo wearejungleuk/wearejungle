@@ -1,0 +1,50 @@
+<section class="py-16 lg:py-24">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+            <div class="{{ if image_position == 'left' }}lg:order-2{{ /if }}">
+                {{ if above_title }}
+                    <div class="relative z-[10] mb-4">
+                        {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
+                    </div>
+                {{ /if }}
+
+                {{ if title }}
+                    <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[44px] xl:text-[49px] leading-none text-white mb-6 js-fade-up">{{ title }}</h2>
+                {{ /if }}
+
+                {{ if text }}
+                    <div class="bard text-white text-[16px] lg:text-[17px] leading-relaxed mb-8 js-fade-up opacity-90">{{ text }}</div>
+                {{ /if }}
+
+                {{ if items }}
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mb-10 js-fade-up">
+                        {{ items }}
+                            <li class="flex items-start gap-3 text-[15px] lg:text-[17px] text-white">
+                                <i class="fa-sharp fa-solid fa-circle-check text-brand-secondary mt-[3px] flex-shrink-0 text-[18px]"></i>
+                                <span>{{ label }}</span>
+                            </li>
+                        {{ /items }}
+                    </ul>
+                {{ /if }}
+
+                {{ if cta || book_appointment }}
+                    <div class="js-fade-up">
+                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="{ cta_classes }" }}
+                    </div>
+                {{ /if }}
+            </div>
+
+            {{ if image }}
+                <div class="js-fade-up {{ if image_position == 'left' }}lg:order-1{{ /if }}">
+                    {{ image }}
+                        <div class="overflow-hidden" style="border-radius: 24px">
+                            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-auto object-cover">
+                        </div>
+                    {{ /image }}
+                </div>
+            {{ /if }}
+
+        </div>
+    </div>
+</section>

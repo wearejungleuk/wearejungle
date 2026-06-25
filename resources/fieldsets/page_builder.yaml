@@ -1431,6 +1431,96 @@ fields:
                     remove_empty_nodes: false
                     type: bard
                     display: Text
+            split_features:
+              display: 'Split Features (Image + Checklist)'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                      above-title--secondary: 'Pink'
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+                -
+                  handle: items
+                  field:
+                    type: replicator
+                    display: 'Checklist Items'
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: Item
+                            fields:
+                              -
+                                handle: label
+                                field:
+                                  type: text
+                                  display: Label
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: CTA
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Title'
+                -
+                  handle: book_appointment
+                  field:
+                    type: toggle
+                    display: 'Book a Call (uses Calendly link)'
+                -
+                  handle: cta_classes
+                  field:
+                    type: select
+                    display: 'Button Style'
+                    options:
+                      button--primary: 'Primary Blue'
+                      button--dark-blue: 'Dark Blue'
+                      button--light-blue: 'Light Blue'
+                      button--black: Black
+                      button--white: White
+                      button--secondary: 'Pink'
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: image_position
+                  field:
+                    type: select
+                    display: 'Image Position'
+                    default: right
+                    options:
+                      right: Right
+                      left: Left
             split_stats:
               display: 'Split Stats'
               fields:

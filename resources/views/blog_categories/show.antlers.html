@@ -12,7 +12,7 @@
         {{ collection:blog :taxonomy:blog_categories="slug" sort="date:desc" as="posts" }}
             {{ if no_results }}
             <div class="text-center max-w-[640px] mx-auto py-8 lg:py-12 js-fade-up">
-                <h2 class="font-heading uppercase text-[24px] lg:text-[32px] leading-tight text-brand-white mb-4">Nothing here just yet</h2>
+                <h2 class="font-heading uppercase text-[24px] lg:text-[27px] leading-tight text-brand-white mb-4">Nothing here just yet</h2>
                 <p class="text-[16px] lg:text-[18px] text-brand-white leading-relaxed mb-8">We haven't written anything in this category yet - but we're always cooking up something new. In the meantime, take a look at the rest of the blog.</p>
                 <a href="/blog" class="inline-flex items-center gap-3 font-heading uppercase text-brand-secondary text-[14px] tracking-wide hover:gap-5 transition-all duration-200">
                     Back to all blogs
@@ -30,7 +30,7 @@
                         {{ /glide:featured_image }}
                     </a>
                     {{ /if }}
-                    <h2 class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-brand-white mb-3">
+                    <h2 class="font-heading uppercase text-[20px] lg:text-[20px] leading-tight text-brand-white mb-3">
                         <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title }}</a>
                     </h2>
                     {{ if excerpt }}

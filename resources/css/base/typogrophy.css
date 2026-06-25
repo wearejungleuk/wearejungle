@@ -100,6 +100,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.button--secondary {
+  span {
+    background-color: rgb(var(--color-brand-secondary));
+    color: rgb(var(--color-black));
+  }
+}
+
 .above-title--light-blue {
   background-color: rgb(var(--color-brand-light-blue));
   color: rgb(var(--color-black));
