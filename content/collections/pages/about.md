@@ -8,7 +8,7 @@ template: default
 page_builder:
   -
     id: about_hero_01
-    title: 'No monkey business.'
+    title: 'A Portsmouth Web Design Studio With No Monkey Business'
     intro_text:
       -
         type: paragraph

@@ -1,0 +1,48 @@
+title: 'Blog Category'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: h1
+            field:
+              type: text
+              display: 'H1 Heading (SEO)'
+              instructions: 'Longer, SEO-friendly heading used as the H1 on the category page. Falls back to the title if blank.'
+          -
+            handle: content
+            field:
+              type: markdown
+              display: Content
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

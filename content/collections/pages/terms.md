@@ -17,7 +17,7 @@ page_builder:
   -
     id: mhovv2vi
     content: |-
-      <h1>Terms & Conditions</h1>
+      <h1>Terms & Conditions for We Are Jungle Ltd</h1>
       <p><strong>Effective date:</strong> 7 November 2025</p>
 
       <p>Welcome to We Are Jungle Ltd (“we”, “us”, “our”). These Terms & Conditions (“Terms”) govern your access to and use of our website <a href="https://wearejungle.co.uk">https://wearejungle.co.uk</a> (the “Site”) and any services we provide via the Site.</p>
