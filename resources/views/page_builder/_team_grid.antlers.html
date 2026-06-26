@@ -42,61 +42,70 @@
                     <i class="fa-sharp fa-regular fa-arrow-up-right text-[11px]"></i>
                 </button>
 
-                {{# Bio popup modal #}}
-                <div
-                    x-show="open"
-                    x-cloak
-                    x-transition
-                    class="fixed inset-0 z-[200] flex items-center justify-center p-4 lg:p-8"
-                >
-                    <div class="absolute inset-0 bg-black opacity-75" @click="open = false"></div>
+                {{# Bio popup modal - teleported to <body> so the fixed positioning escapes the parent's transform containing block #}}
+                <template x-teleport="body">
                     <div
-                        class="relative bg-brand-dark-blue max-w-[620px] w-full p-8 lg:p-12 max-h-[85vh] overflow-y-auto"
-                        style="border-radius: 20px"
-                        @click.stop
+                        x-show="open"
+                        x-cloak
+                        @keydown.escape.window="open = false"
+                        class="fixed inset-0 z-[999999999] flex items-center justify-center p-4 lg:p-8 pointer-events-none"
                     >
-                        <button
+                        <div
+                            x-show="open"
+                            x-transition.opacity
+                            class="absolute inset-0 bg-black/75 pointer-events-auto"
                             @click="open = false"
-                            class="absolute top-5 right-5 w-9 h-9 flex items-center justify-center text-white hover:text-brand-secondary transition-colors duration-200"
-                            aria-label="Close"
+                        ></div>
+                        <div
+                            x-show="open"
+                            x-transition
+                            class="relative bg-brand-dark-blue max-w-[620px] w-full p-8 lg:p-12 max-h-[85vh] overflow-y-auto pointer-events-auto"
+                            style="border-radius: 20px"
+                            @click.stop
                         >
-                            <i class="fa-sharp fa-regular fa-xmark text-[18px]"></i>
-                        </button>
+                            <button
+                                @click="open = false"
+                                class="absolute top-2 right-2 md:right-5 md:top-5 w-9 h-9 flex items-center justify-center text-white hover:text-brand-secondary transition-colors duration-200"
+                                aria-label="Close"
+                            >
+                                <i class="fa-sharp fa-regular fa-xmark text-[18px]"></i>
+                            </button>
 
-                        {{ if image }}
-                        <div class="flex items-center gap-5 mb-6">
-                            <div class="w-[72px] h-[72px] overflow-hidden flex-shrink-0 rounded-full">
-                                {{ image }}
-                                <img src="{{ url }}" alt="{{ name }}" class="w-full h-full object-cover">
-                                {{ /image }}
+                            {{ if image }}
+                            <div class="flex items-center gap-5 mb-6">
+                                <div class="w-[72px] h-[72px] overflow-hidden flex-shrink-0 rounded-full">
+                                    {{ image }}
+                                    <img src="{{ url }}" alt="{{ name }}" class="w-full h-full object-cover">
+                                    {{ /image }}
+                                </div>
+                                <div>
+                                    <p class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-white">{{ name }}</p>
+                                    <p class="text-[13px] font-regular text-brand-secondary uppercase tracking-widest">{{ role }}</p>
+                                </div>
                             </div>
-                            <div>
+                            {{ else }}
+                            <div class="mb-6 pr-10">
                                 <p class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-white">{{ name }}</p>
                                 <p class="text-[13px] font-regular text-brand-secondary uppercase tracking-widest">{{ role }}</p>
                             </div>
-                        </div>
-                        {{ else }}
-                        <div class="mb-6 pr-10">
-                            <p class="font-heading uppercase text-[20px] lg:text-[24px] leading-tight text-white">{{ name }}</p>
-                            <p class="text-[13px] font-regular text-brand-secondary uppercase tracking-widest">{{ role }}</p>
-                        </div>
-                        {{ /if }}
+                            {{ /if }}
 
-                        <div class="text-white text-[15px] lg:text-[16px] leading-relaxed bard">{{ bio }}</div>
+                            <div class="text-white text-[15px] lg:text-[16px] leading-relaxed bard">{{ bio }}</div>
 
-                        {{ if linkedin }}
-                        <a
-                            href="{{ linkedin }}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="inline-flex items-center gap-3 font-regular text-[13px] uppercase tracking-widest text-brand-secondary hover:text-white transition-colors duration-200 mt-8"
-                        >
-                            <i class="fa-brands fa-linkedin-in"></i>
-                            Connect on LinkedIn
-                        </a>
-                        {{ /if }}
+                            {{ if linkedin }}
+                            <a
+                                href="{{ linkedin }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center gap-3 font-regular text-[13px] uppercase tracking-widest text-brand-secondary hover:text-white transition-colors duration-200 mt-8"
+                            >
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                Connect on LinkedIn
+                            </a>
+                            {{ /if }}
+                        </div>
                     </div>
-                </div>
+                </template>
                 {{ /if }}
 
             </div>
