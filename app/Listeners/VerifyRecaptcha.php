@@ -5,6 +5,7 @@ namespace App\Listeners;
 use Anakadote\StatamicRecaptcha\Services\RecaptchaEnterprise;
 use Anakadote\StatamicRecaptcha\Services\RecaptchaV2;
 use Anakadote\StatamicRecaptcha\Services\RecaptchaV3;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 use Statamic\Events\FormSubmitted;
 
@@ -17,13 +18,16 @@ class VerifyRecaptcha
         }
 
         $version = config('recaptcha.recaptcha_version');
-        $message = __('recaptcha::recaptcha.recaptcha_error_message');
 
         if ($version === 'v2') {
             $response = request()->input('g-recaptcha-response');
 
-            if (! is_string($response) || $response === '' || ! RecaptchaV2::verify($response)) {
-                throw ValidationException::withMessages([$message]);
+            if (! is_string($response) || $response === '') {
+                $this->fail('missing_token', 'reCAPTCHA did not load. Please refresh the page and try again.');
+            }
+
+            if (! RecaptchaV2::verify($response)) {
+                $this->fail('verify_failed', 'We could not verify you are not a robot. Please try again.');
             }
 
             return;
@@ -34,7 +38,7 @@ class VerifyRecaptcha
             $action = request()->input('captcha_action');
 
             if (! is_string($token) || $token === '' || ! is_string($action) || $action === '') {
-                throw ValidationException::withMessages([$message]);
+                $this->fail('missing_token', 'reCAPTCHA did not load. Please refresh the page and try again.');
             }
 
             $verified = $version === 'enterprise'
@@ -42,12 +46,28 @@ class VerifyRecaptcha
                 : RecaptchaV3::verify($token, $action, config('recaptcha.recaptcha_v3.threshold'));
 
             if (! $verified) {
-                throw ValidationException::withMessages([$message]);
+                $this->fail('verify_failed', 'We could not verify you are not a robot. Please try again.');
             }
 
             return;
         }
 
-        throw ValidationException::withMessages(['reCAPTCHA version not set correctly in config/recaptcha.php']);
+        $this->fail('config_error', 'reCAPTCHA version not set correctly.');
+    }
+
+    /**
+     * @return never
+     */
+    private function fail(string $reason, string $message): void
+    {
+        Log::info('reCAPTCHA validation failed', [
+            'reason'    => $reason,
+            'has_token' => is_string(request()->input('captcha_token')) && request()->input('captcha_token') !== '',
+            'action'    => request()->input('captcha_action'),
+            'ip'        => request()->ip(),
+            'ua'        => request()->userAgent(),
+        ]);
+
+        throw ValidationException::withMessages(['captcha' => $message]);
     }
 }

@@ -62,15 +62,14 @@
                 {{ /sections }}
             </div>
 
-            <!-- Captcha Section -->
-            <div class="mt-8">
-{{#                 {{ captcha }} #}}
-{{#                 {{ if error:captcha }} #}}
-{{#                     <div class="px-4 py-2 mt-8 bg-red-500 text-white border border-red-700 rounded"> #}}
-{{#                         {{ error:captcha }} #}}
-{{#                     </div> #}}
-{{#                 {{ /if }} #}}
-            </div>
+            <!-- Error Feedback -->
+            {{ if errors }}
+                <div class="mt-8 px-4 py-3 bg-red-500 text-white border border-red-700 rounded">
+                    {{ errors }}
+                        <p class="text-sm">{{ value }}</p>
+                    {{ /errors }}
+                </div>
+            {{ /if }}
             <div class="">
                 <p>By submitting this form, you agree to the
                     <a href="/privacy-policy" class="underline duration-300 transition-all hover:text-brand-secondary">Privacy Policy</a>.
