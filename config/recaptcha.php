@@ -7,10 +7,25 @@ return [
     | reCAPTCHA Version
     |--------------------------------------------------------------------------
     |
-    | Set your version of reCAPTCHA here, either `3` or `2`.
+    | Set your version of reCAPTCHA here, either `enterprise`, `v3`, or `v2`.
     |
     */
-    'recaptcha_version' => 3,
+    'recaptcha_version' => 'v3',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Enterprise configuration
+    |
+    | You must also have a "GOOGLE_APPLICATION_CREDENTIALS" variable in .env 
+    | that points to the service account JSON key file within your file system.
+    |--------------------------------------------------------------------------
+    */
+    'recaptcha_enterprise' => [
+        'project_id' => env('RECAPTCHA_ENTERPRISE_PROJECT_ID'), // The Google Cloud project ID
+        'site_key' => env('RECAPTCHA_ENTERPRISE_SITE_KEY'),     // The key ID for the reCAPTCHA key (See https://cloud.google.com/recaptcha/docs/create-key)
+        'threshold' => env('RECAPTCHA_ENTERPRISE_THRESHOLD', .5),
+        'credentials' => env('GOOGLE_APPLICATION_CREDENTIALS'),
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -23,10 +38,9 @@ return [
         'threshold' => env('RECAPTCHA_V3_THRESHOLD', .5),
 
         // In addition to performing the captcha verification when a form is submitted,
-        // Statamic reCAPTCHA for v3 also runs on page load, and if it is determined
+        // Statamic reCAPTCHA for v3 can also run on page load, and if it is determined
         // that the user is likely a bot, all forms on the page will be removed.
-        // You can disable that behavior here by setting the below value to `false`.
-        'verify_on_page_load' => true,
+        'verify_on_page_load' => false,
     ],
 
     /*
@@ -70,7 +84,7 @@ return [
     |
     */
     'exclusions' => [
-        'main_contact_form',
+        // 'contact_us',
     ],
 
 ];
