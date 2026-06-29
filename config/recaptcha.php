@@ -70,7 +70,7 @@ return [
     |
     */
     'exclusions' => [
-        // 'contact_us',
+        'main_contact_form',
     ],
 
 ];

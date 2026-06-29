@@ -1,5 +1,5 @@
 {{ nocache }}
-    {{ form in="{form_handle}" js="alpine" class="w-full {form_handle}" :redirect="success_redirect" }}
+    {{ form in="{form_handle}" js="alpine" class="w-full {form_handle} nocaptcha" :redirect="success_redirect" }}
         {{ if success }}
             <!-- Success Message -->
             <p class="text-3xl font-heading">It's in our inbox</p>
