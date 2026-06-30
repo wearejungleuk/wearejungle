@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Listeners\VerifyRecaptcha;
+use App\Listeners\VerifyTurnstile;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use Statamic\Events\FormSubmitted;
@@ -23,12 +23,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Vendor listener calls RecaptchaV3::verify(string $token, ...) with strict types, so a missing
-        // captcha_token (ad blocker, slow grecaptcha load, JS off, bot post) throws TypeError → 500.
-        // Swap in our defensive version that returns a ValidationException.
+        // Remove the vendor reCAPTCHA listener (anakadote/statamic-recaptcha) and verify
+        // Cloudflare Turnstile via the Spin siteverify Worker instead.
         $this->app->booted(function (): void {
             Event::forget(FormSubmitted::class);
-            Event::listen(FormSubmitted::class, [VerifyRecaptcha::class, 'handle']);
+            Event::listen(FormSubmitted::class, [VerifyTurnstile::class, 'handle']);
         });
 
         // Statamic::vite('app', [

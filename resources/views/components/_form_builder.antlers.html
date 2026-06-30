@@ -78,89 +78,13 @@
             <!-- Honeypot & Submit Button for Other Forms -->
             <div class="mt-8">
                 <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}"/>
-                <input type="hidden" name="captcha_token" value="">
-                <input type="hidden" name="captcha_action" value="">
+                <div class="cf-turnstile mb-4" data-sitekey="{{ config:turnstile:site_key }}" data-action="turnstile-spin-v1"></div>
                 <button type="submit" class="button group">
                     <span>
                         Submit
                     </span>
                 </button>
             </div>
-            <script>
-                (function () {
-                    var form = document.currentScript && document.currentScript.closest('form');
-                    if (!form) return;
-
-                    function init() {
-                        if (!window.recaptchaV3 || !window.recaptchaV3.siteKey) return;
-
-                        var tokenInput = form.querySelector('input[name="captcha_token"]');
-                        var actionInput = form.querySelector('input[name="captcha_action"]');
-                        if (!tokenInput || !actionInput) return;
-
-                        var siteKey = window.recaptchaV3.siteKey;
-                        var actionName = 'formsubmission/' + (window.recaptchaV3.action || 'default');
-                        actionInput.value = actionName;
-
-                        var pollStart = Date.now();
-                        var POLL_TIMEOUT_MS = 10000;
-
-                        function whenReady(cb, onTimeout) {
-                            if (window.grecaptcha && typeof window.grecaptcha.execute === 'function' && typeof window.grecaptcha.ready === 'function') {
-                                window.grecaptcha.ready(cb);
-                                return;
-                            }
-                            if (Date.now() - pollStart > POLL_TIMEOUT_MS) {
-                                if (onTimeout) onTimeout();
-                                return;
-                            }
-                            setTimeout(function () { whenReady(cb, onTimeout); }, 100);
-                        }
-
-                        function fetchToken() {
-                            return new Promise(function (resolve, reject) {
-                                whenReady(function () {
-                                    try {
-                                        window.grecaptcha.execute(siteKey, { action: actionName })
-                                            .then(function (token) {
-                                                tokenInput.value = token || '';
-                                                resolve(token);
-                                            })
-                                            .catch(reject);
-                                    } catch (e) {
-                                        reject(e);
-                                    }
-                                }, function () { reject(new Error('grecaptcha not available')); });
-                            });
-                        }
-
-                        fetchToken().catch(function () {});
-                        setInterval(function () { fetchToken().catch(function () {}); }, 90000);
-
-                        form.addEventListener('submit', function (e) {
-                            if (form.dataset.captchaReady === '1') return;
-                            e.preventDefault();
-                            e.stopImmediatePropagation();
-                            var btn = form.querySelector('button[type="submit"]');
-                            if (btn) btn.disabled = true;
-                            fetchToken().then(function () {
-                                form.dataset.captchaReady = '1';
-                                if (btn) btn.disabled = false;
-                                form.submit();
-                            }).catch(function () {
-                                if (btn) btn.disabled = false;
-                                alert('reCAPTCHA could not load. Please refresh the page and try again.');
-                            });
-                        }, true);
-                    }
-
-                    if (document.readyState === 'loading') {
-                        document.addEventListener('DOMContentLoaded', init);
-                    } else {
-                        init();
-                    }
-                })();
-            </script>
         {{ /if }}
     {{ /form }}
 {{ /nocache }}

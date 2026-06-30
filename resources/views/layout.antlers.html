@@ -35,7 +35,7 @@
     {{ scripts:head_scripts }}
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
      {{ cookie_notice:scripts }}
-    {{ captcha:head }}
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body data-site-handle="{{ site:handle }}"
       class="{{ if environment == 'local'}}debug-screens{{ /if }} bg-brand-primary"
@@ -53,7 +53,6 @@
 
 {{ aardvark-seo:footer }}
 {{ cookie_notice:widget }}
-{{ recaptcha }}
 {{ scripts:footer_scripts }}
 
 </body>
