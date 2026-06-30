@@ -88,68 +88,77 @@
             </div>
             <script>
                 (function () {
-                    var script = document.currentScript;
-                    var form = script && script.closest('form');
-                    if (!form || !window.recaptchaV3 || !window.recaptchaV3.siteKey) return;
+                    var form = document.currentScript && document.currentScript.closest('form');
+                    if (!form) return;
 
-                    var tokenInput = form.querySelector('input[name="captcha_token"]');
-                    var actionInput = form.querySelector('input[name="captcha_action"]');
-                    if (!tokenInput || !actionInput) return;
+                    function init() {
+                        if (!window.recaptchaV3 || !window.recaptchaV3.siteKey) return;
 
-                    var siteKey = window.recaptchaV3.siteKey;
-                    var actionName = 'formsubmission/' + (window.recaptchaV3.action || 'default');
-                    actionInput.value = actionName;
+                        var tokenInput = form.querySelector('input[name="captcha_token"]');
+                        var actionInput = form.querySelector('input[name="captcha_action"]');
+                        if (!tokenInput || !actionInput) return;
 
-                    var pollStart = Date.now();
-                    var POLL_TIMEOUT_MS = 10000;
+                        var siteKey = window.recaptchaV3.siteKey;
+                        var actionName = 'formsubmission/' + (window.recaptchaV3.action || 'default');
+                        actionInput.value = actionName;
 
-                    function whenReady(cb, onTimeout) {
-                        if (window.grecaptcha && typeof window.grecaptcha.execute === 'function' && typeof window.grecaptcha.ready === 'function') {
-                            window.grecaptcha.ready(cb);
-                            return;
+                        var pollStart = Date.now();
+                        var POLL_TIMEOUT_MS = 10000;
+
+                        function whenReady(cb, onTimeout) {
+                            if (window.grecaptcha && typeof window.grecaptcha.execute === 'function' && typeof window.grecaptcha.ready === 'function') {
+                                window.grecaptcha.ready(cb);
+                                return;
+                            }
+                            if (Date.now() - pollStart > POLL_TIMEOUT_MS) {
+                                if (onTimeout) onTimeout();
+                                return;
+                            }
+                            setTimeout(function () { whenReady(cb, onTimeout); }, 100);
                         }
-                        if (Date.now() - pollStart > POLL_TIMEOUT_MS) {
-                            if (onTimeout) onTimeout();
-                            return;
+
+                        function fetchToken() {
+                            return new Promise(function (resolve, reject) {
+                                whenReady(function () {
+                                    try {
+                                        window.grecaptcha.execute(siteKey, { action: actionName })
+                                            .then(function (token) {
+                                                tokenInput.value = token || '';
+                                                resolve(token);
+                                            })
+                                            .catch(reject);
+                                    } catch (e) {
+                                        reject(e);
+                                    }
+                                }, function () { reject(new Error('grecaptcha not available')); });
+                            });
                         }
-                        setTimeout(function () { whenReady(cb, onTimeout); }, 100);
+
+                        fetchToken().catch(function () {});
+                        setInterval(function () { fetchToken().catch(function () {}); }, 90000);
+
+                        form.addEventListener('submit', function (e) {
+                            if (form.dataset.captchaReady === '1') return;
+                            e.preventDefault();
+                            e.stopImmediatePropagation();
+                            var btn = form.querySelector('button[type="submit"]');
+                            if (btn) btn.disabled = true;
+                            fetchToken().then(function () {
+                                form.dataset.captchaReady = '1';
+                                if (btn) btn.disabled = false;
+                                form.submit();
+                            }).catch(function () {
+                                if (btn) btn.disabled = false;
+                                alert('reCAPTCHA could not load. Please refresh the page and try again.');
+                            });
+                        }, true);
                     }
 
-                    function fetchToken() {
-                        return new Promise(function (resolve, reject) {
-                            whenReady(function () {
-                                try {
-                                    window.grecaptcha.execute(siteKey, { action: actionName })
-                                        .then(function (token) {
-                                            tokenInput.value = token || '';
-                                            resolve(token);
-                                        })
-                                        .catch(reject);
-                                } catch (e) {
-                                    reject(e);
-                                }
-                            }, function () { reject(new Error('grecaptcha not available')); });
-                        });
+                    if (document.readyState === 'loading') {
+                        document.addEventListener('DOMContentLoaded', init);
+                    } else {
+                        init();
                     }
-
-                    fetchToken().catch(function () {});
-                    setInterval(function () { fetchToken().catch(function () {}); }, 90000);
-
-                    form.addEventListener('submit', function (e) {
-                        if (form.dataset.captchaReady === '1') return;
-                        e.preventDefault();
-                        e.stopImmediatePropagation();
-                        var btn = form.querySelector('button[type="submit"]');
-                        if (btn) btn.disabled = true;
-                        fetchToken().then(function () {
-                            form.dataset.captchaReady = '1';
-                            if (btn) btn.disabled = false;
-                            form.submit();
-                        }).catch(function () {
-                            if (btn) btn.disabled = false;
-                            alert('reCAPTCHA could not load. Please refresh the page and try again.');
-                        });
-                    }, true);
                 })();
             </script>
         {{ /if }}
