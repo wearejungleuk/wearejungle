@@ -78,13 +78,59 @@
             <!-- Honeypot & Submit Button for Other Forms -->
             <div class="mt-8">
                 <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}"/>
-                <div class="cf-turnstile mb-4" data-sitekey="{{ config:turnstile:site_key }}" data-action="turnstile-spin-v1"></div>
-                <button type="submit" class="button group">
+                <div class="wj-turnstile-slot mb-4" data-wj-turnstile-slot></div>
+                <button type="submit" class="button group" data-turnstile-submit disabled>
                     <span>
                         Submit
                     </span>
                 </button>
             </div>
+            <script>
+                (function () {
+                    var form = document.currentScript && document.currentScript.closest('form');
+                    if (!form) return;
+                    var slot = form.querySelector('[data-wj-turnstile-slot]');
+                    var btn  = form.querySelector('[data-turnstile-submit]');
+                    if (!slot || !btn) return;
+
+                    var siteKey = "{{ config:turnstile:site_key }}";
+                    var widgetId = null;
+
+                    function log(msg, extra) { try { console.log('[turnstile]', msg, extra || ''); } catch (e) {} }
+
+                    function renderWidget() {
+                        if (!window.turnstile) { log('script not loaded yet'); return false; }
+                        if (widgetId !== null) { try { window.turnstile.remove(widgetId); } catch (e) {} widgetId = null; }
+                        slot.innerHTML = '';
+                        widgetId = window.turnstile.render(slot, {
+                            sitekey: siteKey,
+                            action:  'turnstile-spin-v1',
+                            callback: function (token) { log('token received', token && token.slice(0, 12) + '…'); btn.disabled = false; },
+                            'error-callback': function (code) { log('error', code); btn.disabled = true; },
+                            'expired-callback': function () { log('expired, resetting'); btn.disabled = true; window.turnstile.reset(widgetId); },
+                            'timeout-callback': function () { log('timeout, resetting'); window.turnstile.reset(widgetId); },
+                        });
+                        log('rendered widget', widgetId);
+                        return true;
+                    }
+
+                    function boot() {
+                        if (renderWidget()) return;
+                        // Script not ready yet — retry until Turnstile appears (async defer)
+                        var tries = 0;
+                        var interval = setInterval(function () {
+                            tries++;
+                            if (renderWidget() || tries > 60) clearInterval(interval);
+                        }, 200);
+                    }
+
+                    if (document.readyState === 'loading') {
+                        document.addEventListener('DOMContentLoaded', boot);
+                    } else {
+                        boot();
+                    }
+                })();
+            </script>
         {{ /if }}
     {{ /form }}
 {{ /nocache }}
