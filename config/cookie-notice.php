@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'widget_view' => 'cookie-notice::widget',
+    'widget_view' => 'components.cookie-notice',
 
     /*
     |--------------------------------------------------------------------------
