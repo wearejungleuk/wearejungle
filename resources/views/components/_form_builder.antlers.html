@@ -99,30 +99,42 @@
                     function log(msg, extra) { try { console.log('[turnstile]', msg, extra || ''); } catch (e) {} }
 
                     function renderWidget() {
-                        if (!window.turnstile) { log('script not loaded yet'); return false; }
+                        if (!window.turnstile) { log('render called before turnstile available'); return false; }
                         if (widgetId !== null) { try { window.turnstile.remove(widgetId); } catch (e) {} widgetId = null; }
                         slot.innerHTML = '';
-                        widgetId = window.turnstile.render(slot, {
-                            sitekey: siteKey,
-                            action:  'turnstile-spin-v1',
-                            callback: function (token) { log('token received', token && token.slice(0, 12) + '…'); btn.disabled = false; },
-                            'error-callback': function (code) { log('error', code); btn.disabled = true; },
-                            'expired-callback': function () { log('expired, resetting'); btn.disabled = true; window.turnstile.reset(widgetId); },
-                            'timeout-callback': function () { log('timeout, resetting'); window.turnstile.reset(widgetId); },
-                        });
-                        log('rendered widget', widgetId);
-                        return true;
+                        btn.disabled = true;
+                        try {
+                            var id = window.turnstile.render(slot, {
+                                sitekey: siteKey,
+                                action:  'turnstile-spin-v1',
+                                callback: function (token) { log('token received', token && token.slice(0, 12) + '…'); btn.disabled = false; },
+                                'error-callback': function (code) { log('error', code); btn.disabled = true; },
+                                'expired-callback': function () { log('expired, resetting'); btn.disabled = true; if (widgetId !== null) window.turnstile.reset(widgetId); },
+                                'timeout-callback': function () { log('timeout, resetting'); if (widgetId !== null) window.turnstile.reset(widgetId); },
+                            });
+                            if (id === undefined || id === null) { log('render returned no id'); return false; }
+                            widgetId = id;
+                            log('rendered widget', widgetId);
+                            return true;
+                        } catch (e) {
+                            log('render threw', e && e.message);
+                            return false;
+                        }
                     }
 
                     function boot() {
-                        if (renderWidget()) return;
-                        // Script not ready yet — retry until Turnstile appears (async defer)
-                        var tries = 0;
-                        var interval = setInterval(function () {
-                            tries++;
-                            if (renderWidget() || tries > 60) clearInterval(interval);
-                        }, 200);
+                        if (window.wjTurnstileLoaded && window.turnstile) {
+                            renderWidget();
+                        } else {
+                            window.wjTurnstileQueue = window.wjTurnstileQueue || [];
+                            window.wjTurnstileQueue.push(renderWidget);
+                            log('queued for turnstile ready');
+                        }
                     }
+
+                    window.addEventListener('pageshow', function (e) {
+                        if (e.persisted) { log('bfcache restore, re-rendering'); boot(); }
+                    });
 
                     if (document.readyState === 'loading') {
                         document.addEventListener('DOMContentLoaded', boot);

@@ -35,7 +35,15 @@
     {{ scripts:head_scripts }}
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
      {{ cookie_notice:scripts }}
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script>
+        window.wjTurnstileQueue = window.wjTurnstileQueue || [];
+        window.wjTurnstileReady = function () {
+            window.wjTurnstileLoaded = true;
+            var q = window.wjTurnstileQueue.splice(0);
+            for (var i = 0; i < q.length; i++) { try { q[i](); } catch (e) { try { console.error('[turnstile] queued render failed', e); } catch (_) {} } }
+        };
+    </script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=wjTurnstileReady&render=explicit" async defer></script>
 </head>
 <body data-site-handle="{{ site:handle }}"
       class="{{ if environment == 'local'}}debug-screens{{ /if }} bg-brand-primary"
