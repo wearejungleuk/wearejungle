@@ -36,13 +36,83 @@
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
      {{ cookie_notice:scripts }}
     <script data-cfasync="false">
-        window.wjTurnstileQueue = window.wjTurnstileQueue || [];
-        window.wjTurnstileReady = function () {
-            window.wjTurnstileLoaded = true;
-            try { console.log('[turnstile] api ready, draining queue', window.wjTurnstileQueue.length); } catch (_) {}
-            var q = window.wjTurnstileQueue.splice(0);
-            for (var i = 0; i < q.length; i++) { try { q[i](); } catch (e) { try { console.error('[turnstile] queued render failed', e); } catch (_) {} } }
-        };
+        // Global Turnstile widget renderer. Lives in the layout (not in the form
+        // partial) because the form partial is inside {{ nocache }}, and Statamic's
+        // client-side region replacement uses setHTMLUnsafe which does NOT execute
+        // inline <script> tags. So the renderer must live outside the nocache region
+        // and be triggered by DOM events instead.
+        (function () {
+            function log(msg, extra) { try { console.log('[turnstile]', msg, extra || ''); } catch (e) {} }
+
+            window.wjTurnstileQueue = window.wjTurnstileQueue || [];
+            window.wjTurnstileReady = function () {
+                window.wjTurnstileLoaded = true;
+                log('api ready, draining queue', window.wjTurnstileQueue.length);
+                var q = window.wjTurnstileQueue.splice(0);
+                for (var i = 0; i < q.length; i++) { try { q[i](); } catch (e) { try { console.error('[turnstile] queued fn failed', e); } catch (_) {} } }
+                scanAndRender();
+            };
+
+            function renderSlot(slot) {
+                if (slot.getAttribute('data-wj-turnstile-init') === '1') return;
+                slot.setAttribute('data-wj-turnstile-init', '1');
+
+                var form = slot.closest('form');
+                if (!form) { log('bail: slot has no parent form'); return; }
+                var btn = form.querySelector('[data-turnstile-submit]');
+                if (!btn) { log('bail: no submit button'); return; }
+                var siteKey = slot.getAttribute('data-wj-turnstile-sitekey') || '';
+                if (!siteKey) { log('bail: no sitekey on slot'); return; }
+
+                var widgetId = null;
+                slot.innerHTML = '';
+                btn.disabled = true;
+
+                try {
+                    widgetId = window.turnstile.render(slot, {
+                        sitekey: siteKey,
+                        action:  'turnstile-spin-v1',
+                        callback: function (token) { log('token received', token && token.slice(0, 12) + '…'); btn.disabled = false; },
+                        'error-callback': function (code) { log('error', code); btn.disabled = true; },
+                        'expired-callback': function () { log('expired, resetting'); btn.disabled = true; if (widgetId !== null) window.turnstile.reset(widgetId); },
+                        'timeout-callback': function () { log('timeout, resetting'); if (widgetId !== null) window.turnstile.reset(widgetId); },
+                    });
+                    if (widgetId === undefined || widgetId === null) { log('render returned no id'); return; }
+                    log('rendered widget', widgetId);
+                } catch (e) {
+                    log('render threw', e && e.message);
+                }
+            }
+
+            function scanAndRender() {
+                var slots = document.querySelectorAll('[data-wj-turnstile-slot]:not([data-wj-turnstile-init])');
+                if (!slots.length) return;
+                if (!window.turnstile) {
+                    log('scan queued; waiting for turnstile api');
+                    window.wjTurnstileQueue.push(scanAndRender);
+                    return;
+                }
+                for (var i = 0; i < slots.length; i++) renderSlot(slots[i]);
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', scanAndRender);
+            } else {
+                scanAndRender();
+            }
+
+            // Statamic's file cacher fills nocache regions client-side after page
+            // load and dispatches this event. Re-scan once the DOM has been mutated.
+            document.addEventListener('statamic:nocache.replaced', function () {
+                log('nocache regions replaced, re-scanning');
+                scanAndRender();
+            });
+
+            // Handle back/forward cache restores.
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) { log('bfcache restore, re-scanning'); scanAndRender(); }
+            });
+        })();
     </script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=wjTurnstileReady&render=explicit" async defer data-cfasync="false"></script>
 </head>
