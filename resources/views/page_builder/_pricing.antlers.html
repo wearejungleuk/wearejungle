@@ -33,9 +33,9 @@
                                 <span class="font-heading text-[38px] lg:text-[48px] leading-none text-white">{{ price_label }}</span>
                             {{ else }}
                                 <span class="font-heading text-[52px] lg:text-[62px] leading-none text-white">£{{ price }}</span>
-                                {{ if price_period }}
-                                    <span class="text-white text-[18px] relative bottom-[16px]">{{ price_period }}</span>
-                                {{ /if }}
+                            {{ /if }}
+                            {{ if price_period }}
+                                <span class="text-white text-[18px] relative bottom-[16px]">{{ price_period }}</span>
                             {{ /if }}
                         </div>
 

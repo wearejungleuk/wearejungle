@@ -733,6 +733,16 @@ fields:
                                   type: text
                                   display: Price
                               -
+                                handle: price_label
+                                field:
+                                  type: text
+                                  display: 'Price Label (overrides price field)'
+                              -
+                                handle: price_period
+                                field:
+                                  type: text
+                                  display: 'Price Period (e.g. /mo)'
+                              -
                                 handle: vat_note
                                 field:
                                   type: text
