@@ -58,7 +58,7 @@ tabs:
               container: assets
               type: assets
               display: 'Ad Bar Image'
-              instructions: 'Solid image shown on the right side of the in-blog ad bar that promotes this service. Aim for a portrait or square crop that still reads at ~200px wide.'
+              instructions: 'Solid image shown on the right side of the in-blog ad bar that promotes this service. Aim for a portrait or square crop that still reads at ~200px wide. Optional — if blank, the Card Image is used.'
               restrict: false
           -
             handle: icon
