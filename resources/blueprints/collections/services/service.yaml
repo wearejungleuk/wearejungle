@@ -52,6 +52,12 @@ tabs:
               instructions: 'Image shown on related service cards.'
               restrict: false
           -
+            handle: ad_headline
+            field:
+              type: text
+              display: 'Ad Bar Headline'
+              instructions: 'Short, punchy line shown as the ad bar headline (e.g. "Don''t leave your website to chance"). Aim for 4-8 words. Optional — falls back to the service title.'
+          -
             handle: ad_image
             field:
               max_files: 1
