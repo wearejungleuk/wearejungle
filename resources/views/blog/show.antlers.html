@@ -77,21 +77,16 @@
                 </div>
                 {{ /if }}
 
-                {{# Bard content — iterated so we can inject the in-blog ad bar roughly halfway through #}}
+                {{# Bard content #}}
                 {{ if content }}
-                <div class="bard">
+                <div class="bard" data-ad-host>
                     {{ content }}
-                        {{ ad_position = total_results | divide:2 | floor }}
-                        {{ if type == 'set' }}
-                            {{ partial src="sets/{type}" }}
-                        {{ else }}
-                            {{ text }}
-                        {{ /if }}
-                        {{ if advertised_service && count == ad_position }}
-                            {{ partial:components/blog-ad-bar :advertised_service="advertised_service" }}
-                        {{ /if }}
-                    {{ /content }}
                 </div>
+                {{ /if }}
+
+                {{# In-blog ad bar — rendered here, then moved into the middle of the article by JS. #}}
+                {{ if advertised_service }}
+                    {{ partial:components/blog-ad-bar :advertised_service="advertised_service" }}
                 {{ /if }}
 
                 {{# Mobile share row #}}

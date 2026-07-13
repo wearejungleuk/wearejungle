@@ -30,6 +30,7 @@ import './functions/smoothScroll';
 import './functions/svg-draw';
 import './functions/hero-animation';
 import './functions/sticky';
+import './functions/blogAdBar';
 
 // Call Alpine.
 window.Alpine = Alpine;
