@@ -28,7 +28,7 @@ key_points:
     label: 'Development hours included for ongoing improvements'
     type: new_set
     enabled: true
-ad_headline: 'Don''t leave your website to chance'
+ad_headline: 'WordPress Website Maintenance & UK Care Plans'
 ad_image: business-tool.jpg
 icon: support.svg
 page_builder:
