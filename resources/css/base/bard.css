@@ -62,6 +62,11 @@
     a:not(.button) {
         text-decoration: underline;
         font-weight: 700;
+        transition: color 200ms ease;
+
+        &:hover {
+            color: rgb(var(--color-brand-secondary));
+        }
     }
 
     img {
