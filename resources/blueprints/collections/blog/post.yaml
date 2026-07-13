@@ -57,6 +57,16 @@ tabs:
               type: assets
               display: 'Author Avatar'
           -
+            handle: advertised_service
+            field:
+              type: entries
+              collections:
+                - services
+              display: 'Advertised Service'
+              instructions: 'The service promoted by the in-blog ad bar. Leave blank to hide the ad bar on this post.'
+              max_items: 1
+              mode: select
+          -
             handle: content
             field:
               type: bard

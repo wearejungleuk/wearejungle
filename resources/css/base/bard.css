@@ -59,7 +59,7 @@
         margin: 0;
     }
 
-    a:not(.button) {
+    a:not(.button):not(.blog-ad-bar) {
         text-decoration: underline;
         font-weight: 700;
         transition: color 200ms ease;
@@ -67,6 +67,28 @@
         &:hover {
             color: rgb(var(--color-brand-secondary));
         }
+    }
+
+    .blog-ad-bar,
+    .blog-ad-bar:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .blog-ad-bar p,
+    .blog-ad-bar h1,
+    .blog-ad-bar h2,
+    .blog-ad-bar h3,
+    .blog-ad-bar h4,
+    .blog-ad-bar h5,
+    .blog-ad-bar h6 {
+        margin: 0 0 12px;
+    }
+
+    .blog-ad-bar img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
     }
 
     img {
