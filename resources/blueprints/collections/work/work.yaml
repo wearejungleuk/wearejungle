@@ -74,6 +74,29 @@ tabs:
               mode: select
               create: true
       -
+        display: Overview
+        fields:
+          -
+            handle: overview_heading
+            field:
+              type: text
+              display: 'Overview Heading'
+              instructions: 'Large heading for the overview section (e.g. "A clear and concise digital platform for investors.").'
+          -
+            handle: overview_body
+            field:
+              type: bard
+              display: 'Overview Body'
+              instructions: 'Two to three short paragraphs describing the project. Links inline are fine.'
+              remove_empty_nodes: false
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - link
+                - h3
+      -
         display: 'Listing Card'
         fields:
           -
@@ -137,6 +160,13 @@ tabs:
                           field:
                             type: text
                             display: Label
+                            instructions: 'Short title shown in bold (e.g. "Frictionless Online Booking").'
+                        -
+                          handle: description
+                          field:
+                            type: text
+                            display: Description
+                            instructions: 'Sentence-length description after the label.'
   sidebar:
     display: Sidebar
     sections:

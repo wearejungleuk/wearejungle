@@ -65,6 +65,50 @@
     </div>
 </section>
 
+{{ if overview_heading || overview_body || feature_list }}
+    <section class="bg-brand-dark-blue py-16 lg:py-24">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-[200px_1fr] xl:grid-cols-[240px_1fr] gap-8 lg:gap-16">
+
+                <div>
+                    <span class="text-white/70 text-[14px] lg:text-[15px] js-fade-up">Overview</span>
+                </div>
+
+                <div class="max-w-[720px]">
+                    {{ if overview_heading }}
+                        <h2 class="font-heading text-white text-[26px] sm:text-[30px] lg:text-[34px] xl:text-[38px] leading-[1.15] mb-6 lg:mb-8 js-fade-up">{{ overview_heading }}</h2>
+                    {{ /if }}
+
+                    {{ if overview_body }}
+                        <div class="bard bard--work-overview text-white/85 text-[15px] lg:text-[16px] leading-relaxed js-fade-up">{{ overview_body }}</div>
+                    {{ /if }}
+
+                    {{ if feature_list }}
+                        <ul class="flex flex-col gap-5 lg:gap-6 mt-10 lg:mt-12">
+                            {{ feature_list }}
+                                <li class="flex items-start gap-4 js-fade-up">
+                                    {{ if icon }}
+                                        <span class="flex-shrink-0 w-[36px] h-[36px] bg-brand-secondary rounded-lg flex items-center justify-center mt-[2px]">
+                                            {{ icon }}
+                                                <img src="{{ url }}" alt="{{ alt }}" class="w-[20px] h-[20px] object-contain">
+                                            {{ /icon }}
+                                        </span>
+                                    {{ /if }}
+                                    <div class="text-white/90 text-[15px] lg:text-[16px] leading-relaxed">
+                                        {{ if label }}<span class="font-bodybold text-white">{{ label }}:</span>{{ /if }}
+                                        {{ if description }} {{ description }}{{ /if }}
+                                    </div>
+                                </li>
+                            {{ /feature_list }}
+                        </ul>
+                    {{ /if }}
+                </div>
+
+            </div>
+        </div>
+    </section>
+{{ /if }}
+
 {{# Rest of the case study page — driven by the page builder. #}}
 {{ page_builder }}
     {{ partial src="page_builder/{type}" }}
