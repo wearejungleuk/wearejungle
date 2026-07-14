@@ -5,6 +5,7 @@ title: 'Web Development'
 meta_title: 'Web Development Portsmouth | We Are Jungle'
 meta_description: 'Hand-coded web development from We Are Jungle in Portsmouth. No page builders, no bloated themes. Clean, scalable code built to perform and last.'
 slug: web-development
+ad_headline: 'Custom Web Development Without The Compromise'
 card_text: 'Clean, scalable builds using modern tools and frameworks. Fast, flexible, and built to last - not patched together.'
 page_text: 'Every site we build starts from a blank canvas and is coded by hand. No bloated themes, no page builders, no shortcuts that cause problems later. We use modern frameworks and clean, maintainable code - which means your site loads fast, scales easily, and can be updated or extended without starting from scratch. Built properly the first time, so you are not paying to fix it twice.'
 key_points:
