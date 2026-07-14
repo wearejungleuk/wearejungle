@@ -1,4 +1,5 @@
 title: Work
+route: '/work/{slug}'
 structure:
   max_depth: 1
 template: work/show

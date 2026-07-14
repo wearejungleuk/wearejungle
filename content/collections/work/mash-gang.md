@@ -14,7 +14,7 @@ preview_text:
 preview_image: mash-gang-website.jpg
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
-no_index_page: true
+no_index_page: false
 no_follow_links: false
 sitemap_priority: '0.5'
 sitemap_changefreq: daily
