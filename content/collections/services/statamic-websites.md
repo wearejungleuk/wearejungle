@@ -48,7 +48,7 @@ page_builder:
     enabled: true
   -
     id: split_stats_stat_01
-    title: "Why Statamic? Because It Works Better."
+    title: 'Why Statamic? Because It Works Better.'
     text:
       -
         type: paragraph
@@ -59,19 +59,19 @@ page_builder:
     stats:
       -
         id: stat_stat_01
-        number: '50+'
+        number: 50+
         label: 'Statamic Sites Launched'
         type: new_set
         enabled: true
       -
         id: stat_stat_02
-        number: '12+'
+        number: 12+
         label: 'Years Experience'
         type: new_set
         enabled: true
       -
         id: stat_stat_03
-        number: '100%'
+        number: 100%
         label: 'Flat-File - No Database'
         type: new_set
         enabled: true
@@ -80,6 +80,7 @@ page_builder:
     cta_classes: button--primary
     type: split_stats
     enabled: true
+    image: statamic-websites-card.jpg
   -
     id: tech_carousel_stat_01
     intro_text: 'The Statamic stack - lean, fast, and built for serious websites.'
@@ -87,55 +88,55 @@ page_builder:
       -
         id: tech_stat_01
         name: Statamic
-        description: "The heart of every build. A flat-file CMS built on Laravel - fast, secure, and genuinely easy for your team to use."
+        description: 'The heart of every build. A flat-file CMS built on Laravel - fast, secure, and genuinely easy for your team to use.'
         icon: statamic.svg
         type: new_set
         enabled: true
       -
         id: tech_stat_02
         name: Alpine.js
-        description: "Lightweight JavaScript for all front-end interactivity. Works beautifully alongside Antlers without the overhead of a full framework."
+        description: 'Lightweight JavaScript for all front-end interactivity. Works beautifully alongside Antlers without the overhead of a full framework.'
         icon: alpine.js.svg
         type: new_set
         enabled: true
       -
         id: tech_stat_03
-        name: Tailwind CSS
-        description: "Utility-first CSS that lets us build completely custom, pixel-perfect designs at speed."
+        name: 'Tailwind CSS'
+        description: 'Utility-first CSS that lets us build completely custom, pixel-perfect designs at speed.'
         icon: tailwind-css.svg
         type: new_set
         enabled: true
       -
         id: tech_stat_04
         name: Laravel
-        description: "The PHP framework powering Statamic. Robust, well-tested, and backed by a large community - the solid foundation beneath every Statamic site."
+        description: 'The PHP framework powering Statamic. Robust, well-tested, and backed by a large community - the solid foundation beneath every Statamic site.'
         type: new_set
         enabled: true
       -
         id: tech_stat_05
         name: PHP
-        description: "The server-side language Statamic and Laravel are built on. Modern, fast, and the right choice for serious web applications."
+        description: 'The server-side language Statamic and Laravel are built on. Modern, fast, and the right choice for serious web applications.'
         icon: php.svg
         type: new_set
         enabled: true
       -
         id: tech_stat_06
         name: HTML5
-        description: "Semantic, accessible markup that forms the foundation of every Statamic build - correct structure from the first template."
+        description: 'Semantic, accessible markup that forms the foundation of every Statamic build - correct structure from the first template.'
         icon: html5.svg
         type: new_set
         enabled: true
       -
         id: tech_stat_07
         name: CSS3
-        description: "Modern CSS for layouts, animations, and visual polish - written cleanly alongside Tailwind for maintainable, scalable stylesheets."
+        description: 'Modern CSS for layouts, animations, and visual polish - written cleanly alongside Tailwind for maintainable, scalable stylesheets.'
         icon: css3.svg
         type: new_set
         enabled: true
       -
         id: tech_stat_08
         name: JavaScript
-        description: "Progressive JavaScript for interactive behaviour - used precisely where it adds value, working alongside Alpine.js for a lightweight result."
+        description: 'Progressive JavaScript for interactive behaviour - used precisely where it adds value, working alongside Alpine.js for a lightweight result.'
         icon: javascript.svg
         type: new_set
         enabled: true
@@ -144,24 +145,24 @@ page_builder:
   -
     id: features_grid_stat_01
     title: 'Why Statamic Performs'
-    intro_text: "Three things that make Statamic the right choice for most of our clients."
+    intro_text: 'Three things that make Statamic the right choice for most of our clients.'
     items:
       -
         id: fg_stat_01
         title: 'Speed Without Compromise'
-        text: "Flat-file architecture means no database queries and no unnecessary overhead. Statamic sites are fast by design - and the performance scores reflect it."
+        text: 'Flat-file architecture means no database queries and no unnecessary overhead. Statamic sites are fast by design - and the performance scores reflect it.'
         type: new_set
         enabled: true
       -
         id: fg_stat_02
         title: 'Secure by Architecture'
-        text: "No database means no SQL injection risk. Statamic eliminates entire categories of vulnerabilities that keep WordPress developers awake at night."
+        text: 'No database means no SQL injection risk. Statamic eliminates entire categories of vulnerabilities that keep WordPress developers awake at night.'
         type: new_set
         enabled: true
       -
         id: fg_stat_03
         title: 'Built for Your Team'
-        text: "The Statamic control panel is built for humans. Your team can manage content confidently from day one - no developer required for everyday updates."
+        text: 'The Statamic control panel is built for humans. Your team can manage content confidently from day one - no developer required for everyday updates.'
         type: new_set
         enabled: true
     type: features_grid
@@ -175,7 +176,7 @@ page_builder:
     steps:
       -
         id: step_stat_01
-        tab_label: 'Discovery'
+        tab_label: Discovery
         heading: 'Discovery & Content Modelling'
         step_text:
           -
@@ -188,15 +189,15 @@ page_builder:
         enabled: true
       -
         id: step_stat_02
-        tab_label: 'Design'
-        heading: 'Design'
+        tab_label: Design
+        heading: Design
         step_text:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: "Bespoke visual design built around your brand. Every page is designed before development begins - you see and sign off the site before a line of code is written."
+                text: 'Bespoke visual design built around your brand. Every page is designed before development begins - you see and sign off the site before a line of code is written.'
         type: new_set
         enabled: true
       -
@@ -209,7 +210,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Built on Statamic with Antlers templating, Alpine.js interactivity, and Tailwind CSS. Clean, fast, and structured so your team can manage content with confidence from day one."
+                text: 'Built on Statamic with Antlers templating, Alpine.js interactivity, and Tailwind CSS. Clean, fast, and structured so your team can manage content with confidence from day one.'
         type: new_set
         enabled: true
       -
@@ -326,7 +327,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Curious about Statamic? This short call is a chance to see the platform in action, ask questions, and find out if it is the right fit for your project."
+            text: 'Curious about Statamic? This short call is a chance to see the platform in action, ask questions, and find out if it is the right fit for your project.'
       -
         type: paragraph
         content:
@@ -386,17 +387,15 @@ page_builder:
             content:
               -
                 type: text
-                text: "No pressure - just the information you need to make the right decision"
+                text: 'No pressure - just the information you need to make the right decision'
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
     enabled: true
   -
     id: related_services_stat_01
-    related_service_1:
-      - f8142c54-0000-0000-0000-000000000001
-    related_service_2:
-      - 15b87cff-0000-0000-0000-000000000002
+    related_service_1: f8142c54-0000-0000-0000-000000000001
+    related_service_2: 15b87cff-0000-0000-0000-000000000002
     type: related_services
     enabled: true
   -
@@ -413,7 +412,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Statamic is a flat-file CMS built on Laravel. It stores content as files rather than in a database - which makes it faster, more secure, and easier to version-control than database-driven platforms like WordPress."
+                text: 'Statamic is a flat-file CMS built on Laravel. It stores content as files rather than in a database - which makes it faster, more secure, and easier to version-control than database-driven platforms like WordPress.'
         type: new_set
         enabled: true
       -
@@ -437,7 +436,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. The Statamic control panel is clean and intuitive. We structure the CMS around your content - most clients are managing their own site comfortably within the first week."
+                text: 'Yes. The Statamic control panel is clean and intuitive. We structure the CMS around your content - most clients are managing their own site comfortably within the first week.'
         type: new_set
         enabled: true
       -
@@ -505,7 +504,7 @@ page_builder:
   -
     id: cta_block_stat_01
     above_title: 'Statamic Websites'
-    title: "Stop Wrestling With Your CMS"
+    title: 'Stop Wrestling With Your CMS'
     text:
       -
         type: paragraph
@@ -518,6 +517,7 @@ page_builder:
     illustration: julius-ipad.svg
     type: cta_block
     enabled: true
+    book_appointment_2: false
 use_meta_keywords: false
 no_index_page: false
 no_follow_links: false
@@ -525,5 +525,6 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1780042798
+updated_at: 1784027372
+card_image: statamic-websites-card.jpg
 ---

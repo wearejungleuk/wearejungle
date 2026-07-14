@@ -41,7 +41,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We design websites for ambitious businesses. Purposeful layouts, sharp visuals, and a user experience that guides people toward the action you want them to take - not just a site that looks nice."
+            text: 'We design websites for ambitious businesses. Purposeful layouts, sharp visuals, and a user experience that guides people toward the action you want them to take - not just a site that looks nice.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -59,19 +59,19 @@ page_builder:
     stats:
       -
         id: stat_wd_01
-        number: '100+'
+        number: 100+
         label: 'Sites Launched'
         type: new_set
         enabled: true
       -
         id: stat_wd_02
-        number: '12+'
+        number: 12+
         label: 'Years Experience'
         type: new_set
         enabled: true
       -
         id: stat_wd_03
-        number: '50+'
+        number: 50+
         label: 'Clients Supported'
         type: new_set
         enabled: true
@@ -80,6 +80,7 @@ page_builder:
     cta_classes: button--primary
     type: split_stats
     enabled: true
+    image: web-design-card.jpg
   -
     id: tech_carousel_wd_01
     intro_text: 'We work with a carefully chosen set of design and build tools - picked to deliver the best results for every project.'
@@ -87,54 +88,54 @@ page_builder:
       -
         id: tech_wd_01
         name: Figma
-        description: "Our primary design tool for wireframes, prototypes, and high-fidelity layouts. Collaborative, fast, and built for modern design workflows."
+        description: 'Our primary design tool for wireframes, prototypes, and high-fidelity layouts. Collaborative, fast, and built for modern design workflows.'
         type: new_set
         enabled: true
       -
         id: tech_wd_02
-        name: Adobe XD
-        description: "We also design in Adobe XD for clients who need seamless integration with the rest of the Adobe Creative Suite."
+        name: 'Adobe XD'
+        description: 'We also design in Adobe XD for clients who need seamless integration with the rest of the Adobe Creative Suite.'
         type: new_set
         enabled: true
       -
         id: tech_wd_03
-        name: Tailwind CSS
-        description: "Utility-first CSS that lets us build completely custom designs at speed. No overriding defaults, no bloated stylesheets."
+        name: 'Tailwind CSS'
+        description: 'Utility-first CSS that lets us build completely custom designs at speed. No overriding defaults, no bloated stylesheets.'
         icon: tailwind-css.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_04
         name: Alpine.js
-        description: "Lightweight JavaScript for all front-end interactivity. Small footprint, powerful enough for everything we need."
+        description: 'Lightweight JavaScript for all front-end interactivity. Small footprint, powerful enough for everything we need.'
         icon: alpine.js.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_05
         name: Statamic
-        description: "Our recommended CMS for most new builds. Flat-file, fast, and genuinely easy to manage - our preferred platform."
+        description: 'Our recommended CMS for most new builds. Flat-file, fast, and genuinely easy to manage - our preferred platform.'
         icon: statamic.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_06
         name: WordPress
-        description: "We build in WordPress when clients need it - familiar, widely supported, and powerful when set up and configured correctly."
+        description: 'We build in WordPress when clients need it - familiar, widely supported, and powerful when set up and configured correctly.'
         icon: wordpress.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_07
         name: HTML5
-        description: "Semantic, accessible markup that forms the backbone of every site we build - structured for performance, SEO, and screen readers."
+        description: 'Semantic, accessible markup that forms the backbone of every site we build - structured for performance, SEO, and screen readers.'
         icon: html5.svg
         type: new_set
         enabled: true
       -
         id: tech_wd_08
         name: CSS3
-        description: "Modern CSS for layouts, animations, and visual polish. We write clean, maintainable styles that work across every browser and device."
+        description: 'Modern CSS for layouts, animations, and visual polish. We write clean, maintainable styles that work across every browser and device.'
         icon: css3.svg
         type: new_set
         enabled: true
@@ -148,7 +149,7 @@ page_builder:
       -
         id: tech_wd_10
         name: GSAP
-        description: "Industry-standard animation library for scroll-triggered effects, page transitions, and polished motion design."
+        description: 'Industry-standard animation library for scroll-triggered effects, page transitions, and polished motion design.'
         type: new_set
         enabled: true
     type: tech_carousel
@@ -161,19 +162,19 @@ page_builder:
       -
         id: fg_wd_01
         title: 'Conversion-Focused Design'
-        text: "Every layout decision is made with your business goals in mind. We design for outcomes, not just aesthetics - and every element on the page is there for a reason."
+        text: 'Every layout decision is made with your business goals in mind. We design for outcomes, not just aesthetics - and every element on the page is there for a reason.'
         type: new_set
         enabled: true
       -
         id: fg_wd_02
         title: 'Mobile-First, Always'
-        text: "Every design is built for mobile from the first wireframe. Not adapted after the fact - considered from the very start."
+        text: 'Every design is built for mobile from the first wireframe. Not adapted after the fact - considered from the very start.'
         type: new_set
         enabled: true
       -
         id: fg_wd_03
         title: 'Brand Consistency'
-        text: "Your design system should be coherent across every page and every touchpoint. We build it to be consistent and scalable - no ad-hoc decisions as the project grows."
+        text: 'Your design system should be coherent across every page and every touchpoint. We build it to be consistent and scalable - no ad-hoc decisions as the project grows.'
         type: new_set
         enabled: true
     type: features_grid
@@ -187,7 +188,7 @@ page_builder:
     steps:
       -
         id: step_wd_01
-        tab_label: 'Discovery'
+        tab_label: Discovery
         heading: 'Discovery & Strategy'
         step_text:
           -
@@ -195,7 +196,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We start by understanding your business, your users, and what you need the website to do. Sitemap, user journeys, content structure - all planned before design begins."
+                text: 'We start by understanding your business, your users, and what you need the website to do. Sitemap, user journeys, content structure - all planned before design begins.'
         type: new_set
         enabled: true
       -
@@ -213,7 +214,7 @@ page_builder:
         enabled: true
       -
         id: step_wd_03
-        tab_label: 'Refinement'
+        tab_label: Refinement
         heading: 'Refinement & Approval'
         step_text:
           -
@@ -221,7 +222,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We incorporate your feedback, refine the design, and get final sign-off. Structured rounds of amends keep the project moving without going in circles."
+                text: 'We incorporate your feedback, refine the design, and get final sign-off. Structured rounds of amends keep the project moving without going in circles.'
         type: new_set
         enabled: true
       -
@@ -234,7 +235,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Approved designs go to development for a pixel-perfect build. Full cross-browser and device testing before we go live - then a 72-day warranty period as standard."
+                text: 'Approved designs go to development for a pixel-perfect build. Full cross-browser and device testing before we go live - then a 72-day warranty period as standard.'
         type: new_set
         enabled: true
     type: process_carousel
@@ -405,10 +406,8 @@ page_builder:
     enabled: true
   -
     id: related_services_wd_01
-    related_service_1:
-      - 15b87cff-0000-0000-0000-000000000002
-    related_service_2:
-      - 5c9c9bc6-0000-0000-0000-000000000003
+    related_service_1: 15b87cff-0000-0000-0000-000000000002
+    related_service_2: 5c9c9bc6-0000-0000-0000-000000000003
     type: related_services
     enabled: true
   -
@@ -425,7 +424,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Every project goes through a full design phase before development begins. You sign off the designs before any code is written - no building on assumptions."
+                text: 'Yes. Every project goes through a full design phase before development begins. You sign off the designs before any code is written - no building on assumptions.'
         type: new_set
         enabled: true
       -
@@ -437,7 +436,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Whether your site needs a full redesign or just needs modernising, we can start from your existing structure or take a completely fresh approach."
+                text: 'Yes. Whether your site needs a full redesign or just needs modernising, we can start from your existing structure or take a completely fresh approach.'
         type: new_set
         enabled: true
       -
@@ -449,7 +448,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Ideally your brand guidelines, any existing assets, and a clear brief on who your customers are. We can work with less - but the more context we have, the better the result."
+                text: 'Ideally your brand guidelines, any existing assets, and a clear brief on who your customers are. We can work with less - but the more context we have, the better the result.'
         type: new_set
         enabled: true
       -
@@ -461,7 +460,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Our process includes structured rounds of amends at each stage. This keeps projects moving efficiently while giving you meaningful input at the right moments."
+                text: 'Our process includes structured rounds of amends at each stage. This keeps projects moving efficiently while giving you meaningful input at the right moments.'
         type: new_set
         enabled: true
       -
@@ -485,7 +484,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. We design across breakpoints from the start - desktop and mobile are considered together, never as an afterthought."
+                text: 'Yes. We design across breakpoints from the start - desktop and mobile are considered together, never as an afterthought.'
         type: new_set
         enabled: true
       -
@@ -497,7 +496,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Typically 3–5 weeks for the design phase. This sits within a total project timeline of 10–12 weeks for a standard brochure site."
+                text: 'Typically 3–5 weeks for the design phase. This sits within a total project timeline of 10–12 weeks for a standard brochure site.'
         type: new_set
         enabled: true
       -
@@ -509,7 +508,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We can work within an existing brand identity or develop a new one alongside the web design project. If your branding needs attention first, we can help with that too."
+                text: 'We can work within an existing brand identity or develop a new one alongside the web design project. If your branding needs attention first, we can help with that too.'
         type: new_set
         enabled: true
     type: faq_accordion
@@ -530,6 +529,7 @@ page_builder:
     illustration: julius-ipad.svg
     type: cta_block
     enabled: true
+    book_appointment_2: false
 use_meta_keywords: false
 no_index_page: false
 no_follow_links: false
@@ -537,5 +537,6 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1780042751
+updated_at: 1784027537
+card_image: web-design-card.jpg
 ---

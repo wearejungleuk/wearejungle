@@ -144,8 +144,8 @@ page_builder:
         enabled: true
     cta_title: 'Book a Discovery Call'
     book_appointment: true
-    cta_classes: button--primary
-    image: julius-ipad.svg
+    cta_classes: button--secondary
+    image: bespoke-business-solutions.jpg
     image_position: right
     type: split_features
     enabled: true
@@ -834,6 +834,7 @@ sitemap_priority: '0.8'
 sitemap_changefreq: monthly
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1783281894
-card_image: bespoke-business-systems.svg
+updated_at: 1784028166
+icon: bespoke-business-systems.svg
+card_image: bespoke-business-solutions.jpg
 ---

@@ -41,7 +41,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Clean code, modern tooling, and a development approach that prioritises performance. We build things properly - no cobbled-together plugins, no shortcuts that create headaches down the line."
+            text: 'Clean code, modern tooling, and a development approach that prioritises performance. We build things properly - no cobbled-together plugins, no shortcuts that create headaches down the line.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -59,13 +59,13 @@ page_builder:
     stats:
       -
         id: stat_wdev_01
-        number: '100+'
+        number: 100+
         label: 'Projects Delivered'
         type: new_set
         enabled: true
       -
         id: stat_wdev_02
-        number: '12+'
+        number: 12+
         label: 'Years Experience'
         type: new_set
         enabled: true
@@ -80,6 +80,7 @@ page_builder:
     cta_classes: button--primary
     type: split_stats
     enabled: true
+    image: web-development.jpg
   -
     id: tech_carousel_wdev_01
     intro_text: 'We work with a carefully chosen set of tools - picked for performance, longevity, and the best outcomes for your project.'
@@ -87,77 +88,77 @@ page_builder:
       -
         id: tech_wdev_01
         name: Statamic
-        description: "Our recommended CMS for most new builds. Flat-file, fast, and secure - without the database overhead or plugin bloat that other platforms carry."
+        description: 'Our recommended CMS for most new builds. Flat-file, fast, and secure - without the database overhead or plugin bloat that other platforms carry.'
         icon: statamic.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_02
         name: WordPress
-        description: "When clients need WordPress, we build it properly - clean code, minimal plugins, and security hardened from the ground up."
+        description: 'When clients need WordPress, we build it properly - clean code, minimal plugins, and security hardened from the ground up.'
         icon: wordpress.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_03
         name: Alpine.js
-        description: "Lightweight JavaScript for all front-end interactivity. Small footprint, no build step required, powerful enough for everything we need."
+        description: 'Lightweight JavaScript for all front-end interactivity. Small footprint, no build step required, powerful enough for everything we need.'
         icon: alpine.js.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_04
-        name: Tailwind CSS
-        description: "Utility-first CSS that lets us build completely custom designs at speed. No overriding default styles, no bloated stylesheets."
+        name: 'Tailwind CSS'
+        description: 'Utility-first CSS that lets us build completely custom designs at speed. No overriding default styles, no bloated stylesheets.'
         icon: tailwind-css.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_05
         name: Shopify
-        description: "Our eCommerce platform of choice for consumer brands. Easy to manage, well-supported, and extensible through a solid app ecosystem."
+        description: 'Our eCommerce platform of choice for consumer brands. Easy to manage, well-supported, and extensible through a solid app ecosystem.'
         icon: shopify.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_06
         name: WooCommerce
-        description: "For clients who prefer eCommerce on WordPress. Fully owned, highly configurable, and no monthly platform fees."
+        description: 'For clients who prefer eCommerce on WordPress. Fully owned, highly configurable, and no monthly platform fees.'
         icon: woocommerce-favicon-white.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_07
         name: HTML5
-        description: "Semantic, accessible markup at the foundation of every build - structured correctly for performance, SEO, and assistive technologies."
+        description: 'Semantic, accessible markup at the foundation of every build - structured correctly for performance, SEO, and assistive technologies.'
         icon: html5.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_08
         name: CSS3
-        description: "Modern CSS for layouts, transitions, and visual behaviour. Clean and maintainable - not fighting against framework defaults."
+        description: 'Modern CSS for layouts, transitions, and visual behaviour. Clean and maintainable - not fighting against framework defaults.'
         icon: css3.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_09
         name: PHP
-        description: "The server-side language powering WordPress, WooCommerce, Laravel, and Statamic. We write modern, clean PHP built for longevity."
+        description: 'The server-side language powering WordPress, WooCommerce, Laravel, and Statamic. We write modern, clean PHP built for longevity.'
         icon: php.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_10
         name: JavaScript
-        description: "Progressive JavaScript for interactivity and dynamic behaviour - applied where it adds real value, never as unnecessary bloat."
+        description: 'Progressive JavaScript for interactivity and dynamic behaviour - applied where it adds real value, never as unnecessary bloat.'
         icon: javascript.svg
         type: new_set
         enabled: true
       -
         id: tech_wdev_11
         name: MySQL
-        description: "The relational database behind WordPress and WooCommerce. We configure and optimise it properly from day one."
+        description: 'The relational database behind WordPress and WooCommerce. We configure and optimise it properly from day one.'
         icon: mysql.svg
         type: new_set
         enabled: true
@@ -197,7 +198,7 @@ page_builder:
     steps:
       -
         id: step_wdev_01
-        tab_label: 'Requirements'
+        tab_label: Requirements
         heading: 'Requirements & Architecture'
         step_text:
           -
@@ -205,13 +206,13 @@ page_builder:
             content:
               -
                 type: text
-                text: "We scope the technical requirements in detail before writing a line of code. Architecture decisions made now save significant time and money later - we take this stage seriously."
+                text: 'We scope the technical requirements in detail before writing a line of code. Architecture decisions made now save significant time and money later - we take this stage seriously.'
         type: new_set
         enabled: true
       -
         id: step_wdev_02
-        tab_label: 'Development'
-        heading: 'Development'
+        tab_label: Development
+        heading: Development
         step_text:
           -
             type: paragraph
@@ -231,12 +232,12 @@ page_builder:
             content:
               -
                 type: text
-                text: "Thorough testing across browsers, devices, and screen sizes. Edge cases, accessibility checks, and performance benchmarks - all covered before we talk about going live."
+                text: 'Thorough testing across browsers, devices, and screen sizes. Edge cases, accessibility checks, and performance benchmarks - all covered before we talk about going live.'
         type: new_set
         enabled: true
       -
         id: step_wdev_04
-        tab_label: 'Deploy'
+        tab_label: Deploy
         heading: 'Deploy & Handover'
         step_text:
           -
@@ -244,7 +245,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We deploy to a production environment, run final checks, and provide thorough documentation. You get a 72-day warranty period, plus support plans to keep things running smoothly."
+                text: 'We deploy to a production environment, run final checks, and provide thorough documentation. You get a 72-day warranty period, plus support plans to keep things running smoothly.'
         type: new_set
         enabled: true
     type: process_carousel
@@ -348,7 +349,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Got a development project in mind? This short call is a chance to talk through what you need, ask your technical questions, and get a clear picture of how we would approach the build."
+            text: 'Got a development project in mind? This short call is a chance to talk through what you need, ask your technical questions, and get a clear picture of how we would approach the build.'
       -
         type: paragraph
         content:
@@ -408,17 +409,15 @@ page_builder:
             content:
               -
                 type: text
-                text: "No commitment required - just a clear next step if it feels right"
+                text: 'No commitment required - just a clear next step if it feels right'
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
     enabled: true
   -
     id: related_services_wdev_01
-    related_service_1:
-      - f8142c54-0000-0000-0000-000000000001
-    related_service_2:
-      - f3e3dbee-0000-0000-0000-000000000006
+    related_service_1: f8142c54-0000-0000-0000-000000000001
+    related_service_2: f3e3dbee-0000-0000-0000-000000000006
     type: related_services
     enabled: true
   -
@@ -435,7 +434,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Primarily PHP, Laravel, WordPress, and Statamic - with Alpine.js and Tailwind CSS on the front end. We choose tools based on what fits your project, not what we happen to be comfortable with."
+                text: 'Primarily PHP, Laravel, WordPress, and Statamic - with Alpine.js and Tailwind CSS on the front end. We choose tools based on what fits your project, not what we happen to be comfortable with.'
         type: new_set
         enabled: true
       -
@@ -447,7 +446,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Performance is baked into every build - not optimised as an afterthought. We target strong Core Web Vitals scores and test load speed across real devices before launch."
+                text: 'Performance is baked into every build - not optimised as an afterthought. We target strong Core Web Vitals scores and test load speed across real devices before launch.'
         type: new_set
         enabled: true
       -
@@ -459,7 +458,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. If you have approved designs from another agency or internal team, we can build from those. We work from Figma, XD, or detailed design specifications."
+                text: 'Yes. If you have approved designs from another agency or internal team, we can build from those. We work from Figma, XD, or detailed design specifications.'
         type: new_set
         enabled: true
       -
@@ -471,7 +470,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Booking systems, calculators, configurators, member areas, API integrations - if you can describe it clearly, we can scope and build it."
+                text: 'Yes. Booking systems, calculators, configurators, member areas, API integrations - if you can describe it clearly, we can scope and build it.'
         type: new_set
         enabled: true
       -
@@ -495,7 +494,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. All bespoke code we write for your project is yours. We hand over full access to the codebase, hosting environment, and everything else at the end of the project."
+                text: 'Yes. All bespoke code we write for your project is yours. We hand over full access to the codebase, hosting environment, and everything else at the end of the project.'
         type: new_set
         enabled: true
       -
@@ -540,6 +539,7 @@ page_builder:
     illustration: julius-ipad.svg
     type: cta_block
     enabled: true
+    book_appointment_2: false
 use_meta_keywords: false
 no_index_page: false
 no_follow_links: false
@@ -547,5 +547,6 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1780042786
+updated_at: 1784026829
+card_image: web-development.jpg
 ---

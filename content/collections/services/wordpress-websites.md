@@ -80,6 +80,7 @@ page_builder:
     cta_classes: button--primary
     type: split_stats
     enabled: true
+    image: wordpress-websites-card.jpg
   -
     id: tech_carousel_wp_01
     intro_text: 'The WordPress stack we use to build fast, clean, and properly maintained sites.'
@@ -556,5 +557,6 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1781716033
+updated_at: 1784027900
+card_image: wordpress-websites-card.jpg
 ---

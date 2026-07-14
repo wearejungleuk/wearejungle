@@ -29,7 +29,6 @@ key_points:
     type: new_set
     enabled: true
 ad_headline: 'WordPress Website Maintenance & UK Care Plans'
-ad_image: business-tool.jpg
 icon: support.svg
 page_builder:
   -
@@ -81,6 +80,7 @@ page_builder:
     cta_classes: button--primary
     type: split_stats
     enabled: true
+    image: website-support-card.jpg
   -
     id: feature_cards_sh_01
     above_title: "What's Included"
@@ -573,5 +573,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1781867667
+updated_at: 1784028958
+card_image: website-support-card.jpg
+ad_image: wearejungle-7-support.jpg
 ---

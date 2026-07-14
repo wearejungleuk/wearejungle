@@ -41,7 +41,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We design and build custom Shopify stores - not generic themes with a logo dropped in. A properly built Shopify store that reflects your brand, converts your visitors, and makes managing your inventory actually straightforward."
+            text: 'We design and build custom Shopify stores - not generic themes with a logo dropped in. A properly built Shopify store that reflects your brand, converts your visitors, and makes managing your inventory actually straightforward.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -59,19 +59,19 @@ page_builder:
     stats:
       -
         id: stat_shop_01
-        number: '40+'
+        number: 40+
         label: 'Shopify Stores Built'
         type: new_set
         enabled: true
       -
         id: stat_shop_02
-        number: '12+'
+        number: 12+
         label: 'Years Experience'
         type: new_set
         enabled: true
       -
         id: stat_shop_03
-        number: '100%'
+        number: 100%
         label: 'Custom Designed'
         type: new_set
         enabled: true
@@ -87,7 +87,7 @@ page_builder:
       -
         id: tech_shop_01
         name: Shopify
-        description: "The platform itself - our recommended choice for consumer brands who want a reliable, managed eCommerce solution with a proven ecosystem."
+        description: 'The platform itself - our recommended choice for consumer brands who want a reliable, managed eCommerce solution with a proven ecosystem.'
         icon: shopify.svg
         type: new_set
         enabled: true
@@ -100,35 +100,35 @@ page_builder:
       -
         id: tech_shop_03
         name: Alpine.js
-        description: "Lightweight JavaScript for interactive UI elements - quick-view modals, filters, and other front-end interactions that make stores feel polished."
+        description: 'Lightweight JavaScript for interactive UI elements - quick-view modals, filters, and other front-end interactions that make stores feel polished.'
         icon: alpine.js.svg
         type: new_set
         enabled: true
       -
         id: tech_shop_04
-        name: Tailwind CSS
-        description: "Utility-first CSS for fast, custom front-end builds. We use it to bring bespoke Shopify designs to life without bloated theme stylesheets."
+        name: 'Tailwind CSS'
+        description: 'Utility-first CSS for fast, custom front-end builds. We use it to bring bespoke Shopify designs to life without bloated theme stylesheets.'
         icon: tailwind-css.svg
         type: new_set
         enabled: true
       -
         id: tech_shop_05
         name: HTML5
-        description: "Semantic, accessible markup underpinning every Shopify theme we build - correct structure for SEO, performance, and accessibility."
+        description: 'Semantic, accessible markup underpinning every Shopify theme we build - correct structure for SEO, performance, and accessibility.'
         icon: html5.svg
         type: new_set
         enabled: true
       -
         id: tech_shop_06
         name: CSS3
-        description: "Modern CSS for transitions, layouts, and visual detail - clean and purposeful alongside Tailwind for fast custom builds."
+        description: 'Modern CSS for transitions, layouts, and visual detail - clean and purposeful alongside Tailwind for fast custom builds.'
         icon: css3.svg
         type: new_set
         enabled: true
       -
         id: tech_shop_07
         name: JavaScript
-        description: "Progressive JavaScript for cart interactions, quick-view modals, and other store behaviours that make the buying experience feel polished."
+        description: 'Progressive JavaScript for cart interactions, quick-view modals, and other store behaviours that make the buying experience feel polished.'
         icon: javascript.svg
         type: new_set
         enabled: true
@@ -142,7 +142,7 @@ page_builder:
       -
         id: fg_shop_01
         title: 'Built to Convert'
-        text: "Every element of your Shopify store - product pages, collections, cart, checkout - is designed to reduce friction and increase the likelihood of a purchase."
+        text: 'Every element of your Shopify store - product pages, collections, cart, checkout - is designed to reduce friction and increase the likelihood of a purchase.'
         type: new_set
         enabled: true
       -
@@ -154,7 +154,7 @@ page_builder:
       -
         id: fg_shop_03
         title: 'Performance That Sells'
-        text: "A slow store loses customers. We build Shopify stores that load fast on any device - because speed has a direct, measurable impact on your conversion rate."
+        text: 'A slow store loses customers. We build Shopify stores that load fast on any device - because speed has a direct, measurable impact on your conversion rate.'
         type: new_set
         enabled: true
     type: features_grid
@@ -168,7 +168,7 @@ page_builder:
     steps:
       -
         id: step_shop_01
-        tab_label: 'Strategy'
+        tab_label: Strategy
         heading: 'Store Strategy & Planning'
         step_text:
           -
@@ -176,12 +176,12 @@ page_builder:
             content:
               -
                 type: text
-                text: "We map out your product catalogue, collection structure, customer journey, and any third-party integrations before we start building. Proper planning now means fewer problems later."
+                text: 'We map out your product catalogue, collection structure, customer journey, and any third-party integrations before we start building. Proper planning now means fewer problems later.'
         type: new_set
         enabled: true
       -
         id: step_shop_02
-        tab_label: 'Design'
+        tab_label: Design
         heading: 'Custom Shopify Design'
         step_text:
           -
@@ -189,12 +189,12 @@ page_builder:
             content:
               -
                 type: text
-                text: "Product pages, collection pages, the cart, the checkout - every screen is designed from scratch around your brand. You sign off the designs before development begins."
+                text: 'Product pages, collection pages, the cart, the checkout - every screen is designed from scratch around your brand. You sign off the designs before development begins.'
         type: new_set
         enabled: true
       -
         id: step_shop_03
-        tab_label: 'Build'
+        tab_label: Build
         heading: 'Shopify Development & Configuration'
         step_text:
           -
@@ -202,12 +202,12 @@ page_builder:
             content:
               -
                 type: text
-                text: "Custom Liquid theme development, payment gateway setup, shipping configuration, and integrations with your other tools - all built to Shopify best practices."
+                text: 'Custom Liquid theme development, payment gateway setup, shipping configuration, and integrations with your other tools - all built to Shopify best practices.'
         type: new_set
         enabled: true
       -
         id: step_shop_04
-        tab_label: 'Launch'
+        tab_label: Launch
         heading: 'Launch & Optimisation'
         step_text:
           -
@@ -215,7 +215,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We go live, monitor performance, and help you optimise as your store grows. Training included so your team can manage products, collections, and content with confidence."
+                text: 'We go live, monitor performance, and help you optimise as your store grows. Training included so your team can manage products, collections, and content with confidence.'
         type: new_set
         enabled: true
     type: process_carousel
@@ -319,7 +319,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Ready to build a Shopify store that actually converts? This short call is a chance to talk through your products, your customers, and what the right build looks like."
+            text: 'Ready to build a Shopify store that actually converts? This short call is a chance to talk through your products, your customers, and what the right build looks like.'
       -
         type: paragraph
         content:
@@ -379,17 +379,15 @@ page_builder:
             content:
               -
                 type: text
-                text: "No pressure - just a clear next step if it feels like the right fit"
+                text: 'No pressure - just a clear next step if it feels like the right fit'
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
     enabled: true
   -
     id: related_services_shop_01
-    related_service_1:
-      - d297896c-0000-0000-0000-000000000005
-    related_service_2:
-      - 63fa56e7-0000-0000-0000-000000000007
+    related_service_1: d297896c-0000-0000-0000-000000000005
+    related_service_2: 63fa56e7-0000-0000-0000-000000000007
     type: related_services
     enabled: true
   -
@@ -442,7 +440,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Klaviyo, Mailchimp, HubSpot, Xero, fulfilment platforms - Shopify has a broad app ecosystem and we can build custom integrations where needed."
+                text: 'Yes. Klaviyo, Mailchimp, HubSpot, Xero, fulfilment platforms - Shopify has a broad app ecosystem and we can build custom integrations where needed.'
         type: new_set
         enabled: true
       -
@@ -466,7 +464,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Every Shopify store we build is fully responsive and tested on real devices. Mobile commerce is too important to treat as secondary."
+                text: 'Yes. Every Shopify store we build is fully responsive and tested on real devices. Mobile commerce is too important to treat as secondary.'
         type: new_set
         enabled: true
       -
@@ -490,7 +488,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Our support plans cover theme updates, app updates, performance monitoring, and a monthly bank of development hours for changes and improvements."
+                text: 'Yes. Our support plans cover theme updates, app updates, performance monitoring, and a monthly bank of development hours for changes and improvements.'
         type: new_set
         enabled: true
     type: faq_accordion
@@ -511,6 +509,7 @@ page_builder:
     illustration: julius-ipad.svg
     type: cta_block
     enabled: true
+    book_appointment_2: false
 use_meta_keywords: false
 no_index_page: false
 no_follow_links: false
@@ -518,5 +517,6 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1780042809
+updated_at: 1784026501
+card_image: shopify-website.jpg
 ---

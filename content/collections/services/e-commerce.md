@@ -41,7 +41,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We design and build online stores that sell. Whether you need Shopify, WooCommerce, or a bespoke solution - your store should work as hard as you do. Sharp design, smooth checkout, built for your customers."
+            text: 'We design and build online stores that sell. Whether you need Shopify, WooCommerce, or a bespoke solution - your store should work as hard as you do. Sharp design, smooth checkout, built for your customers.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -59,19 +59,19 @@ page_builder:
     stats:
       -
         id: stat_ec_01
-        number: '80+'
+        number: 80+
         label: 'Stores Built'
         type: new_set
         enabled: true
       -
         id: stat_ec_02
-        number: '12+'
+        number: 12+
         label: 'Years Experience'
         type: new_set
         enabled: true
       -
         id: stat_ec_03
-        number: '100%'
+        number: 100%
         label: 'Mobile Optimised'
         type: new_set
         enabled: true
@@ -80,6 +80,7 @@ page_builder:
     cta_classes: button--primary
     type: split_stats
     enabled: true
+    image: 'e-com-wearejunglebrandshoot-iggy&lime-23.jpg'
   -
     id: tech_carousel_ec_01
     intro_text: 'The eCommerce platforms and tools we use to build stores that sell.'
@@ -87,34 +88,34 @@ page_builder:
       -
         id: tech_ec_01
         name: Shopify
-        description: "Our recommended choice for consumer brands - easy to manage, backed by a solid ecosystem, and built for growth."
+        description: 'Our recommended choice for consumer brands - easy to manage, backed by a solid ecosystem, and built for growth.'
         icon: shopify.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_02
         name: WooCommerce
-        description: "For clients who want eCommerce on WordPress - fully owned, highly configurable, and no monthly platform fees."
+        description: 'For clients who want eCommerce on WordPress - fully owned, highly configurable, and no monthly platform fees.'
         icon: woocommerce-favicon-white.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_03
         name: WordPress
-        description: "The CMS powering WooCommerce stores. Familiar, flexible, and easy for your team to manage products and content."
+        description: 'The CMS powering WooCommerce stores. Familiar, flexible, and easy for your team to manage products and content.'
         icon: wordpress.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_04
         name: Alpine.js
-        description: "Lightweight JavaScript for interactive store elements - quick-view modals, live filters, and smooth cart interactions."
+        description: 'Lightweight JavaScript for interactive store elements - quick-view modals, live filters, and smooth cart interactions.'
         icon: alpine.js.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_05
-        name: Tailwind CSS
+        name: 'Tailwind CSS'
         description: "Utility-first CSS for fast, completely custom store designs. No theme constraints, no overriding someone else's styles."
         icon: tailwind-css.svg
         type: new_set
@@ -122,28 +123,28 @@ page_builder:
       -
         id: tech_ec_06
         name: HTML5
-        description: "Semantic, accessible markup at the foundation of every store we build - structured for SEO, performance, and screen readers."
+        description: 'Semantic, accessible markup at the foundation of every store we build - structured for SEO, performance, and screen readers.'
         icon: html5.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_07
         name: CSS3
-        description: "Modern CSS for layouts, animations, and visual polish across every eCommerce build - clean and purposeful."
+        description: 'Modern CSS for layouts, animations, and visual polish across every eCommerce build - clean and purposeful.'
         icon: css3.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_08
         name: JavaScript
-        description: "Progressive JavaScript for cart interactions, live filters, and dynamic store behaviour that makes buying feel effortless."
+        description: 'Progressive JavaScript for cart interactions, live filters, and dynamic store behaviour that makes buying feel effortless.'
         icon: javascript.svg
         type: new_set
         enabled: true
       -
         id: tech_ec_09
         name: PHP
-        description: "The server-side language behind WooCommerce and WordPress-based stores. We write clean, modern PHP built for performance and security."
+        description: 'The server-side language behind WooCommerce and WordPress-based stores. We write clean, modern PHP built for performance and security.'
         icon: php.svg
         type: new_set
         enabled: true
@@ -157,13 +158,13 @@ page_builder:
       -
         id: fg_ec_01
         title: 'Platform-Agnostic Strategy'
-        text: "We recommend the right platform for your business - not the easiest one for us to build on. Your goals drive the decision, not our tool preferences."
+        text: 'We recommend the right platform for your business - not the easiest one for us to build on. Your goals drive the decision, not our tool preferences.'
         type: new_set
         enabled: true
       -
         id: fg_ec_02
         title: 'Conversion at Every Stage'
-        text: "From product discovery to checkout confirmation, every element is designed to move customers forward. No friction, no dead ends, no abandoned carts by design."
+        text: 'From product discovery to checkout confirmation, every element is designed to move customers forward. No friction, no dead ends, no abandoned carts by design.'
         type: new_set
         enabled: true
       -
@@ -191,7 +192,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We help you choose the right platform - Shopify, WooCommerce, or bespoke - based on your product type, team capabilities, and growth plans. Then we map the full customer journey before we build anything."
+                text: 'We help you choose the right platform - Shopify, WooCommerce, or bespoke - based on your product type, team capabilities, and growth plans. Then we map the full customer journey before we build anything.'
         type: new_set
         enabled: true
       -
@@ -204,12 +205,12 @@ page_builder:
             content:
               -
                 type: text
-                text: "Product pages, category layouts, filters, the cart, the checkout - every screen is designed to reduce friction and move customers toward buying. Conversion is built in, not added later."
+                text: 'Product pages, category layouts, filters, the cart, the checkout - every screen is designed to reduce friction and move customers toward buying. Conversion is built in, not added later.'
         type: new_set
         enabled: true
       -
         id: step_ec_03
-        tab_label: 'Build'
+        tab_label: Build
         heading: 'eCommerce Build & Integration'
         step_text:
           -
@@ -217,7 +218,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Clean development with the integrations you actually need - payment gateways, shipping platforms, inventory tools, CRMs, and email marketing. Nothing unnecessary, nothing missing."
+                text: 'Clean development with the integrations you actually need - payment gateways, shipping platforms, inventory tools, CRMs, and email marketing. Nothing unnecessary, nothing missing.'
         type: new_set
         enabled: true
       -
@@ -230,7 +231,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We go live, monitor performance, and stay involved as your store grows. Every build includes a 72-day warranty. Support plans keep your store updated and performing long after launch."
+                text: 'We go live, monitor performance, and stay involved as your store grows. Every build includes a 72-day warranty. Support plans keep your store updated and performing long after launch.'
         type: new_set
         enabled: true
     type: process_carousel
@@ -334,7 +335,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Not sure which eCommerce platform is right for you? This short call is the best place to start - we will help you choose the right platform and scope the right build."
+            text: 'Not sure which eCommerce platform is right for you? This short call is the best place to start - we will help you choose the right platform and scope the right build.'
       -
         type: paragraph
         content:
@@ -394,17 +395,15 @@ page_builder:
             content:
               -
                 type: text
-                text: "No pressure - just the information you need to make the right call"
+                text: 'No pressure - just the information you need to make the right call'
     cta_title: 'Book a Call'
     book_appointment: true
     type: calendly
     enabled: true
   -
     id: related_services_ec_01
-    related_service_1:
-      - 55cdee73-0000-0000-0000-000000000004
-    related_service_2:
-      - 63fa56e7-0000-0000-0000-000000000007
+    related_service_1: 55cdee73-0000-0000-0000-000000000004
+    related_service_2: 63fa56e7-0000-0000-0000-000000000007
     type: related_services
     enabled: true
   -
@@ -445,7 +444,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "We integrate with Stripe, PayPal, and most UK payment gateways. If you have a preferred provider, flag it early in scoping so we can plan for it properly."
+                text: 'We integrate with Stripe, PayPal, and most UK payment gateways. If you have a preferred provider, flag it early in scoping so we can plan for it properly.'
         type: new_set
         enabled: true
       -
@@ -457,7 +456,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Typically 10–14 weeks for a full store build, depending on platform, number of products, and custom integrations. We scope everything upfront so you have a clear timeline."
+                text: 'Typically 10–14 weeks for a full store build, depending on platform, number of products, and custom integrations. We scope everything upfront so you have a clear timeline.'
         type: new_set
         enabled: true
       -
@@ -469,7 +468,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Product pages, category pages, and site structure are all built with SEO in mind. We can also run ongoing eCommerce SEO as a separate retainer service."
+                text: 'Yes. Product pages, category pages, and site structure are all built with SEO in mind. We can also run ongoing eCommerce SEO as a separate retainer service.'
         type: new_set
         enabled: true
       -
@@ -481,7 +480,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Every store comes with a 72-day warranty, and our ongoing support plans cover updates, monitoring, and a monthly development hours bank for changes and improvements."
+                text: 'Yes. Every store comes with a 72-day warranty, and our ongoing support plans cover updates, monitoring, and a monthly development hours bank for changes and improvements.'
         type: new_set
         enabled: true
       -
@@ -493,7 +492,7 @@ page_builder:
             content:
               -
                 type: text
-                text: "Yes. Subscription products, configurators, tiered pricing, trade portals, custom fulfilment logic - if you can describe it clearly, we can scope and build it."
+                text: 'Yes. Subscription products, configurators, tiered pricing, trade portals, custom fulfilment logic - if you can describe it clearly, we can scope and build it.'
         type: new_set
         enabled: true
       -
@@ -512,8 +511,8 @@ page_builder:
     enabled: true
   -
     id: cta_block_ec_01
-    above_title: 'eCommerce'
-    title: "Stop Leaving Revenue on the Table"
+    above_title: eCommerce
+    title: 'Stop Leaving Revenue on the Table'
     text:
       -
         type: paragraph
@@ -526,6 +525,7 @@ page_builder:
     illustration: julius-ipad.svg
     type: cta_block
     enabled: true
+    book_appointment_2: false
 use_meta_keywords: false
 no_index_page: false
 no_follow_links: false
@@ -533,5 +533,6 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1780042821
+updated_at: 1784026888
+card_image: 'e-com-wearejunglebrandshoot-iggy&lime-23.jpg'
 ---
