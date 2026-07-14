@@ -115,7 +115,14 @@ tabs:
                             max_files: 1
                             container: assets
                             type: assets
-                            display: Icon
+                            display: 'Icon (from Assets)'
+                            instructions: 'Preferred: upload an SVG to the assets container and pick it here.'
+                        -
+                          handle: icon_url
+                          field:
+                            type: text
+                            display: 'Icon URL (fallback)'
+                            instructions: 'Optional. Use if the icon lives in /public/img rather than the assets container. Overrides the Icon field.'
                         -
                           handle: label
                           field:

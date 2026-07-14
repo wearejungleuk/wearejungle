@@ -128,28 +128,28 @@ result_cards:
 feature_list:
   -
     id: mqh5jg1w
-    icon: web_design-icon.svg
+    icon_url: /img/case-studies/watford-smiles/frictionless-booking.svg
     label: 'Frictionless Online Booking'
     description: 'A fast, simple booking flow so new and returning patients can book an appointment in seconds.'
     type: new_set
     enabled: true
   -
     id: mqh5mphe
-    icon: testimonials.svg
+    icon_url: /img/case-studies/watford-smiles/custom-photography.svg
     label: 'Custom Photography Throughout'
     description: 'No stock imagery - every image was shot for Watford Smiles to reflect the practice and the way the brand had developed.'
     type: new_set
     enabled: true
   -
     id: mqh5moen
-    icon: web_monitoring.svg
+    icon_url: /img/case-studies/watford-smiles/modular-wordpress-build.svg
     label: 'Modular WordPress Build'
     description: 'Custom templates and minimal plugins so premium treatments can be added, tailored and up-sold without being stuck with a generic treatment page.'
     type: new_set
     enabled: true
   -
     id: mqh5mpi1
-    icon: web_design-icon.svg
+    icon_url: /img/case-studies/watford-smiles/campaign-landing-pages.svg
     label: 'Campaign Landing Pages'
     description: 'Bespoke marketing layouts that plug straight into ad campaigns without disrupting the main site.'
     type: new_set
