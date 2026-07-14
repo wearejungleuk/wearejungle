@@ -87,10 +87,10 @@
                         <ul class="flex flex-col gap-5 lg:gap-6 mt-10 lg:mt-12">
                             {{ feature_list }}
                                 <li class="flex items-start gap-4 js-fade-up">
-                                    {{ if icon_url || icon }}
+                                    {{ if fa_icon || icon }}
                                         <span class="flex-shrink-0 w-[36px] h-[36px] bg-brand-secondary rounded-lg flex items-center justify-center mt-[2px]">
-                                            {{ if icon_url }}
-                                                <img src="{{ icon_url }}" alt="{{ label }}" class="w-[20px] h-[20px] object-contain">
+                                            {{ if fa_icon }}
+                                                <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-brand-primary text-[16px]" aria-hidden="true"></i>
                                             {{ else }}
                                                 {{ icon }}
                                                     <img src="{{ url }}" alt="{{ alt }}" class="w-[20px] h-[20px] object-contain">

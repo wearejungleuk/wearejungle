@@ -110,19 +110,19 @@ tabs:
                       display: 'Feature Item'
                       fields:
                         -
+                          handle: fa_icon
+                          field:
+                            type: text
+                            display: 'Font Awesome Icon'
+                            instructions: 'Icon name without the fa- prefix, e.g. "calendar-check", "camera-retro", "bullhorn". See fontawesome.com/icons.'
+                        -
                           handle: icon
                           field:
                             max_files: 1
                             container: assets
                             type: assets
-                            display: 'Icon (from Assets)'
-                            instructions: 'Preferred: upload an SVG to the assets container and pick it here.'
-                        -
-                          handle: icon_url
-                          field:
-                            type: text
-                            display: 'Icon URL (fallback)'
-                            instructions: 'Optional. Use if the icon lives in /public/img rather than the assets container. Overrides the Icon field.'
+                            display: 'Custom SVG Icon (optional)'
+                            instructions: 'Only used when Font Awesome Icon is empty.'
                         -
                           handle: label
                           field:
