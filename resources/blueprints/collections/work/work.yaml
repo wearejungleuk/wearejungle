@@ -4,11 +4,13 @@ tabs:
     display: Main
     sections:
       -
+        display: Hero
         fields:
           -
             handle: title
             field:
               type: text
+              display: 'Client / Project Name (eyebrow + H1 fallback)'
               required: true
               validate:
                 - required
@@ -22,7 +24,58 @@ tabs:
             field:
               remove_empty_nodes: false
               type: bard
-              display: 'Preview Text'
+              display: 'Hero Strapline'
+              instructions: 'Large headline used at the top of the case study and in the listing card.'
+          -
+            handle: hero_background_colour
+            field:
+              type: select
+              display: 'Hero Background Colour'
+              instructions: 'Solid colour behind the hero.'
+              default: brand-primary
+              options:
+                brand-primary: 'Primary Blue'
+                brand-dark-blue: 'Dark Blue'
+                brand-secondary: 'Secondary Pink'
+                brand-light-blue: 'Light Blue'
+                brand-text: 'Cream'
+                black: Black
+              clearable: false
+          -
+            handle: hero_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Hero Image (device mockup)'
+              instructions: 'Composite screenshot shown inside the dark stage.'
+          -
+            handle: hero_logo
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Client Logo (hero, right side)'
+              instructions: 'Transparent PNG or SVG shown to the right of the mockup.'
+          -
+            handle: website_url
+            field:
+              type: text
+              input_type: url
+              display: 'Website URL'
+              instructions: 'Used for the VISIT WEBSITE button.'
+          -
+            handle: work_type
+            field:
+              type: terms
+              taxonomies:
+                - work_type
+              display: 'Work Type Tags'
+              mode: select
+              create: true
+      -
+        display: 'Listing Card'
+        fields:
           -
             handle: preview_image
             field:

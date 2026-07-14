@@ -1,0 +1,71 @@
+{{#
+    Work case study — hero section.
+    Coloured background (from hero_background_colour) with title, tag pills and
+    VISIT WEBSITE CTA above a dark rounded "stage" containing the device
+    mockup on the left and the client logo on the right.
+#}}
+<section class="pt-[140px] md:pt-[160px] lg:pt-[200px] pb-16 lg:pb-24 bg-{{ hero_background_colour ?? 'brand-primary' }}">
+    <div class="container">
+
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-12 mb-10 lg:mb-14">
+            <div class="max-w-[760px]">
+                {{ if title }}
+                    <div class="uppercase tracking-[0.18em] text-white/85 text-[13px] lg:text-[14px] font-heading mb-6 lg:mb-8 js-fade-up">{{ title }}</div>
+                {{ /if }}
+
+                {{ if preview_text }}
+                    <h1 class="font-heading text-white text-[32px] sm:text-[40px] lg:text-[48px] xl:text-[54px] leading-[1.05] mb-8 lg:mb-10 js-fade-up">
+                        {{ preview_text | strip_tags }}
+                    </h1>
+                {{ /if }}
+
+                {{ if work_type }}
+                    <div class="flex flex-wrap gap-2 lg:gap-3 js-fade-up">
+                        {{ work_type }}
+                            <span class="inline-flex items-center border border-white/50 text-white text-[12px] lg:text-[13px] uppercase tracking-wider px-4 py-1.5 rounded-full">{{ title }}</span>
+                        {{ /work_type }}
+                    </div>
+                {{ /if }}
+            </div>
+
+            {{ if website_url }}
+                <div class="flex-shrink-0 self-start lg:self-end js-fade-up">
+                    <a href="{{ website_url }}" target="_blank" rel="noopener" class="button group z-[1] button--secondary">
+                        <span>
+                            Visit Website
+                            <i class="fa-sharp fa-solid fa-arrow-up-right ml-2 text-[14px]"></i>
+                        </span>
+                    </a>
+                </div>
+            {{ /if }}
+        </div>
+
+        {{ if hero_image || hero_logo }}
+            <div class="bg-black rounded-[30px] lg:rounded-[50px] p-6 md:p-10 lg:p-14 js-fade-up">
+                <div class="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12">
+                    {{ if hero_image }}
+                        <div class="flex-1 min-w-0">
+                            {{ glide:hero_image width="1400" fit="max" }}
+                                <img src="{{ url }}" alt="{{ alt ?? title }}" class="w-full h-auto block" loading="eager">
+                            {{ /glide:hero_image }}
+                        </div>
+                    {{ /if }}
+
+                    {{ if hero_logo }}
+                        <div class="flex-shrink-0 lg:w-[220px] xl:w-[260px] flex justify-center lg:justify-end">
+                            {{ glide:hero_logo width="520" fit="contain" }}
+                                <img src="{{ url }}" alt="{{ alt ?? title }} logo" class="max-w-[180px] lg:max-w-full h-auto" loading="eager">
+                            {{ /glide:hero_logo }}
+                        </div>
+                    {{ /if }}
+                </div>
+            </div>
+        {{ /if }}
+
+    </div>
+</section>
+
+{{# Rest of the case study page — driven by the page builder. #}}
+{{ page_builder }}
+    {{ partial src="page_builder/{type}" }}
+{{ /page_builder }}
