@@ -109,7 +109,140 @@
     </section>
 {{ /if }}
 
-{{# Rest of the case study page — driven by the page builder. #}}
+{{ if screenshot_1 }}
+    <section class="bg-brand-dark-blue pb-16 lg:pb-24">
+        <div class="container">
+            <div class="bg-brand-text rounded-[24px] lg:rounded-[40px] p-6 md:p-10 lg:p-14 js-fade-up">
+                {{ glide:screenshot_1 width="1600" fit="max" }}
+                    <img src="{{ url }}" alt="{{ alt ?? title }}" class="w-full h-auto block rounded-[8px] lg:rounded-[12px]" loading="lazy">
+                {{ /glide:screenshot_1 }}
+            </div>
+        </div>
+    </section>
+{{ /if }}
+
+{{ if show_before_after && before_image && after_image }}
+    <section class="bg-brand-dark-blue pb-16 lg:pb-24">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+
+                <div class="flex flex-col items-center">
+                    <span class="inline-block bg-white text-black text-[12px] lg:text-[13px] uppercase tracking-wider font-heading px-4 py-1.5 rounded-full mb-6 js-fade-up">Before</span>
+                    <div class="w-full bg-black rounded-[24px] lg:rounded-[32px] p-6 lg:p-10 js-fade-up">
+                        {{ glide:before_image width="900" fit="max" }}
+                            <img src="{{ url }}" alt="Before" class="w-full h-auto block rounded-[8px]" loading="lazy">
+                        {{ /glide:before_image }}
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <span class="inline-block bg-white text-black text-[12px] lg:text-[13px] uppercase tracking-wider font-heading px-4 py-1.5 rounded-full mb-6 js-fade-up">After</span>
+                    <div class="w-full bg-brand-primary rounded-[24px] lg:rounded-[32px] p-6 lg:p-10 js-fade-up">
+                        {{ glide:after_image width="900" fit="max" }}
+                            <img src="{{ url }}" alt="After" class="w-full h-auto block rounded-[8px]" loading="lazy">
+                        {{ /glide:after_image }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{{ /if }}
+
+{{ if what_we_did_heading || what_we_did_body || what_we_did_features }}
+    <section class="bg-brand-dark-blue py-16 lg:py-24">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-[200px_1fr] xl:grid-cols-[240px_1fr] gap-8 lg:gap-16">
+
+                <div>
+                    <span class="text-white/70 text-[14px] lg:text-[15px] js-fade-up">What We Did</span>
+                </div>
+
+                <div class="max-w-[720px]">
+                    {{ if what_we_did_heading }}
+                        <h2 class="font-heading text-white text-[26px] sm:text-[30px] lg:text-[34px] xl:text-[38px] leading-[1.15] mb-6 lg:mb-8 js-fade-up">{{ what_we_did_heading }}</h2>
+                    {{ /if }}
+
+                    {{ if what_we_did_body }}
+                        <div class="bard text-white/85 text-[15px] lg:text-[16px] leading-relaxed js-fade-up">{{ what_we_did_body }}</div>
+                    {{ /if }}
+
+                    {{ if what_we_did_features }}
+                        {{ if what_we_did_features_heading }}
+                            <h3 class="font-heading text-white text-[20px] lg:text-[24px] mt-10 lg:mt-12 mb-5 lg:mb-6 js-fade-up">{{ what_we_did_features_heading }}</h3>
+                        {{ /if }}
+                        <ul class="list-disc pl-5 flex flex-col gap-3 marker:text-white/70">
+                            {{ what_we_did_features }}
+                                <li class="text-white/90 text-[15px] lg:text-[16px] leading-relaxed pl-1 js-fade-up">
+                                    {{ if label }}<span class="font-bodybold text-white">{{ label }}:</span>{{ /if }}
+                                    {{ if description }} {{ description }}{{ /if }}
+                                </li>
+                            {{ /what_we_did_features }}
+                        </ul>
+                    {{ /if }}
+                </div>
+
+            </div>
+        </div>
+    </section>
+{{ /if }}
+
+{{ if screenshot_2 }}
+    <section class="bg-brand-dark-blue pb-16 lg:pb-24">
+        <div class="container">
+            <div class="bg-brand-text rounded-[24px] lg:rounded-[40px] p-6 md:p-10 lg:p-14 js-fade-up">
+                {{ glide:screenshot_2 width="1600" fit="max" }}
+                    <img src="{{ url }}" alt="{{ alt ?? title }}" class="w-full h-auto block rounded-[8px] lg:rounded-[12px]" loading="lazy">
+                {{ /glide:screenshot_2 }}
+            </div>
+        </div>
+    </section>
+{{ /if }}
+
+{{ if result_heading || result_body || result_cards }}
+    <section class="bg-brand-dark-blue py-16 lg:py-24">
+        <div class="container">
+
+            {{ if result_heading || result_body }}
+                <div class="grid grid-cols-1 lg:grid-cols-[200px_1fr] xl:grid-cols-[240px_1fr] gap-8 lg:gap-16 mb-12 lg:mb-16">
+                    <div>
+                        <span class="text-white/70 text-[14px] lg:text-[15px] js-fade-up">The Result</span>
+                    </div>
+                    <div class="max-w-[820px]">
+                        {{ if result_heading }}
+                            <h2 class="font-heading text-white text-[26px] sm:text-[30px] lg:text-[34px] xl:text-[38px] leading-[1.15] mb-6 lg:mb-8 js-fade-up">{{ result_heading }}</h2>
+                        {{ /if }}
+                        {{ if result_body }}
+                            <div class="bard text-white/85 text-[15px] lg:text-[16px] leading-relaxed js-fade-up">{{ result_body }}</div>
+                        {{ /if }}
+                    </div>
+                </div>
+            {{ /if }}
+
+            {{ if result_cards }}
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+                    {{ result_cards }}
+                        <div class="bg-black rounded-[20px] lg:rounded-[24px] p-6 lg:p-8 js-fade-up">
+                            {{ if icon }}
+                                <div class="mb-8 lg:mb-10">
+                                    {{ icon }}
+                                        <img src="{{ url }}" alt="{{ alt }}" class="w-[32px] h-[32px] object-contain">
+                                    {{ /icon }}
+                                </div>
+                            {{ /if }}
+                            {{ if statement }}
+                                <p class="font-heading text-white text-[20px] lg:text-[22px] xl:text-[24px] leading-[1.2]">{{ statement }}</p>
+                            {{ /if }}
+                        </div>
+                    {{ /result_cards }}
+                </div>
+            {{ /if }}
+
+        </div>
+    </section>
+{{ /if }}
+
+{{# Rest of the case study page — driven by the page builder if the entry has one. #}}
 {{ page_builder }}
     {{ partial src="page_builder/{type}" }}
 {{ /page_builder }}

@@ -96,6 +96,177 @@ tabs:
                 - orderedlist
                 - link
                 - h3
+          -
+            handle: feature_list
+            field:
+              type: replicator
+              display: 'Feature List'
+              instructions: 'Key features shown below the overview body, each with an icon.'
+              sets:
+                new_set_group:
+                  display: 'Features'
+                  sets:
+                    new_set:
+                      display: 'Feature Item'
+                      fields:
+                        -
+                          handle: icon
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: Icon
+                        -
+                          handle: label
+                          field:
+                            type: text
+                            display: Label
+                            instructions: 'Short title shown in bold (e.g. "Frictionless Online Booking").'
+                        -
+                          handle: description
+                          field:
+                            type: text
+                            display: Description
+                            instructions: 'Sentence-length description after the label.'
+      -
+        display: 'Screenshot 1'
+        fields:
+          -
+            handle: screenshot_1
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Screenshot'
+              instructions: 'Full website screenshot shown on a cream card, sits between Overview and Before/After.'
+      -
+        display: 'Before / After'
+        fields:
+          -
+            handle: show_before_after
+            field:
+              type: toggle
+              display: 'Show Before / After'
+              default: false
+          -
+            handle: before_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Before Screenshot'
+              instructions: 'Tall/mobile-shape screenshot of the old site.'
+          -
+            handle: after_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'After Screenshot'
+              instructions: 'Tall/mobile-shape screenshot of the new site.'
+      -
+        display: 'What We Did'
+        fields:
+          -
+            handle: what_we_did_heading
+            field:
+              type: text
+              display: 'What We Did Heading'
+          -
+            handle: what_we_did_body
+            field:
+              type: bard
+              display: 'What We Did Body'
+              remove_empty_nodes: false
+              buttons:
+                - bold
+                - italic
+                - link
+          -
+            handle: what_we_did_features_heading
+            field:
+              type: text
+              display: 'Key Enhancements Heading'
+              default: 'Key Enhancements:'
+          -
+            handle: what_we_did_features
+            field:
+              type: replicator
+              display: 'Key Enhancements List'
+              instructions: 'Bulleted list of key enhancements. Each item renders as "Label: description".'
+              sets:
+                new_set_group:
+                  display: 'Enhancements'
+                  sets:
+                    new_set:
+                      display: 'Enhancement'
+                      fields:
+                        -
+                          handle: label
+                          field:
+                            type: text
+                            display: Label
+                        -
+                          handle: description
+                          field:
+                            type: text
+                            display: Description
+      -
+        display: 'Screenshot 2'
+        fields:
+          -
+            handle: screenshot_2
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Screenshot'
+              instructions: 'Second full website screenshot shown on a cream card, sits between What We Did and The Result.'
+      -
+        display: 'The Result'
+        fields:
+          -
+            handle: result_heading
+            field:
+              type: text
+              display: 'Result Heading'
+          -
+            handle: result_body
+            field:
+              type: bard
+              display: 'Result Body'
+              remove_empty_nodes: false
+              buttons:
+                - bold
+                - italic
+                - link
+          -
+            handle: result_cards
+            field:
+              type: replicator
+              display: 'Result Cards (3-column grid)'
+              instructions: 'Short outcome statements shown as icon cards below The Result copy.'
+              sets:
+                new_set_group:
+                  display: 'Cards'
+                  sets:
+                    new_set:
+                      display: 'Result Card'
+                      fields:
+                        -
+                          handle: icon
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: Icon
+                            instructions: 'Small SVG icon, shown in brand secondary colour at the top of the card.'
+                        -
+                          handle: statement
+                          field:
+                            type: text
+                            display: Statement
+                            instructions: 'Short bold statement (e.g. "Integrated real-time share price updates for transparency.").'
       -
         display: 'Listing Card'
         fields:
@@ -136,37 +307,6 @@ tabs:
               container: assets
               type: assets
               display: 'Card Image 2'
-          -
-            handle: feature_list
-            field:
-              type: replicator
-              display: 'Feature List'
-              sets:
-                new_set_group:
-                  display: 'New Set Group'
-                  sets:
-                    new_set:
-                      display: 'Feature Item'
-                      fields:
-                        -
-                          handle: icon
-                          field:
-                            max_files: 1
-                            container: assets
-                            type: assets
-                            display: Icon
-                        -
-                          handle: label
-                          field:
-                            type: text
-                            display: Label
-                            instructions: 'Short title shown in bold (e.g. "Frictionless Online Booking").'
-                        -
-                          handle: description
-                          field:
-                            type: text
-                            display: Description
-                            instructions: 'Sentence-length description after the label.'
   sidebar:
     display: Sidebar
     sections:

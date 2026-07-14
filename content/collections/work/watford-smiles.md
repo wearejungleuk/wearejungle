@@ -61,6 +61,70 @@ overview_body:
       -
         type: text
         text: 'Booking is quick and frictionless, and the modular layouts double as bespoke landing pages for their marketing campaigns.'
+what_we_did_heading: 'A modular, brand-led website that finally does the practice justice.'
+what_we_did_body:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'We rebuilt the site on WordPress from the ground up with minimal plugins, custom templates and a design system that puts Watford Smiles'' brand at the centre. Every layout was built to sell high-end treatments without forcing content into a generic template.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Custom photography replaced the old stock imagery throughout, and a fast, streamlined booking flow makes it easy for new and returning patients to book an appointment in seconds.'
+what_we_did_features_heading: 'Key Enhancements:'
+what_we_did_features:
+  -
+    id: wwd1
+    label: 'Modular Treatment Pages'
+    description: 'Custom templates for each premium treatment so nothing gets stuck on a generic services page.'
+    type: new_set
+    enabled: true
+  -
+    id: wwd2
+    label: 'Custom Photography Throughout'
+    description: 'Every image shot for Watford Smiles - no stock imagery, no compromises.'
+    type: new_set
+    enabled: true
+  -
+    id: wwd3
+    label: 'Fast, Frictionless Booking'
+    description: 'A short, focused booking flow so patients can book in a few taps rather than a long form.'
+    type: new_set
+    enabled: true
+  -
+    id: wwd4
+    label: 'Marketing Landing Pages'
+    description: 'Bespoke landing page layouts that plug into ad campaigns without disrupting the main site.'
+    type: new_set
+    enabled: true
+result_heading: 'A polished, modern platform that reflects the standard of care.'
+result_body:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'The new Watford Smiles website presents the practice the way it deserves to be seen - high-end, calm and considered. Booking has become faster, the brand feels consistent from first impression to appointment, and the team have a flexible platform they can grow with as new treatments and campaigns launch.'
+result_cards:
+  -
+    id: rc1
+    statement: 'A high-end brand presence that finally matches the practice.'
+    type: new_set
+    enabled: true
+  -
+    id: rc2
+    statement: 'Frictionless online booking that drives more appointments.'
+    type: new_set
+    enabled: true
+  -
+    id: rc3
+    statement: 'A flexible foundation ready for new treatments and marketing campaigns.'
+    type: new_set
+    enabled: true
 feature_list:
   -
     id: mqh5jg1w
