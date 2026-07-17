@@ -5,6 +5,8 @@ structure:
 template: work/show
 layout: layout
 revisions: false
+taxonomies:
+  - work_type
 preview_targets:
   -
     label: Entry

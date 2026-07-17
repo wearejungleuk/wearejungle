@@ -94,7 +94,7 @@ tabs:
                 - italic
                 - unorderedlist
                 - orderedlist
-                - link
+                - anchor
                 - h3
           -
             handle: feature_list
@@ -188,7 +188,7 @@ tabs:
               buttons:
                 - bold
                 - italic
-                - link
+                - anchor
           -
             handle: what_we_did_features_heading
             field:
@@ -246,7 +246,7 @@ tabs:
               buttons:
                 - bold
                 - italic
-                - link
+                - anchor
           -
             handle: result_cards
             field:
