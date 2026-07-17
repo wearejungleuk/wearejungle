@@ -21,7 +21,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1781645764
+updated_at: 1784281451
 background_video: 'https://vimeo.com/1134286354'
 card_image_2: watford-smiles-devices.png
 hero_background_colour: brand-primary
@@ -68,7 +68,7 @@ what_we_did_body:
     content:
       -
         type: text
-        text: 'We rebuilt the site on WordPress from the ground up with minimal plugins, custom templates and a design system that puts Watford Smiles'' brand at the centre. Every layout was built to sell high-end treatments without forcing content into a generic template.'
+        text: "We rebuilt the site on WordPress from the ground up with minimal plugins, custom templates and a design system that puts Watford Smiles' brand at the centre. Every layout was built to sell high-end treatments without forcing content into a generic template."
   -
     type: paragraph
     content:
@@ -154,4 +154,10 @@ feature_list:
     description: 'Bespoke marketing layouts that plug straight into ad campaigns without disrupting the main site.'
     type: new_set
     enabled: true
+show_before_after: true
+hero_image: watford-smiles-hero.png
+screenshot_1: watford-smiles-treatment.jpg
+before_image: watford-smiles-before.jpg
+after_image: watford-smiles-after.jpg
+screenshot_2: watford-smiles-treatments.jpg
 ---

@@ -3,14 +3,14 @@ id: 15f3fbef-6f91-4f99-8fb6-39b83e8b3def
 blueprint: work
 title: 'Pro Sealants'
 meta_title: 'Pro Sealants - Custom Shopify Store | We Are Jungle'
-meta_description: 'Custom Shopify store for driveway sealant supplier Pro Sealants — the WordPress site never made a sale, the new store made one within a week.'
+meta_description: 'Custom Shopify store for driveway sealant supplier Pro Sealants - the WordPress site never made a sale, the new store made one within a week.'
 preview_text:
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'A custom Shopify store for driveway sealant supplier Pro Sealants — replacing a slow, buggy WordPress site that never made a single sale.'
+        text: 'A custom Shopify store for driveway sealant supplier Pro Sealants - replacing a slow, buggy WordPress site that never made a single sale.'
 preview_image: pro-sealants-website.jpg
 preview_background_image: pro-sealants.jpg
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
@@ -33,7 +33,7 @@ overview_body:
     content:
       -
         type: text
-        text: 'Pro Sealants supply driveway sealants across the UK. They came to us with a WordPress site built on Elementor and a premium theme — and it had been buggy from day one. It was slow, awkward to update, and after months of trading it hadn''t produced a single online sale.'
+        text: 'Pro Sealants supply driveway sealants across the UK. They came to us with a WordPress site built on Elementor and a premium theme - and it had been buggy from day one. It was slow, awkward to update, and after months of trading it hadn''t produced a single online sale.'
   -
     type: paragraph
     content:
@@ -64,7 +64,7 @@ what_we_did_body:
     content:
       -
         type: text
-        text: 'We designed and built a clean, focused Shopify store around Pro Sealants'' products — no theme wrestling, no Elementor bugs, no compromise on speed. Everything is built around getting a customer from landing page to checkout without friction.'
+        text: 'We designed and built a clean, focused Shopify store around Pro Sealants'' products - no theme wrestling, no Elementor bugs, no compromise on speed. Everything is built around getting a customer from landing page to checkout without friction.'
   -
     type: paragraph
     content:
@@ -81,13 +81,13 @@ what_we_did_body:
         text: 'e-commerce business'
       -
         type: text
-        text: " needs — abandoned checkout alerts, automated review request emails, order notifications, and a Google Merchant integration so products flow straight into Google Shopping."
+        text: " needs - abandoned checkout alerts, automated review request emails, order notifications, and a Google Merchant integration so products flow straight into Google Shopping."
   -
     type: paragraph
     content:
       -
         type: text
-        text: "The result is a store that doesn't just accept orders — it actively drives them and takes real work off the team's marketing to-do list."
+        text: "The result is a store that doesn't just accept orders - it actively drives them and takes real work off the team's marketing to-do list."
 what_we_did_features_heading: 'Key Enhancements:'
 what_we_did_features:
   -
@@ -105,7 +105,7 @@ what_we_did_features:
   -
     id: wwd3
     label: 'Automated Review Emails'
-    description: 'Customers are automatically emailed after their order to leave a review — building social proof without any manual work.'
+    description: 'Customers are automatically emailed after their order to leave a review - building social proof without any manual work.'
     type: new_set
     enabled: true
   -
@@ -117,22 +117,22 @@ what_we_did_features:
   -
     id: wwd5
     label: 'Streamlined Marketing Workflow'
-    description: 'One connected store that plugs into email, reviews and Google — so marketing runs itself in the background.'
+    description: 'One connected store that plugs into email, reviews and Google - so marketing runs itself in the background.'
     type: new_set
     enabled: true
-result_heading: 'A first sale within a week — and a store that actually helps the business grow.'
+result_heading: 'A first sale within a week - and a store that actually helps the business grow.'
 result_body:
   -
     type: paragraph
     content:
       -
         type: text
-        text: "The old WordPress site had months of trading without a single sale. The new Shopify store had its first order within a week of launching. On top of that, Pro Sealants now have automations, review emails, checkout alerts and Google Shopping running in the background — so the store keeps working when the team isn't."
+        text: "The old WordPress site had months of trading without a single sale. The new Shopify store had its first order within a week of launching. On top of that, Pro Sealants now have automations, review emails, checkout alerts and Google Shopping running in the background - so the store keeps working when the team isn't."
 result_cards:
   -
     id: rc1
     fa_icon: bag-shopping
-    statement: 'First online sale within a week of launching — after months of nothing on WordPress.'
+    statement: 'First online sale within a week of launching - after months of nothing on WordPress.'
     type: new_set
     enabled: true
   -
@@ -165,7 +165,7 @@ feature_list:
     id: ps2
     fa_icon: bag-shopping
     label: 'Custom Shopify Store Build'
-    description: "A clean, focused store built around Pro Sealants' products — no theme wrestling, no compromise on speed."
+    description: "A clean, focused store built around Pro Sealants' products - no theme wrestling, no compromise on speed."
     type: new_set
     enabled: true
   -
@@ -183,14 +183,14 @@ feature_list:
     type: new_set
     enabled: true
 show_before_after: false
-intro_card_text: 'A custom Shopify store for driveway sealant supplier Pro Sealants — replacing a slow WordPress site that never made a sale.'
+intro_card_text: 'A custom Shopify store for driveway sealant supplier Pro Sealants - replacing a slow WordPress site that never made a sale.'
 card_text_2:
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Abandoned checkout alerts, review emails and Google Merchant baked in — the first online sale came within a week of launch.'
+        text: 'Abandoned checkout alerts, review emails and Google Merchant baked in - the first online sale came within a week of launch.'
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 updated_at: 1762526111
 ---

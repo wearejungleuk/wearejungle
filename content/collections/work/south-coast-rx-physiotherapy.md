@@ -3,14 +3,14 @@ id: c6598d61-88d6-4d30-8dc7-41f8dd354acd
 blueprint: work
 title: 'South Coast Rx Physiotherapy'
 meta_title: 'South Coast Rx - Physiotherapy Website | We Are Jungle'
-meta_description: 'Modern physio website for South Coast Rx in Portsmouth — moved off Wix to a proper SEO-friendly platform that finally shows who they are.'
+meta_description: 'Modern physio website for South Coast Rx in Portsmouth - moved off Wix to a proper SEO-friendly platform that finally shows who they are.'
 preview_text:
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'A modern, SEO-friendly website that finally reflects how much South Coast Rx Physiotherapy has grown — and puts them clearly ahead of local competitors.'
+        text: 'A modern, SEO-friendly website that finally reflects how much South Coast Rx Physiotherapy has grown - and puts them clearly ahead of local competitors.'
 preview_image: south-coast-rx-website-1762428941.jpg
 preview_background_image: southcoast-rx.jpg
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
@@ -33,7 +33,7 @@ overview_body:
     content:
       -
         type: text
-        text: 'South Coast Rx Physiotherapy is a growing physio clinic on the south coast. The practice had come on a long way since day one, but the website hadn''t — it was still stuck on Wix, still looking like the original small setup, and still invisible in search.'
+        text: 'South Coast Rx Physiotherapy is a growing physio clinic on the south coast. The practice had come on a long way since day one, but the website hadn''t - it was still stuck on Wix, still looking like the original small setup, and still invisible in search.'
   -
     type: paragraph
     content:
@@ -64,13 +64,13 @@ what_we_did_body:
     content:
       -
         type: text
-        text: 'We designed a considered, modern site that finally looks the part — more grown-up than a Wix template, sharper than the average local physio site, and built around what actually makes South Coast Rx different.'
+        text: 'We designed a considered, modern site that finally looks the part - more grown-up than a Wix template, sharper than the average local physio site, and built around what actually makes South Coast Rx different.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'The old Wix site couldn''t be properly optimised for search. The new WordPress site is built with SEO from the ground up — clean structure, fast pages, proper meta control and room to grow with content that actually ranks.'
+        text: 'The old Wix site couldn''t be properly optimised for search. The new WordPress site is built with SEO from the ground up - clean structure, fast pages, proper meta control and room to grow with content that actually ranks.'
   -
     type: paragraph
     content:
@@ -88,7 +88,7 @@ what_we_did_features:
   -
     id: wwd2
     label: 'SEO-Friendly From Day One'
-    description: 'Clean structure, fast pages and proper meta control — everything Wix couldn''t give them.'
+    description: 'Clean structure, fast pages and proper meta control - everything Wix couldn''t give them.'
     type: new_set
     enabled: true
   -
@@ -110,7 +110,7 @@ result_body:
     content:
       -
         type: text
-        text: 'South Coast Rx now has a website that looks how the clinic actually feels — modern, considered and confident. They can be found in search where Wix used to hide them, the team can edit the site themselves, and the whole thing sits well ahead of other physio clinics in the area.'
+        text: 'South Coast Rx now has a website that looks how the clinic actually feels - modern, considered and confident. They can be found in search where Wix used to hide them, the team can edit the site themselves, and the whole thing sits well ahead of other physio clinics in the area.'
 result_cards:
   -
     id: rc1
@@ -121,7 +121,7 @@ result_cards:
   -
     id: rc2
     fa_icon: magnifying-glass
-    statement: 'Freed from Wix — the site can finally be found in search rather than buried on page ten.'
+    statement: 'Freed from Wix - the site can finally be found in search rather than buried on page ten.'
     type: new_set
     enabled: true
   -
@@ -141,14 +141,14 @@ feature_list:
     id: scrx1
     fa_icon: arrow-right-from-bracket
     label: 'Moved Off Wix'
-    description: 'Migrated off Wix to a proper WordPress platform — freeing the site from its SEO and design limitations.'
+    description: 'Migrated off Wix to a proper WordPress platform - freeing the site from its SEO and design limitations.'
     type: new_set
     enabled: true
   -
     id: scrx2
     fa_icon: magnifying-glass
     label: 'SEO-Friendly WordPress'
-    description: 'Built with search in mind from day one — clean structure, fast pages and proper meta control.'
+    description: 'Built with search in mind from day one - clean structure, fast pages and proper meta control.'
     type: new_set
     enabled: true
   -
@@ -173,7 +173,7 @@ card_text_2:
     content:
       -
         type: text
-        text: 'Moved off Wix to a proper WordPress platform they can actually rank on — with a design that stands out over other local physio clinics.'
+        text: 'Moved off Wix to a proper WordPress platform they can actually rank on - with a design that stands out over other local physio clinics.'
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 updated_at: 1762428953
 ---

@@ -38,7 +38,7 @@ overview_body:
     content:
       -
         type: text
-        text: 'They needed a website that could match the quality of the work behind it — visibly better than their competitors, easy for the team to edit day to day, and able to bring their live test data to life rather than hiding it behind PDFs.'
+        text: 'They needed a website that could match the quality of the work behind it - visibly better than their competitors, easy for the team to edit day to day, and able to bring their live test data to life rather than hiding it behind PDFs.'
   -
     type: paragraph
     content:
@@ -63,7 +63,7 @@ what_we_did_body:
     content:
       -
         type: text
-        text: 'We rebuilt the site on WordPress with a modern, considered design that gives MRG Effitas the visual credibility their product already had — sharper, calmer and more grown-up than the typical cybersecurity site.'
+        text: 'We rebuilt the site on WordPress with a modern, considered design that gives MRG Effitas the visual credibility their product already had - sharper, calmer and more grown-up than the typical cybersecurity site.'
   -
     type: paragraph
     content:
@@ -86,13 +86,13 @@ what_we_did_body:
         text: 'custom interactive graphs'
       -
         type: text
-        text: ' that pull live data straight from MRG''s API. As soon as new test results are published, the graphs on the site reflect them — no manual updates, no stale reports, no PDFs to re-upload.'
+        text: ' that pull live data straight from MRG''s API. As soon as new test results are published, the graphs on the site reflect them - no manual updates, no stale reports, no PDFs to re-upload.'
 what_we_did_features_heading: 'Key Enhancements:'
 what_we_did_features:
   -
     id: wwd1
     label: 'Fully Editable WordPress Build'
-    description: 'A CMS set up so the team can add and edit pages themselves without a developer — and without breaking the design.'
+    description: 'A CMS set up so the team can add and edit pages themselves without a developer - and without breaking the design.'
     type: new_set
     enabled: true
   -
@@ -110,7 +110,7 @@ what_we_did_features:
   -
     id: wwd4
     label: 'Modern Interactive Front-End'
-    description: 'A fast, smooth front-end with proper interactions — no clunky page reloads, no dated cybersecurity clichés.'
+    description: 'A fast, smooth front-end with proper interactions - no clunky page reloads, no dated cybersecurity clichés.'
     type: new_set
     enabled: true
 result_heading: 'A website as credible as the testing behind it.'
@@ -151,7 +151,7 @@ feature_list:
     id: me1
     fa_icon: pen-to-square
     label: 'Fully Editable WordPress Build'
-    description: 'A CMS set up so the team can add, edit and reorder content themselves — no developer needed for day-to-day updates.'
+    description: 'A CMS set up so the team can add, edit and reorder content themselves - no developer needed for day-to-day updates.'
     type: new_set
     enabled: true
   -
@@ -183,7 +183,7 @@ card_text_2:
     content:
       -
         type: text
-        text: "Custom graphs plug straight into MRG's API so reports update themselves — plus a CMS the team can actually use."
+        text: "Custom graphs plug straight into MRG's API so reports update themselves - plus a CMS the team can actually use."
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 updated_at: 1762526096
 ---

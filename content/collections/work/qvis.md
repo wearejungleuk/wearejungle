@@ -31,19 +31,19 @@ overview_body:
     content:
       -
         type: text
-        text: 'QVIS Lighting & Security is a UK-based manufacturer of intelligent, energy-efficient lighting and enterprise-grade CCTV — including their in-house Cortex platform. Their product range is large, technical, and constantly evolving across commercial, industrial, retail and public infrastructure sectors.'
+        text: 'QVIS Lighting & Security is a UK-based manufacturer of intelligent, energy-efficient lighting and enterprise-grade CCTV - including their in-house Cortex platform. Their product range is large, technical, and constantly evolving across commercial, industrial, retail and public infrastructure sectors.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'An off-the-shelf theme wasn''t going to work — the product range was too big, too technical and changing too often. We built a fully bespoke website with a custom integration into their internal product system, so new and updated products flow straight onto the site without any manual duplication.'
+        text: 'An off-the-shelf theme wasn''t going to work - the product range was too big, too technical and changing too often. We built a fully bespoke website with a custom integration into their internal product system, so new and updated products flow straight onto the site without any manual duplication.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Every part of the site — the content structure, templates, admin and integrations — was purpose-built for QVIS, from bespoke luminaire specs through to full Cortex CCTV product pages.'
+        text: 'Every part of the site - the content structure, templates, admin and integrations - was purpose-built for QVIS, from bespoke luminaire specs through to full Cortex CCTV product pages.'
 what_we_did_heading: 'A bespoke website with a live feed from their product database.'
 what_we_did_body:
   -
@@ -51,7 +51,7 @@ what_we_did_body:
     content:
       -
         type: text
-        text: 'We designed and developed the whole site from scratch — no themes, no page-builder shortcuts. Under the hood it runs on '
+        text: 'We designed and developed the whole site from scratch - no themes, no page-builder shortcuts. Under the hood it runs on '
       -
         type: text
         marks:
@@ -79,19 +79,19 @@ what_we_did_body:
         text: 'custom integration with their internal product system'
       -
         type: text
-        text: " (SAP) — a dedicated endpoint that receives product data from QVIS's central database and keeps the website in sync automatically. No CSV imports, no double-keying, no drift between systems."
+        text: " (SAP) - a dedicated endpoint that receives product data from QVIS's central database and keeps the website in sync automatically. No CSV imports, no double-keying, no drift between systems."
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'We also built a bespoke Project Builder — a tool that lets specifiers assemble every item they need for a project, download all the matching spec sheets in one go, and send the full package straight to the QVIS sales team by email. It turns a normally scattered spec-and-quote process into a single, guided flow.'
+        text: 'We also built a bespoke Project Builder - a tool that lets specifiers assemble every item they need for a project, download all the matching spec sheets in one go, and send the full package straight to the QVIS sales team by email. It turns a normally scattered spec-and-quote process into a single, guided flow.'
 what_we_did_features_heading: 'Key Enhancements:'
 what_we_did_features:
   -
     id: wwd1
     label: 'Fully Bespoke Website Build'
-    description: "Every template, field and section built specifically for QVIS's product range — no off-the-shelf theme, no compromises."
+    description: "Every template, field and section built specifically for QVIS's product range - no off-the-shelf theme, no compromises."
     type: new_set
     enabled: true
   -
@@ -103,7 +103,7 @@ what_we_did_features:
   -
     id: wwd3
     label: 'Structured Product Catalogue'
-    description: 'Deep, filterable product data modelled properly — from DALI-controlled luminaires to Cortex CCTV systems.'
+    description: 'Deep, filterable product data modelled properly - from DALI-controlled luminaires to Cortex CCTV systems.'
     type: new_set
     enabled: true
   -
@@ -115,7 +115,7 @@ what_we_did_features:
   -
     id: wwd5
     label: 'Sector-Led Navigation'
-    description: 'Layouts that speak to wholesalers, contractors, consultants and architects — not just a generic product grid.'
+    description: 'Layouts that speak to wholesalers, contractors, consultants and architects - not just a generic product grid.'
     type: new_set
     enabled: true
 result_heading: 'One source of truth, from their internal system straight to the site.'
@@ -125,7 +125,7 @@ result_body:
     content:
       -
         type: text
-        text: "QVIS now has a website that scales with their catalogue rather than lagging behind it. Product data flows automatically from their internal system into the site, the team can publish and specify with confidence, and every part of the platform — from luminaire specs to Cortex CCTV — was built to fit how QVIS actually work, not how an off-the-shelf theme wants them to."
+        text: "QVIS now has a website that scales with their catalogue rather than lagging behind it. Product data flows automatically from their internal system into the site, the team can publish and specify with confidence, and every part of the platform - from luminaire specs to Cortex CCTV - was built to fit how QVIS actually work, not how an off-the-shelf theme wants them to."
 result_cards:
   -
     id: rc1
@@ -156,14 +156,14 @@ feature_list:
     id: qv1
     fa_icon: database
     label: 'Live Product Database Sync'
-    description: 'A custom integration pulls products from their internal system (SAP) into the site automatically — no manual imports, no drift.'
+    description: 'A custom integration pulls products from their internal system (SAP) into the site automatically - no manual imports, no drift.'
     type: new_set
     enabled: true
   -
     id: qv2
     fa_icon: cubes
     label: 'Fully Bespoke Website Build'
-    description: 'Every page, template and admin section built specifically for QVIS — not adapted from an off-the-shelf theme.'
+    description: 'Every page, template and admin section built specifically for QVIS - not adapted from an off-the-shelf theme.'
     type: new_set
     enabled: true
   -
@@ -184,7 +184,7 @@ feature_list:
     id: qv5
     fa_icon: shield-halved
     label: 'Built for Specifiers'
-    description: 'Templates designed for wholesalers, contractors, consultants and architects — not a generic product grid.'
+    description: 'Templates designed for wholesalers, contractors, consultants and architects - not a generic product grid.'
     type: new_set
     enabled: true
 show_before_after: false
@@ -203,5 +203,5 @@ card_text_2:
     content:
       -
         type: text
-        text: 'A custom integration syncs their internal product catalogue straight into the site — plus a bespoke Project Builder that packages spec sheets and fires them to the sales team.'
+        text: 'A custom integration syncs their internal product catalogue straight into the site - plus a bespoke Project Builder that packages spec sheets and fires them to the sales team.'
 ---
