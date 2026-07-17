@@ -191,6 +191,11 @@ show_before_after: false
 hero_image: qvis-hero.jpg
 screenshot_1: qvis-project.jpg
 screenshot_2: qvis-project-builder.jpg
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1784283285
+preview_image: qvis-hero.jpg
+preview_background_image: qvis-back-image.jpg
+background_video: 'https://player.vimeo.com/video/1132554352?h=6d300b8405&autoplay=1&muted=1&loop=1&background=1'
 intro_card_text: 'A bespoke website with a live product feed and a custom Project Builder for QVIS Lighting & Security.'
 card_text_2:
   -
@@ -199,6 +204,4 @@ card_text_2:
       -
         type: text
         text: 'A custom integration syncs their internal product catalogue straight into the site — plus a bespoke Project Builder that packages spec sheets and fires them to the sales team.'
-updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1784282661
 ---
