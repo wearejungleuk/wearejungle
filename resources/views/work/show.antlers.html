@@ -307,25 +307,75 @@
             {{ /if }}
 
             {{ if result_cards }}
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-                    {{ result_cards }}
-                        <div class="bg-black rounded-[20px] lg:rounded-[24px] p-6 lg:p-8 js-fade-up">
-                            {{ if icon || fa_icon }}
-                                <div class="mb-8 lg:mb-10">
-                                    {{ if icon }}
-                                        {{ icon }}
-                                            <img src="{{ url }}" alt="{{ alt }}" class="w-[32px] h-[32px] object-contain">
-                                        {{ /icon }}
-                                    {{ else }}
-                                        <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-brand-secondary text-[28px]" aria-hidden="true"></i>
-                                    {{ /if }}
+                <div class="js-fade-up"
+                     x-data
+                     x-init="$nextTick(() => {
+                         const sw = new Swiper($refs.resultCardsSwiper, {
+                             slidesPerView: 1.1,
+                             spaceBetween: 16,
+                             loop: false,
+                             speed: 600,
+                             navigation: {
+                                 nextEl: $refs.rcNext,
+                                 prevEl: $refs.rcPrev,
+                             },
+                             breakpoints: {
+                                 640: { slidesPerView: 2, spaceBetween: 20 },
+                                 1024: { slidesPerView: 3, spaceBetween: 24 },
+                             },
+                             on: {
+                                 init(s) { updateRcButtons(s) },
+                                 slideChange(s) { updateRcButtons(s) },
+                                 resize(s) { updateRcButtons(s) }
+                             }
+                         });
+                         function updateRcButtons(s) {
+                             const prev = $refs.rcPrev;
+                             const next = $refs.rcNext;
+                             const hide = s.isBeginning && s.isEnd;
+                             $refs.rcNav.classList.toggle('hidden', hide);
+                             prev.disabled = s.isBeginning;
+                             next.disabled = s.isEnd;
+                             prev.classList.toggle('opacity-40', s.isBeginning);
+                             next.classList.toggle('opacity-40', s.isEnd);
+                             prev.classList.toggle('cursor-not-allowed', s.isBeginning);
+                             next.classList.toggle('cursor-not-allowed', s.isEnd);
+                         }
+                     })">
+                    <div class="swiper !overflow-visible" x-ref="resultCardsSwiper">
+                        <div class="swiper-wrapper">
+                            {{ result_cards }}
+                                <div class="swiper-slide !h-auto">
+                                    <div class="bg-black rounded-[20px] lg:rounded-[24px] p-6 lg:p-8 h-full">
+                                        {{ if icon || fa_icon }}
+                                            <div class="mb-8 lg:mb-10">
+                                                {{ if icon }}
+                                                    {{ icon }}
+                                                        <img src="{{ url }}" alt="{{ alt }}" class="w-[32px] h-[32px] object-contain">
+                                                    {{ /icon }}
+                                                {{ else }}
+                                                    <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-brand-secondary text-[28px]" aria-hidden="true"></i>
+                                                {{ /if }}
+                                            </div>
+                                        {{ /if }}
+                                        {{ if statement }}
+                                            <p class="font-heading text-white text-[20px] lg:text-[22px] xl:text-[24px] leading-[1.2]">{{ statement }}</p>
+                                        {{ /if }}
+                                    </div>
                                 </div>
-                            {{ /if }}
-                            {{ if statement }}
-                                <p class="font-heading text-white text-[20px] lg:text-[22px] xl:text-[24px] leading-[1.2]">{{ statement }}</p>
-                            {{ /if }}
+                            {{ /result_cards }}
                         </div>
-                    {{ /result_cards }}
+                    </div>
+                    <div x-ref="rcNav" class="flex mt-8 lg:mt-10">
+                        <div class="flex items-center gap-2 ml-auto">
+                            <button x-ref="rcPrev" type="button" aria-label="Previous" class="w-[52px] h-[52px] lg:w-[56px] lg:h-[56px] rounded-full bg-brand-secondary text-brand-primary flex items-center justify-center transition">
+                                <i class="fa-sharp fa-regular fa-chevron-left"></i>
+                            </button>
+                            <button x-ref="rcNext" type="button" aria-label="Next" class="w-[52px] h-[52px] lg:w-[56px] lg:h-[56px] rounded-full bg-brand-secondary text-brand-primary flex items-center justify-center transition">
+                                <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             {{ /if }}
 
