@@ -80,6 +80,12 @@ what_we_did_body:
       -
         type: text
         text: ' — a dedicated endpoint that receives product data from QVIS''s central database and keeps the website in sync automatically. No CSV imports, no double-keying, no drift between systems.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'We also built a bespoke Project Builder — a tool that lets specifiers assemble every item they need for a project, download all the matching spec sheets in one go, and send the full package straight to the QVIS sales team by email. It turns a normally scattered spec-and-quote process into a single, guided flow.'
 what_we_did_features_heading: 'Key Enhancements:'
 what_we_did_features:
   -
@@ -102,6 +108,12 @@ what_we_did_features:
     enabled: true
   -
     id: wwd4
+    label: 'Custom Project Builder'
+    description: 'A bespoke tool that lets specifiers build a project list, auto-download all matching spec sheets and email the full package to the sales team.'
+    type: new_set
+    enabled: true
+  -
+    id: wwd5
     label: 'Sector-Led Navigation'
     description: 'Layouts that speak to wholesalers, contractors, consultants and architects — not just a generic product grid.'
     type: new_set
@@ -127,6 +139,11 @@ result_cards:
     enabled: true
   -
     id: rc3
+    statement: 'A custom Project Builder that turns spec-and-quote into a single guided flow for the sales team.'
+    type: new_set
+    enabled: true
+  -
+    id: rc4
     statement: 'A scalable foundation ready for new products, sectors and specialist ranges.'
     type: new_set
     enabled: true
@@ -154,6 +171,13 @@ feature_list:
     enabled: true
   -
     id: qv4
+    fa_icon: list-check
+    label: 'Custom Project Builder'
+    description: 'Specifiers build a project list, download every matching spec sheet in one click and email the full package straight to QVIS''s sales team.'
+    type: new_set
+    enabled: true
+  -
+    id: qv5
     fa_icon: shield-halved
     label: 'Built for Specifiers'
     description: 'Templates designed for wholesalers, contractors, consultants and architects — not a generic product grid.'
