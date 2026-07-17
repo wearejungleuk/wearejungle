@@ -133,10 +133,29 @@
 {{ if screenshot_1 }}
     <section class="bg-brand-dark-blue pb-16 lg:pb-24">
         <div class="container">
-            <div class="bg-brand-text rounded-[24px] lg:rounded-[40px] p-6 md:p-10 lg:p-14 js-fade-up">
-                {{ glide:screenshot_1 width="1600" fit="max" }}
-                    <img src="{{ url }}" alt="{{ alt ?? title }}" class="w-full h-auto block rounded-[8px] lg:rounded-[12px]" loading="lazy">
-                {{ /glide:screenshot_1 }}
+            <div class="bg-[#e5e5e5] rounded-[14px] lg:rounded-[18px] border border-black/10 shadow-2xl overflow-hidden js-fade-up">
+                <div class="flex items-center gap-3 px-4 md:px-5 py-3 md:py-3.5 bg-gradient-to-b from-[#f2f2f2] to-[#e2e2e2] border-b border-black/10">
+                    <div class="flex items-center gap-2">
+                        <span class="block w-[12px] h-[12px] rounded-full bg-[#ff5f57] border border-black/10"></span>
+                        <span class="block w-[12px] h-[12px] rounded-full bg-[#febc2e] border border-black/10"></span>
+                        <span class="block w-[12px] h-[12px] rounded-full bg-[#28c840] border border-black/10"></span>
+                    </div>
+                    {{ if website_url }}
+                        <div class="flex-1 flex justify-center px-4 md:px-8">
+                            <div class="w-full max-w-[420px] bg-white/80 border border-black/10 rounded-md text-center text-[11px] md:text-[12px] text-black/60 font-body py-1 px-3 truncate">
+                                {{ website_url | replace:'https://':'' | replace:'http://':'' | trim:'/' }}
+                            </div>
+                        </div>
+                    {{ else }}
+                        <div class="flex-1"></div>
+                    {{ /if }}
+                    <div class="w-[60px] hidden md:block"></div>
+                </div>
+                <div class="bg-white">
+                    {{ glide:screenshot_1 width="1600" fit="max" }}
+                        <img src="{{ url }}" alt="{{ alt ?? title }}" class="w-full h-auto block" loading="lazy">
+                    {{ /glide:screenshot_1 }}
+                </div>
             </div>
         </div>
     </section>
@@ -149,19 +168,47 @@
 
                 <div class="flex flex-col items-center">
                     <span class="inline-block bg-white text-black text-[12px] lg:text-[13px] uppercase tracking-wider font-heading px-4 py-1.5 rounded-full mb-6 js-fade-up">Before</span>
-                    <div class="w-full bg-black rounded-[24px] lg:rounded-[32px] p-6 lg:p-10 js-fade-up">
-                        {{ glide:before_image width="900" fit="max" }}
-                            <img src="{{ url }}" alt="Before" class="w-full h-auto block rounded-[8px]" loading="lazy">
-                        {{ /glide:before_image }}
+                    <div class="w-full bg-[#e5e5e5] rounded-[14px] lg:rounded-[18px] border border-black/10 shadow-2xl overflow-hidden js-fade-up">
+                        <div class="flex items-center gap-3 px-4 py-3 bg-gradient-to-b from-[#f2f2f2] to-[#e2e2e2] border-b border-black/10">
+                            <div class="flex items-center gap-2">
+                                <span class="block w-[10px] h-[10px] lg:w-[12px] lg:h-[12px] rounded-full bg-[#ff5f57] border border-black/10"></span>
+                                <span class="block w-[10px] h-[10px] lg:w-[12px] lg:h-[12px] rounded-full bg-[#febc2e] border border-black/10"></span>
+                                <span class="block w-[10px] h-[10px] lg:w-[12px] lg:h-[12px] rounded-full bg-[#28c840] border border-black/10"></span>
+                            </div>
+                            <div class="flex-1"></div>
+                        </div>
+                        <div class="bg-white">
+                            {{ glide:before_image width="900" fit="max" }}
+                                <img src="{{ url }}" alt="Before" class="w-full h-auto block" loading="lazy">
+                            {{ /glide:before_image }}
+                        </div>
                     </div>
                 </div>
 
                 <div class="flex flex-col items-center">
                     <span class="inline-block bg-white text-black text-[12px] lg:text-[13px] uppercase tracking-wider font-heading px-4 py-1.5 rounded-full mb-6 js-fade-up">After</span>
-                    <div class="w-full bg-brand-primary rounded-[24px] lg:rounded-[32px] p-6 lg:p-10 js-fade-up">
-                        {{ glide:after_image width="900" fit="max" }}
-                            <img src="{{ url }}" alt="After" class="w-full h-auto block rounded-[8px]" loading="lazy">
-                        {{ /glide:after_image }}
+                    <div class="w-full bg-[#e5e5e5] rounded-[14px] lg:rounded-[18px] border border-black/10 shadow-2xl overflow-hidden js-fade-up">
+                        <div class="flex items-center gap-3 px-4 py-3 bg-gradient-to-b from-[#f2f2f2] to-[#e2e2e2] border-b border-black/10">
+                            <div class="flex items-center gap-2">
+                                <span class="block w-[10px] h-[10px] lg:w-[12px] lg:h-[12px] rounded-full bg-[#ff5f57] border border-black/10"></span>
+                                <span class="block w-[10px] h-[10px] lg:w-[12px] lg:h-[12px] rounded-full bg-[#febc2e] border border-black/10"></span>
+                                <span class="block w-[10px] h-[10px] lg:w-[12px] lg:h-[12px] rounded-full bg-[#28c840] border border-black/10"></span>
+                            </div>
+                            {{ if website_url }}
+                                <div class="flex-1 flex justify-center px-4">
+                                    <div class="w-full max-w-[320px] bg-white/80 border border-black/10 rounded-md text-center text-[10px] lg:text-[11px] text-black/60 font-body py-1 px-3 truncate">
+                                        {{ website_url | replace:'https://':'' | replace:'http://':'' | trim:'/' }}
+                                    </div>
+                                </div>
+                            {{ else }}
+                                <div class="flex-1"></div>
+                            {{ /if }}
+                        </div>
+                        <div class="bg-white">
+                            {{ glide:after_image width="900" fit="max" }}
+                                <img src="{{ url }}" alt="After" class="w-full h-auto block" loading="lazy">
+                            {{ /glide:after_image }}
+                        </div>
                     </div>
                 </div>
 
@@ -211,10 +258,29 @@
 {{ if screenshot_2 }}
     <section class="bg-brand-dark-blue pb-16 lg:pb-24">
         <div class="container">
-            <div class="bg-brand-text rounded-[24px] lg:rounded-[40px] p-6 md:p-10 lg:p-14 js-fade-up">
-                {{ glide:screenshot_2 width="1600" fit="max" }}
-                    <img src="{{ url }}" alt="{{ alt ?? title }}" class="w-full h-auto block rounded-[8px] lg:rounded-[12px]" loading="lazy">
-                {{ /glide:screenshot_2 }}
+            <div class="bg-[#e5e5e5] rounded-[14px] lg:rounded-[18px] border border-black/10 shadow-2xl overflow-hidden js-fade-up">
+                <div class="flex items-center gap-3 px-4 md:px-5 py-3 md:py-3.5 bg-gradient-to-b from-[#f2f2f2] to-[#e2e2e2] border-b border-black/10">
+                    <div class="flex items-center gap-2">
+                        <span class="block w-[12px] h-[12px] rounded-full bg-[#ff5f57] border border-black/10"></span>
+                        <span class="block w-[12px] h-[12px] rounded-full bg-[#febc2e] border border-black/10"></span>
+                        <span class="block w-[12px] h-[12px] rounded-full bg-[#28c840] border border-black/10"></span>
+                    </div>
+                    {{ if website_url }}
+                        <div class="flex-1 flex justify-center px-4 md:px-8">
+                            <div class="w-full max-w-[420px] bg-white/80 border border-black/10 rounded-md text-center text-[11px] md:text-[12px] text-black/60 font-body py-1 px-3 truncate">
+                                {{ website_url | replace:'https://':'' | replace:'http://':'' | trim:'/' }}
+                            </div>
+                        </div>
+                    {{ else }}
+                        <div class="flex-1"></div>
+                    {{ /if }}
+                    <div class="w-[60px] hidden md:block"></div>
+                </div>
+                <div class="bg-white">
+                    {{ glide:screenshot_2 width="1600" fit="max" }}
+                        <img src="{{ url }}" alt="{{ alt ?? title }}" class="w-full h-auto block" loading="lazy">
+                    {{ /glide:screenshot_2 }}
+                </div>
             </div>
         </div>
     </section>
