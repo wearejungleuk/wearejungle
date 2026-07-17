@@ -104,14 +104,14 @@
                         <ul class="flex flex-col gap-5 lg:gap-6 mt-10 lg:mt-12">
                             {{ feature_list }}
                                 <li class="flex items-start gap-4 js-fade-up">
-                                    {{ if fa_icon || icon }}
+                                    {{ if icon || fa_icon }}
                                         <span class="flex-shrink-0 w-[36px] h-[36px] bg-brand-secondary rounded-lg flex items-center justify-center mt-[2px]">
-                                            {{ if fa_icon }}
-                                                <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-brand-primary text-[16px]" aria-hidden="true"></i>
-                                            {{ else }}
+                                            {{ if icon }}
                                                 {{ icon }}
                                                     <img src="{{ url }}" alt="{{ alt }}" class="w-[20px] h-[20px] object-contain">
                                                 {{ /icon }}
+                                            {{ else }}
+                                                <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-brand-primary text-[16px]" aria-hidden="true"></i>
                                             {{ /if }}
                                         </span>
                                     {{ /if }}
@@ -310,11 +310,15 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
                     {{ result_cards }}
                         <div class="bg-black rounded-[20px] lg:rounded-[24px] p-6 lg:p-8 js-fade-up">
-                            {{ if icon }}
+                            {{ if icon || fa_icon }}
                                 <div class="mb-8 lg:mb-10">
-                                    {{ icon }}
-                                        <img src="{{ url }}" alt="{{ alt }}" class="w-[32px] h-[32px] object-contain">
-                                    {{ /icon }}
+                                    {{ if icon }}
+                                        {{ icon }}
+                                            <img src="{{ url }}" alt="{{ alt }}" class="w-[32px] h-[32px] object-contain">
+                                        {{ /icon }}
+                                    {{ else }}
+                                        <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-brand-secondary text-[28px]" aria-hidden="true"></i>
+                                    {{ /if }}
                                 </div>
                             {{ /if }}
                             {{ if statement }}

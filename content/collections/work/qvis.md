@@ -31,13 +31,13 @@ overview_body:
     content:
       -
         type: text
-        text: "QVIS Lighting & Security is a UK-based manufacturer of intelligent, energy-efficient lighting and enterprise-grade CCTV — including their in-house Cortex platform. Their product range is large, technical, and constantly evolving across commercial, industrial, retail and public infrastructure sectors."
+        text: 'QVIS Lighting & Security is a UK-based manufacturer of intelligent, energy-efficient lighting and enterprise-grade CCTV — including their in-house Cortex platform. Their product range is large, technical, and constantly evolving across commercial, industrial, retail and public infrastructure sectors.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'A standard WordPress build wasn''t going to cut it. We built the new site on '
+        text: "A standard WordPress build wasn't going to cut it. We built the new site on "
       -
         type: text
         marks:
@@ -79,7 +79,7 @@ what_we_did_body:
         text: 'custom SAP integration'
       -
         type: text
-        text: ' — a dedicated endpoint that receives product data from QVIS''s central database and keeps the website in sync automatically. No CSV imports, no double-keying, no drift between systems.'
+        text: " — a dedicated endpoint that receives product data from QVIS's central database and keeps the website in sync automatically. No CSV imports, no double-keying, no drift between systems."
   -
     type: paragraph
     content:
@@ -91,7 +91,7 @@ what_we_did_features:
   -
     id: wwd1
     label: 'Bespoke Statamic Build'
-    description: 'Every template, field and content model built specifically for QVIS''s product range — no off-the-shelf theme, no compromises.'
+    description: "Every template, field and content model built specifically for QVIS's product range — no off-the-shelf theme, no compromises."
     type: new_set
     enabled: true
   -
@@ -125,25 +125,29 @@ result_body:
     content:
       -
         type: text
-        text: "QVIS now has a website that scales with their catalogue rather than lagging behind it. Product data flows automatically from SAP into Statamic, the team can publish and specify with confidence, and every part of the site — from luminaire specs to Cortex CCTV — was built to fit how QVIS actually work, not how a WordPress theme wants them to."
+        text: 'QVIS now has a website that scales with their catalogue rather than lagging behind it. Product data flows automatically from SAP into Statamic, the team can publish and specify with confidence, and every part of the site — from luminaire specs to Cortex CCTV — was built to fit how QVIS actually work, not how a WordPress theme wants them to.'
 result_cards:
   -
     id: rc1
+    fa_icon: cubes
     statement: 'A custom Statamic platform built around a huge, technical product catalogue.'
     type: new_set
     enabled: true
   -
     id: rc2
+    fa_icon: arrows-rotate
     statement: 'Live SAP integration that keeps every product on the site up to date automatically.'
     type: new_set
     enabled: true
   -
     id: rc3
+    fa_icon: list-check
     statement: 'A custom Project Builder that turns spec-and-quote into a single guided flow for the sales team.'
     type: new_set
     enabled: true
   -
     id: rc4
+    fa_icon: arrow-up-right-dots
     statement: 'A scalable foundation ready for new products, sectors and specialist ranges.'
     type: new_set
     enabled: true
@@ -173,7 +177,7 @@ feature_list:
     id: qv4
     fa_icon: list-check
     label: 'Custom Project Builder'
-    description: 'Specifiers build a project list, download every matching spec sheet in one click and email the full package straight to QVIS''s sales team.'
+    description: "Specifiers build a project list, download every matching spec sheet in one click and email the full package straight to QVIS's sales team."
     type: new_set
     enabled: true
   -
@@ -184,4 +188,17 @@ feature_list:
     type: new_set
     enabled: true
 show_before_after: false
+hero_image: qvis-hero.jpg
+screenshot_1: qvis-project.jpg
+screenshot_2: qvis-project-builder.jpg
+intro_card_text: 'A bespoke Statamic build with a live SAP feed and a custom Project Builder for QVIS Lighting & Security.'
+card_text_2:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Custom API endpoint syncs their SAP product catalogue straight into Statamic — plus a bespoke Project Builder that packages spec sheets and fires them to the sales team.'
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1784282661
 ---

@@ -114,7 +114,7 @@ tabs:
                           field:
                             type: text
                             display: 'Font Awesome Icon'
-                            instructions: 'Icon name without the fa- prefix, e.g. "calendar-check", "camera-retro", "bullhorn". See fontawesome.com/icons.'
+                            instructions: 'Icon name without the fa- prefix, e.g. "calendar-check", "camera-retro", "bullhorn". See fontawesome.com/icons. Overridden by a Custom SVG Icon if uploaded below.'
                         -
                           handle: icon
                           field:
@@ -122,7 +122,7 @@ tabs:
                             container: assets
                             type: assets
                             display: 'Custom SVG Icon (optional)'
-                            instructions: 'Only used when Font Awesome Icon is empty.'
+                            instructions: 'Optional. Takes priority over the Font Awesome Icon when uploaded.'
                         -
                           handle: label
                           field:
@@ -261,13 +261,19 @@ tabs:
                       display: 'Result Card'
                       fields:
                         -
+                          handle: fa_icon
+                          field:
+                            type: text
+                            display: 'Font Awesome Icon'
+                            instructions: 'Icon name without the fa- prefix, e.g. "star", "bolt", "chart-line". See fontawesome.com/icons. Overridden by a Custom SVG Icon if uploaded below.'
+                        -
                           handle: icon
                           field:
                             max_files: 1
                             container: assets
                             type: assets
-                            display: Icon
-                            instructions: 'Small SVG icon, shown in brand secondary colour at the top of the card.'
+                            display: 'Custom SVG Icon (optional)'
+                            instructions: 'Optional. Takes priority over the Font Awesome Icon when uploaded.'
                         -
                           handle: statement
                           field:
