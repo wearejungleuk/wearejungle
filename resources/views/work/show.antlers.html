@@ -41,24 +41,41 @@
         </div>
 
         {{ if hero_image || hero_logo }}
-            <div class="bg-black rounded-[30px] lg:rounded-[50px] p-6 md:p-10 lg:p-14 js-fade-up">
-                <div class="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12">
-                    {{ if hero_image }}
-                        <div class="flex-1 min-w-0">
+            <div class="relative js-fade-up">
+                {{ if hero_image }}
+                    <div class="bg-[#e5e5e5] rounded-t-[14px] lg:rounded-t-[18px] border border-black/10 border-b-0 shadow-2xl overflow-hidden">
+                        <div class="flex items-center gap-3 px-4 md:px-5 py-3 md:py-3.5 bg-gradient-to-b from-[#f2f2f2] to-[#e2e2e2] border-b border-black/10">
+                            <div class="flex items-center gap-2">
+                                <span class="block w-[12px] h-[12px] rounded-full bg-[#ff5f57] border border-black/10"></span>
+                                <span class="block w-[12px] h-[12px] rounded-full bg-[#febc2e] border border-black/10"></span>
+                                <span class="block w-[12px] h-[12px] rounded-full bg-[#28c840] border border-black/10"></span>
+                            </div>
+                            {{ if website_url }}
+                                <div class="flex-1 flex justify-center px-4 md:px-8">
+                                    <div class="w-full max-w-[420px] bg-white/80 border border-black/10 rounded-md text-center text-[11px] md:text-[12px] text-black/60 font-body py-1 px-3 truncate">
+                                        {{ website_url | replace:'https://':'' | replace:'http://':'' | trim:'/' }}
+                                    </div>
+                                </div>
+                            {{ else }}
+                                <div class="flex-1"></div>
+                            {{ /if }}
+                            <div class="w-[60px] hidden md:block"></div>
+                        </div>
+                        <div class="bg-white">
                             {{ glide:hero_image width="1400" fit="max" }}
                                 <img src="{{ url }}" alt="{{ alt ?? title }}" class="w-full h-auto block" loading="eager">
                             {{ /glide:hero_image }}
                         </div>
-                    {{ /if }}
+                    </div>
+                {{ /if }}
 
-                    {{ if hero_logo }}
-                        <div class="flex-shrink-0 lg:w-[220px] xl:w-[260px] flex justify-center lg:justify-end">
-                            {{ glide:hero_logo width="520" fit="contain" }}
-                                <img src="{{ url }}" alt="{{ alt ?? title }} logo" class="max-w-[180px] lg:max-w-full h-auto" loading="eager">
-                            {{ /glide:hero_logo }}
-                        </div>
-                    {{ /if }}
-                </div>
+                {{ if hero_logo }}
+                    <div class="flex-shrink-0 hidden lg:flex absolute right-6 top-16 lg:w-[180px] xl:w-[200px] justify-center lg:justify-end">
+                        {{ glide:hero_logo width="200" fit="contain" }}
+                            <img src="{{ url }}" alt="{{ alt ?? title }} logo" class="max-w-[180px] h-auto" loading="eager">
+                        {{ /glide:hero_logo }}
+                    </div>
+                {{ /if }}
             </div>
         {{ /if }}
 
