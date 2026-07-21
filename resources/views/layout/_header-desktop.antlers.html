@@ -65,7 +65,7 @@
                             </div>
                             <div class="flex-1 min-w-0 pt-1">
                                 <span class="block font-heading uppercase text-white text-[15px] leading-tight mb-1 group-hover/item:text-brand-secondary transition-colors duration-200">{{ title }}</span>
-                                <span class="block text-white text-[12px] leading-snug opacity-60">{{ card_text | truncate:80 }}</span>
+                                <span class="block text-white text-[12px] leading-snug opacity-60 line-clamp-2">{{ card_text | strip_tags }}</span>
                             </div>
                         </a>
                         {{ /collection:services }}
