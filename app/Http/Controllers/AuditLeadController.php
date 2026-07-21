@@ -20,6 +20,12 @@ class AuditLeadController extends Controller
 
     public function submit(Request $request): JsonResponse
     {
+        Log::info('AuditLead submit received', [
+            'ip'    => $request->ip(),
+            'email' => $request->input('email'),
+            'url'   => $request->input('url'),
+        ]);
+
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
@@ -29,6 +35,9 @@ class AuditLeadController extends Controller
         ]);
 
         if (! $this->validateTurnstile($validated['cf-turnstile-response'], $request->ip())) {
+            Log::warning('AuditLead submit rejected: turnstile failed', [
+                'ip' => $request->ip(),
+            ]);
             return response()->json([
                 'error' => true,
                 'message' => 'Security check failed. Please refresh and try again.',
@@ -82,8 +91,10 @@ class AuditLeadController extends Controller
             ]);
         }
 
+        Log::info('AuditLead: triggering Trakd audit', ['domain' => $domain]);
         $auditResult = $this->triggerTrakdAudit($domain, $validated);
 
+        Log::info('AuditLead: saving submission entry', ['domain' => $domain]);
         $submissionSlug = $this->saveSubmission(
             $validated,
             $domain,
@@ -93,10 +104,17 @@ class AuditLeadController extends Controller
             'pending'
         );
 
+        Log::info('AuditLead: posting webhook', ['domain' => $domain]);
         $this->postToTrakdWebhook($validated, $domain);
 
         Cache::put($ipKey, $ipCount + 1, now()->addHours(self::IP_TTL_HOURS));
         Cache::put($emailKey, $emailCount + 1, now()->addDays(self::EMAIL_TTL_DAYS));
+
+        Log::info('AuditLead submit complete', [
+            'domain'        => $domain,
+            'submission'    => $submissionSlug,
+            'audit_id'      => $auditResult['audit_id'] ?? null,
+        ]);
 
         return response()->json([
             'success' => true,
@@ -245,22 +263,35 @@ class AuditLeadController extends Controller
             return ['success' => true, 'audit_id' => null];
         }
 
+        // Route-name lookup is behind a try in case the routes cache is
+        // stale (audits.callback was added in the same deploy as this
+        // method) — an unresolved route would otherwise throw and
+        // silently null the audit_id. Falls back to skipping the
+        // callback rather than failing the whole trigger.
+        $callbackUrl = null;
         try {
+            $callbackUrl = route('audits.callback');
+        } catch (\Throwable $e) {
+            Log::warning('audits.callback route not found — skipping callback_url', [
+                'error' => $e->getMessage(),
+            ]);
+        }
+
+        try {
+            $payload = [
+                'url'    => 'https://' . $domain,
+                'source' => 'lead_magnet',
+                'name'   => $submission['name'],
+                'email'  => $submission['email'],
+            ];
+            if ($callbackUrl) {
+                $payload['callback_url'] = $callbackUrl;
+            }
+
             $response = Http::timeout(10)
                 ->withHeaders(['X-Callback-Secret' => $secret])
                 ->acceptJson()
-                ->post(
-                    rtrim($apiUrl, '/') . '/api/audits/start',
-                    [
-                        'url'          => 'https://' . $domain,
-                        'source'       => 'lead_magnet',
-                        'name'         => $submission['name'],
-                        'email'        => $submission['email'],
-                        // Where Trakd should POST the results when the crawl
-                        // completes. Verified via the same shared secret.
-                        'callback_url' => route('audits.callback'),
-                    ]
-                );
+                ->post(rtrim($apiUrl, '/') . '/api/audits/start', $payload);
 
             if ($response->successful()) {
                 Log::info('Trakd audit started', [
@@ -303,7 +334,7 @@ class AuditLeadController extends Controller
         }
 
         try {
-            Http::timeout(5)->post($webhookUrl, [
+            $response = Http::timeout(5)->post($webhookUrl, [
                 'name' => $submission['name'],
                 'email' => $submission['email'],
                 'website' => $domain,
@@ -311,8 +342,25 @@ class AuditLeadController extends Controller
                 'source' => 'free_audit_lead_magnet',
                 '_campaign' => 'website-audit-tool',
             ]);
+
+            // Http::post doesn't throw on 4xx/5xx — check status
+            // explicitly so a failing webhook doesn't fail silently.
+            if ($response->failed()) {
+                Log::warning('Trakd webhook returned non-2xx', [
+                    'email'  => $submission['email'],
+                    'status' => $response->status(),
+                    'url'    => $webhookUrl,
+                    'body'   => substr($response->body(), 0, 300),
+                ]);
+                return;
+            }
+
+            Log::info('Trakd webhook posted', [
+                'email' => $submission['email'],
+                'domain' => $domain,
+            ]);
         } catch (\Throwable $e) {
-            Log::warning('Trakd webhook post failed', [
+            Log::warning('Trakd webhook post threw', [
                 'email' => $submission['email'],
                 'error' => $e->getMessage(),
             ]);
