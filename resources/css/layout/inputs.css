@@ -1,6 +1,6 @@
 input[type=text], input[type=number], input[type=email], input[type=url], textarea, input[type=tel], input[type=search], select {
   resize: none;
-  @apply bg-transparent w-full px-5 py-3 outline-none rounded-[0] border-black border-[2px] placeholder-black;
+  @apply bg-transparent w-full px-5 py-3 outline-none rounded-[0] border-black border-[2px] text-black placeholder-black;
 }
 
 .select-wrap, .custom-select {
