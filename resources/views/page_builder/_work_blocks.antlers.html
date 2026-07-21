@@ -46,11 +46,17 @@
                 <div class="swiper-wrapper">
                     {{ client }}
                     <div class="swiper-slide !h-auto">
-                        <div class="relative overflow-hidden rounded-[20px] h-[65vw] min-h-[220px] mb-4">
-                            {{ partial:components/work_card_media }}
-                        </div>
-                        <h3 class="font-heading uppercase text-[22px] text-white">{{ title }}</h3>
-                        <div class="mt-2 text-white text-[15px]">{{ preview_text }}</div>
+                        <a href="{{ url }}" class="block group text-white">
+                            <div class="relative overflow-hidden rounded-[20px] h-[65vw] min-h-[220px] mb-4">
+                                {{ partial:components/work_card_media hoverable="true" }}
+                            </div>
+                            <h3 class="font-heading uppercase text-[22px]">{{ title }}</h3>
+                            <div class="mt-2 text-[15px]">{{ preview_text }}</div>
+                            <div class="mt-4 inline-flex items-center gap-3 font-heading uppercase text-[13px] tracking-wide transition-all duration-200 group-hover:gap-5">
+                                View project
+                                {{ partial:components/arrow-circle classes="w-[30px] h-[30px] border border-current text-current text-[11px]" }}
+                            </div>
+                        </a>
                     </div>
                     {{ /client }}
                 </div>
@@ -87,13 +93,19 @@
         <div class="hidden md:flex md:flex-row md:flex-wrap md:-mx-4 js-fade-up">
             {{ client }}
             <div class="w-full md:w-1/2 md:px-8 relative md:mb-[50px] {{ switch between='|md:translate-y-[100px]' }}">
-                <div class="relative overflow-hidden rounded-[20px] min-h-[400px] py-32 mb-6 lg:mb-8">
-                    {{ partial:components/work_card_media }}
-                </div>
-                <h3 class="font-heading uppercase text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px]">{{ title }}</h3>
-                <div class="mt-2 lg:mt-4">
-                    {{ preview_text }}
-                </div>
+                <a href="{{ url }}" class="block group">
+                    <div class="relative overflow-hidden rounded-[20px] min-h-[400px] py-32 mb-6 lg:mb-8">
+                        {{ partial:components/work_card_media hoverable="true" }}
+                    </div>
+                    <h3 class="font-heading uppercase text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px]">{{ title }}</h3>
+                    <div class="mt-2 lg:mt-4">
+                        {{ preview_text }}
+                    </div>
+                    <div class="mt-4 lg:mt-6 inline-flex items-center gap-3 font-heading uppercase text-[13px] lg:text-[14px] tracking-wide transition-all duration-200 group-hover:gap-5">
+                        View project
+                        {{ partial:components/arrow-circle classes="w-[32px] h-[32px] border border-current text-current text-[12px]" }}
+                    </div>
+                </a>
             </div>
             {{ /client }}
             <div class="col-span-1 md:w-1/2 md:px-8 md:translate-y-[100px]">

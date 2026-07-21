@@ -29,10 +29,10 @@
                             {{ feature_list }}
                             <div class="flex items-center gap-4">
                                 {{ if icon || fa_icon }}
-                                <div class="w-[60px] h-[60px] flex-shrink-0 bg-brand-dark-blue-two flex items-center justify-center" style="border-radius: 12px">
+                                <div class="flex-shrink-0 w-[36px] flex items-center justify-center">
                                     {{ if icon }}
                                         {{ icon }}
-                                        <img src="{{ url }}" alt="{{ alt }}" class="w-[36px] h-[36px] object-contain">
+                                        <img src="{{ url }}" alt="{{ alt }}" class="w-[32px] h-[32px] object-contain">
                                         {{ /icon }}
                                     {{ else }}
                                         <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-white text-[24px]" aria-hidden="true"></i>

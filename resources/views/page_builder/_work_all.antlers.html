@@ -12,6 +12,10 @@
                     {{ if preview_text }}
                         <div class="mt-2 lg:mt-4">{{ preview_text }}</div>
                     {{ /if }}
+                    <div class="mt-4 lg:mt-6 inline-flex items-center gap-3 font-heading uppercase text-[13px] lg:text-[14px] tracking-wide transition-all duration-200 group-hover:gap-5">
+                        View project
+                        {{ partial:components/arrow-circle classes="w-[32px] h-[32px] border border-current text-current text-[12px]" }}
+                    </div>
                 </a>
             </div>
             {{ /collection:work }}
