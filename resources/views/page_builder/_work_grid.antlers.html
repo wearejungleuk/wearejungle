@@ -12,47 +12,108 @@
                     <div>
                         <div class="flex items-start justify-between mb-5">
                             <h3 class="font-heading uppercase text-[18px] lg:text-[20px] text-white">{{ title }}</h3>
-                            {{ partial:components/arrow-circle classes="ml-4 w-[36px] h-[36px] border border-white text-white text-[14px]" }}
+                            {{ partial:components/arrow-circle classes="ml-4 w-[36px] h-[36px] border border-white
+                            text-white text-[14px]" }}
                         </div>
                         {{ if intro_card_text || preview_text }}
-                            <div class="text-white text-[22px] sm:text-[26px] lg:text-[30px] leading-snug mb-6">{{ intro_card_text ?? preview_text }}</div>
+                        <div class="text-white text-[22px] sm:text-[26px] lg:text-[30px] leading-snug mb-6">{{
+                            intro_card_text ?? preview_text }}
+                        </div>
                         {{ /if }}
                         {{ if card_text_2 }}
-                            <div class="bard text-white text-[15px] lg:text-[16px] leading-relaxed mb-8">{{ card_text_2 }}</div>
+                        <div class="bard text-white text-[15px] lg:text-[16px] leading-relaxed mb-8">{{ card_text_2 }}
+                        </div>
                         {{ /if }}
                         {{ if feature_list }}
-                            <div class="flex flex-col gap-5">
-                                {{ feature_list }}
-                                <div class="flex items-center gap-4">
+                        <div class="flex flex-col gap-5">
+                            {{ feature_list }}
+                            <div class="flex items-center gap-4">
+                                {{ if icon || fa_icon }}
+                                <div class="w-[60px] h-[60px] flex-shrink-0 bg-brand-dark-blue-two flex items-center justify-center" style="border-radius: 12px">
                                     {{ if icon }}
                                         {{ icon }}
-                                        <div class="w-[60px] h-[60px] flex-shrink-0 bg-brand-dark-blue-two flex items-center justify-center" style="border-radius: 12px">
-                                            <img src="{{ url }}" alt="{{ alt }}" class="w-[36px] h-[36px] object-contain">
-                                        </div>
+                                        <img src="{{ url }}" alt="{{ alt }}" class="w-[36px] h-[36px] object-contain">
                                         {{ /icon }}
-                                    {{ /if }}
-                                    {{ if label }}
-                                        <span class="text-white text-[15px] lg:text-[17px]">{{ label }}</span>
+                                    {{ else }}
+                                        <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-white text-[24px]" aria-hidden="true"></i>
                                     {{ /if }}
                                 </div>
-                                {{ /feature_list }}
+                                {{ /if }}
+                                {{ if label }}
+                                <span class="text-white text-[15px] lg:text-[17px]">{{ label }}</span>
+                                {{ /if }}
                             </div>
+                            {{ /feature_list }}
+                        </div>
                         {{ /if }}
                     </div>
 
-                    <div>
+                    <div class="overflow-hidden rounded-[12px] relative" style="aspect-ratio: 700/560">
+                        {{ if background_video }}
+                        <div class="absolute inset-0 overflow-hidden pointer-events-none z-[3]" style="container-type: size;">
+                            {{ if background_video | contains:".mp4" }}
+                            <video playsinline autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+                                <source src="{{ background_video }}" type="video/mp4">
+                            </video>
+                            {{ elseif background_video | contains:".webm" }}
+                            <video playsinline autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+                                <source src="{{ background_video }}" type="video/webm">
+                            </video>
+                            {{ elseif background_video | contains:"youtube.com" }}
+                            <iframe
+                                src="https://www.youtube.com/embed/{{ background_video | replace:'https://www.youtube.com/watch?v=','' }}?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&playlist={{ background_video | replace:'https://www.youtube.com/watch?v=','' }}"
+                                frameborder="0" allow="autoplay"
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                            ></iframe>
+                            {{ elseif background_video | contains:"youtu.be" }}
+                            <iframe
+                                src="https://www.youtube.com/embed/{{ background_video | replace:'https://youtu.be/','' }}?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&playlist={{ background_video | replace:'https://youtu.be/','' }}"
+                                frameborder="0" allow="autoplay"
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                            ></iframe>
+                            {{ elseif background_video | contains:"player.vimeo.com" }}
+                            {{# Already a player URL - use it verbatim so any ?h= privacy hash survives. #}}
+                            <iframe
+                                src="{{ background_video }}{{ if background_video | contains:'?' }}&{{ else }}?{{ /if }}autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                                frameborder="0" allow="autoplay"
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                            ></iframe>
+                            {{ elseif background_video | contains:"vimeo.com" }}
+                            {{ vimeo_path = background_video | replace:'https://vimeo.com/':'' |
+                            replace:'http://vimeo.com/':'' | replace:'https://www.vimeo.com/':'' |
+                            replace:'http://www.vimeo.com/':'' | explode:'?' | first }}
+                            {{ if vimeo_path | contains:'/' }}
+                            {{ vimeo_id = vimeo_path | explode:'/' | first }}
+                            {{ vimeo_hash = vimeo_path | explode:'/' | last }}
+                            <iframe
+                                src="https://player.vimeo.com/video/{{ vimeo_id }}?h={{ vimeo_hash }}&autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                                frameborder="0" allow="autoplay"
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                            ></iframe>
+                            {{ else }}
+                            <iframe
+                                src="https://player.vimeo.com/video/{{ vimeo_path }}?autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                                frameborder="0" allow="autoplay"
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                            ></iframe>
+                            {{ /if }}
+                            {{ /if }}
+                        </div>
+                        {{ /if }}
                         {{ if preview_background_image }}
-                            {{ glide:preview_background_image }}
-                            <div class="overflow-hidden rounded-[12px]" style="aspect-ratio: 700/560">
-                                <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
-                            </div>
-                            {{ /glide:preview_background_image }}
+                        {{ glide:preview_background_image }}
+
+                        <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
+                        {{ /glide:preview_background_image }}
                         {{ elseif preview_image }}
-                            {{ glide:preview_image }}
-                            <div class="overflow-hidden rounded-[12px]" style="aspect-ratio: 700/560">
-                                <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
-                            </div>
-                            {{ /glide:preview_image }}
+                        {{ glide:preview_image }}
+                        <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
+                        {{ /glide:preview_image }}
                         {{ /if }}
                     </div>
 
@@ -65,10 +126,13 @@
             <a href="{{ url }}" class="group flex flex-col bg-brand-dark-blue p-6 js-fade-up" style="border-radius: 20px">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="font-heading uppercase text-[16px] lg:text-[18px] text-white">{{ title }}</h3>
-                    {{ partial:components/arrow-circle classes="ml-4 w-[34px] h-[34px] border border-white text-white text-[13px]" }}
+                    {{ partial:components/arrow-circle classes="ml-4 w-[34px] h-[34px] border border-white text-white
+                    text-[13px]" }}
                 </div>
                 {{ if card_text_2 || preview_text }}
-                    <div class="bard text-white text-[18px] lg:text-[20px] leading-snug mb-6">{{ card_text_2 ?? preview_text }}</div>
+                <div class="bard text-white text-[18px] lg:text-[20px] leading-snug mb-6">{{ card_text_2 ?? preview_text
+                    }}
+                </div>
                 {{ /if }}
                 <div class="mt-auto rounded-[12px] overflow-hidden relative">
                     {{ if background_video }}
@@ -104,35 +168,37 @@
                             style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
                         ></iframe>
                         {{ elseif background_video | contains:"vimeo.com" }}
-                        {{ vimeo_path = background_video | replace:'https://vimeo.com/':'' | replace:'http://vimeo.com/':'' | replace:'https://www.vimeo.com/':'' | replace:'http://www.vimeo.com/':'' | explode:'?' | first }}
+                        {{ vimeo_path = background_video | replace:'https://vimeo.com/':'' |
+                        replace:'http://vimeo.com/':'' | replace:'https://www.vimeo.com/':'' |
+                        replace:'http://www.vimeo.com/':'' | explode:'?' | first }}
                         {{ if vimeo_path | contains:'/' }}
-                            {{ vimeo_id = vimeo_path | explode:'/' | first }}
-                            {{ vimeo_hash = vimeo_path | explode:'/' | last }}
-                            <iframe
-                                src="https://player.vimeo.com/video/{{ vimeo_id }}?h={{ vimeo_hash }}&autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
-                                frameborder="0" allow="autoplay"
-                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-                                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
-                            ></iframe>
+                        {{ vimeo_id = vimeo_path | explode:'/' | first }}
+                        {{ vimeo_hash = vimeo_path | explode:'/' | last }}
+                        <iframe
+                            src="https://player.vimeo.com/video/{{ vimeo_id }}?h={{ vimeo_hash }}&autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                            frameborder="0" allow="autoplay"
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                            style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                        ></iframe>
                         {{ else }}
-                            <iframe
-                                src="https://player.vimeo.com/video/{{ vimeo_path }}?autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
-                                frameborder="0" allow="autoplay"
-                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-                                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
-                            ></iframe>
+                        <iframe
+                            src="https://player.vimeo.com/video/{{ vimeo_path }}?autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                            frameborder="0" allow="autoplay"
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                            style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                        ></iframe>
                         {{ /if }}
                         {{ /if }}
                     </div>
                     {{ /if }}
                     {{ if preview_background_image }}
-                        {{ glide:preview_background_image width="700" height="500" fit="crop-top" }}
-                            <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full h-full object-center object-cover">
-                        {{ /glide:preview_background_image }}
+                    {{ glide:preview_background_image width="700" height="500" fit="crop-top" }}
+                    <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full h-full object-center object-cover">
+                    {{ /glide:preview_background_image }}
                     {{ elseif preview_image }}
-                        {{ glide:preview_image}}
-                            <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
-                        {{ /glide:preview_image }}
+                    {{ glide:preview_image}}
+                    <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
+                    {{ /glide:preview_image }}
                     {{ /if }}
                 </div>
             </a>
