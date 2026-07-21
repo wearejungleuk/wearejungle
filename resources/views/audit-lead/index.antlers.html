@@ -3,7 +3,7 @@ title: 'Free Website Audit'
 meta_title: 'Free Website Audit Tool - We Are Jungle'
 meta_description: 'Find out exactly what is holding your website back in Google. Get a free technical audit from We Are Jungle. Results in about 2 minutes.'
 ---
-<section class="bg-brand-text min-h-screen pt-[140px] md:pt-[160px] lg:pt-[200px] pb-16 lg:pb-24"
+<section class="min-h-screen pt-[140px] md:pt-[160px] lg:pt-[200px] pb-16 lg:pb-24"
     x-data="auditLead()"
     x-cloak
 >
@@ -13,100 +13,99 @@ meta_description: 'Find out exactly what is holding your website back in Google.
         <div x-show="step === 'form'" x-transition.opacity>
 
             <div class="text-center mb-10 lg:mb-14">
-                <h1 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[60px] xl:text-[68px] leading-[1] text-brand-dark-blue mb-6">
+                <h1 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[60px] xl:text-[68px] leading-[1] text-white mb-6">
                     Find out what is holding your website back
                 </h1>
-                <p class="text-[17px] lg:text-[19px] text-brand-dark-blue/80 max-w-[640px] mx-auto leading-relaxed">
+                <p class="text-[17px] lg:text-[19px] text-white/85 max-w-[640px] mx-auto leading-relaxed">
                     Enter your website below and we will run a free technical audit, then show you exactly what is affecting your Google rankings and how to fix it.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 lg:gap-8 mb-10 lg:mb-14 max-w-[720px] mx-auto">
                 <div class="text-center px-4">
-                    <div class="w-[52px] h-[52px] rounded-full bg-brand-primary flex items-center justify-center mx-auto mb-3">
-                        <i class="fa-sharp fa-solid fa-magnifying-glass text-white text-[20px]"></i>
+                    <div class="w-[52px] h-[52px] rounded-full bg-brand-secondary flex items-center justify-center mx-auto mb-3">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass text-brand-primary text-[20px]"></i>
                     </div>
-                    <div class="font-bodybold text-brand-dark-blue text-[15px] mb-1">Technical scan</div>
-                    <div class="text-brand-dark-blue/70 text-[13px] leading-snug">Find hidden problems costing you traffic.</div>
+                    <div class="font-bodybold text-white text-[15px] mb-1">Technical scan</div>
+                    <div class="text-white/70 text-[13px] leading-snug">Find hidden problems costing you traffic.</div>
                 </div>
                 <div class="text-center px-4">
-                    <div class="w-[52px] h-[52px] rounded-full bg-brand-primary flex items-center justify-center mx-auto mb-3">
-                        <i class="fa-sharp fa-solid fa-chart-line text-white text-[20px]"></i>
+                    <div class="w-[52px] h-[52px] rounded-full bg-brand-secondary flex items-center justify-center mx-auto mb-3">
+                        <i class="fa-sharp fa-solid fa-chart-line text-brand-primary text-[20px]"></i>
                     </div>
-                    <div class="font-bodybold text-brand-dark-blue text-[15px] mb-1">Google rankings check</div>
-                    <div class="text-brand-dark-blue/70 text-[13px] leading-snug">See where you appear in Google right now.</div>
+                    <div class="font-bodybold text-white text-[15px] mb-1">Google rankings check</div>
+                    <div class="text-white/70 text-[13px] leading-snug">See where you appear in Google right now.</div>
                 </div>
                 <div class="text-center px-4">
-                    <div class="w-[52px] h-[52px] rounded-full bg-brand-primary flex items-center justify-center mx-auto mb-3">
-                        <i class="fa-sharp fa-solid fa-bolt text-white text-[20px]"></i>
+                    <div class="w-[52px] h-[52px] rounded-full bg-brand-secondary flex items-center justify-center mx-auto mb-3">
+                        <i class="fa-sharp fa-solid fa-bolt text-brand-primary text-[20px]"></i>
                     </div>
-                    <div class="font-bodybold text-brand-dark-blue text-[15px] mb-1">Speed analysis</div>
-                    <div class="text-brand-dark-blue/70 text-[13px] leading-snug">How fast it loads on mobile.</div>
+                    <div class="font-bodybold text-white text-[15px] mb-1">Speed analysis</div>
+                    <div class="text-white/70 text-[13px] leading-snug">How fast it loads on mobile.</div>
                 </div>
             </div>
 
-            <div class="bg-white rounded-[20px] shadow-xl p-6 md:p-10 lg:p-12">
+            <div class="bg-brand-text p-6 md:p-10 lg:p-12">
                 <form @submit.prevent="submitForm" novalidate>
                     {{ csrf_field }}
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 mb-6">
                         <label class="block">
-                            <span class="block font-bodybold text-brand-dark-blue text-[14px] mb-2">Your name</span>
-                            <input type="text" required maxlength="255"
-                                x-model="form.name"
-                                class="w-full px-4 py-3 border-2 border-brand-dark-blue/15 rounded-lg text-[16px] text-brand-dark-blue focus:outline-none focus:border-brand-primary transition-colors">
+                            <span class="block font-heading uppercase font-semibold text-brand-primary mb-2">Your name</span>
+                            <input type="text" required maxlength="255" x-model="form.name">
                         </label>
                         <label class="block">
-                            <span class="block font-bodybold text-brand-dark-blue text-[14px] mb-2">Your email</span>
-                            <input type="email" required maxlength="255"
-                                x-model="form.email"
-                                class="w-full px-4 py-3 border-2 border-brand-dark-blue/15 rounded-lg text-[16px] text-brand-dark-blue focus:outline-none focus:border-brand-primary transition-colors">
+                            <span class="block font-heading uppercase font-semibold text-brand-primary mb-2">Your email</span>
+                            <input type="email" required maxlength="255" x-model="form.email">
                         </label>
                     </div>
 
-                    <label class="block mb-5">
-                        <span class="block font-bodybold text-brand-dark-blue text-[14px] mb-2">Your website URL</span>
-                        <input type="url" required maxlength="500" placeholder="https://yourwebsite.co.uk"
-                            x-model="form.url"
-                            class="w-full px-4 py-3 border-2 border-brand-dark-blue/15 rounded-lg text-[16px] text-brand-dark-blue focus:outline-none focus:border-brand-primary transition-colors">
+                    <label class="block mb-6">
+                        <span class="block font-heading uppercase font-semibold text-brand-primary mb-2">Your website URL</span>
+                        <input type="url" required maxlength="500" placeholder="https://yourwebsite.co.uk" x-model="form.url">
                     </label>
 
-                    <label class="block mb-6">
-                        <span class="block font-bodybold text-brand-dark-blue text-[14px] mb-2">Monthly marketing budget</span>
-                        <select required
-                            x-model="form.marketing_budget"
-                            class="w-full px-4 py-3 border-2 border-brand-dark-blue/15 rounded-lg text-[16px] text-brand-dark-blue focus:outline-none focus:border-brand-primary transition-colors bg-white">
-                            <option value="" disabled>Select a range</option>
-                            <option value="under_750">Under £750</option>
-                            <option value="750_to_1500">£750 to £1,500</option>
-                            <option value="1500_to_5000">£1,500 to £5,000</option>
-                            <option value="5000_to_10000">£5,000 to £10,000</option>
-                            <option value="10000_to_25000">£10,000 to £25,000</option>
-                            <option value="25000_to_50000">£25,000 to £50,000</option>
-                            <option value="50000_plus">£50,000+</option>
-                        </select>
+                    <label class="block mb-8">
+                        <span class="block font-heading uppercase font-semibold text-brand-primary mb-2">Monthly marketing budget</span>
+                        <div class="relative custom-select w-full">
+                            <div class="absolute top-1/2 right-4 w-4 -translate-y-1/2 pointer-events-none">
+                                {{ partial:components/icons.down-arrow }}
+                            </div>
+                            <select required x-model="form.marketing_budget">
+                                <option value="" disabled>Select a range</option>
+                                <option value="under_750">Under £750</option>
+                                <option value="750_to_1500">£750 to £1,500</option>
+                                <option value="1500_to_5000">£1,500 to £5,000</option>
+                                <option value="5000_to_10000">£5,000 to £10,000</option>
+                                <option value="10000_to_25000">£10,000 to £25,000</option>
+                                <option value="25000_to_50000">£25,000 to £50,000</option>
+                                <option value="50000_plus">£50,000+</option>
+                            </select>
+                        </div>
                     </label>
 
                     <div class="wj-turnstile-slot mb-6 flex justify-center" data-wj-turnstile-slot data-wj-turnstile-sitekey="{{ config:turnstile:site_key }}"></div>
 
                     <template x-if="errorMessage">
-                        <div class="mb-5 p-4 bg-red-50 border-2 border-red-200 rounded-lg text-red-700 text-[14px]" x-text="errorMessage"></div>
+                        <div class="mb-5 px-4 py-3 bg-red-500 text-white border border-red-700" x-text="errorMessage"></div>
                     </template>
 
-                    <button type="submit" class="button button--primary group w-full" data-turnstile-submit disabled>
-                        <span x-show="!submitting">Analyse my website</span>
-                        <span x-show="submitting" x-cloak>
-                            <i class="fa-sharp fa-solid fa-spinner fa-spin mr-2"></i>Starting your audit...
-                        </span>
-                    </button>
+                    <div class="flex justify-center">
+                        <button type="submit" class="button group" data-turnstile-submit disabled>
+                            <span x-show="!submitting">Analyse my website</span>
+                            <span x-show="submitting" x-cloak>
+                                <i class="fa-sharp fa-solid fa-spinner fa-spin mr-2"></i>Starting your audit...
+                            </span>
+                        </button>
+                    </div>
 
-                    <p class="text-brand-dark-blue/60 text-[12px] leading-relaxed text-center mt-5">
-                        By submitting this form you agree to receive your audit results and occasional updates from We Are Jungle. Unsubscribe anytime.
+                    <p class="text-brand-dark-blue/70 text-[12px] leading-relaxed text-center mt-6">
+                        By submitting this form you agree to our <a href="/privacy-policy" class="underline hover:text-brand-primary">privacy policy</a> and to receive occasional updates from We Are Jungle. Unsubscribe anytime.
                     </p>
                 </form>
             </div>
 
-            <div class="text-center mt-10 text-brand-dark-blue/60 text-[13px]">
+            <div class="text-center mt-10 text-white/70 text-[13px]">
                 Free. No account needed. Results in about 2 minutes.
             </div>
 
@@ -146,22 +145,27 @@ meta_description: 'Find out exactly what is holding your website back in Google.
         x-transition:enter-end="opacity-100 translate-y-0"
         class="max-w-[640px] mx-auto text-center py-16 lg:py-24 px-6">
 
-        <div class="w-[72px] h-[72px] rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
-            <i class="fa-sharp fa-solid fa-check text-green-600 text-[32px]"></i>
+        <div class="w-[72px] h-[72px] rounded-full bg-brand-secondary flex items-center justify-center mx-auto mb-6">
+            <i class="fa-sharp fa-solid fa-check text-brand-primary text-[32px]"></i>
         </div>
 
-        <h2 class="font-heading uppercase text-[36px] lg:text-[44px] text-brand-dark-blue mb-4 leading-tight">
+        <h2 class="font-heading uppercase text-[36px] lg:text-[44px] text-white mb-4 leading-tight">
             Your report is ready
         </h2>
-        <p class="text-brand-dark-blue/70 text-[16px] mb-8">
+        <p class="text-white/85 text-[16px] mb-8">
             We have emailed a copy to <strong x-text="form.email"></strong>. You can also view it here:
         </p>
 
-        <a :href="shareUrl" target="_blank" rel="noopener" class="button button--primary group">
-            <span>View my website audit report</span>
-        </a>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a :href="shareUrl" target="_blank" rel="noopener" class="button group">
+                <span>View my website audit report</span>
+            </a>
+            <a href="/services" class="button group">
+                <span>See how we can help</span>
+            </a>
+        </div>
 
-        <p class="text-brand-dark-blue/50 text-[13px] mt-6">
+        <p class="text-white/60 text-[13px] mt-8">
             The report opens in a new tab. It is also saved so you can share it with your team.
         </p>
     </div>
@@ -177,38 +181,42 @@ meta_description: 'Find out exactly what is holding your website back in Google.
             <i class="fa-sharp fa-solid fa-envelope text-brand-primary text-[28px]"></i>
         </div>
 
-        <h2 class="font-heading uppercase text-[36px] lg:text-[44px] text-brand-dark-blue mb-4 leading-tight">
+        <h2 class="font-heading uppercase text-[36px] lg:text-[44px] text-white mb-4 leading-tight">
             Your report is on its way
         </h2>
-        <p class="text-brand-dark-blue/70 text-[16px] mb-6">
+        <p class="text-white/85 text-[16px] mb-8">
             We are still compiling everything we found on your website. Your full report will be emailed to <strong x-text="form.email"></strong> within a few minutes.
         </p>
-        <p class="text-brand-dark-blue/60 text-[14px]">
-            You can safely close this page. Check your inbox (and your spam folder just in case).
+
+        <p class="text-white/85 text-[15px] mb-6">
+            While you wait, take a look at how we help businesses fix the things your audit is about to show you.
         </p>
+        <a href="/services" class="button group">
+            <span>See our services</span>
+        </a>
     </div>
 
     {{# STEP 4: ERROR / RATE LIMIT #}}
     <div x-show="step === 'error' || step === 'ratelimit'" x-cloak
         class="max-w-[560px] mx-auto text-center py-16 lg:py-24 px-6">
 
-        <div class="w-[72px] h-[72px] rounded-full bg-red-100 flex items-center justify-center mx-auto mb-6">
-            <i class="fa-sharp fa-solid fa-triangle-exclamation text-red-600 text-[28px]"></i>
+        <div class="w-[72px] h-[72px] rounded-full bg-brand-secondary flex items-center justify-center mx-auto mb-6">
+            <i class="fa-sharp fa-solid fa-triangle-exclamation text-brand-primary text-[28px]"></i>
         </div>
 
-        <h2 class="font-heading uppercase text-[32px] lg:text-[40px] text-brand-dark-blue mb-4 leading-tight"
+        <h2 class="font-heading uppercase text-[32px] lg:text-[40px] text-white mb-4 leading-tight"
             x-text="step === 'ratelimit' ? 'Audit limit reached' : 'Something went wrong'"></h2>
 
-        <p class="text-brand-dark-blue/70 text-[16px] mb-8"
+        <p class="text-white/85 text-[16px] mb-8"
             x-text="errorMessage || (step === 'ratelimit'
                 ? 'You have reached the free-audit limit. Your most recent report has been emailed to you.'
                 : 'We could not complete the audit right now. Please try again in a moment or contact us directly.')"></p>
 
-        <button x-show="step === 'error'" @click="resetToForm" class="button button--primary group">
+        <button x-show="step === 'error'" @click="resetToForm" class="button group">
             <span>Try again</span>
         </button>
 
-        <a x-show="step === 'ratelimit'" href="/contact" class="button button--primary group">
+        <a x-show="step === 'ratelimit'" href="/contact" class="button group">
             <span>Get in touch instead</span>
         </a>
     </div>
