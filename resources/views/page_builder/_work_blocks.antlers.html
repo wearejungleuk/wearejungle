@@ -84,11 +84,11 @@
                                 {{ /if }}
                             {{ /if }}
                             <div class="absolute bg-black opacity-60 top-0 left-0 w-full h-full"></div>
-                            {{ preview_image }}
-                            <div class="overflow-hidden absolute w-[90%] h-[70%] top-[15%] rounded-[10px] left-[5%] z-[3]">
-                                <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="object-cover object-top w-[101%] h-full !max-w-[101%]">
+                            {{ glide:preview_image width="700" height="350" fit="crop_focal" }}
+                            <div class="overflow-hidden absolute w-[90%] top-[15%] rounded-[10px] left-[5%] z-[3]">
+                                <img src="{{ url }}" alt="{{ alt }}" loading="lazy" width="700" height="350" class="w-[101%] !max-w-[101%]">
                             </div>
-                            {{ /preview_image }}
+                            {{ /glide:preview_image }}
                         </div>
                         <h3 class="font-heading uppercase text-[22px] text-white">{{ title }}</h3>
                         <div class="mt-2 text-white text-[15px]">{{ preview_text }}</div>
@@ -169,11 +169,11 @@
                     {{ /if }}
                     <div class="absolute bg-black opacity-60 top-0 left-0 w-full h-full"></div>
 
-                    {{ preview_image }}
+                    {{ glide:preview_image width="700" height="350" fit="crop_focal" }}
                     <div class="overflow-hidden absolute w-[90%] h-[70%] top-[15%] rounded-[10px] left-[5%] z-[3]">
-                        <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="object-cover object-top w-[101%] h-full !max-w-[101%]">
+                        <img src="{{ url }}" alt="{{ alt }}" loading="lazy" width="700" height="350" class="object-cover object-top w-[101%] h-full !max-w-[101%]">
                     </div>
-                    {{ /preview_image }}
+                    {{ /glide:preview_image }}
                 </div>
                 <h3 class="font-heading uppercase text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px]">{{ title }}</h3>
                 <div class="mt-2 lg:mt-4">

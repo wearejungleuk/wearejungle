@@ -5,7 +5,7 @@
             {{ entry_url = url }}
             <div class="w-full md:w-1/2 md:px-8 relative md:mb-[50px] js-fade-up {{ switch between='|md:translate-y-[100px]' }}">
                 <a href="{{ entry_url }}" class="block group">
-                    <div class="relative overflow-hidden rounded-[20px] min-h-[400px] h-[50vh] lg:h-[80vh] mb-6 lg:mb-8">
+                    <div class="relative overflow-hidden rounded-[20px] min-h-[400px] py-12 mb-6 lg:mb-8">
                         {{ if preview_background_image }}
                             {{ preview_background_image }}
                             <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="absolute w-full top-0 left-0 h-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]">
@@ -30,11 +30,11 @@
                         {{ /if }}
                         <div class="absolute bg-black opacity-60 top-0 left-0 w-full h-full"></div>
                         {{ if preview_image }}
-                            {{ preview_image }}
-                            <div class="overflow-hidden absolute w-[90%] h-[70%] top-[15%] rounded-[10px] left-[5%] z-[3]">
-                                <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="object-cover object-top w-[101%] h-full !max-w-[101%]">
+                            {{ glide:preview_image width="700" height="350" fit="crop_focal" }}
+                            <div class="overflow-hidden absolute w-[90%] top-[15%] rounded-[10px] left-[5%] z-[3]">
+                                <img src="{{ url }}" alt="{{ alt }}" loading="lazy" width="700" height="350" class="w-[101%] !max-w-[101%]">
                             </div>
-                            {{ /preview_image }}
+                            {{ /glide:preview_image }}
                         {{ /if }}
                     </div>
                     <h3 class="font-heading uppercase text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px]">{{ title }}</h3>
