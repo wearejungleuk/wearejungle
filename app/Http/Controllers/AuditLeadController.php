@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\AuditReadyMail;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use Statamic\Facades\Entry;
 
@@ -178,6 +180,8 @@ class AuditLeadController extends Controller
             'audit_id'     => 'required',
             'public_url'   => 'required|url',
             'domain'       => 'nullable|string',
+            'lead_email'   => 'nullable|email',
+            'lead_name'    => 'nullable|string',
             'scores'       => 'nullable|array',
             'issues'       => 'nullable|array',
             'stats'        => 'nullable|array',
@@ -208,6 +212,43 @@ class AuditLeadController extends Controller
         $entry->set('trakd_audit_issues', $data['issues'] ?? []);
         $entry->set('trakd_audit_completed_at', $data['completed_at'] ?? now()->toIso8601String());
         $entry->save();
+
+        // Email the lead with their report link + top-line summary.
+        // Prefer the email on the callback payload (source of truth from
+        // Trakd) but fall back to the one stored on the submission entry.
+        // Skipped silently if we don't have any email — nothing to send to.
+        $recipient = $data['lead_email'] ?? $entry->get('submitter_email');
+        $leadName  = $data['lead_name']  ?? $entry->get('submitter_name');
+
+        if ($recipient && ! $entry->get('audit_ready_email_sent_at')) {
+            try {
+                Mail::to($recipient)->send(new AuditReadyMail(
+                    domain:         (string) ($data['domain'] ?? $entry->get('website_url') ?? 'your website'),
+                    publicUrl:      (string) $data['public_url'],
+                    leadName:       $leadName ? (string) $leadName : null,
+                    overallScore:   isset($data['scores']['overall'])  ? (int) $data['scores']['overall']  : null,
+                    criticalIssues: isset($data['issues']['critical']) ? (int) $data['issues']['critical'] : null,
+                    totalIssues:    isset($data['issues']['total'])    ? (int) $data['issues']['total']    : null,
+                ));
+
+                $entry->set('audit_ready_email_sent_at', now()->toIso8601String());
+                $entry->save();
+
+                Log::info('Audit ready email sent', [
+                    'audit_id' => $auditId,
+                    'to'       => $recipient,
+                ]);
+            } catch (\Throwable $e) {
+                // Fail-soft — the callback DID land (entry updated,
+                // pollStatus will unblock the on-page UI). Email being
+                // separately deliverable shouldn't 500 the callback.
+                Log::warning('Audit ready email send failed', [
+                    'audit_id' => $auditId,
+                    'to'       => $recipient,
+                    'error'    => $e->getMessage(),
+                ]);
+            }
+        }
 
         Log::info('Audit callback processed', [
             'audit_id' => $auditId,
