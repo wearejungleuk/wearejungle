@@ -219,8 +219,20 @@ class AuditLeadController extends Controller
         // Skipped silently if we don't have any email — nothing to send to.
         $recipient = $data['lead_email'] ?? $entry->get('submitter_email');
         $leadName  = $data['lead_name']  ?? $entry->get('submitter_name');
+        $alreadySent = (bool) $entry->get('audit_ready_email_sent_at');
 
-        if ($recipient && ! $entry->get('audit_ready_email_sent_at')) {
+        // Explicit trace of the send-or-skip decision so a "no email
+        // arrived" report can be diagnosed from the log without guessing
+        // which branch fired.
+        Log::info('Audit callback: email decision', [
+            'audit_id'      => $auditId,
+            'recipient'     => $recipient ?: '(none)',
+            'has_recipient' => (bool) $recipient,
+            'already_sent'  => $alreadySent,
+            'will_send'     => (bool) ($recipient && ! $alreadySent),
+        ]);
+
+        if ($recipient && ! $alreadySent) {
             try {
                 Mail::to($recipient)->send(new AuditReadyMail(
                     domain:         (string) ($data['domain'] ?? $entry->get('website_url') ?? 'your website'),
