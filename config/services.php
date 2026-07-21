@@ -35,4 +35,10 @@ return [
         ],
     ],
 
+    'trakd' => [
+        'webhook_url' => env('TRAKD_WEBHOOK_URL'),
+        'api_url' => env('TRAKD_API_URL', 'https://we-are-jungle.trakd.site'),
+        'callback_secret' => env('TRAKD_CALLBACK_SECRET'),
+    ],
+
 ];

@@ -1,0 +1,9 @@
+title: 'Website Audit Submissions'
+revisions: false
+date: true
+date_behavior:
+  past: public
+  future: public
+sort_dir: desc
+blueprints:
+  - audit_submissions/audit_submission
