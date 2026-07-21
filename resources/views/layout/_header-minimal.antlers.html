@@ -1,0 +1,24 @@
+<header id="header" class="fixed top-0 left-0 w-full max-w-[100vw] z-[9999999] bg-transparent">
+    <nav class="py-4 lg:py-6 3xl:py-8">
+        <div class="container container__full">
+            <div class="flex items-center justify-between gap-6">
+
+                <a href="/" class="block">
+                    {{ if brand:white_logo }}
+                        {{ brand:white_logo }}
+                            <img src="{{ url }}" alt="{{ alt }}" class="w-full max-w-[120px] md:max-w-[150px] xl:max-w-[200px]" loading="lazy">
+                        {{ /brand:white_logo }}
+                    {{ /if }}
+                </a>
+
+                {{ if brand:calendly_link }}
+                    <a href="{{ brand:calendly_link }}" target="_blank" rel="noopener" class="details-button group flex items-center overflow-hidden rounded-full bg-brand-secondary">
+                        <span class="body-b4 inline-flex max-w-0 translate-x-[10px] overflow-hidden whitespace-nowrap font-heading group-hover:max-w-[90px] group-hover:pr-4 text-brand-primary">Let's Talk</span>
+                        {{ partial:components/icons.wave }}
+                    </a>
+                {{ /if }}
+
+            </div>
+        </div>
+    </nav>
+</header>

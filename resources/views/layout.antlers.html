@@ -123,11 +123,17 @@
 {{ aardvark-seo:body }}
 {{ scripts:body_scripts }}
 
-{{ partial:layout/header }}
+{{ if hide_site_chrome }}
+    {{ partial:layout/header-minimal }}
+{{ else }}
+    {{ partial:layout/header }}
+{{ /if }}
 
 <main>
     {{ template_content }}
-    {{ partial:layout/footer }}
+    {{ if !hide_site_chrome }}
+        {{ partial:layout/footer }}
+    {{ /if }}
 </main>
 
 {{ aardvark-seo:footer }}

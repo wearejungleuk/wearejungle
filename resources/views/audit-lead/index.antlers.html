@@ -156,18 +156,24 @@ meta_description: 'Find out exactly what is holding your website back in Google.
             We have emailed a copy to <strong x-text="form.email"></strong>. You can also view it here:
         </p>
 
+        <a :href="shareUrl" target="_blank" rel="noopener" class="button group mb-8 inline-block">
+            <span>View my website audit report</span>
+        </a>
+
+        <p class="text-white/85 text-[16px] mb-6 max-w-[520px] mx-auto">
+            Want us to walk you through the fixes? Take a look at how we help businesses like yours or book a quick chat.
+        </p>
+
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a :href="shareUrl" target="_blank" rel="noopener" class="button group">
-                <span>View my website audit report</span>
-            </a>
             <a href="/services" class="button group">
                 <span>See how we can help</span>
             </a>
+            {{ if brand:calendly_link }}
+                <a href="{{ brand:calendly_link }}" target="_blank" rel="noopener" class="button group">
+                    <span>Book a meeting</span>
+                </a>
+            {{ /if }}
         </div>
-
-        <p class="text-white/60 text-[13px] mt-8">
-            The report opens in a new tab. It is also saved so you can share it with your team.
-        </p>
     </div>
 
     {{# STEP 3b: EMAILING (Approach B - audit still running, results coming by email) #}}
@@ -189,11 +195,18 @@ meta_description: 'Find out exactly what is holding your website back in Google.
         </p>
 
         <p class="text-white/85 text-[15px] mb-6">
-            While you wait, take a look at how we help businesses fix the things your audit is about to show you.
+            While you wait, take a look at how we help businesses fix the things your audit is about to show, or book a quick chat with the team.
         </p>
-        <a href="/services" class="button group">
-            <span>See our services</span>
-        </a>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="/services" class="button group">
+                <span>See our services</span>
+            </a>
+            {{ if brand:calendly_link }}
+                <a href="{{ brand:calendly_link }}" target="_blank" rel="noopener" class="button group">
+                    <span>Book a meeting</span>
+                </a>
+            {{ /if }}
+        </div>
     </div>
 
     {{# STEP 4: ERROR / RATE LIMIT #}}
