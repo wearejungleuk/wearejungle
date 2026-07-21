@@ -10,9 +10,9 @@ preview_text:
     content:
       -
         type: text
-        text: 'A fully editable WordPress website with custom live-data graphs, built for one of the world''s leading cybersecurity testing companies.'
-preview_image: mrg-effitas-website.jpg
-preview_background_image: mrg-effitas.jpg
+        text: "A fully editable WordPress website with custom live-data graphs, built for one of the world's leading cybersecurity testing companies."
+preview_image: mrg-effitas-hero.jpg
+preview_background_image: mrg_effitas_team-9-740x570.jpg
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -32,7 +32,7 @@ overview_body:
     content:
       -
         type: text
-        text: 'MRG Effitas is one of the world''s leading cybersecurity testing companies. Major anti-virus and digital security vendors trust them to independently test their products, and enterprises rely on their threat feeds and real-time testing to protect endpoints against the newest, most prevalent threats.'
+        text: "MRG Effitas is one of the world's leading cybersecurity testing companies. Major anti-virus and digital security vendors trust them to independently test their products, and enterprises rely on their threat feeds and real-time testing to protect endpoints against the newest, most prevalent threats."
   -
     type: paragraph
     content:
@@ -55,7 +55,7 @@ overview_body:
         text: 'WordPress website'
       -
         type: text
-        text: ' with custom graphs plugged directly into MRG''s own API, so reports update automatically as new test results come in.'
+        text: " with custom graphs plugged directly into MRG's own API, so reports update automatically as new test results come in."
 what_we_did_heading: 'A better-looking cybersecurity website with live reporting built in.'
 what_we_did_body:
   -
@@ -86,7 +86,7 @@ what_we_did_body:
         text: 'custom interactive graphs'
       -
         type: text
-        text: ' that pull live data straight from MRG''s API. As soon as new test results are published, the graphs on the site reflect them - no manual updates, no stale reports, no PDFs to re-upload.'
+        text: " that pull live data straight from MRG's API. As soon as new test results are published, the graphs on the site reflect them - no manual updates, no stale reports, no PDFs to re-upload."
 what_we_did_features_heading: 'Key Enhancements:'
 what_we_did_features:
   -
@@ -120,7 +120,7 @@ result_body:
     content:
       -
         type: text
-        text: "MRG Effitas now has a website that looks the part and works hard behind the scenes. Content is easy for their team to update, reports update themselves from live data, and the whole site sits well ahead of competitors in look, feel and pace."
+        text: 'MRG Effitas now has a website that looks the part and works hard behind the scenes. Content is easy for their team to update, reports update themselves from live data, and the whole site sits well ahead of competitors in look, feel and pace.'
 result_cards:
   -
     id: rc1
@@ -185,5 +185,8 @@ card_text_2:
         type: text
         text: "Custom graphs plug straight into MRG's API so reports update themselves - plus a CMS the team can actually use."
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762526096
+updated_at: 1784652351
+hero_image: mrg-effitas-hero.jpg
+screenshot_1: mrg-team.jpg
+screenshot_2: mrg-services.jpg
 ---

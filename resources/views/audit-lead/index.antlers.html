@@ -13,10 +13,10 @@ meta_description: 'Find out exactly what is holding your website back in Google.
         <div x-show="step === 'form'" x-transition.opacity>
 
             <div class="text-center mb-10 lg:mb-14">
-                <h1 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[60px] xl:text-[68px] leading-[1] text-white mb-6">
+                <h1 class="w-full max-w-[990px] mx-auto font-heading uppercase text-[38px] sm:text-[48px] lg:text-[60px] xl:text-[68px] leading-[1] text-white mb-6">
                     Find out what is holding your website back
                 </h1>
-                <p class="text-[17px] lg:text-[19px] text-white/85 max-w-[640px] mx-auto leading-relaxed">
+                <p class="w-full text-[17px] lg:text-[19px] text-white max-w-[640px] mx-auto leading-relaxed">
                     Enter your website below and we will run a free technical audit, then show you exactly what is affecting your Google rankings and how to fix it.
                 </p>
             </div>
@@ -45,7 +45,7 @@ meta_description: 'Find out exactly what is holding your website back in Google.
                 </div>
             </div>
 
-            <div class="bg-brand-text p-6 md:p-10 lg:p-12">
+            <div class="bg-brand-text p-6 md:p-10 lg:p-12 w-full max-w-[880px] mx-auto rounded-[50px]">
                 <form @submit.prevent="submitForm" novalidate>
                     {{ csrf_field }}
 

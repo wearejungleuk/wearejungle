@@ -11,7 +11,7 @@ preview_text:
       -
         type: text
         text: 'A bold Shopify rebuild for cult alcohol-free brewery Mash Gang, with a custom B2B store and a live stockist finder that updates itself from recent wholesale orders.'
-preview_image: mash-gang-website.jpg
+preview_image: mash-gang-hero.jpg
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -201,7 +201,10 @@ card_text_2:
       -
         type: text
         text: 'The stockist finder auto-updates from recent wholesale orders, so the map is always current without anyone maintaining it by hand.'
-preview_background_image: mashgang.jpg
+preview_background_image: mashgang-background.jpg
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762526083
+updated_at: 1784651968
+hero_image: mash-gang-hero.jpg
+screenshot_1: mash-gang-gang.jpg
+screenshot_2: mashgang-beers.jpg
 ---

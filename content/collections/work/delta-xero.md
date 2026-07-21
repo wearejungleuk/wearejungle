@@ -196,5 +196,10 @@ card_text_2:
         type: text
         text: "Custom scroll animations, automated PDF sending on case study forms, and a country-filtered partner locator: everything the old templated WordPress site couldn't do."
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1784554379
+updated_at: 1784652903
+hero_image: delta-xero-hero.jpg
+screenshot_1: delta-xero-industries.jpg
+screenshot_2: delta-xero-testimonial.jpg
+preview_image: delta-xero-hero.jpg
+preview_background_image: delta-xero-card.jpg
 ---

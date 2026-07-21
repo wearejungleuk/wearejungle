@@ -11,8 +11,8 @@ preview_text:
       -
         type: text
         text: 'A custom Shopify store for driveway sealant supplier Pro Sealants - replacing a slow, buggy WordPress site that never made a single sale.'
-preview_image: pro-sealants-website.jpg
-preview_background_image: pro-sealants.jpg
+preview_image: pro-sealants-hero.jpg
+preview_background_image: prosealants-card.jpg
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -33,13 +33,13 @@ overview_body:
     content:
       -
         type: text
-        text: 'Pro Sealants supply driveway sealants across the UK. They came to us with a WordPress site built on Elementor and a premium theme - and it had been buggy from day one. It was slow, awkward to update, and after months of trading it hadn''t produced a single online sale.'
+        text: "Pro Sealants supply driveway sealants across the UK. They came to us with a WordPress site built on Elementor and a premium theme - and it had been buggy from day one. It was slow, awkward to update, and after months of trading it hadn't produced a single online sale."
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'The site was fighting the business rather than helping it. Elementor made every change feel fragile, the theme''s bugs kept resurfacing, and there was no way to run proper marketing on the back of it.'
+        text: "The site was fighting the business rather than helping it. Elementor made every change feel fragile, the theme's bugs kept resurfacing, and there was no way to run proper marketing on the back of it."
   -
     type: paragraph
     content:
@@ -64,7 +64,7 @@ what_we_did_body:
     content:
       -
         type: text
-        text: 'We designed and built a clean, focused Shopify store around Pro Sealants'' products - no theme wrestling, no Elementor bugs, no compromise on speed. Everything is built around getting a customer from landing page to checkout without friction.'
+        text: "We designed and built a clean, focused Shopify store around Pro Sealants' products - no theme wrestling, no Elementor bugs, no compromise on speed. Everything is built around getting a customer from landing page to checkout without friction."
   -
     type: paragraph
     content:
@@ -81,7 +81,7 @@ what_we_did_body:
         text: 'e-commerce business'
       -
         type: text
-        text: " needs - abandoned checkout alerts, automated review request emails, order notifications, and a Google Merchant integration so products flow straight into Google Shopping."
+        text: ' needs - abandoned checkout alerts, automated review request emails, order notifications, and a Google Merchant integration so products flow straight into Google Shopping.'
   -
     type: paragraph
     content:
@@ -172,7 +172,7 @@ feature_list:
     id: ps3
     fa_icon: bell
     label: 'Checkout & Review Automations'
-    description: 'Abandoned checkout alerts and automated review emails that keep the store working when the team isn''t.'
+    description: "Abandoned checkout alerts and automated review emails that keep the store working when the team isn't."
     type: new_set
     enabled: true
   -
@@ -192,5 +192,8 @@ card_text_2:
         type: text
         text: 'Abandoned checkout alerts, review emails and Google Merchant baked in - the first online sale came within a week of launch.'
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762526111
+updated_at: 1784653374
+hero_image: pro-sealants-hero.jpg
+screenshot_1: prosealants-product.jpg
+screenshot_2: prosealants-collection.jpg
 ---

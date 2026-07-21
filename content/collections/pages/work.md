@@ -19,8 +19,8 @@ page_builder:
     type: text_hero
     enabled: true
   -
-    id: work_all_01
-    type: work_all
+    id: mruucv4n
+    type: work_grid
     enabled: true
   -
     id: process_steps_work_01
@@ -93,5 +93,5 @@ sitemap_priority: '0.5'
 sitemap_changefreq: monthly
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1781642830
+updated_at: 1784651894
 ---

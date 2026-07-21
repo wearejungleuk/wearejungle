@@ -118,7 +118,7 @@ result_body:
     content:
       -
         type: text
-        text: "CS Garden Offices now have a site their Google Ads agency can actually work with: full tracking, no Wix limits, and a visual quote builder that turns visitors into proper leads. The site plugs directly into their existing quote system, so nothing has to be re-keyed and no enquiry falls through the cracks."
+        text: 'CS Garden Offices now have a site their Google Ads agency can actually work with: full tracking, no Wix limits, and a visual quote builder that turns visitors into proper leads. The site plugs directly into their existing quote system, so nothing has to be re-keyed and no enquiry falls through the cracks.'
 result_cards:
   -
     id: rc1
@@ -182,4 +182,11 @@ card_text_2:
       -
         type: text
         text: "Custom development replaces a Wix site that couldn't be properly tracked, with a visual quote form and direct integration with their existing quote builder."
+hero_image: cs-garden-offices-hero.jpg
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1784649152
+screenshot_1: cs-garden-offices-quick-quote.jpg
+screenshot_2: cs-garden-offices-colours.jpg
+preview_background_image: garden-office.jpg
+preview_image: cs-garden-offices-hero.jpg
 ---

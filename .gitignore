@@ -21,3 +21,5 @@ yarn-error.log
 /.vscode
 /storage/forms/*
 /public/static
+/content/collections/audit_submissions/*.md
+!/content/collections/audit_submissions/.gitkeep

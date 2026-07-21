@@ -11,8 +11,8 @@ preview_text:
       -
         type: text
         text: 'A modern, SEO-friendly website that finally reflects how much South Coast Rx Physiotherapy has grown - and puts them clearly ahead of local competitors.'
-preview_image: south-coast-rx-website-1762428941.jpg
-preview_background_image: southcoast-rx.jpg
+preview_image: scrx-hero.jpg
+preview_background_image: southcoast-card-image.jpg
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -26,20 +26,20 @@ work_type:
   - web-development
   - hosting
 website_url: 'https://southcoastrxphysiotherapy.co.uk'
-overview_heading: 'A modern physio website that finally reflects how much they''ve grown.'
+overview_heading: "A modern physio website that finally reflects how much they've grown."
 overview_body:
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'South Coast Rx Physiotherapy is a growing physio clinic on the south coast. The practice had come on a long way since day one, but the website hadn''t - it was still stuck on Wix, still looking like the original small setup, and still invisible in search.'
+        text: "South Coast Rx Physiotherapy is a growing physio clinic on the south coast. The practice had come on a long way since day one, but the website hadn't - it was still stuck on Wix, still looking like the original small setup, and still invisible in search."
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Wix simply couldn''t take them where they needed to go. There was no proper way to do SEO on it, no room to show how the team had grown, and a look that didn''t match the quality of the treatment on offer.'
+        text: "Wix simply couldn't take them where they needed to go. There was no proper way to do SEO on it, no room to show how the team had grown, and a look that didn't match the quality of the treatment on offer."
   -
     type: paragraph
     content:
@@ -70,13 +70,13 @@ what_we_did_body:
     content:
       -
         type: text
-        text: 'The old Wix site couldn''t be properly optimised for search. The new WordPress site is built with SEO from the ground up - clean structure, fast pages, proper meta control and room to grow with content that actually ranks.'
+        text: "The old Wix site couldn't be properly optimised for search. The new WordPress site is built with SEO from the ground up - clean structure, fast pages, proper meta control and room to grow with content that actually ranks."
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'The team can also add and edit pages, treatments and blog posts themselves without a developer or the constraints of Wix''s drag-and-drop.'
+        text: "The team can also add and edit pages, treatments and blog posts themselves without a developer or the constraints of Wix's drag-and-drop."
 what_we_did_features_heading: 'Key Enhancements:'
 what_we_did_features:
   -
@@ -88,7 +88,7 @@ what_we_did_features:
   -
     id: wwd2
     label: 'SEO-Friendly From Day One'
-    description: 'Clean structure, fast pages and proper meta control - everything Wix couldn''t give them.'
+    description: "Clean structure, fast pages and proper meta control - everything Wix couldn't give them."
     type: new_set
     enabled: true
   -
@@ -175,5 +175,8 @@ card_text_2:
         type: text
         text: 'Moved off Wix to a proper WordPress platform they can actually rank on - with a design that stands out over other local physio clinics.'
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1762428953
+updated_at: 1784651840
+hero_image: scrx-hero.jpg
+screenshot_1: scrx-blocks.jpg
+screenshot_2: scrx-cta.jpg
 ---

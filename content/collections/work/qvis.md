@@ -37,7 +37,7 @@ overview_body:
     content:
       -
         type: text
-        text: 'An off-the-shelf theme wasn''t going to work - the product range was too big, too technical and changing too often. We built a fully bespoke website with a custom integration into their internal product system, so new and updated products flow straight onto the site without any manual duplication.'
+        text: "An off-the-shelf theme wasn't going to work - the product range was too big, too technical and changing too often. We built a fully bespoke website with a custom integration into their internal product system, so new and updated products flow straight onto the site without any manual duplication."
   -
     type: paragraph
     content:
@@ -125,7 +125,7 @@ result_body:
     content:
       -
         type: text
-        text: "QVIS now has a website that scales with their catalogue rather than lagging behind it. Product data flows automatically from their internal system into the site, the team can publish and specify with confidence, and every part of the platform - from luminaire specs to Cortex CCTV - was built to fit how QVIS actually work, not how an off-the-shelf theme wants them to."
+        text: 'QVIS now has a website that scales with their catalogue rather than lagging behind it. Product data flows automatically from their internal system into the site, the team can publish and specify with confidence, and every part of the platform - from luminaire specs to Cortex CCTV - was built to fit how QVIS actually work, not how an off-the-shelf theme wants them to.'
 result_cards:
   -
     id: rc1
@@ -192,10 +192,10 @@ hero_image: qvis-hero.jpg
 screenshot_1: qvis-project.jpg
 screenshot_2: qvis-project-builder.jpg
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1784283285
+updated_at: 1784650435
 preview_image: qvis-hero.jpg
 preview_background_image: qvis-back-image.jpg
-background_video: 'https://player.vimeo.com/video/1132554352?h=6d300b8405&autoplay=1&muted=1&loop=1&background=1'
+background_video: 'https://vimeo.com/1132554352/6d300b8405'
 intro_card_text: 'A bespoke website with a live product feed and a custom Project Builder for QVIS Lighting & Security.'
 card_text_2:
   -

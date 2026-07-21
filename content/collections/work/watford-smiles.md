@@ -21,9 +21,9 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1784281451
+updated_at: 1784651312
 background_video: 'https://vimeo.com/1134286354'
-card_image_2: watford-smiles-devices.png
+card_image_2: watford-smiles-hero.png
 hero_background_colour: brand-primary
 work_type:
   - web-design
