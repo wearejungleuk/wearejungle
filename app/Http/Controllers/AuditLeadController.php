@@ -37,10 +37,11 @@ class AuditLeadController extends Controller
 
         $domain = $this->cleanDomain($validated['url']);
         $email = strtolower(trim($validated['email']));
+        $limitsEnabled = app()->isProduction();
 
         $ipKey = 'audit_ip_' . md5($request->ip());
         $ipCount = (int) Cache::get($ipKey, 0);
-        if ($ipCount >= self::IP_LIMIT) {
+        if ($limitsEnabled && $ipCount >= self::IP_LIMIT) {
             return response()->json([
                 'error' => true,
                 'message' => 'You have reached the limit of ' . self::IP_LIMIT . ' free audits per day. Please try again tomorrow.',
@@ -50,7 +51,7 @@ class AuditLeadController extends Controller
 
         $emailKey = 'audit_email_' . md5($email);
         $emailCount = (int) Cache::get($emailKey, 0);
-        if ($emailCount >= self::EMAIL_LIMIT) {
+        if ($limitsEnabled && $emailCount >= self::EMAIL_LIMIT) {
             return response()->json([
                 'error' => true,
                 'message' => 'You have already requested ' . self::EMAIL_LIMIT . ' audits this week. Your latest report has been emailed to you.',
@@ -59,7 +60,7 @@ class AuditLeadController extends Controller
         }
 
         $domainKey = 'audit_domain_' . md5($domain);
-        $existingAudit = Cache::get($domainKey);
+        $existingAudit = $limitsEnabled ? Cache::get($domainKey) : null;
         if (is_array($existingAudit) && ! empty($existingAudit['share_url'])) {
             $submissionSlug = $this->saveSubmission(
                 $validated,
