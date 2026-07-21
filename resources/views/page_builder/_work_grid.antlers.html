@@ -41,15 +41,15 @@
                     </div>
 
                     <div>
-                        {{ if card_image_2 }}
-                            {{ glide:card_image_2 }}
-                            <div class="overflow-hidden" style="border-radius: 12px; aspect-ratio: 700/560">
+                        {{ if preview_background_image }}
+                            {{ glide:preview_background_image }}
+                            <div class="overflow-hidden rounded-[12px]" style="aspect-ratio: 700/560">
                                 <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
                             </div>
-                            {{ /glide:card_image_2 }}
+                            {{ /glide:preview_background_image }}
                         {{ elseif preview_image }}
                             {{ glide:preview_image }}
-                            <div class="overflow-hidden" style="border-radius: 12px; aspect-ratio: 700/560">
+                            <div class="overflow-hidden rounded-[12px]" style="aspect-ratio: 700/560">
                                 <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
                             </div>
                             {{ /glide:preview_image }}
@@ -70,18 +70,68 @@
                 {{ if card_text_2 || preview_text }}
                     <div class="bard text-white text-[18px] lg:text-[20px] leading-snug mb-6">{{ card_text_2 ?? preview_text }}</div>
                 {{ /if }}
-                <div class="mt-auto pt-6">
-                    {{ if card_image_2 }}
-                        {{ glide:card_image_2 }}
-                        <div>
-                            <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
-                        </div>
-                        {{ /glide:card_image_2 }}
+                <div class="mt-auto rounded-[12px] overflow-hidden relative">
+                    {{ if background_video }}
+                    <div class="absolute inset-0 overflow-hidden pointer-events-none" style="container-type: size;">
+                        {{ if background_video | contains:".mp4" }}
+                        <video playsinline autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+                            <source src="{{ background_video }}" type="video/mp4">
+                        </video>
+                        {{ elseif background_video | contains:".webm" }}
+                        <video playsinline autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+                            <source src="{{ background_video }}" type="video/webm">
+                        </video>
+                        {{ elseif background_video | contains:"youtube.com" }}
+                        <iframe
+                            src="https://www.youtube.com/embed/{{ background_video | replace:'https://www.youtube.com/watch?v=','' }}?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&playlist={{ background_video | replace:'https://www.youtube.com/watch?v=','' }}"
+                            frameborder="0" allow="autoplay"
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                            style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                        ></iframe>
+                        {{ elseif background_video | contains:"youtu.be" }}
+                        <iframe
+                            src="https://www.youtube.com/embed/{{ background_video | replace:'https://youtu.be/','' }}?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&playlist={{ background_video | replace:'https://youtu.be/','' }}"
+                            frameborder="0" allow="autoplay"
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                            style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                        ></iframe>
+                        {{ elseif background_video | contains:"player.vimeo.com" }}
+                        {{# Already a player URL - use it verbatim so any ?h= privacy hash survives. #}}
+                        <iframe
+                            src="{{ background_video }}{{ if background_video | contains:'?' }}&{{ else }}?{{ /if }}autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                            frameborder="0" allow="autoplay"
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                            style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                        ></iframe>
+                        {{ elseif background_video | contains:"vimeo.com" }}
+                        {{ vimeo_path = background_video | replace:'https://vimeo.com/':'' | replace:'http://vimeo.com/':'' | replace:'https://www.vimeo.com/':'' | replace:'http://www.vimeo.com/':'' | explode:'?' | first }}
+                        {{ if vimeo_path | contains:'/' }}
+                            {{ vimeo_id = vimeo_path | explode:'/' | first }}
+                            {{ vimeo_hash = vimeo_path | explode:'/' | last }}
+                            <iframe
+                                src="https://player.vimeo.com/video/{{ vimeo_id }}?h={{ vimeo_hash }}&autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                                frameborder="0" allow="autoplay"
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                            ></iframe>
+                        {{ else }}
+                            <iframe
+                                src="https://player.vimeo.com/video/{{ vimeo_path }}?autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                                frameborder="0" allow="autoplay"
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                            ></iframe>
+                        {{ /if }}
+                        {{ /if }}
+                    </div>
+                    {{ /if }}
+                    {{ if preview_background_image }}
+                        {{ glide:preview_background_image width="700" height="500" fit="crop-top" }}
+                            <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full h-full object-center object-cover">
+                        {{ /glide:preview_background_image }}
                     {{ elseif preview_image }}
                         {{ glide:preview_image}}
-                        <div>
                             <img src="{{ url }}" alt="{{ title }}" loading="lazy" class="w-full">
-                        </div>
                         {{ /glide:preview_image }}
                     {{ /if }}
                 </div>

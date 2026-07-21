@@ -40,13 +40,35 @@
                 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
                 style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
             ></iframe>
-        {{ elseif background_video | contains:"vimeo.com" || background_video | contains:"player.vimeo.com" }}
+        {{ elseif background_video | contains:"player.vimeo.com" }}
+            {{# Already a player URL - use it verbatim so any ?h= privacy hash survives. #}}
             <iframe
-                src="https://player.vimeo.com/video/{{ background_video | explode:'/' | last | explode:'?' | first }}?autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                src="{{ background_video }}{{ if background_video | contains:'?' }}&{{ else }}?{{ /if }}autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
                 frameborder="0" allow="autoplay"
                 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
                 style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
             ></iframe>
+        {{ elseif background_video | contains:"vimeo.com" }}
+            {{# Share URL. Handles both public (vimeo.com/ID) and unlisted (vimeo.com/ID/HASH) - #}}
+            {{# preserves the hash so Vimeo actually serves the video. #}}
+            {{ vimeo_path = background_video | replace:'https://vimeo.com/':'' | replace:'http://vimeo.com/':'' | replace:'https://www.vimeo.com/':'' | replace:'http://www.vimeo.com/':'' | explode:'?' | first }}
+            {{ if vimeo_path | contains:'/' }}
+                {{ vimeo_id = vimeo_path | explode:'/' | first }}
+                {{ vimeo_hash = vimeo_path | explode:'/' | last }}
+                <iframe
+                    src="https://player.vimeo.com/video/{{ vimeo_id }}?h={{ vimeo_hash }}&autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                    frameborder="0" allow="autoplay"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                    style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                ></iframe>
+            {{ else }}
+                <iframe
+                    src="https://player.vimeo.com/video/{{ vimeo_path }}?autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                    frameborder="0" allow="autoplay"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                    style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+                ></iframe>
+            {{ /if }}
         {{ /if }}
     </div>
 {{ /if }}
@@ -55,7 +77,7 @@
 
 {{ if preview_image }}
     {{ glide:preview_image width="700" height="350" fit="crop-top" }}
-        <div class="overflow-hidden absolute w-[90%] top-[15%] rounded-[10px] left-[5%] z-[3]">
+        <div class="overflow-hidden relative w-[90%] top-[15%] rounded-[10px] left-[5%] z-[3]">
             <img src="{{ url }}" alt="{{ alt }}" loading="lazy" width="700" height="350" class="w-[101%] !max-w-[101%]">
         </div>
     {{ /glide:preview_image }}
