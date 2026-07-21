@@ -11,7 +11,12 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        // Exempt the Trakd audit-complete callback from CSRF — it's a
+        // server-to-server POST authenticated by the shared
+        // X-Callback-Secret header, not a browser session.
+        $middleware->validateCsrfTokens(except: [
+            'api/audits/callback',
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //

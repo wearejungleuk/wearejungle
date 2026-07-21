@@ -12,3 +12,8 @@ Route::post('/free-website-audit', [AuditLeadController::class, 'submit'])
 
 Route::get('/free-website-audit/status/{submission}', [AuditLeadController::class, 'pollStatus'])
     ->name('audit-lead.status');
+
+// Trakd → wearejungle callback when a lead-magnet audit completes.
+// Origin verified by the shared X-Callback-Secret header.
+Route::post('/api/audits/callback', [AuditLeadController::class, 'receiveCallback'])
+    ->name('audits.callback');

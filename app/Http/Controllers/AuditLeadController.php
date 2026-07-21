@@ -134,6 +134,72 @@ class AuditLeadController extends Controller
         return response()->json(['status' => 'pending']);
     }
 
+    /**
+     * Receiver for Trakd's audit-complete callback.
+     * Trakd POSTs here when a crawl started via /api/audits/start finishes.
+     * Verified by the shared TRAKD_CALLBACK_SECRET so we know the
+     * request is legitimate. Updates the matching audit_submissions
+     * entry so pollStatus() returns 'complete' + the report URL to
+     * the frontend on its next poll.
+     */
+    public function receiveCallback(Request $request): JsonResponse
+    {
+        $expected = (string) config('services.trakd.callback_secret', '');
+        if ($expected === '') {
+            Log::warning('Audit callback received but TRAKD_CALLBACK_SECRET not configured');
+            return response()->json(['error' => 'not_configured'], 503);
+        }
+
+        $provided = (string) $request->header('X-Callback-Secret', '');
+        if (! hash_equals($expected, $provided)) {
+            Log::warning('Audit callback rejected: bad secret', ['ip' => $request->ip()]);
+            return response()->json(['error' => 'unauthorised'], 401);
+        }
+
+        $data = $request->validate([
+            'audit_id'     => 'required',
+            'public_url'   => 'required|url',
+            'domain'       => 'nullable|string',
+            'scores'       => 'nullable|array',
+            'issues'       => 'nullable|array',
+            'stats'        => 'nullable|array',
+            'completed_at' => 'nullable|string',
+        ]);
+
+        $auditId = (string) $data['audit_id'];
+
+        $entry = Entry::query()
+            ->where('collection', 'audit_submissions')
+            ->where('trakd_audit_id', $auditId)
+            ->first();
+
+        if (! $entry) {
+            Log::warning('Audit callback: no submission matches audit_id', [
+                'audit_id' => $auditId,
+                'domain'   => $data['domain'] ?? null,
+            ]);
+            // 200 anyway — the callback did its part, we just don't have
+            // a matching record to update. Preventing Trakd from
+            // needlessly retrying is more useful than surfacing a 404.
+            return response()->json(['ok' => true, 'matched' => false]);
+        }
+
+        $entry->set('trakd_audit_status', 'complete');
+        $entry->set('trakd_share_url', $data['public_url']);
+        $entry->set('trakd_audit_scores', $data['scores'] ?? []);
+        $entry->set('trakd_audit_issues', $data['issues'] ?? []);
+        $entry->set('trakd_audit_completed_at', $data['completed_at'] ?? now()->toIso8601String());
+        $entry->save();
+
+        Log::info('Audit callback processed', [
+            'audit_id' => $auditId,
+            'domain'   => $data['domain'] ?? null,
+            'overall'  => $data['scores']['overall'] ?? null,
+        ]);
+
+        return response()->json(['ok' => true, 'matched' => true]);
+    }
+
     private function validateTurnstile(string $token, string $ip): bool
     {
         $workerUrl = config('turnstile.worker_url');
@@ -168,31 +234,58 @@ class AuditLeadController extends Controller
     private function triggerTrakdAudit(string $domain, array $submission): array
     {
         $apiUrl = config('services.trakd.api_url');
+        $secret = (string) config('services.trakd.callback_secret', '');
+
         if (! is_string($apiUrl) || $apiUrl === '') {
+            Log::warning('Trakd audit trigger skipped: TRAKD_API_URL not configured');
+            return ['success' => true, 'audit_id' => null];
+        }
+        if ($secret === '') {
+            Log::warning('Trakd audit trigger skipped: TRAKD_CALLBACK_SECRET not configured');
             return ['success' => true, 'audit_id' => null];
         }
 
         try {
-            $response = Http::timeout(10)->post(
-                rtrim($apiUrl, '/') . '/api/audits/start',
-                [
-                    'url' => 'https://' . $domain,
-                    'source' => 'lead_magnet',
-                    'name' => $submission['name'],
-                    'email' => $submission['email'],
-                ]
-            );
+            $response = Http::timeout(10)
+                ->withHeaders(['X-Callback-Secret' => $secret])
+                ->acceptJson()
+                ->post(
+                    rtrim($apiUrl, '/') . '/api/audits/start',
+                    [
+                        'url'          => 'https://' . $domain,
+                        'source'       => 'lead_magnet',
+                        'name'         => $submission['name'],
+                        'email'        => $submission['email'],
+                        // Where Trakd should POST the results when the crawl
+                        // completes. Verified via the same shared secret.
+                        'callback_url' => route('audits.callback'),
+                    ]
+                );
 
             if ($response->successful()) {
+                Log::info('Trakd audit started', [
+                    'domain'    => $domain,
+                    'audit_id'  => $response->json('audit_id'),
+                    'public_url'=> $response->json('public_url'),
+                ]);
                 return [
-                    'success' => true,
+                    'success'  => true,
                     'audit_id' => $response->json('audit_id'),
                 ];
             }
-        } catch (\Throwable $e) {
-            Log::info('Trakd audit trigger failed - falling back to email delivery', [
+
+            // Non-2xx — log with the body so we can see WHY (401 bad
+            // secret, 503 secret not configured, 422 bad URL, etc). This
+            // was previously silent, hiding real integration failures.
+            Log::warning('Trakd audit trigger returned non-2xx', [
                 'domain' => $domain,
-                'error' => $e->getMessage(),
+                'status' => $response->status(),
+                'body'   => substr($response->body(), 0, 500),
+            ]);
+        } catch (\Throwable $e) {
+            Log::warning('Trakd audit trigger threw', [
+                'domain' => $domain,
+                'error'  => $e->getMessage(),
             ]);
         }
 
