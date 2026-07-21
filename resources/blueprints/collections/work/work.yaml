@@ -10,8 +10,8 @@ tabs:
             handle: title
             field:
               type: text
-              display: 'Client / Project Name (eyebrow + H1 fallback)'
               required: true
+              display: Client
               validate:
                 - required
           -
@@ -38,9 +38,8 @@ tabs:
                 brand-dark-blue: 'Dark Blue'
                 brand-secondary: 'Secondary Pink'
                 brand-light-blue: 'Light Blue'
-                brand-text: 'Cream'
+                brand-text: Cream
                 black: Black
-              clearable: false
           -
             handle: hero_image
             field:
@@ -72,7 +71,6 @@ tabs:
                 - work_type
               display: 'Work Type Tags'
               mode: select
-              create: true
       -
         display: Overview
         fields:
@@ -104,7 +102,7 @@ tabs:
               instructions: 'Key features shown below the overview body, each with an icon.'
               sets:
                 new_set_group:
-                  display: 'Features'
+                  display: Features
                   sets:
                     new_set:
                       display: 'Feature Item'
@@ -144,7 +142,7 @@ tabs:
               max_files: 1
               container: assets
               type: assets
-              display: 'Screenshot'
+              display: Screenshot
               instructions: 'Full website screenshot shown on a cream card, sits between Overview and Before/After.'
       -
         display: 'Before / After'
@@ -154,7 +152,6 @@ tabs:
             field:
               type: toggle
               display: 'Show Before / After'
-              default: false
           -
             handle: before_image
             field:
@@ -203,10 +200,10 @@ tabs:
               instructions: 'Bulleted list of key enhancements. Each item renders as "Label: description".'
               sets:
                 new_set_group:
-                  display: 'Enhancements'
+                  display: Enhancements
                   sets:
                     new_set:
-                      display: 'Enhancement'
+                      display: Enhancement
                       fields:
                         -
                           handle: label
@@ -227,7 +224,7 @@ tabs:
               max_files: 1
               container: assets
               type: assets
-              display: 'Screenshot'
+              display: Screenshot
               instructions: 'Second full website screenshot shown on a cream card, sits between What We Did and The Result.'
       -
         display: 'The Result'
@@ -255,7 +252,7 @@ tabs:
               instructions: 'Short outcome statements shown as icon cards below The Result copy.'
               sets:
                 new_set_group:
-                  display: 'Cards'
+                  display: Cards
                   sets:
                     new_set:
                       display: 'Result Card'

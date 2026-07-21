@@ -1,7 +1,7 @@
 ---
 id: 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
 blueprint: work
-title: 'Delta-Xero'
+title: Delta-Xero
 meta_title: 'Delta-Xero - Industrial Filtration Website | We Are Jungle'
 meta_description: 'Bespoke website for industrial filtration specialists Delta-Xero, with automated case study PDFs, a partner locator and custom product filtering.'
 preview_text:
@@ -37,7 +37,7 @@ overview_body:
     content:
       -
         type: text
-        text: "The old site was WordPress on a templated theme. It looked like a template, edits were limited to what the theme allowed, and there was no room to build the kind of features a technical audience actually needs: proper case study downloads, a real partner locator, and product filtering that works the way engineers search."
+        text: 'The old site was WordPress on a templated theme. It looked like a template, edits were limited to what the theme allowed, and there was no room to build the kind of features a technical audience actually needs: proper case study downloads, a real partner locator, and product filtering that works the way engineers search.'
   -
     type: paragraph
     content:
@@ -62,7 +62,7 @@ what_we_did_body:
         text: Statamic
       -
         type: text
-        text: ", a modern content management system chosen because it handles structured product and case study data far better than a WordPress theme."
+        text: ', a modern content management system chosen because it handles structured product and case study data far better than a WordPress theme.'
   -
     type: paragraph
     content:
@@ -195,4 +195,6 @@ card_text_2:
       -
         type: text
         text: "Custom scroll animations, automated PDF sending on case study forms, and a country-filtered partner locator: everything the old templated WordPress site couldn't do."
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1784554379
 ---
