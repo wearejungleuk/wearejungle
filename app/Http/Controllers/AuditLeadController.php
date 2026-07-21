@@ -18,11 +18,6 @@ class AuditLeadController extends Controller
     private const EMAIL_TTL_DAYS = 7;
     private const DOMAIN_TTL_DAYS = 7;
 
-    public function show()
-    {
-        return view('audit-lead.index');
-    }
-
     public function submit(Request $request): JsonResponse
     {
         $validated = $request->validate([
