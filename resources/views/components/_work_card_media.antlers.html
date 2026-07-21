@@ -1,0 +1,62 @@
+{{#
+    Shared media block for work cards.
+    Renders: background image OR video, dark overlay, and a preview_image
+    thumbnail floated inside.
+
+    Params:
+    - hoverable: 'true' to enable the group-hover zoom on the background
+      image (parent must have `class="... group"`).
+
+    Reads from parent scope: preview_background_image, background_video,
+    preview_image.
+#}}
+{{ if preview_background_image }}
+    {{ preview_background_image }}
+        <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="absolute w-full top-0 left-0 h-full object-cover object-center{{ if hoverable == 'true' }} transition-transform duration-700 group-hover:scale-[1.03]{{ /if }}">
+    {{ /preview_background_image }}
+{{ /if }}
+
+{{ if background_video }}
+    <div class="absolute inset-0 overflow-hidden pointer-events-none" style="container-type: size;">
+        {{ if background_video | contains:".mp4" }}
+            <video playsinline autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+                <source src="{{ background_video }}" type="video/mp4">
+            </video>
+        {{ elseif background_video | contains:".webm" }}
+            <video playsinline autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+                <source src="{{ background_video }}" type="video/webm">
+            </video>
+        {{ elseif background_video | contains:"youtube.com" }}
+            <iframe
+                src="https://www.youtube.com/embed/{{ background_video | replace:'https://www.youtube.com/watch?v=','' }}?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&playlist={{ background_video | replace:'https://www.youtube.com/watch?v=','' }}"
+                frameborder="0" allow="autoplay"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+            ></iframe>
+        {{ elseif background_video | contains:"youtu.be" }}
+            <iframe
+                src="https://www.youtube.com/embed/{{ background_video | replace:'https://youtu.be/','' }}?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&playlist={{ background_video | replace:'https://youtu.be/','' }}"
+                frameborder="0" allow="autoplay"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+            ></iframe>
+        {{ elseif background_video | contains:"vimeo.com" || background_video | contains:"player.vimeo.com" }}
+            <iframe
+                src="https://player.vimeo.com/video/{{ background_video | explode:'/' | last | explode:'?' | first }}?autoplay=1&muted=1&loop=1&background=1&controls=0&title=0&byline=0&portrait=0"
+                frameborder="0" allow="autoplay"
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                style="width: max(100cqw, calc(100cqh * 16 / 9)); height: max(100cqh, calc(100cqw * 9 / 16));"
+            ></iframe>
+        {{ /if }}
+    </div>
+{{ /if }}
+
+<div class="absolute bg-black opacity-60 top-0 left-0 w-full h-full"></div>
+
+{{ if preview_image }}
+    {{ glide:preview_image width="700" height="350" fit="crop_focal" }}
+        <div class="overflow-hidden absolute w-[90%] top-[15%] rounded-[10px] left-[5%] z-[3]">
+            <img src="{{ url }}" alt="{{ alt }}" loading="lazy" width="700" height="350" class="w-[101%] !max-w-[101%]">
+        </div>
+    {{ /glide:preview_image }}
+{{ /if }}
