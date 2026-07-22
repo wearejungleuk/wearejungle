@@ -144,11 +144,11 @@ page_builder:
       -
         id: mhndgasm
         client:
+          - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
+          - d1b47741-1ae8-40d1-afd1-c5431c023b5f
+          - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
           - cadac8f9-c8f3-4c56-924b-962c6de66f0b
-          - 3cc5e19b-088a-4bb7-8b30-95b37925125e
           - 90869023-2933-4b72-831b-4641b8c9b446
-          - c6598d61-88d6-4d30-8dc7-41f8dd354acd
-          - 15f3fbef-6f91-4f99-8fb6-39b83e8b3def
         type: new_set
         enabled: true
     block_title: 'SEEN ENOUGH? LET’S DO THIS'
@@ -493,7 +493,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'I had a website before, but We Are Jungle turned it into something I''m truly proud of. The process felt effortless, and their expertise and approach made everything so easy.'
+                text: "I had a website before, but We Are Jungle turned it into something I'm truly proud of. The process felt effortless, and their expertise and approach made everything so easy."
         image:
           - image-3.png
         website: 'https://knownfor.co.uk'
@@ -531,7 +531,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'We Are Jungle did an amazing job in the consultation through to design and implementation of our website. The website requisite was complex with a full ERP integration required and they made the whole process seamless. The communication throughout was excellent with our needs listened to carefully and deliverables executed perfectly, their expertise was invaluable in providing us with a website that''s functional, modern, scalable and delivers in line with our business needs.'
+                text: "We Are Jungle did an amazing job in the consultation through to design and implementation of our website. The website requisite was complex with a full ERP integration required and they made the whole process seamless. The communication throughout was excellent with our needs listened to carefully and deliverables executed perfectly, their expertise was invaluable in providing us with a website that's functional, modern, scalable and delivers in line with our business needs."
         image:
           - matt-graham-qvis.jpeg
         website: 'https://qvis.co.uk'
@@ -575,7 +575,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1781857943
+updated_at: 1784742726
 meta_title: 'Web Design Agency Portsmouth | We Are Jungle'
 meta_description: 'We Are Jungle is a small, sharp web design agency in Portsmouth specialising in Statamic, Shopify, WordPress. Clean design, solid code, no nonsense.'
 ---

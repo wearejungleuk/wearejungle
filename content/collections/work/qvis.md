@@ -192,7 +192,7 @@ hero_image: qvis-hero.jpg
 screenshot_1: qvis-project.jpg
 screenshot_2: qvis-project-builder.jpg
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1784650435
+updated_at: 1784741747
 preview_image: qvis-hero.jpg
 preview_background_image: qvis-back-image.jpg
 background_video: 'https://vimeo.com/1132554352/6d300b8405'
@@ -209,7 +209,7 @@ page_builder:
     id: work_cta_qvis
     above_title: 'Have a project like this?'
     above_title_variant: above-title--light-blue
-    title: "Outgrown Your Off-the-Shelf Website?"
+    title: 'Outgrown Your Off-the-Shelf Website?'
     text:
       -
         type: paragraph
@@ -227,4 +227,12 @@ page_builder:
     illustration: julius-ipad.svg
     type: cta_block
     enabled: true
+testimonial_quote: |-
+  We Are Jungle did an amazing job in the consultation through to design and implementation of our website. The website requisite was complex with a full ERP integration required and they made the whole process seamless. The communication throughout was excellent with our needs listened to carefully and deliverables executed perfectly, their expertise was invaluable in providing us with a website that's functional, modern, scalable and delivers in line with our business needs.
+
+  We would highly recommend
+testimonial_name: 'Matt Graham'
+testimonial_company: 'Sales Director'
+testimonial_avatar: matt-graham-qvis.jpeg
+testimonial_url: qvis.co.uk
 ---
