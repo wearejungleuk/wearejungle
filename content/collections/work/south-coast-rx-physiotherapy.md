@@ -179,4 +179,10 @@ updated_at: 1784651840
 hero_image: scrx-hero.jpg
 screenshot_1: scrx-blocks.jpg
 screenshot_2: scrx-cta.jpg
+cta_heading: 'Have a project like this?'
+cta_text: 'If Wix (or an ageing WordPress site) is holding you back and you want something built to rank, convert and grow with you, we would love to talk.'
+cta_primary_label: 'Start your project'
+cta_primary_url: /contact
+cta_secondary_label: 'Book a meeting'
+cta_secondary_url: /contact
 ---

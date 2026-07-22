@@ -278,6 +278,79 @@ tabs:
                             display: Statement
                             instructions: 'Short bold statement (e.g. "Integrated real-time share price updates for transparency.").'
       -
+        display: Testimonial
+        fields:
+          -
+            handle: testimonial_quote
+            field:
+              type: textarea
+              display: Quote
+              instructions: 'The testimonial body. Line breaks are preserved.'
+          -
+            handle: testimonial_name
+            field:
+              type: text
+              display: Name
+              instructions: 'E.g. Jo Hilder.'
+          -
+            handle: testimonial_company
+            field:
+              type: text
+              display: 'Company / Role'
+              instructions: 'Shown under the name.'
+          -
+            handle: testimonial_avatar
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Avatar
+              instructions: 'Circular headshot. 200x200 or larger.'
+          -
+            handle: testimonial_url
+            field:
+              type: text
+              input_type: url
+              display: 'Website URL (shown as link)'
+              instructions: 'Optional. Leave blank to use the main website URL.'
+      -
+        display: 'Custom CTA'
+        fields:
+          -
+            handle: cta_heading
+            field:
+              type: text
+              display: Heading
+              instructions: 'Large uppercase headline. Leave blank to hide the whole CTA block.'
+          -
+            handle: cta_text
+            field:
+              type: textarea
+              display: Text
+              instructions: 'One or two sentences under the heading.'
+          -
+            handle: cta_primary_label
+            field:
+              type: text
+              display: 'Primary Button Label'
+          -
+            handle: cta_primary_url
+            field:
+              type: text
+              input_type: url
+              display: 'Primary Button URL'
+          -
+            handle: cta_secondary_label
+            field:
+              type: text
+              display: 'Secondary Button Label (optional)'
+          -
+            handle: cta_secondary_url
+            field:
+              type: text
+              input_type: url
+              display: 'Secondary Button URL (optional)'
+      -
         display: 'Listing Card'
         fields:
           -
