@@ -314,42 +314,12 @@ tabs:
               display: 'Website URL (shown as link)'
               instructions: 'Optional. Leave blank to use the main website URL.'
       -
-        display: 'Custom CTA'
+        display: 'Page Builder (bottom of page)'
         fields:
           -
-            handle: cta_heading
-            field:
-              type: text
-              display: Heading
-              instructions: 'Large uppercase headline. Leave blank to hide the whole CTA block.'
-          -
-            handle: cta_text
-            field:
-              type: textarea
-              display: Text
-              instructions: 'One or two sentences under the heading.'
-          -
-            handle: cta_primary_label
-            field:
-              type: text
-              display: 'Primary Button Label'
-          -
-            handle: cta_primary_url
-            field:
-              type: text
-              input_type: url
-              display: 'Primary Button URL'
-          -
-            handle: cta_secondary_label
-            field:
-              type: text
-              display: 'Secondary Button Label (optional)'
-          -
-            handle: cta_secondary_url
-            field:
-              type: text
-              input_type: url
-              display: 'Secondary Button URL (optional)'
+            handle: page_builder
+            field: page_builder.page_builder
+            instructions: 'Add a CTA Block, Calendly section, or any other page-builder block to appear below the case study.'
       -
         display: 'Listing Card'
         fields:

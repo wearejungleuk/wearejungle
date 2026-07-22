@@ -179,10 +179,26 @@ updated_at: 1784651840
 hero_image: scrx-hero.jpg
 screenshot_1: scrx-blocks.jpg
 screenshot_2: scrx-cta.jpg
-cta_heading: 'Have a project like this?'
-cta_text: 'If Wix (or an ageing WordPress site) is holding you back and you want something built to rank, convert and grow with you, we would love to talk.'
-cta_primary_label: 'Start your project'
-cta_primary_url: /contact
-cta_secondary_label: 'Book a meeting'
-cta_secondary_url: /contact
+page_builder:
+  -
+    id: work_cta_south_coast_rx
+    above_title: 'Have a project like this?'
+    above_title_variant: above-title--light-blue
+    title: "Don't Settle for a Mediocre Website"
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'If Wix (or an ageing WordPress site) is holding you back and you want something built to rank, convert and grow with you, we would love to talk.'
+    cta: /contact
+    cta_title: 'Start your project'
+    cta_classes: button--primary
+    book_appointment: false
+    cta_2_title: 'Book a meeting'
+    cta_2_classes: button--light-blue
+    book_appointment_2: true
+    type: cta_block
+    enabled: true
 ---

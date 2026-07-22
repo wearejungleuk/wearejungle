@@ -193,10 +193,26 @@ testimonial_quote: "Working with We Are Jungle on the MRG Effitas website was a 
 testimonial_name: 'Jo Hilder'
 testimonial_company: 'MRG Effitas'
 testimonial_url: 'https://mrg-effitas.com'
-cta_heading: 'Have a project like this?'
-cta_text: 'If you need a website that looks the part and works hard behind the scenes - with live data, proper editing tools and no cybersecurity clichés - we would love to hear from you.'
-cta_primary_label: 'Start your project'
-cta_primary_url: /contact
-cta_secondary_label: 'Book a meeting'
-cta_secondary_url: /contact
+page_builder:
+  -
+    id: work_cta_mrg_effitas
+    above_title: 'Have a project like this?'
+    above_title_variant: above-title--light-blue
+    title: "Don't Settle for a Mediocre Website"
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'If you need a website that looks the part and works hard behind the scenes - with live data, proper editing tools and no cybersecurity clichés - we would love to hear from you.'
+    cta: /contact
+    cta_title: 'Start your project'
+    cta_classes: button--primary
+    book_appointment: false
+    cta_2_title: 'Book a meeting'
+    cta_2_classes: button--light-blue
+    book_appointment_2: true
+    type: cta_block
+    enabled: true
 ---

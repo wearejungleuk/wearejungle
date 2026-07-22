@@ -412,32 +412,7 @@
     </section>
 {{ /if }}
 
-{{ if cta_heading }}
-    <section class="py-16 lg:py-24">
-        <div class="container">
-            <div class="max-w-[800px] mx-auto text-center">
-                <h2 class="font-heading uppercase text-white text-[32px] sm:text-[40px] lg:text-[52px] leading-[1.05] mb-6 js-fade-up">{{ cta_heading }}</h2>
-                {{ if cta_text }}
-                    <p class="text-white/85 text-[16px] lg:text-[18px] leading-relaxed mb-10 max-w-[640px] mx-auto js-fade-up whitespace-pre-line">{{ cta_text }}</p>
-                {{ /if }}
-                {{ if cta_primary_label && cta_primary_url }}
-                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 js-fade-up">
-                        <a href="{{ cta_primary_url }}" class="button group">
-                            <span>{{ cta_primary_label }}</span>
-                        </a>
-                        {{ if cta_secondary_label && cta_secondary_url }}
-                            <a href="{{ cta_secondary_url }}" class="button group">
-                                <span>{{ cta_secondary_label }}</span>
-                            </a>
-                        {{ /if }}
-                    </div>
-                {{ /if }}
-            </div>
-        </div>
-    </section>
-{{ /if }}
-
-{{# Rest of the case study page - driven by the page builder if the entry has one. #}}
+{{# Optional page-builder blocks at the bottom (e.g. CTA Block, Calendly). #}}
 {{ page_builder }}
     {{ partial src="page_builder/{type}" }}
 {{ /page_builder }}
