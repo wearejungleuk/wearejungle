@@ -262,30 +262,23 @@ page_builder:
             text: "Don't just take our word for it. See how our work impacts the people who matter most."
     reviews:
       -
-        id: reviews_wdev_r01
-        name: 'Jodie Goodchild'
-        role: 'Known For'
+        id: rev_matt_graham
+        name: 'Matt Graham'
+        role: 'Sales Director, QVIS Lighting & Security'
         quote:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'I was referred to We Are Jungle by someone I trust, and from the moment we met, I knew they were the real deal. '
-              -
-                type: hardBreak
-              -
-                type: hardBreak
-              -
-                type: text
-                text: "I had a website before, but We Are Jungle turned it into something I'm truly proud of. The process felt effortless, and their expertise and approach made everything so easy."
+                text: 'We Are Jungle did an amazing job in the consultation through to design and implementation of our website. The website requisite was complex with a full ERP integration required and they made the whole process seamless. The communication throughout was excellent with our needs listened to carefully and deliverables executed perfectly, their expertise was invaluable in providing us with a website that''s functional, modern, scalable and delivers in line with our business needs.'
         image:
-          - image-3.png
-        website: 'https://knownfor.co.uk'
+          - matt-graham-qvis.jpeg
+        website: 'https://qvis.co.uk'
         type: new_set
         enabled: true
       -
-        id: reviews_wdev_r02
+        id: rev_jo_hilder
         name: 'Jo Hilder'
         role: 'MRG Effitas'
         quote:
@@ -307,24 +300,24 @@ page_builder:
         type: new_set
         enabled: true
       -
-        id: reviews_wdev_r03
-        name: 'Cameron Brew'
-        role: 'South Coast Rx Physiotherapy'
+        id: rev_collette
+        name: 'Collette Whiting'
+        role: 'Owner, Delta-Xero'
         quote:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'Both Brad and Kay went above and beyond in their support for us and ensured that the final version of the website represented exactly the feel we were going for. Thank you so much to both of you for all of your hard work. We could not recommend We are Jungle highly enough!'
+                text: 'The end result is a website that feels far more aligned with who we are today as a company - cleaner, more professional, easier to navigate and much stronger from both a branding and customer experience perspective.'
         image:
-          - screenshot-2025-01-22-at-11.46.21-520x650.jpg
-        website: 'https://southcoastrxphysiotherapy.co.uk'
+          - collette.jpg
+        website: 'https://delta-xero.com'
         type: new_set
         enabled: true
       -
-        id: reviews_wdev_r04
-        name: "Laura O'Leary"
+        id: rev_laura
+        name: 'Laura O''Leary'
         role: 'My Learning Cloud'
         quote:
           -

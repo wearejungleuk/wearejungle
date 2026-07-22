@@ -246,7 +246,23 @@ page_builder:
             text: 'Honest words from the businesses whose code we look after.'
     reviews:
       -
-        id: reviews_wdv_r01
+        id: rev_collette
+        name: 'Collette Whiting'
+        role: 'Owner, Delta-Xero'
+        quote:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'The end result is a website that feels far more aligned with who we are today as a company - cleaner, more professional, easier to navigate and much stronger from both a branding and customer experience perspective.'
+        image:
+          - collette.jpg
+        website: 'https://delta-xero.com'
+        type: new_set
+        enabled: true
+      -
+        id: rev_cameron
         name: 'Cameron Brew'
         role: 'South Coast Rx Physiotherapy'
         quote:
@@ -262,30 +278,7 @@ page_builder:
         type: new_set
         enabled: true
       -
-        id: reviews_wdv_r02
-        name: 'Jodie Goodchild'
-        role: 'Known For'
-        quote:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'I was referred to We Are Jungle by someone I trust, and from the moment we met, I knew they were the real deal. '
-              -
-                type: hardBreak
-              -
-                type: hardBreak
-              -
-                type: text
-                text: "I had a website before, but We Are Jungle turned it into something I'm truly proud of. The process felt effortless, and their expertise and approach made everything so easy."
-        image:
-          - image-3.png
-        website: 'https://knownfor.co.uk'
-        type: new_set
-        enabled: true
-      -
-        id: reviews_wdv_r03
+        id: rev_jo_hilder
         name: 'Jo Hilder'
         role: 'MRG Effitas'
         quote:
@@ -300,7 +293,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'Their consultative approach meant we ended up with a well structured, well optimised website that encourages conversion.'
+                text: 'Their consultative approach meant we ended up with a well structured, well optimised website that encourages conversion. As leaders in cybersecurity testing, our site also had to be highly secure.'
         image:
           - 1729850693593.jpeg
         website: 'http://mrg-effitas.com'

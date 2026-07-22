@@ -248,7 +248,7 @@ page_builder:
             text: "Don't just take our word for it. See how our work impacts the people who matter most."
     reviews:
       -
-        id: reviews_wc_r01
+        id: rev_jodie
         name: 'Jodie Goodchild'
         role: 'Known For'
         quote:
@@ -257,21 +257,52 @@ page_builder:
             content:
               -
                 type: text
-                text: 'I was referred to We Are Jungle by someone I trust, and from the moment we met, I knew they were the real deal. '
-              -
-                type: hardBreak
-              -
-                type: hardBreak
+                text: 'I was referred to We Are Jungle by someone I trust, and from the moment we met, I knew they were the real deal.'
+          -
+            type: paragraph
+            content:
               -
                 type: text
-                text: "I had a website before, but We Are Jungle turned it into something I'm truly proud of. The process felt effortless, and their expertise and approach made everything so easy."
+                text: 'I had a website before, but We Are Jungle turned it into something I''m truly proud of. The process felt effortless, and their expertise and approach made everything so easy.'
         image:
           - image-3.png
         website: 'https://knownfor.co.uk'
         type: new_set
         enabled: true
       -
-        id: reviews_wc_r02
+        id: rev_cameron
+        name: 'Cameron Brew'
+        role: 'South Coast Rx Physiotherapy'
+        quote:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Both Brad and Kay went above and beyond in their support for us and ensured that the final version of the website represented exactly the feel we were going for. Thank you so much to both of you for all of your hard work. We could not recommend We are Jungle highly enough!'
+        image:
+          - screenshot-2025-01-22-at-11.46.21-520x650.jpg
+        website: 'https://southcoastrxphysiotherapy.co.uk'
+        type: new_set
+        enabled: true
+      -
+        id: rev_laura
+        name: 'Laura O''Leary'
+        role: 'My Learning Cloud'
+        quote:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'We recently worked with We Are Jungle to re-build and refine our website, and the entire experience has been fantastic. From the start, We Are Jungle offered a competitive quote and maintained excellent communication throughout the project.'
+        image:
+          - 1621333113157.jpeg
+        website: 'https://mylearningcloud.org.uk'
+        type: new_set
+        enabled: true
+      -
+        id: rev_jo_hilder
         name: 'Jo Hilder'
         role: 'MRG Effitas'
         quote:
@@ -290,38 +321,6 @@ page_builder:
         image:
           - 1729850693593.jpeg
         website: 'http://mrg-effitas.com'
-        type: new_set
-        enabled: true
-      -
-        id: reviews_wc_r03
-        name: 'Cameron Brew'
-        role: 'South Coast Rx Physiotherapy'
-        quote:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Both Brad and Kay went above and beyond in their support for us and ensured that the final version of the website represented exactly the feel we were going for. Thank you so much to both of you for all of your hard work. We could not recommend We are Jungle highly enough!'
-        image:
-          - screenshot-2025-01-22-at-11.46.21-520x650.jpg
-        website: 'https://southcoastrxphysiotherapy.co.uk'
-        type: new_set
-        enabled: true
-      -
-        id: reviews_wc_r04
-        name: "Laura O'Leary"
-        role: 'My Learning Cloud'
-        quote:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'We recently worked with We Are Jungle to re-build and refine our website, and the entire experience has been fantastic. From the start, We Are Jungle offered a competitive quote and maintained excellent communication throughout the project.'
-        image:
-          - 1621333113157.jpeg
-        website: 'https://mylearningcloud.org.uk'
         type: new_set
         enabled: true
     type: reviews

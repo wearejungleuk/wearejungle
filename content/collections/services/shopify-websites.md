@@ -232,7 +232,7 @@ page_builder:
             text: "Don't just take our word for it. See how our work impacts the people who matter most."
     reviews:
       -
-        id: reviews_sh_r01
+        id: rev_jodie
         name: 'Jodie Goodchild'
         role: 'Known For'
         quote:
@@ -241,43 +241,20 @@ page_builder:
             content:
               -
                 type: text
-                text: 'I was referred to We Are Jungle by someone I trust, and from the moment we met, I knew they were the real deal. '
-              -
-                type: hardBreak
-              -
-                type: hardBreak
+                text: 'I was referred to We Are Jungle by someone I trust, and from the moment we met, I knew they were the real deal.'
+          -
+            type: paragraph
+            content:
               -
                 type: text
-                text: "I had a website before, but We Are Jungle turned it into something I'm truly proud of. The process felt effortless, and their expertise and approach made everything so easy."
+                text: 'I had a website before, but We Are Jungle turned it into something I''m truly proud of. The process felt effortless, and their expertise and approach made everything so easy.'
         image:
           - image-3.png
         website: 'https://knownfor.co.uk'
         type: new_set
         enabled: true
       -
-        id: reviews_sh_r02
-        name: 'Jo Hilder'
-        role: 'MRG Effitas'
-        quote:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Working with We Are Jungle on the MRG Effitas website was a great experience. From briefing to completion the team was friendly, creative and efficient.'
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Their consultative approach meant we ended up with a well structured, well optimised website that encourages conversion. As leaders in cybersecurity testing, our site also had to be highly secure.'
-        image:
-          - 1729850693593.jpeg
-        website: 'http://mrg-effitas.com'
-        type: new_set
-        enabled: true
-      -
-        id: reviews_sh_r03
+        id: rev_cameron
         name: 'Cameron Brew'
         role: 'South Coast Rx Physiotherapy'
         quote:
@@ -293,8 +270,8 @@ page_builder:
         type: new_set
         enabled: true
       -
-        id: reviews_sh_r04
-        name: "Laura O'Leary"
+        id: rev_laura
+        name: 'Laura O''Leary'
         role: 'My Learning Cloud'
         quote:
           -

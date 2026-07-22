@@ -248,30 +248,7 @@ page_builder:
             text: "Don't just take our word for it. See how our work impacts the people who matter most."
     reviews:
       -
-        id: reviews_wp_r01
-        name: 'Jodie Goodchild'
-        role: 'Known For'
-        quote:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'I was referred to We Are Jungle by someone I trust, and from the moment we met, I knew they were the real deal. '
-              -
-                type: hardBreak
-              -
-                type: hardBreak
-              -
-                type: text
-                text: "I had a website before, but We Are Jungle turned it into something I'm truly proud of. The process felt effortless, and their expertise and approach made everything so easy."
-        image:
-          - image-3.png
-        website: 'https://knownfor.co.uk'
-        type: new_set
-        enabled: true
-      -
-        id: reviews_wp_r02
+        id: rev_jo_hilder
         name: 'Jo Hilder'
         role: 'MRG Effitas'
         quote:
@@ -293,7 +270,7 @@ page_builder:
         type: new_set
         enabled: true
       -
-        id: reviews_wp_r03
+        id: rev_cameron
         name: 'Cameron Brew'
         role: 'South Coast Rx Physiotherapy'
         quote:
@@ -309,8 +286,30 @@ page_builder:
         type: new_set
         enabled: true
       -
-        id: reviews_wp_r04
-        name: "Laura O'Leary"
+        id: rev_jodie
+        name: 'Jodie Goodchild'
+        role: 'Known For'
+        quote:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'I was referred to We Are Jungle by someone I trust, and from the moment we met, I knew they were the real deal.'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'I had a website before, but We Are Jungle turned it into something I''m truly proud of. The process felt effortless, and their expertise and approach made everything so easy.'
+        image:
+          - image-3.png
+        website: 'https://knownfor.co.uk'
+        type: new_set
+        enabled: true
+      -
+        id: rev_laura
+        name: 'Laura O''Leary'
         role: 'My Learning Cloud'
         quote:
           -

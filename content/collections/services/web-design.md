@@ -252,30 +252,7 @@ page_builder:
             text: "Don't just take our word for it. See how our work impacts the people who matter most."
     reviews:
       -
-        id: reviews_wd_r01
-        name: 'Jodie Goodchild'
-        role: 'Known For'
-        quote:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'I was referred to We Are Jungle by someone I trust, and from the moment we met, I knew they were the real deal. '
-              -
-                type: hardBreak
-              -
-                type: hardBreak
-              -
-                type: text
-                text: "I had a website before, but We Are Jungle turned it into something I'm truly proud of. The process felt effortless, and their expertise and approach made everything so easy."
-        image:
-          - image-3.png
-        website: 'https://knownfor.co.uk'
-        type: new_set
-        enabled: true
-      -
-        id: reviews_wd_r02
+        id: rev_jo_hilder
         name: 'Jo Hilder'
         role: 'MRG Effitas'
         quote:
@@ -297,7 +274,23 @@ page_builder:
         type: new_set
         enabled: true
       -
-        id: reviews_wd_r03
+        id: rev_collette
+        name: 'Collette Whiting'
+        role: 'Owner, Delta-Xero'
+        quote:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'The end result is a website that feels far more aligned with who we are today as a company - cleaner, more professional, easier to navigate and much stronger from both a branding and customer experience perspective.'
+        image:
+          - collette.jpg
+        website: 'https://delta-xero.com'
+        type: new_set
+        enabled: true
+      -
+        id: rev_cameron
         name: 'Cameron Brew'
         role: 'South Coast Rx Physiotherapy'
         quote:
@@ -313,19 +306,19 @@ page_builder:
         type: new_set
         enabled: true
       -
-        id: reviews_wd_r04
-        name: "Laura O'Leary"
-        role: 'My Learning Cloud'
+        id: rev_matt_graham
+        name: 'Matt Graham'
+        role: 'Sales Director, QVIS Lighting & Security'
         quote:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'We recently worked with We Are Jungle to re-build and refine our website, and the entire experience has been fantastic. From the start, We Are Jungle offered a competitive quote and maintained excellent communication throughout the project.'
+                text: 'We Are Jungle did an amazing job in the consultation through to design and implementation of our website. The website requisite was complex with a full ERP integration required and they made the whole process seamless. The communication throughout was excellent with our needs listened to carefully and deliverables executed perfectly, their expertise was invaluable in providing us with a website that''s functional, modern, scalable and delivers in line with our business needs.'
         image:
-          - 1621333113157.jpeg
-        website: 'https://mylearningcloud.org.uk'
+          - matt-graham-qvis.jpeg
+        website: 'https://qvis.co.uk'
         type: new_set
         enabled: true
     type: reviews
