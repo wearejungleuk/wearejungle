@@ -194,7 +194,7 @@ page_builder:
     id: work_cta_cs_garden_offices
     above_title: 'Have a project like this?'
     above_title_variant: above-title--light-blue
-    title: "Don't Settle for a Mediocre Website"
+    title: "A Site Your Ad Agency Can Actually Work With"
     text:
       -
         type: paragraph

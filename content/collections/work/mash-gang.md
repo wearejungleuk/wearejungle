@@ -212,7 +212,7 @@ page_builder:
     id: work_cta_mash_gang
     above_title: 'Have a project like this?'
     above_title_variant: above-title--light-blue
-    title: "Don't Settle for a Mediocre Website"
+    title: "Ready to Scale Your Store?"
     text:
       -
         type: paragraph

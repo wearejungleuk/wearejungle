@@ -189,7 +189,7 @@ page_builder:
     id: work_cta_south_coast_rx
     above_title: 'Have a project like this?'
     above_title_variant: above-title--light-blue
-    title: "Don't Settle for a Mediocre Website"
+    title: "Ready to Get Off Wix?"
     text:
       -
         type: paragraph
