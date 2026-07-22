@@ -1,0 +1,29 @@
+{{#
+    Individual service page (/services/{slug}).
+#}}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Service",
+            "name": {{ title | json }},
+            {{ if meta_description || seo_description }}
+            "description": {{ (meta_description ?? seo_description) | json }},
+            {{ /if }}
+            "serviceType": {{ title | json }},
+            "areaServed": "United Kingdom",
+            "url": "{{ permalink }}",
+            "provider": { "@id": "https://wearejungle.co.uk/#org" }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wearejungle.co.uk" },
+                { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://wearejungle.co.uk/services" },
+                { "@type": "ListItem", "position": 3, "name": {{ title | json }}, "item": "{{ permalink }}" }
+            ]
+        }
+    ]
+}
+</script>

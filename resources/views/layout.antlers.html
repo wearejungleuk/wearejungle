@@ -27,6 +27,30 @@
         }
     </style>
     {{ aardvark-seo:head }}
+
+    {{# JSON-LD schema. Skipped on the homepage - aardvark-seo already emits its own there. #}}
+    {{ unless id == 'home' }}
+        {{ partial:schema/base }}
+        {{ if collection == 'blog' }}
+            {{ partial:schema/blog-post }}
+        {{ elseif id == 'blog' }}
+            {{ partial:schema/blog-index }}
+        {{ elseif collection == 'services' }}
+            {{ partial:schema/service }}
+        {{ elseif id == 'services' }}
+            {{ partial:schema/services-index }}
+        {{ elseif collection == 'work' }}
+            {{ partial:schema/work-item }}
+        {{ elseif id == 'work' }}
+            {{ partial:schema/work-index }}
+        {{ elseif id == 'about' }}
+            {{ partial:schema/about }}
+        {{ elseif id == 'contact' }}
+            {{ partial:schema/contact }}
+        {{ elseif id == 'pricing' }}
+            {{ partial:schema/pricing }}
+        {{ /if }}
+    {{ /unless }}
     <link rel="stylesheet" href="https://use.typekit.net/jvu1tvl.css">
     <script src="https://kit.fontawesome.com/7f308f2602.js" crossorigin="anonymous"></script>
     {{ vite src="resources/js/site.js|resources/css/site.css" }}

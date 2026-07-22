@@ -1,0 +1,20 @@
+{{#
+    Work index (/work). Emits an ItemList of every case study.
+#}}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Work",
+    "itemListElement": [
+        {{ collection:work sort="order:asc" }}
+        {
+            "@type": "ListItem",
+            "position": {{ index }},
+            "name": {{ title | json }},
+            "url": "{{ permalink }}"
+        }{{ if !last }},{{ /if }}
+        {{ /collection:work }}
+    ]
+}
+</script>

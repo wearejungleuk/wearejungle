@@ -1,0 +1,34 @@
+{{#
+    Individual blog post (/blog/{slug}).
+#}}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BlogPosting",
+            "headline": {{ title | json }},
+            {{ if meta_description || seo_description || excerpt }}
+            "description": {{ (meta_description ?? seo_description ?? excerpt) | json }},
+            {{ /if }}
+            "datePublished": "{{ date format="Y-m-d" }}",
+            "dateModified": "{{ if updated_at }}{{ updated_at format="Y-m-d" }}{{ else }}{{ date format="Y-m-d" }}{{ /if }}",
+            {{ if featured_image }}
+            "image": "{{ featured_image:url }}",
+            {{ /if }}
+            "author": {{ if author_name }}{ "@type": "Person", "name": {{ author_name | json }} }{{ else }}{ "@id": "https://wearejungle.co.uk/#org" }{{ /if }},
+            "publisher": { "@id": "https://wearejungle.co.uk/#org" },
+            "url": "{{ permalink }}",
+            "mainEntityOfPage": { "@id": "{{ permalink }}" }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wearejungle.co.uk" },
+                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://wearejungle.co.uk/blog" },
+                { "@type": "ListItem", "position": 3, "name": {{ title | json }}, "item": "{{ permalink }}" }
+            ]
+        }
+    ]
+}
+</script>

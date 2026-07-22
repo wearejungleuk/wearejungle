@@ -1,0 +1,37 @@
+{{#
+    Contact page (/contact). ContactPage + a ProfessionalService entity
+    that adds price range and re-asserts the core contact details. The
+    ProfessionalService uses the same @id as the core Organization so
+    Google treats them as one entity.
+#}}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "ContactPage",
+            "@id": "{{ permalink }}#contactpage",
+            "name": {{ title | json }},
+            "url": "{{ permalink }}",
+            "mainEntity": { "@id": "https://wearejungle.co.uk/#org" }
+        },
+        {
+            "@type": "ProfessionalService",
+            "@id": "https://wearejungle.co.uk/#org",
+            "name": "We Are Jungle",
+            "url": "https://wearejungle.co.uk",
+            "telephone": "+442392003967",
+            "email": "hello@wearejungle.co.uk",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Gatcombe House, Copnor Rd, Hilsea",
+                "addressLocality": "Portsmouth",
+                "postalCode": "PO3 5EJ",
+                "addressCountry": "GB"
+            },
+            "areaServed": "United Kingdom",
+            "priceRange": "££"
+        }
+    ]
+}
+</script>

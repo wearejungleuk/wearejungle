@@ -1,0 +1,21 @@
+{{#
+    Services index (/services). Emits an ItemList of every service
+    entry currently published in the services collection.
+#}}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Services",
+    "itemListElement": [
+        {{ collection:services }}
+        {
+            "@type": "ListItem",
+            "position": {{ index }},
+            "name": {{ title | json }},
+            "url": "{{ permalink }}"
+        }{{ if !last }},{{ /if }}
+        {{ /collection:services }}
+    ]
+}
+</script>

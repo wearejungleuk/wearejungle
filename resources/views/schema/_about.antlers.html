@@ -1,0 +1,35 @@
+{{#
+    About page (/about). AboutPage type + a supplementary Organization
+    entry that adds the employee list. The core Organization is
+    already defined by _base.antlers.html; declaring it again here
+    with the same @id lets Google merge the extra employee data in.
+#}}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "AboutPage",
+            "@id": "{{ permalink }}#aboutpage",
+            "name": {{ title | json }},
+            "url": "{{ permalink }}",
+            {{ if meta_description || seo_description }}
+            "description": {{ (meta_description ?? seo_description) | json }},
+            {{ else }}
+            "description": "We Are Jungle is a small, sharp web design and development studio in Portsmouth. Meet the team behind the work.",
+            {{ /if }}
+            "about": { "@id": "https://wearejungle.co.uk/#org" }
+        },
+        {
+            "@type": "Organization",
+            "@id": "https://wearejungle.co.uk/#org",
+            "employee": [
+                { "@type": "Person", "name": "Brad Goddard", "sameAs": "https://uk.linkedin.com/in/brad-goddard-821376188" },
+                { "@type": "Person", "name": "Kay Goddard", "sameAs": "https://uk.linkedin.com/in/kay-goddard-659a6a299" },
+                { "@type": "Person", "name": "Erin Goddard", "sameAs": "https://uk.linkedin.com/in/erin-goddard-b713a137b" },
+                { "@type": "Person", "name": "Julius" }
+            ]
+        }
+    ]
+}
+</script>
