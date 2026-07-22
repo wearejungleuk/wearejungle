@@ -199,6 +199,7 @@ page_builder:
     cta_2_title: 'Book a meeting'
     cta_2_classes: button--light-blue
     book_appointment_2: true
+    illustration: julius-ipad.svg
     type: cta_block
     enabled: true
 ---

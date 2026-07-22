@@ -386,24 +386,24 @@
 {{ if testimonial_quote && testimonial_name }}
     <section class="py-16 lg:py-24">
         <div class="container">
-            <div class="mx-auto max-w-[800px] bg-brand-dark-blue rounded-[24px] lg:rounded-[32px] p-8 md:p-10 lg:p-14 js-fade-up">
-                <div class="flex items-center gap-5 mb-8 lg:mb-10">
+            <div class="mx-auto max-w-[1200px] bg-brand-dark-blue rounded-[24px] lg:rounded-[32px] p-8 md:p-10 lg:p-16 js-fade-up">
+                <div class="flex items-center gap-5 lg:gap-8 mb-8 lg:mb-12">
                     {{ if testimonial_avatar }}
-                        {{ glide:testimonial_avatar width="200" height="200" fit="crop_focal" }}
-                            <img src="{{ url }}" alt="{{ testimonial_name }}" class="w-[80px] h-[80px] lg:w-[96px] lg:h-[96px] rounded-full object-cover flex-shrink-0">
+                        {{ glide:testimonial_avatar width="240" height="240" fit="crop_focal" }}
+                            <img src="{{ url }}" alt="{{ testimonial_name }}" class="w-[96px] h-[96px] lg:w-[120px] lg:h-[120px] rounded-full object-cover flex-shrink-0">
                         {{ /glide:testimonial_avatar }}
                     {{ /if }}
                     <div>
-                        <div class="font-heading uppercase text-white text-[22px] lg:text-[28px] leading-tight">{{ testimonial_name }}</div>
+                        <div class="font-heading uppercase text-white text-[24px] lg:text-[32px] leading-tight">{{ testimonial_name }}</div>
                         {{ if testimonial_company }}
-                            <div class="text-white/80 text-[15px] lg:text-[17px] mt-1">{{ testimonial_company }}</div>
+                            <div class="text-white/80 text-[16px] lg:text-[18px] mt-1">{{ testimonial_company }}</div>
                         {{ /if }}
                     </div>
                 </div>
-                <div class="text-white text-[17px] lg:text-[19px] leading-relaxed mb-8 whitespace-pre-line">{{ testimonial_quote }}</div>
+                <div class="text-white text-[18px] lg:text-[21px] leading-relaxed mb-8 lg:mb-10 whitespace-pre-line max-w-[880px]">{{ testimonial_quote }}</div>
                 {{ if testimonial_url || website_url }}
                     {{ link_href = testimonial_url ?? website_url }}
-                    <a href="{{ link_href }}" target="_blank" rel="noopener" class="font-heading uppercase text-white text-[17px] lg:text-[20px] underline underline-offset-4 hover:opacity-80 break-words">
+                    <a href="{{ link_href }}" target="_blank" rel="noopener" class="font-heading uppercase text-white text-[18px] lg:text-[22px] underline underline-offset-4 hover:opacity-80 break-words">
                         {{ link_href | replace:'https://':'' | replace:'http://':'' | trim:'/' }}
                     </a>
                 {{ /if }}
