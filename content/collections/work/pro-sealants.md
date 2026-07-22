@@ -196,4 +196,27 @@ updated_at: 1784653374
 hero_image: pro-sealants-hero.jpg
 screenshot_1: prosealants-product.jpg
 screenshot_2: prosealants-collection.jpg
+page_builder:
+  -
+    id: work_cta_pro_sealants
+    above_title: 'Have a project like this?'
+    above_title_variant: above-title--light-blue
+    title: "Don't Settle for a Mediocre Website"
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'If your current store is holding back the automations, tracking and conversions your business needs, we can help you switch to something that actually sells.'
+    cta: /contact
+    cta_title: 'Start your project'
+    cta_classes: button--primary
+    book_appointment: false
+    cta_2_title: 'Book a meeting'
+    cta_2_classes: button--light-blue
+    book_appointment_2: true
+    illustration: julius-ipad.svg
+    type: cta_block
+    enabled: true
 ---

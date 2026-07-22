@@ -196,10 +196,41 @@ card_text_2:
         type: text
         text: "Custom scroll animations, automated PDF sending on case study forms, and a country-filtered partner locator: everything the old templated WordPress site couldn't do."
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1784652903
+updated_at: 1784722149
 hero_image: delta-xero-hero.jpg
 screenshot_1: delta-xero-industries.jpg
 screenshot_2: delta-xero-testimonial.jpg
 preview_image: delta-xero-hero.jpg
 preview_background_image: delta-xero-card.jpg
+testimonial_quote: |-
+  The end result is a website that feels far more aligned with who we are today as a company - cleaner, more professional, easier to navigate and much stronger from both a branding and customer experience perspective.
+
+  We would happily recommend We Are Jungle to any business looking for a collaborative agency that genuinely listens and works with you to achieve the right outcome.
+testimonial_name: 'Collette Whiting'
+testimonial_company: 'Delta-Xero Owner'
+testimonial_avatar: collette.jpg
+testimonial_url: delta-xero.com
+page_builder:
+  -
+    id: work_cta_delta_xero
+    above_title: 'Have a project like this?'
+    above_title_variant: above-title--light-blue
+    title: "Don't Settle for a Mediocre Website"
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'If you need a website that matches how technical your product is - with the automations, downloads and filtering your audience actually uses - we would love to hear from you.'
+    cta: /contact
+    cta_title: 'Start your project'
+    cta_classes: button--primary
+    book_appointment: false
+    cta_2_title: 'Book a meeting'
+    cta_2_classes: button--light-blue
+    book_appointment_2: true
+    illustration: julius-ipad.svg
+    type: cta_block
+    enabled: true
 ---

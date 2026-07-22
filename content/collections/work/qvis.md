@@ -204,4 +204,27 @@ card_text_2:
       -
         type: text
         text: 'A custom integration syncs their internal product catalogue straight into the site - plus a bespoke Project Builder that packages spec sheets and fires them to the sales team.'
+page_builder:
+  -
+    id: work_cta_qvis
+    above_title: 'Have a project like this?'
+    above_title_variant: above-title--light-blue
+    title: "Don't Settle for a Mediocre Website"
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'If you need a website built around a real product catalogue, with proper integrations into the systems you already run, we would love to hear from you.'
+    cta: /contact
+    cta_title: 'Start your project'
+    cta_classes: button--primary
+    book_appointment: false
+    cta_2_title: 'Book a meeting'
+    cta_2_classes: button--light-blue
+    book_appointment_2: true
+    illustration: julius-ipad.svg
+    type: cta_block
+    enabled: true
 ---

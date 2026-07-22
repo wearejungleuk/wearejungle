@@ -189,4 +189,27 @@ screenshot_1: cs-garden-offices-quick-quote.jpg
 screenshot_2: cs-garden-offices-colours.jpg
 preview_background_image: garden-office.jpg
 preview_image: cs-garden-offices-hero.jpg
+page_builder:
+  -
+    id: work_cta_cs_garden_offices
+    above_title: 'Have a project like this?'
+    above_title_variant: above-title--light-blue
+    title: "Don't Settle for a Mediocre Website"
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'If a template platform is capping what your ad agency can do, we can rebuild your site around the tracking and integrations you actually need.'
+    cta: /contact
+    cta_title: 'Start your project'
+    cta_classes: button--primary
+    book_appointment: false
+    cta_2_title: 'Book a meeting'
+    cta_2_classes: button--light-blue
+    book_appointment_2: true
+    illustration: julius-ipad.svg
+    type: cta_block
+    enabled: true
 ---

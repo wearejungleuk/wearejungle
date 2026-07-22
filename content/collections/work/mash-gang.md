@@ -207,4 +207,27 @@ updated_at: 1784651968
 hero_image: mash-gang-hero.jpg
 screenshot_1: mash-gang-gang.jpg
 screenshot_2: mashgang-beers.jpg
+page_builder:
+  -
+    id: work_cta_mash_gang
+    above_title: 'Have a project like this?'
+    above_title_variant: above-title--light-blue
+    title: "Don't Settle for a Mediocre Website"
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'If you have outgrown a template store and need something built around your brand, your marketing and your wholesale side, we would love to hear from you.'
+    cta: /contact
+    cta_title: 'Start your project'
+    cta_classes: button--primary
+    book_appointment: false
+    cta_2_title: 'Book a meeting'
+    cta_2_classes: button--light-blue
+    book_appointment_2: true
+    illustration: julius-ipad.svg
+    type: cta_block
+    enabled: true
 ---
