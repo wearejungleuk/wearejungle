@@ -192,6 +192,7 @@ screenshot_2: mrg-services.jpg
 testimonial_quote: "Working with We Are Jungle on the MRG Effitas website was a great experience. From briefing to completion the team was friendly, creative and efficient.\nTheir consultative approach meant we ended up with a well structured, well optimised website that encourages conversion. As leaders in cybersecurity testing, our site also had to be highly secure."
 testimonial_name: 'Jo Hilder'
 testimonial_company: 'MRG Effitas'
+testimonial_avatar: 1729850693593.jpeg
 testimonial_url: 'https://mrg-effitas.com'
 page_builder:
   -

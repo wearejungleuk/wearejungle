@@ -179,6 +179,11 @@ updated_at: 1784651840
 hero_image: scrx-hero.jpg
 screenshot_1: scrx-blocks.jpg
 screenshot_2: scrx-cta.jpg
+testimonial_quote: 'Both Brad and Kay went above and beyond in their support for us and ensured that the final version of the website represented exactly the feel we were going for. Thank you so much to both of you for all of your hard work. We could not recommend We are Jungle highly enough!'
+testimonial_name: 'Cameron Brew'
+testimonial_company: 'South Coast Rx Physiotherapy'
+testimonial_avatar: screenshot-2025-01-22-at-11.46.21-520x650.jpg
+testimonial_url: 'https://southcoastrxphysiotherapy.co.uk'
 page_builder:
   -
     id: work_cta_south_coast_rx
