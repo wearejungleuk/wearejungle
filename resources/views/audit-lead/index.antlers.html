@@ -47,7 +47,8 @@ meta_description: 'Find out exactly what is holding your website back in Google.
 
             <div class="bg-brand-text p-6 md:p-10 lg:p-12 w-full max-w-[880px] mx-auto rounded-[50px]">
                 <form @submit.prevent="submitForm" novalidate>
-                    {{ csrf_field }}
+                    {{# Wrapped in nocache so the CSRF token is regenerated per request even when the page HTML is statically cached. #}}
+                    {{ nocache }}{{ csrf_field }}{{ /nocache }}
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 mb-6">
                         <label class="block">
