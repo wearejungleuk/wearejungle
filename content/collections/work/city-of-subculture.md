@@ -214,7 +214,7 @@ card_text_2:
     content:
       -
         type: text
-        text: "A free community platform for the venues, artists and promoters keeping this city interesting. Phase 1 directory and events at launch, native Stripe Connect ticketing to follow in phase 2."
+        text: "A free community platform for the venues, artists and promoters keeping this city interesting. A searchable directory and citywide events feed, all in one home for Portsmouth's grassroots."
 page_builder:
   -
     id: work_cta_cos
