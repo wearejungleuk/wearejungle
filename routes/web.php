@@ -17,3 +17,8 @@ Route::get('/free-website-audit/status/{submission}', [AuditLeadController::clas
 // Origin verified by the shared X-Callback-Secret header.
 Route::post('/api/audits/callback', [AuditLeadController::class, 'receiveCallback'])
     ->name('audits.callback');
+
+// The `work_type` taxonomy is display-only (tag pills on case studies),
+// so its default Statamic term URLs (/work-type/{slug}) should not be
+// public. Force them to 404 so Google drops them from the index.
+Route::get('/work-type/{any?}', fn () => abort(404))->where('any', '.*');
