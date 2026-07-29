@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuditLeadController;
 use Illuminate\Support\Facades\Route;
+use Statamic\Exceptions\NotFoundHttpException;
 
 // Free website audit lead magnet.
 // GET is served by the Statamic page entry at
@@ -20,5 +21,6 @@ Route::post('/api/audits/callback', [AuditLeadController::class, 'receiveCallbac
 
 // The `work_type` taxonomy is display-only (tag pills on case studies),
 // so its default Statamic term URLs (/work-type/{slug}) should not be
-// public. Force them to 404 so Google drops them from the index.
-Route::get('/work-type/{any?}', fn () => abort(404))->where('any', '.*');
+// public. Throw Statamic's NotFoundHttpException (not Laravel's abort)
+// so the 404 view is wrapped in the site layout, matching a normal 404.
+Route::get('/work-type/{any?}', fn () => throw new NotFoundHttpException)->where('any', '.*');
