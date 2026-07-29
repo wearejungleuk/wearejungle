@@ -57,8 +57,8 @@ overview_body:
         text: 'Made in Pompey'
       -
         type: text
-        text: '.'
-what_we_did_heading: "A custom directory and events platform, purpose-built for the city."
+        text: .
+what_we_did_heading: 'A custom directory and events platform, purpose-built for the city.'
 what_we_did_body:
   -
     type: paragraph
@@ -91,7 +91,7 @@ what_we_did_body:
     content:
       -
         type: text
-        text: "Bot protection is Cloudflare Turnstile on every signup, listing submission and tenant claim. Reports of dodgy content route to an internal moderation queue. Images are on DigitalOcean Spaces, email through Postmark, MySQL on DigitalOcean, Cloudflare in front of the whole thing."
+        text: 'Bot protection is Cloudflare Turnstile on every signup, listing submission and tenant claim. Reports of dodgy content route to an internal moderation queue. Images are on DigitalOcean Spaces, email through Postmark, MySQL on DigitalOcean, Cloudflare in front of the whole thing.'
 what_we_did_features_heading: 'Key Features:'
 what_we_did_features:
   -
@@ -115,7 +115,7 @@ what_we_did_features:
   -
     id: cos_wwd4
     label: 'Tenant Claim Flow'
-    description: "Owners can claim a listing that already exists on the platform in a couple of clicks, with rate limiting to keep the claim queue clean."
+    description: 'Owners can claim a listing that already exists on the platform in a couple of clicks, with rate limiting to keep the claim queue clean.'
     type: new_set
     enabled: true
   -
@@ -238,4 +238,9 @@ page_builder:
     illustration: julius-ipad.svg
     type: cta_block
     enabled: true
+hero_image: city-of-subculture-hero-1785325979.jpg
+screenshot_1: city-of-subculture-stats.jpg
+screenshot_2: city-of-sub-culture-directory.jpg
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1785326007
 ---
