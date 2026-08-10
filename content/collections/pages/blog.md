@@ -2,8 +2,8 @@
 id: blog
 blueprint: page
 title: Blog
-meta_title: 'Blog | Web Design Tips, Ideas & Opinions | We Are Jungle'
-meta_description: 'Thoughts on web design, development, eCommerce, and running a small agency. Straight-talking ideas from the We Are Jungle team in Portsmouth.'
+meta_title: 'Web Design Blog | Portsmouth Agency Insights | We Are Jungle'
+meta_description: 'Thoughts on web design, development, eCommerce, and running a small agency. Straight-talking ideas from a Portsmouth web design team.'
 slug: blog
 template: blog/index
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa

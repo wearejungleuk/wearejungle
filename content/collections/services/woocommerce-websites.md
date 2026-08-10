@@ -33,7 +33,7 @@ icon: woocommerce-favicon-white.svg
 page_builder:
   -
     id: services_hero_woo_01
-    above_title: 'What We Do'
+    above_title: 'WooCommerce Web Design Portsmouth'
     title: 'WooCommerce Stores Built to Perform'
     text:
       -

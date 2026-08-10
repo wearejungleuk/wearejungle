@@ -92,10 +92,29 @@ fields:
               display: 'About Hero'
               fields:
                 -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title (h1)'
+                    validate:
+                      - required
+                    instructions: 'Renders as the page h1 - keep it short and SEO-focused (e.g. include a location like "Portsmouth" if relevant).'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
                   handle: title
                   field:
                     type: text
-                    display: Title
+                    display: 'Title (h2)'
+                    instructions: 'The large hero headline. Renders as an h2 - the small above title above it is the h1.'
                 -
                   handle: intro_text
                   field:
@@ -148,10 +167,29 @@ fields:
                     type: assets
                     display: 'Image Right'
                 -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title (h1)'
+                    validate:
+                      - required
+                    instructions: 'Renders as the page h1 - keep it short and SEO-focused (e.g. include a location like "Portsmouth" if relevant).'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
                   handle: title
                   field:
                     type: text
-                    display: Title
+                    display: 'Title (h2)'
+                    instructions: 'The large hero headline. Renders as an h2 - the small above title above it is the h1.'
                 -
                   handle: text
                   field:
@@ -1357,7 +1395,10 @@ fields:
                   handle: above_title
                   field:
                     type: text
-                    display: 'Above Title'
+                    display: 'Above Title (h1)'
+                    validate:
+                      - required
+                    instructions: 'Renders as the page h1 - keep it short and SEO-focused (e.g. include a location like "Portsmouth" if relevant).'
                 -
                   handle: above_title_variant
                   field:
@@ -1372,7 +1413,8 @@ fields:
                   handle: title
                   field:
                     type: text
-                    display: Title
+                    display: 'Title (h2)'
+                    instructions: 'The large hero headline. Renders as an h2 - the small above title above it is the h1.'
                 -
                   handle: text
                   field:
@@ -1419,7 +1461,10 @@ fields:
                   handle: above_title
                   field:
                     type: text
-                    display: 'Above Title'
+                    display: 'Above Title (h1)'
+                    validate:
+                      - required
+                    instructions: 'Renders as the page h1 - keep it short and SEO-focused (e.g. include a location like "Portsmouth" if relevant).'
                 -
                   handle: above_title_variant
                   field:
@@ -1434,7 +1479,8 @@ fields:
                   handle: title
                   field:
                     type: text
-                    display: Title
+                    display: 'Title (h2)'
+                    instructions: 'The large hero headline. Renders as an h2 - the small above title above it is the h1.'
                 -
                   handle: text
                   field:

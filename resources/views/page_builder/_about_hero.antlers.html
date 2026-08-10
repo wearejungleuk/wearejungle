@@ -3,10 +3,15 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-12 lg:mb-16 items-start">
             <div>
+                {{ if above_title }}
+                    <div class="relative z-[10] mb-6 js-fade-up">
+                        <h1 class="above-title {{ above_title_variant ?? 'above-title--secondary' }}">{{ above_title }}</h1>
+                    </div>
+                {{ /if }}
                 {{ if title }}
-                    <h1 class="font-heading uppercase text-[34px] sm:text-[45px] md:text-[50px] lg:text-[54px] xl:text-[60px] leading-none text-white js-fade-up">
+                    <h2 class="font-heading uppercase text-[34px] sm:text-[45px] md:text-[50px] lg:text-[54px] xl:text-[60px] leading-none text-white js-fade-up">
                         {{ title }}<span class="inline-block w-[50px] lg:w-[80px] xl:w-[90px] align-middle ml-2">{{ partial:components/icons/julius-shades }}</span>
-                    </h1>
+                    </h2>
                 {{ /if }}
             </div>
             <div>

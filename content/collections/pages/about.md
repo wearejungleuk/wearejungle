@@ -8,6 +8,8 @@ template: default
 page_builder:
   -
     id: about_hero_01
+    above_title: 'About Our Portsmouth Web Studio'
+    above_title_variant: above-title--secondary
     title: 'A Portsmouth Web Design Studio With No Monkey Business'
     intro_text:
       -

@@ -9,6 +9,8 @@ page_builder:
     id: mhowyt8a
     image_left: asset-207.svg
     image_right: asset-200.svg
+    above_title: 'Thanks From Jungle'
+    above_title_variant: above-title--secondary
     title: 'Thank you for your submission'
     text:
       -

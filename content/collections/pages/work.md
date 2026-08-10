@@ -8,6 +8,8 @@ template: default
 page_builder:
   -
     id: work_hero_01
+    above_title: 'Portsmouth Web Design Portfolio'
+    above_title_variant: above-title--secondary
     title: 'Websites that actually work'
     text:
       -
