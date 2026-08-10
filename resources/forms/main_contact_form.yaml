@@ -2,9 +2,8 @@ title: 'Main Contact Form'
 email:
   -
     id: mhony8ks
-    to: hello@wearejungle.co.uk
+    to: 'hello@wearejungle.co.uk, kay@wearejungle.co.uk'
     cc: hello@wearejungle.co.uk
     bcc: hello@wearejungle.co.uk
     from: noreply@wearejungle.co.uk
-    reply_to: noreply@wearejungle.co.uk
     subject: 'We Are Jungle Website - Contact Form'

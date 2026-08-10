@@ -21,7 +21,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1784651312
+updated_at: 1786354124
 background_video: 'https://vimeo.com/1134286354'
 card_image_2: watford-smiles-hero.png
 hero_background_colour: brand-primary
@@ -165,7 +165,7 @@ page_builder:
     id: work_cta_watford_smiles
     above_title: 'Have a project like this?'
     above_title_variant: above-title--light-blue
-    title: "Build a Website That Fits Your Practice"
+    title: 'Build a Website That Fits Your Practice'
     text:
       -
         type: paragraph

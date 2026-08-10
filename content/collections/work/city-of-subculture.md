@@ -242,5 +242,8 @@ hero_image: city-of-subculture-hero-1785325979.jpg
 screenshot_1: city-of-subculture-stats.jpg
 screenshot_2: city-of-sub-culture-directory.jpg
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1785326007
+updated_at: 1786354214
+preview_image: city-of-sub-culture-directory.jpg
+preview_background_image: hello-portsmouth.jpg
+card_image_2: city-of-subculture-hero.jpg
 ---
