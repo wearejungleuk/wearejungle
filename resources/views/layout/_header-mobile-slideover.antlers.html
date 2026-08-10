@@ -36,7 +36,7 @@
                     @click="activeMenu = activeMenu === '{{ id }}' ? null : '{{ id }}'"
                     class="w-full flex items-center justify-between py-3 text-left group"
                 >
-                    <span class="font-heading uppercase text-white text-[38px] sm:text-[48px] leading-none transition-colors duration-200 group-hover:text-brand-secondary">{{ title }}</span>
+                    <span class="font-heading uppercase text-white text-[28px] sm:text-[36px] leading-none transition-colors duration-200 group-hover:text-brand-secondary">{{ title }}</span>
                     <i class="fa-sharp fa-regular fa-arrow-down-right text-white text-[22px] transition-all duration-300" :class="activeMenu === '{{ id }}' ? 'rotate-180 text-brand-secondary' : ''"></i>
                 </button>
                 <ul x-show="activeMenu === '{{ id }}'" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" class="pb-3 pl-2 flex flex-col gap-1" x-cloak>
@@ -52,12 +52,12 @@
                 {{ else }}
                 {{ if url | contains('calendly') }}
                 <a href="{{ brand:calendly_link }}" target="_blank" class="flex items-center justify-between py-3 group">
-                    <span class="font-heading uppercase text-white text-[38px] sm:text-[48px] leading-none transition-colors duration-200 group-hover:text-brand-secondary">{{ title }}</span>
+                    <span class="font-heading uppercase text-white text-[28px] sm:text-[36px] leading-none transition-colors duration-200 group-hover:text-brand-secondary">{{ title }}</span>
                     <i class="fa-sharp fa-regular fa-arrow-up-right text-white text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"></i>
                 </a>
                 {{ else }}
                 <a href="{{ url }}" @click="open = false" class="flex items-center justify-between py-3 group">
-                    <span class="font-heading uppercase text-white text-[38px] sm:text-[48px] leading-none transition-colors duration-200 group-hover:text-brand-secondary">{{ title }}</span>
+                    <span class="font-heading uppercase text-white text-[28px] sm:text-[36px] leading-none transition-colors duration-200 group-hover:text-brand-secondary">{{ title }}</span>
                     <i class="fa-sharp fa-regular fa-arrow-up-right text-white text-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"></i>
                 </a>
                 {{ /if }}
