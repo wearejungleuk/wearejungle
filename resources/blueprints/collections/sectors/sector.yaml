@@ -185,14 +185,14 @@ tabs:
       -
         fields:
           -
-            handle: seo_title
+            handle: meta_title
             field:
               type: text
-              display: 'Title tag'
+              display: 'Meta Title'
               instructions: 'Pattern: Web Design for [Sector] | We Are Jungle. Do NOT include Portsmouth.'
           -
             handle: meta_description
             field:
               type: textarea
-              display: 'Meta description'
+              display: 'Meta Description'
               character_limit: 155
