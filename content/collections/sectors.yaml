@@ -1,11 +1,12 @@
 title: Sectors
-template: default
-layout: layout
-revisions: false
 route: '/sectors/{slug}'
-orderable: true
+template: sectors/show
+layout: layout
 sort_by: order
-sort_dir: asc
+structure:
+  root: true
+inject:
+  breadcrumb_parent: Sectors
 preview_targets:
   -
     label: Entry

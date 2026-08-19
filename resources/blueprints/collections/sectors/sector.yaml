@@ -1,93 +1,198 @@
 title: Sector
 tabs:
   main:
-    display: Main
+    display: Content
     sections:
       -
+        display: Hero
         fields:
           -
             handle: title
             field:
               type: text
               required: true
+              display: 'Page title'
+              instructions: 'Sentence case, e.g. Web design for mortgage advisors'
               validate:
                 - required
           -
-            handle: card_text
-            field:
-              type: textarea
-              display: 'Card Text (Homepage)'
-              instructions: 'Short description shown on the homepage sectors section.'
-          -
-            handle: page_text
-            field:
-              type: textarea
-              display: 'Page Text (Sectors Page)'
-              instructions: 'Longer paragraph description shown on the sectors listing page.'
-          -
-            handle: key_points
-            field:
-              type: replicator
-              display: 'Key Points (Sectors Page)'
-              instructions: 'Bullet points shown on the sectors listing page (aim for 4).'
-              sets:
-                new_set_group:
-                  display: 'New Set Group'
-                  sets:
-                    new_set:
-                      display: 'Key Point'
-                      fields:
-                        -
-                          handle: label
-                          field:
-                            type: text
-                            display: Label
-          -
-            handle: card_image
-            field:
-              max_files: 1
-              container: assets
-              type: assets
-              display: 'Card Image'
-              instructions: 'Image shown on related sector cards.'
-              restrict: false
-          -
-            handle: ad_headline
+            handle: sector_name
             field:
               type: text
-              display: 'Ad Bar Headline'
-              instructions: 'Short, punchy line shown as the ad bar headline (e.g. "Built for your sector"). Aim for 4-8 words. Optional - falls back to the sector title.'
+              required: true
+              display: 'Short sector name'
+              instructions: 'Used in nav, footer and cross-links. e.g. Mortgage advisors'
+              validate:
+                - required
           -
-            handle: ad_image
+            handle: hero_intro
             field:
-              max_files: 1
-              container: assets
-              type: assets
-              display: 'Ad Bar Image'
-              instructions: 'Solid image shown on the right side of the in-blog ad bar that promotes this sector. Aim for a portrait or square crop that still reads at ~200px wide. Optional - if blank, the Card Image is used.'
-              restrict: false
+              type: textarea
+              display: 'Hero intro'
+              character_limit: 220
+              instructions: 'One or two sentences. Must be specific to this sector.'
           -
-            handle: icon
+            handle: hero_image
             field:
-              max_files: 1
-              container: assets
               type: assets
-              display: Icon
-              instructions: 'White icon on transparent background. Displayed on a black rounded square.'
+              container: assets
+              max_files: 1
+              display: 'Hero image'
       -
-        display: 'Page Builder'
+        display: 'The problem'
         fields:
           -
-            handle: page_builder
-            field: page_builder.page_builder
-  sidebar:
-    display: Sidebar
+            handle: problems
+            field:
+              type: grid
+              mode: stacked
+              min_rows: 3
+              max_rows: 4
+              display: 'Sector pain points'
+              instructions: 'Real problems this sector has. If it would apply to any industry, it does not belong here.'
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    required: true
+                    validate:
+                      - required
+                -
+                  handle: body
+                  field:
+                    type: textarea
+                    character_limit: 300
+      -
+        display: 'What we build'
+        fields:
+          -
+            handle: features
+            field:
+              type: grid
+              mode: stacked
+              min_rows: 3
+              max_rows: 6
+              display: 'Sector-specific features'
+              instructions: 'Functionality that would NOT appear on another sector page. Minimum three.'
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    required: true
+                    validate:
+                      - required
+                -
+                  handle: body
+                  field:
+                    type: textarea
+                    character_limit: 300
+                -
+                  handle: icon
+                  field:
+                    type: assets
+                    container: assets
+                    max_files: 1
+      -
+        display: 'Main content'
+        fields:
+          -
+            handle: body
+            field:
+              type: bard
+              display: 'Body copy'
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - table
+                - quote
+                - anchor
+              save_html: false
+      -
+        display: Proof
+        fields:
+          -
+            handle: featured_case_study
+            field:
+              type: entries
+              collections:
+                - work
+              max_items: 1
+              display: 'Featured case study'
+              instructions: 'Required. No case study means this page should not be published.'
+              validate:
+                - required
+          -
+            handle: sector_term
+            field:
+              type: terms
+              taxonomies:
+                - sectors
+              max_items: 1
+              display: 'Sector taxonomy term'
+              instructions: 'Used to auto-pull related case studies.'
+      -
+        display: FAQs
+        fields:
+          -
+            handle: faqs
+            field:
+              type: grid
+              mode: stacked
+              min_rows: 4
+              display: 'Sector FAQs'
+              instructions: 'Questions this sector actually asks. Do not copy the generic service page FAQs.'
+              fields:
+                -
+                  handle: question
+                  field:
+                    type: text
+                    required: true
+                    validate:
+                      - required
+                -
+                  handle: answer
+                  field:
+                    type: bard
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - anchor
+      -
+        display: Pricing
+        fields:
+          -
+            handle: price_from
+            field:
+              type: text
+              display: 'Indicative starting price'
+              instructions: 'e.g. £5,000. Must match /pricing.'
+          -
+            handle: timescale
+            field:
+              type: text
+              display: 'Typical timescale'
+              instructions: 'e.g. 8 to 10 weeks'
+  seo:
+    display: SEO
     sections:
       -
         fields:
           -
-            handle: slug
+            handle: seo_title
             field:
-              type: slug
-              localizable: true
-              validate: 'max:200'
+              type: text
+              display: 'Title tag'
+              instructions: 'Pattern: Web Design for [Sector] | We Are Jungle. Do NOT include Portsmouth.'
+          -
+            handle: meta_description
+            field:
+              type: textarea
+              display: 'Meta description'
+              character_limit: 155
