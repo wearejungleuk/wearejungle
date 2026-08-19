@@ -1,0 +1,52 @@
+{{#
+    Sector pricing summary.
+    Params:
+    - price_from (string): indicative starting figure, e.g. £5,000
+    - timescale (string): e.g. 8 to 10 weeks
+    - cta_text (string): CTA label
+    - cta_url (string): CTA target (usually /pricing)
+#}}
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+        <div class="bg-brand-secondary border-[3px] border-black rounded-[40px] lg:rounded-[60px] p-8 md:p-12 lg:p-16">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+
+                <div class="lg:col-span-2">
+                    <h2 class="font-heading uppercase text-black text-[32px] sm:text-[38px] lg:text-[42px] leading-none mb-6 js-fade-up">
+                        What it costs, roughly
+                    </h2>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-10">
+                        {{ if price_from }}
+                            <div class="js-fade-up">
+                                <div class="font-body uppercase tracking-[0.18em] text-black/70 text-[12px] mb-2">
+                                    From
+                                </div>
+                                <div class="font-heading text-black text-[36px] lg:text-[44px] leading-none">
+                                    {{ price_from }}
+                                </div>
+                            </div>
+                        {{ /if }}
+                        {{ if timescale }}
+                            <div class="js-fade-up">
+                                <div class="font-body uppercase tracking-[0.18em] text-black/70 text-[12px] mb-2">
+                                    Typical timescale
+                                </div>
+                                <div class="font-heading text-black text-[36px] lg:text-[44px] leading-none">
+                                    {{ timescale }}
+                                </div>
+                            </div>
+                        {{ /if }}
+                    </div>
+                </div>
+
+                {{ if cta_text && cta_url }}
+                    <div class="lg:text-right js-fade-up">
+                        {{ partial:components/button url="{ cta_url }" title="{ cta_text }" classes="button--primary" }}
+                    </div>
+                {{ /if }}
+
+            </div>
+        </div>
+    </div>
+</section>

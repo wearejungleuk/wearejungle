@@ -1,0 +1,61 @@
+{{#
+    Shared FAQ accordion.
+    Params:
+    - items (grid): rows with `question` (text) and `answer` (bard)
+    - title (string, optional): section heading. Defaults to "Frequently asked".
+
+    Uses one Alpine x-data at the wrapper with a single `open` index, so
+    only one panel can be open at a time. Do NOT reintroduce per-item
+    x-data - the brief calls this out explicitly.
+#}}
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+
+        <div class="text-center max-w-[720px] mx-auto mb-12 lg:mb-16">
+            <h2 class="font-heading uppercase text-[38px] sm:text-[46px] lg:text-[52px] leading-none text-white js-fade-up">
+                {{ title ?? 'Frequently asked' }}
+            </h2>
+        </div>
+
+        {{ if items }}
+            <div class="max-w-[860px] mx-auto" x-data="{ open: null }">
+                {{ items }}
+                    <div class="js-fade-up">
+                        <div style="border-top: 1px solid rgba(255,255,255,0.2)">
+                            <button
+                                @click="open === {{ index }} ? open = null : open = {{ index }}"
+                                class="w-full flex items-center justify-between gap-6 py-6 text-left"
+                                :aria-expanded="open === {{ index }}"
+                            >
+                                <span class="font-heading uppercase text-[17px] lg:text-[20px] leading-snug text-white">{{ question }}</span>
+                                <span
+                                    class="flex-shrink-0 w-[36px] h-[36px] flex items-center justify-center bg-brand-secondary text-black transition-transform duration-300"
+                                    style="border-radius: 8px"
+                                    :class="open === {{ index }} ? 'rotate-45' : ''"
+                                >
+                                    <i class="fa-sharp fa-regular fa-plus text-[13px]"></i>
+                                </span>
+                            </button>
+                            <div
+                                x-show="open === {{ index }}"
+                                x-cloak
+                                x-transition:enter="transition ease-out duration-200"
+                                x-transition:enter-start="opacity-0 -translate-y-1"
+                                x-transition:enter-end="opacity-100 translate-y-0"
+                                x-transition:leave="transition ease-in duration-150"
+                                x-transition:leave-start="opacity-100 translate-y-0"
+                                x-transition:leave-end="opacity-0 -translate-y-1"
+                            >
+                                <div class="bard text-white/90 text-[16px] lg:text-[17px] leading-relaxed pb-6">
+                                    {{ answer }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{ /items }}
+                <div style="border-top: 1px solid rgba(255,255,255,0.2)"></div>
+            </div>
+        {{ /if }}
+
+    </div>
+</section>

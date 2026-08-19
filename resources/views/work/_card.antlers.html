@@ -1,0 +1,30 @@
+{{#
+    Compact case study card for grids.
+    Params:
+    - title (string): case study title
+    - url (string): case study URL
+    - image (asset): preview image
+#}}
+<a href="{{ url }}" class="group block rounded-[20px] border-[2px] border-black overflow-hidden bg-black">
+    <div class="relative aspect-[4/3] bg-black overflow-hidden">
+        {{ if image }}
+            {{ glide:image width="800" height="600" fit="crop" }}
+                <img src="{{ url }}" alt="{{ alt ?? title }}"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                     loading="lazy">
+            {{ /glide:image }}
+        {{ /if }}
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+    </div>
+    <div class="p-6 lg:p-7 bg-black">
+        {{ if title }}
+            <h3 class="font-heading uppercase text-white text-[18px] lg:text-[20px] leading-tight">
+                {{ title }}
+            </h3>
+        {{ /if }}
+        <div class="mt-4 inline-flex items-center gap-2 font-body uppercase tracking-[0.14em] text-brand-secondary text-[12px]">
+            View
+            <i class="fa-sharp fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+        </div>
+    </div>
+</a>

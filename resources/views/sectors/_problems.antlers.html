@@ -1,0 +1,35 @@
+{{#
+    Sector pain points.
+    Params:
+    - items (grid): rows with `heading` and `body`
+#}}
+<section class="bg-black py-16 lg:py-24">
+    <div class="container">
+
+        <div class="max-w-[720px] mb-12 lg:mb-16">
+            <h2 class="font-heading uppercase text-white text-[38px] sm:text-[46px] lg:text-[52px] leading-none js-fade-up">
+                The problems we hear
+            </h2>
+        </div>
+
+        {{ if items }}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                {{ items }}
+                    <div class="p-8 lg:p-10 rounded-[24px] border border-white/15 bg-white/[0.03] js-fade-up">
+                        {{ if heading }}
+                            <h3 class="font-heading uppercase text-brand-secondary text-[22px] lg:text-[24px] leading-tight mb-4">
+                                {{ heading }}
+                            </h3>
+                        {{ /if }}
+                        {{ if body }}
+                            <p class="font-body text-white/80 text-[16px] lg:text-[17px] leading-relaxed">
+                                {{ body }}
+                            </p>
+                        {{ /if }}
+                    </div>
+                {{ /items }}
+            </div>
+        {{ /if }}
+
+    </div>
+</section>

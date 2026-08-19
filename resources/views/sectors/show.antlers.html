@@ -1,0 +1,91 @@
+{{#
+    Sector landing page.
+    Structured template driven by fixed blueprint fields, not the page
+    builder. Order and presence of blocks are enforced by the blueprint,
+    so this template only renders what the entry provides.
+#}}
+
+{{ partial:sectors/hero
+    :heading="title"
+    :intro="hero_intro"
+    :image="hero_image"
+    cta_text="Start your project"
+    cta_url="/contact"
+}}
+
+{{ if problems }}
+    {{ partial:sectors/problems :items="problems" }}
+{{ /if }}
+
+{{ if features }}
+    {{ partial:sectors/features :items="features" }}
+{{ /if }}
+
+{{ if body }}
+    <section class="bg-brand-primary py-16 lg:py-24">
+        <div class="container">
+            <div class="prose prose-lg max-w-3xl mx-auto text-white bard">
+                {{ body }}
+            </div>
+        </div>
+    </section>
+{{ /if }}
+
+{{ if featured_case_study }}
+    {{ featured_case_study }}
+        {{ partial:work/featured-card
+            :title="title"
+            :excerpt="preview_text ?? excerpt"
+            :url="url"
+            :image="preview_background_image ?? hero_image"
+        }}
+    {{ /featured_case_study }}
+{{ /if }}
+
+{{ if sector_term }}
+    {{ sector_term }}
+        {{ collection:work taxonomy:sectors="{ slug }" limit="4" as="related_work" }}
+            {{ if related_work | count > 0 }}
+                <section class="bg-brand-primary py-16 lg:py-24">
+                    <div class="container">
+                        <div class="mb-10 lg:mb-14">
+                            <h2 class="font-heading uppercase text-[38px] sm:text-[42px] lg:text-[44px] leading-none text-white">More work in this sector</h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                            {{ related_work }}
+                                {{ partial:work/card
+                                    :title="title"
+                                    :url="url"
+                                    :image="preview_background_image ?? hero_image"
+                                }}
+                            {{ /related_work }}
+                        </div>
+                    </div>
+                </section>
+            {{ /if }}
+        {{ /collection:work }}
+    {{ /sector_term }}
+{{ /if }}
+
+{{ partial:shared/process }}
+
+{{ if faqs }}
+    {{ partial:shared/faq-accordion :items="faqs" title="Common questions" }}
+{{ /if }}
+
+{{ if price_from }}
+    {{ partial:sectors/pricing
+        :price_from="price_from"
+        :timescale="timescale"
+        cta_text="See full pricing"
+        cta_url="/pricing"
+    }}
+{{ /if }}
+
+{{ partial:shared/testimonials limit="3" }}
+
+{{ partial:shared/cta
+    heading="Let's talk about your project"
+    cta_text="Book a meeting"
+    cta_url="/contact"
+}}

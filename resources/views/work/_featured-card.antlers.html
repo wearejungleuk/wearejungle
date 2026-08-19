@@ -1,0 +1,55 @@
+{{#
+    Featured case study card for use on sector pages.
+    Params:
+    - title (string): case study title
+    - excerpt (string): preview text
+    - url (string): case study URL
+    - image (asset): preview image
+#}}
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+
+        <div class="mb-10 lg:mb-14">
+            <div class="font-body uppercase tracking-[0.18em] text-white/70 text-[12px] mb-3 js-fade-up">
+                Featured case study
+            </div>
+            <h2 class="font-heading uppercase text-white text-[38px] sm:text-[46px] lg:text-[52px] leading-none js-fade-up">
+                See it in the wild
+            </h2>
+        </div>
+
+        <a href="{{ url }}" class="group block rounded-[24px] lg:rounded-[32px] border-[3px] border-black overflow-hidden bg-black">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-stretch">
+
+                <div class="relative min-h-[280px] lg:min-h-[420px] bg-black overflow-hidden">
+                    {{ if image }}
+                        {{ glide:image width="1200" fit="crop" }}
+                            <img src="{{ url }}" alt="{{ alt ?? title }}"
+                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                                 loading="lazy">
+                        {{ /glide:image }}
+                    {{ /if }}
+                </div>
+
+                <div class="p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+                    {{ if title }}
+                        <h3 class="font-heading uppercase text-white text-[26px] sm:text-[30px] lg:text-[36px] leading-tight mb-6">
+                            {{ title }}
+                        </h3>
+                    {{ /if }}
+                    {{ if excerpt }}
+                        <p class="font-body text-white/85 text-[16px] lg:text-[17px] leading-relaxed mb-8">
+                            {{ excerpt | strip_tags }}
+                        </p>
+                    {{ /if }}
+                    <div class="inline-flex items-center gap-3 font-body uppercase tracking-[0.14em] text-brand-secondary text-[13px]">
+                        Read the case study
+                        <i class="fa-sharp fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </div>
+                </div>
+
+            </div>
+        </a>
+
+    </div>
+</section>

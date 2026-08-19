@@ -1,0 +1,46 @@
+{{#
+    Sector hero.
+    Params:
+    - heading (string): main headline
+    - intro (string): short intro paragraph
+    - image (asset): optional hero image
+    - cta_text (string): CTA label
+    - cta_url (string): CTA target
+#}}
+<section class="pt-[140px] md:pt-[160px] lg:pt-[200px] pb-16 lg:pb-24 bg-brand-primary">
+    <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+            <div class="lg:col-span-7 max-w-[760px]">
+                {{ if heading }}
+                    <h1 class="font-heading uppercase text-white text-[36px] sm:text-[46px] lg:text-[56px] xl:text-[64px] leading-[1.05] mb-6 lg:mb-8 js-fade-up">
+                        {{ heading }}
+                    </h1>
+                {{ /if }}
+
+                {{ if intro }}
+                    <div class="font-body text-white/90 text-[17px] lg:text-[19px] leading-relaxed mb-8 lg:mb-10 js-fade-up">
+                        {{ intro | nl2br }}
+                    </div>
+                {{ /if }}
+
+                {{ if cta_text && cta_url }}
+                    <div class="js-fade-up">
+                        {{ partial:components/button url="{ cta_url }" title="{ cta_text }" classes="button--secondary" }}
+                    </div>
+                {{ /if }}
+            </div>
+
+            {{ if image }}
+                <div class="lg:col-span-5 js-fade-up">
+                    {{ glide:image width="900" fit="crop" }}
+                        <img src="{{ url }}" alt="{{ alt ?? heading }}"
+                             class="w-full h-auto rounded-[24px] lg:rounded-[32px] border-[3px] border-black shadow-2xl"
+                             loading="eager">
+                    {{ /glide:image }}
+                </div>
+            {{ /if }}
+
+        </div>
+    </div>
+</section>

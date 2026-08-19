@@ -1,0 +1,36 @@
+{{#
+    Shared closing CTA.
+    Params:
+    - heading (string): CTA headline
+    - cta_text (string): button label
+    - cta_url (string): button target
+    - subheading (string, optional): supporting line
+#}}
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+        <div class="bg-brand-secondary border-[3px] border-black rounded-[40px] lg:rounded-[60px] p-8 md:p-12 lg:p-16">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+
+                <div class="lg:col-span-2">
+                    {{ if heading }}
+                        <h2 class="font-heading uppercase text-black text-[32px] sm:text-[40px] lg:text-[48px] leading-none mb-4 js-fade-up">
+                            {{ heading }}
+                        </h2>
+                    {{ /if }}
+                    {{ if subheading }}
+                        <p class="font-body text-black/75 text-[17px] lg:text-[19px] leading-relaxed js-fade-up">
+                            {{ subheading }}
+                        </p>
+                    {{ /if }}
+                </div>
+
+                {{ if cta_text && cta_url }}
+                    <div class="lg:text-right js-fade-up">
+                        {{ partial:components/button url="{ cta_url }" title="{ cta_text }" classes="button--primary" }}
+                    </div>
+                {{ /if }}
+
+            </div>
+        </div>
+    </div>
+</section>
