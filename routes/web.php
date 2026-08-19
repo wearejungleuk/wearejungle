@@ -58,19 +58,18 @@ Route::get('/author/{slug}', fn () => redirect('/blog', 301))->where('slug', '.*
 
 // Legacy sector URLs from the old WordPress site.
 //
-// The two priority-1 sectors (construction, mortgage advisors) are being
-// rebuilt at the same URL and therefore need no redirect - Statamic will
-// serve the new entry once it exists. They are only listed here as
-// no-op comments so the full historical set is documented in one place.
+// Construction is being rebuilt at the same URL, so it needs no
+// redirect - Statamic will serve the new entry once it exists. Listed
+// here as a comment so the full historical set is documented in one place.
 //
-// - /sectors/web-design-for-construction   -> rebuilt in place
-// - /sectors/web-design-for-mortgage-advisors -> rebuilt in place
+// - /sectors/web-design-for-construction -> rebuilt in place
 //
-// The renamed sectors point at the new URLs the CMS will start serving
-// as soon as the corresponding sector entries are published. The
-// estate-agents URL is not on the sector shortlist, so it falls back
-// to /services/web-design.
+// Mortgage advisors, estate agents and the old /sectors/ index have no
+// replacement sector page in the current plan, so they fall back to
+// /services/web-design. Dentists is being rebuilt under the new
+// dental-practices slug.
 Route::permanentRedirect('/sectors', '/services/web-design');
+Route::permanentRedirect('/sectors/web-design-for-mortgage-advisors', '/services/web-design');
 Route::permanentRedirect('/sectors/web-design-for-estate-agents', '/services/web-design');
 Route::permanentRedirect('/sectors/websites-for-dentists', '/sectors/web-design-for-dental-practices');
-Route::permanentRedirect('/sectors/web-design-for-recruitment-consultants', '/sectors/web-design-for-recruitment-agencies');
+Route::permanentRedirect('/sectors/web-design-for-recruitment-consultants', '/services/web-design');
