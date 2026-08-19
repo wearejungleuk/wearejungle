@@ -29,6 +29,8 @@ work_type:
   - web-design
   - web-development
   - hosting
+sectors:
+  - dental
 website_url: 'https://www.watfordsmiles.co.uk'
 overview_heading: 'A high-end dental website that finally matches the brand.'
 overview_body:

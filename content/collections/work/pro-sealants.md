@@ -25,6 +25,8 @@ work_type:
   - web-design
   - web-development
   - e-commerce
+sectors:
+  - construction
 website_url: 'https://prosealants.co.uk'
 overview_heading: 'A Shopify store that made its first sale within a week.'
 overview_body:

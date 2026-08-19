@@ -23,6 +23,8 @@ work_type:
   - web-design
   - web-development
   - hosting
+sectors:
+  - manufacturing
 website_url: 'https://www.qvis.co.uk'
 overview_heading: 'A bespoke website built to handle a huge, technical product catalogue.'
 overview_body:

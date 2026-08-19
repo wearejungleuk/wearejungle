@@ -22,6 +22,8 @@ hero_background_colour: brand-primary
 work_type:
   - web-development
   - hosting
+sectors:
+  - construction
 website_url: 'https://www.cs-gardenoffices.co.uk'
 overview_heading: 'A custom website build for a garden offices business hitting the limits of Wix.'
 overview_body:

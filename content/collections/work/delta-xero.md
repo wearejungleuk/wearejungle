@@ -23,6 +23,9 @@ work_type:
   - web-design
   - web-development
   - hosting
+sectors:
+  - construction
+  - manufacturing
 website_url: 'https://delta-xero.com'
 overview_heading: 'A bespoke website that finally matches how technical the products are.'
 overview_body:

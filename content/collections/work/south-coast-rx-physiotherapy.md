@@ -25,6 +25,8 @@ work_type:
   - web-design
   - web-development
   - hosting
+sectors:
+  - healthcare
 website_url: 'https://southcoastrxphysiotherapy.co.uk'
 overview_heading: "A modern physio website that finally reflects how much they've grown."
 overview_body:
