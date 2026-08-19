@@ -1,0 +1,93 @@
+title: Sector
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: card_text
+            field:
+              type: textarea
+              display: 'Card Text (Homepage)'
+              instructions: 'Short description shown on the homepage sectors section.'
+          -
+            handle: page_text
+            field:
+              type: textarea
+              display: 'Page Text (Sectors Page)'
+              instructions: 'Longer paragraph description shown on the sectors listing page.'
+          -
+            handle: key_points
+            field:
+              type: replicator
+              display: 'Key Points (Sectors Page)'
+              instructions: 'Bullet points shown on the sectors listing page (aim for 4).'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'Key Point'
+                      fields:
+                        -
+                          handle: label
+                          field:
+                            type: text
+                            display: Label
+          -
+            handle: card_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Card Image'
+              instructions: 'Image shown on related sector cards.'
+              restrict: false
+          -
+            handle: ad_headline
+            field:
+              type: text
+              display: 'Ad Bar Headline'
+              instructions: 'Short, punchy line shown as the ad bar headline (e.g. "Built for your sector"). Aim for 4-8 words. Optional - falls back to the sector title.'
+          -
+            handle: ad_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Ad Bar Image'
+              instructions: 'Solid image shown on the right side of the in-blog ad bar that promotes this sector. Aim for a portrait or square crop that still reads at ~200px wide. Optional - if blank, the Card Image is used.'
+              restrict: false
+          -
+            handle: icon
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Icon
+              instructions: 'White icon on transparent background. Displayed on a black rounded square.'
+      -
+        display: 'Page Builder'
+        fields:
+          -
+            handle: page_builder
+            field: page_builder.page_builder
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

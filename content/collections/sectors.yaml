@@ -1,0 +1,13 @@
+title: Sectors
+template: default
+layout: layout
+revisions: false
+route: '/sectors/{slug}'
+orderable: true
+sort_by: order
+sort_dir: asc
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
