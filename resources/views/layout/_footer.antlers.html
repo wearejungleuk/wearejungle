@@ -43,6 +43,22 @@
                 </div>
             </div>
         </div>
+        {{# Sectors we work in - only renders once at least one sector entry is published. #}}
+        {{ collection:sectors as="published_sectors" }}
+            {{ if published_sectors | count > 0 }}
+                <div class="pt-10 mt-10 border-t">
+                    <p class="uppercase font-heading mb-4 lg:mb-6 text-[20px]">Sectors we work in</p>
+                    <ul class="flex flex-wrap gap-x-6 gap-y-2">
+                        {{ published_sectors }}
+                            <li>
+                                <a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ sector_name ?? title }}</a>
+                            </li>
+                        {{ /published_sectors }}
+                    </ul>
+                </div>
+            {{ /if }}
+        {{ /collection:sectors }}
+
         <div class="py-4 border-t mt-10">
             <p>&copy; {{ now format="Y" }} We Are Jungle Ltd | Company number 16357238</p>
         </div>

@@ -1,0 +1,53 @@
+{{#
+    Sectors list page-builder block.
+    Renders a card for every published sector entry. Fields consumed:
+    - above_title (optional): small chip label above the section title
+    - above_title_variant (optional): style class for the above-title component
+    - title (optional): section heading
+
+    Renders nothing if the sectors collection is empty, so this block
+    can sit on the page safely before any sectors are published.
+#}}
+{{ collection:sectors as="sectors_in_footer_block" }}
+    {{ if sectors_in_footer_block | count > 0 }}
+        <section class="bg-brand-primary py-16 lg:py-24">
+            <div class="container">
+
+                {{ if above_title or title }}
+                    <div class="mb-10 lg:mb-14">
+                        {{ if above_title }}
+                            <div class="js-fade-up">
+                                {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant ?? 'above-title--light-blue' }" }}
+                            </div>
+                        {{ /if }}
+                        {{ if title }}
+                            <h2 class="font-heading uppercase text-[38px] sm:text-[48px] lg:text-[48px] leading-none text-white js-fade-up">{{ title }}</h2>
+                        {{ /if }}
+                    </div>
+                {{ /if }}
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    {{ sectors_in_footer_block }}
+                        <a href="{{ url }}" class="group bg-brand-dark-blue p-8 lg:p-10 flex flex-col justify-between gap-8 js-fade-up hover:bg-black transition-colors duration-300" style="border-radius: 20px">
+                            <div>
+                                <h3 class="font-heading uppercase text-white text-[26px] lg:text-[30px] leading-tight mb-4">
+                                    {{ sector_name ?? title }}
+                                </h3>
+                                {{ if hero_intro }}
+                                    <p class="text-white/80 text-[15px] lg:text-[16px] leading-relaxed">
+                                        {{ hero_intro | truncate:160 }}
+                                    </p>
+                                {{ /if }}
+                            </div>
+                            <span class="inline-flex items-center gap-3 font-heading uppercase text-brand-secondary text-[13px] lg:text-[14px] tracking-wide">
+                                View sector
+                                <i class="fa-sharp fa-regular fa-arrow-up-right text-[12px] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"></i>
+                            </span>
+                        </a>
+                    {{ /sectors_in_footer_block }}
+                </div>
+
+            </div>
+        </section>
+    {{ /if }}
+{{ /collection:sectors }}

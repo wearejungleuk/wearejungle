@@ -1,0 +1,37 @@
+{{#
+    Sector back-links for a case study.
+    Renders pill links to any published sector page whose sector_term
+    matches one of the sector taxonomy terms attached to this work entry.
+
+    Renders nothing if:
+    - the work entry is not tagged with any sectors, or
+    - none of the tagged sectors have a published sector page yet.
+
+    Reads `sectors` from the parent work entry scope.
+#}}
+{{ if sectors }}
+    {{ work_sector_slugs = sectors | pluck:slug }}
+    {{ collection:sectors as="sector_pages" }}
+        {{ matched = sector_pages | where:sector_term:in:work_sector_slugs }}
+        {{ if matched | count > 0 }}
+            <section class="bg-brand-primary pt-12 pb-6 lg:pt-16 lg:pb-8">
+                <div class="container">
+                    <div class="text-center max-w-[720px] mx-auto">
+                        <p class="font-body uppercase tracking-[0.18em] text-white/70 text-[12px] mb-4 js-fade-up">
+                            Part of our sector work
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-3 lg:gap-4 js-fade-up">
+                            {{ matched }}
+                                <a href="{{ url }}"
+                                   class="inline-flex items-center gap-2 border border-white/30 text-white text-[13px] lg:text-[14px] uppercase tracking-wider px-5 py-2 rounded-full hover:bg-white hover:text-brand-primary transition-colors duration-200">
+                                    {{ sector_name ?? title }}
+                                    <i class="fa-sharp fa-solid fa-arrow-up-right text-[11px]"></i>
+                                </a>
+                            {{ /matched }}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {{ /if }}
+    {{ /collection:sectors }}
+{{ /if }}
