@@ -26,3 +26,32 @@ Route::permanentRedirect('/work-type/web-design', '/services/web-design');
 Route::permanentRedirect('/work-type/web-development', '/services/web-development');
 Route::permanentRedirect('/work-type/e-commerce', '/services/e-commerce');
 Route::permanentRedirect('/work-type/hosting', '/services/support-hosting');
+
+// Legacy WordPress blog URLs.
+// Old site published posts at the root (e.g. /how-much-does-a-website-cost/)
+// and had a /blogs/ index. Aggregating everything to the current /blog
+// listing recovers Google's crawl signal on the old URLs without a per-post
+// mapping into the new Statamic collection. Slugs pulled from the Wayback
+// Machine CDX index (http://web.archive.org/cdx/search/cdx?url=wearejungle.co.uk/*).
+Route::permanentRedirect('/blogs', '/blog');
+Route::permanentRedirect('/16-strategies-to-enhance-your-e-commerce-conversion-efficiency', '/blog');
+Route::permanentRedirect('/50-years-of-hip-hop-my-top-5-albums', '/blog');
+Route::permanentRedirect('/a-culinary-tour-of-portsmouth-my-favourite-haunts', '/blog');
+Route::permanentRedirect('/choosing-the-ideal-web-design-agency', '/blog');
+Route::permanentRedirect('/damira-dental-we-are-jungle-triumphs-at-dentistry-2023-awards', '/blog');
+Route::permanentRedirect('/embrace-spring-cleaning-for-your-website-even-in-autumn', '/blog');
+Route::permanentRedirect('/free-website-health-check-and-review', '/blog');
+Route::permanentRedirect('/how-much-does-a-website-cost', '/blog');
+Route::permanentRedirect('/how-to-attract-patients-with-your-dental-website-design', '/blog');
+Route::permanentRedirect('/how-to-install-wordpress-on-a-server', '/blog');
+Route::permanentRedirect('/integrating-your-wordpress-or-shopify-website-into-your-crm', '/blog');
+Route::permanentRedirect('/introducing-we-are-jungle', '/blog');
+Route::permanentRedirect('/meet-our-new-star-intern-a-qa-with-augie', '/blog');
+Route::permanentRedirect('/my-favourite-things-to-do-in-portsmouth', '/blog');
+Route::permanentRedirect('/why-estate-agents-need-a-new-website', '/blog');
+Route::permanentRedirect('/wordpress-or-wix-website', '/blog');
+
+// Old WordPress taxonomy archives (categories and author pages) all
+// funnel to the current blog listing.
+Route::get('/category/{slug}', fn () => redirect('/blog', 301))->where('slug', '.*');
+Route::get('/author/{slug}', fn () => redirect('/blog', 301))->where('slug', '.*');
