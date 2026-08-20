@@ -2,12 +2,12 @@
 id: f8142c54-0000-0000-0000-000000000001
 blueprint: service
 title: 'Web Design'
-meta_title: 'Custom Web Design Portsmouth | We Are Jungle'
-meta_description: 'Custom web design in Portsmouth built around your brand. No templates, no trends for the sake of it. Considered design that guides users and drives results.'
+meta_title: 'Bespoke Web Design Services | UX, UI & Website Redesign'
+meta_description: 'Bespoke web design services for growing businesses. UX and UI design, website redesigns and conversion-focused builds from an in-house UK team.'
 slug: web-design
-ad_headline: 'Custom Web Design Built Around Your Brand'
-card_text: 'Design that looks the part and works hard behind the scenes - built to guide users, build trust, and drive action.'
-page_text: 'Good design is more than how a site looks - it is about how it works. We create websites that guide users naturally, build trust quickly, and make it easy for people to take the next step. Every layout, typeface, and colour choice is made with purpose. No trends for the sake of it. Just clear, considered design built around your brand and your customers.'
+ad_headline: 'Bespoke Web Design That Fits Your Business'
+card_text: 'Bespoke web design for growing businesses. UX and UI, website redesigns and conversion-focused builds - custom, not cookie-cutter.'
+page_text: 'Bespoke web design means starting from your business, not from a template. We design websites around how the business actually works, the people it needs to reach, and the action you want them to take. UX, UI, redesigns and new builds, all in-house, all custom, and all built to earn their keep for years rather than months.'
 key_points:
   -
     id: kp_wdes_01
@@ -33,29 +33,29 @@ icon: web_design.svg
 page_builder:
   -
     id: services_hero_wd_01
-    above_title: 'Web Design Portsmouth'
-    title: 'Web Design That Works for Your Business'
+    above_title: 'Web Design'
+    title: 'Bespoke web design services'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'We design websites for ambitious businesses. Purposeful layouts, sharp visuals, and a user experience that guides people toward the action you want them to take - not just a site that looks nice.'
+            text: 'Bespoke web design for growing businesses that have outgrown a template. UX, UI, website redesigns and conversion-focused new builds - designed around your business, not adjusted to fit it. All in-house, all custom, and all built to earn their keep.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
     enabled: true
   -
     id: split_stats_wd_01
-    title: 'Web Design With Strategy Behind It'
+    title: 'What bespoke web design actually means'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Every visual decision we make has a reason. Great web design isn't about aesthetics alone - it's about converting visitors, communicating your value clearly, and giving people a reason to trust you."
+            text: "Bespoke means the site is designed around your business, not adjusted from a template that was designed around nobody in particular. Every layout decision has a reason. Every page exists because a user needs it. Every interaction is built to guide someone from arrival to the action you want them to take, not just to look nice on the way through."
     stats:
       -
         id: stat_wd_01
@@ -241,6 +241,218 @@ page_builder:
     type: process_carousel
     enabled: true
   -
+    id: prose_wd_uxui
+    above_title: 'UX and UI'
+    above_title_variant: above-title--light-blue
+    title: 'UX and UI design'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'UX design and UI design are not the same thing and both matter. UX is the invisible work: user journeys, information architecture, wireframes, how a visitor gets from arrival to the action you need them to take. UI is what they see: layout, typography, colour, spacing, the visual system that ties it all together.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'We do both in-house, without handing off between agencies. UX research and wireframes come first, so the structure is right before anyone picks a colour. Then visual design against those wireframes, in high fidelity, so what gets signed off is what gets built. If a project needs formal user testing or click-tests we bring in a specialist, but the vast majority of work is answered by the discovery call, the sitemap, and looking honestly at the analytics on the existing site.'
+    type: prose_section
+    enabled: true
+  -
+    id: prose_wd_redesign
+    above_title: 'Website Redesign'
+    above_title_variant: above-title--light-blue
+    title: 'Website redesign services'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Most of the design work we do is a redesign. A business has outgrown a site that was fine three years ago, or the design has drifted through decisions nobody quite made deliberately, or a rebrand has left the site behind. Sometimes the site was built by another agency who has moved on, and the version now on the internet is the version that was launched then patched.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'A redesign is a chance to fix what the old site got wrong without losing what it got right. That means understanding what the current site is doing (the analytics, the URLs that get traffic, the pages that convert) before we redesign anything, so the parts that are earning their keep survive the move. Rankings, internal links and the URLs Google trusts get preserved wherever they can be. Nothing gets thrown out on aesthetic grounds if it is quietly bringing you leads.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: ''
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /work/cs-garden-offices
+            text: 'CS Garden Offices'
+          -
+            type: text
+            text: ' came off Wix that way. The Google Ads campaign kept running against the old site while the new one was built in staging. When we switched over, tracking was set up against the new URLs on day one and the ad account did not miss a beat.'
+    type: prose_section
+    enabled: true
+  -
+    id: prose_wd_b2b
+    above_title: 'B2B and Growing Businesses'
+    above_title_variant: above-title--light-blue
+    title: 'Web design for B2B and growing businesses'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Most of our design work is B2B. '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /work/delta-xero
+            text: 'Delta-Xero'
+          -
+            type: text
+            text: ' build industrial filtration systems for safety-critical environments. '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /work/qvis
+            text: 'QVIS'
+          -
+            type: text
+            text: ' manufacture lighting and security equipment for a technical audience. MRG Effitas run cybersecurity testing for enterprise clients. The common thread is a business selling something considered, to a buyer who wants substance before they get to price.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'B2B web design is a different discipline to consumer web design. Buyers arrive with a specific technical question and give up faster if the answer is buried. Case studies, downloadable specs, product filtering and clear differentiation matter more than a big hero video. Trust signals are different too - real accreditations, real named clients, real numbers.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'That is the discipline we build to. Content architecture that gets people to the answer fast. Design that reads as serious without being dull. Proof that stands up to a specifier or a procurement team looking for reasons to move on.'
+    type: prose_section
+    enabled: true
+  -
+    id: prose_wd_included
+    above_title: Deliverables
+    above_title_variant: above-title--light-blue
+    title: 'What is included in our web design service'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Every web design project includes:'
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: 'Discovery '
+                  -
+                    type: text
+                    text: 'A structured kick-off covering the business, the audience, the goals and the constraints. Sitemap and content structure agreed before anything visual starts.'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: 'UX wireframes '
+                  -
+                    type: text
+                    text: 'Low-fidelity structure for every core page type, signed off before visual design begins.'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: 'Visual design '
+                  -
+                    type: text
+                    text: 'High-fidelity comps of every core page in the browser sizes that matter. Design system, typography, colour, iconography, imagery direction, all documented.'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: 'Refinement '
+                  -
+                    type: text
+                    text: 'Structured rounds of amends. Feedback is scoped so the project moves forward each round rather than looping.'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: 'Design handover to development '
+                  -
+                    type: text
+                    text: 'Clean design files, component notes and asset export. If we are also building the site, this happens internally.'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: 'Launch QA '
+                  -
+                    type: text
+                    text: 'Review of the built site against the approved design across the browsers and devices that matter to your audience.'
+    type: prose_section
+    enabled: true
+  -
     id: reviews_wd_01
     title: 'The proof is in the praise'
     text:
@@ -405,83 +617,69 @@ page_builder:
     enabled: true
   -
     id: faq_accordion_wd_01
-    above_title: 'Common Questions'
-    title: 'Web Design FAQs'
+    above_title: FAQs
+    title: 'Web design frequently asked questions'
     items:
       -
-        id: faq_wd_01
-        question: 'Do you design before you build?'
+        id: faq_wd_bespoke
+        question: 'What is bespoke web design?'
         answer:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'Yes. Every project goes through a full design phase before development begins. You sign off the designs before any code is written - no building on assumptions.'
+                text: 'Bespoke web design means the site is designed around the business, not adjusted to fit a template. Every page, section and interaction is planned against what the audience needs to do and what the business needs them to do. Nothing on the page exists because a theme happened to include it. Nothing is missing because the template did not support it.'
         type: new_set
         enabled: true
       -
-        id: faq_wd_02
-        question: 'Can you redesign our existing website?'
+        id: faq_wd_design_vs_dev
+        question: 'What is the difference between web design and web development?'
         answer:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'Yes. Whether your site needs a full redesign or just needs modernising, we can start from your existing structure or take a completely fresh approach.'
+                text: 'Web design is planning what the site looks like, how it is structured, and how visitors move through it. Web development is turning that design into working code. Both are needed, both are done in-house here, and both are covered by the '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/web-development
+                text: 'web development service'
+              -
+                type: text
+                text: '. On most projects the same people are involved in both, which cuts out the usual handover friction.'
         type: new_set
         enabled: true
       -
-        id: faq_wd_03
-        question: 'What do we need to provide?'
+        id: faq_wd_cost
+        question: 'How much does website design cost?'
         answer:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'Ideally your brand guidelines, any existing assets, and a clear brief on who your customers are. We can work with less - but the more context we have, the better the result.'
-        type: new_set
-        enabled: true
-      -
-        id: faq_wd_04
-        question: 'How many rounds of revisions do we get?'
-        answer:
-          -
-            type: paragraph
-            content:
+                text: 'Custom design and build projects start from £4,500 + VAT. Design-only projects (where another team will do the development) sit lower. Larger builds with e-commerce, integrations or extensive UX work run higher. Every project is scoped individually and quoted fixed before it starts. Full pricing is on the '
               -
                 type: text
-                text: 'Our process includes structured rounds of amends at each stage. This keeps projects moving efficiently while giving you meaningful input at the right moments.'
-        type: new_set
-        enabled: true
-      -
-        id: faq_wd_05
-        question: 'Will the design be unique to us?'
-        answer:
-          -
-            type: paragraph
-            content:
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /pricing
+                text: 'pricing page'
               -
                 type: text
-                text: "Yes. We don't use templates. Every design is created specifically for your business, your brand, and your users - from a blank canvas."
+                text: '.'
         type: new_set
         enabled: true
       -
-        id: faq_wd_06
-        question: 'Do you design for mobile?'
-        answer:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Yes. We design across breakpoints from the start - desktop and mobile are considered together, never as an afterthought.'
-        type: new_set
-        enabled: true
-      -
-        id: faq_wd_07
+        id: faq_wd_timeline
         question: 'How long does the design process take?'
         answer:
           -
@@ -489,19 +687,31 @@ page_builder:
             content:
               -
                 type: text
-                text: 'Typically 3–5 weeks for the design phase. This sits within a total project timeline of 10–12 weeks for a standard brochure site.'
+                text: 'Typically 3 to 5 weeks for the design phase alone, sitting inside a total project timeline of 8 to 12 weeks for a standard build. Bigger builds run longer. You get a target date at kick-off and a fixed launch window before development starts.'
         type: new_set
         enabled: true
       -
-        id: faq_wd_08
-        question: 'Do you offer branding alongside web design?'
+        id: faq_wd_revisions
+        question: 'How many rounds of revisions are included?'
         answer:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'We can work within an existing brand identity or develop a new one alongside the web design project. If your branding needs attention first, we can help with that too.'
+                text: 'Two full rounds of design amends at each stage, plus a final tidy-up. Every round is scoped so the project moves forward rather than looping. If a project needs more than that, we discuss the reason honestly rather than just billing more rounds.'
+        type: new_set
+        enabled: true
+      -
+        id: faq_wd_redesign
+        question: 'Can you redesign my existing website?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Yes. Most of our design work is a redesign. We review the existing site first (analytics, traffic sources, converting pages) so what is working gets preserved and what is not gets replaced. Rankings and URL history are protected wherever we can, and we handle the migration end to end.'
         type: new_set
         enabled: true
     type: faq_accordion
