@@ -13,14 +13,15 @@
             <div class="animate-marquee flex whitespace-nowrap">
                 {{ images }}
                 <div class="flex items-center mx-4 lg:mx-8 min-w-[100px] lg:min-w-[150px] max-w-[150px]">
-                    <img src="{{ url }}" alt="{{ alt }}" class="w-full max-h-[80px]">
+                    <img src="{{ url }}" alt="{{ alt ?? (filename | replace:'-':' ' | replace:'_':' ' | replace:' logo':'' | title) }} logo" class="w-full max-h-[80px]">
                 </div>
                 {{ /images }}
             </div>
-            <div class="absolute top-0 animate-marquee2 whitespace-nowrap flex">
+            {{# Marquee duplicate for infinite scroll effect - hidden from AT and search engines to prevent double-counting the logo alt text. #}}
+            <div class="absolute top-0 animate-marquee2 whitespace-nowrap flex" aria-hidden="true">
                 {{ images }}
                 <div class="flex items-center mx-4 lg:mx-8 min-w-[100px] lg:min-w-[150px] max-w-[150px]">
-                    <img src="{{ url }}" alt="{{ alt }}" class="w-full max-h-[80px]">
+                    <img src="{{ url }}" alt="" class="w-full max-h-[80px]">
                 </div>
                 {{ /images }}
             </div>
