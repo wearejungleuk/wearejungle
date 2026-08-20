@@ -1,12 +1,12 @@
 ---
 id: c8d9e0f1-0000-0000-0000-000000000008
 blueprint: service
-title: 'Support & Hosting'
-meta_title: 'Website Support & Hosting Portsmouth | We Are Jungle'
-meta_description: 'Monthly website support and hosting from We Are Jungle. 24/7 uptime monitoring, updates, security, and development hours. No long-term contracts.'
+title: 'Website Maintenance and Support'
+meta_title: 'Website Maintenance & Support Services | Plans from £190'
+meta_description: 'Website maintenance and support plans for WordPress, Shopify and Statamic. Updates, monitoring, backups and development hours from an in-house UK team.'
 slug: support-hosting
-card_text: 'Website care plans, secure hosting, and ongoing development support. We keep your site fast, secure, and running - so you can focus on your business.'
-page_text: 'Most agencies build your site and then disappear. We do not. Our support plans keep your website in the best possible shape long after launch - routine updates, security monitoring, performance checks, and ongoing development hours when you need them. We treat your site as if it were our own, because our reputation depends on it staying that way.'
+card_text: 'Website maintenance and support plans that keep your site secure, fast and moving forward. Plans from £190 per month, no long-term contracts.'
+page_text: 'Most agencies build a site and disappear. We do not. Our website maintenance and support plans keep the sites we build and the sites we take on in the best possible shape long after launch - plugin and theme updates, uptime monitoring, backups, security patches, monthly reports and ongoing development hours when you need them.'
 key_points:
   -
     id: kp_supp_01
@@ -28,34 +28,34 @@ key_points:
     label: 'Development hours included for ongoing improvements'
     type: new_set
     enabled: true
-ad_headline: 'WordPress Website Maintenance & UK Care Plans'
+ad_headline: 'Website Maintenance and Support From £190/Month'
 icon: support.svg
 page_builder:
   -
     id: services_hero_sh_01
     above_title: 'Website Support Portsmouth'
-    title: 'Support & Hosting That Actually Has Your Back'
+    title: 'Website maintenance and support services'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "We don't disappear after launch. From monthly updates and uptime monitoring to managed hosting and ongoing development support, we keep your website secure, fast, and moving forward - without you having to think about it."
+            text: "Support and maintenance that actually has your back. Plugin and theme updates, uptime monitoring, backups, security patches, monthly reports and development hours - handled by an in-house UK team who already know your site. Plans start at £190 per month with no long-term contracts."
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
     enabled: true
   -
     id: split_stats_sh_01
-    title: "Website Support That Works While You Don't"
+    title: '50+ sites, quietly kept in shape'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Most agencies build the site and walk away. We stick around. Our support plans are designed for businesses that need their website to stay online, stay secure, and keep improving - without having to manage it themselves.'
+            text: "Fifty-plus live websites currently sit on our support plans. Some were built by us. Plenty were built by other agencies and picked up when the original developer moved on. All of them are patched, backed up, monitored and improved on a regular schedule so nothing has a chance to become a crisis."
     stats:
       -
         id: stat_sh_01
@@ -72,7 +72,7 @@ page_builder:
       -
         id: stat_sh_03
         number: 24/7
-        label: 'Uptime Monitoring'
+        label: 'Automated Uptime Monitoring'
         type: new_set
         enabled: true
     cta_title: 'Book a Call'
@@ -191,8 +191,8 @@ page_builder:
             enabled: true
           -
             id: feat_sh_e6
-            label: 'Priority response'
-            included: false
+            label: 'Response within 2 business days'
+            included: true
             type: new_set
             enabled: true
           -
@@ -313,6 +313,340 @@ page_builder:
       All plans cover WordPress, Shopify, and Statamic. Hours do not roll over. Additional hours billed at £95/hr + VAT.
       No long-term contracts; all support plans are on a 30-day rolling basis with 30 days' notice to cancel.
     type: pricing
+    enabled: true
+  -
+    id: prose_how_support_works
+    above_title: 'How Support Works'
+    above_title_variant: above-title--light-blue
+    title: 'How support actually works, start to finish'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'A price list is not the same as a plan. Here is what happens when you need something done.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Getting in touch'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Email, phone or the shared client channel we set up at onboarding. All three go to the same team. There is no ticketing portal to log into and no support desk to route through.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Estimating the work'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Requests are acknowledged in writing within the response time on your plan (2 business days on Essentials, next business day on Growth, same day on Priority). For anything more than a small tweak we come back with an estimate of hours and a rough window for the work, and wait for your OK before we start the clock.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Doing the work'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Anything low risk (content updates, small tweaks, plugin updates) is done directly on production. Anything larger goes through staging first, gets reviewed by you, and only ships once it is signed off. Nothing goes to live that you have not seen.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Reporting'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'A monthly report shows hours used, hours remaining, what was done, what was checked, and anything worth thinking about before next month. No jargon. No filler.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'A quick word on 24/7'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Uptime monitoring runs 24/7. Support does not. We are a small in-house UK team who do our best work between 9 and 5:30 UK time. If you need someone answering the phone at 3am, we are not the right agency. Almost everything that needs an urgent response actually needs a considered response by the same person the next morning, and we are here for that.'
+    type: prose_section
+    enabled: true
+  -
+    id: prose_take_over
+    above_title: 'Taking Over'
+    above_title_variant: above-title--light-blue
+    title: 'Taking on a website we did not build'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Most people who search for website maintenance already have a site and a problem. The original developer moved on, went quiet, retired, or was never on a retainer in the first place. If that is you, we take these sites on regularly. It is one of the most common ways we start working with a new client.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'What the handover involves'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'A short discovery call to understand what you have and what you need. Then we ask for access to the hosting, CMS, DNS and any third-party services the site relies on. Anything the previous developer set up in their own account (staging environments, plugin licences, deployment tools) we get moved into yours.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'A site audit before we commit'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Before starting the retainer we do a proper look through the site. Sometimes the code is clean, well organised and easy to work with. Sometimes it is not. If there is something that needs fixing before support can sensibly start (broken updates, insecure plugins, hosting that will not let us do our job) we tell you and quote for the fix upfront. Never a nasty surprise on invoice one.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'What if the build is bad?'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Sometimes a site is beyond a sensible support relationship - a WordPress build so plugin-heavy that every update is a coin flip, or a page-builder mess where nothing can be changed without breaking something else. When that happens we say so honestly and talk about whether a '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/web-design
+            text: 'redesign'
+          -
+            type: text
+            text: ' or migration makes more sense than propping up what is already there.'
+    type: prose_section
+    enabled: true
+  -
+    id: prose_wp_support
+    above_title: WordPress
+    above_title_variant: above-title--light-blue
+    title: 'WordPress maintenance and support'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'The bulk of our support work is on '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/wordpress-websites
+            text: 'WordPress'
+          -
+            type: text
+            text: '. Both sites we built and sites built by other agencies that we picked up later. If you have a WordPress site that has drifted, this is the right place to land.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Core, theme and plugin updates'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Every update is applied on staging first, tested against the pages that actually matter, then pushed to live. If something breaks in staging, we fix it before the update ships rather than telling you about it after.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Premium plugin licences'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Where we hold agency-level licences on plugins your site uses (ACF Pro, WP Rocket, Gravity Forms and similar), you get those covered as part of the plan. No separate renewals to track.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Security and hardening'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Malware scanning, login hardening, brute-force protection and file-integrity monitoring across every WordPress site on a support plan. If a vulnerability is disclosed on a plugin you use, we know before you do and patch before it becomes anything.'
+    type: prose_section
+    enabled: true
+  -
+    id: prose_other_platforms_support
+    above_title: 'Other Platforms'
+    above_title_variant: above-title--light-blue
+    title: 'Shopify, WooCommerce and Statamic support'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Every support plan also covers '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/shopify-websites
+            text: 'Shopify'
+          -
+            type: text
+            text: ', '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/woocommerce-websites
+            text: 'WooCommerce'
+          -
+            type: text
+            text: ' and '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/statamic-websites
+            text: 'Statamic'
+          -
+            type: text
+            text: '. The work looks similar - updates, monitoring, backups, development hours - but a few things are worth calling out.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'E-commerce sites tend to need more'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'A brochure site going down is inconvenient. A store going down loses money every minute. Shopify and WooCommerce sites usually sit on the Growth or Priority tier for that reason - the response time matters more than it does on a slower-moving site.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Statamic is a rare one'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Statamic is our house CMS for content-led builds. Very few agencies support it, so if you have a Statamic site and nobody to look after it, get in touch. We are one of the few places you will find long-term support for the platform.'
+    type: prose_section
+    enabled: true
+  -
+    id: prose_what_sits_with_hosting
+    above_title: Hosting
+    above_title_variant: above-title--light-blue
+    title: 'What sits with hosting, what sits with support'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Support and hosting are related but they are not the same thing. Support is human time on a retainer. Hosting is the environment the site runs in. Splitting them out makes both clearer.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Support covers the people-doing-the-work side: plugin and theme updates, uptime monitoring, backups and restores, security scanning and patching, all development hours, all content work. Hosting covers the infrastructure side: the server itself, SSL certificates, staging environments, DNS management, server-level speed. We do both, but on separate lines so you know what you are paying for.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Most clients bundle the two together with us. Same team, one relationship, less admin. See the '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/hosting
+            text: 'managed hosting page'
+          -
+            type: text
+            text: ' for what the hosting side covers. If you already have hosting you are happy with, keep it - support works fine alongside another provider.'
+    cta:
+      url: /services/hosting
+    cta_title: 'See hosting page'
+    cta_variant: button--secondary
+    type: prose_section
     enabled: true
   -
     id: reviews_sh_01
@@ -464,8 +798,56 @@ page_builder:
   -
     id: faq_accordion_sh_01
     above_title: 'Common Questions'
-    title: 'Support & Hosting FAQs'
+    title: 'Website maintenance and support FAQs'
     items:
+      -
+        id: faq_sh_new_what
+        question: 'What is website maintenance?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Website maintenance is the ongoing work needed to keep a live website running properly: plugin and theme updates applied and tested, uptime monitoring, backups, security scanning and patching, monthly checks, and development hours for the small changes every site accumulates. Without it, sites drift, break unpredictably, and become expensive to rescue when they do.'
+        type: new_set
+        enabled: true
+      -
+        id: faq_sh_new_takeover
+        question: 'Can you take over a website built by another agency?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Yes, and this is how most of our new support clients start. We do a short discovery call, review the site, quote for any upfront fixes needed before support can sensibly start, then onboard you onto the plan that fits. Access, licences and any tooling the original developer set up in their own accounts get moved into yours as part of the handover.'
+        type: new_set
+        enabled: true
+      -
+        id: faq_sh_new_cost
+        question: 'How much does website maintenance cost?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Plans start at £190 per month on the Essentials tier, £360 on Growth and £640 on Priority. Every tier is on a 30-day rolling basis with no long-term contracts and includes a set number of development hours (2 / 4 / 8) alongside the maintenance work. Extra hours are billed at £95 + VAT.'
+        type: new_set
+        enabled: true
+      -
+        id: faq_sh_new_response
+        question: 'How quickly will you respond if something breaks?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Uptime monitoring runs 24/7 so we usually know before you do. Response times on the plans are 2 business days on Essentials, next business day on Growth and same day on Priority - these are the times to acknowledge and estimate, not always the time to complete. We are a small in-house UK team, not a 24/7 support desk. Almost every emergency is best handled by a considered response the next morning rather than a rushed one at 3am.'
+        type: new_set
+        enabled: true
       -
         id: faq_sh_01
         question: 'What platforms do your support plans cover?'
@@ -535,7 +917,18 @@ page_builder:
             content:
               -
                 type: text
-                text: 'Yes. We can host your site on fast, reliable managed hosting as part of your support arrangement. If you already have hosting, we can work alongside your existing provider.'
+                text: 'Yes. See the '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/hosting
+                text: 'managed hosting page'
+              -
+                type: text
+                text: ' for what the hosting side covers. Most clients bundle hosting into their support plan for one relationship and one invoice. If you already have hosting you are happy with, keep it - support works fine alongside another provider.'
         type: new_set
         enabled: true
       -
