@@ -10,7 +10,7 @@ preview_text:
     content:
       -
         type: text
-        text: 'An Elementor site that took 12 seconds to load, rebuilt as a fast custom WordPress theme with bespoke course filtering and a WooCommerce checkout that actually sells.'
+        text: 'An Elementor site that took 12 seconds to load, rebuilt as a fast custom WordPress theme with bespoke course filtering and a WooCommerce checkout. Load time dropped to under 1 second and monthly revenue climbed 410 percent within months.'
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false

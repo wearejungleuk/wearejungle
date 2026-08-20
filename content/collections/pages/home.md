@@ -148,6 +148,7 @@ page_builder:
       -
         id: mhndgasm
         client:
+          - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
           - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
           - d1b47741-1ae8-40d1-afd1-c5431c023b5f
           - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
