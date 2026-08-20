@@ -21,12 +21,14 @@
                 <div
                     class="bg-brand-dark-blue p-8 lg:p-10 text-center js-fade-up"
                     style="border-radius: 20px"
+                    data-stat-target="{{ number }}"
                     x-data="{
-                        display: '0',
+                        display: '{{ number }}',
                         animate() {
-                            const raw = '{{ number }}';
+                            const raw = this.$el.dataset.statTarget;
                             const num = parseInt(raw);
                             const suffix = raw.replace(/[0-9]/g, '');
+                            this.display = '0' + suffix;
                             let frame = 0;
                             const total = 60;
                             const duration = 1200;
@@ -43,7 +45,7 @@
                     }"
                     x-intersect.once="animate()"
                 >
-                    <div class="font-heading uppercase text-[64px] lg:text-[80px] leading-none text-white mb-4" x-text="display"></div>
+                    <div class="font-heading uppercase text-[64px] lg:text-[80px] leading-none text-white mb-4" x-text="display">{{ number }}</div>
                     {{ if label }}
                         <p class="text-[16px] lg:text-[17px] text-white leading-snug">{{ label }}</p>
                     {{ /if }}

@@ -35,12 +35,14 @@
                         {{ stats }}
                         <div
                             class="py-5 border-b border-white {{ if index == 1 }}border-t{{ /if }}"
+                            data-stat-target="{{ number }}"
                             x-data="{
-                                display: '0',
+                                display: '{{ number }}',
                                 animate() {
-                                    const raw = '{{ number }}';
+                                    const raw = this.$el.dataset.statTarget;
                                     const num = parseInt(raw);
                                     const suffix = raw.replace(/[0-9]/g, '');
+                                    this.display = '0' + suffix;
                                     let frame = 0;
                                     const total = 60;
                                     const duration = 1200;
@@ -57,7 +59,7 @@
                             }"
                             x-intersect.once="animate()"
                         >
-                            <div class="font-heading uppercase text-[42px] lg:text-[52px] leading-none text-white" x-text="display"></div>
+                            <div class="font-heading uppercase text-[42px] lg:text-[52px] leading-none text-white" x-text="display">{{ number }}</div>
                             <div class="text-[16px] text-white mt-1">{{ label }}</div>
                         </div>
                         {{ /stats }}

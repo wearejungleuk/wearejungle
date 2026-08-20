@@ -1,0 +1,77 @@
+{{#
+    Homepage-specific schema.
+    LocalBusiness (subclass of Organization) with the Hilsea address,
+    phone, hours and service area, plus WebSite and WebPage nodes to
+    complete the graph.
+
+    Aardvark SEO emits Organization schema in the head separately.
+    Google is happy to see both because LocalBusiness inherits from
+    Organization.
+#}}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "LocalBusiness",
+            "@id": "https://wearejungle.co.uk/#localbusiness",
+            "name": "We Are Jungle",
+            "url": "https://wearejungle.co.uk",
+            "logo": "https://we-are-jungle.s3.eu-north-1.amazonaws.com/we-are-jungle-logo_we-are-jungle-primary-logo-whitespace-cream.svg",
+            "image": "https://we-are-jungle.s3.eu-north-1.amazonaws.com/we-are-jungle-logo_we-are-jungle-primary-logo-whitespace-cream.svg",
+            "email": "hello@wearejungle.co.uk",
+            "telephone": "+442392003967",
+            "priceRange": "££",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Gatcombe House, Copnor Rd, Hilsea",
+                "addressLocality": "Portsmouth",
+                "addressRegion": "Hampshire",
+                "postalCode": "PO3 5EJ",
+                "addressCountry": "GB"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 50.8302,
+                "longitude": -1.0790
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "17:30"
+                }
+            ],
+            "areaServed": [
+                { "@type": "City", "name": "Portsmouth" },
+                { "@type": "AdministrativeArea", "name": "Hampshire" },
+                { "@type": "Country", "name": "United Kingdom" }
+            ],
+            "sameAs": [
+                "https://www.instagram.com/we.are.jungle/",
+                "https://www.facebook.com/wearejungleuk/",
+                "https://www.linkedin.com/company/71991154"
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://wearejungle.co.uk/#website",
+            "name": "We Are Jungle",
+            "url": "https://wearejungle.co.uk",
+            "publisher": { "@id": "https://wearejungle.co.uk/#localbusiness" }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "{{ permalink }}#webpage",
+            "url": "{{ permalink }}",
+            "name": {{ (meta_title ?? title) | json }},
+            {{ if meta_description }}
+            "description": {{ meta_description | json }},
+            {{ /if }}
+            "isPartOf": { "@id": "https://wearejungle.co.uk/#website" },
+            "about": { "@id": "https://wearejungle.co.uk/#localbusiness" }
+        }
+    ]
+}
+</script>

@@ -28,8 +28,10 @@
     </style>
     {{ aardvark-seo:head }}
 
-    {{# JSON-LD schema. Skipped on the homepage - aardvark-seo already emits its own there. #}}
-    {{ unless id == 'home' }}
+    {{# JSON-LD schema. Homepage gets LocalBusiness schema; every other page gets the base + a page-specific partial. Aardvark SEO emits its own Organization node in the head alongside. #}}
+    {{ if id == 'home' }}
+        {{ partial:schema/home }}
+    {{ else }}
         {{ partial:schema/base }}
         {{ if collection == 'blog' }}
             {{ partial:schema/blog-post }}
@@ -50,7 +52,7 @@
         {{ elseif id == 'pricing' }}
             {{ partial:schema/pricing }}
         {{ /if }}
-    {{ /unless }}
+    {{ /if }}
     <link rel="stylesheet" href="https://use.typekit.net/jvu1tvl.css">
     <script src="https://kit.fontawesome.com/7f308f2602.js" crossorigin="anonymous"></script>
     {{ vite src="resources/js/site.js|resources/css/site.css" }}

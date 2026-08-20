@@ -50,7 +50,8 @@
                             <div class="relative overflow-hidden rounded-[20px] h-[65vw] min-h-[220px] mb-4">
                                 {{ partial:components/work_card_media hoverable="true" }}
                             </div>
-                            <h3 class="font-heading uppercase text-[22px]">{{ title }}</h3>
+                            {{# Mobile Swiper version - kept as div to avoid duplicating the desktop grid's h3s in the DOM. Desktop grid below is the canonical heading source. #}}
+                            <div class="font-heading uppercase text-[22px]">{{ title }}</div>
                             <div class="mt-2 text-[15px]">{{ preview_text }}</div>
                             <div class="mt-4 inline-flex items-center gap-3 font-heading uppercase text-[13px] tracking-wide transition-all duration-200 group-hover:gap-5">
                                 View project
@@ -63,12 +64,13 @@
             </div>
             <div class="mt-6 rounded-[20px] bg-[#1B5DF8] p-8">
                 <div class="flex gap-4">
-                    <h3 class="font-heading uppercase text-[25px] flex text-white">
+                    {{# Mobile version - div not h3 to avoid duplicating desktop CTA heading. #}}
+                    <div class="font-heading uppercase text-[25px] flex text-white">
                         <span class="flex-1">{{ block_title }}</span>
                         <div class="w-16 h-16">
                             {{ partial:components/icons.thumb }}
                         </div>
-                    </h3>
+                    </div>
                 </div>
                 <div class="text-[18px] text-white">
                     {{ block_text }}
