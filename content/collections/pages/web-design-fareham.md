@@ -3,20 +3,20 @@ id: 1c000002-fff0-4002-a1e1-000000000002
 blueprint: page
 title: 'Web Design Fareham'
 meta_title: 'Web Design in Fareham | We Are Jungle'
-meta_description: 'Bespoke web design for Fareham businesses. Manufacturing, professional services and retail. In-house UK team, based in Portsmouth, minutes away.'
+meta_description: 'Bespoke web design for Fareham businesses. Custom builds tailored to how your business works, from an in-house UK team based in Portsmouth. Any sector, any size.'
 template: default
 page_builder:
   -
     id: services_hero_fareham
     above_title: 'Web Design Fareham'
-    title: 'Web design in Fareham'
+    title: 'Custom builds without the compromise'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Bespoke web design for Fareham businesses, from an in-house UK team based in Portsmouth. Manufacturing, professional services, retail and the Segensworth-cluster technology firms - websites built around how the business actually works rather than adjusted from a template.'
+            text: 'Bespoke web design for Fareham businesses, from an in-house UK team based in Portsmouth. Custom builds tailored to how your business actually works, whatever the sector or size - not a template dressed up to look local.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -25,14 +25,14 @@ page_builder:
     id: prose_far_local
     above_title: Local
     above_title_variant: above-title--light-blue
-    title: 'Fareham is close enough that being local means it'
+    title: 'How local is a Portsmouth agency, really?'
     body:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Fareham is a fifteen minute drive down the M27, less on a good day. Close enough that being your web agency is not a "based nearby" claim on a card - it is a genuine door-to-door reality. If you want to meet in person, we can. If you want the whole project to run over email and Loom, we can do that too.'
+            text: 'Close enough that being your web agency is not a "based nearby" claim on a card - it is a genuine door-to-door reality. If you want to meet in person, we can. If you want the whole project to run over email and Loom, we can do that too.'
       -
         type: paragraph
         content:
@@ -230,7 +230,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'If your Fareham business has outgrown its current site and you want a bespoke rebuild from an in-house UK team minutes down the M27, book a call.'
+            text: 'If your Fareham business has outgrown its current site and you want a bespoke rebuild from a nearby in-house UK team, book a call.'
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg

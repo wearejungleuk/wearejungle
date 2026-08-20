@@ -3,20 +3,20 @@ id: 1c000004-c0de-4004-a1e1-000000000004
 blueprint: page
 title: 'Web Design Waterlooville'
 meta_title: 'Web Design in Waterlooville | We Are Jungle'
-meta_description: 'Bespoke web design for Waterlooville businesses. Local trade, professional services and retail. In-house UK team, based in Portsmouth just down the road.'
+meta_description: 'Bespoke web design for Waterlooville businesses. Custom builds tailored to how your business works, from an in-house UK team based in Portsmouth. Any sector, any size.'
 template: default
 page_builder:
   -
     id: services_hero_wville
     above_title: 'Web Design Waterlooville'
-    title: 'Web design in Waterlooville'
+    title: 'Bespoke design and development, in-house'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Bespoke web design for Waterlooville businesses, from an in-house UK team based in Portsmouth just down the A3. Local trade, professional services and independent retail - properly-built websites for businesses that have outgrown a template or a page builder.'
+            text: 'Bespoke web design for Waterlooville businesses, from an in-house UK team based in Portsmouth. Custom builds tailored to how your business actually works, whatever the sector or size - not a template dressed up to look local.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -25,20 +25,20 @@ page_builder:
     id: prose_wv_local
     above_title: Local
     above_title_variant: above-title--light-blue
-    title: 'Waterlooville is a short trip up the A3'
+    title: 'How local is a Portsmouth agency, really?'
     body:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Waterlooville is fifteen minutes up the A3 from the office. Close enough that in-person meetings are trivial. Most Waterlooville clients start with an on-site discovery call so we can see the business operating, then the rest of the project runs on video calls and shared staging URLs.'
+            text: 'Close enough that in-person meetings are trivial. Most Waterlooville clients start with an on-site discovery call so we can see the business operating, then the rest of the project runs on video calls and shared staging URLs.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'It is worth naming plainly: a lot of the "web design in Waterlooville" search results are agencies from further afield claiming local presence. We are not one of those. We are in Portsmouth, we work with Waterlooville businesses regularly, and we can be at your door in twenty minutes if it is the sort of conversation that needs a room and a whiteboard.'
+            text: 'It is worth naming plainly: a lot of the "web design in Waterlooville" search results are agencies from further afield claiming local presence. We are not one of those. We are in Portsmouth, we work with Waterlooville businesses regularly, and we can be at your door quickly if it is the sort of conversation that needs a room and a whiteboard.'
     type: prose_section
     enabled: true
   -
@@ -124,7 +124,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Waterlooville is a twenty minute drive so meetings can go either way. Discovery tends to be on-site so we can see how the business operates; ongoing sessions run on video calls with the occasional in-person for milestones.'
+            text: 'Waterlooville is close enough that meetings can go either way. Discovery tends to be on-site so we can see how the business operates. Ongoing sessions run on video calls with the occasional in-person for milestones.'
       -
         type: heading
         attrs:
@@ -230,7 +230,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'If your Waterlooville business has outgrown its current site and you want a proper rebuild from a nearby team, book a call.'
+            text: 'If your Waterlooville business has outgrown its current site and you want a proper rebuild from a nearby in-house UK team, book a call.'
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg

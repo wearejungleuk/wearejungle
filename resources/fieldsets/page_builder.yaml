@@ -1706,7 +1706,7 @@ fields:
                                   buttons:
                                     - bold
                                     - italic
-                                    - link
+                                    - anchor
             tech_carousel:
               display: 'Tech Carousel'
               fields:

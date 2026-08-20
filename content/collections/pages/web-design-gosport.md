@@ -3,20 +3,20 @@ id: 1c000005-6057-4005-a1e1-000000000005
 blueprint: page
 title: 'Web Design Gosport'
 meta_title: 'Web Design in Gosport | We Are Jungle'
-meta_description: 'Bespoke web design for Gosport businesses. Marine, defence, engineering and independent trade. In-house UK team, across the harbour in Portsmouth.'
+meta_description: 'Bespoke web design for Gosport businesses. Custom builds tailored to how your business works, from an in-house UK team based in Portsmouth. Any sector, any size.'
 template: default
 page_builder:
   -
     id: services_hero_gosport
     above_title: 'Web Design Gosport'
-    title: 'Web design in Gosport'
+    title: 'Websites for growing local businesses'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Bespoke web design for Gosport businesses, from an in-house UK team just across the harbour in Portsmouth. Marine, defence, engineering, independent retail and local trade - custom builds that fit the business rather than a template dressed up to look local.'
+            text: 'Bespoke web design for Gosport businesses, from an in-house UK team based in Portsmouth. Custom builds tailored to how your business actually works, whatever the sector or size - not a template dressed up to look local.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -25,20 +25,20 @@ page_builder:
     id: prose_gos_local
     above_title: Local
     above_title_variant: above-title--light-blue
-    title: 'Gosport is closer than the postcode suggests'
+    title: 'How local is a Portsmouth agency, really?'
     body:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'By road, Gosport is about forty minutes from the Portsmouth office - around the top of the harbour, through Fareham and back down. By ferry, it is about eight minutes on foot across the water. Which route we take usually depends on whether we need to bring a laptop and a coffee or a car and a proposal.'
+            text: 'Being in Portsmouth and being local to Gosport are the same thing in practice. The ferry across the harbour is often the fastest way there, and in-person meetings are easy either way. Discovery calls tend to happen on-site so we can see the business in its actual setting.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Either way, being in Portsmouth and being local to Gosport are the same thing in practice. In-person meetings are easy, and the ferry across the harbour is often the fastest way there. Discovery calls tend to happen on-site so we can see the business in its actual setting.'
+            text: 'We already work with a handful of businesses across the Gosport patch - different sectors, different sizes, but the same underlying story: a website that had reached its limit and needed a proper rebuild rather than another round of patches.'
     type: prose_section
     enabled: true
   -
@@ -124,7 +124,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Gosport is close by ferry, further by road. Either works - discovery is usually on-site so we can see the business operating; the rest of the project runs on video calls with the occasional in-person for bigger milestones.'
+            text: 'Either the ferry or the road works. Discovery is usually on-site so we can see the business operating. The rest of the project runs on video calls with the occasional in-person for bigger milestones.'
       -
         type: heading
         attrs:
@@ -192,7 +192,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'Yes. Most Gosport discovery calls happen on-site. We usually take the ferry - it is often faster than driving around the harbour, and it is a nice way to arrive.'
+                text: 'Yes. Most Gosport discovery calls happen on-site. We usually take the ferry across the harbour - it is a nice way to arrive.'
         type: new_set
         enabled: true
       -
@@ -230,7 +230,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'If your Gosport business has outgrown its current site and you want a proper rebuild from a team just across the harbour, book a call.'
+            text: 'If your Gosport business has outgrown its current site and you want a proper rebuild from a nearby in-house UK team, book a call.'
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg

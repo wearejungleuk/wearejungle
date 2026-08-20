@@ -3,20 +3,20 @@ id: 1c000003-4a5b-4003-a1e1-000000000003
 blueprint: page
 title: 'Web Design Havant'
 meta_title: 'Web Design in Havant | We Are Jungle'
-meta_description: 'Bespoke web design for Havant businesses. Industrial, retail, healthcare and professional services. In-house UK team, six miles down the road in Portsmouth.'
+meta_description: 'Bespoke web design for Havant businesses. Custom builds tailored to how your business works, from an in-house UK team based in Portsmouth. Any sector, any size.'
 template: default
 page_builder:
   -
     id: services_hero_havant
     above_title: 'Web Design Havant'
-    title: 'Web design in Havant'
+    title: 'Websites that actually earn their keep'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Bespoke web design for Havant businesses, from an in-house UK team six miles down the A27 in Portsmouth. Industrial, retail, healthcare and professional services - custom builds that fit the business rather than a template dressed up to look local.'
+            text: 'Bespoke web design for Havant businesses, from an in-house UK team based in Portsmouth. Custom builds tailored to how your business actually works, whatever the sector or size - not a template dressed up to look local.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -25,14 +25,14 @@ page_builder:
     id: prose_hav_local
     above_title: Local
     above_title_variant: above-title--light-blue
-    title: 'Havant is basically next door'
+    title: 'How local is a Portsmouth agency, really?'
     body:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Havant is a ten minute drive from the office. Close enough that being "local" is not a marketing word - it is a genuine door-to-door reality. In-person meetings are trivial; equally, everything can run remotely if that fits how you want to work.'
+            text: 'Close enough that being "local" is not a marketing word - it is a genuine door-to-door reality. In-person meetings are trivial. Equally, everything can run remotely if that fits how you want to work.'
       -
         type: paragraph
         content:
@@ -124,7 +124,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Havant is close enough that in-person is easy either way. Discovery usually happens on-site so we can see the business operating; ongoing sessions run on video calls with the occasional in-person for bigger milestones.'
+            text: 'Havant is close enough that in-person is easy either way. Discovery usually happens on-site so we can see the business operating. Ongoing sessions run on video calls with the occasional in-person for bigger milestones.'
       -
         type: heading
         attrs:
@@ -230,7 +230,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'If your Havant business has outgrown its current site and you want a proper rebuild from a team ten minutes down the road, book a call.'
+            text: 'If your Havant business has outgrown its current site and you want a proper rebuild from a nearby in-house UK team, book a call.'
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg

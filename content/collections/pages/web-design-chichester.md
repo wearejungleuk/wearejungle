@@ -3,20 +3,20 @@ id: 1c000001-ccc0-4001-a1e1-000000000001
 blueprint: page
 title: 'Web Design Chichester'
 meta_title: 'Web Design in Chichester | We Are Jungle'
-meta_description: 'Bespoke web design for Chichester businesses. Professional services, independent retail, hospitality and healthcare. In-house UK team, 15 miles down the A27.'
+meta_description: 'Bespoke web design for Chichester businesses. Custom builds tailored to how your business works, from an in-house UK team based in Portsmouth. Any sector, any size.'
 template: default
 page_builder:
   -
     id: services_hero_chichester
     above_title: 'Web Design Chichester'
-    title: 'Web design in Chichester'
+    title: 'Bespoke websites, built to last'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Bespoke web design for Chichester businesses, from an in-house UK team fifteen miles down the A27 in Portsmouth. Professional services, independent retail, hospitality and healthcare - the kind of considered growing operations that need a website to actually earn its keep, not just look nice on a phone.'
+            text: "Bespoke web design for Chichester businesses, from an in-house UK team based in Portsmouth. Custom builds tailored to how your business actually works, whatever the sector or size - not a template dressed up to look local."
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -25,14 +25,14 @@ page_builder:
     id: prose_chi_local
     above_title: Local
     above_title_variant: above-title--light-blue
-    title: 'Chichester is not far, and we do not pretend it is'
+    title: 'How local is a Portsmouth agency, really?'
     body:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Chichester is close enough that being based in Portsmouth is not really a compromise. Fifteen miles down the A27, thirty minutes on a good day. Close enough that we can drop in for a workshop, sit in a meeting room, walk you through the design in person rather than over a screen. Far enough that we bring the perspective of a city that is not wall-to-wall cathedral views and festival banners.'
+            text: 'Close enough. Close enough that we can drop in for a workshop, sit in a meeting room, walk you through the design in person rather than over a screen. Far enough that we bring the perspective of a neighbouring city rather than getting lost in yours.'
       -
         type: paragraph
         content:
@@ -124,7 +124,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Usually a video call, sometimes an in-person one at your offices or ours. We prefer to see the physical space of the business at least once - it changes how we design. For Chichester that is a quick trip either way.'
+            text: 'Usually a video call, sometimes an in-person one at your offices or ours. We prefer to see the physical space of the business at least once - it changes how we design.'
       -
         type: heading
         attrs:
@@ -192,7 +192,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'On a typical project, twice: once at discovery, once around design sign-off or launch. More if the project warrants it or if you would prefer more contact. Meetings can be at your offices, ours, or somewhere in between - the A27 is not a long drive either way.'
+                text: 'On a typical project, twice: once at discovery, once around design sign-off or launch. More if the project warrants it or if you would prefer more contact. Meetings can be at your offices, ours, or somewhere in between.'
         type: new_set
         enabled: true
       -
@@ -230,7 +230,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'If your Chichester business has outgrown its current site and you want a properly-built replacement from a team half an hour down the road, book a call.'
+            text: 'If your Chichester business has outgrown its current site and you want a properly-built replacement from a nearby in-house UK team, book a call.'
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg
