@@ -24,7 +24,7 @@ page_builder:
   -
     id: prose_chi_local
     above_title: Local
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How local is a Portsmouth agency, really?'
     body:
       -
@@ -39,12 +39,13 @@ page_builder:
           -
             type: text
             text: 'Most of our Chichester clients started as email-and-video-call relationships and turned into occasional-in-person as we got to know each other. There is no expectation of driving over every week; there is no barrier to it either.'
+    image_position: left
     type: prose_section
     enabled: true
   -
     id: prose_chi_businesses
     above_title: 'Who We Work With'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Chichester businesses we build websites for'
     body:
       -
@@ -70,12 +71,13 @@ page_builder:
           -
             type: text
             text: ', built around how each business actually operates, not a template dressed up to look local.'
+    image_position: right
     type: prose_section
     enabled: true
   -
     id: work_blocks_chi
     above_title: 'Recent Work'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Projects that translate well to (Chichester) businesses'
     blocks:
       -
@@ -108,7 +110,7 @@ page_builder:
   -
     id: process_chi_how_it_works
     above_title: 'How It Works'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How working with us looks from Chichester'
     intro_text: 'The process is the same whether we meet in person or work entirely over video.'
     steps:

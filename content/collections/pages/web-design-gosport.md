@@ -24,7 +24,7 @@ page_builder:
   -
     id: prose_gos_local
     above_title: Local
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How local is a Portsmouth agency, really?'
     body:
       -
@@ -39,12 +39,13 @@ page_builder:
           -
             type: text
             text: 'We already work with a handful of businesses across the Gosport patch - different sectors, different sizes, but the same underlying story: a website that had reached its limit and needed a proper rebuild rather than another round of patches.'
+    image_position: left
     type: prose_section
     enabled: true
   -
     id: prose_gos_businesses
     above_title: 'Who We Work With'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Gosport businesses we build websites for'
     body:
       -
@@ -70,12 +71,13 @@ page_builder:
           -
             type: text
             text: ' for businesses that need proper product catalogues, integrations with the tools that already run the business (quote systems, ERP, CRM), or a sensible redesign that gets them off a Wix or WordPress theme that has become the ceiling on growth.'
+    image_position: right
     type: prose_section
     enabled: true
   -
     id: work_blocks_gos
     above_title: 'Recent Work'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Recent Gosport-relevant (projects)'
     blocks:
       -
@@ -108,7 +110,7 @@ page_builder:
   -
     id: process_gos_how_it_works
     above_title: 'How It Works'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How working with us looks from Gosport'
     intro_text: 'How a project runs from first call through to going live.'
     steps:

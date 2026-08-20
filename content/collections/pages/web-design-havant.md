@@ -24,7 +24,7 @@ page_builder:
   -
     id: prose_hav_local
     above_title: Local
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How local is a Portsmouth agency, really?'
     body:
       -
@@ -39,12 +39,13 @@ page_builder:
           -
             type: text
             text: 'We already work with clients across the Havant patch - the Solent Industrial Estate, the town centre, and the wider commercial cluster around Bedhampton and Emsworth. Different sectors, different sizes, but the same underlying story: a website that had reached its limit and needed a proper rebuild rather than another round of patches.'
+    image_position: left
     type: prose_section
     enabled: true
   -
     id: prose_hav_businesses
     above_title: 'Who We Work With'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Havant businesses we build websites for'
     body:
       -
@@ -70,12 +71,13 @@ page_builder:
           -
             type: text
             text: ' for businesses that need proper product catalogues, integrations with the tools that already run the business, or a redesign that gets them off a WordPress theme that has become more maintenance than it is worth.'
+    image_position: right
     type: prose_section
     enabled: true
   -
     id: work_blocks_hav
     above_title: 'Recent Work'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Recent Havant-relevant (projects)'
     blocks:
       -
@@ -108,7 +110,7 @@ page_builder:
   -
     id: process_hav_how_it_works
     above_title: 'How It Works'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How working with us looks from Havant'
     intro_text: 'How the whole thing runs, from first call to ongoing support.'
     steps:

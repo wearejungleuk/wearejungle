@@ -24,7 +24,7 @@ page_builder:
   -
     id: prose_wv_local
     above_title: Local
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How local is a Portsmouth agency, really?'
     body:
       -
@@ -39,12 +39,13 @@ page_builder:
           -
             type: text
             text: 'It is worth naming plainly: a lot of the "web design in Waterlooville" search results are agencies from further afield claiming local presence. We are not one of those. We are in Portsmouth, we work with Waterlooville businesses regularly, and we can be at your door quickly if it is the sort of conversation that needs a room and a whiteboard.'
+    image_position: left
     type: prose_section
     enabled: true
   -
     id: prose_wv_businesses
     above_title: 'Who We Work With'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Waterlooville businesses we build websites for'
     body:
       -
@@ -70,12 +71,13 @@ page_builder:
           -
             type: text
             text: ' of sites that were fine three years ago and have quietly stopped keeping up. Wix or Squarespace sites that were the right call at launch and are now the ceiling on what the ad account can do. WordPress sites that were built on a premium theme by someone who has since moved on. Not scary rebuilds; sensible ones.'
+    image_position: right
     type: prose_section
     enabled: true
   -
     id: work_blocks_wv
     above_title: 'Recent Work'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Recent Waterlooville-relevant (projects)'
     blocks:
       -
@@ -108,7 +110,7 @@ page_builder:
   -
     id: process_wv_how_it_works
     above_title: 'How It Works'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How working with us looks from Waterlooville'
     intro_text: 'Same process for every project - in-person, entirely remote, or a mix.'
     steps:

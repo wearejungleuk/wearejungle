@@ -24,7 +24,7 @@ page_builder:
   -
     id: prose_far_local
     above_title: Local
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How local is a Portsmouth agency, really?'
     body:
       -
@@ -39,12 +39,13 @@ page_builder:
           -
             type: text
             text: 'We already work with a handful of businesses across Fareham and the surrounding Segensworth and Whiteley business parks. Different sectors, different sizes, but the same story: a website that had reached the limit of what a template or an off-the-shelf theme could sensibly do.'
+    image_position: left
     type: prose_section
     enabled: true
   -
     id: prose_far_businesses
     above_title: 'Who We Work With'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Fareham businesses we build websites for'
     body:
       -
@@ -70,12 +71,13 @@ page_builder:
           -
             type: text
             text: ' for businesses that need more than a template can deliver: proper product filtering for a technical catalogue, integrations with existing quote or CRM systems, or a redesign that gets a business off Wix or a WordPress theme that has become a maintenance burden.'
+    image_position: right
     type: prose_section
     enabled: true
   -
     id: work_blocks_far
     above_title: 'Recent Work'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Recent Fareham-relevant (projects)'
     blocks:
       -
@@ -108,7 +110,7 @@ page_builder:
   -
     id: process_far_how_it_works
     above_title: 'How It Works'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How working with us looks from Fareham'
     intro_text: 'Same process, however the meetings run - on-site, on video, or a mix.'
     steps:
