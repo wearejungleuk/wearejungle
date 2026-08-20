@@ -1,30 +1,41 @@
 {{#
     Prose section page-builder block.
-    Two rendering modes:
-    - With no image: centred single-column prose (SEO depth blocks, FAQs
-      preamble, pricing summaries).
-    - With an image: two-column split layout. Set image_position to
-      "left" or "right" to control which side the image sits on.
+    Always renders as a two-column image + text layout when
+    image_position is set (which is the default across the site).
+    If no image is uploaded yet, the image column shows a subtle
+    brand placeholder so the layout stays structurally intact and
+    the section does not look broken while images are being added.
+
+    If image_position is not set at all, falls back to centred prose.
 #}}
 <section class="bg-brand-primary py-16 lg:py-24">
     <div class="container">
 
-        {{ if image }}
-            {{# Two-column split layout. #}}
+        {{ if image_position }}
+            {{# Two-column split layout. Renders whether or not an image is uploaded. #}}
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center">
 
                 <div class="{{ if image_position == 'right' }}lg:order-1{{ else }}lg:order-2{{ /if }}">
-                    {{ glide:image width="1200" fit="crop" }}
-                        <img src="{{ url }}" alt="{{ alt ?? title }}"
-                             class="w-full h-auto rounded-[24px] lg:rounded-[32px] border-[3px] border-black shadow-2xl js-fade-up"
-                             loading="lazy">
-                    {{ /glide:image }}
+                    {{ if image }}
+                        {{ glide:image width="1200" fit="crop" }}
+                            <img src="{{ url }}" alt="{{ alt ?? title }}"
+                                 class="w-full h-auto rounded-[24px] lg:rounded-[32px] border-[3px] border-black shadow-2xl js-fade-up"
+                                 loading="lazy">
+                        {{ /glide:image }}
+                    {{ else }}
+                        {{# Placeholder while awaiting an image upload. Subtle brand block with the Julius mark centred. #}}
+                        <div class="aspect-[4/3] rounded-[24px] lg:rounded-[32px] border-[3px] border-black bg-brand-dark-blue flex items-center justify-center shadow-2xl js-fade-up">
+                            <div class="w-[32%] max-w-[180px] opacity-70">
+                                {{ partial:components/icons.julius-head }}
+                            </div>
+                        </div>
+                    {{ /if }}
                 </div>
 
                 <div class="{{ if image_position == 'right' }}lg:order-2{{ else }}lg:order-1{{ /if }}">
                     {{ if above_title }}
                         <div class="mb-6 js-fade-up">
-                            {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant ?? 'above-title--light-blue' }" }}
+                            {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant ?? 'above-title--secondary' }" }}
                         </div>
                     {{ /if }}
                     {{ if title }}
@@ -44,11 +55,11 @@
 
             </div>
         {{ else }}
-            {{# Centred single-column prose. #}}
+            {{# Fallback centred prose (only used if a prose_section entry has no image_position set at all). #}}
             <div class="max-w-[860px] mx-auto">
                 {{ if above_title }}
                     <div class="mb-6 js-fade-up">
-                        {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant ?? 'above-title--light-blue' }" }}
+                        {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant ?? 'above-title--secondary' }" }}
                     </div>
                 {{ /if }}
                 {{ if title }}
