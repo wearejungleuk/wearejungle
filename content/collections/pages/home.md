@@ -141,6 +141,8 @@ page_builder:
     enabled: true
   -
     id: mhndf9dy
+    above_title: 'Big-agency quality, small-team reliability'
+    above_title_variant: above-title--light-blue
     title: 'RECENT WEBSITE (PROJECTS)'
     blocks:
       -

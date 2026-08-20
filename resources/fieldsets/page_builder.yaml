@@ -390,6 +390,21 @@ fields:
                     type: text
                     display: 'Block ID'
                 -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
                   handle: title
                   field:
                     type: text

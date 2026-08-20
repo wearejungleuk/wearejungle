@@ -1,6 +1,11 @@
 <section id="{{ block_id }}" class="py-12 md:py-20 lg:py-28">
     <div class="container">
         <div class="text-center text-white mb-8 lg:mb-12 js-fade-up">
+            {{ if above_title }}
+                <div class="flex justify-center mb-4 lg:mb-6">
+                    {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant ?? 'above-title--light-blue' }" }}
+                </div>
+            {{ /if }}
             {{ if title }}
                 <h2 class="font-heading uppercase text-[45px] sm:text-[50px] md:text-[37px] lg:text-[44px] xl:text-[52px] 2xl:text-[68px] 3xl:text-[80px]">{{ title | highlight_brackets }}</h2>
             {{ /if }}
