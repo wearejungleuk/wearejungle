@@ -507,13 +507,6 @@ page_builder:
     type: faq_accordion
     enabled: true
   -
-    id: sectors_list_wd_01
-    above_title: 'Sectors'
-    above_title_variant: above-title--light-blue
-    title: 'Sectors we work in'
-    type: sectors_list
-    enabled: true
-  -
     id: cta_block_wd_01
     above_title: 'Web Design'
     title: "Don't Settle for a Website That Just Looks Pretty"
