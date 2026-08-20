@@ -2,9 +2,11 @@
 
 namespace App\Providers;
 
+use App\Listeners\NormaliseAssetFilename;
 use App\Listeners\VerifyTurnstile;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
+use Statamic\Events\AssetUploaded;
 use Statamic\Events\FormSubmitted;
 use Statamic\Statamic;
 
@@ -29,6 +31,10 @@ class AppServiceProvider extends ServiceProvider
             Event::forget(FormSubmitted::class);
             Event::listen(FormSubmitted::class, [VerifyTurnstile::class, 'handle']);
         });
+
+        // Normalise every newly-uploaded asset's filename to lowercase-
+        // hyphenated form so the S3 store stays consistent.
+        Event::listen(AssetUploaded::class, [NormaliseAssetFilename::class, 'handle']);
 
         // Statamic::vite('app', [
         //     'resources/js/cp.js',

@@ -82,7 +82,13 @@ return [
         */
 
         'defaults' => [
-            // 'quality' => 50,
+            // Serve every glide-manipulated image as WebP by default.
+            // Individual templates can override with `fm="jpg"` etc. if
+            // needed (e.g. for social share images that need broader
+            // compatibility). WebP saves ~25-35% file size vs JPEG at
+            // equivalent visual quality across every modern browser.
+            'fm' => 'webp',
+            'quality' => 82,
         ],
 
         /*
