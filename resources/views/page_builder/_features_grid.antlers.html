@@ -17,7 +17,7 @@
                 {{ items }}
                 {{ if first }}
                 <div class="bg-brand-dark-blue p-8 lg:p-10 flex flex-col js-fade-up lg:row-span-2 {{ if image }}2xl:row-span-3{{ /if }}" style="border-radius: 24px">
-                    <h3 class="font-heading uppercase text-[22px] lg:text-[28px] leading-tight text-white mb-4">{{ title }}</h3>
+                    <h3 class="font-heading uppercase text-[22px] lg:text-[28px] leading-tightest text-white mb-4">{{ title }}</h3>
                     <p class="text-white text-[15px] lg:text-[16px] leading-relaxed mb-8" opacity-75">{{ text }}</p>
                     {{ if image }}
                         <div class="mt-auto overflow-hidden rounded-[12px] aspect-[4/3]">
@@ -29,7 +29,7 @@
                 </div>
                 {{ else }}
                 <div class="bg-brand-dark-blue p-8 lg:p-10 flex flex-col js-fade-up{{ if last && items_count % 2 == 0 }} lg:col-span-2{{ if first_has_image }} 2xl:col-span-1{{ /if }}{{ /if }}{{ if last && first_has_image && items_count % 2 == 1 && items_count > 4 }} 2xl:col-span-2{{ /if }}" style="border-radius: 24px">
-                    <h3 class="font-heading uppercase text-[22px] lg:text-[28px] leading-tight text-white mb-4">{{ title }}</h3>
+                    <h3 class="font-heading uppercase text-[22px] lg:text-[28px] leading-tightest text-white mb-4">{{ title }}</h3>
                     <p class="text-white text-[15px] lg:text-[16px] leading-relaxed" opacity-75">{{ text }}</p>
                     {{ if image }}
                         <div class="mt-auto pt-8 overflow-hidden" style="border-radius: 12px">

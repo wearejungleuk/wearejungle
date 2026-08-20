@@ -29,6 +29,9 @@ module.exports = {
         bodybold: ["Lexend Bold", ...defaultTheme.fontFamily.sans],
         subtitle: ["Ewangi", ...defaultTheme.fontFamily.sans],
       },
+      lineHeight: {
+        tightest: "0.95",
+      },
       animation: {
         marquee: 'marquee 55s linear infinite',
         marquee2: 'marquee2 55s linear infinite',

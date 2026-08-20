@@ -17,23 +17,31 @@ export default function stickyLeft() {
         "(min-width: 992px)": function () {
             const initSticky = () => {
                 const headerHeight = getHeaderHeight();
-                const offsetStart = headerHeight + 10;
+                // Pin the sticky element 20px below the fixed header.
+                const offsetStart = headerHeight + 20;
 
                 sections.forEach(section => {
                     const sticky = section.querySelector(".sticky-left");
                     if (!sticky) return;
 
-                    // Kill old triggers for this section
+                    // Kill old triggers for this sticky element
                     ScrollTrigger.getAll().forEach(trigger => {
-                        if (trigger.trigger === section) trigger.kill();
+                        if (trigger.trigger === sticky || trigger.trigger === section) trigger.kill();
                     });
 
                     gsap.delayedCall(0.2, () => {
                         ScrollTrigger.create({
-                            trigger: section,
-                            start: `top-=${offsetStart} top`, // start just before header overlaps
+                            // Pin fires when the sticky element's top reaches
+                            // header+20 from viewport top - so it visually pins
+                            // 20px below the header.
+                            trigger: sticky,
+                            start: `top top+=${offsetStart}`,
+                            // Unpin when the section's bottom reaches that same
+                            // point - i.e. the sticky visually exits the
+                            // section, at which point it goes back into normal
+                            // flow and scrolls off with the rest of the section.
                             endTrigger: section,
-                            end: "bottom bottom", // unpin when section bottom reaches viewport bottom
+                            end: `bottom top+=${offsetStart}`,
                             pin: sticky,
                             pinSpacing: true,
                             anticipatePin: 1,
