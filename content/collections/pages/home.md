@@ -47,7 +47,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We design and build custom websites for businesses in Portsmouth, across Hampshire and beyond. No templates. No page builders. Just properly-written sites that stay fast, secure and easy to update as your business grows."
+            text: 'We design and build custom websites for businesses in Portsmouth, across Hampshire and beyond. No templates. No page builders. Just properly-written sites that stay fast, secure and easy to update as your business grows.'
     cta: /contact
     cta_title: 'Get a Quote'
     type: services_with_icons
@@ -149,7 +149,6 @@ page_builder:
       -
         id: mhndgasm
         client:
-          - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
           - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
           - d1b47741-1ae8-40d1-afd1-c5431c023b5f
           - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
@@ -310,7 +309,7 @@ page_builder:
             text: 'full pricing breakdown'
           -
             type: text
-            text: '.'
+            text: .
     type: comparison_table
     enabled: true
     book_appointment: false
@@ -400,7 +399,7 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: /services/support
+                  href: /services/website-maintenance-support
             text: 'support plans'
           -
             type: text
@@ -415,7 +414,7 @@ page_builder:
             text: 'pricing page'
           -
             type: text
-            text: '.'
+            text: .
     cta: /pricing
     cta_title: 'See full pricing'
     cta_variant: button--secondary
@@ -673,7 +672,7 @@ page_builder:
                 type: link
                 attrs:
                   href: /services/wordpress-websites
-            text: 'WordPress'
+            text: WordPress
           -
             type: text
             text: ', '
@@ -684,7 +683,7 @@ page_builder:
                 type: link
                 attrs:
                   href: /services/statamic-websites
-            text: 'Statamic'
+            text: Statamic
           -
             type: text
             text: ', '
@@ -695,7 +694,7 @@ page_builder:
                 type: link
                 attrs:
                   href: /services/shopify-websites
-            text: 'Shopify'
+            text: Shopify
           -
             type: text
             text: ' and '
@@ -706,7 +705,7 @@ page_builder:
                 type: link
                 attrs:
                   href: /services/woocommerce-websites
-            text: 'WooCommerce'
+            text: WooCommerce
           -
             type: text
             text: ', chosen for what the business actually needs rather than what we happen to know best. WordPress if you need the ecosystem and a familiar editor. Statamic if you want a marketing team that can update the site week to week without waiting on developers. Shopify or WooCommerce for anything selling online. If none of those fit, we build custom.'
@@ -775,7 +774,7 @@ page_builder:
         content:
           -
             type: text
-            text: ''
+            text: null
           -
             type: text
             marks:
@@ -861,7 +860,7 @@ page_builder:
             text: 'recent work'
           -
             type: text
-            text: '.'
+            text: .
     image_position: left
     type: prose_section
     enabled: true
@@ -890,7 +889,7 @@ page_builder:
                 text: 'pricing page'
               -
                 type: text
-                text: '.'
+                text: .
         type: new_set
         enabled: true
       -
@@ -957,7 +956,7 @@ page_builder:
                   -
                     type: link
                     attrs:
-                      href: /services/support
+                      href: /services/website-maintenance-support
                 text: 'support plans'
               -
                 type: text
@@ -986,7 +985,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1784742726
+updated_at: 1787236767
 meta_title: 'Web Design & Development Agency in Portsmouth | We Are Jungle'
 meta_description: 'Web design and development agency in Portsmouth, working with businesses across Hampshire. Custom builds, in-house UK team, clear pricing and support that lasts.'
 ---

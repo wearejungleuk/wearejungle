@@ -4,7 +4,7 @@ blueprint: service
 title: 'Website Maintenance and Support'
 meta_title: 'Website Maintenance & Support Services | Plans from £190'
 meta_description: 'Website maintenance and support plans for WordPress, Shopify and Statamic. Updates, monitoring, backups and development hours from an in-house UK team.'
-slug: support
+slug: website-maintenance-support
 card_text: 'Website maintenance and support plans that keep your site secure, fast and moving forward. Plans from £190 per month, no long-term contracts.'
 page_text: 'Most agencies build a site and disappear. We do not. Our website maintenance and support plans keep the sites we build and the sites we take on in the best possible shape long after launch - plugin and theme updates, uptime monitoring, backups, security patches, monthly reports and ongoing development hours when you need them.'
 key_points:

@@ -28,8 +28,11 @@ Route::permanentRedirect('/work-type/e-commerce', '/services/e-commerce');
 Route::permanentRedirect('/work-type/hosting', '/services/hosting');
 
 // Split of the original combined /services/support-hosting into two
-// distinct service pages (/services/support and /services/hosting).
-Route::permanentRedirect('/services/support-hosting', '/services/support');
+// distinct service pages (/services/website-maintenance-support and
+// /services/hosting). URL for the support page follows the Mountex
+// Digital SEO brief spec.
+Route::permanentRedirect('/services/support-hosting', '/services/website-maintenance-support');
+Route::permanentRedirect('/services/support', '/services/website-maintenance-support');
 
 // Legacy WordPress blog URLs.
 // Old site published posts at the root (e.g. /how-much-does-a-website-cost/)
