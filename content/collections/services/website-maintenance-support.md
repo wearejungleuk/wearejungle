@@ -628,7 +628,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Support covers the people-doing-the-work side: plugin and theme updates, uptime monitoring, backups and restores, security scanning and patching, all development hours, all content work. Hosting covers the infrastructure side: the server itself, SSL certificates, staging environments, DNS management, server-level speed. We do both, but on separate lines so you know what you are paying for.'
+            text: 'Support covers the people-doing-the-work side: plugin and theme updates, uptime monitoring, backups and restores, security scanning and patching, all development hours, all content work. Hosting covers the infrastructure side: the server itself, SSL certificates, DNS management, server-level speed. Staging environments sit under hosting as a paid add-on rather than as a bundled default, so brochure sites that do not need one are not paying for one. We do both, but on separate lines so you know what you are paying for.'
       -
         type: paragraph
         content:

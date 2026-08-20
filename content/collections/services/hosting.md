@@ -3,10 +3,10 @@ id: 4c2b8f7a-1e11-4c40-9d02-2000000000a1
 blueprint: service
 title: Hosting
 meta_title: 'Managed Website Hosting in Portsmouth & Hampshire | We Are Jungle'
-meta_description: 'Managed website hosting for businesses in Portsmouth and across Hampshire. UK infrastructure, staging environments, SSL, DNS and speed at server level.'
+meta_description: 'Managed website hosting for businesses in Portsmouth and across Hampshire. UK infrastructure, SSL, DNS and speed at server level. Staging available as a paid add-on.'
 slug: hosting
-card_text: 'Managed website hosting with UK infrastructure, staging environments, SSL, DNS and the speed a modern site needs.'
-page_text: 'Where your site lives matters. Managed hosting from We Are Jungle gives your website a proper environment to run in: fast infrastructure, staging environments for safe changes, SSL renewals and DNS handled quietly in the background. We do not resell hosting to make a margin. We host sites we build and sites we support, so the environment matches the site.'
+card_text: 'Managed website hosting with UK infrastructure, SSL, DNS and the speed a modern site needs. Staging environments available as a paid add-on.'
+page_text: 'Where your site lives matters. Managed hosting from We Are Jungle gives your website a proper environment to run in: fast infrastructure, SSL renewals and DNS handled quietly in the background. Staging environments are available as a paid add-on when a site needs one. We do not resell hosting to make a margin. We host sites we build and sites we support, so the environment matches the site.'
 key_points:
   -
     id: kp_hos_01
@@ -15,17 +15,17 @@ key_points:
     enabled: true
   -
     id: kp_hos_02
-    label: 'Staging environments so nothing is tested on live'
-    type: new_set
-    enabled: true
-  -
-    id: kp_hos_03
     label: 'SSL certificates issued, renewed and monitored'
     type: new_set
     enabled: true
   -
-    id: kp_hos_04
+    id: kp_hos_03
     label: 'DNS handled properly so email and site stay in sync'
+    type: new_set
+    enabled: true
+  -
+    id: kp_hos_04
+    label: 'Staging environments available as a paid add-on'
     type: new_set
     enabled: true
 ad_headline: 'Managed Hosting Built Around Your Site'
@@ -41,7 +41,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Managed website hosting for businesses in Portsmouth, across Hampshire and further afield. UK infrastructure, staging environments, SSL and DNS handled properly, so the environment matches the site rather than fighting it.'
+            text: 'Managed website hosting for businesses in Portsmouth, across Hampshire and further afield. UK infrastructure, SSL and DNS handled properly, so the environment matches the site rather than fighting it. Staging environments available as a paid add-on for sites that need one.'
     cta_title: 'Talk about hosting'
     book_appointment: true
     type: services_hero
@@ -88,8 +88,8 @@ page_builder:
         icon: page_quality.svg
       -
         id: fc_h_02
-        heading: 'Staging environments'
-        card_text: 'A staging copy of the site for testing plugin updates, design changes and larger development work before anything touches live.'
+        heading: 'Staging environments (paid add-on)'
+        card_text: 'A staging copy of the site for testing plugin updates, design changes and larger development work before anything touches live. Available as a monthly add-on rather than bundled by default, so brochure sites that do not need one are not paying for one.'
         type: new_set
         enabled: true
         icon: web_monitoring.svg
