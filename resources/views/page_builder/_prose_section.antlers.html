@@ -1,36 +1,71 @@
 {{#
     Prose section page-builder block.
-    Mid-page content block with above title, heading and rich body copy.
-    Suited to SEO depth sections, location proof, pricing summaries and
-    similar prose blocks that need to sit inside the page flow rather
-    than lead the page.
+    Two rendering modes:
+    - With no image: centred single-column prose (SEO depth blocks, FAQs
+      preamble, pricing summaries).
+    - With an image: two-column split layout. Set image_position to
+      "left" or "right" to control which side the image sits on.
 #}}
 <section class="bg-brand-primary py-16 lg:py-24">
     <div class="container">
-        <div class="max-w-[860px] mx-auto">
 
-            {{ if above_title }}
-                <div class="mb-6 js-fade-up">
-                    {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant ?? 'above-title--light-blue' }" }}
+        {{ if image }}
+            {{# Two-column split layout. #}}
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center">
+
+                <div class="{{ if image_position == 'right' }}lg:order-1{{ else }}lg:order-2{{ /if }}">
+                    {{ glide:image width="1200" fit="crop" }}
+                        <img src="{{ url }}" alt="{{ alt ?? title }}"
+                             class="w-full h-auto rounded-[24px] lg:rounded-[32px] border-[3px] border-black shadow-2xl js-fade-up"
+                             loading="lazy">
+                    {{ /glide:image }}
                 </div>
-            {{ /if }}
 
-            {{ if title }}
-                <h2 class="font-heading uppercase text-[38px] sm:text-[46px] lg:text-[52px] leading-tight text-white mb-8 lg:mb-10 js-fade-up">{{ title }}</h2>
-            {{ /if }}
-
-            {{ if body }}
-                <div class="bard prose-inverse text-white text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
-                    {{ body }}
+                <div class="{{ if image_position == 'right' }}lg:order-2{{ else }}lg:order-1{{ /if }}">
+                    {{ if above_title }}
+                        <div class="mb-6 js-fade-up">
+                            {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant ?? 'above-title--light-blue' }" }}
+                        </div>
+                    {{ /if }}
+                    {{ if title }}
+                        <h2 class="font-heading uppercase text-[34px] sm:text-[40px] lg:text-[46px] xl:text-[52px] leading-tight text-white mb-6 lg:mb-8 js-fade-up">{{ title }}</h2>
+                    {{ /if }}
+                    {{ if body }}
+                        <div class="bard prose-inverse text-white text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
+                            {{ body }}
+                        </div>
+                    {{ /if }}
+                    {{ if cta_title && cta }}
+                        <div class="mt-8 js-fade-up">
+                            {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" classes="{ cta_variant ?? 'button--secondary' }" }}
+                        </div>
+                    {{ /if }}
                 </div>
-            {{ /if }}
 
-            {{ if cta_title && cta }}
-                <div class="mt-8 lg:mt-10 js-fade-up">
-                    {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" classes="{ cta_variant ?? 'button--secondary' }" }}
-                </div>
-            {{ /if }}
+            </div>
+        {{ else }}
+            {{# Centred single-column prose. #}}
+            <div class="max-w-[860px] mx-auto">
+                {{ if above_title }}
+                    <div class="mb-6 js-fade-up">
+                        {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant ?? 'above-title--light-blue' }" }}
+                    </div>
+                {{ /if }}
+                {{ if title }}
+                    <h2 class="font-heading uppercase text-[38px] sm:text-[46px] lg:text-[52px] leading-tight text-white mb-8 lg:mb-10 js-fade-up">{{ title }}</h2>
+                {{ /if }}
+                {{ if body }}
+                    <div class="bard prose-inverse text-white text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
+                        {{ body }}
+                    </div>
+                {{ /if }}
+                {{ if cta_title && cta }}
+                    <div class="mt-8 lg:mt-10 js-fade-up">
+                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" classes="{ cta_variant ?? 'button--secondary' }" }}
+                    </div>
+                {{ /if }}
+            </div>
+        {{ /if }}
 
-        </div>
     </div>
 </section>

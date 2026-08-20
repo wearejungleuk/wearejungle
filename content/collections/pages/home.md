@@ -298,7 +298,7 @@ page_builder:
     book_appointment: false
   -
     id: prose_local_01
-    above_title: Portsmouth
+    above_title: 'From Portsmouth to Dubai'
     above_title_variant: above-title--light-blue
     title: 'Built in Portsmouth, for businesses across Hampshire'
     body:
@@ -307,24 +307,14 @@ page_builder:
         content:
           -
             type: text
-            text: 'We are based in Hilsea, inside Portsmouth, and have been since day one. Not in Waterlooville, not in Fareham, and not in a London office pretending to be local. That matters when you want to shake hands with the person building your site rather than talk to a face on a screen.'
+            text: 'We are based in Hilsea, inside Portsmouth, and have been since day one. Portsmouth is where the team sits, where the work happens, and where you can meet us face to face if that is how you want to work.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'We work with businesses right across Hampshire, from Portsmouth to Southampton, Chichester to Havant, and further afield where the work fits. '
-          -
-            type: text
-            marks:
-              -
-                type: link
-                attrs:
-                  href: /blog/introducing-city-of-subculture
-            text: 'City of Subculture'
-          -
-            type: text
-            text: ", the free directory and events platform we built for Portsmouth's independent venues, artists and promoters ahead of the 2029 City of Culture bid, is a directory of a city we know because we live and work in it. If you want an agency that treats a Portsmouth address as a fact rather than a marketing tag, we are it."
+            text: 'From that base we work with businesses right across Hampshire and further afield in Guildford, London and Dubai. Distance is not really the point. The point is that the same in-house UK team is on the tools from discovery through to launch, whether you are half an hour down the A27 or joining a video call from a different time zone. What we do not do is farm the work out to freelancers, hand it to an offshore team, or dress up a directory listing as a satellite office.'
+    image_position: right
     type: prose_section
     enabled: true
   -

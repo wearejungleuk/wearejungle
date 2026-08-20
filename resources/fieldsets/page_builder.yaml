@@ -1952,7 +1952,7 @@ fields:
                     display: 'Title (optional)'
             prose_section:
               display: 'Prose Section'
-              instructions: 'Mid-page content block with above title, heading and rich body copy. Use for SEO depth sections, FAQs preamble, pricing summaries, location proof, etc.'
+              instructions: 'Mid-page content block with above title, heading and rich body copy. Add an image to switch to a side-by-side layout.'
               fields:
                 -
                   handle: above_title
@@ -1988,6 +1988,23 @@ fields:
                       - quote
                       - anchor
                     save_html: false
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Image (optional)'
+                    instructions: 'When present, the section switches to a two-column image + text layout. Leave blank for a centered prose layout.'
+                -
+                  handle: image_position
+                  field:
+                    type: select
+                    display: 'Image Position'
+                    default: left
+                    options:
+                      left: 'Image left, text right'
+                      right: 'Image right, text left'
                 -
                   handle: cta
                   field:
