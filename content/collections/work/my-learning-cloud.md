@@ -116,7 +116,7 @@ result_body:
           -
             type: link
             attrs:
-              href: /services/support-hosting
+              href: /services/support
         text: 'support and hosting'
       -
         type: text

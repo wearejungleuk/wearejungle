@@ -25,7 +25,11 @@ Route::permanentRedirect('/work-type/branding', '/services');
 Route::permanentRedirect('/work-type/web-design', '/services/web-design');
 Route::permanentRedirect('/work-type/web-development', '/services/web-development');
 Route::permanentRedirect('/work-type/e-commerce', '/services/e-commerce');
-Route::permanentRedirect('/work-type/hosting', '/services/support-hosting');
+Route::permanentRedirect('/work-type/hosting', '/services/hosting');
+
+// Split of the original combined /services/support-hosting into two
+// distinct service pages (/services/support and /services/hosting).
+Route::permanentRedirect('/services/support-hosting', '/services/support');
 
 // Legacy WordPress blog URLs.
 // Old site published posts at the root (e.g. /how-much-does-a-website-cost/)

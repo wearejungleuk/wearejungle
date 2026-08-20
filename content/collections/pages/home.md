@@ -382,7 +382,7 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: /services/support-hosting
+                  href: /services/support
             text: 'support plans'
           -
             type: text
@@ -940,7 +940,7 @@ page_builder:
                   -
                     type: link
                     attrs:
-                      href: /services/support-hosting
+                      href: /services/support
                 text: 'support plans'
               -
                 type: text

@@ -142,7 +142,7 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: /services/support-hosting
+                  href: /services/support
             text: 'website support plan'
           -
             type: text
@@ -154,7 +154,7 @@ page_builder:
             type: text
             text: 'Hosting can also stand on its own if you already have a support arrangement elsewhere or a technical team in house. If your existing hosting is holding the site back and you want to move without the drama, we can migrate the site over and set the new environment up in the background.'
     cta:
-      url: /services/support-hosting
+      url: /services/support
     cta_title: 'See support plans'
     cta_variant: button--secondary
     image_position: left
