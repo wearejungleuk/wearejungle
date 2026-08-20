@@ -1,27 +1,25 @@
-<section class="bg-white rounded-t-[60px] lg:rounded-t-[100px] py-16 md:py-24 lg:py-36">
+<section class="bg-white rounded-t-[60px] lg:rounded-t-[100px] py-16 md:py-24 lg:py-36 sticky-left-section">
     <div class="container">
-        {{# Grid items default to stretch height, so the left grid item is as tall as the services list on the right. The inner sticky div then sticks 120px from the top and scrolls within that stretched space. Wrapper pattern is used because putting sticky directly on the grid item is unreliable across browsers. #}}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
 
-            <div class="lg:h-full">
-                <div class="lg:sticky lg:top-[120px]">
-                    {{ if above_title }}
-                        <div class="relative z-[10]">
-                            {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
-                        </div>
-                    {{ /if }}
-                    {{ if title }}
-                        <h2 class="font-heading uppercase text-[42px] sm:text-[50px] lg:text-[39px] xl:text-[41px] leading-none text-black mb-6 js-fade-up">{{ title }}</h2>
-                    {{ /if }}
-                    {{ if text }}
-                        <div class="text-black/70 text-[16px] lg:text-[17px] mb-8 js-fade-up">{{ text }}</div>
-                    {{ /if }}
-                    {{ if cta }}
-                        <div class="js-fade-up">
-                            {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="{ cta_classes }" }}
-                        </div>
-                    {{ /if }}
-                </div>
+            {{# Sticky pattern uses this site's own GSAP ScrollTrigger driver (resources/js/functions/sticky.js) - outer section gets sticky-left-section, the element to pin gets sticky-left. CSS position:sticky did not work here because grid parents interfere with it. #}}
+            <div class="sticky-left">
+                {{ if above_title }}
+                    <div class="relative z-[10]">
+                        {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
+                    </div>
+                {{ /if }}
+                {{ if title }}
+                    <h2 class="font-heading uppercase text-[42px] sm:text-[50px] lg:text-[39px] xl:text-[41px] leading-none text-black mb-6 js-fade-up">{{ title }}</h2>
+                {{ /if }}
+                {{ if text }}
+                    <div class="text-black/70 text-[16px] lg:text-[17px] mb-8 js-fade-up">{{ text }}</div>
+                {{ /if }}
+                {{ if cta }}
+                    <div class="js-fade-up">
+                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="{ cta_classes }" }}
+                    </div>
+                {{ /if }}
             </div>
 
             <div class="flex flex-col gap-8">
