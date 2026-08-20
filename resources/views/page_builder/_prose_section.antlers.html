@@ -34,7 +34,7 @@
 
                 <div class="{{ if image_position == 'right' }}lg:order-2{{ else }}lg:order-1{{ /if }}">
                     {{ if above_title }}
-                        <div class="mb-6 js-fade-up">
+                        <div class="js-fade-up">
                             {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant ?? 'above-title--secondary' }" }}
                         </div>
                     {{ /if }}
@@ -58,7 +58,7 @@
             {{# Fallback centred prose (only used if a prose_section entry has no image_position set at all). #}}
             <div class="max-w-[860px] mx-auto">
                 {{ if above_title }}
-                    <div class="mb-6 js-fade-up">
+                    <div class="js-fade-up">
                         {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant ?? 'above-title--secondary' }" }}
                     </div>
                 {{ /if }}
