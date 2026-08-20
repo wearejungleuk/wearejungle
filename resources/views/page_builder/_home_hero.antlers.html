@@ -1,28 +1,34 @@
+{{#
+    Hero elements use js-fade-up. Because these sit in the viewport
+    on load, the IntersectionObserver fires them straight away, so
+    the fade reads as an on-load animation rather than a scroll one.
+    Per-element transition-delay values give a small stagger.
+#}}
 <section class="pt-[140px] md:pt-[160px] lg:pt-[200px] home-hero">
     <div class="container">
         <div class="text-center text-white">
             {{ if above_title }}
-                <div class="relative z-[10] flex justify-center">
+                <div class="relative z-[10] flex justify-center js-fade-up" style="transition-delay: 0ms">
                     <div class="above-title {{ above_title_variant ?? 'above-title--secondary' }}">{{ above_title }}</div>
                 </div>
             {{ /if }}
             {{ if title }}
-                <h1 class="home-hero__title font-heading uppercase text-[45px] sm:text-[50px] md:text-[55px] lg:text-[65px] xl:text-[85px] 2xl:text-[85px] 3xl:text-[86px]">{{ title | highlight_brackets }}</h1>
+                <h1 class="home-hero__title font-heading uppercase text-[45px] sm:text-[50px] md:text-[55px] lg:text-[65px] xl:text-[85px] 2xl:text-[85px] 3xl:text-[86px] js-fade-up" style="transition-delay: 100ms">{{ title | highlight_brackets }}</h1>
             {{ /if }}
             {{ if supporting_line }}
-                <p class="home-hero__supporting font-heading uppercase mt-4 lg:mt-6 text-[20px] sm:text-[24px] md:text-[26px] lg:text-[30px] xl:text-[36px] leading-tightest text-white/85">{{ supporting_line }}</p>
+                <p class="home-hero__supporting font-heading uppercase mt-4 lg:mt-6 text-[20px] sm:text-[24px] md:text-[26px] lg:text-[30px] xl:text-[36px] leading-tightest text-white/85 js-fade-up" style="transition-delay: 200ms">{{ supporting_line }}</p>
             {{ /if }}
         </div>
     </div>
     <div class="text-center">
         <div class="grid grid-cols-2 md:flex gap-8 text-white">
             {{ image_left }}
-            <div class="col-span-1 md:flex-1 md:order-1 order-2">
-                <img src="{{ url }}" alt="{{ alt }}" class="w-full max-h-[40vw] md:max-h-[22vw] home-hero__image-left">
-            </div>
+                <div class="col-span-1 md:flex-1 md:order-1 order-2 js-fade-up" style="transition-delay: 400ms">
+                    <img src="{{ url }}" alt="{{ alt }}" class="w-full max-h-[40vw] md:max-h-[22vw] home-hero__image-left">
+                </div>
             {{ /image_left }}
             {{ if text || cta }}
-                <div class="col-span-2 mt-4 md:max-w-[50%] w-full 3xl:max-w-[880px] mx-auto md:order-2 order-1">
+                <div class="col-span-2 mt-4 md:max-w-[50%] w-full 3xl:max-w-[880px] mx-auto md:order-2 order-1 js-fade-up" style="transition-delay: 300ms">
                     <div class="text-[18px] lg:text-[20px] xl:text-[22px] 3xl:text-[25px] home-hero__text">
                         {{ text }}
                     </div>
@@ -34,9 +40,9 @@
                 </div>
             {{ /if }}
             {{ image_right }}
-            <div class="col-span-1 md:flex-1 md:order-3 order-3">
-                <img src="{{ url }}" alt="{{ alt }}" class="w-full max-h-[40vw] md:max-h-[22vw] home-hero__image-right">
-            </div>
+                <div class="col-span-1 md:flex-1 md:order-3 order-3 js-fade-up" style="transition-delay: 400ms">
+                    <img src="{{ url }}" alt="{{ alt }}" class="w-full max-h-[40vw] md:max-h-[22vw] home-hero__image-right">
+                </div>
             {{ /image_right }}
         </div>
     </div>
