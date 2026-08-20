@@ -106,65 +106,63 @@ page_builder:
     enabled: true
     block_id: gosport-work
   -
-    id: prose_gos_how_it_works
+    id: process_gos_how_it_works
     above_title: 'How It Works'
     above_title_variant: above-title--light-blue
     title: 'How working with us looks from Gosport'
-    body:
+    intro_text: 'How a project runs from first call through to going live.'
+    steps:
       -
-        type: heading
-        attrs:
-          level: 3
-        content:
+        id: step_gos_meetings
+        tab_label: Meetings
+        heading: Meetings
+        step_text:
           -
-            type: text
-            text: 'Meetings'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Either the ferry or the road works. Discovery is usually on-site so we can see the business operating. The rest of the project runs on video calls with the occasional in-person for bigger milestones.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Design and build'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'All the actual work happens remotely. Staging URLs to share, scheduled review calls to walk through the design, feedback captured on the designs themselves. Transparent and asynchronous where it can be.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Ongoing support'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Our '
-          -
-            type: text
-            marks:
+            type: paragraph
+            content:
               -
-                type: link
-                attrs:
-                  href: /services/support-hosting
-            text: 'support and maintenance plans'
+                type: text
+                text: 'Either the ferry or the road works. Discovery is usually on-site so we can see the business operating. The rest of the project runs on video calls with the occasional in-person for bigger milestones.'
+        type: new_set
+        enabled: true
+      -
+        id: step_gos_design
+        tab_label: 'Design and Build'
+        heading: 'Design and build'
+        step_text:
           -
-            type: text
-            text: ' cover updates, monitoring, backups and development hours. Almost all of it happens without you needing to think about it.'
-    type: prose_section
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'All the actual work happens remotely. Staging URLs to share, scheduled review calls to walk through the design, feedback captured on the designs themselves. Transparent and asynchronous where it can be.'
+        type: new_set
+        enabled: true
+      -
+        id: step_gos_support
+        tab_label: 'Ongoing Support'
+        heading: 'Ongoing support'
+        step_text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Our '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/support-hosting
+                text: 'support and maintenance plans'
+              -
+                type: text
+                text: ' cover updates, monitoring, backups and development hours. Almost all of it happens without you needing to think about it.'
+        type: new_set
+        enabled: true
+    type: process_carousel
     enabled: true
   -
     id: faq_gos

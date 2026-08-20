@@ -106,65 +106,63 @@ page_builder:
     enabled: true
     block_id: fareham-work
   -
-    id: prose_far_how_it_works
+    id: process_far_how_it_works
     above_title: 'How It Works'
     above_title_variant: above-title--light-blue
     title: 'How working with us looks from Fareham'
-    body:
+    intro_text: 'Same process, however the meetings run - on-site, on video, or a mix.'
+    steps:
       -
-        type: heading
-        attrs:
-          level: 3
-        content:
+        id: step_far_meetings
+        tab_label: Meetings
+        heading: Meetings
+        step_text:
           -
-            type: text
-            text: 'Meetings'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'For Fareham clients, in-person meetings are easy - we can visit your offices in Segensworth, Whiteley, the town centre or one of the business parks with no faff. Discovery calls tend to be in person; the rest of the project runs on a mix of video calls and shared staging URLs.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Design and build'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'All the actual work happens remotely. You get a staging URL to share with the team, scheduled review calls to walk through the design, and feedback captured on the designs themselves rather than in a Word doc.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Support after launch'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Ongoing '
-          -
-            type: text
-            marks:
+            type: paragraph
+            content:
               -
-                type: link
-                attrs:
-                  href: /services/support-hosting
-            text: 'support and maintenance'
+                type: text
+                text: 'For Fareham clients, in-person meetings are easy - we can visit your offices in Segensworth, Whiteley, the town centre or one of the business parks with no faff. Discovery calls tend to be in person; the rest of the project runs on a mix of video calls and shared staging URLs.'
+        type: new_set
+        enabled: true
+      -
+        id: step_far_design
+        tab_label: 'Design and Build'
+        heading: 'Design and build'
+        step_text:
           -
-            type: text
-            text: ' is remote by default. Most of it happens without you noticing - updates, backups, monitoring, security patches. Development hours in the plan cover the small changes every site accumulates.'
-    type: prose_section
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'All the actual work happens remotely. You get a staging URL to share with the team, scheduled review calls to walk through the design, and feedback captured on the designs themselves rather than in a Word doc.'
+        type: new_set
+        enabled: true
+      -
+        id: step_far_support
+        tab_label: 'Support After Launch'
+        heading: 'Support after launch'
+        step_text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Ongoing '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/support-hosting
+                text: 'support and maintenance'
+              -
+                type: text
+                text: ' is remote by default. Most of it happens without you noticing - updates, backups, monitoring, security patches. Development hours in the plan cover the small changes every site accumulates.'
+        type: new_set
+        enabled: true
+    type: process_carousel
     enabled: true
   -
     id: faq_far

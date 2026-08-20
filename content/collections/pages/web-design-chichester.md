@@ -106,65 +106,63 @@ page_builder:
     enabled: true
     block_id: chichester-work
   -
-    id: prose_chi_how_it_works
+    id: process_chi_how_it_works
     above_title: 'How It Works'
     above_title_variant: above-title--light-blue
     title: 'How working with us looks from Chichester'
-    body:
+    intro_text: 'The process is the same whether we meet in person or work entirely over video.'
+    steps:
       -
-        type: heading
-        attrs:
-          level: 3
-        content:
+        id: step_chi_discovery
+        tab_label: Discovery
+        heading: Discovery
+        step_text:
           -
-            type: text
-            text: 'Discovery'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Usually a video call, sometimes an in-person one at your offices or ours. We prefer to see the physical space of the business at least once - it changes how we design.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Design and build'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Entirely remote and asynchronous. Staging URLs you can share with your team. Scheduled review calls to walk through the design. Feedback captured on the actual designs rather than in a Word doc.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Launch and beyond'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Launch is remote. Our ongoing '
-          -
-            type: text
-            marks:
+            type: paragraph
+            content:
               -
-                type: link
-                attrs:
-                  href: /services/support-hosting
-            text: 'support and maintenance'
+                type: text
+                text: 'Usually a video call, sometimes an in-person one at your offices or ours. We prefer to see the physical space of the business at least once - it changes how we design.'
+        type: new_set
+        enabled: true
+      -
+        id: step_chi_design
+        tab_label: 'Design and Build'
+        heading: 'Design and build'
+        step_text:
           -
-            type: text
-            text: ' is remote by default with in-person available when a big project or a training session warrants it. Most support work happens in the background without anyone needing to meet.'
-    type: prose_section
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Entirely remote and asynchronous. Staging URLs you can share with your team. Scheduled review calls to walk through the design. Feedback captured on the actual designs rather than in a Word doc.'
+        type: new_set
+        enabled: true
+      -
+        id: step_chi_launch
+        tab_label: 'Launch and Beyond'
+        heading: 'Launch and beyond'
+        step_text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Launch is remote. Our ongoing '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/support-hosting
+                text: 'support and maintenance'
+              -
+                type: text
+                text: ' is remote by default with in-person available when a big project or a training session warrants it. Most support work happens in the background without anyone needing to meet.'
+        type: new_set
+        enabled: true
+    type: process_carousel
     enabled: true
   -
     id: faq_chi

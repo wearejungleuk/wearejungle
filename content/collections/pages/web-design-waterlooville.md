@@ -106,65 +106,63 @@ page_builder:
     enabled: true
     block_id: waterlooville-work
   -
-    id: prose_wv_how_it_works
+    id: process_wv_how_it_works
     above_title: 'How It Works'
     above_title_variant: above-title--light-blue
     title: 'How working with us looks from Waterlooville'
-    body:
+    intro_text: 'Same process for every project - in-person, entirely remote, or a mix.'
+    steps:
       -
-        type: heading
-        attrs:
-          level: 3
-        content:
+        id: step_wv_meetings
+        tab_label: Meetings
+        heading: Meetings
+        step_text:
           -
-            type: text
-            text: 'Meetings'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Waterlooville is close enough that meetings can go either way. Discovery tends to be on-site so we can see how the business operates. Ongoing sessions run on video calls with the occasional in-person for milestones.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Design and build'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Handled remotely. Staging URLs to share, scheduled review calls, feedback on the designs themselves rather than in a Word doc. Everything transparent and asynchronous where it can be.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Ongoing support'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Our '
-          -
-            type: text
-            marks:
+            type: paragraph
+            content:
               -
-                type: link
-                attrs:
-                  href: /services/support-hosting
-            text: 'support and maintenance plans'
+                type: text
+                text: 'Waterlooville is close enough that meetings can go either way. Discovery tends to be on-site so we can see how the business operates. Ongoing sessions run on video calls with the occasional in-person for milestones.'
+        type: new_set
+        enabled: true
+      -
+        id: step_wv_design
+        tab_label: 'Design and Build'
+        heading: 'Design and build'
+        step_text:
           -
-            type: text
-            text: ' cover updates, monitoring, backups and development hours. Almost all of it happens without you noticing.'
-    type: prose_section
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Handled remotely. Staging URLs to share, scheduled review calls, feedback on the designs themselves rather than in a Word doc. Everything transparent and asynchronous where it can be.'
+        type: new_set
+        enabled: true
+      -
+        id: step_wv_support
+        tab_label: 'Ongoing Support'
+        heading: 'Ongoing support'
+        step_text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Our '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/support-hosting
+                text: 'support and maintenance plans'
+              -
+                type: text
+                text: ' cover updates, monitoring, backups and development hours. Almost all of it happens without you noticing.'
+        type: new_set
+        enabled: true
+    type: process_carousel
     enabled: true
   -
     id: faq_wv
