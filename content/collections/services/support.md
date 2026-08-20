@@ -646,8 +646,7 @@ page_builder:
           -
             type: text
             text: ' for what the hosting side covers. If you already have hosting you are happy with, keep it - support works fine alongside another provider.'
-    cta:
-      url: /services/hosting
+    cta: /services/hosting
     cta_title: 'See hosting page'
     cta_variant: button--secondary
     image_position: right

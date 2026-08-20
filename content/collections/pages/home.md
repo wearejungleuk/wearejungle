@@ -416,8 +416,7 @@ page_builder:
           -
             type: text
             text: '.'
-    cta:
-      url: /pricing
+    cta: /pricing
     cta_title: 'See full pricing'
     cta_variant: button--secondary
     image_position: left
