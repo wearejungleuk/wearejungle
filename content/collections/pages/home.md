@@ -814,6 +814,45 @@ page_builder:
           -
             type: text
             text: 'Owner-run businesses across Hampshire and beyond. Construction and industrial firms, e-learning platforms, healthcare providers, dental practices, manufacturers, retailers, agencies. The common denominator is not the sector - it is a business that has outgrown a template, has real work to show, and wants a website that plays to the shape of the business rather than the other way around.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'For more on the design side of the work, see '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/web-design
+            text: 'bespoke web design services'
+          -
+            type: text
+            text: '. For the code side, see '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/web-development
+            text: 'web development'
+          -
+            type: text
+            text: '. Or skip the reading and look through '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /work
+            text: 'recent work'
+          -
+            type: text
+            text: '.'
     type: prose_section
     enabled: true
   -
