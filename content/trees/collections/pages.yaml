@@ -14,6 +14,8 @@ tree:
   -
     entry: contact
   -
+    entry: support
+  -
     entry: blog
   -
     entry: pricing
