@@ -170,10 +170,8 @@ fields:
                   handle: above_title
                   field:
                     type: text
-                    display: 'Above Title (h1)'
-                    validate:
-                      - required
-                    instructions: 'Renders as the page h1 - keep it short and SEO-focused (e.g. include a location like "Portsmouth" if relevant).'
+                    display: 'Above Title (chip)'
+                    instructions: 'Optional small chip shown above the H1. Rendered as a div, not a heading. Leave blank if the H1 alone is enough.'
                 -
                   handle: above_title_variant
                   field:
@@ -188,14 +186,23 @@ fields:
                   handle: title
                   field:
                     type: text
-                    display: 'Title (h2)'
-                    instructions: 'The large hero headline. Renders as an h2 - the small above title above it is the h1.'
+                    display: 'Title (h1)'
+                    validate:
+                      - required
+                    instructions: 'The large hero headline. Renders as the page H1 - keep the primary keyword and location in here. Use (parens) or [brackets] to highlight specific words.'
+                -
+                  handle: supporting_line
+                  field:
+                    type: text
+                    display: 'Supporting line'
+                    instructions: 'Optional single line that sits directly under the H1 as a subhead (e.g. tagline or positioning statement).'
                 -
                   handle: text
                   field:
                     remove_empty_nodes: false
                     type: bard
-                    display: Text
+                    display: 'Body copy'
+                    instructions: 'Short paragraph that sits below the supporting line, next to the CTA.'
                 -
                   handle: cta
                   field:
