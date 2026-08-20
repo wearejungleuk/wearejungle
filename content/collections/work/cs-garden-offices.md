@@ -195,7 +195,7 @@ page_builder:
   -
     id: work_cta_cs_garden_offices
     above_title: 'Have a project like this?'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: "A Site Your Ad Agency Can Actually Work With"
     text:
       -

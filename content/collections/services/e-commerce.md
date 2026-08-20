@@ -178,7 +178,7 @@ page_builder:
   -
     id: process_carousel_ec_01
     above_title: 'Our Process'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Your eCommerce Journey'
     intro_text: 'Platform-agnostic strategy, built around your business.'
     steps:

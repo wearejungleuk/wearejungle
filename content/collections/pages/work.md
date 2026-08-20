@@ -68,7 +68,7 @@ page_builder:
   -
     id: cta_block_work_01
     above_title: 'Start a Project'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: "Like What You See? Let's Build Yours."
     text:
       -

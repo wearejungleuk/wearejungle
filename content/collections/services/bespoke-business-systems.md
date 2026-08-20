@@ -33,7 +33,7 @@ page_builder:
   -
     id: bbs_hero_01
     above_title: 'Bespoke Software Portsmouth'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Business Systems Built Around Your Business'
     text:
       -
@@ -50,7 +50,7 @@ page_builder:
   -
     id: bbs_problem_01
     above_title: 'Sound Familiar?'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: "Your Team Isn't the Problem. Your Systems Are."
     text:
       -
@@ -152,7 +152,7 @@ page_builder:
   -
     id: bbs_modules_01
     above_title: 'What Can It Include?'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Everything Your Business Runs On, In One Place'
     text:
       -
@@ -264,7 +264,7 @@ page_builder:
   -
     id: bbs_process_01
     above_title: 'How It Works'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'From First Chat to Live System'
     text:
       -
@@ -542,7 +542,7 @@ page_builder:
   -
     id: bbs_compare_01
     above_title: 'Why Bespoke'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'A Different Way to Do Business Software'
     text:
       -
@@ -644,7 +644,7 @@ page_builder:
   -
     id: bbs_industries_01
     above_title: 'Who We Build For'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Businesses We Build Systems For'
     text:
       -

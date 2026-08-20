@@ -178,7 +178,7 @@ page_builder:
   -
     id: process_carousel_wp_01
     above_title: 'Our Process'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Your WordPress Build Journey'
     intro_text: 'A structured, seamless process designed for impact.'
     steps:

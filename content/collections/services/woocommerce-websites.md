@@ -178,7 +178,7 @@ page_builder:
   -
     id: process_carousel_woo_01
     above_title: 'Our Process'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Your WooCommerce Build Journey'
     intro_text: 'A structured process that gets your WooCommerce store live and selling.'
     steps:

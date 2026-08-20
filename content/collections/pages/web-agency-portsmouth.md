@@ -154,7 +154,7 @@ page_builder:
   -
     id: process_carousel_wa_01
     above_title: 'Our Process'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How a Portsmouth Web Agency Should Work'
     intro_text: 'A clear, collaborative process built around your goals - delivered by a team you can actually meet.'
     steps:
@@ -215,7 +215,7 @@ page_builder:
   -
     id: work_carousel_wa_01
     above_title: 'Recent Work'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Portsmouth Web Agency Projects'
     text:
       -

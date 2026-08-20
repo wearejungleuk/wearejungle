@@ -198,7 +198,7 @@ page_builder:
   -
     id: work_cta_mrg_effitas
     above_title: 'Have a project like this?'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: "A Website as Credible as Your Work"
     text:
       -

@@ -162,7 +162,7 @@ page_builder:
   -
     id: process_carousel_shop_01
     above_title: 'Our Process'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Your Shopify Build Journey'
     intro_text: 'A structured process that gets your store live and selling.'
     steps:

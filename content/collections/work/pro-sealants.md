@@ -202,7 +202,7 @@ page_builder:
   -
     id: work_cta_pro_sealants
     above_title: 'Have a project like this?'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: "A Store That Actually Sells"
     text:
       -

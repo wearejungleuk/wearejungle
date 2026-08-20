@@ -10,7 +10,7 @@ page_builder:
     image_right: right-julius.svg
     above_title: 'Shaping Portsmouth Business of the Year 2026'
     above_title_variant: above-title--secondary
-    title: 'Web Design & (Development) Agency in [Portsmouth]'
+    title: 'Web Design & Development (Agency) in Portsmouth'
     supporting_line: 'Websites that perform as good as they look'
     text:
       -
@@ -143,7 +143,7 @@ page_builder:
   -
     id: mhndf9dy
     above_title: 'Big-agency quality, small-team reliability'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'RECENT WEBSITE (PROJECTS)'
     blocks:
       -
@@ -316,7 +316,7 @@ page_builder:
   -
     id: prose_local_01
     above_title: 'Actually in Portsmouth'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Built in Portsmouth, for businesses across Hampshire'
     body:
       -
@@ -378,7 +378,7 @@ page_builder:
   -
     id: prose_pricing_01
     above_title: Pricing
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'What a website costs'
     body:
       -
@@ -648,7 +648,7 @@ page_builder:
   -
     id: prose_depth_01
     above_title: 'In Depth'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Web design and development in Portsmouth'
     body:
       -
@@ -985,7 +985,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1787236767
+updated_at: 1787240539
 meta_title: 'Web Design & Development Agency in Portsmouth | We Are Jungle'
 meta_description: 'Web design and development agency in Portsmouth, working with businesses across Hampshire. Custom builds, in-house UK team, clear pricing and support that lasts.'
 ---

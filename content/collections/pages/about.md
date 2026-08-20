@@ -302,7 +302,7 @@ page_builder:
   -
     id: cta_block_about_01
     above_title: 'Contact Us'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: "Don't Settle for a Mediocre Website"
     text:
       -

@@ -9,7 +9,7 @@ page_builder:
   -
     id: pricing_hero_01
     above_title: 'Portsmouth Website Pricing'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'No Surprises. No Hidden Costs. Just Honest Pricing.'
     text:
       -
@@ -781,7 +781,7 @@ page_builder:
   -
     id: cta_block_pricing_01
     above_title: 'Get Started'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: "Ready to Get a Proper Quote?"
     text:
       -

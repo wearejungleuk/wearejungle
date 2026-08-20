@@ -49,7 +49,7 @@ page_builder:
   -
     id: prose_hosting_intro
     above_title: 'Why it matters'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Where a site lives changes how a site behaves'
     body:
       -
@@ -127,7 +127,7 @@ page_builder:
   -
     id: prose_hosting_bundle
     above_title: 'Hosting + Support'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'One supplier for hosting and support'
     body:
       -

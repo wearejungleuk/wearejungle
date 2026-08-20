@@ -243,7 +243,7 @@ page_builder:
   -
     id: prose_wd_uxui
     above_title: 'UX and UI'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'UX and UI design'
     body:
       -
@@ -264,7 +264,7 @@ page_builder:
   -
     id: prose_wd_redesign
     above_title: 'Website Redesign'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Website redesign services'
     body:
       -
@@ -302,7 +302,7 @@ page_builder:
   -
     id: prose_wd_b2b
     above_title: 'B2B and Growing Businesses'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Web design for B2B and growing businesses'
     body:
       -
@@ -351,7 +351,7 @@ page_builder:
   -
     id: prose_wd_included
     above_title: Deliverables
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'What is included in our web design service'
     body:
       -

@@ -211,7 +211,7 @@ page_builder:
   -
     id: work_cta_mash_gang
     above_title: 'Have a project like this?'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: "Ready to Scale Your Store?"
     text:
       -

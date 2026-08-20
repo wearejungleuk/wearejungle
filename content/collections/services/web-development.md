@@ -253,7 +253,7 @@ page_builder:
   -
     id: prose_wdev_wordpress
     above_title: WordPress
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'WordPress development'
     body:
       -
@@ -291,7 +291,7 @@ page_builder:
   -
     id: prose_wdev_shopify
     above_title: E-Commerce
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Shopify and e-commerce development'
     body:
       -
@@ -334,7 +334,7 @@ page_builder:
   -
     id: prose_wdev_woocommerce
     above_title: WooCommerce
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'WooCommerce development'
     body:
       -
@@ -360,7 +360,7 @@ page_builder:
   -
     id: prose_wdev_systems
     above_title: 'Systems and Integrations'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Bespoke systems and integrations'
     body:
       -
@@ -414,7 +414,7 @@ page_builder:
   -
     id: prose_wdev_migrations
     above_title: Migrations
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Website migrations'
     body:
       -

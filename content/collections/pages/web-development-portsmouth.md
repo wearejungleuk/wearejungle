@@ -154,7 +154,7 @@ page_builder:
   -
     id: process_carousel_wdv_01
     above_title: 'Our Process'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How We Build Websites in Portsmouth'
     intro_text: 'A clear, technical process built around shipping clean, performant code on time.'
     steps:
@@ -215,7 +215,7 @@ page_builder:
   -
     id: work_carousel_wdv_01
     above_title: 'Recent Work'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Portsmouth Web Development Projects'
     text:
       -

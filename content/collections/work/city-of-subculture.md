@@ -219,7 +219,7 @@ page_builder:
   -
     id: work_cta_cos
     above_title: 'Building something for your community?'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Got a Platform Idea That Needs a Proper Build?'
     text:
       -

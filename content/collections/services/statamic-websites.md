@@ -170,7 +170,7 @@ page_builder:
   -
     id: process_carousel_stat_01
     above_title: 'Our Process'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Your Statamic Build Journey'
     intro_text: 'Structured, seamless, and built for long-term performance.'
     steps:

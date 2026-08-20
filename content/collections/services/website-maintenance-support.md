@@ -317,7 +317,7 @@ page_builder:
   -
     id: prose_how_support_works
     above_title: 'How Support Works'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'How support actually works, start to finish'
     body:
       -
@@ -402,7 +402,7 @@ page_builder:
   -
     id: prose_take_over
     above_title: 'Taking Over'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Taking on a website we did not build'
     body:
       -
@@ -470,7 +470,7 @@ page_builder:
   -
     id: prose_wp_support
     above_title: WordPress
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'WordPress maintenance and support'
     body:
       -
@@ -538,7 +538,7 @@ page_builder:
   -
     id: prose_other_platforms_support
     above_title: 'Other Platforms'
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'Shopify, WooCommerce and Statamic support'
     body:
       -
@@ -614,7 +614,7 @@ page_builder:
   -
     id: prose_what_sits_with_hosting
     above_title: Hosting
-    above_title_variant: above-title--light-blue
+    above_title_variant: above-title--secondary
     title: 'What sits with hosting, what sits with support'
     body:
       -
