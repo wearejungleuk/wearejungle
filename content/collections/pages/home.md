@@ -402,6 +402,7 @@ page_builder:
       url: /pricing
     cta_title: 'See full pricing'
     cta_variant: button--secondary
+    image_position: left
     type: prose_section
     enabled: true
   -
