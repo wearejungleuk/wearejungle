@@ -441,36 +441,42 @@ page_builder:
         card_text: 'We take the time to understand your business, your audience and your goals before we write a single line of code.'
         type: new_set
         enabled: true
+        fa_icon: magnifying-glass
       -
         id: card_02
         heading: 'UX & Design'
         card_text: 'Clean, considered design that puts your users first and reflects your brand at its best.'
         type: new_set
         enabled: true
+        fa_icon: pen-ruler
       -
         id: card_03
         heading: 'Code & Builds'
         card_text: 'Fast, secure and scalable builds on Statamic, WordPress, Shopify or WooCommerce - no bloated page builders, no hidden complexity.'
         type: new_set
         enabled: true
+        fa_icon: code
       -
         id: card_04
         heading: 'SEO & Performance'
         card_text: 'Built with performance baked in from day one. Core Web Vitals, structured data, the lot.'
         type: new_set
         enabled: true
+        fa_icon: gauge-high
       -
         id: card_05
         heading: 'Ongoing Support'
         card_text: "We don't disappear after launch. Retainer plans keep your site updated, secure and running smoothly."
         type: new_set
         enabled: true
+        fa_icon: life-ring
       -
         id: card_06
         heading: 'Hosting & Care'
         card_text: 'Managed hosting with monitoring, backups and fast response times - so you can focus on your business.'
         type: new_set
         enabled: true
+        fa_icon: server
     type: feature_cards
     enabled: true
     book_appointment: false

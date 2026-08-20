@@ -166,42 +166,42 @@ page_builder:
         card_text: "We don't cut corners. Every site is designed and developed with performance, usability, and longevity in mind."
         type: new_set
         enabled: true
-        icon: page_quality.svg
+        fa_icon: hammer
       -
         id: fc_about_02
         heading: Straight-Talking
         card_text: "No jargon, no confusing processes. You'll always know what's happening, what it costs, and what's next."
         type: new_set
         enabled: true
-        icon: campaign.svg
+        fa_icon: comments
       -
         id: fc_about_03
         heading: 'Small Team, Big Impact'
         card_text: 'You deal directly with the people doing the work. No layers, no handovers, no getting lost in the system.'
         type: new_set
         enabled: true
-        icon: big-impact.svg
+        fa_icon: users
       -
         id: fc_about_04
         heading: 'Design That Converts'
         card_text: "It's not just about looking good. Every decision is made to help your site guide users and drive action."
-        icon: page_quality.svg
         type: new_set
         enabled: true
+        fa_icon: bullseye-arrow
       -
         id: fc_about_05
         heading: 'No Nonsense'
         card_text: 'No inflated retainers. No unnecessary extras. Just honest advice and work that delivers.'
         type: new_set
         enabled: true
-        icon: select_product.svg
+        fa_icon: circle-check
       -
         id: fc_about_06
         heading: 'Built to Grow With You'
         card_text: "We don't build throwaway websites. Everything is designed to scale as your business evolves."
         type: new_set
         enabled: true
-        icon: seo_monitoring.svg
+        fa_icon: seedling
     type: feature_cards
     enabled: true
     book_appointment: false

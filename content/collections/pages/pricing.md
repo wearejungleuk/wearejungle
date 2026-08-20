@@ -601,36 +601,42 @@ page_builder:
         card_text: "You get a fixed quote before we start. No hourly billing, no scope creep surprises - just a clear price for a defined scope, agreed upfront."
         type: new_set
         enabled: true
+        fa_icon: tag
       -
         id: fc_pw_02
         heading: 'Built From Scratch'
         card_text: "Every site is designed and developed specifically for your business. No templates. No themes with your logo dropped in. A blank canvas every time."
         type: new_set
         enabled: true
+        fa_icon: cube
       -
         id: fc_pw_03
         heading: 'Full Ownership'
         card_text: "You own everything - the design, the code, and the content. No licensing fees, no platform lock-in, no strings attached when the project is done."
         type: new_set
         enabled: true
+        fa_icon: key
       -
         id: fc_pw_04
         heading: '72-Day Warranty'
         card_text: "Every build comes with a 72-day warranty as standard. If something breaks that's our fault, we fix it fast, at no extra cost. No quibbling."
         type: new_set
         enabled: true
+        fa_icon: shield-halved
       -
         id: fc_pw_05
         heading: 'Monthly Payments'
         card_text: "We split your project cost equally across the months of your build. Simple, predictable monthly payments - no large lump sums, no deposit structure."
         type: new_set
         enabled: true
+        fa_icon: credit-card
       -
         id: fc_pw_06
         heading: 'We Stick Around'
         card_text: "We don't disappear after launch. Support plans keep your site secure, updated, and moving forward. We're still here when you need us."
         type: new_set
         enabled: true
+        fa_icon: hand-holding-heart
     type: feature_cards
     enabled: true
     book_appointment: false
