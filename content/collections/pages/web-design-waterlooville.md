@@ -225,15 +225,15 @@ page_builder:
     enabled: true
   -
     id: cta_wv
-    above_title: Waterlooville
-    title: 'Start your Waterlooville project'
+    above_title: 'Web Design in Waterlooville'
+    title: 'Ready for a Waterlooville site that actually does the job?'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'If your Waterlooville business has outgrown its current site and you want a proper rebuild from a nearby in-house UK team, book a call.'
+            text: 'If your current site is holding your Waterlooville business back, book a call. We will walk you through what we would do differently, how the project would run and roughly what it would cost - no obligation, no sales patter.'
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg

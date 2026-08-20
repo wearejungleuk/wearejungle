@@ -225,15 +225,15 @@ page_builder:
     enabled: true
   -
     id: cta_far
-    above_title: Fareham
-    title: 'Start your Fareham project'
+    above_title: 'Web Design in Fareham'
+    title: 'Time your Fareham business had a website that pulls its weight'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'If your Fareham business has outgrown its current site and you want a bespoke rebuild from a nearby in-house UK team, book a call.'
+            text: 'If your current site is holding your Fareham business back, book a call. We will walk you through what we would do differently, how the project would run and roughly what it would cost - no obligation, no sales patter.'
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg

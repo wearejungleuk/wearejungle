@@ -12,6 +12,7 @@
             spaceBetween: 20,
             centeredSlides: true,
             watchSlidesProgress: true,
+            watchOverflow: true,
             speed: 600,
             loop: false,
             breakpoints: {
@@ -21,11 +22,15 @@
                 1280: { slidesPerView: 3, spaceBetween: 32, centeredSlides: false },
             },
             on: {
-                init(s) { updatePcButtons(s) },
+                init(s) { updatePcButtons(s); updatePcNavVisibility(s); },
                 slideChange(s) {
                     active = s.activeIndex + 1;
                     updatePcButtons(s);
-                }
+                },
+                resize(s) { updatePcNavVisibility(s); },
+                breakpoint(s) { updatePcNavVisibility(s); },
+                lock(s) { updatePcNavVisibility(s); },
+                unlock(s) { updatePcNavVisibility(s); }
             }
         });
         function updatePcButtons(s) {
@@ -38,6 +43,14 @@
                 btn.disabled = s.isEnd;
                 btn.classList.toggle('opacity-50', s.isEnd);
                 btn.classList.toggle('cursor-not-allowed', s.isEnd);
+            });
+        }
+        function updatePcNavVisibility(s) {
+            {{# When Swiper reports isLocked (all slides fit visibly for the current breakpoint), hide both desktop and mobile nav rows entirely so the arrows only appear when they do something. #}}
+            const locked = s.isLocked;
+            [$refs.pcPrevWrap, $refs.pcNextWrap, $refs.pcMobileNav, $refs.pcTabs].forEach(el => {
+                if (!el) return;
+                el.classList.toggle('!hidden', locked);
             });
         }
         $refs.pcPrev.addEventListener('click', () => pcSwiper.slidePrev());
@@ -65,7 +78,7 @@
 
         {{# Tab buttons #}}
         {{ if steps }}
-            <div class="flex flex-wrap items-center justify-center gap-2 mb-10 lg:mb-14 js-fade-up">
+            <div x-ref="pcTabs" class="flex flex-wrap items-center justify-center gap-2 mb-10 lg:mb-14 js-fade-up">
                 {{ steps }}
                 {{ if count > 1 }}
                     <span class="hidden sm:inline-block px-1 text-white" style="letter-spacing: 3px; opacity: 0.3">···</span>
@@ -86,12 +99,12 @@
 
     {{# Carousel - 1000px centred, arrows just outside the slide on desktop #}}
     <div class="relative">
-        <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 z-10" style="left: max(1rem, calc(50% - 500px - 66px))">
+        <div x-ref="pcPrevWrap" class="hidden lg:block absolute top-1/2 -translate-y-1/2 z-10" style="left: max(1rem, calc(50% - 500px - 66px))">
             <button x-ref="pcPrev" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
                 <i class="fa-sharp fa-regular fa-chevron-left"></i>
             </button>
         </div>
-        <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 z-10" style="right: max(1rem, calc(50% - 500px - 66px))">
+        <div x-ref="pcNextWrap" class="hidden lg:block absolute top-1/2 -translate-y-1/2 z-10" style="right: max(1rem, calc(50% - 500px - 66px))">
             <button x-ref="pcNext" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
                 <i class="fa-sharp fa-regular fa-chevron-right"></i>
             </button>
@@ -144,7 +157,7 @@
         </div>
 
         {{# Mobile arrows - below carousel, right-aligned #}}
-        <div class="flex lg:hidden justify-end gap-8 mt-8 max-w-[1000px] mx-auto px-4">
+        <div x-ref="pcMobileNav" class="flex lg:hidden justify-end gap-8 mt-8 max-w-[1000px] mx-auto px-4">
             <button x-ref="pcPrevMobile" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
                 <i class="fa-sharp fa-regular fa-chevron-left"></i>
             </button>

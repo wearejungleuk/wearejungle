@@ -225,15 +225,15 @@ page_builder:
     enabled: true
   -
     id: cta_chi
-    above_title: Chichester
-    title: 'Start your Chichester project'
+    above_title: 'Web Design in Chichester'
+    title: 'Give your Chichester business a website worth showing off'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'If your Chichester business has outgrown its current site and you want a properly-built replacement from a nearby in-house UK team, book a call.'
+            text: 'If your current site is holding your Chichester business back, book a call. We will walk you through what we would do differently, how the project would run and roughly what it would cost - no obligation, no sales patter.'
     cta_title: 'Book a Call'
     book_appointment: true
     illustration: julius-ipad.svg
