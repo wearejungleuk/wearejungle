@@ -99,42 +99,42 @@ page_builder:
         card_text: 'We handle all updates as they come out - tested and applied carefully so nothing breaks without warning.'
         type: new_set
         enabled: true
-        icon: page_quality.svg
+        fa_icon: arrows-rotate
       -
         id: fc_sh_02
         heading: '24/7 Uptime Monitoring'
         card_text: 'We watch your site around the clock. If it goes down, we know before you do - and we act immediately.'
         type: new_set
         enabled: true
-        icon: web_monitoring.svg
+        fa_icon: chart-line
       -
         id: fc_sh_03
         heading: 'Security & Backups'
         card_text: 'Daily backups, security scanning, and fast recovery if the worst happens. Your data is always protected.'
         type: new_set
         enabled: true
-        icon: seo_monitoring.svg
+        fa_icon: shield-halved
       -
         id: fc_sh_04
         heading: 'Monthly Status Reports'
         card_text: "A clear summary of what's been done, what's performing, and what to keep an eye on - no jargon."
         type: new_set
         enabled: true
-        icon: campaign.svg
+        fa_icon: file-lines
       -
         id: fc_sh_05
         heading: 'Ongoing Development Hours'
         card_text: 'Need a new page, a tweak, or something bigger? Your support hours cover development work too - just ask.'
         type: new_set
         enabled: true
-        icon: big-impact.svg
+        fa_icon: code
       -
         id: fc_sh_06
         heading: 'Performance & SEO Checks'
         card_text: 'We review your site speed and search performance regularly and flag anything worth improving.'
         type: new_set
         enabled: true
-        icon: select_product.svg
+        fa_icon: magnifying-glass-chart
     type: feature_cards
     enabled: true
     book_appointment: false

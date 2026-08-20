@@ -57,7 +57,11 @@
                         {{ cards }}
                         <div class="swiper-slide !h-auto">
                             <div class="bg-brand-dark-blue p-6 h-full flex flex-row gap-4" style="border-radius: 20px">
-                                {{ if icon }}
+                                {{ if fa_icon }}
+                                    <div class="w-[60px] h-[60px] bg-white flex items-center justify-center flex-shrink-0" style="border-radius: 12px">
+                                        <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-brand-primary text-[26px]"></i>
+                                    </div>
+                                {{ elseif icon }}
                                     {{ icon }}
                                     <div class="w-[60px] h-[60px] bg-white flex items-center justify-center flex-shrink-0" style="border-radius: 12px">
                                         <img src="{{ url }}" alt="{{ alt }}" class="w-[36px] h-[36px] object-contain">
@@ -94,7 +98,11 @@
             <div class="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
                 {{ cards }}
                 <div class="bg-brand-dark-blue p-6 lg:p-8 flex flex-row gap-5 js-fade-up" style="border-radius: 20px">
-                    {{ if icon }}
+                    {{ if fa_icon }}
+                        <div class="w-[70px] h-[70px] bg-white flex items-center justify-center flex-shrink-0" style="border-radius: 14px">
+                            <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-brand-primary text-[30px]"></i>
+                        </div>
+                    {{ elseif icon }}
                         {{ icon }}
                         <div class="w-[70px] h-[70px] bg-white flex items-center justify-center flex-shrink-0" style="border-radius: 14px">
                             <img src="{{ url }}" alt="{{ alt }}" class="w-[40px] h-[40px] object-contain">

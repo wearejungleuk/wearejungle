@@ -1156,12 +1156,18 @@ fields:
                             display: Card
                             fields:
                               -
+                                handle: fa_icon
+                                field:
+                                  type: text
+                                  display: 'Font Awesome Icon (name only, e.g. "server")'
+                                  instructions: 'If set, this Font Awesome icon renders instead of the uploaded Icon asset.'
+                              -
                                 handle: icon
                                 field:
                                   max_files: 1
                                   container: assets
                                   type: assets
-                                  display: Icon
+                                  display: 'Icon (fallback if no FA icon set)'
                               -
                                 handle: heading
                                 field:

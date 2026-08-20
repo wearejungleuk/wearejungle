@@ -2,7 +2,7 @@
 id: 5ec70001-c0e5-4001-a1e1-7c9200000001
 blueprint: sector
 title: 'Web design for construction'
-published: false
+published: true
 sector_name: Construction
 slug: web-design-for-construction
 hero_intro: 'Websites for construction and industrial firms that need to show accreditations, drive real leads and integrate with the tools already running the business - not just look pretty on a phone.'

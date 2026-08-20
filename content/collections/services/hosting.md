@@ -85,42 +85,42 @@ page_builder:
         card_text: 'Sites hosted on modern UK infrastructure with edge caching and a CDN for global speed. Sensible defaults, tuned for the site.'
         type: new_set
         enabled: true
-        icon: page_quality.svg
+        fa_icon: server
       -
         id: fc_h_02
         heading: 'Staging environments (paid add-on)'
         card_text: 'A staging copy of the site for testing plugin updates, design changes and larger development work before anything touches live. Available as a monthly add-on rather than bundled by default, so brochure sites that do not need one are not paying for one.'
         type: new_set
         enabled: true
-        icon: web_monitoring.svg
+        fa_icon: code-branch
       -
         id: fc_h_03
         heading: 'SSL and certificates'
         card_text: 'HTTPS by default, certificates issued and renewed automatically, and monitored so an expiry never breaks the site.'
         type: new_set
         enabled: true
-        icon: seo_monitoring.svg
+        fa_icon: lock
       -
         id: fc_h_04
         heading: 'DNS and email routing'
         card_text: 'DNS records set up and maintained so the site, email, and any third-party tools that touch your domain stay in sync.'
         type: new_set
         enabled: true
-        icon: campaign.svg
+        fa_icon: globe
       -
         id: fc_h_05
         heading: 'Server-level speed'
         card_text: 'Caching, image optimisation and asset delivery configured at the server, not bolted on with a plugin.'
         type: new_set
         enabled: true
-        icon: big-impact.svg
+        fa_icon: gauge-high
       -
         id: fc_h_06
         heading: 'Domain management'
         card_text: 'Domain transfers, renewals and configuration handled quietly. If you want us to manage the domain we will; if not, we work with your registrar.'
         type: new_set
         enabled: true
-        icon: select_product.svg
+        fa_icon: at
     type: feature_cards
     enabled: true
     book_appointment: false

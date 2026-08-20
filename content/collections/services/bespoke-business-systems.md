@@ -66,36 +66,42 @@ page_builder:
         card_text: 'Customer lists in one, projects in another, finances in a third. Everyone has their own version and no-one is quite sure which is right.'
         type: new_set
         enabled: true
+        fa_icon: table-cells
       -
         id: bbs_prob_02
         heading: 'Ten Different Subscriptions'
         card_text: 'A tool for tasks, a tool for CRM, a tool for time tracking, a tool for storing files. Each one useful, none of them talking to each other.'
         type: new_set
         enabled: true
+        fa_icon: layer-group
       -
         id: bbs_prob_03
         heading: 'Information in Inboxes'
         card_text: 'Important updates buried in email threads. Files shared over WhatsApp. Notes stuck on desktops. Nothing lives in one place.'
         type: new_set
         enabled: true
+        fa_icon: inbox
       -
         id: bbs_prob_04
         heading: 'The Same Admin, Twice'
         card_text: 'Data entered in one system, then re-entered in another. Staff wasting hours copying and pasting between tools that should just talk to each other.'
         type: new_set
         enabled: true
+        fa_icon: copy
       -
         id: bbs_prob_05
         heading: 'Missed Follow-Ups'
         card_text: "Leads going cold because they slipped through the cracks. Tasks forgotten because they were only tracked in someone's head."
         type: new_set
         enabled: true
+        fa_icon: phone-slash
       -
         id: bbs_prob_06
         heading: 'No Real Visibility'
         card_text: "You can feel the business is busy, but you can't see what's actually happening. Reporting means asking around and hoping for a straight answer."
         type: new_set
         enabled: true
+        fa_icon: eye-slash
     type: feature_cards
     enabled: true
     book_appointment: false
@@ -168,96 +174,112 @@ page_builder:
         card_text: 'A single, honest view of every customer. Contact history, notes, deals, documents - all in one place, always up to date.'
         type: new_set
         enabled: true
+        fa_icon: address-book
       -
         id: bbs_mod_02
         heading: 'Sales Pipelines'
         card_text: "See exactly where every lead sits and what needs doing next. No more deals slipping through the cracks because they lived in someone's head."
         type: new_set
         enabled: true
+        fa_icon: filter
       -
         id: bbs_mod_03
         heading: Projects
         card_text: "Every project, every stage, every deadline in one view. Everyone knows what's happening, what's next, and what's already done."
         type: new_set
         enabled: true
+        fa_icon: diagram-project
       -
         id: bbs_mod_04
         heading: Tasks
         card_text: 'Assign work, track progress, get things done. Simple task management that fits how your team already works - no complicated setup.'
         type: new_set
         enabled: true
+        fa_icon: list-check
       -
         id: bbs_mod_05
         heading: Automation
         card_text: "Let the system do the repetitive admin. Auto-assign work, send reminders, create follow-up tasks, chase overdue actions - so your team doesn't have to."
         type: new_set
         enabled: true
+        fa_icon: bolt
       -
         id: bbs_mod_06
         heading: 'Reporting Dashboards'
         card_text: 'The numbers that actually matter to you, on one screen, always current. No spreadsheets, no waiting on someone to build the report.'
         type: new_set
         enabled: true
+        fa_icon: chart-column
       -
         id: bbs_mod_07
         heading: 'Client Portals'
         card_text: 'Give your customers a secure place to see progress, share files, approve work and stay in the loop - branded to your business.'
         type: new_set
         enabled: true
+        fa_icon: user-lock
       -
         id: bbs_mod_08
         heading: Documents
         card_text: 'Store, organise and share files against the right customer, project or task. No more hunting through Dropbox for the latest version.'
         type: new_set
         enabled: true
+        fa_icon: folder-open
       -
         id: bbs_mod_09
         heading: 'Calendars & Scheduling'
         card_text: "A shared view of appointments, deadlines and availability. Book jobs, schedule the team and see what's coming up at a glance."
         type: new_set
         enabled: true
+        fa_icon: calendar-days
       -
         id: bbs_mod_10
         heading: Contracts
         card_text: 'Generate, send and track contracts from inside the system. Signed digitally, filed automatically against the right customer.'
         type: new_set
         enabled: true
+        fa_icon: file-signature
       -
         id: bbs_mod_11
         heading: 'Team Management'
         card_text: "See who's doing what, workloads at a glance, holidays booked in, and the roles and permissions that make sense for your business."
         type: new_set
         enabled: true
+        fa_icon: users-gear
       -
         id: bbs_mod_12
         heading: Notifications
         card_text: "The right people, told about the right thing, at the right moment. No noise - just the updates that matter to each person's job."
         type: new_set
         enabled: true
+        fa_icon: bell
       -
         id: bbs_mod_13
         heading: Forms
         card_text: 'Capture enquiries, briefs, applications or bookings straight into your system. No copy-paste, no re-typing, no lost information.'
         type: new_set
         enabled: true
+        fa_icon: clipboard-list
       -
         id: bbs_mod_14
         heading: 'Time Tracking'
         card_text: 'Simple timers your team will actually use. See how long jobs really take and get proper visibility on where the hours go.'
         type: new_set
         enabled: true
+        fa_icon: clock
       -
         id: bbs_mod_15
         heading: Integrations
         card_text: 'Connect to the tools you already rely on - accounting, email, calendars, payment providers - so information flows automatically.'
         type: new_set
         enabled: true
+        fa_icon: plug
       -
         id: bbs_mod_16
         heading: 'Custom Modules'
         card_text: "If your business has a process no-one else has, we can build a module for it. That's the whole point of bespoke."
         type: new_set
         enabled: true
+        fa_icon: puzzle-piece
     type: feature_cards
     enabled: true
     book_appointment: false
