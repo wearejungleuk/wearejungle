@@ -845,6 +845,7 @@ page_builder:
           -
             type: text
             text: '.'
+    image_position: left
     type: prose_section
     enabled: true
   -

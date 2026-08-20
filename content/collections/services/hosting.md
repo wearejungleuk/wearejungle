@@ -64,6 +64,7 @@ page_builder:
           -
             type: text
             text: 'We host sites we build and sites we support. The infrastructure is picked for the shape of the site: a low-traffic brochure site does not need the same setup as an e-commerce store or a lead-gen platform running paid traffic. Every site is on modern UK infrastructure with edge caching and a CDN so pages arrive fast wherever visitors are.'
+    image_position: right
     type: prose_section
     enabled: true
   -
@@ -156,6 +157,7 @@ page_builder:
       url: /services/support-hosting
     cta_title: 'See support plans'
     cta_variant: button--secondary
+    image_position: left
     type: prose_section
     enabled: true
   -

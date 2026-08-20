@@ -258,6 +258,7 @@ page_builder:
           -
             type: text
             text: 'We do both in-house, without handing off between agencies. UX research and wireframes come first, so the structure is right before anyone picks a colour. Then visual design against those wireframes, in high fidelity, so what gets signed off is what gets built. If a project needs formal user testing or click-tests we bring in a specialist, but the vast majority of work is answered by the discovery call, the sitemap, and looking honestly at the analytics on the existing site.'
+    image_position: right
     type: prose_section
     enabled: true
   -
@@ -295,6 +296,7 @@ page_builder:
           -
             type: text
             text: ' came off Wix that way. The Google Ads campaign kept running against the old site while the new one was built in staging. When we switched over, tracking was set up against the new URLs on day one and the ad account did not miss a beat.'
+    image_position: left
     type: prose_section
     enabled: true
   -
@@ -343,6 +345,7 @@ page_builder:
           -
             type: text
             text: 'That is the discipline we build to. Content architecture that gets people to the answer fast. Design that reads as serious without being dull. Proof that stands up to a specifier or a procurement team looking for reasons to move on.'
+    image_position: right
     type: prose_section
     enabled: true
   -
@@ -450,6 +453,7 @@ page_builder:
                   -
                     type: text
                     text: 'Review of the built site against the approved design across the browsers and devices that matter to your audience.'
+    image_position: left
     type: prose_section
     enabled: true
   -

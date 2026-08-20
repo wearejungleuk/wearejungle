@@ -285,6 +285,7 @@ page_builder:
           -
             type: text
             text: 'If you have a WordPress site now and are asking whether it needs a rebuild, most of the time the answer is somewhere in the middle. A properly-scoped audit gives you a clear picture of what to keep, what to replace, and where the technical debt actually lives.'
+    image_position: right
     type: prose_section
     enabled: true
   -
@@ -327,6 +328,7 @@ page_builder:
           -
             type: text
             text: 'Common integrations: Klaviyo, Mailchimp, Zapier, ShipStation, Xero, third-party stock systems, custom middleware where an integration does not exist off the shelf. Google Merchant, Meta Pixel and paid-media tracking configured properly against real conversion events, not a guessed-at pixel fire.'
+    image_position: left
     type: prose_section
     enabled: true
   -
@@ -352,6 +354,7 @@ page_builder:
           -
             type: text
             text: ' is the answer. Same principles as the rest of our WordPress work: hand-coded theme, minimal plugin surface area, checkout tuned for conversion, integrations handled at the code level rather than through a stack of add-ons that all update on their own schedules.'
+    image_position: right
     type: prose_section
     enabled: true
   -
@@ -405,6 +408,7 @@ page_builder:
           -
             type: text
             text: '. QVIS runs a full ERP integration with live sync of product data, stock levels and pricing straight from their internal system into the website, so nothing is re-keyed and nothing goes stale. Delta-Xero has automated case study PDFs (a visitor requests a specific case study and gets that exact PDF emailed to them without anyone on the Delta-Xero side clicking send) and a partner locator filterable by country. Both are the kind of build that a template site cannot support and a page builder will actively fight.'
+    image_position: left
     type: prose_section
     enabled: true
   -
@@ -458,6 +462,7 @@ page_builder:
           -
             type: text
             text: ' came off Elementor entirely onto a custom WordPress theme, saw courses page load times drop from over 12 seconds to under one, and monthly revenue climb 410 percent within months. Migration is not just moving files. It is the difference between a rebuild that keeps its ranking and one that starts from zero.'
+    image_position: right
     type: prose_section
     enabled: true
   -

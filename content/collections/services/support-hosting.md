@@ -396,6 +396,7 @@ page_builder:
           -
             type: text
             text: 'Uptime monitoring runs 24/7. Support does not. We are a small in-house UK team who do our best work between 9 and 5:30 UK time. If you need someone answering the phone at 3am, we are not the right agency. Almost everything that needs an urgent response actually needs a considered response by the same person the next morning, and we are here for that.'
+    image_position: right
     type: prose_section
     enabled: true
   -
@@ -463,6 +464,7 @@ page_builder:
           -
             type: text
             text: ' or migration makes more sense than propping up what is already there.'
+    image_position: left
     type: prose_section
     enabled: true
   -
@@ -530,6 +532,7 @@ page_builder:
           -
             type: text
             text: 'Malware scanning, login hardening, brute-force protection and file-integrity monitoring across every WordPress site on a support plan. If a vulnerability is disclosed on a plugin you use, we know before you do and patch before it becomes anything.'
+    image_position: right
     type: prose_section
     enabled: true
   -
@@ -605,6 +608,7 @@ page_builder:
           -
             type: text
             text: 'Statamic is our house CMS for content-led builds. Very few agencies support it, so if you have a Statamic site and nobody to look after it, get in touch. We are one of the few places you will find long-term support for the platform.'
+    image_position: left
     type: prose_section
     enabled: true
   -
@@ -646,6 +650,7 @@ page_builder:
       url: /services/hosting
     cta_title: 'See hosting page'
     cta_variant: button--secondary
+    image_position: right
     type: prose_section
     enabled: true
   -
