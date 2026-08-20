@@ -2,8 +2,8 @@
 id: 15b87cff-0000-0000-0000-000000000002
 blueprint: service
 title: 'Web Development'
-meta_title: 'Web Development Portsmouth | We Are Jungle'
-meta_description: 'Hand-coded web development from We Are Jungle in Portsmouth. No page builders, no bloated themes. Clean, scalable code built to perform and last.'
+meta_title: 'Web Development Services in Portsmouth | We Are Jungle'
+meta_description: 'Custom web development for businesses that need more than a template. WordPress, Shopify and bespoke builds with the integrations your business runs on.'
 slug: web-development
 ad_headline: 'Custom Web Development Without The Compromise'
 card_text: 'Clean, scalable builds using modern tools and frameworks. Fast, flexible, and built to last - not patched together.'

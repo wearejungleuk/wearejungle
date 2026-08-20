@@ -83,7 +83,7 @@ page_builder:
     enabled: true
   -
     id: mhnb5t8b
-    title: 'THE DIFFERENCE WE MAKE.'
+    title: 'WHY BUSINESSES CHOOSE (WE ARE JUNGLE)'
     carousel:
       -
         id: mhnb6561
@@ -141,7 +141,7 @@ page_builder:
     enabled: true
   -
     id: mhndf9dy
-    title: 'BIG-AGENCY (QUALITY). SMALL-TEAM RELIABILITY. NO EGO. NO EXCUSES.'
+    title: 'RECENT WEBSITE (PROJECTS)'
     blocks:
       -
         id: mhndgasm
@@ -274,7 +274,7 @@ page_builder:
             enabled: true
           -
             id: waj_4
-            label: 'Direct access to the people doing the work'
+            label: 'In-house UK developers you can actually talk to'
             type: new_set
             enabled: true
           -
@@ -362,7 +362,7 @@ page_builder:
       -
         id: card_03
         heading: 'Code & Builds'
-        card_text: 'Fast, secure and scalable builds on Statamic - no bloated page builders, no hidden complexity.'
+        card_text: 'Fast, secure and scalable builds on Statamic, WordPress, Shopify or WooCommerce - no bloated page builders, no hidden complexity.'
         type: new_set
         enabled: true
       -
@@ -470,7 +470,7 @@ page_builder:
     book_appointment: false
   -
     id: mhoppwih
-    title: 'The proof is in the praise'
+    title: 'What our clients say'
     text:
       -
         type: paragraph
@@ -578,8 +578,8 @@ sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 updated_at: 1784742726
-meta_title: 'Web Design Agency Portsmouth | We Are Jungle'
-meta_description: 'We Are Jungle is a small, sharp web design agency in Portsmouth specialising in Statamic, Shopify, WordPress. Clean design, solid code, no nonsense.'
+meta_title: 'Web Design & Development Agency in Portsmouth | We Are Jungle'
+meta_description: 'Web design and development agency in Portsmouth, working with businesses across Hampshire. Custom builds, in-house UK team, clear pricing and support that lasts.'
 ---
 ## Welcome to your brand new Statamic site!
 
