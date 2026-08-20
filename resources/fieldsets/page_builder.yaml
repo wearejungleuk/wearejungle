@@ -908,6 +908,17 @@ fields:
                     type: text
                     display: 'Above Title'
                 -
+                  handle: footer_text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Footer Text'
+                    instructions: 'Optional short line rendered below the columns. Good place for a link to /pricing or similar.'
+                    buttons:
+                      - bold
+                      - italic
+                      - anchor
+                -
                   handle: above_title_variant
                   field:
                     type: select

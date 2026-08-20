@@ -293,6 +293,24 @@ page_builder:
             enabled: true
         type: new_set
         enabled: true
+    footer_text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Every custom build starts from £4,500 + VAT. See the '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /pricing
+            text: 'full pricing breakdown'
+          -
+            type: text
+            text: '.'
     type: comparison_table
     enabled: true
     book_appointment: false
@@ -460,7 +478,7 @@ page_builder:
     book_appointment: false
   -
     id: mhnqvljn
-    title: "Meet the Junglist's"
+    title: 'Meet the team who will build your website'
     text:
       -
         type: paragraph
@@ -957,7 +975,7 @@ page_builder:
     enabled: true
   -
     id: mhoo4ytd
-    title: 'Get in touch'
+    title: 'Start your project'
     form_field: main_contact_form
     type: contact
     enabled: true

@@ -44,5 +44,12 @@
                 {{ /columns }}
             </div>
         {{ /if }}
+
+        {{# Optional footer line - use for a short cross-link to /pricing or similar. #}}
+        {{ if footer_text }}
+            <div class="text-center mt-8 lg:mt-10 js-fade-up">
+                <p class="text-white/85 text-[15px] lg:text-[17px]">{{ footer_text }}</p>
+            </div>
+        {{ /if }}
     </div>
 </section>
