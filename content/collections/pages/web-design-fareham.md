@@ -117,6 +117,7 @@ page_builder:
       -
         id: step_far_meetings
         tab_label: Meetings
+        fa_icon: comments
         heading: Meetings
         step_text:
           -
@@ -130,6 +131,7 @@ page_builder:
       -
         id: step_far_design
         tab_label: 'Design and Build'
+        fa_icon: pen-ruler
         heading: 'Design and build'
         step_text:
           -
@@ -143,6 +145,7 @@ page_builder:
       -
         id: step_far_support
         tab_label: 'Support After Launch'
+        fa_icon: life-ring
         heading: 'Support after launch'
         step_text:
           -

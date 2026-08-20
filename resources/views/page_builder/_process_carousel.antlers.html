@@ -1,6 +1,7 @@
 <style>
-.pc-swiper .swiper-slide { opacity: 0.5; transition: opacity 0.4s ease; }
-.pc-swiper .swiper-slide-active { opacity: 1; }
+{{# Only fade non-visible slides. Any slide currently in view stays at full opacity so multi-slide breakpoints don't look half-broken. #}}
+.pc-swiper .swiper-slide { opacity: 0.35; transition: opacity 0.4s ease; }
+.pc-swiper .swiper-slide-visible { opacity: 1; }
 </style>
 
 <section class="py-16 lg:py-24"
@@ -10,11 +11,14 @@
             slidesPerView: 1.05,
             spaceBetween: 20,
             centeredSlides: true,
+            watchSlidesProgress: true,
             speed: 600,
             loop: false,
             breakpoints: {
-                768: { slidesPerView: 1.08, spaceBetween: 28 },
-                1280: { slidesPerView: 1.1, spaceBetween: 32 },
+                640: { slidesPerView: 1.5, spaceBetween: 24, centeredSlides: false },
+                768: { slidesPerView: 2, spaceBetween: 28, centeredSlides: false },
+                1024: { slidesPerView: 2.5, spaceBetween: 28, centeredSlides: false },
+                1280: { slidesPerView: 3, spaceBetween: 32, centeredSlides: false },
             },
             on: {
                 init(s) { updatePcButtons(s) },
@@ -100,8 +104,13 @@
                     <div class="swiper-slide !h-auto">
                         <div class="bg-brand-dark-blue h-full p-8 md:p-10 lg:p-12 {{ if feature_list }}grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12{{ /if }}" style="border-radius: 24px">
                             <div>
+                                {{ if fa_icon }}
+                                    <div class="w-[56px] h-[56px] lg:w-[64px] lg:h-[64px] bg-brand-secondary flex items-center justify-center mb-6" style="border-radius: 14px">
+                                        <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-black text-[24px] lg:text-[28px]"></i>
+                                    </div>
+                                {{ /if }}
                                 {{ if heading }}
-                                    <h3 class="font-heading uppercase text-[26px] sm:text-[32px] lg:text-[38px] leading-tight text-white mb-6">{{ heading }}</h3>
+                                    <h3 class="font-heading uppercase text-[22px] sm:text-[26px] lg:text-[30px] leading-tight text-white mb-4">{{ heading }}</h3>
                                 {{ /if }}
                                 {{ if step_text }}
                                     <div class="bard text-white text-[15px] lg:text-[16px] leading-relaxed">{{ step_text }}</div>

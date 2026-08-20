@@ -117,6 +117,7 @@ page_builder:
       -
         id: step_chi_discovery
         tab_label: Discovery
+        fa_icon: magnifying-glass
         heading: Discovery
         step_text:
           -
@@ -130,6 +131,7 @@ page_builder:
       -
         id: step_chi_design
         tab_label: 'Design and Build'
+        fa_icon: pen-ruler
         heading: 'Design and build'
         step_text:
           -
@@ -143,6 +145,7 @@ page_builder:
       -
         id: step_chi_launch
         tab_label: 'Launch and Beyond'
+        fa_icon: rocket
         heading: 'Launch and beyond'
         step_text:
           -

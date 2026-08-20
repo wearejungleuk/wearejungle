@@ -2093,6 +2093,12 @@ fields:
                                   type: text
                                   display: 'Tab Label'
                               -
+                                handle: fa_icon
+                                field:
+                                  type: text
+                                  display: 'Font Awesome icon'
+                                  instructions: 'Optional. Just the icon name (e.g. "rocket", "comments", "pen-ruler"). Rendered as fa-sharp fa-solid fa-{name}.'
+                              -
                                 handle: heading
                                 field:
                                   type: text

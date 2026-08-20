@@ -117,6 +117,7 @@ page_builder:
       -
         id: step_wv_meetings
         tab_label: Meetings
+        fa_icon: comments
         heading: Meetings
         step_text:
           -
@@ -130,6 +131,7 @@ page_builder:
       -
         id: step_wv_design
         tab_label: 'Design and Build'
+        fa_icon: pen-ruler
         heading: 'Design and build'
         step_text:
           -
@@ -143,6 +145,7 @@ page_builder:
       -
         id: step_wv_support
         tab_label: 'Ongoing Support'
+        fa_icon: life-ring
         heading: 'Ongoing support'
         step_text:
           -
