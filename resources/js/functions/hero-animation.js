@@ -7,7 +7,9 @@ export default function heroAnimation() {
     const hero = document.querySelector('.home-hero');
     if (!hero) return;
 
+    const aboveTitle = hero.querySelector('.home-hero__above-title');
     const title = hero.querySelector('.home-hero__title');
+    const supporting = hero.querySelector('.home-hero__supporting');
     const svgPaths = hero.querySelectorAll('svg path');
     const text = hero.querySelector('.home-hero__text');
     const cta = hero.querySelector('.home-hero__cta');
@@ -20,13 +22,31 @@ export default function heroAnimation() {
         paused: true,
     });
 
-    // --- 1. Title fade in and move up ---
+    // --- 1a. Above-title chip fade in ---
+    if (aboveTitle) {
+        tl.from(aboveTitle, {
+            opacity: 0,
+            y: 20,
+            duration: 0.6,
+        });
+    }
+
+    // --- 1b. Title fade in and move up ---
     if (title) {
         tl.from(title, {
             opacity: 0,
             y: 40,
             duration: 1,
-        });
+        }, aboveTitle ? "-=0.3" : 0);
+    }
+
+    // --- 1c. Supporting line fade in ---
+    if (supporting) {
+        tl.from(supporting, {
+            opacity: 0,
+            y: 25,
+            duration: 0.7,
+        }, "-=0.6");
     }
 
     // --- 2. SVG paths draw ---
