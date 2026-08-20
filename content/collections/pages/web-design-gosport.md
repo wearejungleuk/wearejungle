@@ -75,38 +75,27 @@ page_builder:
     type: prose_section
     enabled: true
   -
-    id: work_blocks_gos
+    id: work_carousel_gos
     above_title: 'Recent Work'
     above_title_variant: above-title--secondary
     title: 'Recent Gosport-relevant (projects)'
-    blocks:
-      -
-        id: gos_client_blocks
-        client:
-          - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
-          - d1b47741-1ae8-40d1-afd1-c5431c023b5f
-          - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
-          - c6598d61-88d6-4d30-8dc7-41f8dd354acd
-        type: new_set
-        enabled: true
-    block_title: 'Recognise the pattern?'
-    block_text:
+    text:
       -
         type: paragraph
         content:
           -
             type: text
             text: 'Technical B2B, custom integrations, trade e-commerce - if that is the shape of your Gosport business, we would love to talk.'
-    ctas:
-      -
-        id: cta_gos_work
-        cta: /contact
-        cta_title: 'Start a project'
-        type: new_set
-        enabled: true
-    type: work_blocks
+    work:
+      - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
+      - d1b47741-1ae8-40d1-afd1-c5431c023b5f
+      - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
+      - c6598d61-88d6-4d30-8dc7-41f8dd354acd
+    cta: /contact
+    cta_title: 'Start a project'
+    cta_classes: button--primary
+    type: work_carousel
     enabled: true
-    block_id: gosport-work
   -
     id: process_gos_how_it_works
     above_title: 'How It Works'

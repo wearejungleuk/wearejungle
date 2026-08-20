@@ -75,38 +75,27 @@ page_builder:
     type: prose_section
     enabled: true
   -
-    id: work_blocks_chi
+    id: work_carousel_chi
     above_title: 'Recent Work'
     above_title_variant: above-title--secondary
     title: 'Projects that translate well to (Chichester) businesses'
-    blocks:
-      -
-        id: chi_client_blocks
-        client:
-          - cadac8f9-c8f3-4c56-924b-962c6de66f0b
-          - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
-          - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
-          - c6598d61-88d6-4d30-8dc7-41f8dd354acd
-        type: new_set
-        enabled: true
-    block_title: 'Want a project like these?'
-    block_text:
+    text:
       -
         type: paragraph
         content:
           -
             type: text
             text: 'If your Chichester business is at the point where a template is stopping the growth rather than supporting it, we would love to talk.'
-    ctas:
-      -
-        id: cta_chi_work
-        cta: /contact
-        cta_title: 'Start a project'
-        type: new_set
-        enabled: true
-    type: work_blocks
+    work:
+      - cadac8f9-c8f3-4c56-924b-962c6de66f0b
+      - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
+      - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
+      - c6598d61-88d6-4d30-8dc7-41f8dd354acd
+    cta: /contact
+    cta_title: 'Start a project'
+    cta_classes: button--primary
+    type: work_carousel
     enabled: true
-    block_id: chichester-work
   -
     id: process_chi_how_it_works
     above_title: 'How It Works'

@@ -466,38 +466,27 @@ page_builder:
     type: prose_section
     enabled: true
   -
-    id: work_blocks_wdev_recent
+    id: work_carousel_wdev_recent
     above_title: 'Recent Development Work'
     above_title_variant: above-title--secondary
     title: 'Recent development (work)'
-    blocks:
-      -
-        id: wdev_recent_clients
-        client:
-          - d1b47741-1ae8-40d1-afd1-c5431c023b5f
-          - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
-          - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
-          - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
-        type: new_set
-        enabled: true
-    block_title: 'Want a build like these?'
-    block_text:
+    text:
       -
         type: paragraph
         content:
           -
             type: text
             text: 'Custom builds with integrations, migrations off Wix or Elementor, ERP or CRM syncs, bespoke systems - if your project needs that shape, we would love to talk.'
-    ctas:
-      -
-        id: cta_wdev_recent
-        cta: /contact
-        cta_title: 'Start a project'
-        type: new_set
-        enabled: true
-    type: work_blocks
+    work:
+      - d1b47741-1ae8-40d1-afd1-c5431c023b5f
+      - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
+      - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
+      - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
+    cta: /contact
+    cta_title: 'Start a project'
+    cta_classes: button--primary
+    type: work_carousel
     enabled: true
-    block_id: web-development-recent
   -
     id: reviews_wdev_01
     title: 'The proof is in the praise'

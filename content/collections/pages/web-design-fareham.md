@@ -75,38 +75,27 @@ page_builder:
     type: prose_section
     enabled: true
   -
-    id: work_blocks_far
+    id: work_carousel_far
     above_title: 'Recent Work'
     above_title_variant: above-title--secondary
     title: 'Recent Fareham-relevant (projects)'
-    blocks:
-      -
-        id: far_client_blocks
-        client:
-          - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
-          - d1b47741-1ae8-40d1-afd1-c5431c023b5f
-          - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
-          - 90869023-2933-4b72-831b-4641b8c9b446
-        type: new_set
-        enabled: true
-    block_title: 'Recognise the shape of the problem?'
-    block_text:
+    text:
       -
         type: paragraph
         content:
           -
             type: text
             text: 'Custom sites for technical and B2B audiences make up a lot of our work. If yours is in Fareham and needs the same treatment, we would love to talk.'
-    ctas:
-      -
-        id: cta_far_work
-        cta: /contact
-        cta_title: 'Start a project'
-        type: new_set
-        enabled: true
-    type: work_blocks
+    work:
+      - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
+      - d1b47741-1ae8-40d1-afd1-c5431c023b5f
+      - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
+      - 90869023-2933-4b72-831b-4641b8c9b446
+    cta: /contact
+    cta_title: 'Start a project'
+    cta_classes: button--primary
+    type: work_carousel
     enabled: true
-    block_id: fareham-work
   -
     id: process_far_how_it_works
     above_title: 'How It Works'

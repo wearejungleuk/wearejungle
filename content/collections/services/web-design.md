@@ -457,38 +457,27 @@ page_builder:
     type: prose_section
     enabled: true
   -
-    id: work_blocks_wd_recent
+    id: work_carousel_wd_recent
     above_title: 'Recent Design Work'
     above_title_variant: above-title--secondary
     title: 'Recent design (work)'
-    blocks:
-      -
-        id: wd_recent_clients
-        client:
-          - cadac8f9-c8f3-4c56-924b-962c6de66f0b
-          - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
-          - 90869023-2933-4b72-831b-4641b8c9b446
-          - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
-        type: new_set
-        enabled: true
-    block_title: 'Want a design like these?'
-    block_text:
+    text:
       -
         type: paragraph
         content:
           -
             type: text
             text: 'If the design work is what your business is missing rather than a rebuild, we would love to talk.'
-    ctas:
-      -
-        id: cta_wd_recent
-        cta: /contact
-        cta_title: 'Start a project'
-        type: new_set
-        enabled: true
-    type: work_blocks
+    work:
+      - cadac8f9-c8f3-4c56-924b-962c6de66f0b
+      - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
+      - 90869023-2933-4b72-831b-4641b8c9b446
+      - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
+    cta: /contact
+    cta_title: 'Start a project'
+    cta_classes: button--primary
+    type: work_carousel
     enabled: true
-    block_id: web-design-recent
   -
     id: reviews_wd_01
     title: 'The proof is in the praise'

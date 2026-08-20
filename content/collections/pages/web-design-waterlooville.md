@@ -75,38 +75,27 @@ page_builder:
     type: prose_section
     enabled: true
   -
-    id: work_blocks_wv
+    id: work_carousel_wv
     above_title: 'Recent Work'
     above_title_variant: above-title--secondary
     title: 'Recent Waterlooville-relevant (projects)'
-    blocks:
-      -
-        id: wv_client_blocks
-        client:
-          - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
-          - c6598d61-88d6-4d30-8dc7-41f8dd354acd
-          - cadac8f9-c8f3-4c56-924b-962c6de66f0b
-          - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
-        type: new_set
-        enabled: true
-    block_title: 'Recognise the shape of your problem?'
-    block_text:
+    text:
       -
         type: paragraph
         content:
           -
             type: text
             text: 'If your Waterlooville business is running on a site that is no longer fit for purpose, we can put together a rebuild that plays to how the business actually works.'
-    ctas:
-      -
-        id: cta_wv_work
-        cta: /contact
-        cta_title: 'Start a project'
-        type: new_set
-        enabled: true
-    type: work_blocks
+    work:
+      - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
+      - c6598d61-88d6-4d30-8dc7-41f8dd354acd
+      - cadac8f9-c8f3-4c56-924b-962c6de66f0b
+      - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
+    cta: /contact
+    cta_title: 'Start a project'
+    cta_classes: button--primary
+    type: work_carousel
     enabled: true
-    block_id: waterlooville-work
   -
     id: process_wv_how_it_works
     above_title: 'How It Works'

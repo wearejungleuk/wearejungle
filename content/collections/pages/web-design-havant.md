@@ -75,38 +75,27 @@ page_builder:
     type: prose_section
     enabled: true
   -
-    id: work_blocks_hav
+    id: work_carousel_hav
     above_title: 'Recent Work'
     above_title_variant: above-title--secondary
     title: 'Recent Havant-relevant (projects)'
-    blocks:
-      -
-        id: hav_client_blocks
-        client:
-          - d1b47741-1ae8-40d1-afd1-c5431c023b5f
-          - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
-          - c6598d61-88d6-4d30-8dc7-41f8dd354acd
-          - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
-        type: new_set
-        enabled: true
-    block_title: 'Recognise the pattern?'
-    block_text:
+    text:
       -
         type: paragraph
         content:
           -
             type: text
             text: 'If your Havant business is running on a site that is holding it back, we can put together a rebuild that plays to how the business actually works.'
-    ctas:
-      -
-        id: cta_hav_work
-        cta: /contact
-        cta_title: 'Start a project'
-        type: new_set
-        enabled: true
-    type: work_blocks
+    work:
+      - d1b47741-1ae8-40d1-afd1-c5431c023b5f
+      - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
+      - c6598d61-88d6-4d30-8dc7-41f8dd354acd
+      - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
+    cta: /contact
+    cta_title: 'Start a project'
+    cta_classes: button--primary
+    type: work_carousel
     enabled: true
-    block_id: havant-work
   -
     id: process_hav_how_it_works
     above_title: 'How It Works'
