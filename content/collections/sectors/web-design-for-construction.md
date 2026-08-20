@@ -216,7 +216,7 @@ faqs:
           -
             type: text
             text: 'Yes. Support plans start from £190 per month and cover updates, monitoring, security patches and ongoing development hours. We do not disappear after handover, and we would rather fix a small thing early than get called about a bigger one three months later.'
-price_from: 'From £5,500'
+price_from: 'From £4,500'
 timescale: '8 to 12 weeks'
 meta_title: 'Web Design for Construction | We Are Jungle'
 meta_description: 'Custom websites for construction and industrial firms. Quote builders, proper Google Ads tracking and direct integration with the tools you already use.'

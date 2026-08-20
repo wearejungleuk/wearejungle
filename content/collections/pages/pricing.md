@@ -45,7 +45,7 @@ page_builder:
           -
             id: plan_brochure
             name: 'Brochure Website'
-            price_label: 'From £5,500'
+            price_label: 'From £4,500'
             vat_note: '+ VAT'
             description: 'A clean, custom-designed site for businesses that need to look sharp and convert visitors.'
             featured: false
