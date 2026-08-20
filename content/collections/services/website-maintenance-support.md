@@ -315,301 +315,266 @@ page_builder:
     type: pricing
     enabled: true
   -
-    id: prose_how_support_works
+    id: process_how_support_works
     above_title: 'How Support Works'
     above_title_variant: above-title--secondary
     title: 'How support actually works, start to finish'
-    body:
+    intro_text: 'A price list is not the same as a plan. Here is what happens when you need something done.'
+    steps:
       -
-        type: paragraph
-        content:
+        id: step_supp_touch
+        tab_label: 'Getting in touch'
+        fa_icon: envelope
+        heading: 'Getting in touch'
+        step_text:
           -
-            type: text
-            text: 'A price list is not the same as a plan. Here is what happens when you need something done.'
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Email, phone or the shared client channel we set up at onboarding. All three go to the same team. There is no ticketing portal to log into and no support desk to route through.'
+        type: new_set
+        enabled: true
       -
-        type: heading
-        attrs:
-          level: 3
-        content:
+        id: step_supp_estimate
+        tab_label: Estimating
+        fa_icon: calculator
+        heading: 'Estimating the work'
+        step_text:
           -
-            type: text
-            text: 'Getting in touch'
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Requests are acknowledged in writing within the response time on your plan (2 business days on Essentials, next business day on Growth, same day on Priority). For anything more than a small tweak we come back with an estimate of hours and a rough window for the work, and wait for your OK before we start the clock.'
+        type: new_set
+        enabled: true
       -
-        type: paragraph
-        content:
+        id: step_supp_doing
+        tab_label: 'Doing the work'
+        fa_icon: screwdriver-wrench
+        heading: 'Doing the work'
+        step_text:
           -
-            type: text
-            text: 'Email, phone or the shared client channel we set up at onboarding. All three go to the same team. There is no ticketing portal to log into and no support desk to route through.'
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Anything low risk (content updates, small tweaks, plugin updates) is done directly on production. Anything larger goes through staging first, gets reviewed by you, and only ships once it is signed off. Nothing goes to live that you have not seen.'
+        type: new_set
+        enabled: true
       -
-        type: heading
-        attrs:
-          level: 3
-        content:
+        id: step_supp_reporting
+        tab_label: Reporting
+        fa_icon: file-lines
+        heading: Reporting
+        step_text:
           -
-            type: text
-            text: 'Estimating the work'
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'A monthly report shows hours used, hours remaining, what was done, what was checked, and anything worth thinking about before next month. No jargon. No filler.'
+        type: new_set
+        enabled: true
       -
-        type: paragraph
-        content:
+        id: step_supp_hours
+        tab_label: '24/7'
+        fa_icon: clock
+        heading: 'A quick word on 24/7'
+        step_text:
           -
-            type: text
-            text: 'Requests are acknowledged in writing within the response time on your plan (2 business days on Essentials, next business day on Growth, same day on Priority). For anything more than a small tweak we come back with an estimate of hours and a rough window for the work, and wait for your OK before we start the clock.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Doing the work'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Anything low risk (content updates, small tweaks, plugin updates) is done directly on production. Anything larger goes through staging first, gets reviewed by you, and only ships once it is signed off. Nothing goes to live that you have not seen.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Reporting'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'A monthly report shows hours used, hours remaining, what was done, what was checked, and anything worth thinking about before next month. No jargon. No filler.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'A quick word on 24/7'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Uptime monitoring runs 24/7. Support does not. We are a small in-house UK team who do our best work between 9 and 5:30 UK time. If you need someone answering the phone at 3am, we are not the right agency. Almost everything that needs an urgent response actually needs a considered response by the same person the next morning, and we are here for that.'
-    image_position: right
-    type: prose_section
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Uptime monitoring runs 24/7. Support does not. We are a small in-house UK team who do our best work between 9 and 5:30 UK time. If you need someone answering the phone at 3am, we are not the right agency. Almost everything that needs an urgent response actually needs a considered response by the same person the next morning, and we are here for that.'
+        type: new_set
+        enabled: true
+    type: process_carousel
     enabled: true
   -
-    id: prose_take_over
+    id: process_take_over
     above_title: 'Taking Over'
     above_title_variant: above-title--secondary
     title: 'Taking on a website we did not build'
-    body:
+    intro_text: 'Most people who search for website maintenance already have a site and a problem. Here is how we pick sites up cleanly when the original developer is gone.'
+    steps:
       -
-        type: paragraph
-        content:
+        id: step_takeover_handover
+        tab_label: Handover
+        fa_icon: handshake
+        heading: 'What the handover involves'
+        step_text:
           -
-            type: text
-            text: 'Most people who search for website maintenance already have a site and a problem. The original developer moved on, went quiet, retired, or was never on a retainer in the first place. If that is you, we take these sites on regularly. It is one of the most common ways we start working with a new client.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'What the handover involves'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'A short discovery call to understand what you have and what you need. Then we ask for access to the hosting, CMS, DNS and any third-party services the site relies on. Anything the previous developer set up in their own account (staging environments, plugin licences, deployment tools) we get moved into yours.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'A site audit before we commit'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Before starting the retainer we do a proper look through the site. Sometimes the code is clean, well organised and easy to work with. Sometimes it is not. If there is something that needs fixing before support can sensibly start (broken updates, insecure plugins, hosting that will not let us do our job) we tell you and quote for the fix upfront. Never a nasty surprise on invoice one.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'What if the build is bad?'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Sometimes a site is beyond a sensible support relationship - a WordPress build so plugin-heavy that every update is a coin flip, or a page-builder mess where nothing can be changed without breaking something else. When that happens we say so honestly and talk about whether a '
-          -
-            type: text
-            marks:
+            type: paragraph
+            content:
               -
-                type: link
-                attrs:
-                  href: /services/web-design
-            text: 'redesign'
+                type: text
+                text: 'A short discovery call to understand what you have and what you need. Then we ask for access to the hosting, CMS, DNS and any third-party services the site relies on. Anything the previous developer set up in their own account (staging environments, plugin licences, deployment tools) we get moved into yours.'
+        type: new_set
+        enabled: true
+      -
+        id: step_takeover_audit
+        tab_label: 'Site audit'
+        fa_icon: clipboard-check
+        heading: 'A site audit before we commit'
+        step_text:
           -
-            type: text
-            text: ' or migration makes more sense than propping up what is already there.'
-    image_position: left
-    type: prose_section
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Before starting the retainer we do a proper look through the site. Sometimes the code is clean, well organised and easy to work with. Sometimes it is not. If there is something that needs fixing before support can sensibly start (broken updates, insecure plugins, hosting that will not let us do our job) we tell you and quote for the fix upfront. Never a nasty surprise on invoice one.'
+        type: new_set
+        enabled: true
+      -
+        id: step_takeover_bad_build
+        tab_label: 'Bad builds'
+        fa_icon: triangle-exclamation
+        heading: 'What if the build is bad?'
+        step_text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Sometimes a site is beyond a sensible support relationship - a WordPress build so plugin-heavy that every update is a coin flip, or a page-builder mess where nothing can be changed without breaking something else. When that happens we say so honestly and talk about whether a '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/web-design
+                text: 'redesign'
+              -
+                type: text
+                text: ' or migration makes more sense than propping up what is already there.'
+        type: new_set
+        enabled: true
+    type: process_carousel
     enabled: true
   -
-    id: prose_wp_support
+    id: process_wp_support
     above_title: WordPress
     above_title_variant: above-title--secondary
     title: 'WordPress maintenance and support'
-    body:
+    intro_text: 'The bulk of our support work is on WordPress - sites we built and sites we picked up from other agencies. If yours has drifted, this is the right place to land.'
+    steps:
       -
-        type: paragraph
-        content:
+        id: step_wp_updates
+        tab_label: Updates
+        fa_icon: arrows-rotate
+        heading: 'Core, theme and plugin updates'
+        step_text:
           -
-            type: text
-            text: 'The bulk of our support work is on '
-          -
-            type: text
-            marks:
+            type: paragraph
+            content:
               -
-                type: link
-                attrs:
-                  href: /services/wordpress-websites
-            text: 'WordPress'
-          -
-            type: text
-            text: '. Both sites we built and sites built by other agencies that we picked up later. If you have a WordPress site that has drifted, this is the right place to land.'
+                type: text
+                text: 'Every update is applied on staging first, tested against the pages that actually matter, then pushed to live. If something breaks in staging, we fix it before the update ships rather than telling you about it after.'
+        type: new_set
+        enabled: true
       -
-        type: heading
-        attrs:
-          level: 3
-        content:
+        id: step_wp_licences
+        tab_label: Licences
+        fa_icon: key
+        heading: 'Premium plugin licences'
+        step_text:
           -
-            type: text
-            text: 'Core, theme and plugin updates'
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Where we hold agency-level licences on plugins your site uses (ACF Pro, WP Rocket, Gravity Forms and similar), you get those covered as part of the plan. No separate renewals to track.'
+        type: new_set
+        enabled: true
       -
-        type: paragraph
-        content:
+        id: step_wp_security
+        tab_label: Security
+        fa_icon: shield-halved
+        heading: 'Security and hardening'
+        step_text:
           -
-            type: text
-            text: 'Every update is applied on staging first, tested against the pages that actually matter, then pushed to live. If something breaks in staging, we fix it before the update ships rather than telling you about it after.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Premium plugin licences'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Where we hold agency-level licences on plugins your site uses (ACF Pro, WP Rocket, Gravity Forms and similar), you get those covered as part of the plan. No separate renewals to track.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Security and hardening'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Malware scanning, login hardening, brute-force protection and file-integrity monitoring across every WordPress site on a support plan. If a vulnerability is disclosed on a plugin you use, we know before you do and patch before it becomes anything.'
-    image_position: right
-    type: prose_section
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Malware scanning, login hardening, brute-force protection and file-integrity monitoring across every WordPress site on a support plan. If a vulnerability is disclosed on a plugin you use, we know before you do and patch before it becomes anything.'
+        type: new_set
+        enabled: true
+    type: process_carousel
     enabled: true
   -
-    id: prose_other_platforms_support
+    id: process_other_platforms_support
     above_title: 'Other Platforms'
     above_title_variant: above-title--secondary
     title: 'Shopify, WooCommerce and Statamic support'
-    body:
+    intro_text: 'Every support plan also covers Shopify, WooCommerce and Statamic. The work looks similar to WordPress - updates, monitoring, backups, development hours - but a few things are worth calling out.'
+    steps:
       -
-        type: paragraph
-        content:
+        id: step_other_ecom
+        tab_label: E-commerce
+        fa_icon: cart-shopping
+        heading: 'E-commerce sites tend to need more'
+        step_text:
           -
-            type: text
-            text: 'Every support plan also covers '
-          -
-            type: text
-            marks:
+            type: paragraph
+            content:
               -
-                type: link
-                attrs:
-                  href: /services/shopify-websites
-            text: 'Shopify'
-          -
-            type: text
-            text: ', '
-          -
-            type: text
-            marks:
+                type: text
+                text: 'A brochure site going down is inconvenient. A store going down loses money every minute. '
               -
-                type: link
-                attrs:
-                  href: /services/woocommerce-websites
-            text: 'WooCommerce'
-          -
-            type: text
-            text: ' and '
-          -
-            type: text
-            marks:
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/shopify-websites
+                text: Shopify
               -
-                type: link
-                attrs:
-                  href: /services/statamic-websites
-            text: 'Statamic'
-          -
-            type: text
-            text: '. The work looks similar - updates, monitoring, backups, development hours - but a few things are worth calling out.'
+                type: text
+                text: ' and '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/woocommerce-websites
+                text: WooCommerce
+              -
+                type: text
+                text: ' sites usually sit on the Growth or Priority tier for that reason - the response time matters more than it does on a slower-moving site.'
+        type: new_set
+        enabled: true
       -
-        type: heading
-        attrs:
-          level: 3
-        content:
+        id: step_other_statamic
+        tab_label: Statamic
+        fa_icon: gem
+        heading: 'Statamic is a rare one'
+        step_text:
           -
-            type: text
-            text: 'E-commerce sites tend to need more'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'A brochure site going down is inconvenient. A store going down loses money every minute. Shopify and WooCommerce sites usually sit on the Growth or Priority tier for that reason - the response time matters more than it does on a slower-moving site.'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Statamic is a rare one'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Statamic is our house CMS for content-led builds. Very few agencies support it, so if you have a Statamic site and nobody to look after it, get in touch. We are one of the few places you will find long-term support for the platform.'
-    image_position: left
-    type: prose_section
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Statamic is our house CMS for content-led builds. Very few agencies support '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/statamic-websites
+                text: Statamic
+              -
+                type: text
+                text: ', so if you have a Statamic site and nobody to look after it, get in touch. We are one of the few places you will find long-term support for the platform.'
+        type: new_set
+        enabled: true
+    type: process_carousel
     enabled: true
   -
     id: prose_what_sits_with_hosting
