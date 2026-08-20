@@ -1,10 +1,10 @@
-<section class="bg-white rounded-t-[60px] lg:rounded-t-[100px] py-16 md:py-24 lg:py-36 sticky-left-section">
+<section class="bg-white rounded-t-[60px] lg:rounded-t-[100px] py-16 md:py-24 lg:py-36">
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
 
-                {{# Sticky pattern uses this site's own GSAP ScrollTrigger driver (resources/js/functions/sticky.js) - outer section gets sticky-left-section, the element to pin gets sticky-left. Sticky element must sit INSIDE its own grid-item wrapper (not BE the grid item) or GSAP's pinSpacing distorts the grid row height and leaves a big empty gap below the section. #}}
+                {{# Native CSS position: sticky here rather than the site's GSAP sticky-left driver. The GSAP pin-spacer was inflating the grid item well past the right column's height and leaving a big empty space at the bottom of the section. Grid's default items-stretch gives the left column a full row-height containing block, so the sticky child can traverse naturally without a spacer. #}}
             <div>
-                <div class="sticky-left">
+                <div class="lg:sticky lg:top-[120px]">
                     {{ if above_title }}
                         <div class="relative z-[10]">
                             {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
