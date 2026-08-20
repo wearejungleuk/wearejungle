@@ -46,7 +46,7 @@ page_builder:
         content:
           -
             type: text
-            text: "We design and build websites that look sharp, run fast, and actually do what they're supposed to. No templates, no overcomplication - just solid work that helps your business grow."
+            text: "We design and build custom websites for businesses in Portsmouth, across Hampshire and beyond. No templates. No page builders. Just properly-written sites that stay fast, secure and easy to update as your business grows."
     cta: /contact
     cta_title: 'Get a Quote'
     type: services_with_icons
@@ -295,6 +295,37 @@ page_builder:
     enabled: true
     book_appointment: false
   -
+    id: prose_local_01
+    above_title: Portsmouth
+    above_title_variant: above-title--light-blue
+    title: 'Built in Portsmouth, for businesses across Hampshire'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'We are based in Hilsea, inside Portsmouth, and have been since day one. Not in Waterlooville, not in Fareham, and not in a London office pretending to be local. That matters when you want to shake hands with the person building your site rather than talk to a face on a screen.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'We work with businesses right across Hampshire, from Portsmouth to Southampton, Chichester to Havant, and further afield where the work fits. '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /blog/introducing-city-of-subculture
+            text: 'City of Subculture'
+          -
+            type: text
+            text: ", the free directory and events platform we built for Portsmouth's independent venues, artists and promoters ahead of the 2029 City of Culture bid, is a directory of a city we know because we live and work in it. If you want an agency that treats a Portsmouth address as a fact rather than a marketing tag, we are it."
+    type: prose_section
+    enabled: true
+  -
     id: stats_story_01
     above_title: 'Our Story'
     title: 'Not our first rodeo - and it shows'
@@ -335,6 +366,52 @@ page_builder:
     type: stats_story
     enabled: true
     book_appointment: false
+  -
+    id: prose_pricing_01
+    above_title: Pricing
+    above_title_variant: above-title--light-blue
+    title: 'What a website costs'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Custom websites start from £4,500 + VAT. Every project is scoped and priced individually, so you know exactly what you are paying and pay only for what you need. No day rates, no surprise invoices, no drip-billed change requests.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Ongoing '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/support-hosting
+            text: 'support plans'
+          -
+            type: text
+            text: ' start at £190 per month and cover updates, monitoring, backups and development hours. See the full pricing breakdown, including larger project tiers and support levels, on the '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /pricing
+            text: 'pricing page'
+          -
+            type: text
+            text: '.'
+    cta:
+      url: /pricing
+    cta_title: 'See full pricing'
+    cta_variant: button--secondary
+    type: prose_section
+    enabled: true
   -
     id: feature_cards_01
     above_title: 'What We Do'
@@ -558,6 +635,286 @@ page_builder:
         type: new_set
         enabled: true
     type: reviews
+    enabled: true
+  -
+    id: prose_depth_01
+    above_title: 'In Depth'
+    above_title_variant: above-title--light-blue
+    title: 'Web design and development in Portsmouth'
+    body:
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'What we build'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Every site starts blank. No themes bolted on top of themes, no drag-and-drop page builders, no template dressed up as bespoke. We build custom websites on '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/wordpress-websites
+            text: 'WordPress'
+          -
+            type: text
+            text: ', '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/statamic-websites
+            text: 'Statamic'
+          -
+            type: text
+            text: ', '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/shopify-websites
+            text: 'Shopify'
+          -
+            type: text
+            text: ' and '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /services/woocommerce-websites
+            text: 'WooCommerce'
+          -
+            type: text
+            text: ', chosen for what the business actually needs rather than what we happen to know best. WordPress if you need the ecosystem and a familiar editor. Statamic if you want a marketing team that can update the site week to week without waiting on developers. Shopify or WooCommerce for anything selling online. If none of those fit, we build custom.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'The one thing we do not do is start from a premium theme and adjust. That path is faster in the short term and expensive over the long term, because everything you eventually need to change ends up fighting the theme. The sites we build are lean by design, so they stay easy to edit and cheap to maintain three years in.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Our process, from first conversation to launch'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Strategy and discovery come first. A short call to understand the business, the goals and what the site actually needs to do. Then wireframes, so the structure gets agreed before anyone picks a colour. Then visual design, signed off before development starts. Then build on a staging URL you can share with anyone who needs to see it before launch. Then quality assurance, launch and handover.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Nothing goes live before it is ready and nothing gets billed that was not in the quote. Every project comes with a 72-day warranty after launch covering anything that breaks in the code we wrote.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Which platform is right for your business'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'It depends on the shape of the site. WordPress remains the default for content-heavy sites with a familiar editor and a large plugin ecosystem. Statamic wins for marketing teams that want to move fast, clean semantic markup and none of the plugin surface area WordPress carries. Shopify is the sensible default for e-commerce unless the checkout or catalogue needs are unusual. WooCommerce sits between the two when e-commerce needs to live inside a WordPress site.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'We recommend the platform during discovery, once we know what the site actually needs to do. If a client comes to us with a strong platform preference we will work with it, but we will tell you honestly if we think another option would be better for the job.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Moving an existing website without losing rankings'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Most rebuilds we take on are migrations of one shape or another. The rebuild itself is the easy part. Not losing what the old site had earned in search is where the care goes: mapping every important URL to its new equivalent, keeping the URL structure sensible where it can stay the same, updating internal links, then watching Search Console after launch and fixing what needs fixing.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: ''
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /work/cs-garden-offices
+            text: 'CS Garden Offices'
+          -
+            type: text
+            text: ' came off Wix without losing Google Ads tracking. '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /work/pro-sealants
+            text: 'Pro Sealants'
+          -
+            type: text
+            text: ' moved off WordPress-and-Elementor onto Shopify and made their first online sale within a week of launch. '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: /work/my-learning-cloud
+            text: 'My Learning Cloud'
+          -
+            type: text
+            text: ' came off Elementor entirely and saw monthly revenue up 410 percent within months. Migration is a real specialism.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Who we work with'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Owner-run businesses across Hampshire and beyond. Construction and industrial firms, e-learning platforms, healthcare providers, dental practices, manufacturers, retailers, agencies. The common denominator is not the sector - it is a business that has outgrown a template, has real work to show, and wants a website that plays to the shape of the business rather than the other way around.'
+    type: prose_section
+    enabled: true
+  -
+    id: faq_home_01
+    above_title: FAQs
+    title: 'Frequently asked questions'
+    items:
+      -
+        id: faq_cost
+        question: 'How much does a website cost?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Custom sites start from £4,500 + VAT. Every project is scoped individually so the price reflects the actual work, and you get a fixed quote before anything starts. Larger builds with integrations, e-commerce or bespoke functionality run higher. Full pricing is on the '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /pricing
+                text: 'pricing page'
+              -
+                type: text
+                text: '.'
+        type: new_set
+        enabled: true
+      -
+        id: faq_timeline
+        question: 'How long does it take to build a website?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Roughly 6 to 12 weeks depending on the shape of the project. A brochure site takes less. An e-commerce build with integrations takes more. The quote you receive at the start includes a target timescale, and we give a fixed launch date at kick-off.'
+        type: new_set
+        enabled: true
+      -
+        id: faq_platform
+        question: 'Which platform will you build my website on?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Whichever is right for the job. WordPress if you need the ecosystem and a familiar editor. Statamic if you want a modern CMS with fewer moving parts and a marketing team that can move without waiting on developers. Shopify for most e-commerce. WooCommerce if the shop needs to sit inside a WordPress site. We recommend the platform during discovery, not upfront.'
+        type: new_set
+        enabled: true
+      -
+        id: faq_portsmouth_only
+        question: 'Do you only work with businesses in Portsmouth?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'No. We are based in Hilsea, inside Portsmouth, and work across Hampshire and the UK. Being local matters when you want to meet in person or drop into a workshop, but most of our clients sit outside Portsmouth.'
+        type: new_set
+        enabled: true
+      -
+        id: faq_ownership
+        question: 'Do I own my website and everything in it?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Yes. You own the domain, the code, the content, the designs and every account we set up in your name. There are no lock-ins and no clauses that transfer ownership if you leave. If we part company, you keep the site.'
+        type: new_set
+        enabled: true
+      -
+        id: faq_post_launch
+        question: 'What happens after my website goes live?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Every project comes with a 72-day warranty covering anything that breaks post-launch. Beyond that, our '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/support-hosting
+                text: 'support plans'
+              -
+                type: text
+                text: ' start from £190 per month and cover updates, monitoring, security patches, backups and ongoing development hours. Roughly fifty sites are on our support plans, and most clients stay for the long term.'
+        type: new_set
+        enabled: true
+    type: faq_accordion
     enabled: true
   -
     id: latest_blogs_home_01

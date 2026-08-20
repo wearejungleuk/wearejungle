@@ -71,7 +71,23 @@
             {{ /if }}
             "isPartOf": { "@id": "https://wearejungle.co.uk/#website" },
             "about": { "@id": "https://wearejungle.co.uk/#localbusiness" }
-        }
+        }{{ page_builder }}{{ if type == 'faq_accordion' && items | count > 0 }},
+        {
+            "@type": "FAQPage",
+            "@id": "{{ permalink }}#faq",
+            "mainEntity": [
+                {{ items }}
+                {
+                    "@type": "Question",
+                    "name": {{ question | json }},
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": {{ answer | bard_html | strip_tags | trim | json }}
+                    }
+                }{{ unless last }},{{ /unless }}
+                {{ /items }}
+            ]
+        }{{ /if }}{{ /page_builder }}
     ]
 }
 </script>

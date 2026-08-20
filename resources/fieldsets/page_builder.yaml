@@ -1943,6 +1943,63 @@ fields:
                   field:
                     type: text
                     display: 'Title (optional)'
+            prose_section:
+              display: 'Prose Section'
+              instructions: 'Mid-page content block with above title, heading and rich body copy. Use for SEO depth sections, FAQs preamble, pricing summaries, location proof, etc.'
+              fields:
+                -
+                  handle: above_title
+                  field:
+                    type: text
+                    display: 'Above Title'
+                -
+                  handle: above_title_variant
+                  field:
+                    type: select
+                    display: 'Above Title Style'
+                    options:
+                      above-title--light-blue: 'Light Blue'
+                      above-title--blue: Blue
+                      above-title--black: Black
+                      above-title--white: White
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: body
+                  field:
+                    type: bard
+                    display: Body
+                    buttons:
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - quote
+                      - anchor
+                    save_html: false
+                -
+                  handle: cta
+                  field:
+                    type: link
+                    display: 'CTA Link'
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA Button Text'
+                -
+                  handle: cta_variant
+                  field:
+                    type: select
+                    display: 'CTA Button Style'
+                    options:
+                      button--primary: Primary
+                      button--secondary: Secondary
+                      button--light-blue: 'Light Blue'
             sectors_list:
               display: 'Sectors List'
               fields:
