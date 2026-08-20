@@ -550,6 +550,56 @@ page_builder:
         type: new_set
         enabled: true
       -
+        id: step_other_shopify
+        tab_label: Shopify
+        fa_icon: bag-shopping
+        heading: 'Shopify stores'
+        step_text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Shopify handles the server side, so most of the work is above the platform. We keep '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/shopify-websites
+                text: 'Shopify themes'
+              -
+                type: text
+                text: ' updated on a duplicate before anything ships, audit the apps that quietly bill every month (most stores are paying for two or three they no longer use), and keep checkout extensions and Shopify Scripts current. Store health, conversion checks and speed pass sit inside your support hours rather than being sold as a separate audit.'
+        type: new_set
+        enabled: true
+      -
+        id: step_other_woocommerce
+        tab_label: WooCommerce
+        fa_icon: basket-shopping
+        heading: 'WooCommerce stores'
+        step_text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'A '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /services/woocommerce-websites
+                text: WooCommerce
+              -
+                type: text
+                text: ' store is a WordPress site with a lot more moving parts. Everything on the WordPress plan applies (core, theme and plugin updates on staging, security hardening, backups) plus WooCommerce-specific work: payment gateway and shipping-extension updates, PHP compatibility checks against Woo core, database and order-table health, and PCI-relevant plugin monitoring so the checkout stays compliant as things change upstream.'
+        type: new_set
+        enabled: true
+      -
         id: step_other_statamic
         tab_label: Statamic
         fa_icon: gem
