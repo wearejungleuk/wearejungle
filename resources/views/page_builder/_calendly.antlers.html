@@ -3,14 +3,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="col-span-1 js-fade-up">
                 <h2 class="js-fade-up uppercase font-heading text-[38px] sm:text-[48px] md:text-[37px] lg:text-[44px] xl:text-[48px]">{{ title }}</h2>
-                <div class="bard js-fade-up mt-4 lg:mt-6 text-[18px] lg:text-[20px] mb-8">
+                <div class="bard js-fade-up mt-4 lg:mt-6 text-[18px] lg:text-[20px]">
                     {{ text }}
                 </div>
-                {{ if cta or book_appointment }}
-                    <div class="mt-8 js-fade-up">
-                        {{ partial:components/button url="{ cta:url }" label="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="{ cta_classes }" }}
-                    </div>
-                {{ /if }}
+                {{# CTA button removed - visitors book directly through the Calendly widget on the right, so a duplicate button would only be a distraction. #}}
             </div>
             <div class="col-span-1 js-fade-up">
                 {{# Calendly renders inside a cross-origin iframe so no parent CSS can reach any of its wrappers. Three overlapping shims all done at the iframe/wrapper level:
@@ -18,7 +14,7 @@
                     2. Cap wrapper at 646px (matches Calendly's inner content width: their 680px layout minus their 5% side padding on the inner container). Wrapper is overflow-hidden.
                     3. Grow iframe width to 680px and pull it left 17px so the iframe overhangs both wrapper edges by 17px. Calendly's inner 95% container == 646px sits exactly inside the wrapper edges; the 5% grey padding either side gets clipped by the overflow-hidden container.
                 #}}
-                <div class="overflow-hidden rounded-[20px] bg-[#fff] border-[3px] border-black w-full max-w-[646px] mx-auto relative" style="height: 535px;">
+                <div class="overflow-hidden rounded-[20px] bg-[#fff] w-full max-w-[646px] mx-auto relative" style="height: 535px;">
                     <iframe
                             src="{{ brand:calendly_link }}?embed_type=Inline&hide_event_type_details=1&hide_gdpr_banner=1&primary_color=004af7"
                             frameborder="0"
