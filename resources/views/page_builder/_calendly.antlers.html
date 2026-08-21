@@ -14,7 +14,7 @@
                     2. Cap wrapper at 646px (matches Calendly's inner content width: their 680px layout minus their 5% side padding on the inner container). Wrapper is overflow-hidden.
                     3. Grow iframe width to 680px and pull it left 17px so the iframe overhangs both wrapper edges by 17px. Calendly's inner 95% container == 646px sits exactly inside the wrapper edges; the 5% grey padding either side gets clipped by the overflow-hidden container.
                 #}}
-                <div class="overflow-hidden rounded-[20px] bg-[#fff] w-full max-w-[646px] mx-auto relative" style="height: 535px;">
+                <div class="overflow-hidden rounded-[20px] bg-[#fff] border-[3px] border-black w-full max-w-[646px] mx-auto relative" style="height: 535px;">
                     <iframe
                             src="{{ brand:calendly_link }}?embed_type=Inline&hide_event_type_details=1&hide_gdpr_banner=1&primary_color=004af7"
                             frameborder="0"
