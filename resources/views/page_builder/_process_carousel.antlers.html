@@ -62,7 +62,7 @@
     <div class="container">
 
         {{# Header #}}
-        <div class="text-center mb-10 lg:mb-14 mx-auto w-full max-w-[1000px]">
+        <div class="text-center mb-10 lg:mb-14 mx-auto w-full max-w-[1400px]">
             {{ if above_title }}
                 <div class="flex justify-center js-fade-up">
                     {{ partial:components/above-title title="{ above_title }" classes="{ above_title_variant }" }}
@@ -99,18 +99,18 @@
 
     {{# Carousel - 1000px centred, arrows just outside the slide on desktop #}}
     <div class="relative">
-        <div x-ref="pcPrevWrap" class="hidden lg:block absolute top-1/2 -translate-y-1/2 z-10" style="left: max(1rem, calc(50% - 500px - 66px))">
+        <div x-ref="pcPrevWrap" class="hidden lg:block absolute top-1/2 -translate-y-1/2 z-10" style="left: max(1rem, calc(50% - 700px - 66px))">
             <button x-ref="pcPrev" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
                 <i class="fa-sharp fa-regular fa-chevron-left"></i>
             </button>
         </div>
-        <div x-ref="pcNextWrap" class="hidden lg:block absolute top-1/2 -translate-y-1/2 z-10" style="right: max(1rem, calc(50% - 500px - 66px))">
+        <div x-ref="pcNextWrap" class="hidden lg:block absolute top-1/2 -translate-y-1/2 z-10" style="right: max(1rem, calc(50% - 700px - 66px))">
             <button x-ref="pcNext" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
                 <i class="fa-sharp fa-regular fa-chevron-right"></i>
             </button>
         </div>
 
-        <div class="max-w-[1000px] mx-auto px-5 lg:px-5">
+        <div class="max-w-[1400px] mx-auto px-5 lg:px-5">
             <div class="swiper !overflow-visible pc-swiper" x-ref="processCarousel">
                 <div class="swiper-wrapper">
                     {{ steps }}
@@ -157,7 +157,7 @@
         </div>
 
         {{# Mobile arrows - below carousel, right-aligned #}}
-        <div x-ref="pcMobileNav" class="flex lg:hidden justify-end gap-8 mt-8 max-w-[1000px] mx-auto px-4">
+        <div x-ref="pcMobileNav" class="flex lg:hidden justify-end gap-8 mt-8 max-w-[1400px] mx-auto px-4">
             <button x-ref="pcPrevMobile" class="w-[50px] h-[50px] text-black bg-brand-secondary border-[2px] border-black flex items-center justify-center transition-opacity duration-200" style="border-radius: 12px">
                 <i class="fa-sharp fa-regular fa-chevron-left"></i>
             </button>
