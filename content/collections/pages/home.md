@@ -84,7 +84,7 @@ page_builder:
     enabled: true
   -
     id: mhnb5t8b
-    title: 'WHY BUSINESSES CHOOSE (WE ARE JUNGLE)'
+    title: 'Why teams pick We Are Jungle'
     carousel:
       -
         id: mhnb6561
@@ -334,7 +334,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
-    image: hello-portsmouth.jpg
+    image: 'wearejunglebrandshoot-iggy&lime-119.jpg'
   -
     id: stats_story_01
     above_title: 'Our Story'
@@ -758,7 +758,7 @@ sitemap_priority: '0.5'
 sitemap_changefreq: daily
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1787240539
+updated_at: 1787308442
 meta_title: 'Web Design & Development Agency in Portsmouth | We Are Jungle'
 meta_description: 'Web design and development agency in Portsmouth, working with businesses across Hampshire. Custom builds, in-house UK team, clear pricing and support that lasts.'
 ---
