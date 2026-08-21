@@ -51,12 +51,17 @@ main {
     width: 100%!important;
 }
 
-/* Calendly embed: their hashed class names rotate on every deploy, so target the stable data attributes instead. Kill all margin so the widget sits flush inside our layout. */
+/* Calendly embed: their hashed class names rotate on every deploy, so target the stable data attributes instead. Kill all margin AND padding on the wrapper and all its descendants so the calendar sits flush inside our layout without Calendly's default 24px inner spacing. */
 [data-booking-page-wrapper],
-[data-booking-layout] {
+[data-booking-layout],
+[data-booking-page-wrapper] *,
+[data-booking-layout] * {
     margin: 0 !important;
-    margin-top: 0 !important;
-    margin-right: 0 !important;
-    margin-bottom: 0 !important;
-    margin-left: 0 !important;
+    padding: 0 !important;
+}
+
+/* Restore day-cell padding so the calendar day numbers stay clickable and evenly spaced. */
+[data-container="calendar-table"] button,
+[data-container="calendar-table"] td {
+    padding: 8px !important;
 }
