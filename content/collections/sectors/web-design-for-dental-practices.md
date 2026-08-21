@@ -24,21 +24,27 @@ features:
   -
     heading: 'Two-tap booking, in and out'
     body: 'A booking journey that starts on any treatment or location page and lands the patient in an appointment - not on a form asking them for their life story. Wired into whatever booking platform you already use (Dentally, Pabau, All Dental and similar).'
+    fa_icon: calendar-check
   -
     heading: 'Multi-practice nearest-location search'
     body: 'Postcode or location-aware search that sends the patient to the closest practice with the soonest available appointment. Group sites live or die on this. We rebuild the logic properly.'
+    fa_icon: location-dot
   -
     heading: 'Modular treatment pages that sell the high-value work'
     body: 'Bespoke templates per treatment - Invisalign, implants, composite bonding, hygiene, cosmetic - so higher-value services get the space they deserve instead of being lost on a single "our treatments" page.'
+    fa_icon: layer-group
   -
     heading: 'Dentally (and equivalent) API integrations'
     body: 'Practice-facing forms and staff applications pull data from Dentally, so applicants (and dentists filling in the form) get most of it pre-populated. A 10-minute form becomes about a minute.'
+    fa_icon: plug
   -
     heading: 'Live locum and careers feed'
     body: 'Roles render live from your central database - post a role internally, it appears on the public site with no re-keying. Removes the "stale careers page" problem entirely.'
+    fa_icon: briefcase
   -
     heading: 'A brand identity that carries onto the site'
     body: 'Every dental practice we build for has a strong visual identity. We treat the site as a continuation of the physical brand - colour, type, photography, tone - rather than a generic template with your logo pasted on.'
+    fa_icon: palette
 featured_case_study:
   - fa6e2786-db62-4683-9782-7c104ca360fb
 sector_term:
@@ -73,7 +79,7 @@ faqs:
         content:
           -
             type: text
-            text: 'The point where those platforms stop making sense is when the practice starts investing seriously in marketing (paid search, referral programmes, high-value treatments like implants or Invisalign) or when you are running more than one practice. At that point the booking friction and the location logic start costing real patients. Custom dental practice websites - WordPress-based for content-led practices, sometimes Statamic for design-heavy brands - are what we build for most of our dental work.'
+            text: 'The point where those platforms stop making sense is when the practice starts investing seriously in marketing (paid search, referral programmes, high-value treatments like implants or Invisalign) or when you are running more than one practice. At that point the booking friction and the location logic start costing real patients. We build almost all of our dental practice websites on Statamic - our house CMS - because it gives the practice team a component-based editor without the plugin sprawl that WordPress ships with.'
   -
     question: 'What do patients look for when choosing a dental practice online?'
     answer:
@@ -232,6 +238,6 @@ intro_blocks:
     image_position: right
     cta_title: 'Book a meeting'
 intro_above_title: 'Web design for dental practices'
-intro_title: 'Dental practice websites that match the practice and book patients in two taps'
+intro_title: 'Dental practice websites that fill the chair'
 intro_cta_title: 'Book a meeting'
 ---

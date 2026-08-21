@@ -169,11 +169,18 @@ tabs:
                     type: textarea
                     character_limit: 300
                 -
+                  handle: fa_icon
+                  field:
+                    type: text
+                    display: 'Font Awesome Icon (name only, e.g. "sliders")'
+                    instructions: 'If set, this FA icon renders in the carousel card. Falls back to the uploaded icon asset if blank.'
+                -
                   handle: icon
                   field:
                     type: assets
                     container: assets
                     max_files: 1
+                    display: 'Icon (fallback if no FA icon set)'
       -
         display: 'Main content'
         fields:

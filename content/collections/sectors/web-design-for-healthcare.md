@@ -24,21 +24,27 @@ features:
   -
     heading: 'Booking journeys that get out of the way'
     body: 'A booking flow that starts on any treatment or location page and lands the patient in an appointment - not on a form asking them their life story. Wired into whatever booking or practice management system you already run.'
+    fa_icon: calendar-check
   -
     heading: 'Multi-location, multi-clinician search'
     body: 'Postcode-aware and clinician-aware search that sends patients to the closest clinic with the soonest available appointment, filterable by treatment, practitioner and speciality. Group clinics live or die on this. We build it properly.'
+    fa_icon: location-dot
   -
     heading: 'Modular treatment pages that sell the specialist work'
     body: "Bespoke templates per treatment or speciality so the higher-value work gets the space it deserves instead of being lost on a single 'our services' page. Add a new treatment or a new practitioner without needing a developer."
+    fa_icon: layer-group
   -
     heading: 'Practice management integrations'
     body: 'Dentally, Pabau, Cliniko, TM3 and equivalents. Practice-facing forms and applications pull data from your system, so applicants and clinicians get most of it pre-populated. A 10-minute form becomes about a minute.'
+    fa_icon: plug
   -
     heading: 'Structured referral intake'
     body: 'A separate, authenticated referral pathway for referring clinicians rather than the public contact form. Data captured in a structure your clinical team can triage, with automatic acknowledgement so referrers know it landed.'
+    fa_icon: share-nodes
   -
     heading: 'Content built for how patients actually search'
     body: "Condition and treatment pages structured around real symptom-driven queries, with clean schema so they show up properly in local pack and 'near me' results. Not a wall of clinical copy."
+    fa_icon: magnifying-glass
 featured_case_study:
   - c6598d61-88d6-4d30-8dc7-41f8dd354acd
 sector_term:
@@ -73,7 +79,7 @@ faqs:
         content:
           -
             type: text
-            text: 'The point where those platforms stop making sense is when the clinic has more than one practitioner, offers a range of specialities that deserve their own pages, or is spending seriously on marketing. At that point the booking friction and the flat "our services" structure start costing patients. Custom WordPress builds are where we do most of our healthcare website work; occasionally Statamic where the brand design is the primary concern.'
+            text: 'The point where those platforms stop making sense is when the clinic has more than one practitioner, offers a range of specialities that deserve their own pages, or is spending seriously on marketing. At that point the booking friction and the flat "our services" structure start costing patients. We build almost all of our healthcare websites on Statamic - our house CMS - because it gives clinical teams a properly component-based editor without any of the plugin bloat that follows WordPress around.'
   -
     question: 'What do patients look for when choosing a private clinic online?'
     answer:
@@ -241,6 +247,6 @@ intro_blocks:
     image_position: right
     cta_title: 'Book a meeting'
 intro_above_title: 'Web design for healthcare providers'
-intro_title: 'Private clinic websites that look like the clinic actually is now'
+intro_title: 'Private clinic websites that fill the diary'
 intro_cta_title: 'Book a meeting'
 ---

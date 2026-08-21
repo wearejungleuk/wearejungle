@@ -1,155 +1,162 @@
 {{#
-    Sector landing page.
-    Structured template driven by fixed blueprint fields, not the page
-    builder. Order and presence of blocks are enforced by the blueprint,
-    so this template only renders what the entry provides.
+Sector landing page.
+Structured template driven by fixed blueprint fields, not the page
+builder. Order and presence of blocks are enforced by the blueprint,
+so this template only renders what the entry provides.
 #}}
 
 {{ partial:sectors/hero
-    :heading="title"
-    :intro="hero_intro"
-    :image="hero_image"
-    cta_text="Start your project"
-    cta_url="/contact"
+:heading="title"
+:intro="hero_intro"
+:image="hero_image"
+cta_text="Start your project"
+cta_url="/contact"
 }}
 
 {{# Sector intro - matches the About page's 'How this began' visual (cream rounded panel, dark text, brand-secondary CTA). Left column: above-title, heading, CTA. Right column: intro body. #}}
 {{ if intro_title || intro_body }}
-    <section class="bg-brand-text rounded-[60px] lg:rounded-[100px] py-16 lg:py-24">
-        <div class="container">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-start">
-                <div>
-                    {{ if intro_above_title }}
-                        <div class="relative z-[10] js-fade-up">
-                            {{ partial:components/above-title title="{ intro_above_title }" classes="above-title--secondary" }}
-                        </div>
-                    {{ /if }}
-                    {{ if intro_title }}
-                        <h2 class="font-heading uppercase text-[38px] sm:text-[46px] lg:text-[54px] xl:text-[60px] leading-tightest text-black mb-8 lg:mb-10 js-fade-up">{{ intro_title }}</h2>
-                    {{ /if }}
-                    <div class="js-fade-up">
-                        {{ partial:components/button title="{ intro_cta_title ?? 'Book a meeting' }" book_appointment="true" classes="button--primary" }}
-                    </div>
-                </div>
-                {{ if intro_body }}
-                    <div class="bard text-black text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
-                        {{ intro_body }}
-                    </div>
+<section class="bg-brand-text rounded-[60px] lg:rounded-[100px] py-16 lg:py-24">
+    <div class="container">
+        {{ if intro_above_title }}
+        <div class="relative z-[10] js-fade-up">
+            {{ partial:components/above-title title="{ intro_above_title }" classes="above-title--secondary" }}
+        </div>
+        {{ /if }}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-start">
+            <div>
+                {{ if intro_title }}
+                <h2 class="font-heading uppercase text-[35px] sm:text-[42px] lg:text-[48px] xl:text-[54px] leading-tightest text-black mb-8 lg:mb-10 js-fade-up">
+                    {{ intro_title }}</h2>
                 {{ /if }}
             </div>
+            {{ if intro_body }}
+            <div>
+                <div class="bard text-black text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
+                    {{ intro_body }}
+                </div>
+                <div class="js-fade-up mt-5">
+                    {{ partial:components/button title="{ intro_cta_title ?? 'Book a meeting' }" book_appointment="true"
+                    classes="" }}
+                </div>
+            </div>
+            {{ /if }}
         </div>
-    </section>
+    </div>
+</section>
 {{ /if }}
 
 {{# Intro image + text blocks. Each block carries its own Book a Meeting CTA under the body. Alternates naturally via each block's own image_position field. #}}
 {{ if intro_blocks }}
-    <section class="bg-brand-primary py-16 lg:py-24">
-        <div class="container">
-            <div class="flex flex-col gap-16 lg:gap-24">
-                {{ intro_blocks }}
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center">
-                        <div class="{{ if image_position == 'right' }}lg:order-1{{ else }}lg:order-2{{ /if }}">
-                            {{ if image }}
-                                {{ glide:image width="1200" fit="crop" }}
-                                    <img src="{{ url }}" alt="{{ alt ?? heading }}"
-                                         class="w-full h-auto rounded-[24px] lg:rounded-[32px] border-[3px] border-black shadow-2xl js-fade-up"
-                                         loading="lazy">
-                                {{ /glide:image }}
-                            {{ else }}
-                                <div class="aspect-[4/3] rounded-[24px] lg:rounded-[32px] border-[3px] border-black bg-brand-dark-blue flex items-center justify-center shadow-2xl js-fade-up">
-                                    <div class="w-[32%] max-w-[180px] opacity-70">
-                                        {{ partial:components/icons.julius-head }}
-                                    </div>
-                                </div>
-                            {{ /if }}
-                        </div>
-                        <div class="{{ if image_position == 'right' }}lg:order-2{{ else }}lg:order-1{{ /if }}">
-                            {{ if heading }}
-                                <h2 class="font-heading uppercase text-[34px] sm:text-[40px] lg:text-[46px] xl:text-[52px] leading-tightest text-white mb-6 lg:mb-8 js-fade-up">{{ heading }}</h2>
-                            {{ /if }}
-                            {{ if body }}
-                                <div class="bard prose-inverse text-white text-[16px] lg:text-[18px] leading-relaxed mb-8 lg:mb-10 js-fade-up">
-                                    {{ body }}
-                                </div>
-                            {{ /if }}
-                            <div class="js-fade-up">
-                                {{ partial:components/button title="{ cta_title ?? 'Book a meeting' }" book_appointment="true" classes="button--secondary" }}
-                            </div>
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+        <div class="flex flex-col gap-16 lg:gap-24">
+            {{ intro_blocks }}
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center">
+                <div class="{{ if image_position == 'right' }}lg:order-1{{ else }}lg:order-2{{ /if }}">
+                    {{ if image }}
+                    {{ glide:image width="1200" fit="crop" }}
+                    <img src="{{ url }}" alt="{{ alt ?? heading }}"
+                         class="w-full h-auto rounded-[24px] lg:rounded-[32px] border-[3px] border-black shadow-2xl js-fade-up"
+                         loading="lazy">
+                    {{ /glide:image }}
+                    {{ else }}
+                    <div class="aspect-[4/3] rounded-[24px] lg:rounded-[32px] border-[3px] border-black bg-brand-dark-blue flex items-center justify-center shadow-2xl js-fade-up">
+                        <div class="w-[32%] max-w-[180px] opacity-70">
+                            {{ partial:components/icons.julius-head }}
                         </div>
                     </div>
-                {{ /intro_blocks }}
+                    {{ /if }}
+                </div>
+                <div class="{{ if image_position == 'right' }}lg:order-2{{ else }}lg:order-1{{ /if }}">
+                    {{ if heading }}
+                    <h2 class="font-heading uppercase text-[34px] sm:text-[40px] lg:text-[46px] xl:text-[52px] leading-tightest text-white mb-6 lg:mb-8 js-fade-up">
+                        {{ heading }}</h2>
+                    {{ /if }}
+                    {{ if body }}
+                    <div class="bard prose-inverse text-white text-[16px] lg:text-[18px] leading-relaxed mb-8 lg:mb-10 js-fade-up">
+                        {{ body }}
+                    </div>
+                    {{ /if }}
+                    <div class="js-fade-up">
+                        {{ partial:components/button title="{ cta_title ?? 'Book a meeting' }" book_appointment="true"
+                        classes="button--secondary" }}
+                    </div>
+                </div>
             </div>
+            {{ /intro_blocks }}
         </div>
-    </section>
+    </div>
+</section>
 {{ /if }}
 
 {{ if problems }}
-    {{ partial:sectors/problems :items="problems" }}
+{{ partial:sectors/problems :items="problems" }}
 {{ /if }}
 
 {{ if features }}
-    {{ partial:sectors/features :items="features" }}
+{{ partial:sectors/features :items="features" }}
 {{ /if }}
 
 {{ if body }}
-    <section class="bg-brand-primary py-16 lg:py-24">
-        <div class="container">
-            <div class="prose prose-lg max-w-3xl mx-auto text-white bard">
-                {{ body }}
-            </div>
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+        <div class="prose prose-lg max-w-3xl mx-auto text-white bard">
+            {{ body }}
         </div>
-    </section>
+    </div>
+</section>
 {{ /if }}
 
 {{ if featured_case_study }}
-    {{ featured_case_study }}
-        {{ partial:work/featured-card
-            :title="title"
-            :excerpt="preview_text ?? excerpt"
-            :url="url"
-            :image="preview_background_image ?? hero_image"
-        }}
-    {{ /featured_case_study }}
+{{ featured_case_study }}
+{{ partial:work/featured-card
+:title="title"
+:excerpt="preview_text ?? excerpt"
+:url="url"
+:image="preview_background_image ?? hero_image"
+}}
+{{ /featured_case_study }}
 {{ /if }}
 
 {{ if sector_term }}
-    {{ sector_term }}
-        {{ collection:work taxonomy:sectors="{ slug }" limit="4" as="related_work" }}
-            {{ if related_work | count > 0 }}
-                <section class="bg-brand-primary py-16 lg:py-24">
-                    <div class="container">
-                        <div class="mb-10 lg:mb-14">
-                            <h2 class="font-heading uppercase text-[38px] sm:text-[42px] lg:text-[44px] leading-none text-white">More work in this sector</h2>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                            {{ related_work }}
-                                {{ partial:work/card
-                                    :title="title"
-                                    :url="url"
-                                    :image="preview_background_image ?? hero_image"
-                                }}
-                            {{ /related_work }}
-                        </div>
-                    </div>
-                </section>
-            {{ /if }}
-        {{ /collection:work }}
-    {{ /sector_term }}
+{{ sector_term }}
+{{ collection:work taxonomy:sectors="{ slug }" limit="4" as="related_work" }}
+{{ if related_work | count > 0 }}
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+        <div class="mb-10 lg:mb-14">
+            <h2 class="font-heading uppercase text-[38px] sm:text-[42px] lg:text-[44px] leading-none text-white">More
+                work in this sector</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {{ related_work }}
+            {{ partial:work/card
+            :title="title"
+            :url="url"
+            :image="preview_background_image ?? hero_image"
+            }}
+            {{ /related_work }}
+        </div>
+    </div>
+</section>
+{{ /if }}
+{{ /collection:work }}
+{{ /sector_term }}
 {{ /if }}
 
 {{ partial:shared/process }}
 
 {{ if faqs }}
-    {{ partial:shared/faq-accordion :items="faqs" title="Common questions" }}
+{{ partial:shared/faq-accordion :items="faqs" title="Common questions" }}
 {{ /if }}
 
 {{ if price_from }}
-    {{ partial:sectors/pricing
-        :price_from="price_from"
-        :timescale="timescale"
-        cta_text="See full pricing"
-        cta_url="/pricing"
-    }}
+{{ partial:sectors/pricing
+:price_from="price_from"
+:timescale="timescale"
+cta_text="See full pricing"
+cta_url="/pricing"
+}}
 {{ /if }}
 
 {{ partial:shared/testimonials limit="3" }}
@@ -168,11 +175,15 @@
                         Ready to build a {{ sector_name | lower }} website that actually pulls its weight?
                     </h2>
                     <div class="text-black text-[16px] lg:text-[17px] mb-8 js-fade-up">
-                        <p>Tell us where the current site is holding your {{ sector_name | lower }} business back and we will walk you through what we would do differently, how the project would run and roughly what it would cost - no obligation, no sales patter.</p>
+                        <p>Tell us where the current site is holding your {{ sector_name | lower }} business back and we
+                            will walk you through what we would do differently, how the project would run and roughly
+                            what it would cost - no obligation, no sales patter.</p>
                     </div>
                     <div class="flex flex-wrap gap-4 js-fade-up">
-                        {{ partial:components/button url="/contact" title="Start your project" classes="button--primary" }}
-                        {{ partial:components/button title="Book a meeting" book_appointment="true" classes="button--light-blue" }}
+                        {{ partial:components/button url="/contact" title="Start your project" classes="button--primary"
+                        }}
+                        {{ partial:components/button title="Book a meeting" book_appointment="true"
+                        classes="button--light-blue" }}
                     </div>
                 </div>
 

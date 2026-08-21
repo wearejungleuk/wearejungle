@@ -24,21 +24,27 @@ features:
   -
     heading: 'Custom quote builders that turn ad clicks into structured leads'
     body: 'Step-by-step forms where a visitor configures what they actually want - size, spec, extras, finish - and lands as a proper lead with quote data attached, not a generic contact enquiry.'
+    fa_icon: sliders
   -
     heading: 'Google Ads and analytics tracking, set up properly'
     body: 'Event tracking, conversion goals, GA4 and tag manager configured against real user actions so your ad account and your reporting agree with each other. No blind spots, no workarounds.'
+    fa_icon: chart-line
   -
     heading: 'Direct integration with your quote tool, CRM or ERP'
     body: 'Whatever is already running the business, the website plugs into it. Quote data flows through, CRM records get created, nothing has to be re-keyed by hand.'
+    fa_icon: plug
   -
     heading: 'Filterable product catalogues and technical documentation'
     body: 'Filter by grade, application, accreditation or country. Downloadable datasheets and spec PDFs that go out on demand without anyone on your side clicking send.'
+    fa_icon: filter
   -
     heading: 'Automated case study and datasheet delivery'
     body: 'Someone requests a specific case study or product PDF, they get that exact document emailed automatically. No chase, no manual attachment, no delay.'
+    fa_icon: file-pdf
   -
     heading: 'Country-filtered partner and installer locators'
     body: 'Specifiers, installers and buyers can find the nearest partner or approved installer without scrolling through a global list.'
+    fa_icon: location-dot
 featured_case_study:
   - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
 sector_term:
@@ -79,7 +85,7 @@ faqs:
         content:
           -
             type: text
-            text: 'The threshold we tend to see is roughly £1,000 to £2,000 a month in ad spend, a technical or configurable product range, or a business process that already touches three or four tools. Below that, a template site is fine. Above it, a custom construction website built in WordPress or fully bespoke pays for itself.'
+            text: 'The threshold we tend to see is roughly £1,000 to £2,000 a month in ad spend, a technical or configurable product range, or a business process that already touches three or four tools. Below that, a template site is fine. Above it, a custom construction website - we build almost all of ours on Statamic, our house CMS - pays for itself.'
   -
     question: 'What do specifiers, architects and engineers want from a construction website?'
     answer:
@@ -256,6 +262,6 @@ intro_blocks:
     image_position: right
     cta_title: 'Book a meeting'
 intro_above_title: 'Web design for construction'
-intro_title: 'Construction and industrial sites, built to earn their place'
+intro_title: 'Construction websites that win more work'
 intro_cta_title: 'Book a meeting'
 ---

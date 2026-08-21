@@ -24,21 +24,27 @@ features:
   -
     heading: 'Filterable technical catalogues'
     body: 'Filter by grade, application, accreditation, tolerance, country - whatever your specifiers actually filter on. Custom-built rather than shoehorned into a plugin that half-works.'
+    fa_icon: filter
   -
     heading: 'Custom product configurators and quote builders'
     body: 'Configure a product step by step - size, spec, extras, finish, quantity - and land as a real quote request with structured data attached, not a generic contact enquiry.'
+    fa_icon: sliders
   -
     heading: 'ERP, PIM and internal database sync'
     body: 'Product data, pricing, stock and specifications synced directly from the system of record so the website always reflects reality. No hand-updated CSVs, no drift between site and warehouse.'
+    fa_icon: plug
   -
     heading: 'Automated datasheet and case study delivery'
     body: 'A specifier requests a specific datasheet, product spec or case study PDF and gets that exact document emailed automatically. No manual chase, no day-long lag, no dropped leads.'
+    fa_icon: file-pdf
   -
     heading: 'Country-filtered partner and installer locators'
     body: 'Buyers and specifiers can find the nearest partner, installer or distributor for their country or region without wading through a global list.'
+    fa_icon: location-dot
   -
     heading: 'Full Google Ads and analytics tracking, set up properly'
     body: 'Event tracking, conversion goals, GA4 and tag manager configured against real user actions so your ad agency has clean data to work from and your reporting agrees with reality.'
+    fa_icon: chart-line
 featured_case_study:
   - d1b47741-1ae8-40d1-afd1-c5431c023b5f
 sector_term:
@@ -232,6 +238,6 @@ intro_blocks:
     image_position: right
     cta_title: 'Book a meeting'
 intro_above_title: 'Web design for manufacturers'
-intro_title: 'Manufacturer websites built for specifier audiences, not consumer templates'
+intro_title: 'Manufacturer websites specifiers actually use'
 intro_cta_title: 'Book a meeting'
 ---

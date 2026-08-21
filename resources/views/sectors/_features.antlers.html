@@ -1,9 +1,42 @@
 {{#
-    Sector-specific features.
+    Sector-specific features carousel.
     Params:
-    - items (grid): rows with `heading`, `body`, `icon` (asset)
+    - items (grid): rows with `heading`, `body`, `fa_icon` (text) or `icon` (asset fallback)
+
+    Renders as a Swiper carousel. On desktop shows up to 3 cards, on mobile 1.2.
+    Arrows below the track, disabled state handled via updateBtns.
 #}}
-<section class="bg-brand-primary py-16 lg:py-24">
+<section class="bg-brand-primary py-16 lg:py-24"
+    x-data="{ }"
+    x-init="$nextTick(() => {
+        const sw = new Swiper($refs.sectorFeaturesTrack, {
+            slidesPerView: 1.1,
+            spaceBetween: 16,
+            speed: 600,
+            watchOverflow: true,
+            breakpoints: {
+                640: { slidesPerView: 1.5, spaceBetween: 20 },
+                768: { slidesPerView: 2, spaceBetween: 24 },
+                1024: { slidesPerView: 2.5, spaceBetween: 28 },
+                1280: { slidesPerView: 3, spaceBetween: 32 },
+            },
+            on: {
+                init(s) { updateBtns(s); toggleNav(s); },
+                slideChange(s) { updateBtns(s); },
+                resize(s) { toggleNav(s); },
+                breakpoint(s) { toggleNav(s); },
+                lock(s) { toggleNav(s); },
+                unlock(s) { toggleNav(s); }
+            }
+        });
+        function updateBtns(s) {
+            [$refs.sfPrev].forEach(b => { b.disabled = s.isBeginning; b.classList.toggle('opacity-50', s.isBeginning); b.classList.toggle('cursor-not-allowed', s.isBeginning); });
+            [$refs.sfNext].forEach(b => { b.disabled = s.isEnd; b.classList.toggle('opacity-50', s.isEnd); b.classList.toggle('cursor-not-allowed', s.isEnd); });
+        }
+        function toggleNav(s) { if ($refs.sfNav) $refs.sfNav.classList.toggle('!hidden', s.isLocked); }
+        $refs.sfPrev.addEventListener('click', () => sw.slidePrev());
+        $refs.sfNext.addEventListener('click', () => sw.slideNext());
+    })">
     <div class="container">
 
         <div class="max-w-[760px] mb-12 lg:mb-16">
@@ -13,28 +46,47 @@
         </div>
 
         {{ if items }}
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                {{ items }}
-                    <div class="p-8 lg:p-10 rounded-[24px] bg-white/[0.06] border border-white/15 js-fade-up">
-                        {{ if icon }}
-                            <div class="w-[56px] h-[56px] rounded-[14px] bg-black flex items-center justify-center mb-6">
-                                {{ icon }}
-                                    <img src="{{ url }}" alt="{{ alt }}" class="w-[28px] h-[28px] object-contain">
-                                {{ /icon }}
+            <div class="swiper !overflow-visible js-fade-up" x-ref="sectorFeaturesTrack">
+                <div class="swiper-wrapper">
+                    {{ items }}
+                        <div class="swiper-slide !h-auto">
+                            <div class="h-full p-8 lg:p-10 rounded-[24px] bg-white/[0.06] border border-white/15 flex flex-col">
+                                {{ if fa_icon }}
+                                    <div class="w-[64px] h-[64px] rounded-[14px] bg-brand-secondary flex items-center justify-center mb-6">
+                                        <i class="fa-sharp fa-solid fa-{{ fa_icon }} text-black text-[26px]"></i>
+                                    </div>
+                                {{ elseif icon }}
+                                    <div class="w-[64px] h-[64px] rounded-[14px] bg-black flex items-center justify-center mb-6">
+                                        {{ icon }}
+                                            <img src="{{ url }}" alt="{{ alt }}" class="w-[32px] h-[32px] object-contain">
+                                        {{ /icon }}
+                                    </div>
+                                {{ /if }}
+                                {{ if heading }}
+                                    <h3 class="font-heading uppercase text-white text-[22px] lg:text-[24px] leading-tightest mb-4">
+                                        {{ heading }}
+                                    </h3>
+                                {{ /if }}
+                                {{ if body }}
+                                    <p class="font-body text-white/85 text-[16px] lg:text-[17px] leading-relaxed">
+                                        {{ body }}
+                                    </p>
+                                {{ /if }}
                             </div>
-                        {{ /if }}
-                        {{ if heading }}
-                            <h3 class="font-heading uppercase text-white text-[22px] lg:text-[24px] leading-tightest mb-4">
-                                {{ heading }}
-                            </h3>
-                        {{ /if }}
-                        {{ if body }}
-                            <p class="font-body text-white/85 text-[16px] lg:text-[17px] leading-relaxed">
-                                {{ body }}
-                            </p>
-                        {{ /if }}
-                    </div>
-                {{ /items }}
+                        </div>
+                    {{ /items }}
+                </div>
+            </div>
+
+            <div x-ref="sfNav" class="flex mt-8 lg:mt-10">
+                <div class="arrows flex items-center gap-2 ml-auto">
+                    <button x-ref="sfPrev" type="button" aria-label="Previous" class="arrow-prev w-[61px] h-[61px] text-black bg-brand-secondary border-[2px] border-black rounded-[15px]">
+                        <i class="fa-sharp fa-regular fa-chevron-left"></i>
+                    </button>
+                    <button x-ref="sfNext" type="button" aria-label="Next" class="arrow-next w-[61px] h-[61px] text-black bg-brand-secondary border-[2px] border-black rounded-[15px]">
+                        <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                    </button>
+                </div>
             </div>
         {{ /if }}
 
