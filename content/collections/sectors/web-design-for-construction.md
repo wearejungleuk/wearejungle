@@ -45,7 +45,7 @@ sector_term:
   - construction
 faqs:
   -
-    question: 'What features should a construction company website actually have?'
+    question: 'What features should a construction company website have?'
     answer:
       -
         type: paragraph
@@ -60,7 +60,7 @@ faqs:
             type: text
             text: 'In practice that means a filterable product or service catalogue (by grade, application, accreditation, country or however your specifiers actually narrow down), a proper case study section where each project has its own downloadable PDF sent on demand, a visible and current accreditation area (CHAS, SafeContractor, Constructionline, ISO, plus trade body memberships), a quote builder or configurator that lets a visitor spec what they want and land as a structured lead, and direct integration with your CRM, quote tool or ERP so nothing has to be re-keyed by hand.'
   -
-    question: 'Is WordPress, Wix, Squarespace or a custom build best for a construction business?'
+    question: 'Best CMS for a construction website: WordPress, Wix, Squarespace or custom?'
     answer:
       -
         type: paragraph
@@ -79,9 +79,9 @@ faqs:
         content:
           -
             type: text
-            text: 'The threshold we tend to see is roughly £1,000 to £2,000 a month in ad spend, a technical or configurable product range, or a business process that already touches three or four tools. Below that, a template site is fine. Above it, a custom build pays for itself.'
+            text: 'The threshold we tend to see is roughly £1,000 to £2,000 a month in ad spend, a technical or configurable product range, or a business process that already touches three or four tools. Below that, a template site is fine. Above it, a custom construction website built in WordPress or fully bespoke pays for itself.'
   -
-    question: 'What do specifiers, architects and engineers want from a supplier or manufacturer website?'
+    question: 'What do specifiers, architects and engineers want from a construction website?'
     answer:
       -
         type: paragraph
@@ -95,14 +95,8 @@ faqs:
           -
             type: text
             text: 'That means a technical catalogue they can filter properly - by grade, application, accreditation, tolerance, country - not a paginated grid of everything you sell. It means datasheets, spec PDFs and installation guides available on demand without having to email in and wait a day. It means case studies with real detail (context, spec, outcome) and a downloadable version. It means being able to find the nearest approved installer or distributor without scrolling through a global list. And for anyone selling into a project rather than a straight product sale, it means being able to build up a project specification or bill of materials on the site itself.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'None of this is exotic. Templated site builders just do not support any of it cleanly, which is why so many manufacturer sites treat their specifier audience like a consumer one.'
   -
-    question: 'Why do most construction websites underperform on Google Ads?'
+    question: 'Why do construction company websites underperform on Google Ads?'
     answer:
       -
         type: paragraph
@@ -115,55 +109,55 @@ faqs:
         content:
           -
             type: text
-            text: 'The second is the landing page. The ad promises a specific product, service or spec; the landing page dumps the visitor on a generic services page and hopes for the best. Ads that convert well point to landing pages built for that specific ad copy - not a stock page shared with three other campaigns.'
+            text: 'The second is the landing page. The ad promises a specific product, service or spec; the landing page dumps the visitor on a generic services page and hopes for the best. Construction Google Ads campaigns that convert well point to landing pages built for that specific ad copy - not a stock page shared with three other campaigns.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'The third is what happens after the form is submitted. An enquiry arrives as an email, someone re-keys the details into the quote software, someone else copies it into the CRM, and by the time an actual quote lands the customer has moved on. Fixing this means treating the website as the front end of a system, not a standalone brochure - direct integration with the quote tool and CRM, structured lead data attached to the enquiry, automatic acknowledgement to the customer.'
+            text: 'The third is what happens after the form is submitted. An enquiry arrives as an email, someone re-keys the details into the quote software, someone else copies it into the CRM, and by the time an actual quote lands the customer has moved on. Fixing this means treating the construction website as the front end of a system, not a standalone brochure - direct integration with the quote tool and CRM, structured lead data attached to the enquiry, automatic acknowledgement to the customer.'
   -
-    question: 'Can a construction website integrate with a CRM, quote tool or ERP?'
+    question: 'Can a construction website integrate with our CRM, quote tool or ERP?'
     answer:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Yes, and for anything above a very small operation it should. If your business already runs on a quote builder, a CRM (HubSpot, Pipedrive, Salesforce, Zoho, Monday), or an ERP (SAP, NetSuite, Sage, Odoo), the website should push structured lead data straight in so nothing has to be re-keyed. Product data, pricing and stock should flow the other way where relevant, so the website reflects what the business actually holds without anyone hand-updating a CSV.'
+            text: 'Yes, and for anything above a very small construction operation it should. If your business already runs on a quote builder, a CRM (HubSpot, Pipedrive, Salesforce, Zoho, Monday), or an ERP (SAP, NetSuite, Sage, Odoo), the website should push structured lead data straight in so nothing has to be re-keyed. Product data, pricing and stock should flow the other way where relevant, so the website reflects what the business actually holds without anyone hand-updating a CSV.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Practical example: an enquiry from a construction site with a proper quote builder should arrive in the CRM with the configured spec, size, extras and estimated value already attached to the lead record. The sales team open one system, see the quote request in the shape it was made, and reply. What they should not be doing is opening three tabs to reconstruct what the customer asked for.'
+            text: 'Practical example: an enquiry from a construction website with a proper quote builder should arrive in the CRM with the configured spec, size, extras and estimated value already attached to the lead record. The sales team open one system, see the quote request in the shape it was made, and reply. What they should not be doing is opening three tabs to reconstruct what the customer asked for.'
   -
-    question: 'Can you migrate us off Wix, Squarespace or a templated WordPress theme without losing rankings?'
+    question: 'Can you migrate a construction website off Wix, Squarespace or a WordPress theme without losing rankings?'
     answer:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Yes. Most of our construction rebuilds start on a legacy platform. We map every existing URL to its new equivalent, keep the pages that carry the traffic, and set the redirects properly on go-live so ranking equity moves across cleanly.'
+            text: 'Yes. Most of our construction website rebuilds start on a legacy platform. We map every existing URL to its new equivalent, keep the pages that carry the traffic, and set the redirects properly on go-live so ranking equity moves across cleanly.'
   -
-    question: 'Do you set up Google Ads tracking, or do we hand that to our agency?'
+    question: 'Do you set up Google Ads tracking for construction websites?'
     answer:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Either. We regularly set up event tracking, conversion goals, GA4 and tag manager to a standard that your ad agency can just plug into. If you have an ad agency you trust, we brief them and hand it over. If you do not, we can run that side too.'
+            text: 'Either. We regularly set up event tracking, conversion goals, GA4 and tag manager on construction websites to a standard that your ad agency can just plug into. If you have an ad agency you trust, we brief them and hand it over. If you do not, we can run that side too.'
   -
-    question: 'When is it actually worth rebuilding an existing construction site?'
+    question: 'When is it worth rebuilding an existing construction company website?'
     answer:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'The honest answer: when the site has stopped being an asset and started being a tax on time and budget. Signs that usually mean the current site has run out of road: the Google Ads account cannot get the tracking it needs, the team is spending real hours re-keying data between the site and the tools around it, enquiries are trickling through but a chunk never turn into quotes, page load times are dragging both ad quality score and organic ranking down, and the accreditation logos on the footer are out of date because nobody can remember how to update them.'
+            text: 'The honest answer: when the site has stopped being an asset and started being a tax on time and budget. Signs that usually mean the current construction website has run out of road: the Google Ads account cannot get the tracking it needs, the team is spending real hours re-keying data between the site and the tools around it, enquiries are trickling through but a chunk never turn into quotes, page load times are dragging both ad quality score and organic ranking down, and the accreditation logos on the footer are out of date because nobody can remember how to update them.'
       -
         type: paragraph
         content:
@@ -171,14 +165,14 @@ faqs:
             type: text
             text: 'If two or three of those are true, a rebuild will usually pay for itself inside a year on ad efficiency and saved admin hours alone. If none of them are true, the current site is doing its job and there is no need to touch it.'
   -
-    question: 'How much does a construction company website cost and how long does it take to build?'
+    question: 'How much does a construction company website cost in the UK and how long does it take to build?'
     answer:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Custom construction and industrial websites start from £4,500 + VAT and run to £30,000+ for the more complex builds with integrations, product configurators, ERP sync or multi-region partner networks. Most projects sit in the £8,000 to £18,000 range - a fully custom design and build, proper ad tracking, quote builder or configurator, and integration with the main business system.'
+            text: 'Custom construction and industrial websites start from £4,500 + VAT and run to £30,000+ for the more complex builds with integrations, product configurators, ERP sync or multi-region partner networks. Most construction website projects sit in the £8,000 to £18,000 range - a fully custom design and build, proper ad tracking, quote builder or configurator, and integration with the main business system.'
       -
         type: paragraph
         content:

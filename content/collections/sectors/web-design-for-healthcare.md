@@ -1,6 +1,5 @@
 ---
 id: 4d1bab14-0ae1-4bea-97e3-aa67b452482a
-published: true
 blueprint: sector
 title: 'Web design for healthcare providers'
 sector_name: Healthcare
@@ -10,135 +9,161 @@ meta_description: 'Websites for private clinics, physiotherapy practices, dental
 hero_intro: 'Websites for private clinics, physiotherapy practices, dental groups and specialist providers. Booking journeys that stay out of the way, integrations with the tools that already run the clinic, and content structured for what patients actually search for.'
 problems:
   -
-    heading: "Your booking is buried behind clicks patients will not make"
-    body: "Most healthcare sites hide the booking behind a phone number, a contact form and a link to a booking widget three levels deep. Every extra click is a percentage of patients who never make it. The role of the site is to get out of the way and get them booked."
+    heading: 'Your booking is buried behind clicks patients will not make'
+    body: 'Most healthcare sites hide the booking behind a phone number, a contact form and a link to a booking widget three levels deep. Every extra click is a percentage of patients who never make it. The role of the site is to get out of the way and get them booked.'
   -
-    heading: "Your services page treats every treatment the same"
+    heading: 'Your services page treats every treatment the same'
     body: "A physiotherapy clinic offering shockwave, sports rehab, women's health and post-op recovery gets one 'services' page listing them all in identical grey boxes. The high-value treatments never get room to breathe, so they never get chosen."
   -
-    heading: "You look smaller and less established than you actually are"
-    body: "The website is often two or three years behind the clinic. New treatments, new practitioners, new locations - the marketing site was built when there were three of you, and it still reads that way. Local competitors who look bigger on Google are winning patients you should be winning."
+    heading: 'You look smaller and less established than you actually are'
+    body: 'The website is often two or three years behind the clinic. New treatments, new practitioners, new locations - the marketing site was built when there were three of you, and it still reads that way. Local competitors who look bigger on Google are winning patients you should be winning.'
   -
-    heading: "Referrals from other clinicians go to a form nobody reads"
-    body: "Physio, GP and specialist referrals arrive as an email off a generic contact form and get lost in the same inbox as marketing enquiries. There is no way to acknowledge, triage or track them properly, and the referring clinician stops sending."
+    heading: 'Referrals from other clinicians go to a form nobody reads'
+    body: 'Physio, GP and specialist referrals arrive as an email off a generic contact form and get lost in the same inbox as marketing enquiries. There is no way to acknowledge, triage or track them properly, and the referring clinician stops sending.'
 features:
   -
-    heading: "Booking journeys that get out of the way"
-    body: "A booking flow that starts on any treatment or location page and lands the patient in an appointment - not on a form asking them their life story. Wired into whatever booking or practice management system you already run."
+    heading: 'Booking journeys that get out of the way'
+    body: 'A booking flow that starts on any treatment or location page and lands the patient in an appointment - not on a form asking them their life story. Wired into whatever booking or practice management system you already run.'
   -
-    heading: "Multi-location, multi-clinician search"
-    body: "Postcode-aware and clinician-aware search that sends patients to the closest clinic with the soonest available appointment, filterable by treatment, practitioner and speciality. Group clinics live or die on this. We build it properly."
+    heading: 'Multi-location, multi-clinician search'
+    body: 'Postcode-aware and clinician-aware search that sends patients to the closest clinic with the soonest available appointment, filterable by treatment, practitioner and speciality. Group clinics live or die on this. We build it properly.'
   -
-    heading: "Modular treatment pages that sell the specialist work"
+    heading: 'Modular treatment pages that sell the specialist work'
     body: "Bespoke templates per treatment or speciality so the higher-value work gets the space it deserves instead of being lost on a single 'our services' page. Add a new treatment or a new practitioner without needing a developer."
   -
-    heading: "Practice management integrations"
-    body: "Dentally, Pabau, Cliniko, TM3 and equivalents. Practice-facing forms and applications pull data from your system, so applicants and clinicians get most of it pre-populated. A 10-minute form becomes about a minute."
+    heading: 'Practice management integrations'
+    body: 'Dentally, Pabau, Cliniko, TM3 and equivalents. Practice-facing forms and applications pull data from your system, so applicants and clinicians get most of it pre-populated. A 10-minute form becomes about a minute.'
   -
-    heading: "Structured referral intake"
-    body: "A separate, authenticated referral pathway for referring clinicians rather than the public contact form. Data captured in a structure your clinical team can triage, with automatic acknowledgement so referrers know it landed."
+    heading: 'Structured referral intake'
+    body: 'A separate, authenticated referral pathway for referring clinicians rather than the public contact form. Data captured in a structure your clinical team can triage, with automatic acknowledgement so referrers know it landed.'
   -
-    heading: "Content built for how patients actually search"
+    heading: 'Content built for how patients actually search'
     body: "Condition and treatment pages structured around real symptom-driven queries, with clean schema so they show up properly in local pack and 'near me' results. Not a wall of clinical copy."
-body:
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "Healthcare is a broad brief but the core patterns are the same. Get the booking out of the way. Treat different treatments differently. Make the site look like the clinic actually is now, not the clinic three years ago. And integrate with the tools running the practice so information does not have to be re-keyed by hand. We work across private clinics, physiotherapy practices, dental groups and specialist providers."
-  -
-    type: heading
-    attrs:
-      level: 3
-    content:
-      -
-        type: text
-        text: "South Coast Rx Physiotherapy: a website that finally reflects the practice"
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "South Coast Rx Physiotherapy have grown significantly over the last few years - more practitioners, more treatments, more locations - but the website had been left behind. Local competitors who did not offer half of what South Coast Rx do were winning on search because their sites looked more substantial. We rebuilt the site as a modern, SEO-friendly WordPress build with dedicated treatment pages, clean condition content, and a structure that reflects the size and range the practice now actually is. The result: a site that puts them clearly ahead of local competitors and reads like the specialist clinic they have become."
-  -
-    type: heading
-    attrs:
-      level: 3
-    content:
-      -
-        type: text
-        text: "Damira Dental: multi-site healthcare group, off Drupal, in control of its own website"
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "Damira Dental is a large multi-site dental group. The story on the healthcare side is the same one that hits every multi-practice provider: they were locked to their previous agency's Drupal build, paying around £10,000 a year for updates that should have been routine, with a location search that took patients five clicks to book at their nearest practice. We migrated the whole group onto a custom WordPress build the internal team can drive themselves, rebuilt the nearest-practice search to run in two clicks, added a Dentally API integration on the practice-facing forms (10 minutes to about a minute) and a live locum roles feed that renders straight from their central database. It is exactly the pattern we would apply to any multi-site clinical group."
-  -
-    type: heading
-    attrs:
-      level: 3
-    content:
-      -
-        type: text
-        text: "The Curve Dental: a healthcare brand that looks like a healthcare brand should"
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "Healthcare websites almost always underplay the brand. The Curve is a new dental practice in Barnstaple with a very deliberate visual identity - bold colours and interiors that borrow from luxurious Moroccan riads - and they wanted the website to carry that from the first search result. We designed and built a scroll-driven, editorial site that reads like a hospitality brand rather than a clinical one, while keeping the booking journey two taps deep. It is the same principle that applies across healthcare: the site is often the first place a patient meets the practice, and the visual identity has to match what they will experience in the chair."
 featured_case_study:
   - c6598d61-88d6-4d30-8dc7-41f8dd354acd
 sector_term:
   - healthcare
 faqs:
   -
-    question: "Do you work with clinics outside of dental?"
+    question: 'What features should a healthcare or private clinic website have?'
     answer:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Yes. Dental is a large part of our healthcare work but the pattern applies to physiotherapy, private GP, aesthetics, specialist and multi-disciplinary clinics. If your practice runs on a booking or PMS system we know (or one we can integrate with), the underlying build is very similar."
+            text: 'A healthcare website earns its place when it does four jobs well: it makes the clinic look like the clinic actually is now (not the clinic three years ago), it gets a patient from a search result to a booked appointment without friction, it treats different specialities and treatments differently rather than lumping them onto one services page, and it integrates with the booking or practice management system so information does not have to be re-keyed.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'For multi-site clinics, multi-clinician groups or specialist practices, add: nearest-clinic and nearest-practitioner search, structured referral intake for referring clinicians (separate from the public contact form), and condition-driven content built for how patients actually search rather than clinical copy written for other clinicians.'
   -
-    question: "Do you integrate with Cliniko, Pabau, TM3, Dentally or something else?"
+    question: 'Best CMS for a private clinic website: WordPress, Wix, Squarespace or custom?'
     answer:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "We integrate with any practice management system that exposes an API. Dentally, Pabau, Cliniko and TM3 are the ones we hit most often. If you use something we have not touched before we will scope the integration properly before quoting."
+            text: 'For a single-clinician practice with a light patient volume and no marketing spend, Wix or Squarespace will do the job. Templated WordPress on a premium theme sits in the same bracket - fine for a brochure site that mainly needs to look credible when someone searches the clinic name.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'The point where those platforms stop making sense is when the clinic has more than one practitioner, offers a range of specialities that deserve their own pages, or is spending seriously on marketing. At that point the booking friction and the flat "our services" structure start costing patients. Custom WordPress builds are where we do most of our healthcare website work; occasionally Statamic where the brand design is the primary concern.'
   -
-    question: "Can you build a referral pathway for referring clinicians as well as the public site?"
+    question: 'What do patients look for when choosing a private clinic online?'
     answer:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Yes. Structured referral intake as its own authenticated pathway, separate from the marketing contact form, is a common part of our multi-site clinic builds. Data lands in a shape your clinical team can triage and refer back to."
+            text: 'Patients arrive at a healthcare website with a problem and a question - "who treats this condition near me?" - and are looking to shortlist two or three providers as fast as possible. That means content structured around the condition or symptom, not the clinician; clear pricing where prices are shown; recent, real reviews close to the booking CTA; and a booking flow that opens in a couple of taps from any treatment or condition page.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Practitioner bios matter more in healthcare than most sectors: the patient wants to know who they will actually see. Photos, qualifications, specialities and something human beside the clinical CV. A clinician page that reads like an academic bibliography loses to one that also mentions where they trained, what they specialise in, and what patients say about them.'
   -
-    question: "Will our patients notice any downtime when we move?"
+    question: 'How do private clinic websites get more bookings and structured referrals?'
     answer:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "No. We stage the new site alongside the old one and switch on launch day with no perceptible downtime. Existing URLs are redirected properly so nobody hits a 404 mid-booking."
+            text: 'For patient bookings: replace the contact form with a real booking widget wired into your practice management system, add booking CTAs to every treatment and condition page, structure content around the queries patients actually type, and get mobile speed right (majority of healthcare website search is on a phone).'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'For referrals from other clinicians: build a separate, authenticated referral pathway rather than dumping referring GPs and specialists into the public contact form. Structured data your clinical team can triage, automatic acknowledgement so the referrer knows it landed, and a clear promise of what happens next. Referrers stop sending when the loop feels unclear.'
   -
-    question: "How long does a build like this take?"
+    question: 'Can a healthcare website integrate with Cliniko, Pabau, TM3 or Dentally?'
     answer:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "A single-clinic site with a decent brand and standard booking integration usually runs 8 to 10 weeks. Multi-site or multi-speciality clinics with API integrations, referral pathways and location search sit at 10 to 14 weeks."
+            text: 'Yes. We integrate healthcare websites with any practice management system that exposes an API - Cliniko, Pabau, TM3 and Dentally are the ones we hit most often. Bookings, patient forms, referrer forms and staff applications can all pull structured data from the PMS. If you use a system we have not touched we will scope the integration properly before quoting.'
+  -
+    question: 'Do you build websites for clinics outside of dental?'
+    answer:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Yes. Dental is a large part of our healthcare website work but the same pattern applies to physiotherapy, private GP, aesthetics, specialist and multi-disciplinary clinics. If your practice runs on a booking or PMS system we know (or one we can integrate with), the underlying build is very similar.'
+  -
+    question: 'CQC, GDC and GDPR: what applies to a healthcare website?'
+    answer:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Depending on the type of clinic: CQC requirements for regulated services (ratings displayed correctly, statement of purpose linked), professional-body ethical advertising rules (GDC for dental, GMC for GPs, HCPC for physio and others), UK GDPR / ICO obligations around patient data, and cookie consent handled properly. We build healthcare websites with all of this in mind and work with your clinical or compliance point of contact so nothing ships without review.'
+  -
+    question: 'Can you build a referral pathway for clinicians alongside the public clinic site?'
+    answer:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Yes. Structured referral intake as its own authenticated pathway, separate from the marketing contact form, is a common part of our multi-site healthcare website builds. Data lands in a shape your clinical team can triage, with automatic acknowledgement back to the referring clinician and a clear owner assigned inside the practice.'
+  -
+    question: 'Will patients notice downtime when we rebuild our clinic website?'
+    answer:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'No. We stage the new healthcare website alongside the old one and switch on launch day with no perceptible downtime. Existing URLs are redirected properly so nobody hits a 404 mid-booking, and organic rankings move across cleanly.'
+  -
+    question: 'How much does a private clinic website cost in the UK and how long does it take to build?'
+    answer:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Single-clinic healthcare websites start from £4,500 + VAT and typically run £6,000 to £14,000 with a proper brand, booking integration and modular treatment pages. Multi-site or multi-speciality clinic websites with PMS integrations, referral pathways and location search sit at £15,000 to £30,000+.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Timescale is 8 to 10 weeks for a single clinic; 10 to 14 weeks for multi-site or multi-speciality builds. Every project is fixed-priced before it starts.'
 price_from: '£4,500'
 timescale: '8 to 14 weeks'
 use_meta_keywords: false
