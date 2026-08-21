@@ -194,6 +194,7 @@ intro_blocks:
             text: 'We build manufacturer catalogues that filter on the dimensions your specifiers actually use, with clean product pages, downloadable spec sheets and technical documentation surfaced where they belong - not two clicks deep in a resources page.'
     image: qvis-project-builder.jpg
     image_position: right
+    cta_title: 'Book a meeting'
   -
     heading: 'ERP and PIM sync so the site reflects reality'
     body:
@@ -211,6 +212,7 @@ intro_blocks:
             text: 'Every manufacturer website we build syncs directly with SAP, NetSuite, Sage, Odoo or an in-house PIM. A specifier lands on a product page and sees the price and stock the sales team see in the internal system - because both are reading the same feed.'
     image: qvis-back-image.jpg
     image_position: left
+    cta_title: 'Book a meeting'
   -
     heading: 'Automated datasheet and case study delivery'
     body:
@@ -228,4 +230,8 @@ intro_blocks:
             text: 'Manufacturer websites we build send the requested document automatically on form submission. No chase, no manual attachment, no day-long lag. Response time drops from a day to instant - which on specifier leads is often the difference between winning and losing.'
     image: delta-xero-home.jpg
     image_position: right
+    cta_title: 'Book a meeting'
+intro_above_title: 'Web design for manufacturers'
+intro_title: 'Manufacturer websites built for specifier audiences, not consumer templates'
+intro_cta_title: 'Book a meeting'
 ---

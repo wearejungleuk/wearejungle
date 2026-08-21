@@ -203,6 +203,7 @@ intro_blocks:
             text: 'We integrate healthcare websites with Cliniko, Pabau, TM3, Dentally and equivalents so bookings happen inside your normal workflow. Booking CTAs on every treatment and condition page. Nearest-clinic search for multi-site groups. Speed and mobile UX because most healthcare traffic is on a phone.'
     image: scrx-hero.jpg
     image_position: right
+    cta_title: 'Book a meeting'
   -
     heading: 'A website that reflects the clinic you actually are now'
     body:
@@ -220,6 +221,7 @@ intro_blocks:
             text: 'We build healthcare websites so the clinical team can keep them current without a developer. Add a new speciality or a new practitioner in the CMS, launch a campaign landing page for a treatment you want to promote, publish a condition-driven article - all without a purchase order or a wait.'
     image: scrx-blocks.jpg
     image_position: left
+    cta_title: 'Book a meeting'
   -
     heading: 'Structured referrer intake, separate from public enquiries'
     body:
@@ -237,4 +239,8 @@ intro_blocks:
             text: 'For multi-site clinical groups we build authenticated referrer portals as their own pathway - structured intake, automatic acknowledgement, data landing in a shape the clinical team can triage. Referrers keep sending because the loop stays clear.'
     image: health-social-care.webp
     image_position: right
+    cta_title: 'Book a meeting'
+intro_above_title: 'Web design for healthcare providers'
+intro_title: 'Private clinic websites that look like the clinic actually is now'
+intro_cta_title: 'Book a meeting'
 ---

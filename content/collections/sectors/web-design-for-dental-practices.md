@@ -194,6 +194,7 @@ intro_blocks:
             text: 'Every dental practice website we build treats the site as a continuation of the physical practice. Colour, type, photography and tone all carry from the room to the screen. It is why the first thing patients say is that the site "looks like the practice".'
     image: the-curve-dental-about.jpg
     image_position: right
+    cta_title: 'Book a meeting'
   -
     heading: 'Two-tap booking, wired into your PMS'
     body:
@@ -211,6 +212,7 @@ intro_blocks:
             text: 'We wire booking directly into Dentally, Pabau, All Dental or whichever PMS you run. Two taps from any treatment or location page into a real appointment. For multi-practice groups, nearest-practice search on top so patients get to the closest available slot fast.'
     image: damira-dental-locations.jpg
     image_position: left
+    cta_title: 'Book a meeting'
   -
     heading: 'Modular treatment pages that sell the specialist work'
     body:
@@ -228,4 +230,8 @@ intro_blocks:
             text: 'Modular templates per treatment mean the practice can add a new treatment, launch a campaign, or run a paid ad landing page without needing a developer. High-value treatments get sold; the site keeps up with the practice.'
     image: watford-smiles-treatments.jpg
     image_position: right
+    cta_title: 'Book a meeting'
+intro_above_title: 'Web design for dental practices'
+intro_title: 'Dental practice websites that match the practice and book patients in two taps'
+intro_cta_title: 'Book a meeting'
 ---

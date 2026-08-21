@@ -42,23 +42,42 @@ tabs:
         display: 'Sector intro'
         fields:
           -
+            handle: intro_above_title
+            field:
+              type: text
+              display: 'Intro above-title'
+              instructions: 'Small chip above the intro heading, e.g. "About the sector".'
+          -
+            handle: intro_title
+            field:
+              type: text
+              display: 'Intro heading'
+              instructions: 'The big heading. Renders top-left of the two-column intro section.'
+          -
             handle: intro_body
             field:
               type: bard
               display: 'Intro copy'
-              instructions: 'Short introduction to the sector, rendered directly under the hero. Aim for 1-3 paragraphs.'
+              instructions: 'Renders in the right-hand column beside the intro heading + CTA. Aim for 2-3 paragraphs.'
               buttons:
                 - bold
                 - italic
                 - anchor
               save_html: false
           -
+            handle: intro_cta_title
+            field:
+              type: text
+              display: 'Intro CTA label'
+              instructions: 'Button label. Defaults to "Book a meeting". Opens the Calendly booking widget.'
+              default: 'Book a meeting'
+          -
             handle: intro_blocks
             field:
               type: grid
               mode: stacked
               display: 'Intro image + text blocks'
-              instructions: 'Repeatable image + text sections rendered under the intro copy. Alternate image_position so the layout does not repeat itself.'
+              instructions: 'Repeatable image + text sections rendered under the intro copy. Alternate image_position so the layout does not repeat itself. Each block ends with a Book a Meeting CTA.'
               fields:
                 -
                   handle: heading
@@ -92,6 +111,13 @@ tabs:
                     options:
                       left: Left
                       right: Right
+                -
+                  handle: cta_title
+                  field:
+                    type: text
+                    display: 'CTA label'
+                    instructions: 'Button label under the body. Defaults to "Book a meeting". Opens the Calendly booking widget.'
+                    default: 'Book a meeting'
       -
         display: 'The problem'
         fields:

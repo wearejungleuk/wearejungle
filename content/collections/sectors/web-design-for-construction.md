@@ -218,6 +218,7 @@ intro_blocks:
             text: 'Visitors configure what they actually want - size, spec, extras, finish, quantity - and land as a real lead with structured quote data attached. That data flows straight into the quote tool and CRM you already run on, without anyone re-keying a thing.'
     image: cs-garden-offices-quick-quote.jpg
     image_position: right
+    cta_title: 'Book a meeting'
   -
     heading: 'Filterable technical catalogues for specifiers who know what they want'
     body:
@@ -235,6 +236,7 @@ intro_blocks:
             text: 'We build technical catalogues that filter on the dimensions your audience actually filters on, deliver spec sheets and datasheets on demand rather than by email, and let international buyers find their nearest partner or installer without scrolling through a global list.'
     image: delta-xero-industries.jpg
     image_position: left
+    cta_title: 'Book a meeting'
   -
     heading: 'Google Ads tracking that agrees with your ad account'
     body:
@@ -252,4 +254,8 @@ intro_blocks:
             text: 'Every construction website we build ships with GA4, tag manager, event tracking and conversion goals configured against the actions that actually matter - quote requests, spec-sheet downloads, phone taps - so your ad spend can be tuned against real data rather than form fills.'
     image: cs-garden-offices-home.jpg
     image_position: right
+    cta_title: 'Book a meeting'
+intro_above_title: 'Web design for construction'
+intro_title: 'Construction and industrial sites, built to earn their place'
+intro_cta_title: 'Book a meeting'
 ---
