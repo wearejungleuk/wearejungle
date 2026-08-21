@@ -52,7 +52,7 @@ overview_body:
             type: link
             attrs:
               href: /services/wordpress-websites
-        text: 'WordPress'
+        text: WordPress
       -
         type: text
         text: ' theme powered by Tailwind CSS and Alpine.js, with WooCommerce customised and integrated with Stripe. In practice: near-instant course browsing, a proper filtering system by topic, level and price, and a checkout the team could actually trust.'
@@ -184,12 +184,17 @@ card_text_2:
       -
         type: text
         text: 'Order volume up 254 percent, revenue up 410 percent, and consistent 40 to 55 paid orders a month within three months of launch.'
-testimonial_quote: "We recently worked with Brad at We Are Jungle to re-build and refine our website, and the entire experience has been fantastic. From the start, Brad offered a competitive quote and maintained excellent communication throughout the project. His responsiveness to emails and willingness to answer our questions made the process really easy.\n\nAfter the website went live, Brad provided thorough CMS training for our team, ensuring we felt confident managing the backend. We're absolutely thrilled with the final result, a website that not only looks amazing but is also fast and efficient.\n\nGiven our great experience, we've decided to continue working with Brad through his monthly service package, where both himself and Kay still remain highly responsive should we have any queries that need resolving. Highly recommend!"
+testimonial_quote: |-
+  We recently worked with Brad at We Are Jungle to re-build and refine our website, and the entire experience has been fantastic. From the start, Brad offered a competitive quote and maintained excellent communication throughout the project. His responsiveness to emails and willingness to answer our questions made the process really easy.
+
+  After the website went live, Brad provided thorough CMS training for our team, ensuring we felt confident managing the backend. We're absolutely thrilled with the final result, a website that not only looks amazing but is also fast and efficient.
+
+  Given our great experience, we've decided to continue working with Brad through his monthly service package, where both himself and Kay still remain highly responsive should we have any queries that need resolving. Highly recommend!
 testimonial_name: "Laura O'Leary"
 testimonial_company: 'My Learning Cloud'
 testimonial_url: 'https://mylearningcloud.org.uk'
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1787616000
+updated_at: 1787293709
 page_builder:
   -
     id: work_cta_my_learning_cloud
@@ -213,4 +218,11 @@ page_builder:
     illustration: julius-ipad.svg
     type: cta_block
     enabled: true
+hero_image: my-learning-cloud-hero.jpg
+screenshot_1: my-learning-cloud-products.jpg
+screenshot_2: my-learning-cloud-product.jpg
+testimonial_avatar: 1621333113157.jpeg
+preview_image: my-learning-cloud-hero.jpg
+preview_background_image: health-social-care.webp
+card_image_2: health-social-care.webp
 ---

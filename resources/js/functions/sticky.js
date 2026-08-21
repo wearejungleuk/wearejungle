@@ -36,12 +36,15 @@ export default function stickyLeft() {
                             // 20px below the header.
                             trigger: sticky,
                             start: `top top+=${offsetStart}`,
-                            // Unpin when the section's bottom reaches that same
-                            // point - i.e. the sticky visually exits the
-                            // section, at which point it goes back into normal
-                            // flow and scrolls off with the rest of the section.
+                            // Unpin when the section's bottom reaches the
+                            // point where the sticky's BOTTOM would sit
+                            // (header + 20 + sticky height). This ends the
+                            // pin exactly when the pinned block would visually
+                            // touch the section bottom, so pinSpacing does
+                            // not inflate the section past its right column.
+                            // Function form so it recalculates on refresh.
                             endTrigger: section,
-                            end: `bottom top+=${offsetStart}`,
+                            end: () => `bottom top+=${offsetStart + sticky.offsetHeight}`,
                             pin: sticky,
                             pinSpacing: true,
                             anticipatePin: 1,

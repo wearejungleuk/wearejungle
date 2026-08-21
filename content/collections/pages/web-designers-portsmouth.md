@@ -226,9 +226,8 @@ page_builder:
             text: 'A look at some of the websites we have designed and built for local and national clients.'
     work:
       - c6598d61-88d6-4d30-8dc7-41f8dd354acd
-      - 90869023-2933-4b72-831b-4641b8c9b446
+      - d1b47741-1ae8-40d1-afd1-c5431c023b5f
       - 3cc5e19b-088a-4bb7-8b30-95b37925125e
-      - 15f3fbef-6f91-4f99-8fb6-39b83e8b3def
     cta_title: 'Book a Call'
     book_appointment: true
     cta_classes: button--primary
@@ -293,7 +292,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'I had a website before, but We Are Jungle turned it into something I''m truly proud of. The process felt effortless, and their expertise and approach made everything so easy.'
+                text: "I had a website before, but We Are Jungle turned it into something I'm truly proud of. The process felt effortless, and their expertise and approach made everything so easy."
         image:
           - image-3.png
         website: 'https://knownfor.co.uk'
@@ -521,5 +520,5 @@ sitemap_priority: '0.8'
 sitemap_changefreq: weekly
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1782386594
+updated_at: 1787293981
 ---

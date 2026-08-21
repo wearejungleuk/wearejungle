@@ -88,14 +88,14 @@ page_builder:
             text: 'Custom sites for technical and B2B audiences make up a lot of our work. If yours is in Fareham and needs the same treatment, we would love to talk.'
     work:
       - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
-      - d1b47741-1ae8-40d1-afd1-c5431c023b5f
-      - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
-      - 90869023-2933-4b72-831b-4641b8c9b446
+      - c6598d61-88d6-4d30-8dc7-41f8dd354acd
+      - 3a1c9e7d-4b6f-4a20-9c2e-1e91ad7ec001
     cta: /contact
     cta_title: 'Start a project'
     cta_classes: button--primary
     type: work_carousel
     enabled: true
+    book_appointment: false
   -
     id: process_far_how_it_works
     above_title: 'How It Works'
@@ -207,7 +207,7 @@ page_builder:
                 text: 'pricing page'
               -
                 type: text
-                text: '.'
+                text: .
         type: new_set
         enabled: true
     type: faq_accordion
@@ -230,4 +230,12 @@ page_builder:
     enabled: true
     book_appointment_2: false
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+use_meta_keywords: false
+no_index_page: false
+no_follow_links: false
+sitemap_priority: '0.5'
+sitemap_changefreq: daily
+override_twitter_settings: false
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1787294030
 ---
