@@ -4,7 +4,8 @@ template: sectors/show
 layout: layout
 sort_by: order
 structure:
-  root: true
+  root: false
+  max_depth: 1
 inject:
   breadcrumb_parent: Sectors
 preview_targets:
