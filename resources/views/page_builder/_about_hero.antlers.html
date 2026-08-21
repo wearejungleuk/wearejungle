@@ -21,6 +21,18 @@
             </div>
         </div>
 
+        {{ if vimeo_id }}
+            <div class="mb-12 lg:mb-16 rounded-[20px] overflow-hidden border-[3px] border-black js-fade-up" style="aspect-ratio: 16/9">
+                <iframe
+                    src="https://player.vimeo.com/video/{{ vimeo_id }}?title=0&byline=0&portrait=0&dnt=1"
+                    class="w-full h-full block"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    title="{{ title }}"></iframe>
+            </div>
+        {{ /if }}
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
             <div>
                 {{ if image_left }}

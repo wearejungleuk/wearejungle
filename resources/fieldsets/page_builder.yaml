@@ -122,6 +122,12 @@ fields:
                     type: bard
                     display: 'Intro Text'
                 -
+                  handle: vimeo_id
+                  field:
+                    type: text
+                    display: 'Vimeo ID'
+                    instructions: 'The numeric ID only (e.g. 1220093594 from https://vimeo.com/1220093594). Renders as a 16:9 embed above the images. Optional.'
+                -
                   handle: image_left
                   field:
                     max_files: 1
