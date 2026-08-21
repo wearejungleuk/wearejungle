@@ -552,22 +552,6 @@ page_builder:
         website: 'https://delta-xero.com'
         type: new_set
         enabled: true
-      -
-        id: rev_laura
-        name: 'Laura O''Leary'
-        role: 'My Learning Cloud'
-        quote:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'We recently worked with We Are Jungle to re-build and refine our website, and the entire experience has been fantastic. From the start, We Are Jungle offered a competitive quote and maintained excellent communication throughout the project.'
-        image:
-          - 1621333113157.jpeg
-        website: 'https://mylearningcloud.org.uk'
-        type: new_set
-        enabled: true
     type: reviews
     enabled: true
   -

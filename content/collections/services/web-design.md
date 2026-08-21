@@ -543,22 +543,6 @@ page_builder:
         website: 'https://southcoastrxphysiotherapy.co.uk'
         type: new_set
         enabled: true
-      -
-        id: rev_matt_graham
-        name: 'Matt Graham'
-        role: 'Sales Director, QVIS Lighting & Security'
-        quote:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'We Are Jungle did an amazing job in the consultation through to design and implementation of our website. The website requisite was complex with a full ERP integration required and they made the whole process seamless. The communication throughout was excellent with our needs listened to carefully and deliverables executed perfectly, their expertise was invaluable in providing us with a website that''s functional, modern, scalable and delivers in line with our business needs.'
-        image:
-          - matt-graham-qvis.jpeg
-        website: 'https://qvis.co.uk'
-        type: new_set
-        enabled: true
     type: reviews
     enabled: true
   -

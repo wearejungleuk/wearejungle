@@ -633,22 +633,6 @@ page_builder:
         website: 'https://qvis.co.uk'
         type: new_set
         enabled: true
-      -
-        id: rev_cameron
-        name: 'Cameron Brew'
-        role: 'South Coast Rx Physiotherapy'
-        quote:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Both Brad and Kay went above and beyond in their support for us and ensured that the final version of the website represented exactly the feel we were going for. Thank you so much to both of you for all of your hard work. We could not recommend We are Jungle highly enough!'
-        image:
-          - screenshot-2025-01-22-at-11.46.21-520x650.jpg
-        website: 'https://southcoastrxphysiotherapy.co.uk'
-        type: new_set
-        enabled: true
     type: reviews
     enabled: true
   -

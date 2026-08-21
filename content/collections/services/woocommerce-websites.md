@@ -301,28 +301,6 @@ page_builder:
         website: 'https://mylearningcloud.org.uk'
         type: new_set
         enabled: true
-      -
-        id: rev_jo_hilder
-        name: 'Jo Hilder'
-        role: 'MRG Effitas'
-        quote:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Working with We Are Jungle on the MRG Effitas website was a great experience. From briefing to completion the team was friendly, creative and efficient.'
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Their consultative approach meant we ended up with a well structured, well optimised website that encourages conversion. As leaders in cybersecurity testing, our site also had to be highly secure.'
-        image:
-          - 1729850693593.jpeg
-        website: 'http://mrg-effitas.com'
-        type: new_set
-        enabled: true
     type: reviews
     enabled: true
   -

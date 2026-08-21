@@ -84,8 +84,35 @@
 
 {{ partial:shared/testimonials limit="3" }}
 
-{{ partial:shared/cta
-    heading="Let's talk about your project"
-    cta_text="Book a meeting"
-    cta_url="/contact"
-}}
+{{# Same CTA block used at the bottom of every other page. Inlined here (rather than via page_builder/cta_block) because the sector template is structured, not page_builder-driven. #}}
+<section class="bg-brand-primary py-16 lg:py-24">
+    <div class="container">
+        <div class="bg-brand-secondary border-[3px] border-black rounded-[40px] lg:rounded-[60px] overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+
+                <div class="p-8 md:p-12 lg:p-16">
+                    <div class="relative z-[10] js-fade-up">
+                        <div class="above-title above-title--light-blue">Let's Talk</div>
+                    </div>
+                    <h2 class="font-heading uppercase text-[38px] sm:text-[42px] lg:text-[41px] xl:text-[44px] leading-none text-black mb-5 js-fade-up">
+                        Ready to build a {{ sector_name | lower }} website that actually pulls its weight?
+                    </h2>
+                    <div class="text-black text-[16px] lg:text-[17px] mb-8 js-fade-up">
+                        <p>Tell us where the current site is holding your {{ sector_name | lower }} business back and we will walk you through what we would do differently, how the project would run and roughly what it would cost - no obligation, no sales patter.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4 js-fade-up">
+                        {{ partial:components/button url="/contact" title="Start your project" classes="button--primary" }}
+                        {{ partial:components/button title="Book a meeting" book_appointment="true" classes="button--light-blue" }}
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex items-end justify-center h-full py-12">
+                    <div class="w-[65%] max-w-[360px]">
+                        {{ partial:components/icons/julius-wave }}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
