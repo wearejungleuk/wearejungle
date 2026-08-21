@@ -42,6 +42,7 @@ page_builder:
     image_position: left
     type: prose_section
     enabled: true
+    image: we-are-jungle-0013-1.jpg
   -
     id: prose_gos_businesses
     above_title: 'Who We Work With'
@@ -74,6 +75,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
+    image: 'wearejunglebrandshoot-iggy&lime-91.jpg'
   -
     id: work_carousel_gos
     above_title: 'Recent Work'

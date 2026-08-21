@@ -55,7 +55,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Bespoke means the site is designed around your business, not adjusted from a template that was designed around nobody in particular. Every layout decision has a reason. Every page exists because a user needs it. Every interaction is built to guide someone from arrival to the action you want them to take, not just to look nice on the way through."
+            text: 'Bespoke means the site is designed around your business, not adjusted from a template that was designed around nobody in particular. Every layout decision has a reason. Every page exists because a user needs it. Every interaction is built to guide someone from arrival to the action you want them to take, not just to look nice on the way through.'
     stats:
       -
         id: stat_wd_01
@@ -261,6 +261,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
+    image: 'web-design-wearejunglebrandshoot-iggy&lime-40.jpg'
   -
     id: prose_wd_redesign
     above_title: 'Website Redesign'
@@ -299,6 +300,7 @@ page_builder:
     image_position: left
     type: prose_section
     enabled: true
+    image: 'wearejunglebrandshoot-iggy&lime-40-webdesign.jpg'
   -
     id: prose_wd_b2b
     above_title: 'B2B and Growing Businesses'
@@ -318,7 +320,7 @@ page_builder:
                 type: link
                 attrs:
                   href: /work/delta-xero
-            text: 'Delta-Xero'
+            text: Delta-Xero
           -
             type: text
             text: ' build industrial filtration systems for safety-critical environments. '
@@ -329,7 +331,7 @@ page_builder:
                 type: link
                 attrs:
                   href: /work/qvis
-            text: 'QVIS'
+            text: QVIS
           -
             type: text
             text: ' manufacture lighting and security equipment for a technical audience. MRG Effitas run cybersecurity testing for enterprise clients. The common thread is a business selling something considered, to a buyer who wants substance before they get to price.'
@@ -348,6 +350,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
+    image: 'wearejunglebrandshoot-iggy&lime-201.jpg'
   -
     id: prose_wd_included
     above_title: Deliverables
@@ -456,6 +459,7 @@ page_builder:
     image_position: left
     type: prose_section
     enabled: true
+    image: 'wearejunglebrandshoot-iggy&lime-91.jpg'
   -
     id: work_carousel_wd_recent
     above_title: 'Recent Design Work'
@@ -685,7 +689,7 @@ page_builder:
                 text: 'pricing page'
               -
                 type: text
-                text: '.'
+                text: .
         type: new_set
         enabled: true
       -

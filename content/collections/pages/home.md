@@ -334,6 +334,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
+    image: hello-portsmouth.jpg
   -
     id: stats_story_01
     above_title: 'Our Story'
@@ -421,6 +422,7 @@ page_builder:
     image_position: left
     type: prose_section
     enabled: true
+    image: 'wearejunglebrandshoot-iggy&lime-23.jpg'
   -
     id: feature_cards_01
     above_title: 'What We Do'

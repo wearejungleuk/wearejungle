@@ -42,6 +42,7 @@ page_builder:
     image_position: left
     type: prose_section
     enabled: true
+    image: '2wearejunglebrandshoot-iggy&lime-127.jpg'
   -
     id: prose_hav_businesses
     above_title: 'Who We Work With'
@@ -74,6 +75,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
+    image: 'wearejunglebrandshoot-iggy&lime-205.jpg'
   -
     id: work_carousel_hav
     above_title: 'Recent Work'
@@ -207,7 +209,7 @@ page_builder:
                 text: 'pricing page'
               -
                 type: text
-                text: '.'
+                text: .
         type: new_set
         enabled: true
     type: faq_accordion

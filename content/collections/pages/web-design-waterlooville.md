@@ -42,6 +42,7 @@ page_builder:
     image_position: left
     type: prose_section
     enabled: true
+    image: '3wearejunglebrandshoot-iggy&lime-127.jpg'
   -
     id: prose_wv_businesses
     above_title: 'Who We Work With'
@@ -67,13 +68,14 @@ page_builder:
                 type: link
                 attrs:
                   href: /services/web-design
-            text: 'redesigns'
+            text: redesigns
           -
             type: text
             text: ' of sites that were fine three years ago and have quietly stopped keeping up. Wix or Squarespace sites that were the right call at launch and are now the ceiling on what the ad account can do. WordPress sites that were built on a premium theme by someone who has since moved on. Not scary rebuilds; sensible ones.'
     image_position: right
     type: prose_section
     enabled: true
+    image: we-are-jungle-home-page.jpg
   -
     id: work_carousel_wv
     above_title: 'Recent Work'
@@ -207,7 +209,7 @@ page_builder:
                 text: 'pricing page'
               -
                 type: text
-                text: '.'
+                text: .
         type: new_set
         enabled: true
     type: faq_accordion

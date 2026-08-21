@@ -42,6 +42,7 @@ page_builder:
     image_position: left
     type: prose_section
     enabled: true
+    image: portsmouth-food.jpg
   -
     id: prose_far_businesses
     above_title: 'Who We Work With'
@@ -74,6 +75,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
+    image: 'wearejunglebrandshoot-iggy&lime-119.jpg'
   -
     id: work_carousel_far
     above_title: 'Recent Work'

@@ -55,7 +55,7 @@ page_builder:
         content:
           -
             type: text
-            text: "The argument for custom over template is the same as the argument for a suit that fits. A template site is faster and cheaper on day one, and slower and more expensive by year three because everything you eventually need to change is fighting the theme it came with. We build sites shaped around how the business actually works, so they stay easy to update and cheap to maintain as the business grows."
+            text: 'The argument for custom over template is the same as the argument for a suit that fits. A template site is faster and cheaper on day one, and slower and more expensive by year three because everything you eventually need to change is fighting the theme it came with. We build sites shaped around how the business actually works, so they stay easy to update and cheap to maintain as the business grows.'
     stats:
       -
         id: stat_wdev_01
@@ -269,7 +269,7 @@ page_builder:
                 type: link
                 attrs:
                   href: /services/wordpress-websites
-            text: 'WordPress'
+            text: WordPress
           -
             type: text
             text: '. Not because we default to it, but because it is still the sensible answer when a business needs a familiar CMS, the plugin ecosystem, and something a marketing team can update without a developer holding their hand.'
@@ -288,6 +288,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
+    image: webdev-wearejungle-45.jpg
   -
     id: prose_wdev_shopify
     above_title: E-Commerce
@@ -307,7 +308,7 @@ page_builder:
                 type: link
                 attrs:
                   href: /services/shopify-websites
-            text: 'Shopify'
+            text: Shopify
           -
             type: text
             text: ' is the sensible default. Modern infrastructure, a checkout that just works, sane payment processing, PCI compliance handled without you thinking about it. Every '
@@ -331,6 +332,7 @@ page_builder:
     image_position: left
     type: prose_section
     enabled: true
+    image: 'shopify-wearejunglebrandshoot-iggy&lime-23.jpg'
   -
     id: prose_wdev_woocommerce
     above_title: WooCommerce
@@ -350,13 +352,14 @@ page_builder:
                 type: link
                 attrs:
                   href: /services/woocommerce-websites
-            text: 'WooCommerce'
+            text: WooCommerce
           -
             type: text
             text: ' is the answer. Same principles as the rest of our WordPress work: hand-coded theme, minimal plugin surface area, checkout tuned for conversion, integrations handled at the code level rather than through a stack of add-ons that all update on their own schedules.'
     image_position: right
     type: prose_section
     enabled: true
+    image: 'e-com-wearejunglebrandshoot-iggy&lime-23.jpg'
   -
     id: prose_wdev_systems
     above_title: 'Systems and Integrations'
@@ -393,7 +396,7 @@ page_builder:
                 type: link
                 attrs:
                   href: /work/qvis
-            text: 'QVIS'
+            text: QVIS
           -
             type: text
             text: ' and '
@@ -404,13 +407,14 @@ page_builder:
                 type: link
                 attrs:
                   href: /work/delta-xero
-            text: 'Delta-Xero'
+            text: Delta-Xero
           -
             type: text
             text: '. QVIS runs a full ERP integration with live sync of product data, stock levels and pricing straight from their internal system into the website, so nothing is re-keyed and nothing goes stale. Delta-Xero has automated case study PDFs (a visitor requests a specific case study and gets that exact PDF emailed to them without anyone on the Delta-Xero side clicking send) and a partner locator filterable by country. Both are the kind of build that a template site cannot support and a page builder will actively fight.'
     image_position: left
     type: prose_section
     enabled: true
+    image: wearejungle-45-webdev.jpg
   -
     id: prose_wdev_migrations
     above_title: Migrations
@@ -465,6 +469,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
+    image: 'wearejunglebrandshoot-iggy&lime-205.jpg'
   -
     id: work_carousel_wdev_recent
     above_title: 'Recent Development Work'
@@ -508,7 +513,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'We Are Jungle did an amazing job in the consultation through to design and implementation of our website. The website requisite was complex with a full ERP integration required and they made the whole process seamless. The communication throughout was excellent with our needs listened to carefully and deliverables executed perfectly, their expertise was invaluable in providing us with a website that''s functional, modern, scalable and delivers in line with our business needs.'
+                text: "We Are Jungle did an amazing job in the consultation through to design and implementation of our website. The website requisite was complex with a full ERP integration required and they made the whole process seamless. The communication throughout was excellent with our needs listened to carefully and deliverables executed perfectly, their expertise was invaluable in providing us with a website that's functional, modern, scalable and delivers in line with our business needs."
         image:
           - matt-graham-qvis.jpeg
         website: 'https://qvis.co.uk'
@@ -659,7 +664,7 @@ page_builder:
                 text: 'pricing page'
               -
                 type: text
-                text: '.'
+                text: .
         type: new_set
         enabled: true
       -
@@ -691,7 +696,7 @@ page_builder:
                     type: link
                     attrs:
                       href: /work/qvis
-                text: 'QVIS'
+                text: QVIS
               -
                 type: text
                 text: ' has a full ERP integration with live product sync, and '
@@ -702,7 +707,7 @@ page_builder:
                     type: link
                     attrs:
                       href: /work/delta-xero
-                text: 'Delta-Xero'
+                text: Delta-Xero
               -
                 type: text
                 text: ' has an automated case study PDF flow that fires without anyone on their side touching it. If your integration needs are unusual, we would rather scope it properly before quoting than guess.'

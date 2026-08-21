@@ -1,26 +1,31 @@
 {{#
     Prose section page-builder block.
-    Renders as a two-column image + text layout ONLY when both
-    image_position AND image are set. If image_position is set but
-    no image is uploaded yet, we fall back to centred prose rather
-    than showing a monkey placeholder in an empty image column -
-    that reads as a broken layout. The moment an image is uploaded
-    in the CP the split layout takes over automatically, no content
-    edit needed.
+    Two-column image + text layout when image_position is set;
+    falls back to centred prose only if image_position is missing
+    entirely. Every prose_section entry is expected to carry an
+    image - the split layout is intentional site-wide.
 #}}
 <section class="bg-brand-primary py-16 lg:py-24">
     <div class="container">
 
-        {{ if image_position && image }}
-            {{# Two-column split layout - only used when there is a real image to render. #}}
+        {{ if image_position }}
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center">
 
                 <div class="{{ if image_position == 'right' }}lg:order-1{{ else }}lg:order-2{{ /if }}">
-                    {{ glide:image width="1200" fit="crop" }}
-                        <img src="{{ url }}" alt="{{ alt ?? title }}"
-                             class="w-full h-auto rounded-[24px] lg:rounded-[32px] border-[3px] border-black shadow-2xl js-fade-up"
-                             loading="lazy">
-                    {{ /glide:image }}
+                    {{ if image }}
+                        {{ glide:image width="1200" fit="crop" }}
+                            <img src="{{ url }}" alt="{{ alt ?? title }}"
+                                 class="w-full h-auto rounded-[24px] lg:rounded-[32px] border-[3px] border-black shadow-2xl js-fade-up"
+                                 loading="lazy">
+                        {{ /glide:image }}
+                    {{ else }}
+                        {{# Placeholder while awaiting an image upload. Kept so a missing image is obviously missing rather than silently collapsing the layout. #}}
+                        <div class="aspect-[4/3] rounded-[24px] lg:rounded-[32px] border-[3px] border-black bg-brand-dark-blue flex items-center justify-center shadow-2xl js-fade-up">
+                            <div class="w-[32%] max-w-[180px] opacity-70">
+                                {{ partial:components/icons.julius-head }}
+                            </div>
+                        </div>
+                    {{ /if }}
                 </div>
 
                 <div class="{{ if image_position == 'right' }}lg:order-2{{ else }}lg:order-1{{ /if }}">

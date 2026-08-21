@@ -41,7 +41,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Support and maintenance that actually has your back. Plugin and theme updates, uptime monitoring, backups, security patches, monthly reports and development hours - handled by an in-house UK team who already know your site. Plans start at £190 per month with no long-term contracts."
+            text: 'Support and maintenance that actually has your back. Plugin and theme updates, uptime monitoring, backups, security patches, monthly reports and development hours - handled by an in-house UK team who already know your site. Plans start at £190 per month with no long-term contracts.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -55,7 +55,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Fifty-plus live websites currently sit on our support plans. Some were built by us. Plenty were built by other agencies and picked up when the original developer moved on. All of them are patched, backed up, monitored and improved on a regular schedule so nothing has a chance to become a crisis."
+            text: 'Fifty-plus live websites currently sit on our support plans. Some were built by us. Plenty were built by other agencies and picked up when the original developer moved on. All of them are patched, backed up, monitored and improved on a regular schedule so nothing has a chance to become a crisis.'
     stats:
       -
         id: stat_sh_01
@@ -379,7 +379,7 @@ page_builder:
         enabled: true
       -
         id: step_supp_hours
-        tab_label: '24/7'
+        tab_label: 24/7
         fa_icon: clock
         heading: 'A quick word on 24/7'
         step_text:
@@ -447,7 +447,7 @@ page_builder:
                     type: link
                     attrs:
                       href: /services/web-design
-                text: 'redesign'
+                text: redesign
               -
                 type: text
                 text: ' or migration makes more sense than propping up what is already there.'
@@ -667,6 +667,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
+    image: support-wearejungle-7.jpg
   -
     id: reviews_sh_01
     title: 'The proof is in the praise'
@@ -694,7 +695,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'I had a website before, but We Are Jungle turned it into something I''m truly proud of. The process felt effortless, and their expertise and approach made everything so easy.'
+                text: "I had a website before, but We Are Jungle turned it into something I'm truly proud of. The process felt effortless, and their expertise and approach made everything so easy."
         image:
           - image-3.png
         website: 'https://knownfor.co.uk'
@@ -718,7 +719,7 @@ page_builder:
         enabled: true
       -
         id: rev_laura
-        name: 'Laura O''Leary'
+        name: "Laura O'Leary"
         role: 'My Learning Cloud'
         quote:
           -

@@ -67,6 +67,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
+    image: 'wearejunglebrandshoot-iggy&lime-166.jpg'
   -
     id: feature_cards_h_01
     above_title: "What's included"
@@ -159,6 +160,7 @@ page_builder:
     image_position: left
     type: prose_section
     enabled: true
+    image: wearejungle-7-support.jpg
   -
     id: cta_block_h_01
     above_title: 'Website Hosting'

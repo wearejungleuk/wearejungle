@@ -16,7 +16,7 @@ page_builder:
         content:
           -
             type: text
-            text: "Bespoke web design for Chichester businesses, from an in-house UK team based in Portsmouth. Custom builds tailored to how your business actually works, whatever the sector or size - not a template dressed up to look local."
+            text: 'Bespoke web design for Chichester businesses, from an in-house UK team based in Portsmouth. Custom builds tailored to how your business actually works, whatever the sector or size - not a template dressed up to look local.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -42,6 +42,7 @@ page_builder:
     image_position: left
     type: prose_section
     enabled: true
+    image: hello-portsmouth.jpg
   -
     id: prose_chi_businesses
     above_title: 'Who We Work With'
@@ -74,6 +75,7 @@ page_builder:
     image_position: right
     type: prose_section
     enabled: true
+    image: 'wearejunglebrandshoot-iggy&lime-166.jpg'
   -
     id: work_carousel_chi
     above_title: 'Recent Work'
@@ -207,7 +209,7 @@ page_builder:
                 text: 'pricing page'
               -
                 type: text
-                text: '.'
+                text: .
         type: new_set
         enabled: true
     type: faq_accordion
