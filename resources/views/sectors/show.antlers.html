@@ -13,9 +13,9 @@
     cta_url="/contact"
 }}
 
-{{# Sector intro - two-column layout with above-title, heading and CTA on the left, body on the right. #}}
+{{# Sector intro - matches the About page's 'How this began' visual (cream rounded panel, dark text, brand-secondary CTA). Left column: above-title, heading, CTA. Right column: intro body. #}}
 {{ if intro_title || intro_body }}
-    <section class="bg-brand-primary pt-16 lg:pt-24 {{ if !intro_blocks }}pb-16 lg:pb-24{{ /if }}">
+    <section class="bg-brand-text rounded-[60px] lg:rounded-[100px] py-16 lg:py-24">
         <div class="container">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-start">
                 <div>
@@ -25,14 +25,14 @@
                         </div>
                     {{ /if }}
                     {{ if intro_title }}
-                        <h2 class="font-heading uppercase text-[38px] sm:text-[46px] lg:text-[54px] xl:text-[60px] leading-tightest text-white mb-8 lg:mb-10 js-fade-up">{{ intro_title }}</h2>
+                        <h2 class="font-heading uppercase text-[38px] sm:text-[46px] lg:text-[54px] xl:text-[60px] leading-tightest text-black mb-8 lg:mb-10 js-fade-up">{{ intro_title }}</h2>
                     {{ /if }}
                     <div class="js-fade-up">
-                        {{ partial:components/button title="{ intro_cta_title ?? 'Book a meeting' }" book_appointment="true" classes="button--secondary" }}
+                        {{ partial:components/button title="{ intro_cta_title ?? 'Book a meeting' }" book_appointment="true" classes="button--primary" }}
                     </div>
                 </div>
                 {{ if intro_body }}
-                    <div class="bard text-white text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
+                    <div class="bard text-black text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
                         {{ intro_body }}
                     </div>
                 {{ /if }}
