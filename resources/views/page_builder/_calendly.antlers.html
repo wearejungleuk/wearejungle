@@ -13,8 +13,8 @@
                 {{ /if }}
             </div>
             <div class="col-span-1 js-fade-up">
-                {{# Calendly renders inside a cross-origin iframe so no parent CSS can reach the wrapper padding. Instead we grow the iframe by 66px+30px, pull it up 66px inside an overflow-hidden rounded wrapper, so the Calendly baked-in top and bottom margin gets clipped by our border-radius container. Wrapper height stays 500. #}}
-                <div class="overflow-hidden rounded-[20px] bg-[#fff] border-[3px] border-black" style="height: 500px;">
+                {{# Calendly renders inside a cross-origin iframe so no parent CSS can reach the wrapper padding OR its 680px inner max-width. Two shims: (1) grow the iframe by 66px+30px and pull it up 66px inside an overflow-hidden rounded wrapper, so Calendly's baked-in top/bottom margin gets clipped by our border-radius container. (2) Cap the wrapper at 700px so the calendar visually fills it instead of centring narrowly inside a wider box. #}}
+                <div class="overflow-hidden rounded-[20px] bg-[#fff] border-[3px] border-black w-full max-w-[700px] mx-auto" style="height: 535px;">
                     <iframe
                             src="{{ brand:calendly_link }}?embed_type=Inline&hide_event_type_details=1&hide_gdpr_banner=1&primary_color=004af7"
                             width="100%"
