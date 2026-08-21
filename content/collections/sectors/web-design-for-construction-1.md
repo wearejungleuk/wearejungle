@@ -1,8 +1,8 @@
 ---
-id: 5ec70001-c0e5-4001-a1e1-7c9200000001
+id: ae3840d5-636c-4d2f-89c7-e2464ae7de1d
 published: false
 blueprint: sector
-title: 'Web design for construction'
+title: 'Web design for construction (Duplicated)'
 sector_name: Construction
 slug: web-design-for-construction
 hero_intro: 'Websites for construction and industrial firms that need to show accreditations, drive real leads and integrate with the tools already running the business - not just look pretty on a phone.'
@@ -221,5 +221,6 @@ timescale: '8 to 12 weeks'
 meta_title: 'Web Design for Construction | We Are Jungle'
 meta_description: 'Custom websites for construction and industrial firms. Quote builders, proper Google Ads tracking and direct integration with the tools you already use.'
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1787443200
+updated_at: 1787295864
+duplicated_from: 5ec70001-c0e5-4001-a1e1-7c9200000001
 ---

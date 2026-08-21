@@ -11,8 +11,8 @@ preview_text:
       -
         type: text
         text: 'A migration off Drupal onto WordPress that cut a £10,000-a-year update bill, halved the clicks to book, and plugged straight into Dentally for locum roles and applications.'
-preview_image: damira-dental-website.jpg
-preview_background_image: damira-dental.jpg
+preview_image: damira-dental-hero.jpg
+preview_background_image: 0169-damira-wickham-adriennephotography2023-6459.jpg
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -49,7 +49,7 @@ overview_body:
             type: link
             attrs:
               href: /services/wordpress-websites
-        text: 'WordPress'
+        text: WordPress
       -
         type: text
         text: ' build so their in-house team could run the site day-to-day, then integrated it with the tools already running the business - Dentally for the clinical side and their central database for the locum programme - so the website stopped being a separate silo.'
@@ -170,4 +170,10 @@ page_builder:
     illustration: julius-ipad.svg
     type: cta_block
     enabled: true
+hero_image: damira-dental-hero.jpg
+screenshot_1: damira-dental-why-choose.jpg
+screenshot_2: damira-dental-locations.jpg
+card_image_2: 0169-damira-wickham-adriennephotography2023-6459.jpg
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1787295374
 ---

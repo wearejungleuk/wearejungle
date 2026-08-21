@@ -87,15 +87,14 @@ page_builder:
             type: text
             text: 'Technical B2B, custom integrations, trade e-commerce - if that is the shape of your Gosport business, we would love to talk.'
     work:
-      - 2245d7a2-5d4f-40b8-b027-9f41ad7328dc
-      - d1b47741-1ae8-40d1-afd1-c5431c023b5f
       - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
-      - c6598d61-88d6-4d30-8dc7-41f8dd354acd
+      - c772b9ce-5b8a-464c-ad7c-d11125cf850b
     cta: /contact
     cta_title: 'Start a project'
     cta_classes: button--primary
     type: work_carousel
     enabled: true
+    book_appointment: false
   -
     id: process_gos_how_it_works
     above_title: 'How It Works'
@@ -207,7 +206,7 @@ page_builder:
                 text: 'pricing page'
               -
                 type: text
-                text: '.'
+                text: .
         type: new_set
         enabled: true
     type: faq_accordion
@@ -230,4 +229,12 @@ page_builder:
     enabled: true
     book_appointment_2: false
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+use_meta_keywords: false
+no_index_page: false
+no_follow_links: false
+sitemap_priority: '0.5'
+sitemap_changefreq: daily
+override_twitter_settings: false
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1787295529
 ---

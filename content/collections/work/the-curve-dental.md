@@ -11,8 +11,8 @@ preview_text:
       -
         type: text
         text: 'A brand-led, animation-heavy website for a bold new dental practice in Barnstaple. Riad-inspired colour, scroll-driven storytelling, and a booking flow that stays out of the way.'
-preview_image: the-curve-dental-website.jpg
-preview_background_image: the-curve-dental.jpg
+preview_image: the-curve-hero.jpg
+preview_background_image: reception-the-curve-dental.png
 author: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
 use_meta_keywords: false
 no_index_page: false
@@ -163,4 +163,11 @@ page_builder:
     illustration: julius-ipad.svg
     type: cta_block
     enabled: true
+hero_image: the-curve-hero.jpg
+screenshot_1: the-curve-dental-do-differently.jpg
+screenshot_2: the-curve-dental-about.jpg
+testimonial_avatar: ravi-the-curve.jpg
+card_image_2: reception-the-curve-dental.png
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1787295833
 ---
