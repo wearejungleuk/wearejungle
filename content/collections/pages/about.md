@@ -60,7 +60,7 @@ page_builder:
     enabled: true
     vimeo_id: '1220093594'
     image_left: 'wearejunglebrandshoot-iggy&lime-201.jpg'
-    image_right: we-are-julius.jpg
+    image_right: we-are-jungle-0013-1.jpg
   -
     id: about_story_01
     above_title: 'About Us'
@@ -330,5 +330,5 @@ sitemap_priority: '0.5'
 sitemap_changefreq: monthly
 override_twitter_settings: false
 updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
-updated_at: 1782130578
+updated_at: 1787292425
 ---

@@ -22,12 +22,13 @@
         </div>
 
         {{ if vimeo_id }}
-            {{# background=1 auto-plays muted and loops with no controls or Vimeo chrome. muted=1 is set explicitly too. Iframe is scaled 1.02x so any hairline letterbox from the player is cropped rather than showing black bars inside the site's border. #}}
-            <div class="mb-12 lg:mb-16 rounded-[20px] overflow-hidden border-[3px] border-black js-fade-up relative" style="aspect-ratio: 16/9">
+            {{# background=1 auto-plays muted and loops with no controls or Vimeo chrome. muted=1 is set explicitly too. Iframe is scaled 1.02x so any hairline letterbox from the player is cropped rather than showing black bars inside the site's border. Poster image sits under the iframe as a fallback while the video loads (and stays visible if it never does). #}}
+            <div class="mb-12 lg:mb-16 rounded-[20px] overflow-hidden border-[3px] border-black js-fade-up relative bg-cover bg-center" style="aspect-ratio: 16/9; background-image: url('/images/we-are-jungle-video-fallback.jpg');">
                 <iframe
                     src="https://player.vimeo.com/video/{{ vimeo_id }}?background=1&autoplay=1&muted=1&loop=1&controls=0&title=0&byline=0&portrait=0&dnt=1"
                     class="absolute inset-0 w-full h-full block scale-[1.02]"
                     frameborder="0"
+                    loading="lazy"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowfullscreen
                     title="{{ title }}"></iframe>
