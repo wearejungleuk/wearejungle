@@ -50,3 +50,13 @@ main {
 .DBKEjqt4IKCsNgnjbfTn.rc3MbSIPzTjjHS6aAm5W {
     width: 100%!important;
 }
+
+/* Calendly embed: their hashed class names rotate on every deploy, so target the stable data attributes instead. Kill all margin so the widget sits flush inside our layout. */
+[data-booking-page-wrapper],
+[data-booking-layout] {
+    margin: 0 !important;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+}
