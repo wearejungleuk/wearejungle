@@ -172,4 +172,69 @@ no_follow_links: false
 sitemap_priority: '0.6'
 sitemap_changefreq: monthly
 override_twitter_settings: false
+intro_body:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Private clinic and healthcare provider websites tend to underplay themselves. The clinic has grown - more practitioners, more specialities, more locations - but the website was built when the practice was half the size and it still reads that way. Local competitors who look bigger online are winning patients they should not be.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'We build healthcare websites for private clinics, physiotherapy practices, dental groups and specialist providers. The same underlying pattern applies whether it is a single-clinician practice or a multi-site group: get out of the way of the booking, treat different specialities differently, and plug into whichever practice management system already runs the clinic.'
+intro_blocks:
+  -
+    heading: 'Booking flows that stay out of the way'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'The biggest single lift for a private clinic website is replacing the generic contact form with a real booking widget wired into your practice management system. Contact forms create work; direct booking captures the patient at the moment they were ready.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'We integrate healthcare websites with Cliniko, Pabau, TM3, Dentally and equivalents so bookings happen inside your normal workflow. Booking CTAs on every treatment and condition page. Nearest-clinic search for multi-site groups. Speed and mobile UX because most healthcare traffic is on a phone.'
+    image: scrx-hero.jpg
+    image_position: right
+  -
+    heading: 'A website that reflects the clinic you actually are now'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Healthcare websites drift out of date fast. New practitioners, new services, new locations - the marketing site is often 18 months behind reality, and it costs you against competitors who look bigger even when they offer less.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'We build healthcare websites so the clinical team can keep them current without a developer. Add a new speciality or a new practitioner in the CMS, launch a campaign landing page for a treatment you want to promote, publish a condition-driven article - all without a purchase order or a wait.'
+    image: scrx-blocks.jpg
+    image_position: left
+  -
+    heading: 'Structured referrer intake, separate from public enquiries'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Referrals from other clinicians should not land in the same inbox as marketing enquiries. When they do, they get lost and the referrer stops sending. Referring GPs, physios and specialists need a shorter, structured pathway with acknowledgement and a clear owner inside the clinic.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'For multi-site clinical groups we build authenticated referrer portals as their own pathway - structured intake, automatic acknowledgement, data landing in a shape the clinical team can triage. Referrers keep sending because the loop stays clear.'
+    image: health-social-care.webp
+    image_position: right
 ---

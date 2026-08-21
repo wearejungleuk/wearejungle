@@ -163,4 +163,69 @@ no_follow_links: false
 sitemap_priority: '0.6'
 sitemap_changefreq: monthly
 override_twitter_settings: false
+intro_body:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Manufacturer and industrial OEM websites have a specifier audience with almost no patience. They arrive with a shortlist of three or four suppliers, hunt for a specific product, spec or partner, and eliminate options fast. Anything that makes them work harder pushes them to whoever built the site properly.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'We build manufacturer websites that handle the catalogue the way a specifier actually filters, deliver technical PDFs on demand rather than by email, sync with the ERP or PIM that holds the source of truth on product data, and route international buyers to their nearest partner without a global list of company names.'
+intro_blocks:
+  -
+    heading: 'Filterable technical catalogues for specifier audiences'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'A serious industrial catalogue has grades, tolerances, applications, accreditations and country-specific availability. Templated e-commerce and WordPress theme sites bury that inside accordion menus, and specifiers give up and phone a competitor with a proper filter.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'We build manufacturer catalogues that filter on the dimensions your specifiers actually use, with clean product pages, downloadable spec sheets and technical documentation surfaced where they belong - not two clicks deep in a resources page.'
+    image: qvis-project-builder.jpg
+    image_position: right
+  -
+    heading: 'ERP and PIM sync so the site reflects reality'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Product data, pricing, stock and specifications live in your ERP or PIM. Nobody has time to keep the website in step by hand. Left alone, the site drifts, the sales team stops trusting it, and it starts sending the wrong signals to buyers.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Every manufacturer website we build syncs directly with SAP, NetSuite, Sage, Odoo or an in-house PIM. A specifier lands on a product page and sees the price and stock the sales team see in the internal system - because both are reading the same feed.'
+    image: qvis-back-image.jpg
+    image_position: left
+  -
+    heading: 'Automated datasheet and case study delivery'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'A specifier fills a form requesting a specific datasheet. Someone digs it out of a shared drive, attaches it, replies. It takes a day. By the time it lands, the specifier has moved on to whoever answered instantly.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Manufacturer websites we build send the requested document automatically on form submission. No chase, no manual attachment, no day-long lag. Response time drops from a day to instant - which on specifier leads is often the difference between winning and losing.'
+    image: delta-xero-home.jpg
+    image_position: right
 ---

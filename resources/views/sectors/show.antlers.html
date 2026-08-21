@@ -13,6 +13,56 @@
     cta_url="/contact"
 }}
 
+{{# Sector intro copy - short bard body directly under the hero. #}}
+{{ if intro_body }}
+    <section class="bg-brand-primary pt-16 lg:pt-24 {{ if !intro_blocks }}pb-16 lg:pb-24{{ /if }}">
+        <div class="container">
+            <div class="max-w-[860px] mx-auto bard text-white text-[17px] lg:text-[19px] leading-relaxed js-fade-up">
+                {{ intro_body }}
+            </div>
+        </div>
+    </section>
+{{ /if }}
+
+{{# Intro image + text blocks. Alternates naturally via each block's own image_position field. #}}
+{{ if intro_blocks }}
+    <section class="bg-brand-primary py-16 lg:py-24">
+        <div class="container">
+            <div class="flex flex-col gap-16 lg:gap-24">
+                {{ intro_blocks }}
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center">
+                        <div class="{{ if image_position == 'right' }}lg:order-1{{ else }}lg:order-2{{ /if }}">
+                            {{ if image }}
+                                {{ glide:image width="1200" fit="crop" }}
+                                    <img src="{{ url }}" alt="{{ alt ?? heading }}"
+                                         class="w-full h-auto rounded-[24px] lg:rounded-[32px] border-[3px] border-black shadow-2xl js-fade-up"
+                                         loading="lazy">
+                                {{ /glide:image }}
+                            {{ else }}
+                                <div class="aspect-[4/3] rounded-[24px] lg:rounded-[32px] border-[3px] border-black bg-brand-dark-blue flex items-center justify-center shadow-2xl js-fade-up">
+                                    <div class="w-[32%] max-w-[180px] opacity-70">
+                                        {{ partial:components/icons.julius-head }}
+                                    </div>
+                                </div>
+                            {{ /if }}
+                        </div>
+                        <div class="{{ if image_position == 'right' }}lg:order-2{{ else }}lg:order-1{{ /if }}">
+                            {{ if heading }}
+                                <h2 class="font-heading uppercase text-[34px] sm:text-[40px] lg:text-[46px] xl:text-[52px] leading-tightest text-white mb-6 lg:mb-8 js-fade-up">{{ heading }}</h2>
+                            {{ /if }}
+                            {{ if body }}
+                                <div class="bard prose-inverse text-white text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
+                                    {{ body }}
+                                </div>
+                            {{ /if }}
+                        </div>
+                    </div>
+                {{ /intro_blocks }}
+            </div>
+        </div>
+    </section>
+{{ /if }}
+
 {{ if problems }}
     {{ partial:sectors/problems :items="problems" }}
 {{ /if }}

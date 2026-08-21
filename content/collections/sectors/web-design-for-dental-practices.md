@@ -163,4 +163,69 @@ no_follow_links: false
 sitemap_priority: '0.6'
 sitemap_changefreq: monthly
 override_twitter_settings: false
+intro_body:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Dental practice websites live or die on two things: how the practice looks online (patients pick on first impression more than they will admit) and how easy it is to book. Everything else is downstream of those two.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'We build dental practice websites that match the brand of the practice, get patients from search result to booked appointment in two taps not five, and plug directly into Dentally, Pabau or whichever practice management system you already run. Single practices and multi-practice groups both work the same way underneath.'
+intro_blocks:
+  -
+    heading: 'A brand identity that carries onto the website'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'You have spent real money on the interior, the branding and the tone of voice. Most dental sites throw that away with a WordPress template full of stock imagery. Patients notice - and it costs you the higher-value treatments they were going to ask about.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Every dental practice website we build treats the site as a continuation of the physical practice. Colour, type, photography and tone all carry from the room to the screen. It is why the first thing patients say is that the site "looks like the practice".'
+    image: the-curve-dental-about.jpg
+    image_position: right
+  -
+    heading: 'Two-tap booking, wired into your PMS'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'The number one thing that costs dental practices bookings is a five-click booking journey buried behind a phone number and a contact form. Patients on your site are ready - the job of a dental practice website is to get out of the way.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'We wire booking directly into Dentally, Pabau, All Dental or whichever PMS you run. Two taps from any treatment or location page into a real appointment. For multi-practice groups, nearest-practice search on top so patients get to the closest available slot fast.'
+    image: damira-dental-locations.jpg
+    image_position: left
+  -
+    heading: 'Modular treatment pages that sell the specialist work'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Invisalign, implants, composite bonding, hygiene and cosmetic treatments do not belong lumped together on one "our treatments" page. High-value treatments need room to breathe: what the treatment is, who it suits, roughly what it costs, what to expect, before-and-afters where GDC allows them.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Modular templates per treatment mean the practice can add a new treatment, launch a campaign, or run a paid ad landing page without needing a developer. High-value treatments get sold; the site keeps up with the practice.'
+    image: watford-smiles-treatments.jpg
+    image_position: right
 ---

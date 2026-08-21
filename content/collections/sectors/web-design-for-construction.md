@@ -187,4 +187,69 @@ no_follow_links: false
 sitemap_priority: '0.6'
 sitemap_changefreq: monthly
 override_twitter_settings: false
+intro_body:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Construction and industrial firms tend to arrive here with a website that has quietly stopped working. It looks fine but the Google Ads account cannot get the tracking it needs, enquiries are trickling in without turning into quotes, and the team is spending hours a week re-keying data between the site, the quote tool and the CRM. The site has moved from being an asset to being a tax.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'That is the problem we solve. Custom construction websites that plug into the systems already running the business, drive real leads instead of contact form submissions, and give specifiers or trade buyers the technical detail they actually need to make a decision.'
+intro_blocks:
+  -
+    heading: 'Built around your quote process, not around a template'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Every construction business runs on a quote flow. Wix, Squarespace and templated WordPress themes force that flow into a generic contact form and drop everything the customer actually configured. Our construction website builds put the quote process at the front of the site.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Visitors configure what they actually want - size, spec, extras, finish, quantity - and land as a real lead with structured quote data attached. That data flows straight into the quote tool and CRM you already run on, without anyone re-keying a thing.'
+    image: cs-garden-offices-quick-quote.jpg
+    image_position: right
+  -
+    heading: 'Filterable technical catalogues for specifiers who know what they want'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Construction specifiers, architects and trade buyers do not browse. They arrive with a specific grade, application, accreditation or country in mind and want to eliminate options fast. A paginated grid of everything you sell loses them to whoever built a proper filter.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'We build technical catalogues that filter on the dimensions your audience actually filters on, deliver spec sheets and datasheets on demand rather than by email, and let international buyers find their nearest partner or installer without scrolling through a global list.'
+    image: delta-xero-industries.jpg
+    image_position: left
+  -
+    heading: 'Google Ads tracking that agrees with your ad account'
+    body:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'If your construction Google Ads account is spending money but your reporting does not agree with what the ad platform sees, the site is almost always the reason. Wix in particular gives you a fraction of the event tracking a mature ad account needs.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Every construction website we build ships with GA4, tag manager, event tracking and conversion goals configured against the actions that actually matter - quote requests, spec-sheet downloads, phone taps - so your ad spend can be tuned against real data rather than form fills.'
+    image: cs-garden-offices-home.jpg
+    image_position: right
 ---

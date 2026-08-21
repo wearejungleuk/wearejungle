@@ -39,6 +39,60 @@ tabs:
               max_files: 1
               display: 'Hero image'
       -
+        display: 'Sector intro'
+        fields:
+          -
+            handle: intro_body
+            field:
+              type: bard
+              display: 'Intro copy'
+              instructions: 'Short introduction to the sector, rendered directly under the hero. Aim for 1-3 paragraphs.'
+              buttons:
+                - bold
+                - italic
+                - anchor
+              save_html: false
+          -
+            handle: intro_blocks
+            field:
+              type: grid
+              mode: stacked
+              display: 'Intro image + text blocks'
+              instructions: 'Repeatable image + text sections rendered under the intro copy. Alternate image_position so the layout does not repeat itself.'
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                -
+                  handle: body
+                  field:
+                    type: bard
+                    display: Body
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - anchor
+                    save_html: false
+                -
+                  handle: image
+                  field:
+                    type: assets
+                    container: assets
+                    max_files: 1
+                    display: Image
+                -
+                  handle: image_position
+                  field:
+                    type: select
+                    display: 'Image position'
+                    default: right
+                    options:
+                      left: Left
+                      right: Right
+      -
         display: 'The problem'
         fields:
           -
