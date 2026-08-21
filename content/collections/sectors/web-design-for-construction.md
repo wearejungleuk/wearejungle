@@ -42,77 +42,163 @@ features:
     body: 'Specifiers, installers and buyers can find the nearest partner or approved installer without scrolling through a global list.'
 body:
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 2
     content:
       -
         type: text
-        text: 'Most construction and industrial businesses we start working with have the same story. They launched a Wix or templated WordPress site two or three years ago, it looked fine, they started running some Google Ads on top of it, and now something quietly is not working. The ad account is spending money but the reporting does not add up. Enquiries are trickling in but a chunk never turn into quotes. The team spend more time than they should manually copying numbers between the website, the quote tool and the CRM. Nothing is on fire. But the site has stopped being an asset and started being a tax.'
+        text: 'What features should a construction company website actually have?'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'That is what most of our construction work fixes. Here are three we can talk about openly.'
+        text: 'A construction website earns its place when it does four jobs well: it makes accreditations and credentials easy to verify, it turns visitors into properly qualified leads rather than generic contact form submissions, it hands data cleanly to the tools that already run the business, and it lets specifiers or buyers find the exact product or service they need without scrolling through everything.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'In practice that means a filterable product or service catalogue (by grade, application, accreditation, country or however your specifiers actually narrow down), a proper case study section where each project has its own downloadable PDF sent on demand, a visible and current accreditation area (CHAS, SafeContractor, Constructionline, ISO, plus trade body memberships), a quote builder or configurator that lets a visitor spec what they want and land as a structured lead, and direct integration with your CRM, quote tool or ERP so nothing has to be re-keyed by hand.'
   -
     type: heading
     attrs:
-      level: 3
+      level: 2
     content:
       -
         type: text
-        text: 'CS Garden Offices: off Wix, into a visual quote builder'
+        text: 'Is WordPress, Wix, Squarespace or a custom build best for a construction business?'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'CS Garden Offices design and supply high-quality garden offices across the UK. They came to us on a Wix site that had been converting well against their Google Ads campaigns, but their agency had hit a wall on what could be tracked. Wix does not give you the level of control a mature ad account needs, and the site could not talk to the tools around it properly.'
+        text: 'For a construction business under a few thousand a month in ad spend, with no CRM or quote tool integration and a small product range, Wix or Squarespace will get the job done. Templated WordPress on a premium theme sits in a similar bracket - fine for a brochure site that is mainly there to look credible when someone Googles the company name.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'We rebuilt the whole thing as a fully custom development, moving off Wix entirely. Full event tracking, proper conversion goals, tag manager set up the way it should be. On top of that we built a visual quote-building form: visitors put together their own garden office quote step by step, choose size, spec, extras and finish, and land as a real lead with structured quote data attached rather than a generic enquiry. The site plugs directly into the internal quote builder the business already runs on, so quote data flows through automatically without being re-keyed.'
+        text: 'The point where those platforms stop being the right answer is not usually about traffic. It is about what the business needs the site to do. Once you are spending real money on Google Ads and your agency starts asking for proper conversion tracking, Wix hits a ceiling. Once you need product filtering that actually reflects how your catalogue is structured, template themes start bending in shapes they were not built for. Once your team is copy-pasting enquiry data between the website, the quote tool and the CRM, you have already paid for a custom build twice over in wasted time.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'The threshold we tend to see is roughly £1,000 to £2,000 a month in ad spend, a technical or configurable product range, or a business process that already touches three or four tools. Below that, a template site is fine. Above it, a custom build pays for itself.'
   -
     type: heading
     attrs:
-      level: 3
+      level: 2
     content:
       -
         type: text
-        text: 'Delta-Xero: a technical audience finally gets the tools it needs'
+        text: 'Why do most construction websites underperform on Google Ads?'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Delta-Xero design and manufacture industrial filtration systems used in safety-critical environments across manufacturing, energy, marine and waste management. Their audience is technical: specifiers and engineers who care about system reliability and fluid cleanliness. The old site was WordPress on a templated theme and looked like it. There was no room to build the kind of features a technical audience actually needs.'
+        text: 'Three problems recur across almost every construction ad account we audit. The first is tracking. Templated site builders will happily take an ad budget but choke on real event tracking - Wix in particular gives you a fraction of the control that a mature ad account needs. Your reporting ends up disagreeing with your ad account and you find out from the invoice rather than the data.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'We designed and built a fully bespoke site with no theme and no page-builder shortcuts. Custom scroll animations that give the products the presence they deserve. Case studies set up so each one has its own downloadable PDF, sent automatically when a visitor fills the form on that specific case study. A partner locator filterable by country. Custom product filtering so visitors can narrow down to exactly the filtration system they need instead of wading through the full catalogue.'
+        text: 'The second is the landing page. The ad promises a specific product, service or spec; the landing page dumps the visitor on a generic services page and hopes for the best. Ads that convert well point to landing pages built for that specific ad copy - not a stock page shared with three other campaigns.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'The third is what happens after the form is submitted. An enquiry arrives as an email, someone re-keys the details into the quote software, someone else copies it into the CRM, and by the time an actual quote lands the customer has moved on. Fixing this means treating the website as the front end of a system, not a standalone brochure - direct integration with the quote tool and CRM, structured lead data attached to the enquiry, automatic acknowledgement to the customer.'
   -
     type: heading
     attrs:
-      level: 3
+      level: 2
     content:
       -
         type: text
-        text: 'Pro Sealants: first online sale within a week of launch'
+        text: 'What do specifiers, architects and engineers want from a supplier or manufacturer website?'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Pro Sealants supply driveway sealants across the UK. They came to us with a WordPress site built on Elementor and a premium theme that had been buggy from day one - slow, awkward to update, and after months of trading it had not produced a single online sale. The site was fighting the business rather than helping it.'
+        text: 'Specifiers do not browse. They arrive with a specific problem and a shortlist of three or four suppliers, and they are looking to eliminate options as fast as possible. Anything that makes them work harder pushes them to whoever answered first.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'We rebuilt the whole store on Shopify with the automations a serious e-commerce business needs: abandoned checkout alerts, review requests, order notifications, Google Merchant integration so products flow straight into Google Shopping. The first online order came within a week of launch. The store now actively drives orders and takes real work off the team.'
+        text: 'That means a technical catalogue they can filter properly - by grade, application, accreditation, tolerance, country - not a paginated grid of everything you sell. It means datasheets, spec PDFs and installation guides available on demand without having to email in and wait a day. It means case studies with real detail (context, spec, outcome) and a downloadable version. It means being able to find the nearest approved installer or distributor without scrolling through a global list. And for anyone selling into a project rather than a straight product sale, it means being able to build up a project specification or bill of materials on the site itself.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'None of this is exotic. Templated site builders just do not support any of it cleanly, which is why so many manufacturer sites treat their specifier audience like a consumer one.'
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'Can a construction website integrate with a CRM, quote tool or ERP?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Yes, and for anything above a very small operation it should. If your business already runs on a quote builder, a CRM (HubSpot, Pipedrive, Salesforce, Zoho, Monday), or an ERP (SAP, NetSuite, Sage, Odoo), the website should push structured lead data straight in so nothing has to be re-keyed. Product data, pricing and stock should flow the other way where relevant, so the website reflects what the business actually holds without anyone hand-updating a CSV.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Practical example: an enquiry from a construction site with a proper quote builder should arrive in the CRM with the configured spec, size, extras and estimated value already attached to the lead record. The sales team open one system, see the quote request in the shape it was made, and reply. What they should not be doing is opening three tabs to reconstruct what the customer asked for.'
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'How much does a construction company website cost and how long does it take to build?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Custom construction and industrial websites start from £4,500 + VAT and run to £30,000+ for the more complex builds with integrations, product configurators, ERP sync or multi-region partner networks. Most projects sit in the £8,000 to £18,000 range - a fully custom design and build, proper ad tracking, quote builder or configurator, and integration with the main business system.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Timescale runs 8 to 14 weeks from discovery to launch depending on scope. A brochure-style rebuild moves faster; a project with ERP sync, custom filtering and a configurator sits at the longer end. Every build is scoped and fixed-priced before it starts, so the number does not move once the work begins.'
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'When is it actually worth rebuilding an existing construction site?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'The honest answer: when the site has stopped being an asset and started being a tax on time and budget. Signs that usually mean the current site has run out of road: the Google Ads account cannot get the tracking it needs, the team is spending real hours re-keying data between the site and the tools around it, enquiries are trickling through but a chunk never turn into quotes, page load times are dragging both ad quality score and organic ranking down, and the accreditation logos on the footer are out of date because nobody can remember how to update them.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'If two or three of those are true, a rebuild will usually pay for itself inside a year on ad efficiency and saved admin hours alone. If none of them are true, the current site is doing its job and there is no need to touch it.'
 featured_case_study:
   - eecf9a97-b5aa-4b75-8463-79eec3d8ccc0
 sector_term:
