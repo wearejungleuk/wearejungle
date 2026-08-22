@@ -1,59 +1,89 @@
 {{#
     Shared testimonials block.
-    Pulls testimonials from work entries that have testimonial_quote set.
-    Params:
-    - limit (int, optional): unused for now, kept for template call
-      compatibility. The `limit` on the collection tag below caps the
-      total number of testimonials rendered.
+    Pulls work entries that actually have a testimonial_quote (server-side
+    filter via `testimonial_quote:is_empty="false"`, Statamic 5).
+
+    Adaptive layout:
+    - 1 or 2 quotes: rendered as the big centred panel(s) used on work
+      case study pages, so a sparse pool still feels intentional.
+    - 3+ quotes: the original 3-up dark card grid.
 
     Reads testimonial_* fields from the work collection blueprint.
-    If none of the queried work entries have a testimonial, the outer
-    section still renders with just its heading - which on this site is
-    fine because there are always case studies with quotes to show.
-    If that assumption stops holding, tighten the query or add an
-    "if any quote" pre-pass.
 #}}
-<section class="bg-black py-16 lg:py-24">
-    <div class="container">
+{{ collection:work sort="random" limit="3" testimonial_quote:is_empty="false" as="quoted" }}
+    {{ if quoted | count > 0 }}
+        <section class="bg-black py-16 lg:py-24">
+            <div class="container">
 
-        <div class="max-w-[720px] mb-12 lg:mb-16">
-            <h2 class="font-heading uppercase text-white text-[38px] sm:text-[46px] lg:text-[52px] leading-none js-fade-up">
-                What clients say
-            </h2>
-        </div>
+                <div class="max-w-[720px] mb-12 lg:mb-16">
+                    <h2 class="font-heading uppercase text-white text-[38px] sm:text-[46px] lg:text-[52px] leading-none js-fade-up">
+                        What clients say
+                    </h2>
+                </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {{ collection:work sort="random" limit="3" }}
-                {{ if testimonial_quote }}
-                    <div class="p-8 lg:p-10 rounded-[24px] bg-brand-dark-blue js-fade-up">
-                        <blockquote class="font-body text-white text-[16px] lg:text-[17px] leading-relaxed mb-6">
-                            &ldquo;{{ testimonial_quote | strip_tags | truncate:240 }}&rdquo;
-                        </blockquote>
-
-                        <div class="flex items-center gap-4">
-                            {{ if testimonial_avatar }}
-                                {{ glide:testimonial_avatar width="120" height="120" fit="crop" }}
-                                    <img src="{{ url }}" alt="{{ alt ?? testimonial_name }}"
-                                         class="w-[56px] h-[56px] rounded-full object-cover">
-                                {{ /glide:testimonial_avatar }}
-                            {{ /if }}
-                            <div>
-                                {{ if testimonial_name }}
-                                    <div class="font-heading uppercase text-white text-[15px] lg:text-[16px] leading-tightest">
-                                        {{ testimonial_name }}
+                {{ if quoted | count <= 2 }}
+                    <div class="flex flex-col gap-8 lg:gap-12">
+                        {{ quoted }}
+                            <div class="mx-auto w-full max-w-[1200px] bg-brand-dark-blue rounded-[24px] lg:rounded-[32px] p-8 md:p-10 lg:p-16 js-fade-up">
+                                <div class="flex items-center gap-5 lg:gap-8 mb-8 lg:mb-12">
+                                    {{ if testimonial_avatar }}
+                                        {{ glide:testimonial_avatar width="240" height="240" fit="crop_focal" }}
+                                            <img src="{{ url }}" alt="{{ testimonial_name }}" class="w-[96px] h-[96px] lg:w-[120px] lg:h-[120px] rounded-full object-cover flex-shrink-0">
+                                        {{ /glide:testimonial_avatar }}
+                                    {{ /if }}
+                                    <div>
+                                        {{ if testimonial_name }}
+                                            <div class="font-heading uppercase text-white text-[24px] lg:text-[32px] leading-tightest">{{ testimonial_name }}</div>
+                                        {{ /if }}
+                                        {{ if testimonial_company }}
+                                            <div class="text-white/80 text-[16px] lg:text-[18px] mt-1">{{ testimonial_company }}</div>
+                                        {{ /if }}
                                     </div>
-                                {{ /if }}
-                                {{ if testimonial_company }}
-                                    <div class="font-body text-white/70 text-[13px] lg:text-[14px] mt-1">
-                                        {{ testimonial_company }}
-                                    </div>
+                                </div>
+                                <div class="text-white text-[18px] lg:text-[21px] leading-relaxed whitespace-pre-line max-w-[880px]">{{ testimonial_quote }}</div>
+                                {{ if testimonial_url || website_url }}
+                                    {{ link_href = testimonial_url ?? website_url }}
+                                    <a href="{{ link_href }}" target="_blank" rel="noopener" class="inline-block mt-8 lg:mt-10 font-heading uppercase text-white text-[18px] lg:text-[22px] underline underline-offset-4 hover:opacity-80 break-words">
+                                        {{ link_href | replace:'https://':'' | replace:'http://':'' | trim:'/' }}
+                                    </a>
                                 {{ /if }}
                             </div>
-                        </div>
+                        {{ /quoted }}
+                    </div>
+                {{ else }}
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                        {{ quoted }}
+                            <div class="p-8 lg:p-10 rounded-[24px] bg-brand-dark-blue js-fade-up">
+                                <blockquote class="font-body text-white text-[16px] lg:text-[17px] leading-relaxed mb-6">
+                                    &ldquo;{{ testimonial_quote | strip_tags | truncate:240 }}&rdquo;
+                                </blockquote>
+
+                                <div class="flex items-center gap-4">
+                                    {{ if testimonial_avatar }}
+                                        {{ glide:testimonial_avatar width="120" height="120" fit="crop" }}
+                                            <img src="{{ url }}" alt="{{ alt ?? testimonial_name }}"
+                                                 class="w-[56px] h-[56px] rounded-full object-cover">
+                                        {{ /glide:testimonial_avatar }}
+                                    {{ /if }}
+                                    <div>
+                                        {{ if testimonial_name }}
+                                            <div class="font-heading uppercase text-white text-[15px] lg:text-[16px] leading-tightest">
+                                                {{ testimonial_name }}
+                                            </div>
+                                        {{ /if }}
+                                        {{ if testimonial_company }}
+                                            <div class="font-body text-white/70 text-[13px] lg:text-[14px] mt-1">
+                                                {{ testimonial_company }}
+                                            </div>
+                                        {{ /if }}
+                                    </div>
+                                </div>
+                            </div>
+                        {{ /quoted }}
                     </div>
                 {{ /if }}
-            {{ /collection:work }}
-        </div>
 
-    </div>
-</section>
+            </div>
+        </section>
+    {{ /if }}
+{{ /collection:work }}
