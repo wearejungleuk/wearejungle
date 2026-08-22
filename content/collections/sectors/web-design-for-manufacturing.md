@@ -6,51 +6,55 @@ sector_name: Manufacturing
 slug: web-design-for-manufacturing
 meta_title: 'Web Design for Manufacturers & Industrial OEMs | We Are Jungle'
 meta_description: 'Websites for manufacturers with large technical catalogues, specifier audiences and internal systems. Product configurators, ERP sync, filterable catalogues and datasheet delivery.'
-hero_intro: 'Websites for manufacturers and industrial OEMs whose product catalogue is too technical for a template, whose audience is specifiers and engineers, and whose internal systems have to talk to the site.'
+hero_intro: 'Websites for manufacturers and industrial OEMs, from a sharp brochure site to a full technical catalogue that syncs directly with your ERP. We work with any manufacturer, and we are the right team when your product data is complex, your audience is specifiers and engineers, and your internal systems need to talk to the site.'
 problems:
   -
+    id: TwQc763g
     heading: 'Your product catalogue is too technical for a template site'
     body: 'A serious industrial catalogue has grades, specifications, applications, tolerances and accreditations. Templated e-commerce and WordPress theme sites bury that inside accordion menus, and specifiers give up and phone a competitor with a proper filterable catalogue.'
   -
+    id: aQwE5xJH
     heading: 'Your CMS is out of sync with your ERP or internal database'
     body: 'Product data lives in one system. Prices, stock and specifications live in another. Nobody has time to keep the website in step by hand, so the site slowly falls behind reality and the sales team starts distrusting it.'
   -
+    id: zzfpIroF
     heading: 'Datasheets, spec PDFs and case studies get requested manually'
     body: 'A specifier fills a form asking for a specific datasheet. Someone finds it in a shared drive, attaches it, replies. It takes a day. By the time it lands, the specifier has moved on to whoever answered instantly.'
   -
+    id: m8MDl65K
     heading: 'International specifiers cannot find their nearest partner or installer'
     body: 'Global manufacturers routinely publish a partner list that is impossible to navigate - a long alphabetical list of company names with no country or region filter. Specifiers give up and email the wrong contact instead.'
 features:
   -
+    id: 50U85lOk
     heading: 'Filterable technical catalogues'
     body: 'Filter by grade, application, accreditation, tolerance, country - whatever your specifiers actually filter on. Custom-built rather than shoehorned into a plugin that half-works.'
     fa_icon: filter
   -
+    id: yWmTtbFP
     heading: 'Custom product configurators and quote builders'
     body: 'Configure a product step by step - size, spec, extras, finish, quantity - and land as a real quote request with structured data attached, not a generic contact enquiry.'
     fa_icon: sliders
   -
+    id: IaagJaKd
     heading: 'ERP, PIM and internal database sync'
     body: 'Product data, pricing, stock and specifications synced directly from the system of record so the website always reflects reality. No hand-updated CSVs, no drift between site and warehouse.'
     fa_icon: plug
   -
+    id: RakY4jk9
     heading: 'Automated datasheet and case study delivery'
     body: 'A specifier requests a specific datasheet, product spec or case study PDF and gets that exact document emailed automatically. No manual chase, no day-long lag, no dropped leads.'
     fa_icon: file-pdf
   -
+    id: Hfe3e9NP
     heading: 'Country-filtered partner and installer locators'
     body: 'Buyers and specifiers can find the nearest partner, installer or distributor for their country or region without wading through a global list.'
     fa_icon: location-dot
-  -
-    heading: 'Full Google Ads and analytics tracking, set up properly'
-    body: 'Event tracking, conversion goals, GA4 and tag manager configured against real user actions so your ad agency has clean data to work from and your reporting agrees with reality.'
-    fa_icon: chart-line
-featured_case_study:
-  - d1b47741-1ae8-40d1-afd1-c5431c023b5f
-sector_term:
-  - manufacturing
+featured_case_study: d1b47741-1ae8-40d1-afd1-c5431c023b5f
+sector_term: manufacturing
 faqs:
   -
+    id: uOTXFERC
     question: 'What features should a manufacturer or industrial OEM website have?'
     answer:
       -
@@ -64,8 +68,9 @@ faqs:
         content:
           -
             type: text
-            text: 'Add for OEMs and complex products: a custom product configurator or project builder for specifiers to spec what they want and land as a structured quote request, downloadable case studies for the projects they are actually being compared against, and proper Google Ads tracking so paid campaigns can be tuned against real conversions rather than form fills.'
+            text: 'Add for OEMs and complex products: a custom product configurator or project builder for specifiers to spec what they want and land as a structured quote request, downloadable case studies for the projects they are actually being compared against, and analytics and conversion tracking set up properly so the site can be tuned against real actions rather than form fills.'
   -
+    id: pJBuWwEu
     question: 'Best CMS for a manufacturer website: WordPress, Wix or custom?'
     answer:
       -
@@ -79,8 +84,9 @@ faqs:
         content:
           -
             type: text
-            text: 'The point where custom manufacturer websites become necessary is when the product catalogue is too technical for a template (grades, tolerances, accreditations, applications), when product data lives in an ERP or PIM that has to stay in sync with the site, when specifiers need filtering by more than one dimension at once, or when the business is running paid campaigns that need proper conversion tracking. That covers most manufacturers above a handful of SKUs.'
+            text: 'The point where custom manufacturer websites become necessary is when the product catalogue is too technical for a template (grades, tolerances, accreditations, applications), when product data lives in an ERP or PIM that has to stay in sync with the site, when specifiers need filtering by more than one dimension at once, or when the site has to feed the sales team the same numbers the sales team see rather than sit as a standalone brochure. That covers most manufacturers above a handful of SKUs.'
   -
+    id: VUqRzLyG
     question: 'What do specifiers, architects and engineers want from a manufacturer website?'
     answer:
       -
@@ -96,6 +102,7 @@ faqs:
             type: text
             text: 'It means datasheets, spec PDFs and installation guides available on demand without having to email in and wait a day. It means case studies with real detail (context, spec, outcome) and a downloadable version. It means being able to find the nearest approved installer or distributor without scrolling through a global list. And for anyone selling into a project rather than a straight product sale, it means being able to build up a project specification or bill of materials on the site itself.'
   -
+    id: lkLV3H43
     question: 'Can a manufacturer website sync with our ERP, PIM or internal database?'
     answer:
       -
@@ -111,6 +118,7 @@ faqs:
             type: text
             text: 'Practical example: a specifier lands on a product page, and the price and stock they see are the price and stock the sales team see in the ERP - because both are reading the same feed. Product changes in the internal system reach the website automatically.'
   -
+    id: lRDK9GoX
     question: 'Can you build a filterable technical catalogue for a manufacturer website?'
     answer:
       -
@@ -120,6 +128,7 @@ faqs:
             type: text
             text: 'Yes. Filter by grade, application, accreditation, tolerance, country or whatever your specifiers actually filter on. Custom-built rather than shoehorned into a plugin that half-works. Technical catalogues rarely fit off-the-shelf tools cleanly because their filter dimensions are unique to the products - which is exactly why templated site builders are wrong for the manufacturer audience.'
   -
+    id: mhupJ8fV
     question: 'Do you build multi-region manufacturer websites with country-specific partner locators?'
     answer:
       -
@@ -129,6 +138,7 @@ faqs:
             type: text
             text: 'Yes. Country-filtered partner and installer locators, region-specific content, multi-language variants and per-region product availability are all things we build into manufacturer websites. Scope depends on how many regions you cover and how much diverges between them (language, pricing, product range, distributor list).'
   -
+    id: ELNZtqQM
     question: 'Can our manufacturer website send automated PDF datasheets on request?'
     answer:
       -
@@ -138,6 +148,7 @@ faqs:
             type: text
             text: 'Yes. Requested document goes out automatically on form submission. No manual chase, no attachment step, no day-long lag. Reduces the response time from a day to instant, which on a manufacturer website is usually the difference between winning a specifier lead and losing it to whoever answered first.'
   -
+    id: Vgjv8cfU
     question: 'Will we lose Google rankings when we migrate our manufacturer website?'
     answer:
       -
@@ -147,6 +158,7 @@ faqs:
             type: text
             text: 'No. Every existing URL gets mapped to its new equivalent, the pages that carry the traffic (product pages, technical guides, application-specific landing pages) get kept, and the redirects are set properly on go-live so ranking equity moves across cleanly. Manufacturer websites often see rankings improve after a rebuild because the new site loads faster and the catalogue structure is cleaner.'
   -
+    id: In3dbNul
     question: 'How much does a manufacturer website cost in the UK and how long does it take to build?'
     answer:
       -
@@ -184,6 +196,7 @@ intro_body:
         text: 'We build manufacturer websites that handle the catalogue the way a specifier actually filters, deliver technical PDFs on demand rather than by email, sync with the ERP or PIM that holds the source of truth on product data, and route international buyers to their nearest partner without a global list of company names.'
 intro_blocks:
   -
+    id: HvTU8fkp
     heading: 'Filterable technical catalogues for specifier audiences'
     body:
       -
@@ -198,10 +211,11 @@ intro_blocks:
           -
             type: text
             text: 'We build manufacturer catalogues that filter on the dimensions your specifiers actually use, with clean product pages, downloadable spec sheets and technical documentation surfaced where they belong - not two clicks deep in a resources page.'
-    image: qvis-project-builder.jpg
+    image: lumen-uk-mockup.jpg
     image_position: right
     cta_title: 'Book a meeting'
   -
+    id: t3RlJMxL
     heading: 'ERP and PIM sync so the site reflects reality'
     body:
       -
@@ -216,10 +230,11 @@ intro_blocks:
           -
             type: text
             text: 'Every manufacturer website we build syncs directly with SAP, NetSuite, Sage, Odoo or an in-house PIM. A specifier lands on a product page and sees the price and stock the sales team see in the internal system - because both are reading the same feed.'
-    image: qvis-back-image.jpg
+    image: delta-xero-hero-mockup.jpg
     image_position: left
     cta_title: 'Book a meeting'
   -
+    id: p6tTaokR
     heading: 'Automated datasheet and case study delivery'
     body:
       -
@@ -234,10 +249,13 @@ intro_blocks:
           -
             type: text
             text: 'Manufacturer websites we build send the requested document automatically on form submission. No chase, no manual attachment, no day-long lag. Response time drops from a day to instant - which on specifier leads is often the difference between winning and losing.'
-    image: delta-xero-home.jpg
+    image: lumen-uk-hero-mockup.jpg
     image_position: right
     cta_title: 'Book a meeting'
 intro_above_title: 'Web design for manufacturers'
 intro_title: 'Manufacturer websites specifiers actually use'
 intro_cta_title: 'Book a meeting'
+hero_image: qvis-hero-mockup.jpg
+updated_by: 58fc95e0-3fe5-49b8-aa57-e8aa20e69afa
+updated_at: 1787384816
 ---
