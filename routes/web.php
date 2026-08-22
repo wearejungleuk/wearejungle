@@ -47,7 +47,7 @@ Route::permanentRedirect('/a-culinary-tour-of-portsmouth-my-favourite-haunts', '
 Route::permanentRedirect('/choosing-the-ideal-web-design-agency', '/blog');
 Route::permanentRedirect('/damira-dental-we-are-jungle-triumphs-at-dentistry-2023-awards', '/blog');
 Route::permanentRedirect('/embrace-spring-cleaning-for-your-website-even-in-autumn', '/blog');
-Route::permanentRedirect('/free-website-health-check-and-review', '/blog');
+Route::permanentRedirect('/free-website-health-check-and-review', '/free-website-audit');
 Route::permanentRedirect('/how-much-does-a-website-cost', '/blog');
 Route::permanentRedirect('/how-to-attract-patients-with-your-dental-website-design', '/blog');
 Route::permanentRedirect('/how-to-install-wordpress-on-a-server', '/blog');
@@ -74,3 +74,42 @@ Route::permanentRedirect('/sectors/web-design-for-mortgage-advisors', '/services
 Route::permanentRedirect('/sectors/web-design-for-estate-agents', '/services/web-design');
 Route::permanentRedirect('/sectors/websites-for-dentists', '/sectors/web-design-for-dental-practices');
 Route::permanentRedirect('/sectors/web-design-for-recruitment-consultants', '/services/web-design');
+
+// Sourced from the Mountex Digital SEO redirect map (August 2026 audit of
+// legacy WordPress URLs). Every destination is a live 200 rather than a
+// chain, even where the SEO brief suggested a page still to be restored.
+
+// Info pages that changed slug in the rebrand.
+Route::permanentRedirect('/about-us', '/about');
+Route::permanentRedirect('/contact-us', '/contact');
+
+// Legacy service pages.
+// /services/wordpress-support-hosting was a combined page that is now split
+// between /services/website-maintenance-support and /services/hosting; point
+// it at support since that carries the maintenance intent.
+Route::permanentRedirect('/services/wordpress-support-hosting', '/services/website-maintenance-support');
+// White-label was aimed at other agencies; closest current match is
+// web-development. Marked as a restore candidate longer-term.
+Route::permanentRedirect('/services/white-label-services-for-digital-marketing-agencies', '/services/web-development');
+// Subscription websites was dropped before the rebrand; pricing is the
+// closest match for the intent.
+Route::permanentRedirect('/services/subscription-websites', '/pricing');
+
+// Root-level pages from the old site with no direct equivalent.
+Route::permanentRedirect('/seo', '/');
+Route::permanentRedirect('/sectors', '/');
+
+// Legacy /case-studies/ URLs now live under /work/{slug} in the work
+// collection.
+Route::permanentRedirect('/case-studies/mrg-effitas', '/work/mrg-effitas');
+Route::permanentRedirect('/case-studies/my-learning-cloud', '/work/my-learning-cloud');
+Route::permanentRedirect('/case-studies/mash-gang-2025', '/work/mash-gang');
+// Seafarer Social has no equivalent on the new site; fall back to the
+// work index rather than an unrelated case study.
+Route::permanentRedirect('/case-studies/seafarer-social', '/work');
+
+// Two blog posts named in the SEO map. E-commerce tips has no equivalent
+// yet; the CMS-choice post maps cleanly onto the Statamic vs WordPress
+// article.
+Route::permanentRedirect('/growing-your-e-commerce-site-7-tips-tricks', '/blog');
+Route::permanentRedirect('/choosing-the-right-cms-for-your-website', '/blog/why-we-choose-statamic-over-wordpress');
