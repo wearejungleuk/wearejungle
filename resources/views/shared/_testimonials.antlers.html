@@ -4,8 +4,9 @@
     filter via `testimonial_quote:is_empty="false"`, Statamic 5).
 
     Adaptive layout:
-    - 1 or 2 quotes: rendered as the big centred panel(s) used on work
-      case study pages, so a sparse pool still feels intentional.
+    - 1 quote: a single big centred panel (matches work case study style).
+    - 2 quotes: same big panel style but on a Swiper carousel, 1 per view,
+      with prev/next arrows.
     - 3+ quotes: the original 3-up dark card grid.
 
     Reads testimonial_* fields from the work collection blueprint.
@@ -21,34 +22,102 @@
                     </h2>
                 </div>
 
-                {{ if quoted | count <= 2 }}
-                    <div class="flex flex-col gap-8 lg:gap-12">
-                        {{ quoted }}
-                            <div class="mx-auto w-full max-w-[1200px] bg-brand-dark-blue rounded-[24px] lg:rounded-[32px] p-8 md:p-10 lg:p-16 js-fade-up">
-                                <div class="flex items-center gap-5 lg:gap-8 mb-8 lg:mb-12">
-                                    {{ if testimonial_avatar }}
-                                        {{ glide:testimonial_avatar width="240" height="240" fit="crop_focal" }}
-                                            <img src="{{ url }}" alt="{{ testimonial_name }}" class="w-[96px] h-[96px] lg:w-[120px] lg:h-[120px] rounded-full object-cover flex-shrink-0">
-                                        {{ /glide:testimonial_avatar }}
-                                    {{ /if }}
-                                    <div>
-                                        {{ if testimonial_name }}
-                                            <div class="font-heading uppercase text-white text-[24px] lg:text-[32px] leading-tightest">{{ testimonial_name }}</div>
-                                        {{ /if }}
-                                        {{ if testimonial_company }}
-                                            <div class="text-white/80 text-[16px] lg:text-[18px] mt-1">{{ testimonial_company }}</div>
-                                        {{ /if }}
-                                    </div>
-                                </div>
-                                <div class="text-white text-[18px] lg:text-[21px] leading-relaxed whitespace-pre-line max-w-[880px]">{{ testimonial_quote }}</div>
-                                {{ if testimonial_url || website_url }}
-                                    {{ link_href = testimonial_url ?? website_url }}
-                                    <a href="{{ link_href }}" target="_blank" rel="noopener" class="inline-block mt-8 lg:mt-10 font-heading uppercase text-white text-[18px] lg:text-[22px] underline underline-offset-4 hover:opacity-80 break-words">
-                                        {{ link_href | replace:'https://':'' | replace:'http://':'' | trim:'/' }}
-                                    </a>
+                {{ if quoted | count == 1 }}
+                    {{ quoted }}
+                        <div class="mx-auto w-full max-w-[1200px] bg-brand-dark-blue rounded-[24px] lg:rounded-[32px] p-8 md:p-10 lg:p-16 js-fade-up">
+                            <div class="flex items-center gap-5 lg:gap-8 mb-8 lg:mb-12">
+                                {{ if testimonial_avatar }}
+                                    {{ glide:testimonial_avatar width="240" height="240" fit="crop_focal" }}
+                                        <img src="{{ url }}" alt="{{ testimonial_name }}" class="w-[96px] h-[96px] lg:w-[120px] lg:h-[120px] rounded-full object-cover flex-shrink-0">
+                                    {{ /glide:testimonial_avatar }}
                                 {{ /if }}
+                                <div>
+                                    {{ if testimonial_name }}
+                                        <div class="font-heading uppercase text-white text-[24px] lg:text-[32px] leading-tightest">{{ testimonial_name }}</div>
+                                    {{ /if }}
+                                    {{ if testimonial_company }}
+                                        <div class="text-white/80 text-[16px] lg:text-[18px] mt-1">{{ testimonial_company }}</div>
+                                    {{ /if }}
+                                </div>
                             </div>
-                        {{ /quoted }}
+                            <div class="text-white text-[18px] lg:text-[21px] leading-relaxed whitespace-pre-line max-w-[880px]">{{ testimonial_quote }}</div>
+                            {{ if testimonial_url || website_url }}
+                                {{ link_href = testimonial_url ?? website_url }}
+                                <a href="{{ link_href }}" target="_blank" rel="noopener" class="inline-block mt-8 lg:mt-10 font-heading uppercase text-white text-[18px] lg:text-[22px] underline underline-offset-4 hover:opacity-80 break-words">
+                                    {{ link_href | replace:'https://':'' | replace:'http://':'' | trim:'/' }}
+                                </a>
+                            {{ /if }}
+                        </div>
+                    {{ /quoted }}
+                {{ elseif quoted | count == 2 }}
+                    <div class="mx-auto w-full max-w-[1200px] js-fade-up"
+                         x-data
+                         x-init="$nextTick(() => {
+                             const sw = new Swiper($refs.testimonialsSwiper, {
+                                 slidesPerView: 1,
+                                 spaceBetween: 24,
+                                 loop: false,
+                                 speed: 600,
+                                 navigation: {
+                                     nextEl: $refs.tNext,
+                                     prevEl: $refs.tPrev,
+                                 },
+                                 on: {
+                                     init(s) { updateTButtons(s) },
+                                     slideChange(s) { updateTButtons(s) },
+                                 }
+                             });
+                             function updateTButtons(s) {
+                                 $refs.tPrev.disabled = s.isBeginning;
+                                 $refs.tNext.disabled = s.isEnd;
+                                 $refs.tPrev.classList.toggle('opacity-40', s.isBeginning);
+                                 $refs.tNext.classList.toggle('opacity-40', s.isEnd);
+                                 $refs.tPrev.classList.toggle('cursor-not-allowed', s.isBeginning);
+                                 $refs.tNext.classList.toggle('cursor-not-allowed', s.isEnd);
+                             }
+                         })">
+                        <div class="swiper" x-ref="testimonialsSwiper">
+                            <div class="swiper-wrapper">
+                                {{ quoted }}
+                                    <div class="swiper-slide !h-auto">
+                                        <div class="bg-brand-dark-blue rounded-[24px] lg:rounded-[32px] p-8 md:p-10 lg:p-16 h-full">
+                                            <div class="flex items-center gap-5 lg:gap-8 mb-8 lg:mb-12">
+                                                {{ if testimonial_avatar }}
+                                                    {{ glide:testimonial_avatar width="240" height="240" fit="crop_focal" }}
+                                                        <img src="{{ url }}" alt="{{ testimonial_name }}" class="w-[96px] h-[96px] lg:w-[120px] lg:h-[120px] rounded-full object-cover flex-shrink-0">
+                                                    {{ /glide:testimonial_avatar }}
+                                                {{ /if }}
+                                                <div>
+                                                    {{ if testimonial_name }}
+                                                        <div class="font-heading uppercase text-white text-[24px] lg:text-[32px] leading-tightest">{{ testimonial_name }}</div>
+                                                    {{ /if }}
+                                                    {{ if testimonial_company }}
+                                                        <div class="text-white/80 text-[16px] lg:text-[18px] mt-1">{{ testimonial_company }}</div>
+                                                    {{ /if }}
+                                                </div>
+                                            </div>
+                                            <div class="text-white text-[18px] lg:text-[21px] leading-relaxed whitespace-pre-line max-w-[880px]">{{ testimonial_quote }}</div>
+                                            {{ if testimonial_url || website_url }}
+                                                {{ link_href = testimonial_url ?? website_url }}
+                                                <a href="{{ link_href }}" target="_blank" rel="noopener" class="inline-block mt-8 lg:mt-10 font-heading uppercase text-white text-[18px] lg:text-[22px] underline underline-offset-4 hover:opacity-80 break-words">
+                                                    {{ link_href | replace:'https://':'' | replace:'http://':'' | trim:'/' }}
+                                                </a>
+                                            {{ /if }}
+                                        </div>
+                                    </div>
+                                {{ /quoted }}
+                            </div>
+                        </div>
+                        <div class="flex justify-end mt-8 lg:mt-10">
+                            <div class="arrows flex items-center gap-2">
+                                <button x-ref="tPrev" type="button" aria-label="Previous testimonial" class="w-[61px] h-[61px] text-black bg-brand-secondary border-[2px] border-black rounded-[15px]">
+                                    <i class="fa-sharp fa-regular fa-chevron-left"></i>
+                                </button>
+                                <button x-ref="tNext" type="button" aria-label="Next testimonial" class="w-[61px] h-[61px] text-black bg-brand-secondary border-[2px] border-black rounded-[15px]">
+                                    <i class="fa-sharp fa-regular fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 {{ else }}
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
