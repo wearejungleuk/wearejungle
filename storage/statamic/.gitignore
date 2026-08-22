@@ -1,2 +1,9 @@
 *
 !.gitignore
+!addons/
+addons/*
+!addons/aardvark-seo/
+addons/aardvark-seo/*
+!addons/aardvark-seo/aardvark_redirects/
+addons/aardvark-seo/aardvark_redirects/*
+!addons/aardvark-seo/aardvark_redirects/manual.yaml
