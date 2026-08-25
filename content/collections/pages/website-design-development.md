@@ -33,21 +33,25 @@ page_builder:
     items:
       -
         id: ppc_des_trust_01
+        fa_icon: location-dot
         label: 'Based in Portsmouth, not just serving it'
         type: new_set
         enabled: true
       -
         id: ppc_des_trust_02
+        fa_icon: users
         label: 'In-house UK team'
         type: new_set
         enabled: true
       -
         id: ppc_des_trust_03
+        fa_icon: tag
         label: 'Pricing published, no guessing'
         type: new_set
         enabled: true
       -
         id: ppc_des_trust_04
+        fa_icon: key
         label: 'You own the site and the code'
         type: new_set
         enabled: true

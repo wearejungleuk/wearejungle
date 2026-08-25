@@ -33,21 +33,25 @@ page_builder:
     items:
       -
         id: ppc_supp_trust_01
+        fa_icon: server
         label: '50+ websites currently supported'
         type: new_set
         enabled: true
       -
         id: ppc_supp_trust_02
+        fa_icon: award
         label: '12+ years experience'
         type: new_set
         enabled: true
       -
         id: ppc_supp_trust_03
+        fa_icon: users
         label: 'UK based, in-house team'
         type: new_set
         enabled: true
       -
         id: ppc_supp_trust_04
+        fa_icon: calendar-check
         label: '30-day rolling, cancel anytime'
         type: new_set
         enabled: true

@@ -1532,6 +1532,12 @@ fields:
                             display: 'Trust Item'
                             fields:
                               -
+                                handle: fa_icon
+                                field:
+                                  type: text
+                                  display: 'Font Awesome Icon'
+                                  instructions: 'Just the icon name (e.g. "shield-halved", "clock", "users"). Rendered as fa-sharp fa-solid fa-{name}. Defaults to circle-check.'
+                              -
                                 handle: label
                                 field:
                                   type: text
