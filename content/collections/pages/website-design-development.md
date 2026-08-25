@@ -24,7 +24,7 @@ page_builder:
     cta_title: 'Send us your brief'
     book_appointment: false
     cta_2: 'https://calendly.com/wearejungle/20-min-website-chat'
-    cta_2_title: 'Or book a 20-minute call'
+    cta_2_title: 'Or book a 30-minute call'
     book_appointment_2: true
     type: services_hero
     enabled: true
@@ -435,14 +435,14 @@ page_builder:
     enabled: true
   -
     id: ppc_des_calendly
-    title: 'Book a 20-minute call'
+    title: 'Book a 30-minute call'
     text:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Pick a time that works for you. Twenty minutes, no pressure, no pushy sales pitch.'
+            text: 'Pick a time that works for you. Thirty minutes, no pressure, no pushy sales pitch.'
       -
         type: paragraph
         content:
