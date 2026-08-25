@@ -1493,12 +1493,49 @@ fields:
                       button--black: Black
                       button--white: White
                 -
+                  handle: cta_2
+                  field:
+                    type: link
+                    display: 'Secondary CTA'
+                    instructions: 'Optional. Renders as a second button next to the primary CTA. Use for phone links (tel:...) on PPC pages.'
+                -
+                  handle: cta_2_title
+                  field:
+                    type: text
+                    display: 'Secondary CTA Title'
+                -
+                  handle: book_appointment_2
+                  field:
+                    type: toggle
+                    display: 'Secondary CTA opens Calendly'
+                -
                   handle: mockup_image
                   field:
                     max_files: 1
                     container: assets
                     type: assets
                     display: 'Browser Mockup Image'
+            trust_strip:
+              display: 'Trust Strip'
+              instructions: 'A row of 4 short trust points, typically placed directly below the hero on a PPC landing page.'
+              fields:
+                -
+                  handle: items
+                  field:
+                    type: replicator
+                    display: Items
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: 'Trust Item'
+                            fields:
+                              -
+                                handle: label
+                                field:
+                                  type: text
+                                  display: Label
             text_hero:
               display: 'Text Hero'
               fields:

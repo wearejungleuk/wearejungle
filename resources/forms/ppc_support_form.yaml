@@ -1,0 +1,7 @@
+title: 'PPC Support Form'
+email:
+  -
+    id: ppcsupp001
+    to: 'hello@wearejungle.co.uk, kay@wearejungle.co.uk'
+    from: noreply@wearejungle.co.uk
+    subject: 'PPC Landing Page - Support Enquiry'

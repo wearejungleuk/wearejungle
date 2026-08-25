@@ -1,0 +1,42 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              type: text
+              display: Name
+              placeholder: 'Your Name'
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              input_type: email
+              placeholder: 'Your Email'
+              type: text
+              display: Email
+              validate:
+                - required
+          -
+            handle: phone
+            field:
+              input_type: tel
+              placeholder: 'Your Number'
+              type: text
+              display: Phone
+              validate:
+                - required
+          -
+            handle: website
+            field:
+              input_type: url
+              placeholder: 'https://yourbusiness.co.uk'
+              type: text
+              display: 'Website address'
+              instructions: 'So we can take a quick look before we reply.'
+              validate:
+                - required

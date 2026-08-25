@@ -1,0 +1,16 @@
+<section class="bg-brand-primary py-8 lg:py-10">
+    <div class="container">
+        {{ if items }}
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                {{ items }}
+                    <div class="flex items-start gap-3 text-white js-fade-up">
+                        <div class="flex-shrink-0 mt-1 text-brand-secondary">
+                            <i class="fa-sharp fa-solid fa-circle-check text-[18px] lg:text-[20px]"></i>
+                        </div>
+                        <p class="text-[14px] md:text-[15px] lg:text-[16px] leading-snug">{{ label }}</p>
+                    </div>
+                {{ /items }}
+            </div>
+        {{ /if }}
+    </div>
+</section>

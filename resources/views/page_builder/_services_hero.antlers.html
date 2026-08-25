@@ -13,9 +13,14 @@
             {{ if text }}
                 <div class="bard max-w-[820px] mx-auto text-white text-[16px] lg:text-[18px] leading-relaxed mb-10 js-fade-up">{{ text }}</div>
             {{ /if }}
-            {{ if cta || book_appointment }}
-                <div class="js-fade-up">
-                    {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="button--secondary" }}
+            {{ if cta || book_appointment || cta_2 || book_appointment_2 }}
+                <div class="js-fade-up flex flex-wrap gap-3 justify-center items-center">
+                    {{ if cta || book_appointment }}
+                        {{ partial:components/button url="{ cta:url }" title="{ cta_title }" target="{ cta:target }" book_appointment="{ book_appointment }" classes="button--secondary" }}
+                    {{ /if }}
+                    {{ if cta_2 || book_appointment_2 }}
+                        {{ partial:components/button url="{ cta_2:url }" title="{ cta_2_title }" target="{ cta_2:target }" book_appointment="{ book_appointment_2 }" classes="button--light-blue" }}
+                    {{ /if }}
                 </div>
             {{ /if }}
         </div>
