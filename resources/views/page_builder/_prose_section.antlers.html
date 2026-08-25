@@ -8,6 +8,8 @@
 <section class="bg-brand-primary py-16 lg:py-24">
     <div class="container">
 
+        <div class="{{ if white_panel }}bg-white rounded-[40px] lg:rounded-[60px] px-6 py-12 md:p-12 lg:p-16 xl:p-20{{ /if }}">
+
         {{ if image_position }}
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24 items-center">
 
@@ -35,10 +37,10 @@
                         </div>
                     {{ /if }}
                     {{ if title }}
-                        <h2 class="font-heading uppercase text-[34px] sm:text-[40px] lg:text-[46px] xl:text-[52px] leading-tightest text-white mb-6 lg:mb-8 js-fade-up">{{ title }}</h2>
+                        <h2 class="font-heading uppercase text-[34px] sm:text-[40px] lg:text-[46px] xl:text-[52px] leading-tightest {{ if white_panel }}text-black{{ else }}text-white{{ /if }} mb-6 lg:mb-8 js-fade-up">{{ title }}</h2>
                     {{ /if }}
                     {{ if body }}
-                        <div class="bard prose-inverse text-white text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
+                        <div class="bard {{ if white_panel }}text-black{{ else }}prose-inverse text-white{{ /if }} text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
                             {{ body }}
                         </div>
                     {{ /if }}
@@ -59,10 +61,10 @@
                     </div>
                 {{ /if }}
                 {{ if title }}
-                    <h2 class="font-heading uppercase text-[38px] sm:text-[46px] lg:text-[52px] leading-tightest text-white mb-8 lg:mb-10 js-fade-up">{{ title }}</h2>
+                    <h2 class="font-heading uppercase text-[38px] sm:text-[46px] lg:text-[52px] leading-tightest {{ if white_panel }}text-black{{ else }}text-white{{ /if }} mb-8 lg:mb-10 js-fade-up">{{ title }}</h2>
                 {{ /if }}
                 {{ if body }}
-                    <div class="bard prose-inverse text-white text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
+                    <div class="bard {{ if white_panel }}text-black{{ else }}prose-inverse text-white{{ /if }} text-[16px] lg:text-[18px] leading-relaxed js-fade-up">
                         {{ body }}
                     </div>
                 {{ /if }}
@@ -73,6 +75,8 @@
                 {{ /if }}
             </div>
         {{ /if }}
+
+        </div>
 
     </div>
 </section>

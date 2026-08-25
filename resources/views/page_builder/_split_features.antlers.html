@@ -38,7 +38,7 @@
             {{ if image }}
                 <div class="js-fade-up {{ if image_position == 'left' }}lg:order-1{{ /if }}">
                     {{ image }}
-                        <div class="overflow-hidden" style="border-radius: 24px">
+                        <div class="overflow-hidden rounded-[24px] lg:rounded-[32px] border-[3px] border-black shadow-2xl">
                             <img src="{{ url }}" alt="{{ alt }}" loading="lazy" class="w-full h-auto object-cover">
                         </div>
                     {{ /image }}

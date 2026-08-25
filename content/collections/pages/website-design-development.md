@@ -83,6 +83,7 @@ page_builder:
             type: text
             text: ' for typical project ranges by type.'
     image_position: right
+    white_panel: true
     type: prose_section
     enabled: true
     image: web-design-card.jpg
@@ -129,7 +130,7 @@ page_builder:
         label: 'ERP and CRM integrations'
         type: new_set
         enabled: true
-    image_position: left
+    image_position: right
     type: split_features
     enabled: true
     image: wearejungle-45-webdev.jpg
@@ -273,7 +274,7 @@ page_builder:
     cta: '#contact'
     cta_title: 'Send us your brief'
     book_appointment: false
-    cta_classes: button--primary
+    cta_classes: button--secondary
     type: work_carousel
     enabled: true
   -

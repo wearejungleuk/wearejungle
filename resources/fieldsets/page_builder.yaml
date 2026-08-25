@@ -2084,6 +2084,12 @@ fields:
                       button--primary: Primary
                       button--secondary: Secondary
                       button--light-blue: 'Light Blue'
+                -
+                  handle: white_panel
+                  field:
+                    type: toggle
+                    display: 'White Panel'
+                    instructions: 'Wraps the section in a white rounded card. Text switches to black.'
             sectors_list:
               display: 'Sectors List'
               fields:
