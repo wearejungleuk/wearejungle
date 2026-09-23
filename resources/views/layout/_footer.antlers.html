@@ -28,19 +28,19 @@
             <div class="cols-span-1">
                 <p class="font-heading mb-4 lg:mb-6 text-[20px] uppercase">Sectors</p>
                 <ul class="flex gap-2 flex-col">
-                    {{ nav:sectors }}
+                    {{ nav handle="sectors" }}
                     <li><a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title
                         }}</a></li>
-                    {{ /nav:sectors }}
+                    {{ /nav }}
                 </ul>
             </div>
             <div class="cols-span-1">
                 <p class="font-heading mb-4 lg:mb-6 text-[20px] uppercase">Locations</p>
                 <ul class="flex gap-2 flex-col">
-                    {{ nav:locations }}
+                    {{ nav handle="locations" }}
                     <li><a href="{{ url }}" class="hover:text-brand-secondary transition-colors duration-200">{{ title
                         }}</a></li>
-                    {{ /nav:locations }}
+                    {{ /nav }}
                 </ul>
             </div>
         </div>
