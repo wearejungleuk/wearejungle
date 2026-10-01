@@ -23,7 +23,7 @@ page_builder:
     cta: '#contact'
     cta_title: 'Send us your brief'
     book_appointment: false
-    cta_2: 'https://calendly.com/wearejungle/20-min-website-chat'
+    cta_2: 'https://calendly.com/wearejungle/introduction-meeting'
     cta_2_title: 'Or book a 30-minute call'
     book_appointment_2: true
     dynamic_location: true

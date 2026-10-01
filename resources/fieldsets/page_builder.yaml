@@ -1515,6 +1515,12 @@ fields:
                     container: assets
                     type: assets
                     display: 'Browser Mockup Image'
+                -
+                  handle: dynamic_location
+                  field:
+                    type: toggle
+                    display: 'Dynamic Location (AdWords)'
+                    instructions: 'When on, swaps "Portsmouth" in the h1/h2 for a ?loc= query value (Portsmouth, Chichester, Fareham, Gosport, Havant, Waterlooville, Southampton, Winchester). Missing or unlisted values fall back to "Hampshire".'
             trust_strip:
               display: 'Trust Strip'
               instructions: 'A row of 4 short trust points, typically placed directly below the hero on a PPC landing page.'
