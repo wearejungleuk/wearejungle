@@ -1,11 +1,10 @@
 <section class="bg-brand-primary pt-[140px] md:pt-[160px] lg:pt-[200px] pb-16 lg:pb-0">
     <div class="container">
 
-        {{# AdWords variants: when dynamic_location is set, swap 'Portsmouth' in the H1/H2 for a ?loc= value from the allow-list. Falls back to 'Hampshire'. #}}
+        {{# AdWords variants: when dynamic_location is set, swap 'Portsmouth' in the H1/H2 for a ?loc= value from the allow-list. Falls back to 'Portsmouth'. #}}
         {{ loc_town = 'Portsmouth' }}
         {{ if dynamic_location }}
             {{ raw_loc = get.loc | lower | trim }}
-            {{ loc_town = 'Hampshire' }}
             {{ if raw_loc == 'portsmouth' }}{{ loc_town = 'Portsmouth' }}{{ /if }}
             {{ if raw_loc == 'chichester' }}{{ loc_town = 'Chichester' }}{{ /if }}
             {{ if raw_loc == 'fareham' }}{{ loc_town = 'Fareham' }}{{ /if }}
