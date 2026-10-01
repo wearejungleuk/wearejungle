@@ -26,6 +26,7 @@ page_builder:
     cta_2: 'https://calendly.com/wearejungle/20-min-website-chat'
     cta_2_title: 'Or book a 30-minute call'
     book_appointment_2: true
+    dynamic_location: true
     type: services_hero
     enabled: true
   -
