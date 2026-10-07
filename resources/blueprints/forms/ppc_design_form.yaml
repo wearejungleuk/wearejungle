@@ -33,8 +33,8 @@ tabs:
           -
             handle: website
             field:
-              input_type: url
-              placeholder: 'https://yourbusiness.co.uk'
+              input_type: text
+              placeholder: 'yourbusiness.co.uk'
               type: text
               display: 'Company website (if you have one)'
           -

@@ -28,6 +28,11 @@ class AuditLeadController extends Controller
             'url'   => $request->input('url'),
         ]);
 
+        $rawUrl = trim((string) $request->input('url'));
+        if ($rawUrl !== '' && ! preg_match('/^https?:\/\//i', $rawUrl)) {
+            $request->merge(['url' => 'https://' . ltrim($rawUrl, '/')]);
+        }
+
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
