@@ -86,9 +86,9 @@
 
                 {{# Closing video embed (optional) #}}
                 {{ if closing_video_youtube_id }}
-                <div class="aspect-video w-full overflow-hidden mt-10" style="border-radius: 12px">
+                <div class="relative w-full overflow-hidden mt-10" style="padding-bottom: 56.25%; border-radius: 12px">
                     <iframe
-                        class="h-full w-full"
+                        class="absolute inset-0 h-full w-full"
                         src="https://www.youtube.com/embed/{{ closing_video_youtube_id }}"
                         title="{{ title }}"
                         loading="lazy"
