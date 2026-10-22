@@ -84,6 +84,22 @@
                 </div>
                 {{ /if }}
 
+                {{# Closing video embed (optional) #}}
+                {{ if closing_video_youtube_id }}
+                <div class="aspect-video w-full overflow-hidden mt-10" style="border-radius: 12px">
+                    <iframe
+                        class="h-full w-full"
+                        src="https://www.youtube-nocookie.com/embed/{{ closing_video_youtube_id }}"
+                        title="{{ title }}"
+                        loading="lazy"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                {{ /if }}
+
                 {{# In-blog ad bar - rendered here, then moved into the middle of the article by JS. #}}
                 {{ if advertised_service }}
                     {{ partial:components/blog-ad-bar :advertised_service="advertised_service" }}

@@ -85,6 +85,12 @@ tabs:
                 - anchor
                 - image
                 - table
+          -
+            handle: closing_video_youtube_id
+            field:
+              type: text
+              display: 'Closing Video (YouTube ID)'
+              instructions: 'Optional. Paste the YouTube video ID (e.g. CZ7OQVcJEeA from youtube.com/watch?v=CZ7OQVcJEeA) to embed a responsive video at the end of the post. Leave blank to hide.'
   seo:
     display: SEO
     sections:
