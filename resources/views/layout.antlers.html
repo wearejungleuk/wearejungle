@@ -104,6 +104,7 @@
                         'timeout-callback': function () { log('timeout, resetting'); if (widgetId !== null) window.turnstile.reset(widgetId); },
                     });
                     if (widgetId === undefined || widgetId === null) { log('render returned no id'); return; }
+                    slot.setAttribute('data-wj-turnstile-widget-id', widgetId);
                     log('rendered widget', widgetId);
                 } catch (e) {
                     log('render threw', e && e.message);
@@ -134,9 +135,24 @@
                 scanAndRender();
             });
 
-            // Handle back/forward cache restores.
+            // Handle back/forward cache restores. On iOS Safari in particular,
+            // backgrounded tabs pause timers, so the Turnstile token may be
+            // expired on Cloudflare's side even though the widget still shows
+            // Success locally. Reset any already-rendered widgets so a fresh
+            // token is issued before the user next submits.
             window.addEventListener('pageshow', function (e) {
-                if (e.persisted) { log('bfcache restore, re-scanning'); scanAndRender(); }
+                if (!e.persisted) return;
+                log('bfcache restore, resetting widgets');
+                if (window.turnstile) {
+                    document.querySelectorAll('[data-wj-turnstile-widget-id]').forEach(function (slot) {
+                        var id = slot.getAttribute('data-wj-turnstile-widget-id');
+                        try { window.turnstile.reset(id); } catch (err) { log('reset failed', err && err.message); }
+                        var form = slot.closest('form');
+                        var btn = form && form.querySelector('[data-turnstile-submit]');
+                        if (btn) btn.disabled = true;
+                    });
+                }
+                scanAndRender();
             });
         })();
     </script>

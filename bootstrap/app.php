@@ -17,6 +17,13 @@ return Application::configure(basePath: dirname(__DIR__))
         // is nginx, so the public/.htaccess trailing-slash rule never runs.
         $middleware->prepend(TrimTrailingSlash::class);
 
+        // Trust Cloudflare's forwarded headers so request()->ip() returns the
+        // real client IP, not the edge or nginx IP. The Turnstile Worker
+        // compares this against the IP that solved the challenge; without it,
+        // every verification fails. Safe because the origin only accepts
+        // traffic through Cloudflare.
+        $middleware->trustProxies(at: '*');
+
         // Exempt the Trakd audit-complete callback from CSRF — it's a
         // server-to-server POST authenticated by the shared
         // X-Callback-Secret header, not a browser session.
