@@ -556,7 +556,7 @@ default:
   is_active: true
 - id: 924a18d1-f340-4598-a588-40500aedc6b8
   source_url: /work-type/branding
-  target_url: /services
+  target_url: /work
   status_code: '301'
   is_active: true
 - id: 6b90725b-139e-499d-9a9b-c4bd63e2399d
@@ -587,5 +587,40 @@ default:
 - id: c435f1ad-f7df-4b03-b978-352d761fdbbc
   source_url: /services/support
   target_url: /services/website-maintenance-support
+  status_code: '301'
+  is_active: true
+- id: 6fc01080-17b5-41fb-b90f-d6a9f10fea57
+  source_url: /web-agency-portsmouth
+  target_url: /
+  status_code: '301'
+  is_active: true
+- id: c5b2e3ff-a84f-47a2-938e-6f681a1a6f44
+  source_url: /web-designers-portsmouth
+  target_url: /
+  status_code: '301'
+  is_active: true
+- id: 99e96f15-a9c0-4458-9b84-b7b82ff9db4e
+  source_url: /web-development-portsmouth
+  target_url: /services/web-development
+  status_code: '301'
+  is_active: true
+- id: 3f67cb94-cb5c-45c3-b0c0-f5489da7b02f
+  source_url: /sectors/qvis.co.uk
+  target_url: /work/qvis
+  status_code: '301'
+  is_active: true
+- id: 3488ee18-fbbf-4b1e-969e-ba9e934aac20
+  source_url: /work/qvis.co.uk
+  target_url: /work/qvis
+  status_code: '301'
+  is_active: true
+- id: 6880ef5c-ec15-4091-9682-fb877a1da004
+  source_url: /work/delta-xero.com
+  target_url: /work/delta-xero
+  status_code: '301'
+  is_active: true
+- id: 350a0447-9f48-4266-b56b-9f2777604cce
+  source_url: /free-website-audit/status/
+  target_url: /contact
   status_code: '301'
   is_active: true
