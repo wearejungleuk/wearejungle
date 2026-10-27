@@ -1,10 +1,11 @@
 <section
         x-data
         x-init="
+const slideCount = $refs.slider.querySelectorAll('.swiper-slide').length;
 const swiper = new Swiper($refs.slider, {
   slidesPerView: 3,
   spaceBetween: 0,
-  loop: true,
+  loop: slideCount >= 10,
   speed: 600,
   navigation: {
     nextEl: $refs.next,
