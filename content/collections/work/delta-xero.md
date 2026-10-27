@@ -212,7 +212,7 @@ testimonial_quote: |-
 testimonial_name: 'Collette Whiting'
 testimonial_company: 'Delta-Xero Owner'
 testimonial_avatar: collette.jpg
-testimonial_url: delta-xero.com
+testimonial_url: 'https://delta-xero.com'
 page_builder:
   -
     id: work_cta_delta_xero

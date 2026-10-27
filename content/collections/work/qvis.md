@@ -236,5 +236,5 @@ testimonial_quote: |-
 testimonial_name: 'Matt Graham'
 testimonial_company: 'Sales Director'
 testimonial_avatar: matt-graham-qvis.jpeg
-testimonial_url: qvis.co.uk
+testimonial_url: 'https://www.qvis.co.uk'
 ---
