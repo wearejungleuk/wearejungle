@@ -41,7 +41,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Bespoke web design for growing businesses that have outgrown a template. UX, UI, website redesigns and conversion-focused new builds - designed around your business, not adjusted to fit it. All in-house, all custom, and all built to earn their keep.'
+            text: 'Bespoke web design for growing businesses that have outgrown a template. UX, UI, website redesigns and conversion-focused new builds - designed around your business, not adjusted to fit it. All in-house from our Portsmouth studio, all custom, and all built to earn their keep.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -726,6 +726,18 @@ page_builder:
               -
                 type: text
                 text: 'Yes. Most of our design work is a redesign. We review the existing site first (analytics, traffic sources, converting pages) so what is working gets preserved and what is not gets replaced. Rankings and URL history are protected wherever we can, and we handle the migration end to end.'
+        type: new_set
+        enabled: true
+      -
+        id: faq_wd_location
+        question: 'Where is your studio based?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Our studio is in Portsmouth, with clients across Hampshire, the south coast and the rest of the UK. We work in person with local businesses when it helps the project and remotely with everyone else - whichever suits you.'
         type: new_set
         enabled: true
     type: faq_accordion

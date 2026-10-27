@@ -41,7 +41,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Custom web development for businesses that need more than a template. WordPress, Shopify, WooCommerce, Statamic and bespoke builds - with the integrations, tracking and business tools your site needs to actually earn its keep. In-house UK team, no offshoring.'
+            text: 'Custom web development for businesses that need more than a template. WordPress, Shopify, WooCommerce, Statamic and bespoke builds - with the integrations, tracking and business tools your site needs to actually earn its keep. In-house Portsmouth team serving clients across Hampshire and the UK, no offshoring.'
     cta_title: 'Book a Call'
     book_appointment: true
     type: services_hero
@@ -388,7 +388,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'The two clearest examples on our books are '
+            text: 'The two clearest examples on our books, both from Hampshire businesses, are '
           -
             type: text
             marks:
@@ -747,6 +747,18 @@ page_builder:
               -
                 type: text
                 text: 'Yes. Every site we build ships with a CMS you and your team can use directly. Content, images, blog posts, new pages, product changes on e-commerce sites - all editable without a developer. We include CMS training at handover so the team is comfortable running the site on day one, and support plans are available if you want a developer on hand for the bigger changes.'
+        type: new_set
+        enabled: true
+      -
+        id: faq_wdev_location
+        question: 'Where is your development team based?'
+        answer:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Our developers work from our studio in Portsmouth, Hampshire. All code is written in-house by senior developers - no offshoring, no overnight teams. We work with clients across Hampshire and the south coast, as well as the rest of the UK, in person when it helps and remotely otherwise.'
         type: new_set
         enabled: true
     type: faq_accordion
