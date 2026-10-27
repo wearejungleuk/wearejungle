@@ -107,6 +107,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.cookie-notice-button {
+  @apply font-heading uppercase text-xs leading-none px-3 py-2 bg-brand-primary text-white border-2 border-black rounded-full cursor-pointer transition-colors;
+}
+
+.cookie-notice-button:hover {
+  background-color: rgb(var(--color-black));
+}
+
 .above-title--light-blue {
   background-color: rgb(var(--color-brand-light-blue));
   color: rgb(var(--color-black));

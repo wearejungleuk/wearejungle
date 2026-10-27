@@ -8,16 +8,10 @@
                 We use cookies to make the site work, understand how it is used, and measure our ads. Accept all, reject non-essential, or choose which you allow.
             </p>
 
-            <div class="flex flex-col gap-3">
-                <button type="button" data-accept-all class="button group z-[1]">
-                    <span>Accept all</span>
-                </button>
-                <button type="button" data-reject-all class="button group z-[1]">
-                    <span>Reject all</span>
-                </button>
-                <button type="button" data-manage-preferences class="button group z-[1]">
-                    <span>Manage preferences</span>
-                </button>
+            <div class="grid grid-cols-2 gap-2">
+                <button type="button" data-accept-all class="cookie-notice-button">Accept all</button>
+                <button type="button" data-reject-all class="cookie-notice-button">Reject all</button>
+                <button type="button" data-manage-preferences class="cookie-notice-button col-span-2">Manage preferences</button>
             </div>
         </div>
 
@@ -53,9 +47,7 @@
                 {{ /consent_groups }}
             </ul>
 
-            <button type="button" data-save-preferences class="button group z-[1]">
-                <span>Save preferences</span>
-            </button>
+            <button type="button" data-save-preferences class="cookie-notice-button w-full">Save preferences</button>
         </div>
 
         <p class="text-xs mt-4 opacity-70">You can always change your preferences later.</p>
