@@ -42,13 +42,20 @@ return [
         [
             'name' => 'Necessary',
             'handle' => 'necessary',
+            'description' => 'Essential cookies the site needs to work. Always on.',
             'enable_by_default' => true,
         ],
         [
             'name' => 'Analytics',
             'handle' => 'analytics',
-            'description' => 'These cookies are used to provide us with analytics on which content visitors read, etc.',
-            'enable_by_default' => true,
+            'description' => 'Help us understand how visitors use the site so we can improve it.',
+            'enable_by_default' => false,
+        ],
+        [
+            'name' => 'Advertising',
+            'handle' => 'advertising',
+            'description' => 'Measure the performance of our ad campaigns and show relevant ads.',
+            'enable_by_default' => false,
         ],
     ],
 

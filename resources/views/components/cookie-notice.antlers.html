@@ -1,38 +1,62 @@
 <!-- Start of Cookie Notice Widget -->
 <div id="cookie-notice" class="relative z-[999] font-body">
     <div class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:bottom-6 sm:max-w-md w-auto bg-brand-secondary text-black border-[3px] border-black rounded-[20px] p-6 md:p-8 shadow-[6px_6px_0_0_rgba(0,0,0,1)]">
-        <p class="text-xl md:text-2xl uppercase font-heading mb-3">This site uses cookies</p>
-        <p class="text-sm md:text-base leading-relaxed mb-5">
-            By using this site, you agree to our use of cookies. They help improve your browsing experience and provide personalised content.
-        </p>
 
-        <ul class="flex flex-col gap-3 mb-6">
-            {{ consent_groups }}
-                <li class="flex items-start gap-3">
-                    <input
-                        id="group-{{ handle }}"
-                        name="group-{{ handle }}"
-                        type="checkbox"
-                        class="mt-1 h-5 w-5 shrink-0 appearance-none rounded-md border-[2px] border-black bg-white cursor-pointer relative
-                               checked:bg-brand-primary checked:border-black
-                               checked:after:content-['✓'] checked:after:absolute checked:after:inset-0 checked:after:flex checked:after:items-center checked:after:justify-center checked:after:text-white checked:after:text-sm checked:after:font-bold
-                               focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-brand-secondary"
-                    >
-                    <div class="flex flex-col">
-                        <label for="group-{{ handle }}" class="font-heading uppercase text-sm md:text-base leading-tightest cursor-pointer select-none">
-                            {{ name }}
-                        </label>
-                        {{ if description }}
-                            <span class="text-xs md:text-sm mt-1 select-none">{{ description }}</span>
-                        {{ /if }}
-                    </div>
-                </li>
-            {{ /consent_groups }}
-        </ul>
+        <div data-cookie-notice-compact>
+            <p class="text-xl md:text-2xl uppercase font-heading mb-3">This site uses cookies</p>
+            <p class="text-sm md:text-base leading-relaxed mb-5">
+                We use cookies to make the site work, understand how it is used, and measure our ads. Accept all, reject non-essential, or choose which you allow.
+            </p>
 
-        <button type="button" data-save-preferences class="button group z-[1]">
-            <span>Save Preferences</span>
-        </button>
+            <div class="flex flex-col gap-3">
+                <button type="button" data-accept-all class="button group z-[1]">
+                    <span>Accept all</span>
+                </button>
+                <button type="button" data-reject-all class="button group z-[1]">
+                    <span>Reject all</span>
+                </button>
+                <button type="button" data-manage-preferences class="button group z-[1]">
+                    <span>Manage preferences</span>
+                </button>
+            </div>
+        </div>
+
+        <div data-cookie-notice-expanded hidden>
+            <p class="text-xl md:text-2xl uppercase font-heading mb-3">Cookie preferences</p>
+            <p class="text-sm md:text-base leading-relaxed mb-5">
+                Choose which cookies you are happy for us to use. Necessary cookies are always on.
+            </p>
+
+            <ul class="flex flex-col gap-3 mb-6">
+                {{ consent_groups }}
+                    <li class="flex items-start gap-3">
+                        <input
+                            id="group-{{ handle }}"
+                            name="group-{{ handle }}"
+                            type="checkbox"
+                            {{ if handle == 'necessary' }}checked disabled{{ /if }}
+                            class="mt-1 h-5 w-5 shrink-0 appearance-none rounded-md border-[2px] border-black bg-white cursor-pointer relative
+                                   checked:bg-brand-primary checked:border-black
+                                   checked:after:content-['✓'] checked:after:absolute checked:after:inset-0 checked:after:flex checked:after:items-center checked:after:justify-center checked:after:text-white checked:after:text-sm checked:after:font-bold
+                                   focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2 focus:ring-offset-brand-secondary
+                                   disabled:opacity-70 disabled:cursor-not-allowed"
+                        >
+                        <div class="flex flex-col">
+                            <label for="group-{{ handle }}" class="font-heading uppercase text-sm md:text-base leading-tightest cursor-pointer select-none">
+                                {{ name }}
+                            </label>
+                            {{ if description }}
+                                <span class="text-xs md:text-sm mt-1 select-none">{{ description }}</span>
+                            {{ /if }}
+                        </div>
+                    </li>
+                {{ /consent_groups }}
+            </ul>
+
+            <button type="button" data-save-preferences class="button group z-[1]">
+                <span>Save preferences</span>
+            </button>
+        </div>
 
         <p class="text-xs mt-4 opacity-70">You can always change your preferences later.</p>
     </div>
@@ -40,10 +64,28 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        window.CookieNotice.boot(
-            document.getElementById('cookie-notice'),
-            JSON.parse('{{ config | to_json }}')
-        );
-    });
+        const widget = document.getElementById('cookie-notice')
+        const compact = widget.querySelector('[data-cookie-notice-compact]')
+        const expanded = widget.querySelector('[data-cookie-notice-expanded]')
+
+        window.CookieNotice.boot(widget, JSON.parse('{{ config | to_json }}'))
+
+        widget.querySelector('[data-manage-preferences]').addEventListener('click', () => {
+            compact.hidden = true
+            expanded.hidden = false
+        })
+
+        const setAllAndSave = (value) => {
+            widget.querySelectorAll('input[name^="group-"]').forEach((input) => {
+                if (!input.disabled) {
+                    input.checked = value
+                }
+            })
+            widget.querySelector('[data-save-preferences]').click()
+        }
+
+        widget.querySelector('[data-accept-all]').addEventListener('click', () => setAllAndSave(true))
+        widget.querySelector('[data-reject-all]').addEventListener('click', () => setAllAndSave(false))
+    })
 </script>
 <!-- End of Cookie Notice Widget -->

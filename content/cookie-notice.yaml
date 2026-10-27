@@ -1,5 +1,6 @@
-revision: '2'
-necessary:
+revision: '3'
+necessary: {  }
+analytics:
   -
     id: mhowe9pp
     script_type: other
@@ -24,8 +25,13 @@ necessary:
     script_type: google-tag-manager
     gtm_container_id: GTM-553NTVQT
     gtm_consent_types:
+      - analytics_storage
+advertising:
+  -
+    id: wrj2026adv
+    script_type: google-tag-manager
+    gtm_container_id: GTM-553NTVQT
+    gtm_consent_types:
       - ad_storage
       - ad_user_data
       - ad_personalization
-      - analytics_storage
-analytics: {  }
